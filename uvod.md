@@ -32,8 +32,6 @@ a sama nachádzať riešenia.
 | 💻 **Programovanie** | Navrhuje kód, hľadá chyby, vysvetľuje funkcie | GitHub Copilot |
 | 🤖 **Roboty** | Umožňuje autonómne rozhodovanie | Výrobné roboty, drony |
 
-> 💡 **Tip pre školenie:** Ukážte účastníkom konkrétny príklad – napr. vygenerujte obrázok alebo krátky text naživo.
-
 ---
 
 ## Ako AI „učí"? (Základy bez matematiky)
@@ -56,7 +54,8 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 - Počas trénovania sa váhy upravujú, aby sieť lepšie predpovedala
 - **Hlboké učenie** = veľa vrstiev → schopnosť pochopiť zložité vzory
 
-> 🎯 **Zjednodušená metafora:** Predstavte si neurónovú sieť ako tím špecialistov, kde každý rieši malú časť úlohy a spoločne dospeli k výsledku.
+> 🎯 **Zjednodušená metafora:** Predstavte si neurónovú sieť ako tím špecialistov, kde každý rieši malú
+> časť úlohy a spoločne dospeli k výsledku.
 
 ---
 
@@ -105,7 +104,7 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 - ❌ Môžu sa mýliť alebo „vymýšľať" fakty (halucinácie)
 - ❌ Nevedia pristupovať k súkromným dátam bez explicitného povolenia
 
-> ⚠️ **Dôležité pre školenie:** Vždy overte kritické informácie z iného zdroja!
+> ⚠️ Vždy overte kritické informácie z iného zdroja!
 
 ---
 
@@ -196,18 +195,30 @@ Aké slová sa opakujú v negatívnych hodnoteniach?"
 
 ## Rýchly slovník pojmov (pre účastníkov)
 
+Samozrejme, tu je rozšírená záverečná tabuľka s ďalšími dôležitými pojmami, ktoré sa často vyskytujú pri práci s AI – stále v zjednodušenej forme vhodné pre začiatočníkov:
+
+## Rýchly slovník pojmov (rozšírená verzia)
+
 | Pojem | Vysvetlenie |
 |-------|-------------|
-| **AI / Umelá inteligencia** | Systémy, ktoré napodobňujú ľudské myslenie |
+| **AI / Umelá inteligencia** | Systémy, ktoré napodobňujú ľudské myslenie a učenie |
 | **Strojové učenie** | AI, ktorá sa učí z dát namiesto explicitného programovania |
-| **LLM** | Veľký jazykový model – AI trénovaná na texte |
-| **Prompt** | Inštrukcia pre AI, čo má urobiť |
-| **Tréning** | Proces, pri ktorom sa AI učí z príkladov |
-| **Parametre** | „Vedomosti" modelu – čím viac, tým komplexnejšie vzory vie zachytiť |
+| **LLM** | Veľký jazykový model – AI trénovaná na miliardách textov |
+| **Prompt** | Inštrukcia alebo otázka, ktorú zadávate AI |
+| **Tréning** | Proces, pri ktorom sa AI učí z príkladov a upravuje svoje „váhy" |
+| **Parametre** | Číselné „nastavenia" modelu – čím viac, tým komplexnejšie vzory vie zachytiť |
 | **Halucinácia** | Keď AI vygeneruje nesprávnu, ale presvedčivo znejúcu odpoveď |
+| **Neurónová sieť** | Výpočtový model inšpirovaný ľudským mozgom, skladá sa z prepojených „neurónov" |
+| **Hlboké učenie** | Používanie neurónových sietí s mnohými vrstvami na riešenie zložitých úloh |
+| **Token** | Základná jednotka textu pre AI (približne ¾ slova v angličtine, v slovenčine často kratšie úseky) |
+| **Kontextové okno** | Maximálne množstvo textu (prompt + odpoveď), ktoré si AI pamätá v rámci jednej konverzácie |
+| **Teplota (modelu)** | Nastavenie „kreativity" – vyššia hodnota = viac náhodnosti a originality, nižšia = presnejšie a konzervatívnejšie odpovede |
+| **Fine-tuning / Doladenie** | Dodatočné trénovanie už hotového modelu na špecifickú úlohu alebo dáta |
+| **RAG (Retrieval-Augmented Generation)** | Technika, pri ktorej AI najskôr vyhľadá relevantné informácie z externého zdroja a až potom generuje odpoveď |
+| **Few-shot learning** | Schopnosť AI naučiť sa úlohu z niekoľkých príkladov uvedených priamo v prompte |
+| **Prompt engineering** | Umenie formulovať vstupné inštrukcie tak, aby AI poskytla čo najlepšiu odpoveď |
+| **Overfitting / Pretrénovanie** | Keď sa model príliš prispôsobí trénovacím dátam a zle zovšeobecňuje na nové situácie |
+| **Algoritmus** | Presný postup alebo návod, podľa ktorého AI rieši úlohu |
+| **Dáta** | Informácie (text, obrázky, čísla...), z ktorých sa AI učí alebo ktoré spracúva |
 
----
 
-> 📌 **Odporúčanie pre lektora:** Po každej teoretickej časti zaradte 5-minútovú praktickú ukážku s účastníkmi (napr. spoločné vytvorenie promptu). Zapojenie zvyšuje zapamätanie si o 70 %.
-
-* Dokument pripravený pre úvodné školenie AI – jazyk prispôsobený začiatočníkom, technické detaily zjednodušené, dôraz na praktické využitie.*
