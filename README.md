@@ -1,6 +1,6 @@
 # AI-Skolenie
 
-AI Školenie
+AI Školenie pre začiatočníkov s praktickými príkladmi. Kontakt na lektora: jan.bodnar@gmail.com
 
 
 
