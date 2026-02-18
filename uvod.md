@@ -1,8 +1,9 @@
 # Úvod do umelej inteligencie (AI)
 
-**Umela inteligencia (AI)** je technológia, ktorá umožňuje strojom „myslieť" a „učiť sa" podobne  
-ako ľudia. Namiesto toho, aby sme počítačom presne napísali každý krok, AI sa vie učiť z príkladov 
-a sama nachádzať riešenia.
+*Umelá inteligencia (AI)* je technológia, ktorá umožňuje počítačom učiť sa z dát  
+a hľadať riešenia bez toho, aby sme im museli presne určovať každý krok. Namiesto  
+pevne naprogramovaných postupov dokáže AI rozpoznávať vzory, prispôsobovať sa novým  
+situáciám a riešiť úlohy podobne ako človek.
 
 > **Jednoducho povedané:** AI je počítačový program, ktorý sa vie učiť z dát a pomáhať nám riešiť úlohy –
 > od písania textov až po rozpoznávanie obrázkov.
