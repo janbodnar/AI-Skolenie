@@ -1,0 +1,2 @@
+# AI-Skolenie
+AI Školenie
