@@ -1,11 +1,10 @@
 # AI-Skolenie
+
 AI Školenie
 
 
 
 ## Osnovy školenia
-
-=== Osnovy
 
 Úvod do umelej inteligencie
 - Čo je AI a strojové učenie
