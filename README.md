@@ -1,7 +1,13 @@
 # AI-Skolenie
 
-AI Školenie pre začiatočníkov s praktickými príkladmi. Kontakt na lektora: jan.bodnar@gmail.com
+AI Školenie pre začiatočníkov s praktickými príkladmi.  
+Kontakt na lektora: jan.bodnar@gmail.com  
 
+## Zameranie
+
+Kurz Úvod do umelej inteligencie – Praktické aplikácie je určený pre každého, kto chce efektívne  
+využiť AI v práci. Účastníci sa naučia automatizovať úlohy, zjednodušiť pracovné procesy a zvýšiť 
+produktivitu pomocou dostupných AI nástrojov – bez potreby programátorských znalostí. 
 
 
 ## Osnovy školenia
