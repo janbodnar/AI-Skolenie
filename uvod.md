@@ -145,28 +145,28 @@ Použi jednoduché príklady z bežného života. Odpoveď daj v 5 odrážkach, 
 
 ## Praktické ukážky pre školenie
 
-### 1️⃣ Zhrnutie textu
+### Zhrnutie textu
 ```
 Prompt: "Zhrň tento článok o klimatických zmenách na 3 hlavné body pre manažérov."
 Výstup: Stručný prehľad bez technického žargónu.
 ```
 **Využitie:** Rýchle spracovanie dlhých reportov, e-mailov, článkov.
 
-### 2️⃣ Preklad s kontextom
+### Preklad s kontextom
 ```
 Prompt: "Prelož tento technický popis do slovenčiny. Zachovať odborné termíny, 
 ale vysvetliť ich v zátvorke pre začiatočníkov."
 ```
 **Výhoda oproti klasickým prekladačom:** AI chápe kontext a vie prispôsobiť štýl.
 
-### 3️⃣ Extrakcia informácií
+### Extrakcia informácií
 ```
 Prompt: "Z tohto životopisu vytiahni: meno, poslednú pozíciu, 3 kľúčové zručnosti. 
 Výstup daj ako JSON."
 ```
 **Využitie:** Automatizácia spracovania CV, faktúr, formulárov.
 
-### 4️⃣ Analýza sentimentu
+### Analýza sentimentu
 ```
 Prompt: "Prečítaj tieto 10 recenzií a zhrň: Čo zákazníkom najviac chýba? 
 Aké slová sa opakujú v negatívnych hodnoteniach?"
