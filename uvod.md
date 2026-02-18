@@ -5,8 +5,8 @@ a hľadať riešenia bez toho, aby sme im museli presne určovať každý krok. 
 pevne naprogramovaných postupov dokáže AI rozpoznávať vzory, prispôsobovať sa novým  
 situáciám a riešiť úlohy podobne ako človek.
 
-> **Jednoducho povedané:** AI je počítačový program, ktorý sa vie učiť z dát a pomáhať nám riešiť úlohy –
-> od písania textov až po rozpoznávanie obrázkov.
+> **Jednoducho povedané:** AI je počítačový program, ktorý sa vie učiť z dát a pomáhať  
+> nám riešiť úlohy – od písania textov až po rozpoznávanie obrázkov.
 
 **Stručná história:**
 - **1950s:** Začiatky – Alan Turing položil teoretické základy
