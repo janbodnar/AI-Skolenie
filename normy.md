@@ -101,10 +101,9 @@ právnym expertom a compliance officerom už v raných fázach projektu.
 
 #### Sektorové regulácie
 
-- **Financie**: Smernica MiFID II, nariadenia pre algoritmické obchodovanie –
-  požiadavky na testovanie, monitorovanie a vysvetliteľnosť AI modelov
-- **Doprava**: Normy pre autonómne vozidlá (napr. ISO 21448 SOTIF) – bezpečnosť
-  AI v reálnom svete
+- **Financie**: Smernica MiFID II, nariadenia pre algoritmické obchodovanie – požiadavky
+  na testovanie, monitorovanie a vysvetliteľnosť AI modelov
+- **Doprava**: Normy pre autonómne vozidlá (napr. ISO 21448 SOTIF) – bezpečnosť   AI v reálnom svete
 - **Vzdelávanie**: Ochrana údajov študentov (napr. FERPA v USA) pri použití AI
   tutorov a analytických nástrojov
 
@@ -123,6 +122,7 @@ konzultácií k novým návrhom.
 ### Praktické kroky pre compliance v AI projektoch
 
 #### 1. Fáza návrhu: Privacy & Ethics by Design
+
 - Identifikujte typy dát a ich právny základ spracovania
 - Navrhnite architektúru s minimálnym zberom dát a možnosťou anonymizácie
 - Zapojte etického advisor a DPO (Data Protection Officer) od začiatku
@@ -153,8 +153,6 @@ regulácií
 > ☑ Existuje mechanizmus pre ľudský dohľad a odvolanie?
 > ☑ Je tím vyškolený o relevantných reguláciách?
 
----
-
 ### Case Study: GDPR a chatbot v e-shope
 
 #### Scenár
@@ -178,7 +176,6 @@ pravidelné penetračné testy
 > 🤔 **Diskusná otázka:** Ako by ste navrhli architektúru chatbota, aby umožnil
 „právo byť zabudnutý" bez nutnosti pretrénovania celého modelu?
 
----
 
 ### Budúcnosť regulácie AI
 
