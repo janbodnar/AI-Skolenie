@@ -169,11 +169,11 @@ slúžia ľuďom – bezpečne, spravodlivo a transparentne.
 
 ## Zhrnutie kapitoly
 
-✅ GDPR a HIPAA stanovujú kľúčové požiadavky na ochranu údajov v AI systémoch
-✅ Princípy ako minimalizácia dát, transparentnosť a ľudský dohľad sú univerzálne dobré praktiky
-✅ AI Act zavádza prístup založený na riziku – vyššie riziko = prísnejšie požiadavky
-✅ Compliance nie je jednorazová úloha, ale priebežný proces počas celého životného cyklu AI
-✅ Budúcnosť regulácie bude ovplyvnená globálnou spoluprácou a vývojom generatívnej AI
+✅ GDPR a HIPAA stanovujú kľúčové požiadavky na ochranu údajov v AI systémoch  
+✅ Princípy ako minimalizácia dát, transparentnosť a ľudský dohľad sú univerzálne dobré praktiky  
+✅ AI Act zavádza prístup založený na riziku – vyššie riziko = prísnejšie požiadavky  
+✅ Compliance nie je jednorazová úloha, ale priebežný proces počas celého životného cyklu AI  
+✅ Budúcnosť regulácie bude ovplyvnená globálnou spoluprácou a vývojom generatívnej AI  
 
 ---
 
@@ -192,11 +192,11 @@ rámec pre manažment rizík
 
 ### 🧠 Kontrolné otázky
  
-1. Aký je hlavný rozdiel medzi prístupom GDPR a HIPAA k ochrane údajov?
-2. Prečo je „právo na vysvetlenie" výzvou pre komplexné AI modely?
-3. Ako môže technika federovaného učenia pomôcť pri dodržiavaní GDPR?
-4. Aké nové povinnosti prináša AI Act pre vývojárov vysokorizikových AI systémov?
+1. Aký je hlavný rozdiel medzi prístupom GDPR a HIPAA k ochrane údajov?  
+2. Prečo je „právo na vysvetlenie" výzvou pre komplexné AI modely?  
+3. Ako môže technika federovaného učenia pomôcť pri dodržiavaní GDPR?  
+4. Aké nové povinnosti prináša AI Act pre vývojárov vysokorizikových AI systémov?  
 
 > 🌟 **Tip na záver:** Pri práci s reálnymi dátami vždy predpokladajte, že
-podliehajú ochrane – radšej implementujte ochranné opatrenia preventívne,
-než riešiť porušenie dodatočne. Zodpovednosť je súčasťou profesionality.
+> podliehajú ochrane – radšej implementujte ochranné opatrenia preventívne,
+> než riešiť porušenie dodatočne. Zodpovednosť je súčasťou profesionality.
