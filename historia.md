@@ -1,17 +1,4 @@
 # História umelej inteligencie  
-*Učebný materiál pre úvodný kurz AI*
-
-> **Cieľová skupina:** Študenti úvodného kurzu umelej inteligencie  
-> **Ciele učenia:** Po prečítaní tejto kapitoly budete vedieť:  
-> - Vysvetliť základné pojmy a historické milníky vývoja AI  
-> - Rozlíšiť hlavné prístupy k AI (symbolická AI, expertné systémy, strojové učenie, hlboké učenie)  
-> - Pochopiť príčiny „AI zím" a ich poučenie pre súčasný vývoj  
-> - Identifikovať kľúčové aplikácie AI v rôznych odvetviach  
-> - Kriticky uvažovať o etických a spoločenských výzvach spojených s AI  
-
----
-
-## Čo je umelá inteligencia? (Úvod pre začiatočníkov)
 
 **Umela inteligencia (AI)** je odvetvie informatiky, ktoré sa zaoberá tvorbou  
 počítačových systémov schopných vykonávať úlohy, ktoré bežne vyžadujú ľudskú  
@@ -35,15 +22,18 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 ## Rané základy (40. – 50. roky 20. storočia)
 
 ### Kľúčové postavy a myšlienky
+
 - **Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*, v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.
 - **Turingov stroj**: Teoretický model výpočtu, ktorý položil matematické základy pre všetky moderné počítače.
 
 ### Dartmouthská konferencia (1956) – „Zrodenie AI"
+
 - Organizátori: John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon  
 - Tu bol prvýkrát použitý termín **„Artificial Intelligence"** (umelá inteligencia)  
 - Hlavná hypotéza: *„Každý aspekt učenia alebo inej vlastnosti inteligencie možno principiálne presne popísať tak, aby ho stroj dokázal simulovať."*
 
 ### Rané prístupy: Symbolická AI (GOFAI)
+
 > 🎓 **Pre študentov:** Symbolická AI predpokladala, že ľudské myslenie možno redukovať na manipuláciu so symbolmi podľa pevných pravidiel – podobne ako v logike alebo matematike.
 
 - **Logic Theorist** (1956, Newell & Simon): Prvý program, ktorý dokazoval matematické vety  
