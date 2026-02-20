@@ -25,6 +25,7 @@ informácií. Bez vhodných pravidiel hrozia riziká:
 bez ohľadu na ich sídlo
 
 #### Kľúčové princípy relevantné pre AI
+
 | Princíp | Význam pre AI vývoj |
 |---------|-------------------|
 | **Zákonnosť, spravodlivosť, transparentnosť** | AI systémy musia mať právny základ spracovania a byť vysvetliteľné pre používateľov |
@@ -34,14 +35,15 @@ bez ohľadu na ich sídlo
 | **Integrita a dôvernosť** | Implementovať šifrovanie, anonymizáciu a prístupové kontroly |
 
 #### Práva jednotlivcov s dopadom na AI
+
 - **Právo na informácie**: Používatelia musia vedieť, že interagujú s AI a ako
-sa ich údaje spracúvajú
+  sa ich údaje spracúvajú
 - **Právo na prístup a portabilitu**: Možnosť získať kópiu svojich dát v
-štruktúrovanej forme
+  štruktúrovanej forme
 - **Právo na opravu a výmaz („právo byť zabudnutý")**: Možnosť žiadať korekciu
-alebo odstránenie údajov – výzva pre trénované modely
+  alebo odstránenie údajov – výzva pre trénované modely
 - **Právo namietať automatizovanému rozhodovaniu**: Občania môžu žiadať ľudský
-dohľad pri rozhodnutiach s právnym alebo významným dopadom
+  dohľad pri rozhodnutiach s právnym alebo významným dopadom
 
 > 🎓 **Praktický tip:** Pri vývoji AI pre EÚ trh vždy vykonajte „Data Protection
 > Impact Assessment" (DPIA) – posúdenie vplyvu na ochranu údajov.
@@ -50,15 +52,17 @@ dohľad pri rozhodnutiach s právnym alebo významným dopadom
 ### HIPAA – Ochrana zdravotných údajov v USA
 
 #### Základné informácie
+
 - **Plný názov**: Health Insurance Portability and Accountability Act (1996)
 - **Cieľ**: Chrániť dôvernosť a bezpečnosť zdravotných informácií pacientov
 - **Rozsah**: Vzťahuje sa na „covered entities" (poskytovatelia zdravotnej
 starostlivosti, poisťovne) a ich „business associates" (vrátane AI vendorov)
 
 #### Čo sú „Protected Health Information" (PHI)?
+
 > 🎓 **Definícia:** PHI sú akékoľvek individuálne identifikovateľné zdravotné
-údaje, vrátane: mien, dátumov, čísel poistenia, diagnostických kódov,
-obrázkov, genetických údajov a ďalších 14 identifikátorov.
+> údaje, vrátane: mien, dátumov, čísel poistenia, diagnostických kódov,
+> obrázkov, genetických údajov a ďalších 14 identifikátorov.
 
 #### Kľúčové požiadavky pre AI v zdravotníctve
 | Požiadavka | Aplikácia v AI kontexte |
@@ -84,24 +88,25 @@ právnym expertom a compliance officerom už v raných fázach projektu.
 ### Ďalšie dôležité regulácie a iniciatívy
 
 #### AI Act (EÚ) – Prvý komplexný právny rámec pre AI
+
 - **Status**: Schválený v roku 2024, postupné nadobúdanie účinnosti
 - **Prístup založený na riziku**:
+- 
 | Kategória rizika | Príklady | Požiadavky |
 |-----------------|----------|------------|
 | **Neprijateľné riziko** | Sociálny scoring, manipulatívne AI | Zákaz |
-| **Vysoké riziko** | AI v zdravotníctve, doprave, náboru | Povinné posúdenie,
-dokumentácia, ľudský dohľad, vysoká presnosť |
-| **Obmedzené riziko** | Chatboty, deepfakes | Povinnosť transparentnosti
-(označenie AI generovaného obsahu) |
+| **Vysoké riziko** | AI v zdravotníctve, doprave, náboru | Povinné posúdenie, dokumentácia, ľudský dohľad, vysoká presnosť |
+| **Obmedzené riziko** | Chatboty, deepfakes | Povinnosť transparentnosti (označenie AI generovaného obsahu) |
 | **Minimálne riziko** | Spam filtre, videohry | Žiadne dodatočné povinnosti |
 
 #### Sektorové regulácie
+
 - **Financie**: Smernica MiFID II, nariadenia pre algoritmické obchodovanie –
-požiadavky na testovanie, monitorovanie a vysvetliteľnosť AI modelov
+  požiadavky na testovanie, monitorovanie a vysvetliteľnosť AI modelov
 - **Doprava**: Normy pre autonómne vozidlá (napr. ISO 21448 SOTIF) – bezpečnosť
-AI v reálnom svete
+  AI v reálnom svete
 - **Vzdelávanie**: Ochrana údajov študentov (napr. FERPA v USA) pri použití AI
-tutorov a analytických nástrojov
+  tutorov a analytických nástrojov
 
 #### Medzinárodné iniciatívy a štandardy
 - **OECD AI Principles**: Medzinárodné zásady pre dôveryhodnú AI
@@ -203,14 +208,10 @@ slúžia ľuďom – bezpečne, spravodlivo a transparentne.
 ## Zhrnutie kapitoly
 
 ✅ GDPR a HIPAA stanovujú kľúčové požiadavky na ochranu údajov v AI systémoch
-✅ Princípy ako minimalizácia dát, transparentnosť a ľudský dohľad sú
-univerzálne dobré praktiky
-✅ AI Act zavádza prístup založený na riziku – vyššie riziko = prísnejšie
-požiadavky
-✅ Compliance nie je jednorazová úloha, ale priebežný proces počas celého
-životného cyklu AI
-✅ Budúcnosť regulácie bude ovplyvnená globálnou spoluprácou a vývojom
-generatívnej AI
+✅ Princípy ako minimalizácia dát, transparentnosť a ľudský dohľad sú univerzálne dobré praktiky
+✅ AI Act zavádza prístup založený na riziku – vyššie riziko = prísnejšie požiadavky
+✅ Compliance nie je jednorazová úloha, ale priebežný proces počas celého životného cyklu AI
+✅ Budúcnosť regulácie bude ovplyvnená globálnou spoluprácou a vývojom generatívnej AI
 
 ---
 
@@ -226,15 +227,9 @@ oficiálne materiály k novému rámcu
 - [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) – praktický
 rámec pre manažment rizík
 
-### 💻 Praktické cvičenia
-1. **Analýza prípadu**: Vyberte si AI aplikáciu (napr. zdravotnícka appka) a
-identifikujte, ktoré regulácie sa na ňu vzťahujú a prečo
-2. **DPIA simulácia**: Vypracujte zjednodušené „Data Protection Impact
-Assessment" pre fiktívny AI projekt vo vašom odbore
-3. **Debatná úloha**: Rozdeľte sa do skupín a diskutujte: *„Mali by byť open-source
-AI modely vyňaté z prísnych regulácií? Prečo áno/nie?"*
 
 ### 🧠 Kontrolné otázky
+ 
 1. Aký je hlavný rozdiel medzi prístupom GDPR a HIPAA k ochrane údajov?
 2. Prečo je „právo na vysvetlenie" výzvou pre komplexné AI modely?
 3. Ako môže technika federovaného učenia pomôcť pri dodržiavaní GDPR?
