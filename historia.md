@@ -23,18 +23,22 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 
 ### Kľúčové postavy a myšlienky
 
-- **Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*, v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.
+- **Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*,
+- v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť
+- konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.
 - **Turingov stroj**: Teoretický model výpočtu, ktorý položil matematické základy pre všetky moderné počítače.
 
 ### Dartmouthská konferencia (1956) – „Zrodenie AI"
 
 - Organizátori: John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon  
 - Tu bol prvýkrát použitý termín **„Artificial Intelligence"** (umelá inteligencia)  
-- Hlavná hypotéza: *„Každý aspekt učenia alebo inej vlastnosti inteligencie možno principiálne presne popísať tak, aby ho stroj dokázal simulovať."*
+- Hlavná hypotéza: *„Každý aspekt učenia alebo inej vlastnosti inteligencie možno principiálne presne
+- popísať tak, aby ho stroj dokázal simulovať."*
 
 ### Rané prístupy: Symbolická AI (GOFAI)
 
-> 🎓 **Pre študentov:** Symbolická AI predpokladala, že ľudské myslenie možno redukovať na manipuláciu so symbolmi podľa pevných pravidiel – podobne ako v logike alebo matematike.
+> 🎓 **Pre študentov:** Symbolická AI predpokladala, že ľudské myslenie možno redukovať na manipuláciu
+> so symbolmi podľa pevných pravidiel – podobne ako v logike alebo matematike.
 
 - **Logic Theorist** (1956, Newell & Simon): Prvý program, ktorý dokazoval matematické vety  
 - **Samuelov program na dámu** (1952): Učil sa hrať prostredníctvom seba-hry – raný príklad **strojového učenia**  
@@ -42,7 +46,6 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 
 > ⚠️ **Obmedzenia raných systémov:** Fungovali len vo veľmi úzkych doménach a vyžadovali ručné kódovanie znalostí.
 
----
 
 ## Kľúčové milníky (60. – 90. roky)
 
@@ -51,7 +54,9 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
   > 🤔 **Diskusná otázka:** Prečo ľudia niekedy pripisujú „pochopenie" jednoduchým systémom ako ELIZA?
 
 ### Expertné systémy (70. – 80. roky)
-> 🎓 **Definícia:** Expertné systémy sú AI programy, ktoré napodobňujú rozhodovanie ľudských expertov pomocou pravidiel typu *„ak – potom"*.
+
+> 🎓 **Definícia:** Expertné systémy sú AI programy, ktoré napodobňujú rozhodovanie ľudských expertov
+> pomocou pravidiel typu *„ak – potom"*.
 
 | Systém | Oblasť | Význam |
 |--------|--------|---------|
@@ -62,18 +67,22 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 > 💡 **Poučenie:** Expertné systémy boli úspešné, ale ťažko sa udržiavali a nedokázali sa učiť z nových skúseností.
 
 ### Návrat neurónových sietí a strojového učenia
-- **Backpropagation** (80. roky): Algoritmus na trénovanie viacvrstvových neurónových sietí (Rumelhart, Hinton, Williams)  
+
+- **Backpropagation** (80. roky): Algoritmus na trénovanie viacvrstvových neurónových
+  sietí (Rumelhart, Hinton, Williams)  
 - **Konvolučné neurónové siete (CNN)** (Yann LeCun): Umožnili rozpoznávanie rukopisu priamo z dát  
-- **Deep Blue vs. Kasparov** (1997): IBM porazil svetového šachového šampióna – ukážka sily kombinácie hrubej výpočtovej sily a heuristík
+- **Deep Blue vs. Kasparov** (1997): IBM porazil svetového šachového šampióna – ukážka sily
+  kombinácie hrubej výpočtovej sily a heuristík
 
-> 🎯 **Pre študentov:** Tento vývoj ukázal, že prístupy založené na dátach a učení môžu prekonať systémy založené výlučne na ručne kódovaných pravidlách.
+> 🎯 **Pre študentov:** Tento vývoj ukázal, že prístupy založené na dátach a učení môžu
+> prekonať systémy založené výlučne na ručne kódovaných pravidlách.
 
----
 
 ## „AI zimy" – Obdobia poklesu záujmu (70. a 90. roky)
 
 ### Čo sú „AI zimy"?
-> 🎓 **Definícia:** Obdobia, kedy došlo k výraznému zníženiu financovania a záujmu o AI výskum kvôli nesplneným očakávaniam.
+> 🎓 **Definícia:** Obdobia, kedy došlo k výraznému zníženiu financovania a záujmu o AI výskum
+> kvôli nesplneným očakávaniam.
 
 ### Prvá AI zima (70. roky)
 - Príčiny:  
