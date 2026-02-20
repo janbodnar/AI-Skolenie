@@ -44,7 +44,8 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 - **Samuelov program na dámu** (1952): Učil sa hrať prostredníctvom seba-hry – raný príklad **strojového učenia**  
 - **LISP** (1958, McCarthy): Programovací jazyk navrhnutý špeciálne pre AI výskum
 
-> ⚠️ **Obmedzenia raných systémov:** Fungovali len vo veľmi úzkych doménach a vyžadovali ručné kódovanie znalostí.
+> ⚠️ **Obmedzenia raných systémov:** Fungovali len vo veľmi úzkych doménach a vyžadovali ručné  
+> kódovanie znalostí.
 
 
 ## Kľúčové milníky (60. – 90. roky)
@@ -96,8 +97,10 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 - Kolaps trhu s expertnými systémami:  
   - Vysoké nároky na údržbu  
   - Nemožnosť učenia sa z nových skúseností  
-  - Krach špecializovaných hardvérových firiem (LISP stroje)  
-- Termín „AI" sa stal stigmatizovaným → výskumníci premenovali svoju prácu na *„strojové učenie"*, *„neurónové siete"*
+  - Krach špecializovaných hardvérových firiem (LISP stroje)
+    
+- Termín „AI" sa stal stigmatizovaným → výskumníci premenovali svoju prácu na
+  *„strojové učenie"*, *„neurónové siete"*
 
 > 💡 **Poučenie pre budúcnosť:**  
 > - Dôležité je realisticky manažovať očakávania  
@@ -119,7 +122,8 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 - **AlphaGo** (2016): Porazil svetového šampióna v Go – hra považovaná za príliš komplexnú pre AI  
 - **Open-source frameworky**: TensorFlow (2015), PyTorch (2016) → democratizácia prístupu k AI
 
-> 🎯 **Pre študentov:** Moderná AI nie je o „programovaní pravidiel", ale o **trénovaní modelov na dátach**. Kvalita a množstvo dát sú často dôležitejšie ako zložitosť algoritmu.
+> 🎯 **Pre študentov:** Moderná AI nie je o „programovaní pravidiel", ale o **trénovaní modelov na dátach**.
+> Kvalita a množstvo dát sú často dôležitejšie ako zložitosť algoritmu.
 
 ---
 
