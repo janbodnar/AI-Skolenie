@@ -64,7 +64,8 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 | **MYCIN** (1972) | Medicína | Diagnostikoval krvné infekcie a odporúčal antibiotiká |
 | **XCON** (1980) | IT konfigurácia | Ušetril firme DEC milióny dolárov |
 
-> 💡 **Poučenie:** Expertné systémy boli úspešné, ale ťažko sa udržiavali a nedokázali sa učiť z nových skúseností.
+> 💡 **Poučenie:** Expertné systémy boli úspešné, ale ťažko sa udržiavali a nedokázali
+> sa učiť z nových skúseností.
 
 ### Návrat neurónových sietí a strojového učenia
 
@@ -159,7 +160,6 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 
 > 💡 **Tip pre študentov:** Pri štúdiu aplikácií AI sa pýtajte: *Aký problém rieši? Aké dáta používa? Aké sú etické dôsledky?*
 
----
 
 ## Budúcnosť AI – Výzvy a príležitosti
 
@@ -176,14 +176,17 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 > 4. Ako pripraviť pracovnú silu na zmeny spôsobené automatizáciou?
 
 ### Umelá všeobecná inteligencia (AGI)
-> 🎓 **Definícia:** AGI je hypotetická AI s ľudskou úrovňou inteligencie vo všetkých oblastiach – nie len v úzkych úlohách.
+> 🎓 **Definícia:** AGI je hypotetická AI s ľudskou úrovňou inteligencie vo všetkých
+> oblastiach – nie len v úzkych úlohách.
 
 - Aktuálny stav: Väčšina expertov považuje AGI za vzdialenú (desaťročia), no nie nemožnú  
-- Dôležité: Výskum **bezpečnosti a zarovnania AI** (AI alignment) – ako zabezpečiť, aby silné AI systémy sledovali ľudské hodnoty
+- Dôležité: Výskum **bezpečnosti a zarovnania AI** (AI alignment) – ako zabezpečiť, aby silné
+  AI systémy sledovali ľudské hodnoty
 
-> 💡 **Záver pre študentov:** AI nie je len technológia – je to spoločenský projekt. Vaša úloha ako budúcich odborníkov je nielen rozumieť algoritmom, ale aj kriticky uvažovať o tom, **ako a prečo** by sme mali AI používať.
+> 💡 **Záver pre študentov:** AI nie je len technológia – je to spoločenský projekt. Vaša úloha ako
+> budúcich odborníkov je nielen rozumieť algoritmom, ale aj kriticky uvažovať o tom, **ako a prečo**
+> by sme mali AI používať.
 
----
 
 ## Zhrnutie kapitoly
 
@@ -193,7 +196,6 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 ✅ AI už mení takmer každé odvetvie – od medicíny po umenie  
 ✅ Budúcnosť AI závisí nielen od technológií, ale aj od **etických rozhodnutí a regulácie**
 
----
 
 ## Ďalšie zdroje a cvičenia
 
@@ -203,11 +205,13 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 - Online: [Elements of AI](https://www.elementsofai.com/) – bezplatný úvodný kurz
 
 ### 💻 Praktické cvičenia
+
 1. **Explorácia**: Vyskúšajte si jednoduchý chatbot (napr. cez Hugging Face) a zamyslite sa nad jeho obmedzeniami  
 2. **Analýza**: Nájdite príklad AI aplikácie vo vašom odbore – aký problém rieši? Aké dáta používa?  
 3. **Diskusia**: V skupine diskutujte: *„Mala by byť vývoj silnej AI regulovaná? Ak áno, ako?"*
 
 ### 🧠 Kontrolné otázky
+
 1. V čom sa líši symbolická AI od prístupu založeného na strojovom učení?  
 2. Prečo boli „AI zimy" dôležité pre vývoj odvetvia?  
 3. Aké sú hlavné výhody a riziká veľkých jazykových modelov?  
