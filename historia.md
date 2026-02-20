@@ -9,8 +9,8 @@ inteligenciu. Medzi takéto úlohy patria:
 - Preklad jazykov  
 - Riešenie problémov a plánovanie  
 
-> 💡 **Kľúčový pojem:** *AI nie je jeden konkrétny algoritmus, ale súbor metód
-> a techník, ktoré umožňujú strojom „myslieť" alebo aspoň napodobňovať
+> 💡 **Kľúčový pojem:** *AI nie je jeden konkrétny algoritmus, ale súbor metód  
+> a techník, ktoré umožňujú strojom „myslieť" alebo aspoň napodobňovať  
 > ľudské kognitívne funkcie.*
 
 AI sa dnes už nepovažuje len za teoretický koncept, ale za základnú technológiu,  
