@@ -117,42 +117,6 @@ identifikáciu a mitigáciu rizík AI
 (Európska komisia, národné úrady na ochranu údajov) a zapájajte sa do
 konzultácií k novým návrhom.
 
----
-
-### Praktické kroky pre compliance v AI projektoch
-
-#### 1. Fáza návrhu: Privacy & Ethics by Design
-
-- Identifikujte typy dát a ich právny základ spracovania
-- Navrhnite architektúru s minimálnym zberom dát a možnosťou anonymizácie
-- Zapojte etického advisor a DPO (Data Protection Officer) od začiatku
-
-#### 2. Fáza vývoja: Technické opatrenia
-- Implementujte **diferenciálne súkromie** (differential privacy) pre trénovanie
-modelov na citlivých dátach
-- Používajte **federované učenie** (federated learning) na trénovanie bez
-centralizácie osobných údajov
-- Zabezpečte **auditovateľnosť**: logovanie rozhodnutí modelu, verzie dát,
-hyperparametre
-
-#### 3. Fáza nasadenia: Transparentnosť a kontrola
-- Poskytnite používateľom **jasné informácie** o použití AI a ich právach
-- Implementujte **mechanizmy pre ľudský dohľad** pri kritických rozhodnutiach
-- Pripravte **procesy pre vybavovanie žiadostí** (prístup, oprava, výmaz údajov)
-
-#### 4. Priebežný monitoring
-- Pravidelne testujte modely na **bias a drift** (posun v dátach)
-- Aktualizujte dokumentáciu a posúdenia rizík pri zmenách modelu alebo
-regulácií
-- Školte tím o nových právnych požiadavkách a etických štandardoch
-
-> 💡 **Checklist pre študentov:**
-> ☑ Má môj AI projekt právny základ spracovania dát?
-> ☑ Sú dáta minimalizované a anonymizované kde je to možné?
-> ☑ Je rozhodnutie modelu vysvetliteľné pre používateľa?
-> ☑ Existuje mechanizmus pre ľudský dohľad a odvolanie?
-> ☑ Je tím vyškolený o relevantných reguláciách?
-
 ### Case Study: GDPR a chatbot v e-shope
 
 #### Scenár
@@ -162,6 +126,7 @@ E-shop v EÚ nasadzuje AI chatbota na podporu zákazníkov, ktorý spracúvava:
 - Preferencie a správanie na stránke
 
 #### Compliance kroky
+
 1. **Právny základ**: Zmluvný vzťah (plnenie objednávky) + oprávnený záujem
 (zlepšovanie služieb) – nutný záznam v Register of Processing Activities
 2. **Transparentnosť**: Informačná lišta „Tento chat používa AI" + odkaz na
