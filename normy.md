@@ -3,7 +3,7 @@
 
 ### Prečo sú regulácie dôležité pre AI?
 
-AI systémy často spracúvajú veľké množstvá dát, vrátane osobných a citlivých
+AI systémy často spracúvajú veľké množstvá dát, vrátane osobných a citlivých  
 informácií. Bez vhodných pravidiel hrozia riziká:
 
 - **Porušenie súkromia**: Neoprávnené zber a použitie osobných údajov
