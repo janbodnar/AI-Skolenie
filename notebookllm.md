@@ -12,7 +12,7 @@ dokumenty s výkonným AI modelom Gemini.
 ```
 ✅ NotebookLM odpovedá NA ZÁKLADE VAŠICH ZDROJOV
 ✅ Každá odpoveď obsahuje CITÁCIE (vidíte, odkiaľ informácia pochádza)
-✅ Vaše dokumenty zostávajú súkromné a nepoužívajú sa na trénovanie AI [[14]]
+✅ Vaše dokumenty zostávajú súkromné a nepoužívajú sa na trénovanie AI 
 ```
 
 ## 📦 Čo všetko môžete do NotebookLM nahrať?
@@ -114,11 +114,10 @@ Príklad:
 "Nájdi všetky zmienky o 'bezpečnosti dát' v mojich 10 PDF a zhrni ich do tabuľky."
 ```
 
----
-
-## 💼 Praktické scenáre pre školenie AI
+## Praktické scenáre pre školenie AI
 
 ### Scenár 1: Príprava lektora
+
 ```
 Úloha: Pripraviť podklady na školenie "Úvod do AI"
 
@@ -159,7 +158,8 @@ Postup:
 
 ## 🎨 Tipy pre efektívnu prácu s NotebookLM
 
-### ✅ Dobré praktiky
+### Dobré praktiky
+
 ```
 1. Buďte konkrétni v otázkach
    ❌ "O čom sú tieto dokumenty?"
@@ -194,7 +194,7 @@ Postup:
 
 ---
 
-## 🔐 Súkromie a bezpečnosť
+## Súkromie a bezpečnosť
 
 ```
 ✅ Vaše zdroje sa NEPOUŽÍVAJÚ na trénovanie verejných AI modelov [[14]]
@@ -202,12 +202,11 @@ Postup:
 ✅ Pre Workspace/školské účty platia prísnejšie firemné politiky
 ✅ Odpovede AI sú označené ako "môžu obsahovať chyby" – vždy overte
 
-🔧 Odporúčanie pre školenia:
+Odporúčanie pre školenia:
 • Používajte anonymizované alebo verejne dostupné materiály
 • Ak pracujete s firemnými dátami, konzultujte s IT oddelením
 ```
 
----
 
 ## 🧭 Rýchly cheat sheet pre účastníkov
 
