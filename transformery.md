@@ -5,15 +5,15 @@
 informácie – či už text, obrázky alebo zvuk – omnoho efektívnejšie ako predchádzajúce technológie.
 
 > 💡 **Jednoduchá metafora:**  
-> Predstavte si, že čítate dlhý román. Staršie AI modely čítali slovo po slove
-> a často „zabudli", čo bolo na začiatku.  
-> **Transformer** je ako čitateľ, ktorý dokáže naraz „vidieť" celú stránku, pochopiť
-> súvislosti medzi vzdialenými pasážami a okamžite vedieť, ktoré časti sú pre aktuálnu otázku dôležité.
+> Predstavte si, že čítate dlhý román. Staršie AI modely čítali slovo po slove  
+> a často „zabudli", čo bolo na začiatku. **Transformer** je ako čitateľ, ktorý dokáže naraz  
+> „vidieť" celú stránku, pochopiť súvislosti medzi vzdialenými pasážami a okamžite vedieť,  
+> ktoré časti sú pre aktuálnu otázku dôležité.  
 
 **Kľúčová myšlienka:**  
 
-> *„Attention Is All You Need"* (Pozornosť je všetko, čo potrebujete) – názov prelomovej práce Google
-> z roku 2017, ktorá predstavila Transformery.
+> *„Attention Is All You Need"* (Pozornosť je všetko, čo potrebujete) – názov prelomovej práce Google  
+> z roku 2017, ktorá predstavila Transformery.  
 
 
 ## Stručná história: Prečo bol rok 2017 taký dôležitý?
@@ -24,7 +24,8 @@ informácie – či už text, obrázky alebo zvuk – omnoho efektívnejšie ako
 | **2017** | 🔄 **Transformer** (Google) | Riešenie všetkých vyššie uvedených limitov |
 | **2018–dnes** | GPT, BERT, Llama, Gemini... | Masívne škálovanie, multimodalita, generatívna AI |
 
-> 🏆 **Fakt:** Všetky dnešné veľké jazykové modely (ChatGPT, Claude, Gemini, Llama) existujú **vďaka Transformerom**. Bez tejto architektúry by sme stále používali malé, obmedzené modely.
+> **Fakt:** Všetky dnešné veľké jazykové modely (ChatGPT, Claude, Gemini, Llama) existujú  
+> **vďaka Transformerom**. Bez tejto architektúry by sme stále používali malé, obmedzené modely.
 
 ---
 
@@ -44,9 +45,11 @@ Transformer:
   • Správne priradí "mäkká" → "deka" (alebo "kočka", podľa kontextu)
 ```
 
-> 🎯 **Zjednodušene:** Self-attention je ako keby každé slovo v texte malo „anténku", ktorou sa pýta ostatných slov: „Ste pre mňa dôležité? Ako veľmi?"
+> **Zjednodušene:** Self-attention je ako keby každé slovo v texte malo „anténku",
+> ktorou sa pýta ostatných slov: „Ste pre mňa dôležité? Ako veľmi?"
 
 ### 2. Paralelné spracovanie = Rýchlosť
+
 ```
 Staré modely (RNN): 
   Slovo 1 → Slovo 2 → Slovo 3 → ... (postupne, pomaly)
@@ -58,6 +61,7 @@ Transformer:
 - Tréning je **10–100× rýchlejší**
 
 ### 3. Škálovateľnosť = Viac dát + Viac výkonu = Lepší model
+
 ```
 Transformery majú unikátnu vlastnosť:
 Čím viac im dáte:
