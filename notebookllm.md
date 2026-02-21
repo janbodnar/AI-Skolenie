@@ -3,9 +3,9 @@
 **NotebookLM** je inteligentný výskumný asistent od Google, ktorý kombinuje vaše vlastné  
 dokumenty s výkonným AI modelom Gemini. 
 
-> **Jednoducho povedané:** Predstavte si, že máte osobného asistenta, ktorý si prečíta všetky
-> vaše PDF súbory, články a poznámky – a potom vám na ne vie odpovedať, zhrnúť ich alebo
-> vytvoriť nové materiály.
+> **Jednoducho povedané:** Predstavte si, že máte osobného asistenta, ktorý si prečíta všetky  
+> vaše PDF súbory, články a poznámky – a potom vám na ne vie odpovedať, zhrnúť ich alebo  
+> vytvoriť nové materiály.  
 
 ### Kľúčová výhoda oproti bežným chatbotom:
 
@@ -14,8 +14,6 @@ dokumenty s výkonným AI modelom Gemini.
 ✅ Každá odpoveď obsahuje CITÁCIE (vidíte, odkiaľ informácia pochádza)
 ✅ Vaše dokumenty zostávajú súkromné a nepoužívajú sa na trénovanie AI [[14]]
 ```
-
----
 
 ## 📦 Čo všetko môžete do NotebookLM nahrať?
 
@@ -28,9 +26,8 @@ dokumenty s výkonným AI modelom Gemini.
 | 📝 **Google Docs/Slides** | Tímové dokumenty, prezentácie, poznámky |
 | ✍️ **Vložený text** | Rýchle poznámky, e-maily, koncepty |
 
-> 💡 **Tip:** NotebookLM podporuje viac ako 80 jazykov a zvláda aj slovenčinu. [[14]]
+> 💡 **Tip:** NotebookLM podporuje viac ako 80 jazykov a zvláda aj slovenčinu a češtinu.
 
----
 
 ## 🚀 Ako začať – krok za krokom
 
@@ -225,7 +222,6 @@ Postup:
 | **Počúvať namiesto čítania** | Kliknúť na "Audio Overview" → stiahnuť MP3 |
 | **Zdieľať s tímom** | Tlačidlo "Zdieľať" → poslať odkaz kolegovi |
 
----
 
 ## 🎓 Záver: Prečo zaradiť NotebookLM do školenia AI?
 
@@ -245,8 +241,6 @@ Na začiatku školenia ukážte 5-minútovú live ukážku:
 3. Ukázať citáciu a vysvetliť princíp "grounded AI"
 4. Nechať účastníkov vyskúšať si to na vlastnom zariadení
 ```
-
----
 
 > 📌 **Praktická úloha pre účastníkov (10 min):**
 > 1. Prihláste sa do NotebookLM  
