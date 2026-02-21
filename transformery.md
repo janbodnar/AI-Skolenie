@@ -1,4 +1,4 @@
-# Kapitola: Transformery – Srdce modernej umelej inteligencie
+# Transformery – Srdce modernej umelej inteligencie
 
 
 **Transformer** je typ neurónovej siete, ktorý umožňuje AI modelom spracovávať a chápať  
