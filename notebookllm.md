@@ -145,7 +145,7 @@ Postup:
 
 ### Scenár 3: Tímová práca
 ```
-Úloha: Zdieľať poznatky z konferencie s koleгами
+Úloha: Zdieľať poznatky z konferencie s kolegами
 
 Postup:
 1. Jeden člen nahra: záznamy prednášok, PDF prezentácie, svoje poznámky
