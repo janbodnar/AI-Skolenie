@@ -11,45 +11,45 @@
 
 ## 1. ZAKLADATELIA (1940s–1960s)
 
-*Ľudia, ktorí položili teoretické základy*
+Ľudia, ktorí položili teoretické základy
 
 ### Alan Turing (1912–1954) 🇬🇧
 
 ```
-🎓 Matematik, logik, kryptograf
-💡 Kľúčový príspevok: Turingov test (1950)
-   → "Ak stroj dokáže konverzovať tak, že ho nerozoznáte od človeka, 
-      môžeme ho považovať za 'inteligentný'?"
+Matematik, logik, kryptograf
+-Kľúčový príspevok: Turingov test (1950)
+→ "Ak stroj dokáže konverzovať tak, že ho nerozoznáte od človeka, 
+   môžeme ho považovať za 'inteligentný'?"
 
-🏆 Ďalšie úspechy:
-   • Rozlúmenie Enigmy počas 2. svetovej vojny
-   • Teoretický model počítača: "Turingov stroj"
+-Ďalšie úspechy:
+• Rozlúmenie Enigmy počas 2. svetovej vojny
+• Teoretický model počítača: "Turingov stroj"
 
-🗣️ Citát: 
-   "Otázka nie je 'Môžu stroje myslieť?', ale 'Môžu stroje robiť to, 
-    čo my robíme, keď myslíme?'"
+-Citát: 
+"Otázka nie je 'Môžu stroje myslieť?', ale 'Môžu stroje robiť to, 
+ čo my robíme, keď myslíme?'"
 
-🎯 Prečo je dôležitý dnes:
-   • Každý chatbot sa implicitne meria podľa Turingovho testu
-   • Jeho práca je základom informatiky aj filozofie AI
+-Prečo je dôležitý dnes:
+• Každý chatbot sa implicitne meria podľa Turingovho testu
+• Jeho práca je základom informatiky aj filozofie AI
 ```
 
 ### John McCarthy (1927–2011) 🇺🇸
 
 ```
-🎓 Počítačový vedec, Stanford, MIT
-💡 Kľúčový príspevok: Vymyslel termín "Artificial Intelligence" (1956)
+- Počítačový vedec, Stanford, MIT
+- Kľúčový príspevok: Vymyslel termín "Artificial Intelligence" (1956)
    → Organizoval Dartmouthskú konferenciu – zrod AI ako vedeckého odboru
 
-🏆 Ďalšie úspechy:
+- Ďalšie úspechy:
    • Vytvoril programovací jazyk LISP (dominantný v ranom AI výskume)
    • Koncept "časového zdieľania" (predchodca cloudu)
 
-🗣️ Citát:
+- Citát:
    "Každý aspekt učenia alebo iný znak inteligencie môže v princípe 
     byť tak presne popísaný, že ho možno simulovať strojom."
 
-🎯 Prečo je dôležitý dnes:
+- Prečo je dôležitý dnes:
    • Bez neho by sme nemali ani názov "AI", ani rané nástroje na jej vývoj
 ```
 
@@ -274,7 +274,6 @@
    • Jeho rozhodnutia priamo ovplyvňujú, kto má prístup k najvýkonnejším modelom
 ```
 
-
 ## 🌍 Slovenská a stredoeurópska stopa v AI
 
 ```
@@ -298,30 +297,6 @@ Mnoho slovenských výskumníkov pracuje v globálnych tímoch:
 > 💡 **Motivačný fakt:** Aj malá krajina môže mať veľký vplyv – dôležité je vzdelanie,
 > angličtina a ochota spolupracovať globálne.
 
----
-
-## Lekcie z životov priekopníkov
-
-### Čo mali spoločné?
-```
-🔹 Hlboká zvedavosť – pýtali sa "prečo?" a "čo ak?"
-🔹 Odolnosť – mnohí pracovali na myšlienkach, ktoré boli roky ignorované
-🔹 Interdisciplinarita – spájali matematiku, neurovedu, filozofiu, inžinierstvo
-🔹 Spolupráca – žiadny veľký pokrok nevznikol v izolácii
-🔹 Etické uvažovanie – väčšina neskôr riešila otázky bezpečnosti a dopadu
-```
-
-###  Čo nás učia ich chyby?
-```
-🔹 "AI winter" (70s–80s): Prílišné sľuby → strata dôvery → pokles financovania
-   → Lekcia: Buďte realistickí v komunikácii očakávaní
-
-🔹 Bias v dátach: Systémy odrážajú predsudky svojich tvorcov
-   → Lekcia: Diverzita v tímoch = robustnejšie AI
-
-🔹 Závod o výkon vs. bezpečnosť: Niektoré rozhodnutia sa robia pod tlakom
-   → Lekcia: Etika musí byť súčasťou dizajnu, nie dodatočná kontrola
-```
 
 
 ## Rýchly prehľad
@@ -344,9 +319,3 @@ Mnoho slovenských výskumníkov pracuje v globálnych tímoch:
 - Najväčší pokrok vznikol na priesečníku disciplín a spolupráce
 - Etika a zodpovednosť sú rovnako dôležité ako technická excelencia
 - História nie je len minulosť – pomáha nám robiť lepšie rozhodnutia dnes
-
-
-
----
-
-Chcete, aby som pridal **pracovný list s časovou osou na vyplnenie** alebo **kvíz na opakovanie mien a príspevkov** pre účastníkov? 🎓✨
