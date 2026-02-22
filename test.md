@@ -80,3 +80,18 @@ graph TD
     Myshkin --- Ippolit
     Myshkin --- Lebedev
 ```
+
+
+
+
+## 🧠 Which one should *you* choose?
+
+Here’s a quick decision guide:
+
+| Goal | Best Mermaid Diagram |
+|------|-----------------------|
+| Show character traits & structured info | **Class Diagram** |
+| Show relationships between characters | **Flowchart** |
+| Show character arc over time | **Timeline** |
+| Show emotional/psychological evolution | **State Diagram** |
+
