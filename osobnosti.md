@@ -1,4 +1,4 @@
-# Kapitola: Osobnosti v histórii umelej inteligencie
+# Osobnosti v histórii umelej inteligencie
 
 ## Časová os: Éry a ich protagonisti
 
@@ -278,21 +278,21 @@
 ## 🌍 Slovenská a stredoeurópska stopa v AI
 
 ```
-🔹 Juraj Šifra (Slovensko)
-   • Výskum v oblasti NLP a strojového prekladu
-   • Spolupráca s EÚ projektmi na jazykových technológiách
+Juraj Šifra (Slovensko)
+• Výskum v oblasti NLP a strojového prekladu
+• Spolupráca s EÚ projektmi na jazykových technológiách
 
-🔹 Roman Barták (Česko)
-   • Expert na plánovanie a obmedzené splniteľnostné problémy (CSP)
-   • Aplikácie v logistike a automatizácii
+Roman Barták (Česko)
+• Expert na plánovanie a obmedzené splniteľnostné problémy (CSP)
+• Aplikácie v logistike a automatizácii
 
-🔹 Péter Érdi (Maďarsko)
-   • Neurovedec a komplexný systémový teoretik
-   • Práca na modeloch kognitívnych procesov
+Péter Érdi (Maďarsko)
+• Neurovedec a komplexný systémový teoretik
+• Práca na modeloch kognitívnych procesov
 
-🔹 Mnoho slovenských výskumníkov pracuje v globálnych tímoch:
-   • Google DeepMind, Meta AI, OpenAI, Microsoft Research
-   • Prispievajú k vývoju modelov, etike, bezpečnosti
+Mnoho slovenských výskumníkov pracuje v globálnych tímoch:
+• Google DeepMind, Meta AI, OpenAI, Microsoft Research
+• Prispievajú k vývoju modelov, etike, bezpečnosti
 ```
 
 > 💡 **Motivačný fakt:** Aj malá krajina môže mať veľký vplyv – dôležité je vzdelanie,
