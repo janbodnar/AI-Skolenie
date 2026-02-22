@@ -9,7 +9,7 @@
 2012–dnes:   Škálovači   → Čo keď dáme modelu miliardy parametrov?
 ```
 
-## 1. ZAKLADATELIA (1940s–1960s)
+## 1. Zakladatelia (1940s–1960s)
 
 Ľudia, ktorí položili teoretické základy
 
