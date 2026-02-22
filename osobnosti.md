@@ -3,10 +3,10 @@
 ## Časová os: Éry a ich protagonisti
 
 ```
-1940s–1960s: ZAKLADATELIA → "Môžeme vytvoriť mysliaci stroj?"
-1970s–1980s: PRAKTIKovia → "Ako AI nasadiť v reálnom svete?"
-1990s–2010s: REVIVALISTI → "Dáta + výpočty = nový začiatok"
-2012–dnes:   ŠKÁLOVAČI   → "Čo keď dáme modelu miliardy parametrov?"
+1940s–1960s: Zakladatelia → "Môžeme vytvoriť mysliaci stroj?"
+1970s–1980s: Praktikovia → "Ako AI nasadiť v reálnom svete?"
+1990s–2010s: Revivalisti → "Dáta + výpočty = nový začiatok"
+2012–dnes:   Škálovači   → "Čo keď dáme modelu miliardy parametrov?"
 ```
 
 ## 1. ZAKLADATELIA (1940s–1960s)
