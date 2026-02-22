@@ -3,6 +3,7 @@
 
 ## Chart of Idiot's characters
 
+```mermaid
 graph TD
     %% Central Characters
     Myshkin((Prince Myshkin))
@@ -56,3 +57,4 @@ graph TD
     %% Philosophers/Schemers
     Myshkin --- Ippolit
     Myshkin --- Lebedev
+```
