@@ -143,8 +143,10 @@ Prečo je dôležitý dnes:
 ### Geoffrey Hinton (1947–) 🇬🇧🇨🇦
 
 ```
-"Krstný otec hlbokého učenia", University of Toronto, Google
+Krstný otec hlbokého učenia, University of Toronto, Google
+
 Kľúčový príspevok: Backpropagation, deep belief networks, AlexNet (2012)
+
 • Ukázal, že hlboké neurónové siete môžu dominovať v ImageNet súťaži
 
 Ďalšie úspechy:
@@ -164,39 +166,41 @@ Prečo je dôležitý dnes:
 ### Yann LeCun (1960–) 🇫🇷🇺🇸
 
 ```
-- Priekopník konvolučných neurónových sietí (CNN), Meta AI, NYU
-- Kľúčový príspevok: CNN pre rozpoznávanie obrázkov (1998)
-   • LeNet-5: prvá úspešná AI na čítanie rukopisných číslic (bankové šeky)
+Priekopník konvolučných neurónových sietí (CNN), Meta AI, NYU
 
-- Ďalšie úspechy:
-   • Šéf AI v Meta (Facebook) – vývoj PyTorch, Llama modelov
-   • Silný zástanca open-source AI
+Kľúčový príspevok: CNN pre rozpoznávanie obrázkov (1998)
+• LeNet-5: prvá úspešná AI na čítanie rukopisných číslic (bankové šeky)
 
-- Citát:
-   "AI nebude 'vedomá' – bude to nástroj, ako automobil alebo elektrina."
+Ďalšie úspechy:
+• Šéf AI v Meta (Facebook) – vývoj PyTorch, Llama modelov
+• Silný zástanca open-source AI
 
-- Prečo je dôležitý dnes:
-   • CNN sú základom počítačového videnia v autách, medicíne, bezpečnosti
-   • Jeho open-source filozofia formuje prístup k zdieľaniu modelov
+Citát:
+"AI nebude 'vedomá' – bude to nástroj, ako automobil alebo elektrina."
+
+Prečo je dôležitý dnes:
+• CNN sú základom počítačového videnia v autách, medicíne, bezpečnosti
+• Jeho open-source filozofia formuje prístup k zdieľaniu modelov
 ```
 
 ### Yoshua Bengio (1964–) 🇨🇦
 
 ```
-- Expert na sekvenčné modely a reprezentácie, University of Montreal
-- Kľúčový príspevok: Výskum v oblasti word embeddings, generatívnych modelov
+Expert na sekvenčné modely a reprezentácie, University of Montreal
+
+Kľúčový príspevok: Výskum v oblasti word embeddings, generatívnych modelov
    • Spoluzakladateľ Element AI (kúpené ServiceNow) a Mila AI inštitútu
 
 - Ďalšie úspechy:
-   • Silný hlas v etike AI a regulácii
-   • Turingova cena (2018)
+• Silný hlas v etike AI a regulácii
+• Turingova cena (2018)
 
-- Citát:
-   "Musíme zabezpečiť, aby AI slúžila ľudstvu, nie naopak."
+Citát:
+ "Musíme zabezpečiť, aby AI slúžila ľudstvu, nie naopak."
 
-🎯 Prečo je dôležitý dnes:
-   • Jeho práca na reprezentáciách jazyka je základom moderných LLM
-   • Aktívne formuje globálnu diskusiu o bezpečnosti AI
+Prečo je dôležitý dnes:
+• Jeho práca na reprezentáciách jazyka je základom moderných LLM
+• Aktívne formuje globálnu diskusiu o bezpečnosti AI
 ```
 
 > 🏆 **"Trio Turingovej ceny"**: Hinton + LeCun + Bengio = "Godfathers of Deep Learning"
@@ -209,100 +213,78 @@ Prečo je dôležitý dnes:
 ###  Ilya Sutskever (1986–) 🇷🇺🇨🇦🇺🇸
 
 ```
-- Spoluzakladateľ a bývalý hlavný vedec OpenAI
-- Kľúčový príspevok: Spoluautor práce "Attention Is All You Need" (2017)
-   • Architekt GPT-1, GPT-2, GPT-3, GPT-4
+Spoluzakladateľ a bývalý hlavný vedec OpenAI
+Kľúčový príspevok: Spoluautor práce "Attention Is All You Need" (2017)
+• Architekt GPT-1, GPT-2, GPT-3, GPT-4
 
-- Ďalšie úspechy:
-   • Presvedčil OpenAI, že škálovanie modelov je cesta vpred
-   • Založil Safe Superintelligence (SSI) po odchode z OpenAI
+Ďalšie úspechy:
+• Presvedčil OpenAI, že škálovanie modelov je cesta vpred
+• Založil Safe Superintelligence (SSI) po odchode z OpenAI
 
-- Citát:
-   "Ak chceme bezpečnú superinteligenciu, musíme ju vedieť aj vytvoriť."
+Citát:
+"Ak chceme bezpečnú superinteligenciu, musíme ju vedieť aj vytvoriť."
 
-- Prečo je dôležitý dnes:
-   • Priamo formoval architektúru ChatGPT a éru generatívnej AI
+Prečo je dôležitý dnes:
+• Priamo formoval architektúru ChatGPT a éru generatívnej AI
 ```
 
 ### Demis Hassabis (1976–) 🇬🇧
 
 ```
-- Neurovedec, šachový veľmajster, spoluzakladateľ DeepMind (Google)
-- Kľúčový príspevok: AlphaGo (2016), AlphaFold (2020)
-   • AlphaGo: prvá AI, ktorá porazila svetového šampióna v Go
-   • AlphaFold: riešenie 50-ročného problému skladania proteínov
+Neurovedec, šachový veľmajster, spoluzakladateľ DeepMind (Google)
 
-- Ďalšie úspechy:
-   • Spojenie neurovedy a AI: "Inšpirujme sa mozgom"
-   • Nobelova cena za chémiu 2024 (tím AlphaFold)
+Kľúčový príspevok: AlphaGo (2016), AlphaFold (2020)
+• AlphaGo: prvá AI, ktorá porazila svetového šampióna v Go
+• AlphaFold: riešenie 50-ročného problému skladania proteínov
 
-- Citát:
-   "Riešime inteligenciu, aby sme ju mohli použiť na riešenie všetkého ostatného."
+Ďalšie úspechy:
+• Spojenie neurovedy a AI: "Inšpirujme sa mozgom"
+• Nobelova cena za chémiu 2024 (tím AlphaFold)
 
-- Prečo je dôležitý dnes:
-   • Ukázal, že AI môže riešiť fundamentálne vedecké problémy
+Citát:
+"Riešime inteligenciu, aby sme ju mohli použiť na riešenie všetkého ostatného."
+
+Prečo je dôležitý dnes:
+• Ukázal, že AI môže riešiť fundamentálne vedecké problémy
 ```
 
 ### Fei-Fei Li (1976–) 🇨🇳🇺🇸
 
 ```
-- Priekopníčka počítačového videnia, Stanford, ex-šéfka AI v Google Cloud
-- Kľúčový príspevok: ImageNet (2009) – dataset s 14 miliónmi obrázkov
-   • Umožnila "veľký tresk" v trénovaní CNN modelov
+Priekopníčka počítačového videnia, Stanford, ex-šéfka AI v Google Cloud
 
-- Ďalšie úspechy:
-   • Založila AI4ALL – neziskovku na podporu diverzity v AI
-   • Silná advocate pre human-centered AI
+Kľúčový príspevok: ImageNet (2009) – dataset s 14 miliónmi obrázkov
+• Umožnila "veľký tresk" v trénovaní CNN modelov
 
-- Citát:
-   "AI nie je len o algoritmoch – je o ľuďoch, dátach a hodnotách."
+Ďalšie úspechy:
+• Založila AI4ALL – neziskovku na podporu diverzity v AI
+• Silná advocate pre human-centered AI
 
-- Prečo je dôležitá dnes:
-   • Bez ImageNet by nebol "deep learning boom" po roku 2012
-   • Jej práca formuje etický a inkluzívny rozvoj AI
+Citát:
+"AI nie je len o algoritmoch – je o ľuďoch, dátach a hodnotách."
+
+Prečo je dôležitá dnes:
+• Bez ImageNet by nebol "deep learning boom" po roku 2012
+• Jej práca formuje etický a inkluzívny rozvoj AI
 ```
 
 ### Sam Altman (1985–) 🇺🇸
 
 ```
-- Podnikateľ, CEO OpenAI
-- Kľúčový príspevok: Komercializácia a masové nasadenie LLM
-   • Launch ChatGPT (november 2022) – moment, keď AI vstúpila do mainstreamu
+Podnikateľ, CEO OpenAI
+Kľúčový príspevok: Komercializácia a masové nasadenie LLM
+• Launch ChatGPT (november 2022) – moment, keď AI vstúpila do mainstreamu
 
-- Ďalšie úspechy:
-   • Získal miliardy investícií pre výskum AGI
-   • Formuje globálnu diskusiu o regulácii AI
+Ďalšie úspechy:
+• Získal miliardy investícií pre výskum AGI
+• Formuje globálnu diskusiu o regulácii AI
 
-- Citát:
-   "Chceme, aby AGI prospievala celému ľudstvu."
+Citát:
+ "Chceme, aby AGI prospievala celému ľudstvu."
 
-- Prečo je dôležitý dnes:
-   • Jeho rozhodnutia priamo ovplyvňujú, kto má prístup k najvýkonnejším modelom
+Prečo je dôležitý dnes:
+• Jeho rozhodnutia priamo ovplyvňujú, kto má prístup k najvýkonnejším modelom
 ```
-
-## 🌍 Slovenská a stredoeurópska stopa v AI
-
-```
-Juraj Šifra (Slovensko)
-• Výskum v oblasti NLP a strojového prekladu
-• Spolupráca s EÚ projektmi na jazykových technológiách
-
-Roman Barták (Česko)
-• Expert na plánovanie a obmedzené splniteľnostné problémy (CSP)
-• Aplikácie v logistike a automatizácii
-
-Péter Érdi (Maďarsko)
-• Neurovedec a komplexný systémový teoretik
-• Práca na modeloch kognitívnych procesov
-
-Mnoho slovenských výskumníkov pracuje v globálnych tímoch:
-• Google DeepMind, Meta AI, OpenAI, Microsoft Research
-• Prispievajú k vývoju modelov, etike, bezpečnosti
-```
-
-> 💡 **Motivačný fakt:** Aj malá krajina môže mať veľký vplyv – dôležité je vzdelanie,
-> angličtina a ochota spolupracovať globálne.
-
 
 
 ## Rýchly prehľad
