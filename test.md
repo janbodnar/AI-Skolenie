@@ -22,6 +22,37 @@ timeline
     Epilogue : The Aftermath : Rogozhin is sent to Siberia. Myshkin returns to a state of idiocy in Switzerland.
 ```
 
+## Relationships
+
+```mermaid
+flowchart TB
+
+    Myshkin["Prince Myshkin"]
+    Nastasya["Nastasya Filippovna"]
+    Rogozhin["Parfyon Rogozhin"]
+    Aglaya["Aglaya Epanchin"]
+    Epanchins["The Epanchin Family"]
+
+    %% Core triangle
+    Myshkin -->|compassion / desire to save| Nastasya
+    Nastasya -->|drawn to| Myshkin
+
+    Nastasya -->|obsessive love| Rogozhin
+    Rogozhin -->|violent jealousy| Myshkin
+
+    %% Myshkin & Aglaya
+    Myshkin -->|idealized affection| Aglaya
+    Aglaya -->|romantic interest| Myshkin
+
+    %% Aglaya & Nastasya tension
+    Aglaya -->|rivalry / contempt| Nastasya
+    Nastasya -->|provokes / challenges| Aglaya
+
+    %% Epanchins
+    Epanchins -->|support / social pressure| Aglaya
+    Epanchins -->|admiration & concern| Myshkin
+```
+
 
 ## Chart of Idiot's characters
 
