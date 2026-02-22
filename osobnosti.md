@@ -18,19 +18,19 @@
 ```
 Matematik, logik, kryptograf
 
-- Kľúčový príspevok: Turingov test (1950)
+Kľúčový príspevok: Turingov test (1950)
 • "Ak stroj dokáže konverzovať tak, že ho nerozoznáte od človeka, 
 •  môžeme ho považovať za 'inteligentný'?"
 
-- Ďalšie úspechy:
+Ďalšie úspechy:
 • Rozlúmenie Enigmy počas 2. svetovej vojny
 • Teoretický model počítača: "Turingov stroj"
 
-- Citát: 
+Citát: 
 "Otázka nie je 'Môžu stroje myslieť?', ale 'Môžu stroje robiť to, 
  čo my robíme, keď myslíme?'"
 
-- Prečo je dôležitý dnes:
+Prečo je dôležitý dnes:
 • Každý chatbot sa implicitne meria podľa Turingovho testu
 • Jeho práca je základom informatiky aj filozofie AI
 ```
@@ -38,127 +38,127 @@ Matematik, logik, kryptograf
 ### John McCarthy (1927–2011) 🇺🇸
 
 ```
-- Počítačový vedec, Stanford, MIT
-- Kľúčový príspevok: Vymyslel termín "Artificial Intelligence" (1956)
-   • Organizoval Dartmouthskú konferenciu – zrod AI ako vedeckého odboru
+Počítačový vedec, Stanford, MIT
 
-- Ďalšie úspechy:
-   • Vytvoril programovací jazyk LISP (dominantný v ranom AI výskume)
-   • Koncept "časového zdieľania" (predchodca cloudu)
+Kľúčový príspevok: Vymyslel termín "Artificial Intelligence" (1956)
+• Organizoval Dartmouthskú konferenciu – zrod AI ako vedeckého odboru
 
-- Citát:
-   "Každý aspekt učenia alebo iný znak inteligencie môže v princípe 
-    byť tak presne popísaný, že ho možno simulovať strojom."
+Ďalšie úspechy:
+• Vytvoril programovací jazyk LISP (dominantný v ranom AI výskume)
+• Koncept "časového zdieľania" (predchodca cloudu)
 
-- Prečo je dôležitý dnes:
-   • Bez neho by sme nemali ani názov "AI", ani rané nástroje na jej vývoj
+Citát:
+"Každý aspekt učenia alebo iný znak inteligencie môže v princípe 
+ byť tak presne popísaný, že ho možno simulovať strojom."
+
+Prečo je dôležitý dnes:
+• Bez neho by sme nemali ani názov "AI", ani rané nástroje na jej vývoj
 ```
 
 ### Marvin Minsky (1927–2016) 🇺🇸
 
 ```
-- Spoluzakladateľ AI laboratória na MIT
-- Kľúčový príspevok: Prvé neurónové siete, perceptrony, robotika
-   • Kniha: "Perceptrons" (1969) – kritika jednoduchých neurónových sietí
-   • Paradoxne spomalila výskum NN, ale prinútila komunitu hľadať hlbšie riešenia
+Spoluzakladateľ AI laboratória na MIT
+Kľúčový príspevok: Prvé neurónové siete, perceptrony, robotika
+• Kniha: "Perceptrons" (1969) – kritika jednoduchých neurónových sietí
+• Paradoxne spomalila výskum NN, ale prinútila komunitu hľadať hlbšie riešenia
 
-- Ďalšie úspechy:
-   • Konštrukcia prvých robotických rúk a konfokálneho mikroskopu
-   • Mentor pre generáciu AI výskumníkov
+Ďalšie úspechy:
+• Konštrukcia prvých robotických rúk a konfokálneho mikroskopu
+• Mentor pre generáciu AI výskumníkov
 
-- Citát:
-   "Inteligencia nie je jedna vec – je to tisíce malých trikov."
+Citát:
+"Inteligencia nie je jedna vec – je to tisíce malých trikov."
 
-- Prečo je dôležitý dnes:
-   • Jeho skepsa voči jednoduchým riešeniam nás učí pokore a hĺbke
+Prečo je dôležitý dnes:
+• Jeho skepsa voči jednoduchým riešeniam nás učí pokore a hĺbke
 ```
 
 ### Arthur Samuel (1901–1990) 🇺🇸
 
 ```
-- Priekopník strojového učenia, IBM
-- Kľúčový príspevok: Prvý program, ktorý sa „učil" – dáma/checkers (1959)
-   • Definícia: "Machine learning is the field of study that gives 
-     computers the ability to learn without being explicitly programmed."
+Priekopník strojového učenia, IBM
+Kľúčový príspevok: Prvý program, ktorý sa „učil" – dáma/checkers (1959)
+ • Definícia: "Machine learning is the field of study that gives 
+   computers the ability to learn without being explicitly programmed."
 
-- Ďalšie úspechy:
-   • Ukázal, že stroj môže prekonať svojho tvorcu v hre cez self-play
+Ďalšie úspechy:
+ • Ukázal, že stroj môže prekonať svojho tvorcu v hre cez self-play
 
-- Citát:
-   "Program, ktorý dokáže prehrať, ale poučiť sa z prehry, je krok 
-    k inteligencii."
+Citát:
+ "Program, ktorý dokáže prehrať, ale poučiť sa z prehry, je krok 
+  k inteligencii."
 
-- Prečo je dôležitý dnes:
-   • Princíp "učenia z dát" je základom všetkých moderných LLM
+Prečo je dôležitý dnes:
+ • Princíp "učenia z dát" je základom všetkých moderných LLM
 ```
 
 
-## 2. PRAKTIKovia (1970s–1980s)
+## 2. Praktici (1970s–1980s)
 
-*Ľudia, ktorí priniesli AI do praxe*
+Ľudia, ktorí priniesli AI do praxe
 
 ### Edward Feigenbaum (1936–) 🇺🇸
 
 ```
-- "Otec expertných systémov", Stanford
-- Kľúčový príspevok: Expertné systémy (MYCIN, DENDRAL)
-   • Prvé AI, ktoré riešili reálne problémy: diagnóza infekcií, analýza chemických zlúčenín
+"Otec expertných systémov", Stanford
 
-- Ďalšie úspechy:
-   • Ukázal, že AI môže mať ekonomickú hodnotu
-   • Založil Knowledge Systems Laboratory
+Kľúčový príspevok: Expertné systémy (MYCIN, DENDRAL)
+• Prvé AI, ktoré riešili reálne problémy: diagnóza infekcií, analýza chemických zlúčenín
 
-- Citát:
-   "Sila AI nie je v univerzálnej inteligencii, ale v hlbokých 
-    špecializovaných znalostiach."
+Ďalšie úspechy:
+• Ukázal, že AI môže mať ekonomickú hodnotu
+• Založil Knowledge Systems Laboratory
 
-- Prečo je dôležitý dnes:
-   • Princíp "knowledge base + inference engine" žije v RAG systémoch a špecializovaných AI
+Citát:
+"Sila AI nie je v univerzálnej inteligencii, ale v hlbokých 
+ špecializovaných znalostiach."
+
+Prečo je dôležitý dnes:
+• Princíp "knowledge base + inference engine" žije v RAG systémoch a špecializovaných AI
 ```
 
 ### Judea Pearl (1936–) 🇮🇱🇺🇸
 
 ```
-- Priekopník pravdepodobnostného usudzovania, UCLA
-- Kľúčový príspevok: Bayesovské siete, kauzalita
-   • Kniha: "Causality" (2000) – prechod od korelácie k príčine
+Priekopník pravdepodobnostného usudzovania, UCLA
+Kľúčový príspevok: Bayesovské siete, kauzalita
+• Kniha: "Causality" (2000) – prechod od korelácie k príčine
 
-- Ďalšie úspechy:
-   • Turingova cena (2011) za fundamentálny prínos k AI
-   • Kritika čisto dátového prístupu: "AI potrebuje pochopiť príčinu, nie len vzory"
+Ďalšie úspechy:
+• Turingova cena (2011) za fundamentálny prínos k AI
+• Kritika čisto dátového prístupu: "AI potrebuje pochopiť príčinu, nie len vzory"
 
-- Citát:
-   "Data do not understand causes and effects. Humans do."
+Citát:
+"Data do not understand causes and effects. Humans do."
 
-- Prečo je dôležitý dnes:
-   • Kauzálne modely sú kľúčové pre robustné, vysvetliteľné AI v medicíne, práve, politike
+Prečo je dôležitý dnes:
+• Kauzálne modely sú kľúčové pre robustné, vysvetliteľné AI v medicíne, práve, politike
 ```
 
----
+## 3. Revivalisti (1990s–2010s)
 
-## 3. REVIVALISTI (1990s–2010s)
-
-*Ľudia, ktorí oživili neurónové siete*
+Ľudia, ktorí oživili neurónové siete
 
 ### Geoffrey Hinton (1947–) 🇬🇧🇨🇦
 
 ```
-- "Krstný otec hlbokého učenia", University of Toronto, Google
-- Kľúčový príspevok: Backpropagation, deep belief networks, AlexNet (2012)
-   • Ukázal, že hlboké neurónové siete môžu dominovať v ImageNet súťaži
+"Krstný otec hlbokého učenia", University of Toronto, Google
+Kľúčový príspevok: Backpropagation, deep belief networks, AlexNet (2012)
+• Ukázal, že hlboké neurónové siete môžu dominovať v ImageNet súťaži
 
-- Ďalšie úspechy:
-   • Mentor pre tisíce výskumníkov (vrátane Sutskevera, ktorého neskôr nasledoval do OpenAI)
-   • Turingova cena (2018) spolu s LeCunom a Bengiom
+Ďalšie úspechy:
+• Mentor pre tisíce výskumníkov (vrátane Sutskevera, ktorého neskôr nasledoval do OpenAI)
+• Turingova cena (2018) spolu s LeCunom a Bengiom
 
-- Citát:
-   "Intuícia je len veľmi rýchle rozpoznávanie vzorov."
+Citát:
+"Intuícia je len veľmi rýchle rozpoznávanie vzorov."
 
-- Zaujímavosť:
-   • V roku 2023 verejne varoval pred rizikami AI, ktoré pomohol vytvoriť
+Zaujímavosť:
+• V roku 2023 verejne varoval pred rizikami AI, ktoré pomohol vytvoriť
 
-🎯 Prečo je dôležitý dnes:
-   • Bez jeho vytrvalosti by hlboké učenie možno zostalo na okraji záujmu
+Prečo je dôležitý dnes:
+• Bez jeho vytrvalosti by hlboké učenie možno zostalo na okraji záujmu
 ```
 
 ### Yann LeCun (1960–) 🇫🇷🇺🇸
