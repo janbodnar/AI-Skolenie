@@ -1,6 +1,6 @@
 # Osobnosti v histórii umelej inteligencie
 
-## Časová os: Éry a ich protagonisti
+## Časová os
 
 ```
 1940s–1960s: Zakladatelia → Vizionári, môžeme vytvoriť mysliaci stroj?
