@@ -59,6 +59,7 @@ Prečo je dôležitý dnes:
 
 ```
 Spoluzakladateľ AI laboratória na MIT
+
 Kľúčový príspevok: Prvé neurónové siete, perceptrony, robotika
 • Kniha: "Perceptrons" (1969) – kritika jednoduchých neurónových sietí
 • Paradoxne spomalila výskum NN, ale prinútila komunitu hľadať hlbšie riešenia
@@ -78,6 +79,7 @@ Prečo je dôležitý dnes:
 
 ```
 Priekopník strojového učenia, IBM
+
 Kľúčový príspevok: Prvý program, ktorý sa „učil" – dáma/checkers (1959)
  • Definícia: "Machine learning is the field of study that gives 
    computers the ability to learn without being explicitly programmed."
@@ -101,7 +103,7 @@ Prečo je dôležitý dnes:
 ### Edward Feigenbaum (1936–) 🇺🇸
 
 ```
-"Otec expertných systémov", Stanford
+Otec expertných systémov, Stanford
 
 Kľúčový príspevok: Expertné systémy (MYCIN, DENDRAL)
 • Prvé AI, ktoré riešili reálne problémy: diagnóza infekcií, analýza chemických zlúčenín
@@ -208,7 +210,7 @@ Prečo je dôležitý dnes:
 
 ## 4. Škálovači (2012–dnes)
 
-*Ľudia, ktorí priniesli AI do masového použitia*
+Ľudia, ktorí priniesli AI do masového použitia
 
 ###  Ilya Sutskever (1986–) 🇷🇺🇨🇦🇺🇸
 
@@ -272,6 +274,7 @@ Prečo je dôležitá dnes:
 
 ```
 Podnikateľ, CEO OpenAI
+
 Kľúčový príspevok: Komercializácia a masové nasadenie LLM
 • Launch ChatGPT (november 2022) – moment, keď AI vstúpila do mainstreamu
 
