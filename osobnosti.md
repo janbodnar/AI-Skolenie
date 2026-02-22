@@ -1,17 +1,23 @@
 # Osobnosti v histórii umelej inteligencie
 
 ## Časová os
-
 ```
 1940s–1960s: Zakladatelia → Vizionári, môžeme vytvoriť mysliaci stroj?
 1970s–1980s: Praktikovia → Ako AI nasadiť v reálnom svete?
 1990s–2010s: Revivalisti → Dáta + výpočty = nový začiatok
-2012–dnes:   Škálovači   → Čo keď dáme modelu miliardy parametrov?
+2012–dnes: Škálovači → Čo keď dáme modelu miliardy parametrov?
 ```
+
+AI prešla viacerými vlnami nadšenia aj sklamania (tzv. AI zimy).  
+Každá éra priniesla iný dominantný prístup a iný typ osobností.  
+Dnešný boom by nebol možný bez desaťročí tvrdej, často nepopulárnej práce.
 
 ## 1. Zakladatelia (1940s–1960s)
 
-Ľudia, ktorí položili teoretické základy
+Ľudia, ktorí položili teoretické základy  
+V tejto dobe neexistovali výkonné počítače – uvažovalo sa hlavne teoreticky a filozoficky.  
+Mnohé ich myšlienky boli desaťročia vopred pred technickými možnosťami.  
+Práve oni definovali, o čom vôbec AI môže byť.
 
 ### Alan Turing (1912–1954) 🇬🇧
 
@@ -19,15 +25,15 @@
 Matematik, logik, kryptograf
 
 Kľúčový príspevok: Turingov test (1950)
-• "Ak stroj dokáže konverzovať tak, že ho nerozoznáte od človeka, 
-•  môžeme ho považovať za 'inteligentný'?"
+• "Ak stroj dokáže konverzovať tak, že ho nerozoznáte od človeka,
+• môžeme ho považovať za 'inteligentný'?"
 
 Ďalšie úspechy:
 • Rozlúmenie Enigmy počas 2. svetovej vojny
 • Teoretický model počítača: "Turingov stroj"
 
-Citát: 
-"Otázka nie je 'Môžu stroje myslieť?', ale 'Môžu stroje robiť to, 
+Citát:
+"Otázka nie je 'Môžu stroje myslieť?', ale 'Môžu stroje robiť to,
  čo my robíme, keď myslíme?'"
 
 Prečo je dôležitý dnes:
@@ -48,7 +54,7 @@ Kľúčový príspevok: Vymyslel termín "Artificial Intelligence" (1956)
 • Koncept "časového zdieľania" (predchodca cloudu)
 
 Citát:
-"Každý aspekt učenia alebo iný znak inteligencie môže v princípe 
+"Každý aspekt učenia alebo iný znak inteligencie môže v princípe
  byť tak presne popísaný, že ho možno simulovať strojom."
 
 Prečo je dôležitý dnes:
@@ -81,24 +87,25 @@ Prečo je dôležitý dnes:
 Priekopník strojového učenia, IBM
 
 Kľúčový príspevok: Prvý program, ktorý sa „učil" – dáma/checkers (1959)
- • Definícia: "Machine learning is the field of study that gives 
+ • Definícia: "Machine learning is the field of study that gives
    computers the ability to learn without being explicitly programmed."
 
 Ďalšie úspechy:
  • Ukázal, že stroj môže prekonať svojho tvorcu v hre cez self-play
 
 Citát:
- "Program, ktorý dokáže prehrať, ale poučiť sa z prehry, je krok 
-  k inteligencii."
+ Program, ktorý dokáže prehrať, ale poučiť sa z prehry, je krok k inteligencii.
 
 Prečo je dôležitý dnes:
  • Princíp "učenia z dát" je základom všetkých moderných LLM
 ```
 
-
 ## 2. Praktici (1970s–1980s)
 
-Ľudia, ktorí priniesli AI do praxe
+Ľudia, ktorí priniesli AI do praxe  
+Po prvom nadšení prišla „AI zima“ – výrazný pokles financií.  
+Títo výskumníci sa sústredili na úzke, ale komerčne využiteľné systémy.  
+Práve oni dokázali, že AI môže zarábať peniaze.
 
 ### Edward Feigenbaum (1936–) 🇺🇸
 
@@ -113,8 +120,7 @@ Kľúčový príspevok: Expertné systémy (MYCIN, DENDRAL)
 • Založil Knowledge Systems Laboratory
 
 Citát:
-"Sila AI nie je v univerzálnej inteligencii, ale v hlbokých 
- špecializovaných znalostiach."
+Sila AI nie je v univerzálnej inteligencii, ale v hlbokých špecializovaných znalostiach.
 
 Prečo je dôležitý dnes:
 • Princíp "knowledge base + inference engine" žije v RAG systémoch a špecializovaných AI
@@ -124,7 +130,9 @@ Prečo je dôležitý dnes:
 
 ```
 Priekopník pravdepodobnostného usudzovania, UCLA
+
 Kľúčový príspevok: Bayesovské siete, kauzalita
+
 • Kniha: "Causality" (2000) – prechod od korelácie k príčine
 
 Ďalšie úspechy:
@@ -140,13 +148,15 @@ Prečo je dôležitý dnes:
 
 ## 3. Revivalisti (1990s–2010s)
 
-Ľudia, ktorí oživili neurónové siete
+Ľudia, ktorí oživili neurónové siete  
+Druhá AI zima prinútila mnohých výskumníkov odísť z odboru.  
+Títo traja (a ich študenti) vytrvali aj v čase, keď takmer nikto neveril v neurónové siete.  
+Ich práca pripravila pôdu pre dnešnú explóziu.
 
 ### Geoffrey Hinton (1947–) 🇬🇧🇨🇦
 
 ```
 Krstný otec hlbokého učenia, University of Toronto, Google
-
 Kľúčový príspevok: Backpropagation, deep belief networks, AlexNet (2012)
 
 • Ukázal, že hlboké neurónové siete môžu dominovať v ImageNet súťaži
@@ -159,6 +169,7 @@ Citát:
 "Intuícia je len veľmi rýchle rozpoznávanie vzorov."
 
 Zaujímavosť:
+
 • V roku 2023 verejne varoval pred rizikami AI, ktoré pomohol vytvoriť
 
 Prečo je dôležitý dnes:
@@ -174,13 +185,15 @@ Kľúčový príspevok: CNN pre rozpoznávanie obrázkov (1998)
 • LeNet-5: prvá úspešná AI na čítanie rukopisných číslic (bankové šeky)
 
 Ďalšie úspechy:
+
 • Šéf AI v Meta (Facebook) – vývoj PyTorch, Llama modelov
 • Silný zástanca open-source AI
 
 Citát:
-"AI nebude 'vedomá' – bude to nástroj, ako automobil alebo elektrina."
+AI nebude 'vedomá' – bude to nástroj, ako automobil alebo elektrina.
 
 Prečo je dôležitý dnes:
+
 • CNN sú základom počítačového videnia v autách, medicíne, bezpečnosti
 • Jeho open-source filozofia formuje prístup k zdieľaniu modelov
 ```
@@ -193,12 +206,12 @@ Expert na sekvenčné modely a reprezentácie, University of Montreal
 Kľúčový príspevok: Výskum v oblasti word embeddings, generatívnych modelov
    • Spoluzakladateľ Element AI (kúpené ServiceNow) a Mila AI inštitútu
 
-- Ďalšie úspechy:
+Ďalšie úspechy:
 • Silný hlas v etike AI a regulácii
 • Turingova cena (2018)
 
 Citát:
- "Musíme zabezpečiť, aby AI slúžila ľudstvu, nie naopak."
+Musíme zabezpečiť, aby AI slúžila ľudstvu, nie naopak.
 
 Prečo je dôležitý dnes:
 • Jeho práca na reprezentáciách jazyka je základom moderných LLM
@@ -207,24 +220,29 @@ Prečo je dôležitý dnes:
 
 > 🏆 **"Trio Turingovej ceny"**: Hinton + LeCun + Bengio = "Godfathers of Deep Learning"
 
-
 ## 4. Škálovači (2012–dnes)
 
-Ľudia, ktorí priniesli AI do masového použitia
+Ľudia, ktorí priniesli AI do masového použitia  
+Éra obrovských dát, lacných GPU a transformerov zmenila všetko.  
+Títo ľudia ukázali, že „viac je inak“ – škálovanie prináša nové schopnosti.  
+Dnes už nejde len o výskum, ale o globálny priemysel.
 
-###  Ilya Sutskever (1986–) 🇷🇺🇨🇦🇺🇸
+### Ilya Sutskever (1986–) 🇷🇺🇨🇦🇺🇸
 
 ```
 Spoluzakladateľ a bývalý hlavný vedec OpenAI
+
 Kľúčový príspevok: Spoluautor práce "Attention Is All You Need" (2017)
 • Architekt GPT-1, GPT-2, GPT-3, GPT-4
 
 Ďalšie úspechy:
+
 • Presvedčil OpenAI, že škálovanie modelov je cesta vpred
 • Založil Safe Superintelligence (SSI) po odchode z OpenAI
 
 Citát:
-"Ak chceme bezpečnú superinteligenciu, musíme ju vedieť aj vytvoriť."
+
+Ak chceme bezpečnú superinteligenciu, musíme ju vedieť aj vytvoriť.
 
 Prečo je dôležitý dnes:
 • Priamo formoval architektúru ChatGPT a éru generatívnej AI
@@ -244,7 +262,7 @@ Kľúčový príspevok: AlphaGo (2016), AlphaFold (2020)
 • Nobelova cena za chémiu 2024 (tím AlphaFold)
 
 Citát:
-"Riešime inteligenciu, aby sme ju mohli použiť na riešenie všetkého ostatného."
+Riešime inteligenciu, aby sme ju mohli použiť na riešenie všetkého ostatného.
 
 Prečo je dôležitý dnes:
 • Ukázal, že AI môže riešiť fundamentálne vedecké problémy
@@ -254,8 +272,8 @@ Prečo je dôležitý dnes:
 
 ```
 Priekopníčka počítačového videnia, Stanford, ex-šéfka AI v Google Cloud
-
 Kľúčový príspevok: ImageNet (2009) – dataset s 14 miliónmi obrázkov
+
 • Umožnila "veľký tresk" v trénovaní CNN modelov
 
 Ďalšie úspechy:
@@ -263,7 +281,7 @@ Kľúčový príspevok: ImageNet (2009) – dataset s 14 miliónmi obrázkov
 • Silná advocate pre human-centered AI
 
 Citát:
-"AI nie je len o algoritmoch – je o ľuďoch, dátach a hodnotách."
+AI nie je len o algoritmoch – je o ľuďoch, dátach a hodnotách.
 
 Prečo je dôležitá dnes:
 • Bez ImageNet by nebol "deep learning boom" po roku 2012
@@ -289,24 +307,21 @@ Prečo je dôležitý dnes:
 • Jeho rozhodnutia priamo ovplyvňujú, kto má prístup k najvýkonnejším modelom
 ```
 
-
 ## Rýchly prehľad
+| Osobnosť          | Kľúčový príspevok                  | Dnešná aplikácia                          |
+|-------------------|------------------------------------|-------------------------------------------|
+| **Alan Turing**   | Turingov test, teória výpočtu      | Chatboty, filozofia AI                    |
+| **John McCarthy** | Termín "AI", LISP                  | Základy programovania AI                  |
+| **Arthur Samuel** | Strojové učenie, self-play         | Reinforcement learning, herné AI          |
+| **Geoffrey Hinton** | Backpropagation, deep learning   | Všetky moderné LLM                        |
+| **Yann LeCun**    | CNN, počítačové videnie            | Autonomné vozidlá, medicínska diagnostika |
+| **Fei-Fei Li**    | ImageNet dataset                   | Trénovanie vision modelov                 |
+| **Ilya Sutskever**| Transformer, GPT architektúra      | ChatGPT, kódoví asistenti                 |
+| **Demis Hassabis**| AlphaGo, AlphaFold                 | Vedecké objavy, stratégia                 |
+| **Sam Altman**    | Komercializácia LLM                | Masové nasadenie AI nástrojov             |
 
-| Osobnosť | Kľúčový príspevok | Dnešná aplikácia |
-|----------|------------------|-----------------|
-| **Alan Turing** | Turingov test, teória výpočtu | Chatboty, filozofia AI |
-| **John McCarthy** | Termín "AI", LISP | Základy programovania AI |
-| **Arthur Samuel** | Strojové učenie, self-play | Reinforcement learning, herné AI |
-| **Geoffrey Hinton** | Backpropagation, deep learning | Všetky moderné LLM |
-| **Yann LeCun** | CNN, počítačové videnie | Autonomné vozidlá, medicínska diagnostika |
-| **Fei-Fei Li** | ImageNet dataset | Trénovanie vision modelov |
-| **Ilya Sutskever** | Transformer, GPT architektúra | ChatGPT, kódoví asistenti |
-| **Demis Hassabis** | AlphaGo, AlphaFold | Vedecké objavy, stratégia |
-| **Sam Altman** | Komercializácia LLM | Masové nasadenie AI nástrojov |
-
-
-- AI nevznikla cez noc – je výsledkom práce generácií vizionárov
-- Každá éra mala svojich hrdinov: teoretikov, praktikov, škálovačov
-- Najväčší pokrok vznikol na priesečníku disciplín a spolupráce
-- Etika a zodpovednosť sú rovnako dôležité ako technická excelencia
+- AI nevznikla cez noc – je výsledkom práce generácií vizionárov  
+- Každá éra mala svojich hrdinov: teoretikov, praktikov, škálovačov  
+- Najväčší pokrok vznikol na priesečníku disciplín a spolupráce  
+- Etika a zodpovednosť sú rovnako dôležité ako technická excelencia  
 - História nie je len minulosť – pomáha nám robiť lepšie rozhodnutia dnes
