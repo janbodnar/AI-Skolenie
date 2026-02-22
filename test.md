@@ -95,3 +95,9 @@ Here’s a quick decision guide:
 | Show character arc over time | **Timeline** |
 | Show emotional/psychological evolution | **State Diagram** |
 
+
+## Banana chart
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/d9c6adcf-8cdf-4649-b12d-0b64bca68976" />
+
+
