@@ -91,7 +91,42 @@ Tieto modely majú nadstavbu, ktorá im umožňuje **plánovať a kontrolovať**
 > **Analogia:** Klasický LLM je ako študent, ktorý odpovedá na otázku okamžite, intuitívne. Reasoning LLM
 > je ako študent, ktorý si pred odpoveďou vezme papier, napíše si náčrt, prepočíta si príklad a až potom odpovie.
 
----
+### Príklad uvažujúceho modelu DeepSeek
+
+Prompt:
+
+```
+translate into German:
+
+Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива
+по-своему. Все смешалось в доме Облонских. Жена узнала, что муж был в связи с
+бывшею в их доме француженкою-гувернанткой, и объявила мужу, что не может жить с
+ним в одном доме. Положение это продолжалось уже третий день и мучительно
+чувствовалось и самими супругами, и всеми членами семьи, и домочадцами. Все
+члены семьи и домочадцы чувствовали, что нет смысла в их сожительстве и что на
+каждом постоялом дворе случайно сошедшиеся люди более связаны между собой, чем
+они, члены семьи и домочадцы Облонских. Жена не выходила из своих комнат, мужа
+третий день не было дома. Дети бегали по всему дому, как потерянные; англичанка
+поссорилась с экономкой и написала записку приятельнице, прося приискать ей
+новое место; повар ушел вчера со двора, во время самого обеда; черная кухарка и
+кучер просили расчета.
+```
+
+
+AI Thinking
+
+> OK, the user has sent a new query in a different language, asking for a translation into German.  The history shows our previous interaction was about extracting Facebook comments, which was a  practical, task-oriented request. Now the user is providing a classic literary text—the opening of  Tolstoy's Anna Karenina—and wants a German translation. 
+
+> Hmm, the user might be a student, a writer, or someone interested in literature and languages.  They could be working on a comparative project, studying translations, or simply want to read this  famous passage in German. The deep need here isn't for data extraction like last time, but for  accurate, literary translation. They probably value the preservation of the original's tone and  meaning.  
+
+> Since the text is a well-known piece of literature, the translation needs to be precise and  reflect the style. I should provide a clean, direct German version, keeping the paragraph structure  and the essence of Tolstoy's prose. No need for explanations or additional services unless  asked—just deliver the requested translation clearly. 
+
+
+Output: 
+
+```
+Alle glücklichen Familien sind einander ähnlich, jede unglückliche Familie ist auf ihre eigene Weise unglücklich. Im Hause Oblonski war alles durcheinander. Die Frau hatte erfahren, dass der Mann ein Verhältnis mit der französischen Gouvernante hatte, die früher im Hause war, und erklärte ihrem Mann, dass sie nicht mit ihm unter einem Dach leben könne. Dieser Zustand dauerte bereits den dritten Tag und wurde schmerzlich empfunden von den Ehegatten selbst, von allen Familienmitgliedern und vom Hauspersonal. Alle Familienmitglieder und das Hauspersonal fühlten, dass ihr Zusammenleben sinnlos sei und dass auf jedem beliebigen Gasthof zufällig zusammengetroffene Menschen mehr miteinander verbunden seien als sie, die Mitglieder der Familie Oblonski und ihr Gesinde. Die Frau verließ ihre Zimmer nicht, der Mann war den dritten Tag nicht zu Hause. Die Kinder liefen wie verloren im ganzen Haus umher; die Engländerin hatte sich mit der Wirtschaftlerin gestritten und schrieb einem Freund einen Brief, sie möge ihr eine neue Stelle suchen; der Koch war gestern während des Essens vom Hof gegangen; die Küchenmagd und der Kutscher baten um Auszahlung ihres Lohnes.
+```
 
 ## Prehľad významných modelov a ich pôvodu
 
@@ -114,7 +149,6 @@ pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a právne podmienky
 *Poznámka: Kategória "Open Weights" znamená, že model je dostupný na stiahnutie, ale nemusí mať nutne  
 otvorenú licenciu na komerčné využitie bez obmedzení.*
 
----
 
 ## Životný cyklus: Ako sa LLM trénujú?
 
@@ -143,12 +177,12 @@ Vývoj modelu prebieha vo fázach:
 *   **Vzdelávanie:** Tvorba kvízov, vysvetľovanie látok na mieru, jazykové korektúry.
 
 ### Na čo si dať pozor (Limity)?
+
 1.  **Halucinácie:** Model môže s istotou tvrdiť nepravdu. Vždy si overujte kritické fakty.
 2.  **Kontextové okno:** Model "vidí" len určitú časť konverzácie. Staršie informácie môžu "vypadnúť" z pamäte.
 3.  **Bias (Predpojatosť):** Modely odrážajú predsudky prítomné v tréningových dátach (napr. kultúrne alebo genderové stereotypy).
 4.  **Dátum "odstrihnutia" (Knowledge Cutoff):** Model nemusí vedieť o udalostiach, ktoré sa stali po skončení jeho tréningu (pokiaľ nemá prístup na internet).
 
----
 
 ## Budúcnosť: Kam smerujeme?
 
