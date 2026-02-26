@@ -2,7 +2,7 @@
 
 *Určené pre študentov predmetu Základy umelej inteligencie*
 
-## 1. Úvod: Čo sú to jazykové modely?
+## Úvod: Čo sú to jazykové modely?
 
 Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej inteligencie, ktoré sa učia zo  
 vzorov v texte. Ich základnou úlohou je **predpovedať ďalšie slovo** (alebo časť slova) v sekvencii tak,  
@@ -22,7 +22,7 @@ obrovskému množstvu dát a výpočtového výkonu dokážu:
 
 
 
-## 2. Ako LLM fungujú? (Zjednodušený pohľad)
+## Ako LLM fungujú? (Zjednodušený pohľad)
 
 Hoci sú modely technicky zložité, ich princíp možno rozdeliť do štyroch krokov:
 
@@ -47,7 +47,7 @@ Hoci sú modely technicky zložité, ich princíp možno rozdeliť do štyroch k
 
 ---
 
-## 3. Klasifikácia jazykových modelov
+## Klasifikácia jazykových modelov
 
 LLM môžeme deliť podľa viacerých kritérií. Pre pochopenie ekosystému je dôležité poznať tieto kategórie:
 
@@ -67,11 +67,11 @@ LLM môžeme deliť podľa viacerých kritérií. Pre pochopenie ekosystému je 
 
 ---
 
-## 4. Kľúčový koncept: Spôsob "uvažovania" modelov
+## Kľúčový koncept: Spôsob "uvažovania" modelov
 
 Toto je jedno z najdôležitejších rozdelení pre pochopenie súčasného stavu technológie.
 
-### 4.1 Klasické (Generatívne) LLM
+### Klasické (Generatívne) LLM
 Tieto modely generujú odpoveď **priamo a lineárne**, slovo po slove.
 *   **Princíp:** Okamžitá predikcia ďalšieho tokenu na základe doterajšieho kontextu.
 *   **Výhody:** Sú rýchle, lacné a výborné na kreatívne písanie, preklady či bežnú konverzáciu.
@@ -79,7 +79,7 @@ Tieto modely generujú odpoveď **priamo a lineárne**, slovo po slove.
     "nemyslia dopredu", len reagujú na prítomnosť.
 *   **Príklady:** LLaMA 3 (base), Mistral 7B, GPT-3.5.
 
-### 4.2 Uvažujúce (Reasoning) LLM
+### Uvažujúce (Reasoning) LLM
 
 Tieto modely majú nadstavbu, ktorá im umožňuje **plánovať a kontrolovať** svoj proces.
 *   **Princíp:** Pred vygenerovaním finálnej odpovede model vytvorí "myšlienkový postup" (*Chain-of-Thought*),
@@ -93,7 +93,7 @@ Tieto modely majú nadstavbu, ktorá im umožňuje **plánovať a kontrolovať**
 
 ---
 
-## 5. Prehľad významných modelov a ich pôvodu
+## Prehľad významných modelov a ich pôvodu
 
 Svet LLM je globálny. Nižšie uvádzame prehľad kľúčových hráčov. Je dôležité vedieť, kto model vyvíja,  
 pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a právne podmienky.
@@ -116,7 +116,7 @@ otvorenú licenciu na komerčné využitie bez obmedzení.*
 
 ---
 
-## 6. Životný cyklus: Ako sa LLM trénujú?
+## Životný cyklus: Ako sa LLM trénujú?
 
 Vývoj modelu prebieha vo fázach:
 
@@ -133,11 +133,10 @@ Vývoj modelu prebieha vo fázach:
     *   Pomocou *Reinforcement Learning from Human Feedback* (RLHF) ľudia hodnotia odpovede modelu.
     *   Model sa učí byť užitočný, neškodný a pravdivý (napr. odmieta generovať návody na nelegálne aktivity).
 
----
-
-## 7. Praktické využitie a limity
+## Praktické využitie a limity
 
 ### Kde sa LLM používajú?
+
 *   **Asistenti a Chatboti:** Zákaznícka podpora, osobní asistenti.
 *   **Programovanie:** Generovanie kódu, debugovanie, vysvetľovanie kódových báz (Copilot).
 *   **Analýza dát:** Extrakcia informácií z nestruktúrovaných textov, sumarizácia zmlúv.
@@ -151,9 +150,10 @@ Vývoj modelu prebieha vo fázach:
 
 ---
 
-## 8. Budúcnosť: Kam smerujeme?
+## Budúcnosť: Kam smerujeme?
 
 Vývoj sa uberá tromi hlavnými smermi:
+
 1.  **Agentic AI:** Modely nebudú len odpovedať, ale budú *konať* – samostatne plánovať úlohy, používať softvér a internet na dosiahnutie cieľa.
 2.  **Multimodalita:** Plná integrácia textu, obrazu, zvuku a videa do jedného modelu, ktorý chápe svet komplexnejšie.
 3.  **Efektivita a Edge AI:** Zmenšovanie modelov tak, aby bežali lokálne na mobiloch a notebookoch bez pripojenia na internet, čo zvyšuje súkromie a znižuje náklady.
@@ -170,8 +170,11 @@ limity a etické súvislosti.
 
 *Skúste tento jednoduchý experiment na porovnanie klasického a reasoning modelu:*
 
-1.  **Úloha:** Položte obom modelom logickú hádanku alebo matematickú slovnú úlohu, ktorá vyžaduje viac krokov (napr. *"Mám 3 jablká, zjem jedno, kúpim ďalšie dve, potom polovicu darujem. Koľko mi ostane?"*).
-2.  **Pozorovanie:**
+1.  **Úloha:** Položte obom modelom logickú hádanku alebo matematickú slovnú úlohu, ktorá
+   vyžaduje viac krokov (napr. *"Mám 3 jablká, zjem jedno, kúpim ďalšie dve, potom polovicu darujem. Koľko mi ostane?"*).
+3.  **Pozorovanie:**
     *   Sledujte, či model odpovedá okamžite (často chybuje), alebo či si najprv "rozmyslí" postup (vypíše si kroky).
     *   Porovnajte presnosť výsledku.
-3.  **Záver:** Diskutujte o tom, prečo je pri zložitých úlohách dôležité dať modelu priestor na "reasoning" (napr. promptom *"Think step by step"*).
+      
+4.  **Záver:** Diskutujte o tom, prečo je pri zložitých úlohách dôležité dať modelu priestor na "reasoning"
+   (napr. promptom *"Think step by step"*).
