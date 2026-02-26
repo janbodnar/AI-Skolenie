@@ -125,7 +125,17 @@ AI Thinking
 Output: 
 
 ```
-Alle glücklichen Familien sind einander ähnlich, jede unglückliche Familie ist auf ihre eigene Weise unglücklich. Im Hause Oblonski war alles durcheinander. Die Frau hatte erfahren, dass der Mann ein Verhältnis mit der französischen Gouvernante hatte, die früher im Hause war, und erklärte ihrem Mann, dass sie nicht mit ihm unter einem Dach leben könne. Dieser Zustand dauerte bereits den dritten Tag und wurde schmerzlich empfunden von den Ehegatten selbst, von allen Familienmitgliedern und vom Hauspersonal. Alle Familienmitglieder und das Hauspersonal fühlten, dass ihr Zusammenleben sinnlos sei und dass auf jedem beliebigen Gasthof zufällig zusammengetroffene Menschen mehr miteinander verbunden seien als sie, die Mitglieder der Familie Oblonski und ihr Gesinde. Die Frau verließ ihre Zimmer nicht, der Mann war den dritten Tag nicht zu Hause. Die Kinder liefen wie verloren im ganzen Haus umher; die Engländerin hatte sich mit der Wirtschaftlerin gestritten und schrieb einem Freund einen Brief, sie möge ihr eine neue Stelle suchen; der Koch war gestern während des Essens vom Hof gegangen; die Küchenmagd und der Kutscher baten um Auszahlung ihres Lohnes.
+Alle glücklichen Familien sind einander ähnlich, jede unglückliche Familie ist auf ihre eigene Weise
+unglücklich. Im Hause Oblonski war alles durcheinander. Die Frau hatte erfahren, dass der Mann ein Verhältnis
+mit der französischen Gouvernante hatte, die früher im Hause war, und erklärte ihrem Mann, dass sie nicht mit
+ihm unter einem Dach leben könne. Dieser Zustand dauerte bereits den dritten Tag und wurde schmerzlich empfunden
+von den Ehegatten selbst, von allen Familienmitgliedern und vom Hauspersonal. Alle Familienmitglieder und das
+Hauspersonal fühlten, dass ihr Zusammenleben sinnlos sei und dass auf jedem beliebigen Gasthof zufällig
+zusammengetroffene Menschen mehr miteinander verbunden seien als sie, die Mitglieder der Familie Oblonski
+und ihr Gesinde. Die Frau verließ ihre Zimmer nicht, der Mann war den dritten Tag nicht zu Hause.
+Die Kinder liefen wie verloren im ganzen Haus umher; die Engländerin hatte sich mit der Wirtschaftlerin
+gestritten und schrieb einem Freund einen Brief, sie möge ihr eine neue Stelle suchen; der Koch war gestern
+während des Essens vom Hof gegangen; die Küchenmagd und der Kutscher baten um Auszahlung ihres Lohnes.
 ```
 
 ## Prehľad významných modelov a ich pôvodu
