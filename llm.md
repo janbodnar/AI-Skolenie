@@ -1,4 +1,4 @@
-# Kapitola: Jazykové modely (LLM) – Úvod do sveta veľkých jazykových modelov
+# Jazykové modely (LLM) 
 
 *Určené pre študentov predmetu Základy umelej inteligencie*
 
