@@ -324,9 +324,56 @@ Qwen je trénovaný na **adaptívne a proaktívne správanie**. Aj zdanlivo jedn
 > **Predikcia:** Do 5 rokov sa hranica medzi "vyhľadávačom" a "asistentom" úplne rozostrie. Deep Search sa stane
 > štandardnou súčasťou interakcie s AI – nie ako samostatný nástroj, ale ako integrovaná schopnosť inteligentných systémov.
 
----
 
-## 10. Cvičenie pre študentov: Porovnanie prístupov
+## 10. Dostupnosť Deep Research / Deep Search funkcií (2026) – s cenami
+
+Nižšie nájdete aktualizovaný prehľad platforiem s hĺbkovým výskumom, vrátane informácií o cenových modeloch.
+
+| Platforma / Služba | Použitý LLM model | Dostupnosť (krajina/región) | Cena / Pricing | Odkaz |
+|-------------------|-------------------|----------------------------|----------------|-------|
+| **Qwen Chat – Deep Research** | Qwen-Deep-Research, Qwen3-Coder, Qwen-Image | ✅ **Web Chat**: Globálne<br>⚠️ **API**: Iba Čína (Beijing) | 🟢 **Web Chat: Zadarmo**<br>🔵 **API**: ~0,054 €/1k input tok., ~0,163 €/1k output tok. [[11]] | [chat.qwen.ai](https://chat.qwen.ai) |
+| **ChatGPT – Deep Search** | GPT-4o, GPT-4 Turbo | ✅ Globálne (okrem sankcionovaných krajín) | 🔴 **Free**: Bez Deep Search<br>🟡 **Plus**: $20/mes. (~18 €)<br>🔵 **Pro**: $200/mes. (~185 €) | [chat.openai.com](https://chat.openai.com) |
+| **Perplexity AI – Pro Search** | Vlastný + GPT-4, Claude 3, Llama 3 | ✅ Globálne | 🟢 **Free**: Základné vyhľadávanie<br>🟡 **Pro**: $20/mes. (~18 €)<br>🔵 **Enterprise**: Na vyžiadanie | [perplexity.ai](https://perplexity.ai) |
+| **Google NotebookLM** | Gemini 1.5 Pro / Gemini 2.0 | ✅ Globálne (postupný rollout) | 🟢 **Zadarmo** (súčasť Google účtu)<br>🔵 **Workspace**: Od ~5 €/mes. | [notebooklm.google.com](https://notebooklm.google.com) |
+| **Microsoft Copilot – Deep Search** | GPT-4 Turbo + Bing Search | ✅ Globálne (vyžaduje MS účet) | 🟢 **Free**: Základné funkcie<br>🟡 **Copilot Pro**: ~22 €/mes.<br>🔵 **Enterprise**: Na vyžiadanie | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| **Elicit** | Vlastný + Claude, GPT-4 (backend) | ✅ Globálne (akademický výskum) | 🟢 **Free**: 5,000 kreditov/mes.<br>🟡 **Pro**: ~10 €/mes.<br>🔵 **Teams**: ~40 €/mes. | [elicit.com](https://elicit.com) |
+| **Consensus** | Vlastný + vedecké databázy | ✅ Globálne (vedecké otázky) | 🟢 **Free**: 5 otázok/mes.<br>🟡 **Pro**: ~12 €/mes.<br>🔵 **Teams**: ~35 €/mes. | [consensus.app](https://consensus.app) |
+| **Scite Assistant** | Vlastný + Semantic Scholar | ✅ Globálne (akademické citácie) | 🔴 **Free**: Veľmi obmedzené<br>🟡 **Student**: ~9 €/mes.<br>🔵 **Pro**: ~29 €/mes. | [scite.ai](https://scite.ai) |
+| **Research Rabbit** | NLP modely na analýzu sietí | ✅ Globálne (vizuálny výskum) | 🟢 **Zadarmo** (beta fáza) | [researchrabbit.ai](https://researchrabbit.ai) |
+| **You.com – Research Mode** | Vlastný + GPT-4, Claude | ✅ Globálne | 🟢 **Free**: Základné vyhľadávanie<br>🟡 **Pro**: ~15 €/mes.<br>🔵 **Team**: ~30 €/mes. | [you.com](https://you.com) |
+
+### 🎨 Farebné označenie cien
+
+| Ikona | Význam |
+|-------|--------|
+| 🟢 | **Zadarmo** alebo veľkorysý free tier |
+| 🟡 | **Platená verzia pre jednotlivcov** (do ~25 €/mes.) |
+| 🔵 | **Profesionálna/Enterprise verzia** (nad 25 €/mes. alebo na vyžiadanie) |
+| 🔴 | **Veľmi obmedzený free tier** alebo nedostupné zadarmo |
+
+### Poznámky k cenám
+
+- Ceny sú **orientačné** a prepočítané z USD na EUR podľa kurzu ~1 USD = 0,93 EUR (marec 2026).
+- Väčšina služieb ponúka **zľavy pre študentov a vzdelávacie inštitúcie** – odporúčam overiť priamo na stránke poskytovateľa.
+- **Qwen Chat** je momentálne jediná platforma, ktorá ponúka plnohodnotný Deep Research **úplne zadarmo** vo webovom rozhraní [[1]].
+- Pri API službách sa cena odvíja od **počtu tokenov** – pri hĺbkovom výskume môže byť spotreba výrazne vyššia kvôli viacnásobným vyhľadávaniam a dlhším kontextom.
+
+
+## Odporúčanie pre pedagogické využitie (s ohľadom na cenu)
+
+| Priorita | Platforma | Dôvod výberu |
+|----------|-----------|--------------|
+| 🥇 **Najlepšia cena** | **Qwen Chat** | Deep Research zadarmo, globálny prístup, export do PDF |
+| 🥈 **Najlepšia kvalita** | **ChatGPT Plus / Perplexity Pro** | Vyššia presnosť, lepšia syntéza, stabilnejšie výstupy |
+| 🥉 **Najlepšie pre vedu** | **Elicit / Consensus** | Špecializácia na akademické zdroje a peer-reviewed štúdie |
+| 🎓 **Pre študentské projekty** | **Google NotebookLM** | Zadarmo, výborná práca s nahranými PDF, citácie |
+
+> 🎓 **Didaktický tip pre vás**: Ak chcete študentom ukázať funkciu Deep Research bez finančných bariér,
+> začnite s **Qwen Chat**. Pre porovnávaciu aktivitu môžete nechať študentov vyskúšať rovnakú otázku
+> v Qwen (free) a v ChatGPT Free (bez Deep Search) – rozdiel v hĺbke odpovede bude názornou ukážkou hodnoty hĺbkového výskumu.
+
+
+## 11. Cvičenie pre študentov: Porovnanie prístupov
 
 ### Laboratórna úloha: "Hĺbkový výskum na tému obnoviteľných zdrojov"
 
@@ -359,7 +406,7 @@ Qwen je trénovaný na **adaptívne a proaktívne správanie**. Aj zdanlivo jedn
 **Výstup:** Krátka správa (1-2 strany) s porovnaním a odporúčaniami.
 
 
-## 10. Záver
+## 12. Záver
 
 Deep Search predstavuje významný posun v tom, ako interagujeme s informáciami. Nie je to len "lepšie vyhľadávanie" – je to  
 **nový paradigmatický prístup**, kde AI aktívne pomáha nielen nájsť, ale aj pochopiť, syntetizovať a kriticky hodnotiť informácie. 
