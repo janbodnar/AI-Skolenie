@@ -4,10 +4,10 @@
 modely (LLM) s inteligentným vyhľadávaním informácií. Na rozdiel od tradičného vyhľadávania, ktoré hľadá 
 presné zhody kľúčových slov, deep search:
 
-*   **Chápe zámer používateľa** – analyzuje kontext otázky, nie len jednotlivé slová.
-*   **Prehľadáva viac zdrojov naraz** – dokáže simultánne skenovať webové stránky, databázy, dokumenty aj odborné články.
-*   **Syntetizuje odpoveď** – namiesto zoznamu odkazov poskytuje štruktúrovanú, overenú odpoveď s citáciami.
-*   **Plánuje vyhľadávanie** – rozkladá komplexnú otázku na podotázky a postupne ich rieši.
+*  **Chápe zámer používateľa** – analyzuje kontext otázky, nie len jednotlivé slová.
+*  **Prehľadáva viac zdrojov naraz** – dokáže simultánne skenovať webové stránky, databázy, dokumenty aj odborné články.
+*  **Syntetizuje odpoveď** – namiesto zoznamu odkazov poskytuje štruktúrovanú, overenú odpoveď s citáciami.
+*  **Plánuje vyhľadávanie** – rozkladá komplexnú otázku na podotázky a postupne ich rieši.
 
 > **Príklad z praxe:**  
 > *Tradičné vyhľadávanie:* Zadáte "klíma Slovensko 2024" → dostanete zoznam článkov s týmto výrazom.  
@@ -69,8 +69,6 @@ Architektúra deep search systémov sa zvyčajne skladá z niekoľkých kľúčo
 | **RAG (Retrieval-Augmented Generation)** | Architektúra, ktorá kombinuje získavanie informácií s generovaním odpovedí |
 | **Chain-of-Thought prompting** | Umožňuje modelu "myslieť krok za krokom" pri plánovaní vyhľadávania |
 | **Re-ranking algoritmy** | Zlepšujú poradie výsledkov podľa komplexnejšej relevancie, nie len keyword match |
-
----
 
 ## 3. Deep Search vs. Tradičné vyhľadávanie
 
@@ -194,33 +192,30 @@ RAG tieto obmedzenia rieši tým, že:
 
 ### 7.1 Riziká a obmedzenia
 
-🔴 **Závislosť na kvalite zdrojov**  
+**Závislosť na kvalite zdrojov**  
 Deep Search môže syntetizovať odpoveď z nekvalitných alebo zavádzajúcich zdrojov. *"Garbage in, garbage out."*
 
-🔴 **Bias vo vyhľadávaní**  
+**Bias vo vyhľadávaní**  
 Algoritmy môžu preferovať určité typy zdrojov alebo jazyky, čo skresľuje výsledky.
 
-🔴 **Ilúzia objektivity**  
+**Ilúzia objektivity**  
 Štruktúrovaná odpoveď môže pôsobiť autoritatívnejšie, než si zaslúži – používateľ musí stále kriticky hodnotiť.
 
-🔴 **Súkromie a sledovanie**  
+**Súkromie a sledovanie**  
 Komplexné dotazy môžu odhaliť citlivé informácie o zámeroch používateľa.
 
-🔴 **Energetická náročnosť**  
+**Energetická náročnosť**  
 Viacnásobné vyhľadávania + LLM generovanie = vyššia spotreba výpočtových zdrojov.
 
 ### 7.2 Best practices pre používateľov
 
-✅ **Vždy overujte kritické informácie** – citácie sú nápomocné, ale nenahrádzajú vlastný úsudok  
-✅ **Buďte špecifickí v dotazoch** – čím presnejší zámer, tým lepšie výsledky  
-✅ **Používajte follow-up otázky** – deep search systémy často podporujú iteratívne spresňovanie  
-✅ **Kontrolujte dátumy zdrojov** – aktuálnosť je kľúčová pri rýchlo sa meniacich témach  
-✅ **Porovnávajte viacero systémov** – rôzne implementácie môžu poskytnúť rôzne perspektívy
-
-
+**Vždy overujte kritické informácie** – citácie sú nápomocné, ale nenahrádzajú vlastný úsudok  
+**Buďte špecifickí v dotazoch** – čím presnejší zámer, tým lepšie výsledky  
+**Používajte follow-up otázky** – deep search systémy často podporujú iteratívne spresňovanie  
+**Kontrolujte dátumy zdrojov** – aktuálnosť je kľúčová pri rýchlo sa meniacich témach  
+**Porovnávajte viacero systémov** – rôzne implementácie môžu poskytnúť rôzne perspektívy
 
 ## 8. Qwen Chat a inteligentné vyhľadávanie: Web Search vs. Deep Research
-
 
 Moderné konverzačné modely, ako je Qwen Chat, už nie sú len pasívnymi generátormi textu.  
 Vďaka integrácii s externými nástrojmi dokážu **proaktívne vyhľadávať informácie na webe**,  
@@ -247,7 +242,7 @@ otázky potrebuje externé, aktuálne alebo špecifické dáta.
 3. Prečíta a vyhodnotí obsah relevantných webových stránok.
 4. Syntetizuje stručnú, fakticky podloženú odpoveď s odkazmi na zdroje.
 
-> 💡 **Pedagogická poznámka:** Tento mechanizmus ilustruje princíp **RAG (Retrieval-Augmented Generation)** –
+>  Tento mechanizmus ilustruje princíp **RAG (Retrieval-Augmented Generation)** –
 >  model kombinuje svoje vnútorné vedomosti s externými zdrojmi v reálnom čase.
 
 ## Režim Deep Research (Hĺbkový výskum)
@@ -333,7 +328,7 @@ Qwen je trénovaný na **adaptívne a proaktívne správanie**. Aj zdanlivo jedn
 
 ## 10. Cvičenie pre študentov: Porovnanie prístupov
 
-### 🧪 Laboratórna úloha: "Hĺbkový výskum na tému obnoviteľných zdrojov"
+### Laboratórna úloha: "Hĺbkový výskum na tému obnoviteľných zdrojov"
 
 **Cieľ:** Porovnať kvalitu odpovedí z tradičného vyhľadávania a deep search systému.
 
@@ -370,6 +365,7 @@ Deep Search predstavuje významný posun v tom, ako interagujeme s informáciami
 **nový paradigmatický prístup**, kde AI aktívne pomáha nielen nájsť, ale aj pochopiť, syntetizovať a kriticky hodnotiť informácie. 
 
 Pre študentov AI je dôležité pochopiť, že:
+
 *   Deep Search je postavený na kombinácii retrieval technológií a generatívnych modelov.
 *   Kvalita výstupu závisí od celej pipeline – nie len od LLM.
 *   Etické aspekty, transparentnosť a kritické myslenie používateľa zostávajú kľúčové.
