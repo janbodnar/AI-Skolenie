@@ -217,9 +217,95 @@ Viacnásobné vyhľadávania + LLM generovanie = vyššia spotreba výpočtovýc
 ✅ **Kontrolujte dátumy zdrojov** – aktuálnosť je kľúčová pri rýchlo sa meniacich témach  
 ✅ **Porovnávajte viacero systémov** – rôzne implementácie môžu poskytnúť rôzne perspektívy
 
----
 
-## 8. Budúcnosť Deep Search technológií
+
+## 8. Qwen Chat a inteligentné vyhľadávanie: Web Search vs. Deep Research
+
+
+Moderné konverzačné modely, ako je Qwen Chat, už nie sú len pasívnymi generátormi textu.  
+Vďaka integrácii s externými nástrojmi dokážu **proaktívne vyhľadávať informácie na webe**,  
+čím výrazne zvyšujú presnosť a aktuálnosť svojich odpovedí. V tejto sekcii si vysvetlíme  
+dva kľúčové módy práce s informáciami: štandardné vyhľadávanie (Web Search) a hĺbkový výskum (Deep Research).
+
+###  Štandardné vyhľadávanie (Web Search)
+
+**Web Search** je funkcia, ktorú model aktivuje **autonómne**, ak vyhodnotí, že na zodpovedanie  
+otázky potrebuje externé, aktuálne alebo špecifické dáta.
+
+### Kedy sa spúšťa?
+
+| Situácia | Príklad otázky |
+|----------|---------------|
+| **Faktografické dotazy** | „Kto získal Nobelovu cenu za fyziku v roku 2025?" |
+| **Aktuálne udalosti** | „Aké sú najnovšie výsledky volieb v krajine X?" |
+| **Overenie faktov** | „Je pravda, že firma Y vydala nový produkt?" |
+| **Špecifické údaje** | „Aká je aktuálna cena elektriny na Slovensku?" |
+
+### Ako to funguje?
+1. Model analyzuje otázku a identifikuje potrebu externých dát.
+2. V pozadí vykoná jedno alebo viac vyhľadávacích dopytov.
+3. Prečíta a vyhodnotí obsah relevantných webových stránok.
+4. Syntetizuje stručnú, fakticky podloženú odpoveď s odkazmi na zdroje.
+
+> 💡 **Pedagogická poznámka:** Tento mechanizmus ilustruje princíp **RAG (Retrieval-Augmented Generation)** –
+>  model kombinuje svoje vnútorné vedomosti s externými zdrojmi v reálnom čase.
+
+## Režim Deep Research (Hĺbkový výskum)
+
+**Deep Research** je špecializovaný, viacstupňový režim určený pre komplexné tézy, ktoré vyžadujú štruktúrovanú  
+analýzu, porovnanie viacerých zdrojov alebo tvorbu rozsiahlejších výstupov.
+
+### Kedy použiť Deep Research?
+
+- Pri otázkach typu: *„Porovnaj vplyv AI na vzdelávacie systémy v EÚ a Ázii."*
+- Pri potrebe vytvoriť rešerš, prehľadovú štúdiu alebo analytický materiál.
+- Keď potrebujete nielen odpoveď, ale aj **kontext, zdroje a štruktúru**.
+
+### Charakteristické znaky Deep Research
+
+| Vlastnosť | Popis |
+|-----------|-------|
+| **Plánovanie** | Model si otázku rozloží na podotázky a vytvorí výskumný plán. |
+| **Iteratívne vyhľadávanie** | Cyklus: *vyhľadaj → vyhodnoť → doplň → vyhľadaj znova*. |
+| **Syntéza viacerých zdrojov** | Porovnáva, overuje a spája informácie z rôznych domén. |
+| **Štruktúrovaný výstup** | Generuje prehľadné správy s nadpismi, zhrnutiami a citáciami. |
+| **Export možností** | Výsledky je možné exportovať do PDF alebo ako webovú stránku. |
+
+
+## Prečo model niekedy vyhľadáva aj pri „jednoduchých" otázkach?
+
+Qwen je trénovaný na **adaptívne a proaktívne správanie**. Aj zdanlivo jednoduchá otázka môže spustiť vyhľadávanie, ak:
+
+1. **Otázka obsahuje špecifické entity** (mená, názvy firiem, lokality), ktoré si model chce overiť v aktuálnom kontexte.
+2. **Implicitne vyžaduje aktuálnosť** – napr. „Ako sa darí firme X?" môže znamenať požiadavku na najnovšie finančné výsledky.
+3. **Model má nízku mieru istoty** – radšej siahne po externom zdroji, než by riskoval nepresnú odpoveď.
+
+> ✅ **Kľúčový poznatok:** Nie každé vyhľadávanie znamená Deep Research. Väčšina „rýchlych" odpovedí s odkazmi
+> využíva štandardný Web Search. Deep Research je náročnejší proces, ktorý sa spúšťa manuálne alebo pri
+> explicitne komplexných zadaniach.
+
+## Praktické tipy pre prácu s vyhľadávaním v Qwen Chat
+
+| Cieľ | Odporúčaný postup |
+|------|------------------|
+| **Rýchla odpoveď bez vyhľadávania** | Pridajte inštrukciu: *„Odpovedz iba na základe svojich vnútorných vedomostí."* |
+| **Overenie zdroja** | Sledujte ikonku lupy 🔍 alebo odkazy pod odpoveďou – znak použitia Web Search. |
+| **Hĺbková analýza** | Použite tlačidlo **Deep Research** alebo napíšte: *„Sprav hĺbkovú rešerš na tému..."* |
+| **Práca so študentmi** | Ukážte rozdiel medzi odpoveďou „z pamäte" a odpoveďou „s vyhľadávaním" – ide o názornú ukážku limitov a možností LLM. |
+
+## Zhrnutie 
+
+🔹 **Web Search** = rýchle doplnenie informácií z webu (ako „inteligentný asistent").  
+🔹 **Deep Research** = systematický výskum s plánovaním a analýzou (ako „výskumný tím").  
+🔹 Model sa **sám rozhoduje**, kedy vyhľadávanie použiť – na základe kontextu, istoty a typu otázky.  
+🔹 Používateľ môže tento proces **ovplyvniť** jasnými inštrukciami v prompte.
+
+> 🎓 **Didaktická výzva:** Požiadajte študentov, aby položili rovnakú otázku dvakrát – raz s príkazom
+> *„nevyhľadávaj"* a raz s povolením *„použi web search"*. Porovnajte výsledky a diskutujte o rozdieloch
+> v presnosti, aktuálnosti a štruktúre odpovedí.
+
+
+## 9. Budúcnosť Deep Search technológií
 
 ### Trendy vo vývoji:
 
@@ -245,7 +331,7 @@ Viacnásobné vyhľadávania + LLM generovanie = vyššia spotreba výpočtovýc
 
 ---
 
-## 9. Cvičenie pre študentov: Porovnanie prístupov
+## 10. Cvičenie pre študentov: Porovnanie prístupov
 
 ### 🧪 Laboratórna úloha: "Hĺbkový výskum na tému obnoviteľných zdrojov"
 
@@ -277,7 +363,6 @@ Viacnásobné vyhľadávania + LLM generovanie = vyššia spotreba výpočtovýc
 
 **Výstup:** Krátka správa (1-2 strany) s porovnaním a odporúčaniami.
 
----
 
 ## 10. Záver
 
