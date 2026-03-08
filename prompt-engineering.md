@@ -312,7 +312,7 @@ Prompt engineering nie je „napísať a hotovo". Najlepšie výsledky dosiahnet
 |-----------|---------------|------------------------|
 | *Presnosť* | Obsahuje odpoveď faktické chyby? | Pridaj kontext, zapni Web Search, špecifikuj zdroje |
 | *Relevancia* | Odpovedá model na to, na čo som sa pýtal? | Upresni inštrukciu, odstráň nejednoznačnosti |
-| *Formát** | Má výstup požadovanú štruktúru? | Explicitne špecifikuj formát (zoznam, tabuľka, JSON) |
+| *Formát* | Má výstup požadovanú štruktúru? | Explicitne špecifikuj formát (zoznam, tabuľka, JSON) |
 | *Štýl* | Je jazyk vhodný pre cieľovú skupinu? | Pridaj informáciu o cieľovej skupine, úrovni jazyka |
 | *Úplnosť* | Chýbajú dôležité aspekty? | Rozšír kontext, použi decomposition, pridaj príklady |
 | *Bezpečnosť* | Obsahuje odpoveď bias, stereotypy, nevhodný obsah? | Pridaj etické obmedzenia, špecifikuj neutrálny tón |
