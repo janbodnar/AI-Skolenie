@@ -1,9 +1,5 @@
 # Jazykové modely (LLM) 
 
-*Určené pre študentov predmetu Základy umelej inteligencie*
-
-## Úvod: Čo sú to jazykové modely?
-
 Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej inteligencie, ktoré sa učia zo  
 vzorov v texte. Ich základnou úlohou je **predpovedať ďalšie slovo** (alebo časť slova) v sekvencii tak,  
 aby výsledok bol štatisticky pravdepodobný a zmysluplný.
