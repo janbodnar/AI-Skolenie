@@ -1,13 +1,13 @@
 # Hugging Face – Open-Source platforma pre umelú inteligenciu
 
-**Hugging Face** je globálna open-source platforma a komunita pre vývoj umelnej inteligencie, ktorú často  
-označujú ako **„GitHub pre machine learning"** [[3]]. Vznikla v roku 2016 s cieľom demokratizovať prístup  
+*Hugging Face* je globálna open-source platforma a komunita pre vývoj umelnej inteligencie, ktorú často  
+označujú ako *„GitHub pre machine learning"*. Vznikla v roku 2016 s cieľom demokratizovať prístup  
 k moderným technológiám umelej inteligencie a dnes slúži ako centrálny hub pre výskumníkov, vývojárov aj študentov.
 
 
-> *Predstavte si Hugging Face ako obrovskú knižnicu, kde namiesto kníh nájdete hotové AI modely,
+> Predstavte si Hugging Face ako obrovskú knižnicu, kde namiesto kníh nájdete hotové AI modely,
 > datasety a interaktívne aplikácie. Namiesto toho, aby ste písali každý model od nuly, môžete si „požičať" ten,
-> ktorý už niekto vytvoril, a prispôsobiť ho svojim potrebám.*
+> ktorý už niekto vytvoril, a prispôsobiť ho svojim potrebám.
 
 ### Základné fakty (2026)
 
@@ -25,7 +25,7 @@ k moderným technológiám umelej inteligencie a dnes slúži ako centrálny hub
 ### Hugging Face Hub
 
 Centrálny portál ([huggingface.co](https://huggingface.co)), kde komunita zdieľa a objavuje AI zdroje.  
-Funguje na báze Git verzií, čo umožňuje sledovať históriu zmien, spolupracovať a jednoducho sťahovať modely [[38]].
+Funguje na báze Git verzií, čo umožňuje sledovať históriu zmien, spolupracovať a jednoducho sťahovať modely.
 
 ### Transformers Library
 
@@ -41,12 +41,13 @@ print(result)  # [{'label': 'POSITIVE', 'score': 0.999}]
 ```
 
 **Podporované úlohy:**
+
 - 📝 Text: klasifikácia, generovanie, preklad, sumarizácia, QA
 - 🖼️ Vízia: detekcia objektov, segmentácia, generovanie obrázkov
 - 🔊 Audio: rozpoznávanie reči, text-to-speech, klasifikácia zvuku
 - 🔄 Multimodálne: modely spájajúce text + obrázok + audio
 
-### 🔹 Datasets Library
+### Datasets Library
 Nástroj na jednoduchý prístup k tisícom verejných datasetov [[13]].
 
 ```python
@@ -62,8 +63,8 @@ print(dataset["train"][0])  # Prvá ukážka
 - ✅ Automatické predspracovanie a tokenizácia
 - ✅ Podpora pre viac ako 8 000 jazykov
 
-### 🔹 Spaces – Interaktívne demo aplikácie
-Spaces umožňujú hostovať ML demo priamo v prehliadači pomocou **Gradio** alebo **Streamlit** [[33]][[37]].
+### Spaces – Interaktívne demo aplikácie
+Spaces umožňujú hostovať ML demo priamo v prehliadači pomocou **Gradio** alebo **Streamlit**.
 
 ```python
 # Príklad Gradio appky pre sentiment analýzu
@@ -111,6 +112,7 @@ demo.launch()
 - **Enterprise Hub**: Súkromné repozitáre s RBAC pre regulované odvetvia.
 
 ### 🛠️ Vývojárske workflow
+
 ```
 1. 🔍 Nájdi model na Hube (napr. "bert-base-slovak")
 2. 📥 Stiahni a otestuj lokálne pomocou Transformers
@@ -139,6 +141,7 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 | **Výukové materiály** | Hotové tutoriály, kurzy a príklady pre rôzne úrovne |
 
 ### Ako začať s Classrooms?
+
 1. Vytvorte si účet na [huggingface.co](https://huggingface.co)
 2. Prejdite na [Classrooms](https://huggingface.co/classrooms) a založte triedu
 3. Pozvite študentov cez e-mail alebo odkaz
@@ -159,7 +162,8 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 | **Audio** | Rozpoznávanie reči, TTS | `wav2vec2-base`, `speecht5_tts` |
 | **Multimodálne** | Text + obrázok, video + audio | `clip-vit-base`, `llava-hf` |
 
-### 🔹 Podľa licencie
+### Podľa licencie
+
 | Typ licencie | Popis | Vhodné pre |
 |--------------|-------|------------|
 | **Apache 2.0 / MIT** | Veľmi permissívne, komerčné použitie OK | Študentské projekty, startupy |
@@ -167,9 +171,7 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 | **Non-commercial** | Iba výskum/vzdelávanie, nie komerčné | Školské projekty, osobné použitie |
 | **Gated / Request access** | Vyžaduje schválenie autora | Citlivé modely, regulované dáta |
 
-> ⚠️ **Dôležité:** Vždy skontrolujte licenciu a Model Card pred použitím modelu v projekte!
-
----
+> Vždy skontrolujte licenciu a Model Card pred použitím modelu v projekte!
 
 ## 6. Tabuľka: Odporúčané modely a zdroje na vyskúšanie
 
@@ -187,13 +189,13 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 | **[Classrooms Demo](https://huggingface.co/classrooms)** | Pedagogická platforma | Všetko | 🟢 Zadarmo | Bezplatný manažment študentských projektov [[23]] | Organizácia skupinovej práce s verzovaním |
 
 ### 🎨 Legenda cien
+
 | Ikona | Význam |
 |-------|--------|
 | 🟢 | **Zadarmo** (open-source, verejný prístup) |
 | 🟡 | **Freemium** (základ zadarmo, pokročilé funkcie platené) |
 | 🔵 | **Enterprise** (súkromné nasadenie, SLA, podpora) |
 
----
 
 ## 7. Praktický návod: Váš prvý projekt na Hugging Face
 
@@ -243,11 +245,10 @@ demo.launch()
 
 > 💡 **Bonus:** Pridajte `README.md` s popisom projektu a `LICENSE` – učíte študentov open-source praktiky!
 
----
 
 ## 8. Didaktické tipy pre výučbu s Hugging Face
 
-### 🧪 Aktivita 1: „Model Scavenger Hunt"
+### Aktivita 1: „Model Scavenger Hunt"
 
 **Cieľ**: Naučiť študentov orientovať sa na Hugging Face Hub.  
 **Postup**:
@@ -255,14 +256,14 @@ demo.launch()
 2. Študenti hľadajú, screenshotujú a zdôvodnia výber
 3. Diskusia: Ako rozlíšiť kvalitný model? (počet downloadov, Model Card, licencia)
 
-### 🧩 Aktivita 2: „Fine-Tuning v praxi"
+### Aktivita 2: „Fine-Tuning v praxi"
 
 **Cieľ**: Ukázať, ako sa model prispôsobuje novým dátam.  
 **Nástroje**: Google Colab + `transformers` + malý slovenský dataset  
 **Úloha**: Fine-tune `bert-base-slovak` na klasifikáciu správ (šport/politika/kultúra)  
 **Výstup**: Porovnanie presnosti pred a po fine-tuningu
 
-### 🌐 Aktivita 3: „Ethics & Model Cards"
+### Aktivita 3: „Ethics & Model Cards"
 
 **Cieľ**: Kritické myslenie o obmedzeniach AI.  
 **Postup**:
@@ -270,9 +271,10 @@ demo.launch()
 2. Študenti analyzujú: *Pre koho môže byť model problematický? Ako by ste to zlepšili?*
 3. Napíšte vlastnú „Ethical Use" sekciu pre Model Card
 
-### 💻 Aktivita 4: „Build Your First Space"
+### Aktivita 4: „Build Your First Space"
 
 **Cieľ**: Praktická skúsenosť s nasadením.  
+
 **Postup**:
 1. Študenti vytvoria jednoduchú Gradio appku (napr. prekladateľ, generátor mien)
 2. Nasadia ju na Spaces
@@ -286,25 +288,21 @@ demo.launch()
 ## 9. Časté otázky (FAQ)
 
 **Q: Je Hugging Face naozaj zadarmo?**  
-A: Áno, väčšina modelov, datasetov a Spaces je open-source a zadarmo. Platené sú len enterprise funkcie (súkromné Hub, vyššie limity API) [[4]].
+A: Áno, väčšina modelov, datasetov a Spaces je open-source a zadarmo. Platené sú len  
+enterprise funkcie (súkromné Hub, vyššie limity API) [[4]].
 
 **Q: Potrebujem silný počítač?**  
-A: Na testovanie malých modelov stačí bežný notebook. Pre veľké modely využite Google Colab (zdarma GPU) alebo Hugging Face Inference API.
+A: Na testovanie malých modelov stačí bežný notebook. Pre veľké modely využite Google Colab  
+(zdarma GPU) alebo Hugging Face Inference API.
 
 **Q: Ako vybrať správny model?**  
-A: Použite filtre na Hube (task, jazyk, licencia), skontrolujte Model Card, počet downloadov a recenzie. Začnite s menšími modelmi (DistilBERT) pre rýchle iterácie.
+A: Použite filtre na Hube (task, jazyk, licencia), skontrolujte Model Card, počet downloadov a recenzie.  
+Začnite s menšími modelmi (DistilBERT) pre rýchle iterácie.
 
 **Q: Môžem použiť model komerčne?**  
 A: Závisí od licencie. Apache 2.0 a MIT umožňujú komerčné použitie. Vždy si prečítajte Model Card a LICENSE súbor.
 
 **Q: Ako zapojiť študentov bez programátorských skúseností?**  
-A: Začnite s Spaces – študenti môžu upravovať existujúce Gradio appky bez písania kódu, alebo použiť no-code nástroje ako AutoTrain.
+A: Začnite s Spaces – študenti môžu upravovať existujúce Gradio appky bez písania kódu,  
+alebo použiť no-code nástroje ako AutoTrain.
 
----
-
-*Poznámka pre autora kapitoly:*  
-Táto sekcia je koncipovaná ako samostatná kapitola do učebného materiálu. V prípade potreby je možné doplniť:  
-- 🖼️ Screenshoty z rozhrania Hugging Face Hub  
-- 🎥 Odkazy na video tutoriály (napr. oficiálny Hugging Face YouTube kanál)  
-- 📋 Pracovné listy pre študentské aktivity  
-- 🔗 Zoznam slovenských modelov a datasetov na Hube  
