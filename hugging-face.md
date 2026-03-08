@@ -13,9 +13,9 @@ k moderným technológiám umelej inteligencie a dnes slúži ako centrálny hub
 
 | Ukazovateľ | Hodnota |
 |------------|---------|
-| **Počet modelov** | Viac ako 2 milióny [[38]] |
-| **Počet datasetov** | Viac ako 500 000 [[38]] |
-| **Počet Spaces (demo aplikácií)** | Viac ako 1 milión [[1]] |
+| **Počet modelov** | Viac ako 2 milióny |
+| **Počet datasetov** | Viac ako 500 000 |
+| **Počet Spaces (demo aplikácií)** | Viac ako 1 milión |
 | **Podporované modalit** | Text, obrázky, audio, video, multimodálne |
 | **Licencia** | Prevažne open-source (Apache 2.0, MIT, CC) |
 
@@ -108,7 +108,7 @@ demo.launch()
 
 ### 💼 Biznis a produkcia
 - **Rýchly prototyping**: Firmy testujú nové AI nápady v priebehu hodín, nie týždňov.
-- **Inference API**: Hostované API pre nasadenie modelov bez správy serverov [[4]].
+- **Inference API**: Hostované API pre nasadenie modelov bez správy serverov.
 - **Enterprise Hub**: Súkromné repozitáre s RBAC pre regulované odvetvia.
 
 ### 🛠️ Vývojárske workflow
@@ -129,7 +129,7 @@ demo.launch()
 ## 4. Hugging Face vo vzdelávaní: Classrooms Program
 
 Hugging Face ponúka špeciálny program **[Hugging Face for Classrooms](https://huggingface.co/classrooms)**, 
-ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
+ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML.
 
 ### Čo ponúka Classrooms?
 | Funkcia | Popis |
@@ -145,7 +145,7 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 1. Vytvorte si účet na [huggingface.co](https://huggingface.co)
 2. Prejdite na [Classrooms](https://huggingface.co/classrooms) a založte triedu
 3. Pozvite študentov cez e-mail alebo odkaz
-4. Vyberte si tutoriál z [Education Toolkit](https://github.com/huggingface/education-toolkit) [[21]]
+4. Vyberte si tutoriál z [Education Toolkit](https://github.com/huggingface/education-toolkit)
 5. Začnite tvoriť!
 
 > 🎓 **Tip pre pedagógov:** Začnite s jednoduchou úlohou – napr. „Vytvorte sentiment analyzátor pre slovenské recenzie".
@@ -185,7 +185,7 @@ ktorý poskytuje pedagógom bezplatné nástroje na výučbu ML [[23]][[25]].
 | **[clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)** | Multimodálny | Text+Obrázok | 🟢 Zadarmo | Spája vizuálne a textové embedingy | Vyhľadávanie obrázkov podľa popisu |
 | **[t5-base](https://huggingface.co/t5-base)** | Seq2seq model | Viacjazyčný | 🟢 Zadarmo | Univerzálny: preklad, sumarizácia, QA | Ukázať flexibilitu jedného modelu |
 | **[llava-hf](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf)** | Multimodálny LLM | Text+Obrázok | 🟢 Zadarmo | Odpovedá na otázky o obrázkoch | Moderné multimodálne aplikácie |
-| **[Education Toolkit](https://github.com/huggingface/education-toolkit)** | Výukové materiály | Rôzne | 🟢 Zadarmo | Hotové lekcie, príklady, projekty pre školy [[21]] | Štruktúrovaná výuka ML pre začiatočníkov |
+| **[Education Toolkit](https://github.com/huggingface/education-toolkit)** | Výukové materiály | Rôzne | 🟢 Zadarmo | Hotové lekcie, príklady, projekty pre školy  | Štruktúrovaná výuka ML pre začiatočníkov |
 | **[Classrooms Demo](https://huggingface.co/classrooms)** | Pedagogická platforma | Všetko | 🟢 Zadarmo | Bezplatný manažment študentských projektov [[23]] | Organizácia skupinovej práce s verzovaním |
 
 ### 🎨 Legenda cien
@@ -207,6 +207,7 @@ pip install transformers datasets gradio
 ```
 
 **Krok 2: Načítanie modelu a testovanie**
+
 ```python
 from transformers import pipeline
 
@@ -220,6 +221,7 @@ print(classifier("Tento produkt je skvelý!"))
 ```
 
 **Krok 3: Vytvorenie interaktívnej appky (Gradio)**
+
 ```python
 import gradio as gr
 
