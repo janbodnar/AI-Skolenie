@@ -1,4 +1,4 @@
-# Jazykové modely (LLM) 
+# Veľké jazykové modely (LLM) 
 
 Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej inteligencie, ktoré sa učia zo  
 vzorov v texte. Ich základnou úlohou je **predpovedať ďalšie slovo** (alebo časť slova) v sekvencii tak,  
@@ -141,16 +141,16 @@ pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a právne podmienky
 
 | Model | Vývojár / Organizácia | Krajina pôvodu | Typ prístupu |
 | :--- | :--- | :--- | :--- |
-| **GPT-4 / ChatGPT** | OpenAI | USA 🇺🇸 | Closed |
-| **Claude 3.5** | Anthropic | USA 🇺🇸 | Closed |
-| **Gemini 1.5** | Google DeepMind | USA 🇺🇸 | Closed |
-| **Llama 3** | Meta (Facebook) | USA 🇺🇸 | Open Weights |
-| **Mistral / Mixtral** | Mistral AI | Francúzsko 🇫🇷 | Open / Closed |
-| **Grok** | xAI | USA 🇺🇸 | Closed |
-| **Qwen 2.5** | Alibaba Cloud | Čína 🇨🇳 | Open Weights |
-| **DeepSeek** | DeepSeek | Čína 🇨🇳 | Open Weights |
-| **Falcon** | TII (Technology Innovation Institute) | UAE 🇦🇪 | Open Weights |
-| **YandexGPT** | Yandex | Rusko 🇷🇺 | Closed |
+| **GPT-4 / ChatGPT** | OpenAI | USA | Closed |
+| **Claude 3.5** | Anthropic | USA | Closed |
+| **Gemini 1.5** | Google DeepMind | USA | Closed |
+| **Llama 3** | Meta (Facebook) | USA | Open Weights |
+| **Mistral / Mixtral** | Mistral AI | Francúzsko | Open / Closed |
+| **Grok** | xAI | USA | Closed |
+| **Qwen 2.5** | Alibaba Cloud | Čína | Open Weights |
+| **DeepSeek** | DeepSeek | Čína | Open Weights |
+| **Falcon** | TII (Technology Innovation Institute) | UAE | Open Weights |
+| **YandexGPT** | Yandex | Rusko | Closed |
 
 *Poznámka: Kategória "Open Weights" znamená, že model je dostupný na stiahnutie, ale nemusí mať nutne  
 otvorenú licenciu na komerčné využitie bez obmedzení.*
@@ -190,7 +190,7 @@ Vývoj modelu prebieha vo fázach:
 4.  **Dátum "odstrihnutia" (Knowledge Cutoff):** Model nemusí vedieť o udalostiach, ktoré sa stali po skončení jeho tréningu (pokiaľ nemá prístup na internet).
 
 
-## Budúcnosť: Kam smerujeme?
+## Budúcnosť
 
 Vývoj sa uberá tromi hlavnými smermi:
 
@@ -206,7 +206,7 @@ Jazykové modely sú mocný nástroj, ktorý mení spôsob, akým pracujeme s in
 AI je dôležité, aby ste im rozumeli nielen ako používateľovi, ale aby ste chápali ich princípy,  
 limity a etické súvislosti.
 
-### 🧪 Mini-laboratórium: Rozdiel v uvažovaní
+### Mini-laboratórium: Rozdiel v uvažovaní
 
 *Skúste tento jednoduchý experiment na porovnanie klasického a reasoning modelu:*
 
