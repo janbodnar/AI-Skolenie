@@ -1,10 +1,5 @@
 # Prompt Engineering – Ako efektívne komunikovať s AI
 
-
-
-##  Úvod: Čo je prompt engineering a prečo na ňom záleží?
-
-> 🎓 **Jednoduchá definícia pre študentov:**  
 > *Prompt engineering je umenie klásť správne otázky. Predstavte si AI ako veľmi inteligentného,
 > ale doslovného asistenta – ak mu poviete „Napíš niečo o histórii", dostanete všeobecný text.
 > Ak mu poviete „Napíš 3-odsekový prehľad dejín Bratislavy pre žiaka 6. ročníka, so zameraním na stredovek",
@@ -14,8 +9,6 @@
 
 *Prompt Engineering* = systematický prístup k formulovaniu promptov tak, aby ste získali  
 čo najpresnejšie, najužitočnejšie a najbezpečnejšie odpovede.
-
-### 🔑 Prečo je to dôležité?
 
 | Dôvod | Vysvetlenie | Príklad |
 |-------|-------------|---------|
