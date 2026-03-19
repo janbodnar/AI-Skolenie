@@ -8,3 +8,4 @@ https://www.youtube.com/watch?v=ITs9agntW18
 
 - prelož prvú stranu knihy Jane Eyre
 - zosumarizuj knihu Neprebudený
+- spočítaj počet iregulárnych podstatných mien v knihe Otec Goriot (English)
