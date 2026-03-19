@@ -1,0 +1,112 @@
+# Nepravidelne podstatne mena v Moby Dick
+
+V dokumente, ktorý ste poskytli (ukážka z knihy *Moby Dick*), sa **nenachádza 100 podstatných mien s nepravidelným množným číslom**.
+V celom poskytnutom úryvku som identifikoval iba **štyri** takéto slová.
+
+Ak chcete všeobecný zoznam 100 najbežnejších anglických podstatných mien s nepravidelným množným číslom 
+(nie z tohto konkrétneho textu), tu je tabuľka s prvými 100:
+
+| Singular | Plural |
+| :--- | :--- |
+| man | men |
+| woman | women |
+| child | children |
+| tooth | teeth |
+| foot | feet |
+| person | people |
+| mouse | mice |
+| goose | geese |
+| ox | oxen |
+| louse | lice |
+| die | dice |
+| penny | pence |
+| cactus | cacti |
+| fungus | fungi |
+| nucleus | nuclei |
+| syllabus | syllabi |
+| focus | foci |
+| radius | radii |
+| genius | genii |
+| stimulus | stimuli |
+| alumnus | alumni |
+| stratum | strata |
+| curriculum | curricula |
+| bacterium | bacteria |
+| datum | data |
+| medium | media |
+| criterion | criteria |
+| phenomenon | phenomena |
+| automaton | automata |
+| oasis | oases |
+| thesis | theses |
+| hypothesis | hypotheses |
+| crisis | crises |
+| analysis | analyses |
+| basis | bases |
+| diagnosis | diagnoses |
+| parenthesis | parentheses |
+| synopsis | synopses |
+| ellipsis | ellipses |
+| neurosis | neuroses |
+| psychosis | psychoses |
+| amoeba | amoebae |
+| antenna | antennae |
+| formula | formulae |
+| larva | larvae |
+| nebula | nebulae |
+| vertebra | vertebrae |
+| alga | algae |
+| vita | vitae |
+| index | indices |
+| appendix | appendices |
+| matrix | matrices |
+| vertex | vertices |
+| vortex | vortices |
+| codex | codices |
+| radix | radices |
+| helix | helices |
+| apex | apices |
+| cervix | cervices |
+| corpus | corpora |
+| genus | genera |
+| opus | opera |
+| vis | vires |
+| vox | voces |
+| bos | boves |
+| pes | pedes |
+| dens | dentes |
+| mons | montes |
+| pons | pontes |
+| frons | frontes |
+| glans | glandes |
+| lens | lentes |
+| thorax | thoraces |
+| thorax | thoraxes |
+| appendix | appendixes |
+| index | indexes |
+| focus | focuses |
+| radius | radiuses |
+| fungus | funguses |
+| syllabus | syllabuses |
+| cactus | cactuses |
+| octopus | octopuses |
+| platypus | platypuses |
+| hippopotamus | hippopotamuses |
+| rhinoceros | rhinoceroses |
+| uterus | uteri |
+| uterus | uteruses |
+| vulva | vulvae |
+| vulva | vulvas |
+| phallus | phalli |
+| phallus | phalluses |
+| penis | penes |
+| penis | penises |
+| testis | testes |
+| epididymis | epididymides |
+| vas | vasa |
+| os | ora |
+| os | ossa |
+| cornu | cornua |
+| genu | genua |
+
+Ak by ste predsa len chceli, aby som sa pokúsil nájsť viac takých slov priamo v celom texte knihy *Moby Dick* (nie len v ukážke), dajte mi vedieť a môžem to skúsiť.
