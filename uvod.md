@@ -53,20 +53,23 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 
 ---
 
-## Veľké jazykové modely (LLM) – čo sú zač?
+## Veľké jazykové modely (LLM) 
 
 **LLM** (napr. GPT, Gemini, LLaMA) sú AI trénované na miliardách textov z internetu. Vedia:
-- ✅ Rozumieť kontextu a odpovedať na otázky
-- ✅ Písať e-maily, články, kód
-- ✅ Prekladať a zhrňovať texty
-- ✅ Vysvetľovať zložité témy jednoducho
+
+- Rozumieť kontextu a odpovedať na otázky
+- Písať e-maily, články, kód
+- Prekladať a zhrňovať texty
+- Vysvetľovať zložité témy jednoducho
 
 **Ako fungujú?**
+
 - Učia sa štatistické vzory: „Aké slovo najčastejšie nasleduje po...?"
 - Čím viac parametrov („veľkosť mozgu"), tým lepšie chápu nuansy
 - Nevedia „myslieť" ako ľudia – predpovedajú najpravdepodobnejšiu odpoveď
 
 **Prečo nepoužívať vlastný model?**
+
 ```
 ✅ Výhody hotových modelov:
 - Okamžité použitie cez API
