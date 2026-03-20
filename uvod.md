@@ -14,15 +14,8 @@ situáciám a riešiť úlohy podobne ako človek.
 - **1990s:** Strojové učenie – počítače sa učia z dát
 - **2010s+:** Hlboké učenie a veľké jazykové modely – dnešná „chytrá" AI
 
-**Hlavné oblasti AI:**
-- 🗣️ **Spracovanie jazyka** – pochopenie a tvorba textu
-- 👁️ **Počítačové videnie** – rozpoznávanie obrázkov a videí
-- 🤖 **Robotika** – autonómne stroje a vozidlá
-- 🎯 **Učenie s posilňovaním** – učenie metódou pokus-omyl
 
----
-
-## Kde sa AI používa? (Príklady z praxe)
+## Oblasti využitia
 
 | Oblasť | Ako AI pomáha | Príklad nástroja |
 |--------|--------------|------------------|
@@ -33,11 +26,11 @@ situáciám a riešiť úlohy podobne ako človek.
 | 💻 **Programovanie** | Navrhuje kód, hľadá chyby, vysvetľuje funkcie | GitHub Copilot |
 | 🤖 **Roboty** | Umožňuje autonómne rozhodovanie | Výrobné roboty, drony |
 
----
 
-## Ako AI „učí"? (Základy bez matematiky)
+## Učenie AI
 
 ### Strojové učenie v skratke:
+
 1. **Dáta** → AI dostane veľa príkladov (napr. fotky mačiek a psov)
 2. **Tréning** → Hľadá vzory a rozdiely medzi príkladmi
 3. **Predikcia** → Po natrénovaní vie nové fotky zaradiť
