@@ -49,9 +49,9 @@ Email: p.horsky@email.sk
 Slovenská technická univerzita v Bratislave
 Fakulta informatiky a informačných technológií
 Odbor: Informačné systémy (Inžiniersky stupeň)
+```
 
-### Ako bude vyzerať výsledok (ukážka pre teba):
-Keď použiješ svoj prompt na tento text, mal by si dostať približne takýto JSON:
+## Očakávaný výsledok
 
 ```json
 {
@@ -63,6 +63,4 @@ Keď použiješ svoj prompt na tento text, mal by si dostať približne takýto 
     "Anglický jazyk (úroveň C1)"
   ]
 }
-```
-
 ```
