@@ -185,16 +185,11 @@ Aké slová sa opakujú v negatívnych hodnoteniach?"
 - Očakávať, že AI „vie všetko" – má medzery v znalostiach
 - Používať AI na úlohy vyžadujúce ľudský úsudok bez dohľadu
 
-> 🎓 **Záver školenia:** AI je mocný nástroj, ale ako každý nástroj – vyžaduje pochopenie,
+> **Záver školenia:** AI je mocný nástroj, ale ako každý nástroj – vyžaduje pochopenie,
 > zodpovednosť a kritické myslenie.
 
----
 
-## Rýchly slovník pojmov (pre účastníkov)
-
-Samozrejme, tu je rozšírená záverečná tabuľka s ďalšími dôležitými pojmami, ktoré sa často vyskytujú pri práci s AI – stále v zjednodušenej forme vhodné pre začiatočníkov:
-
-## Rýchly slovník pojmov (rozšírená verzia)
+## Rýchly slovník pojmov 
 
 | Pojem | Vysvetlenie |
 |-------|-------------|
