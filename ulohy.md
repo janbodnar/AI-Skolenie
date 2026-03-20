@@ -18,8 +18,7 @@ https://huggingface.co/spaces/ACE-Step/ACE-Step
 
 Tu je vzorový životopis. Z tohto životopisu vytiahni: meno, poslednú pozíciu, 3 kľúčové zručnosti.
 
-***
-
+```
 **ŽIVOTOPIS**
 
 **Osobné údaje:**
@@ -64,4 +63,6 @@ Keď použiješ svoj prompt na tento text, mal by si dostať približne takýto 
     "Anglický jazyk (úroveň C1)"
   ]
 }
+```
+
 ```
