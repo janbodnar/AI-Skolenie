@@ -1,12 +1,16 @@
 # Audio Modely v umelej inteligencii
 
 
-Audio modely predstavujú jednu z najdynamickejšie sa rozvíjajúcich oblastí umelej inteligencie v roku 2026. Tieto systémy dokážu generovať, analyzovať a transformovať zvukový obsah s presnosťou, ktorá bola ešte pred niekoľkými rokmi nemysliteľná. V tejto kapitole sa zameriame na dva kľúčové modely – **ACE-Step 1.5** a **Lyria 3** – a poskytneme prehľad najlepších audio modelov dostupných v marci 2026.
+Audio modely predstavujú jednu z najdynamickejšie sa rozvíjajúcich oblastí umelej inteligencie v roku 2026.  
+Tieto systémy dokážu generovať, analyzovať a transformovať zvukový obsah s presnosťou, ktorá bola ešte pred  
+niekoľkými rokmi nemysliteľná. V tejto kapitole sa zameriame na dva kľúčové modely – **ACE-Step 1.5** a  
+**Lyria 3** – a poskytneme prehľad najlepších audio modelov dostupných v marci 2026.
 
 
 ## Čo sú audio AI modely?
 
-Audio modely sú špecializované systémy umelej inteligencie navrhnuté na prácu so zvukovým obsahom. Delia sa do niekoľkých hlavných kategórií:
+Audio modely sú špecializované systémy umelej inteligencie navrhnuté na prácu so zvukovým obsahom. 
+Delia sa do niekoľkých hlavných kategórií:
 
 | Kategória | Popis | Príklady využitia |
 |-----------|-------|-------------------|
@@ -263,7 +267,7 @@ Nasledujúca tabuľka poskytuje komplexný prehľad najlepších audio modelov d
 | **Gaming/Real-time** | Cartesia Sonic Turbo | 40ms latency critical |
 
 
-## Etické Considerácie a Bezpečnosť
+## Etické aspekty a bezpečnosť
 
 ### Kľúčové Body na Zapamätanie
 
