@@ -20,6 +20,8 @@ https://huggingface.co/spaces/ACE-Step/ACE-Step
 
 Identifikuj problematické klauzuly nájomných zmlúv.
 
+I. zmluva
+
 ```
 Článok V.
 Výška nájomného za užívanie predmetu nájmu
@@ -71,7 +73,7 @@ prenájmu avšak iba po dobu 3 (troch) mesiacov.
 poškodzovanie majetku, prenájom ďalšej osobe) má prenajímateľ právo dať nájomcovi okamžitú
 výpoveď z nájmu. Pri skoršom ukončení nájmu sa neodbývaná suma nevracia.
 ```
-
+II. zmluva
 
 ```
 Článok V.
