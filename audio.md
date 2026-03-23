@@ -21,7 +21,9 @@ Audio modely sú špecializované systémy umelej inteligencie navrhnuté na pr�
 
 ### Prehľad modelu
 
-**ACE-Step v1.5** je vysoko efektívny open-source fundamentálny model pre generovanie hudby, ktorý prináša komerčnú kvalitu priamo na spotrebiteľský hardvér. Model bol vydaný v januári 2026 a predstavuje významný míľnik v oblasti open-source hudobnej generácie.
+**ACE-Step v1.5** je vysoko efektívny open-source fundamentálny model pre generovanie hudby, ktorý prináša  
+komerčnú kvalitu priamo na spotrebiteľský hardvér. Model bol vydaný v januári 2026 a predstavuje významný  
+míľnik v oblasti open-source hudobnej generácie.
 
 ### Kľúčové vlastnosti
 
@@ -35,7 +37,9 @@ Audio modely sú špecializované systémy umelej inteligencie navrhnuté na pr�
 
 ### Architektúra
 
-ACE-Step 1.5 využíva hybridnú architektúru, kde **jazykový model (LM)** funguje ako univerzálny plánovač. Transformuje jednoduché používateľské požiadavky na komplexné hudobné plány pomocou techniky **Chain-of-Thought** [[2]]. Následne **Diffusion Transformer (DiT)** syntetizuje finálny audio výstup.
+ACE-Step 1.5 využíva hybridnú architektúru, kde **jazykový model (LM)** funguje ako univerzálny plánovač.  
+Transformuje jednoduché používateľské požiadavky na komplexné hudobné plány pomocou techniky **Chain-of-Thought**.  
+Následne **Diffusion Transformer (DiT)** syntetizuje finálny audio výstup.
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -46,16 +50,17 @@ ACE-Step 1.5 využíva hybridnú architektúru, kde **jazykový model (LM)** fun
 
 ### Verzie modelu
 
-| Model | Kroky | Kvalita | Rýchlosť | HuggingFace |
-|-------|-------|---------|----------|-------------|
-| `acestep-v15-base` | 50 | Stredná | Štandardná | [Link] [[2]] |
-| `acestep-v15-sft` | 50 | Vysoká | Štandardná | [Link] [[2]] |
-| `acestep-v15-turbo` | 8 | Veľmi vysoká | Rýchla | [Link] [[2]] |
-| `acestep-v15-turbo-rl` | 8 | Veľmi vysoká | Najrýchlejšia | Čoskoro [[2]] |
+| Model | Kroky | Kvalita | Rýchlosť | 
+|-------|-------|---------|----------|
+| `acestep-v15-base` | 50 | Stredná | Štandardná |
+| `acestep-v15-sft` | 50 | Vysoká | Štandardná | 
+| `acestep-v15-turbo` | 8 | Veľmi vysoká | Rýchla | 
+| `acestep-v15-turbo-rl` | 8 | Veľmi vysoká | Najrýchlejšia |
 
 ### Tréningové dáta
 
-Model je trénovaný na legálne kompatibilnom datasete obsahujúcom [[2]]:
+Model je trénovaný na legálne kompatibilnom datasete obsahujúcom:
+
 - **Licencovanú hudbu** – profesionálne licencované tracky
 - **Royalty-Free hudbu** – verejná doména a bez autorských práv
 - **Syntetické dáta** – vysokokvalitné audio z MIDI-to-Audio konverzie
@@ -75,21 +80,26 @@ audio = model.generate(
 audio.save("output.wav")
 ```
 
+### Demo
+
+https://huggingface.co/spaces/ACE-Step/ACE-Step
+
 **Dostupné funkcie:**
 
 - ✅ Generovanie celých piesní s vokálmi
 - ✅ Cover verzie existujúcich skladieb
 - ✅ Repaint (úprava existujúceho audia)
 - ✅ Vocal-to-BGM konverzia
-- ✅ Precízna kontrola štýlu [[2]]
+- ✅ Precízna kontrola štýlu
 
----
 
 ## Lyria 3 – Google DeepMind pre Gemini AI
 
 ### Prehľad modelu
 
-**Lyria 3** je najpokročilejší model pre generovanie hudby od Google DeepMind, ktorý bol v februári 2026 integrovaný priamo do aplikácie Gemini. Model umožňuje používateľom vytvárať 30-sekundové audio tracky vrátane vokálov a textov pomocou textových alebo obrazových promptov.
+**Lyria 3** je najpokročilejší model pre generovanie hudby od Google DeepMind, ktorý bol v februári  
+2026 integrovaný priamo do aplikácie Gemini. Model umožňuje používateľom vytvárať 30-sekundové audio  
+tracky vrátane vokálov a textov pomocou textových alebo obrazových promptov.
 
 ### Kľúčové vlastnosti
 
@@ -156,11 +166,11 @@ Alebo pomocou obrázka:
 [Nahraj obrázok pláže] + "Vytvor relaxačnú hudbu inšpirovanú týmto obrázkom"
 ```
 
-## abuľka Top Audio Modelov 2026
+## Tabuľka Top Audio Modelov 2026
 
 Nasledujúca tabuľka poskytuje komplexný prehľad najlepších audio modelov dostupných v marci 2026:
 
-### 🏆 Top Text-to-Speech (TTS) Modely
+### Top Text-to-Speech (TTS) Modely
 
 | # | Model | Vývojár | Typ | Latencia | Jazyky | Cena | Licencia |
 |---|-------|---------|-----|----------|--------|------|----------|
@@ -175,7 +185,7 @@ Nasledujúca tabuľka poskytuje komplexný prehľad najlepších audio modelov d
 | 9 | **Amazon Polly** | AWS | TTS | ~200ms | 50+ | $4-100/1M chars | Proprietárna  |
 | 10 | **PlayHT** | PlayHT | TTS + Voice Clone | ~180ms | 142 | $39-99/mo | Proprietárna  |
 
-### 🎵 Top Text-to-Music Modely
+### Top Text-to-Music Modely
 
 | # | Model | Vývojár | Dĺžka | Vokály | Komerčné použitie | Cena | Licencia |
 |---|-------|---------|-------|--------|-------------------|------|----------|
@@ -187,7 +197,7 @@ Nasledujúca tabuľka poskytuje komplexný prehľad najlepších audio modelov d
 | 6 | **MusicLM 2** | Google | 1 min | Nie | Nie | Research | Proprietárna |
 | 7 | **Riffusion Pro** | Riffusion | 30s | Nie | Áno | Free/Paid | Open-source |
 
-### 🎤 Top Voice Agent Platformy
+###  Top Voice Agent Platformy
 
 | # | Platforma | Vývojár | Latencia | Jazyky | Cena | Best For |
 |---|-----------|---------|----------|--------|------|----------|
