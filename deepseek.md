@@ -96,9 +96,84 @@ na novú tému alebo po ukončení komplexnej úlohy.** Tým zabezpečíte, že:
 > popísaná celá, treba ju utrieť – začať nový chat – aby ste mohli písať nové  
 > a prehľadné poznámky.  
 
----  
 
 **Zhrnutie:** DeepSeek AI asistent je vďaka kombinácii web search, deep think  
 a file upload univerzálnym nástrojom pre prácu s informáciami. Správne  
 využívanie histórie a pravidelný štart nových konverzácií vám pomôže udržať  
 interakciu s AI prehľadnú a efektívnu.
+
+Dopĺňam kapitolu o praktické príklady pre každú z hlavných funkcionalít.  
+Všetky riadky majú približne 80 znakov a sú ukončené dvoma medzerami.  
+
+## Príklady  
+
+###  Web Search – príklady  
+
+**Príklad 1: Aktuálne správy**  
+Otázka s aktivovaným Web Search: *„Aké je dnešné počasie v Košiciach a aké  
+sa očakáva zajtra?“*  
+Model vyhľadá aktuálnu meteorologickú predpoveď, uvedie zdroj (napr.  
+SHMÚ) a porovná dni.  
+
+**Príklad 2: Overenie faktov**  
+*„Kedy vyšiel posledný album od kapely Kabát a ako sa volá?“*  
+DeepSeek s web search nájde aktuálnu diskografiu, prípadne novinky,  
+ktoré nie sú súčasťou jeho pôvodných trénovacích dát.  
+
+**Príklad 3: Štatistiky**  
+*„Aké boli výsledky slovenských hokejistov na posledných MS do 20  
+rokov?“*  
+Vyhľadávač doplní tabuľky, strelcov a odkazy na oficiálne štatistiky.  
+
+
+### Deep Think – príklady  
+
+**Príklad 1: Matematický dôkaz**  
+Otázka: *„Dokáž, že pre ľubovoľné prirodzené číslo n je výraz n³ – n  
+deliteľný šiestimi.“*  
+Deep Think rozloží úlohu na kroky: faktorizácia, deliteľnosť dvoma  
+a tromi, následne syntéza. Zobrazí sa celý myšlienkový reťazec.  
+
+**Príklad 2: Logická hádanka**  
+*„Máme päť domov v rade, každý inej farby, v nich ľudí rôznych  
+národností, pijú rôzne nápoje, fajčia rôzne značky a majú rôzne  
+domáce zvieratá. Kto má rybičky?“ (Einsteinova hádanka)*  
+Režim Deep Think vytvorí tabuľku a systematicky vylučuje možnosti,  
+pričom vysvetľuje každý krok.  
+
+**Príklad 3: Algoritmické uvažovanie**  
+*„Navrhni algoritmus na triedenie zoznamu mien podľa dĺžky, pričom  
+pri rovnakej dĺžke podľa abecedy. Implementuj ho v Pythone.“*  
+Model najprv popíše logiku (stabilné triedenie, kľúčové funkcie),  
+potom napíše kód a vysvetlí jeho časovú zložitosť.  
+
+
+### File Upload – príklady  
+
+**Príklad 1: Analýza PDF dokumentu**  
+Nahrám študijný materiál vo formáte PDF (20 strán) a spýtam sa:  
+*„Zhrň kapitolu 3 do piatich bodov a vysvetli pojmy, ktoré sú  
+tam definované.“*  
+DeepSeek extrahuje text, vytvorí zhrnutie a zoznam definícií.  
+
+**Príklad 2: Práca s tabuľkou**  
+Nahrám súbor *.xlsx s mesačnými výdavkami firmy. Otázka:  
+*„Ktorá kategória mala najvyšší nárast oproti minulému roku a  
+o koľko percent?“*  
+Model načíta dáta, vykoná porovnanie a vypíše výsledok vrátane  
+medzivýpočtov.  
+
+**Príklad 3: Prepis textu z obrázku**  
+Nahrajem fotku rukou písanej poznámky. Otázka:  
+*„Prepíš to do čitateľného textu a vytvor z toho akčné úlohy.“*  
+DeepSeek rozpozná text, opraví prípadné nejasnosti a štruktúruje  
+ho do zoznamu úloh.  
+
+
+
+
+
+
+
+
+
