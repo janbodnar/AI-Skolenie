@@ -14,6 +14,8 @@
 - 12.00 - 13.00 obedňajšia prestávka
 
 
+## Definícia
+
 *Umelá inteligencia (AI)* je technológia, ktorá umožňuje počítačom učiť sa z dát  
 a hľadať riešenia bez toho, aby sme im museli presne určovať každý krok. Namiesto  
 pevne naprogramovaných postupov dokáže AI rozpoznávať vzory, prispôsobovať sa novým  
