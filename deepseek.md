@@ -106,15 +106,6 @@ na novú tému alebo po ukončení komplexnej úlohy.** Tým zabezpečíte, že:
 > popísaná celá, treba ju utrieť – začať nový chat – aby ste mohli písať nové  
 > a prehľadné poznámky.  
 
-
-**Zhrnutie:** DeepSeek AI asistent je vďaka kombinácii web search, deep think  
-a file upload univerzálnym nástrojom pre prácu s informáciami. Správne  
-využívanie histórie a pravidelný štart nových konverzácií vám pomôže udržať  
-interakciu s AI prehľadnú a efektívnu.
-
-Dopĺňam kapitolu o praktické príklady pre každú z hlavných funkcionalít.  
-Všetky riadky majú približne 80 znakov a sú ukončené dvoma medzerami.  
-
 ## Príklady  
 
 ```
@@ -189,7 +180,15 @@ DeepSeek rozpozná text, opraví prípadné nejasnosti a štruktúruje
 ho do zoznamu úloh.  
 
 
-## Otázky & diskusia
+## Zhrnutie 
+
+DeepSeek AI asistent je vďaka kombinácii web search, deep think  
+a file upload univerzálnym nástrojom pre prácu s informáciami. Správne  
+využívanie histórie a pravidelný štart nových konverzácií vám pomôže udržať  
+interakciu s AI prehľadnú a efektívnu.
+
+
+Otázky & diskusia
 
 
 
