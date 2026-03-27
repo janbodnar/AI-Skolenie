@@ -1,4 +1,4 @@
-# DeepSeek AI asistent:
+# DeepSeek AI asistent
 
 DeepSeek je moderný AI asistent navrhnutý tak, aby pomáhal s riešením úloh,  
 vyhľadávaním informácií, analýzou dokumentov a hlbokým uvažovaním. V tejto  
