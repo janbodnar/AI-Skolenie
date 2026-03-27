@@ -1,7 +1,3 @@
-Tu je upravená kapitola s riadkami po približne 80 znakov a každý paragraf ukončený dvoma medzerami.  
-
----
-
 # DeepSeek AI asistent: Funkcie a tipy pre efektívnu prácu  
 
 DeepSeek je moderný AI asistent navrhnutý tak, aby pomáhal s riešením úloh,  
