@@ -76,6 +76,12 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 
 ## Veľké jazykové modely (LLM) 
 
+![Ľadovec internetu](data/internet-ladovec.png)
+
+*Ľadovec internetu – viditeľná časť (nad hladinou) predstavuje bežný obsah webu, ktorý ľudia denne navštevujú.
+Pod hladinou sa skrýva oveľa rozsiahlejšia časť internetu: odborné databázy, vedecké archívy, fóra,
+digitalizované knihy a ďalšie textové zdroje. Práve z tohto obrovského množstva dát sú trénované veľké jazykové modely (LLM).*
+
 **LLM** (napr. GPT, Gemini, LLaMA) sú AI trénované na miliardách textov z internetu. Vedia:
 
 - Rozumieť kontextu a odpovedať na otázky
