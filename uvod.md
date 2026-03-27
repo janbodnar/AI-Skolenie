@@ -85,9 +85,41 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 - Dajú sa „doladiť" na konkrétnu úlohu s malým množstvom dát
 ```
 
-> 💡 **Praktický tip:** Pre väčšinu firemných úloh stačí použiť existujúci model a prispôsobiť ho promptmi alebo malým doladením.
+## Token - jednotka spracovania textu
 
----
+V kontexte umelej inteligencie, konkrétne veľkých jazykových modelov (LLM), sú tokeny  
+základnou stavebnou jednotkou textu. Predstavte si ich ako „slová", ktorými rozumie stroj,  
+hoci sa nie vždy zhodujú s ľudským chápaním slova. Model nepracuje priamo s písmenami,  
+ale s číselnými reprezentáciami týchto tokenov.
+
+**Ako fungujú?**
+
+Pred tým, než AI model text spracuje alebo vygeneruje, rozdelí ho na menšie časti – tokeny.  
+Tento proces sa nazýva tokenizácia. Jeden token môže predstavovať:
+
+*   Celé krátke slovo (napr. „stôl", „a"),
+*   Časť dlhšieho slova (napr. „neuro" + „vá" + „sieť"),
+*   Alebo jednotlivý znak či interpunkciu (napr. „.", „!", medzera).
+
+**Príklad tokenizácie:**
+Veta: „Umelá inteligencia mení svet."
+Môže byť modelom rozložená na tokeny približne takto:  
+`[„Umel", „á", „ ", „int", \"elig\", \"encia\", \" \", \"men\", \"í\", \" \", \"svet\", \"."]`
+
+**Prečo sú tokeny dôležité?**
+
+1.  **Kontextové okno:** Modely majú technický limit na počet tokenov, ktoré môžu „vidieť" naraz  
+   (vstupný prompt + výstupná odpoveď). Tento limit určuje, koľko textu si model pamätá v rámci  
+   jednej konverzácie alebo analýzy dokumentu.
+3.  **Náklady a rýchlosť:** Väčšina AI služieb účtuje cenu na základe počtu spracovaných tokenov.
+   Čím zložitejší jazyk alebo dlhší text, tým viac tokenov je potrebných, čo ovplyvňuje cenu a čas
+   generovania odpovede.
+5.  **Jazykové špecifiká:** Angličtina sa zvyčajne tokenizuje efektívnejšie (menej tokenov na slovo)
+    než slovenčina či čeština. Dôvodom je zložitejšia gramatika, skloňovanie a dĺžka slov v slovanských
+    jazykoch, čo môže viesť k vyššej spotrebe tokenov pri rovnakom obsahu.
+
+Pochopenie tokenov je kľúčové pre optimalizáciu promptov, odhadovanie nákladov a efektívnu prácu s AI nástrojmi.
+
 
 ## Chatboty – AI ako váš asistent
 
