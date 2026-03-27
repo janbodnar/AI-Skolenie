@@ -191,17 +191,98 @@ pomáhajú riešiť komplexné problémy.
 > 🤔 **Diskusná otázka:** Ako by sme mali používať LLMs vo vzdelávaní, aby sme podporili učenie, nie len kopírovanie odpovedí?
 
 
-## Aplikácie AI v praxi 
+### Keď sci-fi predbehlo čas: Nápady z filmov, ktoré sú dnes realitou  
 
-| Odvetvie | Príklady aplikácií | Prečo je to dôležité? |
-|----------|-------------------|----------------------|
-| **Zdravotníctvo** | Detekcia rakoviny z RTG, pomoc pri diagnostike, vývoj liekov | Zvyšuje presnosť, šetrí čas, umožňuje personalizovanú medicínu |
-| **Doprava** | Autonómne vozidlá, optimalizácia trás, predikcia údržby | Zvyšuje bezpečnosť, znižuje emisie, zlepšuje efektivitu |
-| **Vzdelávanie** | Personalizované učenie, AI tutori, automatické hodnotenie | Umožňuje individuálny prístup, šetrí čas učiteľov |
-| **Financie** | Detekcia podvodov, algoritmické obchodovanie, kreditné skóring | Zvyšuje bezpečnosť, rýchlosť a presnosť rozhodovaní |
-| **Kreatívny priemysel** | Generovanie obrázkov, hudby, textov (DALL·E, Midjourney) | Rozširuje kreatívne možnosti, urýchľuje prototypovanie |
-| **Zákaznícky servis** | Chatboty, automatické odpovede, analýza sentimentu | Zlepšuje dostupnosť služieb, znižuje náklady |
+Už po desaťročia nám sci-fi filmy ukazovali svet budúcnosti – niektoré  
+vynálezy vyzerali ako čistá fantázia, iné sa postupne stali bežnou súčasťou  
+nášho života. Šesťdesiate roky boli obdobím, keď sa svet akoby prebudil do éry  
+technológie a odvážnych vízií, ale až dnes vidíme, ako sa mnohé z týchto snov  
+naplnili. Science fiction často slúžil ako „testovacie pole" pre budúce  
+inovácie. Tu je niekoľko príkladov technológií, ktoré kedysi existovali len na  
+plátne, a dnes ich používame takmer každý deň.  
 
+**Komunikácia s počítačom prirodzeným jazykom**  
+Vo filme *Votrelec* (1979) posádka lode Nostromo komunikuje s palubným  
+počítačom MOTHER hlasovými príkazmi. Dnes sú virtuálni asistenti ako Siri,  
+Google Assistant či veľké jazykové modely (ChatGPT, DeepSeek) samozrejmosťou –  
+rozprávame sa s nimi, pýtame sa na počasie, diktujeme správy alebo ich  
+využívame ako kreatívnych partnerov na riešenie komplexných problémov.  
+
+**Videohovory a telekonferencie**  
+V *Vetrelcoch* (1986) si poručík Ripley volá so svojimi nadriadenými cez  
+obrazovku, kým je v hyperpriestore. V tom čase išlo o futuristickú vymoženosť.  
+Dnes videohovory cez Zoom, Teams alebo FaceTime využívajú milióny ľudí na  
+prácu, vzdelávanie aj súkromné stretnutia, čo sa stalo štandardom najmä po  
+roku 2020.  
+
+**Holografické displeje a teleprezenzia**  
+Hologramy, ktoré sa vznášajú vo vzduchu, sme obdivovali v pôvodnom *Star Wars*  
+(1977) či v *Blade Runnerovi* (1982). Hoci ešte nemáme doma plnohodnotné 3D  
+projekcie vo vzduchu, v reálnom svete už existujú holografické vitríny,  
+pódiové efekty (napr. vystúpenie Tupaca Shakura na Coachelle 2012) a pokročilé  
+head-up displeje v autách či lietadlách. Technológie ako Microsoft HoloLens  
+zase umožňujú pocit „byť tam" na diaľku.  
+
+**Tablety a dotykové obrazovky**  
+Posádka *Star Treku* používala „PADD" (Personal Access Display Device) už v 60.  
+rokoch. *2001: Vesmírna odysea* (1968) ukazovala novinárov s plochými  
+obrazovkami. Skutočný boom nastal až s iPadom (2010) a následnými tabletmi,  
+ktoré dnes nájdeme v školách, nemocniciach aj v rukách malých detí.  
+
+**Umelá inteligencia ako spoločník**  
+Film *Her* (2013) predstavil OS, do ktorého sa hlavný hrdina zamiluje. Dnes  
+síce nemáme AI s plnou emocionálnou inteligenciou, ale jazykové modely sú na  
+takej úrovni, že s nimi vedieme prirodzené rozhovory, konzultujeme problémy a  
+využívame ich ako kreatívnych partnerov. Je to naplnenie najodvážnejších  
+sci-fi snov – mať po ruke entitu, ktorá vie odpovedať na otázky a tvorí obsah.  
+
+**Autonómne autá**  
+Vo filme *Total Recall* (1990) riadil auto „Johnnycab" – robotický taxík bez  
+vodiča. *I, Robot* (2004) ukázal samo riadiace autá v bežnej premávke. Dnes už  
+v niektorých mestách sveta (San Francisco, Phoenix) jazdia plne autonómne  
+taxíky (Waymo, Cruise) a pokročilé asistenčné systémy sú štandardom v nových  
+autách.  
+
+**Univerzálne prekladače**  
+*Stopárov sprievodca galaxiou* (1981) a *Star Trek* nám dali „babelovú rybku"  
+či univerzálny prekladač. Dnes aplikácie ako Google Translate umožňujú  
+okamžitý preklad hovoreného slova cez slúchadlá (Pixel Buds) a textovú  
+prekladovú kameru v reálnom čase, čím búrajú jazykové bariéry.  
+
+**Bezpilotné lietajúce stroje (drony)**  
+Vo filme *Minority Report* (2002) lietali malé drony, ktoré skenovali tváre  
+ľudí. Dnes sú drony komerčne dostupné na natáčanie, doručovanie zásielok  
+(Amazon Prime Air), monitorovanie poľnohospodárstva či vojenské účely.  
+
+**Bezkontaktné ovládanie gestami**  
+Vo filme *Minority Report* (2002) hlavný hrdina ovládal rozhranie pomocou  
+rukavíc a pohybov rúk. Dnes túto technológiu ponúkajú zariadenia ako Leap  
+Motion, niektoré automobilky integrujú gestá do ovládania infotainmentu a  
+podobné princípy sa používajú aj v náhlavných súpravách virtuálnej reality.  
+
+**3D tlač (replikácia predmetov)**  
+V seriáli *Star Trek* sa používal „replikátor", ktorý dokázal vytvoriť jedlo  
+či predmety na počkanie. Hoci ešte nie sme na úrovni molekulárnej syntézy,  
+3D tlač už dnes umožňuje vyrábať funkčné súčiastky, protézy, jedlo, a dokonca  
+aj stavby.  
+
+**Platobné karty a bezhotovostný styk**  
+V *Star Treku* už peniaze neexistovali – komunikácia s počítačom a „kreditové  
+karty" (v podobe čipových kariet) nahradili fyzické platby. V súčasnosti je  
+bezhotovostný štandardom, pričom platobné karty, smartfóny či hodinky  
+používame bežne a kryptomeny posunuli myšlienku digitálnych peňazí ešte ďalej.  
+
+---  
+
+Zoznam by mohol pokračovať ďalej – od bezkontaktných ovládačov až po  
+každodenné používanie umelej inteligencie. Čo je na tom fascinujúce: mnohí  
+tvorcovia sci-fi neboli len vizionári, ale často inšpirovali vedcov a  
+inžinierov k tomu, aby tieto technológie skutočne postavili. A hoci ešte stále  
+čakáme na lietajúce autá, kolónie na Marse či cestovanie nadsvetelnou  
+rýchlosťou, je zrejmé, že realita sa sci-fi približuje rýchlejšie, než by sme  
+čakali. Dnes žijeme v ére, ktorú si kedysi predstavovali iba oni – rozdiel je  
+v tom, že to, čo bolo kedysi mágiou filmu, je dnes výsledkom matematiky, dát  
+a algoritmov.
 
 
 ## Budúcnosť AI – Výzvy a príležitosti
