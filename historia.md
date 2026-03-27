@@ -165,12 +165,13 @@ pomáhajú riešiť komplexné problémy.
 > 🎯 **Pre študentov:** Moderná AI nie je o „programovaní pravidiel", ale o **trénovaní modelov na dátach**.
 > Kvalita a množstvo dát sú často dôležitejšie ako zložitosť algoritmu.
 
----
 
 ## Veľké jazykové modely (LLMs) – Aktuálna revolúcia
 
 ### Čo sú LLMs?
-> 🎓 **Definícia:** Veľké jazykové modely (Large Language Models) sú neurónové siete trénované na obrovských množstvách textu, ktoré dokážu generovať a chápať ľudský jazyk.
+
+> 🎓 **Definícia:** Veľké jazykové modely (Large Language Models) sú neurónové siete trénované na obrovských množstvách
+> textu, ktoré dokážu generovať a chápať ľudský jazyk.
 
 ### Kľúčové technológie:
 - **Transformery** (2017, Google): Architektúra založená na *self-attention* mechanizmoch → efektívnejšie spracovanie dlhých textov  
@@ -189,9 +190,8 @@ pomáhajú riešiť komplexné problémy.
 
 > 🤔 **Diskusná otázka:** Ako by sme mali používať LLMs vo vzdelávaní, aby sme podporili učenie, nie len kopírovanie odpovedí?
 
----
 
-## Aplikácie AI v praxi – Prehľad pre študentov
+## Aplikácie AI v praxi 
 
 | Odvetvie | Príklady aplikácií | Prečo je to dôležité? |
 |----------|-------------------|----------------------|
@@ -202,12 +202,12 @@ pomáhajú riešiť komplexné problémy.
 | **Kreatívny priemysel** | Generovanie obrázkov, hudby, textov (DALL·E, Midjourney) | Rozširuje kreatívne možnosti, urýchľuje prototypovanie |
 | **Zákaznícky servis** | Chatboty, automatické odpovede, analýza sentimentu | Zlepšuje dostupnosť služieb, znižuje náklady |
 
-> 💡 **Tip pre študentov:** Pri štúdiu aplikácií AI sa pýtajte: *Aký problém rieši? Aké dáta používa? Aké sú etické dôsledky?*
 
 
 ## Budúcnosť AI – Výzvy a príležitosti
 
 ### Technologické trendy
+
 - **Multimodálne modely**: Spracovanie textu, obrázkov, zvuku a videa súčasne (napr. GPT-4, Gemini)  
 - **Efektívnejšie modely**: Snaha znížiť výpočtovú náročnosť a energetickú stopu  
 - **AI pre vedu**: Pomoc pri objavovaní liekov, modelovaní klímy, analýze vesmíru
