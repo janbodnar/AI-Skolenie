@@ -8,6 +8,14 @@ situáciám a riešiť úlohy podobne ako človek.
 > **Jednoducho povedané:** AI je počítačový program, ktorý sa vie učiť z dát a pomáhať  
 > nám riešiť úlohy – od písania textov až po rozpoznávanie obrázkov.
 
+
+Zásadné charakteristiky AI modelov 
+
+- sú studnicou poznania
+- vykonávajú kognitívne funkcie
+
+
+
 **Stručná história:**
 - **1950s:** Začiatky – Alan Turing položil teoretické základy
 - **1970s:** Expertné systémy – počítače riešiace špecifické úlohy
