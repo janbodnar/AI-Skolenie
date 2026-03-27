@@ -12,6 +12,9 @@ troch dielov knižnej trilógie *Pán prsteňov* naraz. Vďaka takémuto veľké
 môžete do konverzácie nahrať aj rozsiahle dokumenty (celé knihy, dlhé správy, viacero súborov)  
 a DeepSeek si udrží prehľad o celom obsahu bez toho, aby zabúdal na úvodné časti rozhovoru.
 
+> Možnosti AI asistentov sa neustále zlepšujú a ich schopnosti a technické parametre
+> skokovo rastú.
+
 ## 1. Web Search – vyhľadávanie naživo  
 
 **Web Search** umožňuje DeepSeeku pristupovať k aktuálnemu obsahu internetu.  
