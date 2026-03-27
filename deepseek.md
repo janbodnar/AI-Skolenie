@@ -1,9 +1,16 @@
-# DeepSeek AI asistent: Funkcie a tipy pre efektívnu prácu  
+# DeepSeek AI asistent:
 
 DeepSeek je moderný AI asistent navrhnutý tak, aby pomáhal s riešením úloh,  
 vyhľadávaním informácií, analýzou dokumentov a hlbokým uvažovaním. V tejto  
 kapitole sa zoznámite s jeho kľúčovými nástrojmi a naučíte sa, ako s nimi  
 pracovať, aby ste z interakcie vyťažili maximum.  
+
+Aktuálne okno kontextu (maximálna pamäť na jednu konverzáciu) v bezplatnej verzii  
+DeepSeek Chat je **1 milión tokenov**. V praxi to znamená, že model dokáže naraz  
+spracovať text zodpovedajúci približne 750 000 slovám – čo je napríklad objem všetkých  
+troch dielov knižnej trilógie *Pán prsteňov* naraz. Vďaka takémuto veľkému kontextu  
+môžete do konverzácie nahrať aj rozsiahle dokumenty (celé knihy, dlhé správy, viacero súborov)  
+a DeepSeek si udrží prehľad o celom obsahu bez toho, aby zabúdal na úvodné časti rozhovoru.
 
 ## 1. Web Search – vyhľadávanie naživo  
 
