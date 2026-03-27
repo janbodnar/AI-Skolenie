@@ -57,6 +57,8 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 > 🤔 **Diskusná otázka:** Prečo ľudia niekedy pripisujú „pochopenie" jednoduchým systémom ako ELIZA?
 
 
+https://www.youtube.com/watch?v=B6rKUf9DWRI
+
 ```
 ### The Mother of All Demos“ (1968)
 
