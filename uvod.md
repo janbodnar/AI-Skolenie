@@ -155,7 +155,7 @@ Praktické dôsledky pre používateľov
 | **Štatistiky a dáta** | Čísla (napr. počet obyvateľov, ceny kryptomien) môžu byť historické, nie aktuálne. | Vždy si overte číselné údaje v reálnom čase. |
 | **Vedecké objavy** | Najnovšie štúdie alebo publikácie po dátume cut-off nie sú v modeli zahrnuté. | Použite vyhľadávanie alebo akademické databázy pre najnovšie poznatky. |
 
-![Ľadovec internetu](data/knowledge-cutoff.png)
+![Strop poznania](data/knowledge-cutoff.png)
 
 **Zhrnutie pre študentov:**
 
