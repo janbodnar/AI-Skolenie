@@ -117,6 +117,15 @@ Všetky riadky majú približne 80 znakov a sú ukončené dvoma medzerami.
 
 ## Príklady  
 
+```
+napíš posledných 3 prezidentov Slovenska
+kedy naposledy porazili Slováci Fínov v hokeji
+how many r letters are in strawberry
+how many years did the 100 years war last
+Autoumyvarka je 100m od mojho domu. Mam tam ist peso alebo autom?
+```
+
+
 ###  Web Search – príklady  
 
 **Príklad 1: Aktuálne správy**  
