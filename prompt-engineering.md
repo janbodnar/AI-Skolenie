@@ -364,6 +364,7 @@ Rozdiel vo výstupe: _________________________
 ```
 
 ### Cvičenie 2: „Few-shot Factory" – Tvorba príkladov
+
 **Cieľ**: Pochopiť silu few-shot prompting a naučiť sa tvoriť kvalitné príklady.
 
 **Úloha**: Vytvoriť few-shot prompt na klasifikáciu štýlu textu (formálny / neformálny).
@@ -463,7 +464,7 @@ Teraz klasifikuj: "Hej, díky moc, pomohlo to!" → ?
 | 🎥 Video | [Prompt Engineering Guide – YouTube](https://www.youtube.com/results?search_query=prompt+engineering+guide) | Vizuálne vysvetlenie techník |
 | 📋 Pracovný list | [Prompt Checklist – printable](https://example.com) *(príprava učiteľa)* | Tlačiteľný checklist pre študentov |
 
-## Príloha: Prompt Cheat Sheet (pre študentov)
+## Príloha: Prompt Cheat Sheet 
 
 ```
 🚀 RÝCHLY SPRIEVODCA PROMPTOVANÍM
@@ -501,6 +502,3 @@ Teraz klasifikuj: "Hej, díky moc, pomohlo to!" → ?
 🔁 Pamätaj: Prompt engineering je iteratívny proces. Ak výstup nie je ideálny, uprav prompt a skús znova!
 ```
 
-
-*Zdroje a inšpirácia: OpenAI Prompt Engineering Guide, Anthropic Prompt Design, Learn Prompting community, 
-Slovak NLP community – informácie aktuálne k marcu 2026.*
