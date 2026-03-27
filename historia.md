@@ -51,8 +51,46 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 ## Kľúčové milníky (60. – 90. roky)
 
 ### Prvé interaktívne systémy
+
 - **ELIZA** (1966, Weizenbaum): Jednoduchý chatbot, ktorý simuloval terapeuta pomocou vzorov a nahradzovania slov.  
-  > 🤔 **Diskusná otázka:** Prečo ľudia niekedy pripisujú „pochopenie" jednoduchým systémom ako ELIZA?
+
+> 🤔 **Diskusná otázka:** Prečo ľudia niekedy pripisujú „pochopenie" jednoduchým systémom ako ELIZA?
+
+
+```
+### The Mother of All Demos“ (1968)
+
+V roku 1968 Douglas Engelbart predstavil revolučnú ukážku počítačových technológií, ktoré boli desaťročia  
+pred svojou dobou. Demonštroval prvú počítačovú myš, prácu s textom podobnú dnešným textovým editorom,  
+hypertextové prepojenia pripomínajúce budúci internet, ako aj vzdialenú spoluprácu a videokomunikáciu.  
+Video ukazuje, ako si Engelbart predstavoval budúcnosť práce s počítačmi – interaktívnu, prepojenú a zameranú  
+na zdieľanie informácií. Dnes je táto prezentácia považovaná za jeden z najdôležitejších momentov  
+v dejinách informatiky.
+```
+
+
+```
+Šesťdesiate roky boli obdobím, keď sa svet akoby naraz prebudil do éry technológie, kreativity a
+odvážnych vízií. V informatike sa rodili prvé interaktívne počítače, vznikali základy internetu
+a vedci začínali experimentovať s myšlienkami, ktoré dnes považujeme za samozrejmé. Paralelne s tým
+prebiehal vesmírny program, ktorý posúval hranice ľudských možností, a kultúra prechádzala radikálnymi
+zmenami – od hudby cez dizajn až po spôsob, akým ľudia premýšľali o budúcnosti. Bola to dekáda,
+v ktorej sa technológie, veda a spoločenské hnutia spojili do jedného veľkého zrýchlenia. Práve v tomto
+prostredí vznikla aj Engelbartova demonštrácia – ako dôkaz, že predstavivosť a odvaha dokážu predbehnúť
+svoju dobu o celé desaťročia.
+
+Z dnešného pohľadu sa zdá, že práve v tejto dekáde boli položené neviditeľné, no kľúčové základy dnešnej
+digitálnej doby a umelej inteligencie. V laboratóriách vznikali prvé neurónové siete a perceptrony, ktoré
+hoci vtedy ešte nedosahovali dnešné výkony, definovali smerovanie celého odvetvia na nasledujúcich 60 rokov.
+J. C. R. Licklider vtedy snívao o „medzigalaktickej počítačovej sieti", čo bol priamy predobraz dnešného
+internetu, a koncept time-sharingu umožnil ľuďom interagovať s počítačmi v reálnom čase namiesto čakania na
+výsledky z predchádzajúceho dňa. Táto unikátna kombinácia odvážnych teórií, štátneho financovania výskumu a
+praktických experimentov vytvorila úrodnú pôdu, z ktorej dnes čerpáme. Bez optimizmu a investícií do výskumu
+v 60. rokoch by sme dnes nemali ani počítače, ktoré nás obklopujú, natož inteligentné systémy, ktoré nám
+pomáhajú riešiť komplexné problémy.
+```
+
+  
 
 ### Expertné systémy (70. – 80. roky)
 
