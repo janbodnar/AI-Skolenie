@@ -180,7 +180,7 @@ DeepSeek rozpozná text, opraví prípadné nejasnosti a štruktúruje
 ho do zoznamu úloh.  
 
 
-
+## Otázky & diskusia
 
 
 
