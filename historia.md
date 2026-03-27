@@ -33,7 +33,7 @@ výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.
 - Organizátori: John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon  
 - Tu bol prvýkrát použitý termín **„Artificial Intelligence"** (umelá inteligencia)  
 - Hlavná hypotéza: *„Každý aspekt učenia alebo inej vlastnosti inteligencie možno principiálne presne
-- popísať tak, aby ho stroj dokázal simulovať."*
+  popísať tak, aby ho stroj dokázal simulovať."*
 
 ### Rané prístupy: Symbolická AI (GOFAI)
 
