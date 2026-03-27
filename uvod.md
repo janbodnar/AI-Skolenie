@@ -133,6 +133,34 @@ Môže byť modelom rozložená na tokeny približne takto:
 
 Pochopenie tokenov je kľúčové pre optimalizáciu promptov, odhadovanie nákladov a efektívnu prácu s AI nástrojmi.
 
+## Knowledge Cut-off: Čo to je a prečo na to treba myslieť
+
+**Knowledge cut-off** (hranica poznania) je dátum, do ktorého bol daný AI model trénovaný na dátach z internetu,  
+kníh a ďalších zdrojov. Predstavte si ho ako „dátum narodenia" vedomostí modelu – všetko, čo sa udialo po tomto  
+dátume, model nepozná, pokiaľ nemá prístup k externým nástrojom, ako je vyhľadávanie na webe.
+
+AI modely sa neučia priebežne v reálnom čase. Ich trénovanie je náročný a časovo nákladný proces, ktorý prebieha 
+v konkrétnych cykloch:
+
+1.  **Zber dát:** Model sa „kŕmi" obrovským množstvom textov z rôznych zdrojov.
+2.  **Tréning:** Model sa učí vzory, súvislosti a jazykové štruktúry.
+3.  **Uzavretie:** Po dokončení tréningu sa model „zmrazí" – jeho vedomostná báza sa už nemení, kým nie je vydaná nová verzia.
+
+Praktické dôsledky pre používateľov
+
+| Situácia | Čo sa môže stať | Ako tomu predísť |
+|----------|----------------|------------------|
+| **Otázka na aktuálnu udalosť** | Model môže odpovedať, že „nemá informácie", alebo uviesť zastarané údaje. | Zapnite **Web Search** alebo overte informáciu v aktuálnych zdrojoch. |
+| **Práca s najnovšími technológiami** | Model nemusí poznať najnovšie verzie softvéru, ktoré vyšli po cut-off dátume. | Špecifikujte v prompte kontext alebo nahrajte dokumentáciu ako súbor. |
+| **Štatistiky a dáta** | Čísla (napr. počet obyvateľov, ceny kryptomien) môžu byť historické, nie aktuálne. | Vždy si overte číselné údaje v reálnom čase. |
+| **Vedecké objavy** | Najnovšie štúdie alebo publikácie po dátume cut-off nie sú v modeli zahrnuté. | Použite vyhľadávanie alebo akademické databázy pre najnovšie poznatky. |
+
+![Ľadovec internetu](data/knowledge-cutoff.png)
+
+**Zhrnutie pre študentov:**
+
+> Knowledge cut-off nie je chyba modelu, ale jeho technická charakteristika. Predstavte si AI ako veľmi inteligentného študenta, ktorý má v hlave všetko, čo sa naučil do určitého dátumu, ale na novšie udalosti sa musí pozrieť do „učebnice" (webu) alebo sa opýtať vás. Vedieť, kde táto hranica je, vám pomôže klásť lepšie otázky a kriticky vyhodnocovať odpovede.
+
 
 ## Chatboty – AI ako váš asistent
 
