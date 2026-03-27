@@ -29,7 +29,7 @@ dokumenty s výkonným AI modelom Gemini.
 > 💡 **Tip:** NotebookLM podporuje viac ako 80 jazykov a zvláda aj slovenčinu a češtinu.
 
 
-## 🚀 Ako začať – krok za krokom
+## Ako začať – krok za krokom
 
 ### 1. Prihlásenie
 ```
@@ -53,7 +53,8 @@ dokumenty s výkonným AI modelom Gemini.
 • Počkajte, kým AI zdroj "prečíta" a spracuje
 ```
 
-### 4. Začnite sa pýtať!
+### 4. Začnite sa pýtať
+
 ```
 Príklady promptov pre začiatočníkov:
 
@@ -66,9 +67,10 @@ Príklady promptov pre začiatočníkov:
 
 ---
 
-## ✨ Hlavné funkcie – čo všetko NotebookLM vie?
+## Hlavné funkcie – čo všetko NotebookLM vie?
 
-### 🔍 Inteligentné odpovede s citáciami
+### Inteligentné odpovede s citáciami
+
 ```
 Keď sa opýtate na niečo z vašich dokumentov:
 
@@ -79,7 +81,8 @@ Keď sa opýtate na niečo z vašich dokumentov:
 ✅ Výhoda: Vždy viete overiť, či AI "nevymýšľa"
 ```
 
-### 📚 Automatické študijné pomôcky
+### Automatické študijné pomôcky
+
 ```
 Jedným kliknutím môžete vygenerovať:
 
@@ -90,7 +93,8 @@ Jedným kliknutím môžete vygenerovať:
 📝 Študijný sprievodca – štruktúrovaný materiál na učenie
 ```
 
-### 🎧 Audio Overview – "Podcast" z vašich dokumentov
+### Audio Overview – "Podcast" z vašich dokumentov
+
 ```
 Nová funkcia, ktorá zaujme každého:
 
@@ -102,7 +106,8 @@ Nová funkcia, ktorá zaujme každého:
 🎯 Využitie: Rýchle zopakovanie látky, alternatíva pre auditívnych žiakov
 ```
 
-### 🔄 Prepojenie viacerých zdrojov
+### Prepojenie viacerých zdrojov
+
 ```
 NotebookLM dokáže:
 
@@ -131,6 +136,7 @@ Postup v NotebookLM:
 ```
 
 ### Scenár 2: Štúdium účastníka
+
 ```
 Úloha: Rýchlo pochopiť tému "Prompt engineering"
 
@@ -177,7 +183,8 @@ Postup:
    • Skúste: "Vysvetli to jednoduchšie" alebo "Uveď konkrétny príklad"
 ```
 
-### ⚠️ Na čo si dať pozor
+###  Na čo si dať pozor
+
 ```
 • NotebookLM odpovedá NA ZÁKLADE NAHRANÝCH ZDROJOV
   → Ak sa opýtate na niečo, čo v nich nie je, odpovie všeobecne alebo oznámi limit
@@ -192,7 +199,6 @@ Postup:
   • Skontrolujte, či dokumenty neobsahujú citlivé údaje
 ```
 
----
 
 ## Súkromie a bezpečnosť
 
@@ -208,7 +214,7 @@ Odporúčanie pre školenia:
 ```
 
 
-## 🧭 Rýchly cheat sheet pre účastníkov
+## Rýchly cheat sheet pre účastníkov
 
 | Úloha | Ako na to v NotebookLM |
 |-------|------------------------|
@@ -222,29 +228,5 @@ Odporúčanie pre školenia:
 | **Zdieľať s tímom** | Tlačidlo "Zdieľať" → poslať odkaz kolegovi |
 
 
-## 🎓 Záver: Prečo zaradiť NotebookLM do školenia AI?
-
-```
-NotebookLM je ideálny "prvý kontakt" s AI pre začiatočníkov, pretože:
-
-🔹 Je bezpečný – pracuje len s vašimi zdrojmi, minimalizuje halucinácie
-🔹 Je transparentný – každá odpoveď má citáciu, učí kritickému mysleniu
-🔹 Je praktický – okamžite vidíte užitočnosť AI v reálnej práci
-🔹 Je prístupný – jednoduché rozhranie, žiadne technické nastavenia
-🔹 Je motivačný – funkcie ako Audio Overview zaujmú a zapoja
-
-🎯 Odporúčanie pre lektora:
-Na začiatku školenia ukážte 5-minútovú live ukážku:
-1. Nahrať krátky článok o AI
-2. Položiť otázku: "Čo je to machine learning?"
-3. Ukázať citáciu a vysvetliť princíp "grounded AI"
-4. Nechať účastníkov vyskúšať si to na vlastnom zariadení
-```
-
-> 📌 **Praktická úloha pre účastníkov (10 min):**
-> 1. Prihláste sa do NotebookLM  
-> 2. Nahrajte jeden krátky text (napr. tento dokument ako PDF)  
-> 3. Opýtajte sa: "Aké sú 3 najdôležitejšie funkcie NotebookLM?"  
-> 4. Kliknite na citáciu a overte si odpoveď v originálnom texte  
-> 5. Zdieľajte svoj zážitok so skupinou
+## Otázky a diskusia
 
