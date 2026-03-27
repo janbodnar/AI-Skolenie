@@ -74,15 +74,6 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 - Čím viac parametrov („veľkosť mozgu"), tým lepšie chápu nuansy
 - Nevedia „myslieť" ako ľudia – predpovedajú najpravdepodobnejšiu odpoveď
 
-**Prečo nepoužívať vlastný model?**
-
-```
-✅ Výhody hotových modelov:
-- Okamžité použitie cez API
-- Nevyžadujú tisíce GPU a mesiace trénovania
-- Dajú sa „doladiť" na konkrétnu úlohu s malým množstvom dát
-```
-
 ## Token - jednotka spracovania textu
 
 V kontexte umelej inteligencie, konkrétne veľkých jazykových modelov (LLM), sú tokeny  
