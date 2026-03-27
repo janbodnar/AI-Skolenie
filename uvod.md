@@ -59,8 +59,6 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 > 🎯 **Zjednodušená metafora:** Predstavte si neurónovú sieť ako tím špecialistov, kde každý rieši malú
 > časť úlohy a spoločne dospeli k výsledku.
 
----
-
 ## Veľké jazykové modely (LLM) 
 
 **LLM** (napr. GPT, Gemini, LLaMA) sú AI trénované na miliardách textov z internetu. Vedia:
@@ -128,9 +126,9 @@ Pochopenie tokenov je kľúčové pre optimalizáciu promptov, odhadovanie nákl
 | **ChatGPT** | OpenAI | Univerzálny, kreatívny, dobrý na vysvetľovanie |
 | **Copilot** | Microsoft | Integrácia s Office a vývojovými nástrojmi |
 | **Gemini** | Google | Práca s viacerými formátmi (text, obrázok, audio) |
-| **Qwen** | Alibaba | Vysoký výkon v kódovaní a logickom uvažovaní, podpora dlhého kontextu, multilingválne schopnosti, nákladovo efektívny [[1]] |
-| **Grok** | xAI | Prístup k dátam z platformy X v reálnom čase, pokročilé logické uvažovanie a kódovanie, hlasová komunikácia a generovanie multimédií, „truth-seeking" prístup [[11]][[14]] |
-| **DeepSeek** | Čína (High-Flyer) | Efektívny, dobrý pomer výkon/cena, pokročilé chápanie kontextu a spracovanie prirodzeného jazyka, silné schopnosti v kódovaní a matematike [[21]][[23]] |
+| **Qwen** | Alibaba | Vysoký výkon v kódovaní a logickom uvažovaní, podpora dlhého kontextu, multilingválne schopnosti, nákladovo efektívny |
+| **Grok** | xAI | Prístup k dátam z platformy X v reálnom čase, pokročilé logické uvažovanie a kódovanie, hlasová komunikácia a generovanie multimédií, „truth-seeking" prístup |
+| **DeepSeek** | Čína (High-Flyer) | Efektívny, dobrý pomer výkon/cena, pokročilé chápanie kontextu a spracovanie prirodzeného jazyka, silné schopnosti v kódovaní a matematike  |
 
 **Čo chatboty vedia:**
 - Odpovedať na otázky v prirodzenom jazyku
