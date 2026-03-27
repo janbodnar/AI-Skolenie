@@ -133,11 +133,11 @@ Môže byť modelom rozložená na tokeny približne takto:
 
 Pochopenie tokenov je kľúčové pre optimalizáciu promptov, odhadovanie nákladov a efektívnu prácu s AI nástrojmi.
 
-## Knowledge Cut-off: Čo to je a prečo na to treba myslieť
+## Knowledge Cut-off
 
-**Knowledge cut-off** (hranica poznania) je dátum, do ktorého bol daný AI model trénovaný na dátach z internetu,  
-kníh a ďalších zdrojov. Predstavte si ho ako „dátum narodenia" vedomostí modelu – všetko, čo sa udialo po tomto  
-dátume, model nepozná, pokiaľ nemá prístup k externým nástrojom, ako je vyhľadávanie na webe.
+**Knowledge cut-off** (hranica poznania/strop poznania) je dátum, do ktorého bol daný AI model trénovaný na  
+dátach z internetu, kníh a ďalších zdrojov. Predstavte si ho ako „dátum narodenia" vedomostí modelu – všetko,  
+čo sa udialo po tomto dátume, model nepozná, pokiaľ nemá prístup k externým nástrojom, ako je vyhľadávanie na webe.
 
 AI modely sa neučia priebežne v reálnom čase. Ich trénovanie je náročný a časovo nákladný proces, ktorý prebieha 
 v konkrétnych cykloch:
