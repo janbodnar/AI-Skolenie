@@ -213,23 +213,20 @@ pomáhajú riešiť komplexné problémy.
 - **AI pre vedu**: Pomoc pri objavovaní liekov, modelovaní klímy, analýze vesmíru
 
 ### Etické a spoločenské výzvy
-> 🎓 **Kľúčové otázky pre diskusiu:**
-> 1. Ako zabezpečiť, aby AI systémy boli spravodlivé a nepredpojaté?  
-> 2. Kto je zodpovedný, keď AI urobí chybu?  
-> 3. Ako chrániť súkromie v ére masívnej analýzy dát?  
-> 4. Ako pripraviť pracovnú silu na zmeny spôsobené automatizáciou?
+
+> Ako zabezpečiť, aby AI systémy boli spravodlivé a nepredpojaté?  
+> Kto je zodpovedný, keď AI urobí chybu?  
+> Ako chrániť súkromie v ére masívnej analýzy dát?  
+> Ako pripraviť pracovnú silu na zmeny spôsobené automatizáciou?
 
 ### Umelá všeobecná inteligencia (AGI)
+
 > 🎓 **Definícia:** AGI je hypotetická AI s ľudskou úrovňou inteligencie vo všetkých
 > oblastiach – nie len v úzkych úlohách.
 
 - Aktuálny stav: Väčšina expertov považuje AGI za vzdialenú (desaťročia), no nie nemožnú  
 - Dôležité: Výskum **bezpečnosti a zarovnania AI** (AI alignment) – ako zabezpečiť, aby silné
   AI systémy sledovali ľudské hodnoty
-
-> 💡 **Záver pre študentov:** AI nie je len technológia – je to spoločenský projekt. Vaša úloha ako
-> budúcich odborníkov je nielen rozumieť algoritmom, ale aj kriticky uvažovať o tom, **ako a prečo**
-> by sme mali AI používať.
 
 
 ## Zhrnutie kapitoly
@@ -240,26 +237,5 @@ pomáhajú riešiť komplexné problémy.
 ✅ AI už mení takmer každé odvetvie – od medicíny po umenie  
 ✅ Budúcnosť AI závisí nielen od technológií, ale aj od **etických rozhodnutí a regulácie**
 
+## Otázky a diskusia
 
-## Ďalšie zdroje a cvičenia
-
-### 📚 Odporúčaná literatúra
-- Russell, S. & Norvig, P.: *Artificial Intelligence: A Modern Approach* (kapitola 1–2)  
-- Goodfellow, I. et al.: *Deep Learning* (úvodné kapitoly)  
-- Online: [Elements of AI](https://www.elementsofai.com/) – bezplatný úvodný kurz
-
-### 💻 Praktické cvičenia
-
-1. **Explorácia**: Vyskúšajte si jednoduchý chatbot (napr. cez Hugging Face) a zamyslite sa nad jeho obmedzeniami  
-2. **Analýza**: Nájdite príklad AI aplikácie vo vašom odbore – aký problém rieši? Aké dáta používa?  
-3. **Diskusia**: V skupine diskutujte: *„Mala by byť vývoj silnej AI regulovaná? Ak áno, ako?"*
-
-### 🧠 Kontrolné otázky
-
-1. V čom sa líši symbolická AI od prístupu založeného na strojovom učení?  
-2. Prečo boli „AI zimy" dôležité pre vývoj odvetvia?  
-3. Aké sú hlavné výhody a riziká veľkých jazykových modelov?  
-4. Ako môže AI pomôcť riešiť globálne výzvy, ako je klimatická zmena?
-
-> 🌟 **Tip na záver:** Najlepší spôsob, ako pochopiť AI, je **skúšať, pýtať sa a kriticky reflektovať**.
-> Nebojte sa experimentovať – každý expert začínal ako začiatočník!
