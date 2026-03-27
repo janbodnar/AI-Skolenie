@@ -183,22 +183,6 @@ Postup:
    • Skúste: "Vysvetli to jednoduchšie" alebo "Uveď konkrétny príklad"
 ```
 
-###  Na čo si dať pozor
-
-```
-• NotebookLM odpovedá NA ZÁKLADE NAHRANÝCH ZDROJOV
-  → Ak sa opýtate na niečo, čo v nich nie je, odpovie všeobecne alebo oznámi limit
-
-• AI môže stále urobiť chybu v interpretácii
-  → Vždy kriticky prečítajte odpoveď, najmä pri dôležitých rozhodnutiach
-
-• Audio Overview je zatiaľ len v angličtine
-  • Pre slovenské školenia používajte textové výstupy
-
-• Zdieľanie notebooku = zdieľanie prístupu k zdrojom
-  • Skontrolujte, či dokumenty neobsahujú citlivé údaje
-```
-
 
 ## Súkromie a bezpečnosť
 
