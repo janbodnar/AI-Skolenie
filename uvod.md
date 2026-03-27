@@ -1,5 +1,19 @@
 # Úvod do umelej inteligencie (AI)
 
+## Autor 
+
+- Ján Bodnár
+- vyštodované financie
+- Unix Admin, Java/Python vývojár
+- Školím základy Javy, Pythonu, dátovú analýzu a AI
+
+## Školenie 
+
+- trvanie 2 dni, od 9.00 do 15.00
+- o 10.30 krátka 10 min prestávka
+- 12.00 - 13.00 obedňajšia prestávka
+
+
 *Umelá inteligencia (AI)* je technológia, ktorá umožňuje počítačom učiť sa z dát  
 a hľadať riešenia bez toho, aby sme im museli presne určovať každý krok. Namiesto  
 pevne naprogramovaných postupov dokáže AI rozpoznávať vzory, prispôsobovať sa novým  
@@ -13,7 +27,6 @@ Zásadné charakteristiky AI modelov
 
 - sú studnicou poznania
 - vykonávajú kognitívne funkcie
-
 
 
 **Stručná história:**
