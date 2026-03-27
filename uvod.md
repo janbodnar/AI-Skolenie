@@ -64,6 +64,7 @@ Zásadné charakteristiky AI modelov
 - 🟡 **S posilňovaním:** AI sa učí metódou pokus-omyl, dostáva „odmeny" za správne rozhodnutia
 
 ### Neurónové siete – inšpirácia mozgom:
+
 ```
 Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 ```
