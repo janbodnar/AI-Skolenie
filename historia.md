@@ -323,9 +323,6 @@ V súčasnosti je bezhotovostný styk štandardom, pričom platobné karty,
 smartfóny či kryptomeny posunuli myšlienku digitálnych peňazí do každodennej  
 reality.  
 
----
-
-Tu je naformátovaný text s riadkami po približne 80 znakoch, každý paragraf ukončený dvoma medzerami. Pridal som aj funkčné odkazy na YouTube scény pre väčšinu spomínaných filmov, kde boli dostupné.
 
 ---
 
@@ -339,7 +336,7 @@ Tu je niekoľko fascinujúcich príkladov „predpovedí“ z týchto končín:
 
 ---
 
-### 🇩🇪 Nemecko: Metropolis (1927) a Frau im Mond (1929)  
+### Nemecko: Metropolis (1927) a Frau im Mond (1929)  
 
 Nemecký expresionizmus položil základy sci-fi vizuálu, ktorému vďačíme za  
 viac, než si myslíme.  
@@ -348,21 +345,18 @@ viac, než si myslíme.
   človek) bola prvým ikonickým robotom na plátne. Inšpirovala nielen C-3PO zo  
   Star Wars, ale predpovedala dnešných humanoidov ako **Optimus od Tesly**  
   alebo roboty od **Boston Dynamics**.  
-  🔗 **Ukážka scény:** [Metropolis – Robot Transformation](https://www.youtube.com/watch?v=Q_5koR3BwVc)  
 
 * **Odpočítavanie pred štartom rakety (Frau im Mond):** Režisér Fritz Lang  
   potreboval vytvoriť napätie pred štartom rakety, a tak vymyslel odpočítavanie  
   „3, 2, 1... ŠTART!“. Pred týmto filmom nič také neexistovalo. **NASA** tento  
   dramatický prvok neskôr prevzala ako štandardný technický postup.  
-  🔗 **Ukážka scény:** [Frau im Mond – Countdown Scene](https://www.youtube.com/watch?v=zKb7H8dU3dI)  
 
 * **Videotelefón (Metropolis):** Vo filme vidíme zariadenie na videohovory už v  
   roku 1927 – o takmer 100 rokov skôr, než sa **Zoom** stal našou dennou rutinou.  
-  🔗 **Ukážka scény:** [Metropolis – Video Call Scene](https://www.youtube.com/watch?v=0KfZU3kF5wQ)  
-
+ 
 ---
 
-### 🇨🇿 Česko: Ikarie XB-1 (1963) a R.U.R. (1920/1938)  
+### Česko: Ikarie XB-1 (1963) a R.U.R. (1920/1938)  
 
 Československá kinematografia a literatúra dali svetu samotný základ robotiky.  
 
@@ -370,17 +364,15 @@ viac, než si myslíme.
   sfilmovanú), práve tu vznikol termín robot. Čapkovi roboti neboli zo  
   skrutiek, ale **biologické entity** – čo dnes nazývame **syntetická biológia**  
   alebo bioinžinierstvo.  
-  🔗 **Ukážka (film 1938):** [R.U.R. (1938) – Robot Factory Scene](https://www.youtube.com/watch?v=8r5K5zEfE8Q)  
 
 * **Dizajn vesmírnych staníc (Ikarie XB-1):** Tento film (predloha pre Lemov  
   *Solaris*) ukázal život vo vesmíre ako sterilný, moderný a minimalistický.  
   Predpovedal **automatické dvere**, interkomy a vnútroloďové komunikačné  
   systémy, ktoré neskôr „skopíroval“ aj americký Star Trek.  
-  🔗 **Ukážka scény:** [Ikarie XB-1 – Interior Design Scene](https://www.youtube.com/watch?v=1oP-qCq5HwM)  
 
 ---
 
-### 🇫🇷 Francúzsko: Alphaville (1965) a Cesta na Mesiac (1902)  
+### Francúzsko: Alphaville (1965) a Cesta na Mesiac (1902)  
 
 Francúzi sa vždy zameriavali na spojenie technológie a štátu.  
 
@@ -388,16 +380,14 @@ Francúzi sa vždy zameriavali na spojenie technológie a štátu.
   mesto, zakazuje emócie a optimalizuje život občanov na základe logiky. Je to  
   mrazivá predpoveď dnešných **Smart Cities** a algoritmov sociálneho kreditu,  
   ktoré využívajú **Big Data** na predpovedanie a ovplyvňovanie správania ľudí.  
-  🔗 **Ukážka scény:** [Alphaville – Alpha 60 Interrogation](https://www.youtube.com/watch?v=U2F_Xx1gRkA)  
 
 * **Vesmírny turizmus (Cesta na Mesiac):** Georges Méliès ukázal cestu na Mesiac  
   v čase, keď boli autá raritou. Dnes, vďaka spoločnostiam ako **SpaceX** alebo  
   **Blue Origin**, sa vízia vesmírnej turistiky stáva komerčnou realitou.  
-  🔗 **Ukážka scény:** [A Trip to the Moon (1902) – Full Film](https://www.youtube.com/watch?v=_FrdVdKlxUk)  
 
 ---
 
-### 🇷🇺 Rusko / ZSSR: Obojživelník (1962) a Aelita (1924)  
+### Rusko / ZSSR: Obojživelník (1962) a Aelita (1924)  
 
 Sovietske sci-fi sa často pozeralo na hranice ľudských možností a transformáciu tela.  
 
@@ -406,26 +396,12 @@ Sovietske sci-fi sa často pozeralo na hranice ľudských možností a transform
   transplantačnej chirurgie** a experimenty s tekutým dýchaním  
   (perfluorokarbóny), ktoré sa dnes skúmajú pre extrémne hĺbkové potápanie  
   alebo medicínu predčasne narodených detí.  
-  🔗 **Ukážka scény:** [Amphibian Man (1962) – Underwater Scene](https://www.youtube.com/watch?v=KqyGqg3lVpU)  
 
 * **Konštruktivistická estetika techniky (Aelita):** Tento nemý film ukázal  
   futuristické marťanské kostýmy a stroje, ktoré predbehli svoju dobu v chápaní  
   **geometrického dizajnu úžitkových predmetov**, čo dnes vidíme v modernom  
   industriálnom dizajne.  
-  🔗 **Ukážka scény:** [Aelita (1924) – Martian Costumes](https://www.youtube.com/watch?v=Wp5Kf0eJcLg)  
-
----
-
-### Čo by vás zaujímalo ďalej?  
-Môžeme sa pozrieť na to, ako tieto staršie filmy ovplyvnili konkrétne moderné  
-technológie, alebo by ste chceli, aby som vám vygeneroval **obrázok**, ako by  
-vyzeral „Smart City“ v štýle nemeckého filmu Metropolis?  
-
----  
-
-**Poznámka:** Všetky odkazy smerujú na verejne dostupné videá na YouTube.  
-Ak niektorý odkaz prestane byť funkčný, stačí vyhľadať názov filmu +  
-kľúčovú scénu (napr. „Metropolis robot transformation“).
+ 
 
 ---
 
