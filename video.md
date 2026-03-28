@@ -12,12 +12,8 @@ systémoch, ktoré rozumejú základným fyzikálnym zákonom (gravitácia, odra
 * **Image-to-Video (I2V)** – Oživenie statického vizuálu (momentálne najstabilnejšia metóda).  
 * **Video-to-Video (V2V)** – Kompletný re-styling alebo zmena subjektov v existujúcom videu.  
 
-> **Aktualizácia (Marec 2026):**  
-> K 24. marcu 2026 OpenAI oficiálne uzavrela éru "samostatnej" aplikácie Sora.  
-> Táto technológia bola plne pohltená multimodálnym jadrom **GPT-5**.  
-> Generovanie videa je teraz natívnou súčasťou konverzácie, rovnako ako text alebo hlas.  
+https://www.youtube.com/watch?v=0NQo_l6sHSk
 
----
 
 ## Ako technicky funguje generovanie videa?  
 
