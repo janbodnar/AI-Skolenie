@@ -50,6 +50,15 @@ Zásadné charakteristiky AI modelov
 | 🤖 **Roboty** | Umožňuje autonómne rozhodovanie | Výrobné roboty, drony |
 
 
+Moji študenti využívajú AI na:
+
+- právna analýza zmlúv
+- tvorba reklamných materiálov
+- hľadanie receptov
+- profesionálny jazykový preklad
+- tvorba Python skriptov (neprogramátor)
+- hľadanie a porovnanie výhodných cien Apple produktov 
+
 ## Učenie AI
 
 ### Strojové učenie v skratke:
