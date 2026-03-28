@@ -147,15 +147,11 @@ Po roku 2017:
 | **Feed-Forward Network** | Jednoduchá neurónová sieť v každej vrstve, ktorá spracúva informácie po attention kroku |
 | **Layer Normalization** | Technika na stabilizáciu trénovania – pomáha modelu „nezblázniť sa" pri hlbokých sieťach |
 
-> 💡 **Tip pre školenie:** Nakreslite na tabuľu jednoduchý diagram:  
-> `Vstup → [Attention + FFN] × N vrstiev → Výstup`  
-> a vysvetlite, že „čím viac vrstiev, tým hlbšie chápanie".
-
----
 
 ## 🚀 Čo to znamená pre vás? (Praktické závery)
 
 ### Pre začiatočníkov v AI:
+
 ```
 ✅ Transformery sú základ – pochopenie ich princípu vám pomôže 
    rozumieť takmer všetkým moderným AI nástrojom.
@@ -168,6 +164,7 @@ Po roku 2017:
 ```
 
 ### Pre budúcich vývojárov:
+
 ```
 🔧 Väčšina frameworkov (Hugging Face, TensorFlow, PyTorch) 
    má hotové Transformer implementácie – nemusíte písať od nuly.
@@ -179,48 +176,7 @@ Po roku 2017:
    už sa hľadajú ich nástupcovia (Mamba, RWKV, hybridy).
 ```
 
----
 
-## 🔮 Čo môže prísť po Transformerov? (Bonus pre zvedavých)
-
-Hoci Transformery dominujú, výskum pokračuje:
-
-| Kandidát | Sľubuje | Stav (2026) |
-|----------|---------|-------------|
-| **Mamba / SSM** | Lineárna komplexita, lepšia práca s veľmi dlhými sekvenciami | Sľubné výsledky, zatiaľ špecializované použitie |
-| **Hybridné architektúry** | Kombinácia attention + recurrentných prvkov | Aktívny výskum, napr. v Meta, Google |
-| **Neuro-symbolické systémy** | Spojenie neurónových sietí s logickým uvažovaním | Raná fáza, ale veľký potenciál pre reasoning |
-| **Efektívne attention varianty** | Sparse attention, linear attention – menej výpočtov | Už nasadzované v produkčných modeloch |
-
-> 🎯 **Záver:** Transformery sú momentálne „zlatý štandard", ale AI sa vyvíja rýchlo. Dôležité je pochopiť princípy – tie ostávajú cenné aj pri budúcich architektúrach.
-
----
-
-## 🧠 Rýchly kvíz na overenie pochopenia
-
-1. **Čo umožnilo Transformerom nahradiť RNN/LSTM?**  
-   a) Lepšie grafické karty  
-   b) Self-attention a paralelné spracovanie ✅  
-   c) Väčšie datasets  
-
-2. **Prečo je „Attention Is All You Need" taká dôležitá práca?**  
-   a) Predstavila prvú neurónovú sieť  
-   b) Navrhla architektúru, ktorá umožnila masívne škálovanie a multimodalitu ✅  
-   c) Vynašla backpropagation  
-
-3. **Ktorá z týchto aplikácií NEBEŽÍ na Transformer základe?**  
-   a) ChatGPT  
-   b) Starší prekladací systém založený na LSTM ✅  
-   c) Gemini  
-
-4. **Čo znamená, že Transformery sú „škálovateľné"?**  
-   a) Dajú sa zmenšiť pre mobilné telefóny  
-   b) Ich výkon rastie takmer lineárne s viac dátami a výpočtovým výkonom ✅  
-   c) Dajú sa ľahko preložiť do iných jazykov  
-
-*(Odpovede: 1b, 2b, 3b, 4b)*
-
----
 
 ## 📌 Zhrnutie kapitoly
 
@@ -233,13 +189,4 @@ Hoci Transformery dominujú, výskum pokračuje:
 🔹 Pre budúcich expertov: Transformer je vstupná brána do hlbšieho štúdia AI
 ```
 
-> 🎓 **Odporúčanie pre lektora:**  
-> Po tejto teoretickej časti ukážte **5-minútovú live ukážku**:  
-> 1. Otvorte jednoduchý Transformer demo (napr. Hugging Face Spaces)  
-> 2. Zadajte vetu a vizualizujte attention weights (kde sa model „pozerá")  
-> 3. Nechajte účastníkov skúsiť zmeniť vstup a sledovať zmenu pozornosti  
-> → Konkrétne vizuálne pochopenie zvyšuje zapamätanie si o 60–80 %.
 
----
-
-Chcete, aby som k tejto kapitole pridal **pracovný list s vizualizáciou attention** alebo **interaktívnu úlohu**, kde si účastníci môžu „zahrať" na Transformer a manuálne vážiť dôležitosť slov vo vete? 🎯✨
