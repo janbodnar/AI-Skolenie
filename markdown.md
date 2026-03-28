@@ -3,6 +3,8 @@ Tento dokument slúži ako školiaci materiál pre pochopenie a efektívne využ
 formátu Markdown (MD). Cieľom je poskytnúť praktický prehľad pre začiatočníkov  
 aj pokročilých používateľov, najmä v kontexte práce s umelou inteligenciou.  
 
+https://stackedit.io/
+
 ## 1. Úvod do formátu Markdown  
 
 Markdown je ľahký značkovací jazyk vytvorený v roku 2004 Johnom Gruberom s  
