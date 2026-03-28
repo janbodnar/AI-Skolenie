@@ -112,6 +112,28 @@ S masívnym nárastom kvality prišli prísne regulácie:
     tvorcov).  
 
 
+**26. marca 2026** Európsky parlament schválil dôležitú pozíciu k takzvanému **„AI Omnibusu“**, čo  
+je balík zmien a spresnení k pôvodnému Aktu o umelej inteligencii (AI Act).
+
+
+### Hlavné body nových pravidiel:
+
+* **Úplný zákaz „nudifikátorov“:** Europoslanci schválili zákaz AI systémov, ktoré dokážu vytvárať
+  sexuálne explicitný obsah (deepfake porno) reálnych osôb bez ich súhlasu. Ide o reakciu na vlnu kyberšikany.
+* **Povinné označovanie (Watermarking):** Poskytovatelia AI nástrojov na generovanie videa, obrázkov a zvuku
+   dostali termín do **2. novembra 2026**, aby zaviedli technické riešenia na jasné označenie, že ide o AI tvorbu.
+   Cieľom je, aby bežný divák hneď vedel, že video nie je realita.
+* **Koniec autorských práv pre čistú AI:** Podľa rezolúcie z 10. marca 2026 by obsah vytvorený čisto umelou inteligenciou
+  (bez zásadného ľudského vkladu) nemal mať nárok na autorskoprávnu ochranu a mal by patriť do „public domain“.
+* **Transparentnosť tréningu:** Vývojári budú musieť zverejňovať podrobné zoznamy diel chránených autorským
+  právom, ktoré použili na trénovanie svojich video modelov.
+
+[**EÚ smeruje k zákazu AI nudifikátorov. Nové pravidlá majú obmedziť kyberšikanu**](https://touchit.sk/eu-smeruje-k-zakazu-ai-nudifikatorov-nove-pravidla-maju-obmedzit-kybersikanu/853892/)
+
+[**Artificial Intelligence Act: MEPs adopt delayed application, ban on nudifier apps**](https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps)
+
+
+
 ## Budúcnosť: Čo nás čaká po roku 2026?  
 
 * **Real-time Streaming:** Generovanie videa v reálnom čase pri hraní hier alebo VR  
