@@ -1,12 +1,4 @@
-Tu máš celý dokument skompilovaný do jedného celku **so zalomením riadkov
-na približne 80 znakov**.  
-Je pripravený na vloženie do tvojho kurzu *AI základy*.
-
----
-
-# **Pi AI – osobný konverzačný asistent novej generácie**
-
-## **Čo je Pi AI**
+# Pi AI – osobný konverzačný asistent novej generácie
 
 Pi AI je konverzačný systém vyvinutý spoločnosťou Inflection AI. Názov „Pi“
 znamená *personal intelligence* – osobná inteligencia. Jeho cieľom je byť
