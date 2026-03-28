@@ -14,7 +14,8 @@ https://www.youtube.com/watch?v=ITs9agntW18
 https://huggingface.co/spaces/ACE-Step/ACE-Step
 
 
-
+- Najdi a prelož dôležité slová z nemčiny z videa Warum dein sicherer Ort dich festhält (Copilot vs Gemini) 
+https://www.youtube.com/watch?v=DyOTl5iDGvU
 
 ## Právna analýza
 
