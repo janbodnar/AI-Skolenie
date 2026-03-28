@@ -3,15 +3,13 @@
 ## Úvod: Jeden názov, mnoho tvárí  
 
 Keď sa dnes povie „Copilot", väčšina ľudí si predstaví chatovacieho robota od Microsoftu.  
-To je síce pravda, ale len čiastočne.  
-Microsoft stratégiou značky „Copilot" zjednotil všetky svoje nástroje umelej inteligencie  
-pod jednu strechu.  
-Pre začiatočníka v oblasti AI je však dôležité vedieť, že **nie každý Copilot je rovnaký**.  
+To je síce pravda, ale len čiastočne. Microsoft stratégiou značky „Copilot" zjednotil všetky  
+svoje nástroje umelej inteligencie pod jednu strechu. Pre začiatočníka v oblasti AI je však  
+dôležité vedieť, že **nie každý Copilot je rovnaký**.  
 
 Rôzne verzie Copilota majú rôzne schopnosti, pracujú s rôznymi dátami a sú určené  
-pre rôzne skupiny používateľov.  
-V tejto kapitole si rozoberieme hlavné produkty z rodiny Copilot, aby ste vedeli,  
-ktorý nástroj použiť na konkrétnu úlohu.  
+pre rôzne skupiny používateľov. V tejto kapitole si rozoberieme hlavné produkty z rodiny  
+Copilot, aby ste vedeli, ktorý nástroj použiť na konkrétnu úlohu.  
 
 ## Prehľad produktov Copilot  
 
