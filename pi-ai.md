@@ -23,9 +23,9 @@ zamerané na ľudskú komunikáciu a podporu, nie na automatizáciu práce.
 
 ## **Kto používa Pi AI**
 
-Pi AI si našlo publikum najmä medzi ľuďmi, ktorí hľadajú konverzačného
-partnera na každodenné témy, emocionálnu podporu, priestor na premýšľanie
-alebo tréning komunikácie. Používatelia ho často vnímajú ako digitálneho
+Pi AI si našlo publikum najmä medzi ľuďmi, ktorí hľadajú konverzačného  
+partnera na každodenné témy, emocionálnu podporu, priestor na premýšľanie  
+alebo tréning komunikácie. Používatelia ho často vnímajú ako digitálneho  
 spoločníka, nie ako pracovný nástroj.
 
 ## **Jadrová myšlienka Pi AI**
