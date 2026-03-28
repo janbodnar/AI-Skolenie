@@ -1,7 +1,3 @@
-Tu je kompletne prepísaná a aktualizovaná kapitola pre **marec 2026**. Text reflektuje najnovšie posuny v architektúre (prechod k World Models) a zmeny na trhu, vrátane integrácie modelu Sora do ekosystému GPT-5.
-
----
-
 # Generovanie videa pomocou umelej inteligencie
 
 ## 1. Úvod: Čo je to generatívne video?
@@ -124,7 +120,6 @@ S masívnym nárastom kvality prišli prísne regulácie:
 * Ako si poradil s "prekrytím" (occlusion) – napr. keď postava prešla za strom?
 * Bol zvuk generovaný natívne, alebo ste ho museli pridávať externe?
 
----
 
 ## 9. Záver
 
@@ -132,5 +127,3 @@ Generovanie videa v marci 2026 už nie je technologickým trikom, ale **štandar
 
 > **Kľúčová myšlienka:** V roku 2026 nie je limitom výkon grafickej karty, ale hĺbka vašej predstavivosti.
 
----
-**Môžem vám pomôcť s niečím ďalším? Napríklad s prípravou konkrétnych promptov pre tieto moderné modely?**
