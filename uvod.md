@@ -74,6 +74,8 @@ Moji študenti využívajú AI na:
 
 ### Neurónové siete – inšpirácia mozgom:
 
+![Neurónové siete](data/neural-net.png)
+
 ```
 Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 ```
