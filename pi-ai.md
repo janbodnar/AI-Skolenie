@@ -83,14 +83,5 @@ Predstavuje alternatívny smer vývoja AI: nie výkon, ale ľudskosť.
 | **Google Gemini** | Google | Multimodálne úlohy, vyhľadávanie | Silná multimodalita, ekosystém |
 | **Qwen** | Alibaba | Otvorený model pre vývojárov | Rýchlosť, dostupnosť, open‑source |
 
-## Používatelia
-
-| **AI systém** | **Typický používateľ** |
-|---------------|-------------------------|
-| **Pi AI** | Ľudia hľadajúci rozhovor a podporu |
-| **ChatGPT** | Študenti, tvorcovia, profesionáli |
-| **Microsoft Copilot** | Firmy, vývojári, office používateľi |
-| **Google Gemini** | Používatelia Google služieb |
-| **Qwen** | Technickí používatelia, experimentátori |
 
 
