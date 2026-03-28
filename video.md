@@ -1,5 +1,6 @@
 # Generovanie videa pomocou umelej inteligencie  
 
+
 **Generatívne video** je technologický odbor, ktorý využíva neurónové siete  
 na vytváranie pohybujúcich sa obrazových sekvencií z textu, obrázkov alebo  
 iných vstupných dát. Na rozdiel od tradičnej animácie, ktorá vyžaduje  
@@ -18,6 +19,9 @@ Táto technológia rýchlo napreduje a mení mediálny priemysel.
 
 Generatívne video predstavuje prechod od **nástrojov na editáciu** k  
 **nástrojom na syntézu** celých scén od nuly.  
+
+> **Dôležitá poznámka (Marec 2026):** OpenAI oficiálne ukončilo službu Sora  
+> dňa 24. marca 2026. Táto kapitola reflektuje aktuálny stav trhu [[10]].  
 
 ---  
 
@@ -126,20 +130,44 @@ DiT architektúra rieši tieto výzvy:
 
 ---  
 
-## 5. Prehľad súčasných SOTA modelov  
+## 5. Prehľad súčasných SOTA modelov (Marec 2026)  
 
 Na trhu existuje niekoľko kľúčových hráčov, ktorí definujú stav techniky.  
+Nasledujúca tabuľka reflektuje aktuálny stav k marcu 2026 [[1]], [[7]], [[26]].  
 
-| Model | Vývojár | Max Dĺžka | Rozlíšenie | Prístup |  
-|---|---|---|---|---|  
-| Sora | OpenAI | 60s+ | 1080p | Waitlist |  
-| Runway Gen-3 Alpha | Runway ML | 10s | 1080p | Paid |  
-| Pika 1.5 | Pika Labs | 5s | 720p/1080p | Freemium |  
-| Luma Dream Machine | Luma AI | 5s | 720p | Public |  
-| Kling AI | Kuaishou | 10s+ | 1080p | Public |  
-| Haiper | Haiper AI | 4s | 720p | Freemium |  
+| Model | Vývojár | Max Dĺžka | Rozlíšenie | Prístup | Špeciálne Funkcie |  
+|---|---|---|---|---|---|  
+| Kling 3.0 | Kuaishou | 3 min | 1080p | Public | Motion Capture, Lip-Sync |  
+| Runway Gen-4.5 | Runway ML | 10s | 4K | Paid | Consistent Worlds |  
+| Google Veo 3.1 | Google | 1 min | 4K (upscale) | Waitlist | Native Audio, Vertical |  
+| Luma Dream Machine | Luma AI | 5s | 4K (upscale) | Public | Batch Processing |  
+| Seedance 2.0 | ByteDance | 30s | 1080p | Public | Character Consistency |  
+| Minimax 2.3 | Minimax | 1 min | 1080p | Public | Audio Sync |  
+| Haiper 2.0 | Haiper AI | 10s | 1080p | Freemium | Real-time Preview |  
 
-> **Poznámka:** Parametre sa rýchlo menia. Vždy si overte aktuálnu dokumentáciu.  
+> **Poznámka:** OpenAI Sora bola oficiálne ukončená 24. marca 2026 [[10]].  
+> Parametre sa rýchlo menia – vždy si overte aktuálnu dokumentáciu.  
+
+### 5.1 Detailný prehľad vedúcich modelov  
+
+**Kling 3.0 (Kuaishou)**  
+Aktuálne jeden z najpokročilejších modelov na trhu. Ponúka až 3-minútové  
+videá s natívnym audio generovaním a synchronizáciou pier. Verzia 3.0 bola  
+vydaná 31. januára 2026 s vylepšenou kontrolou pohybu [[31]], [[32]].  
+
+**Runway Gen-4.5 (Runway ML)**  
+Profesionálny nástroj s funkciami ako "Consistent World Environments".  
+Model si pamätá štýl, osvetlenie a geometriu medzi scénami. Podporuje 4K  
+export pre Pro tier používateľov [[17]], [[19]], [[25]].  
+
+**Google Veo 3.1 (Google DeepMind)**  
+Najnovšia verzia z januára 2026 ponúka natívne audio generovanie, vertikálne  
+video (9:16) a multi-reference image mode. Rozlíšenie 720p s možnosťou 4K  
+upscale pre produkčné workflowny [[43]], [[44]], [[51]].  
+
+**Luma Dream Machine (Luma AI)**  
+Stále populárny pre batch processing a rýchle generovanie. Januárová 2026  
+aktualizácia pridala video-to-video editáciu a 4K upscale [[34]], [[40]].  
 
 ---  
 
@@ -219,7 +247,7 @@ nesprávne informácie (napr. historické oblečenie v wrong ére)
 
 ## 9. Cvičenie pre študentov: Tvorba AI videa  
 
-### Laboratórna úloha: "Vizuálny príbeh bez kamery"  
+### 🧪 Laboratórna úloha: "Vizuálny príbeh bez kamery"  
 
 **Cieľ:** Vytvoriť krátky príbeh pomocou AI video nástrojov.  
 
@@ -229,7 +257,8 @@ nesprávne informácie (napr. historické oblečenie v wrong ére)
     Napr.: "Robot nachádza kvetinu v púšti a stará sa o ňu."  
 
 2.  **Vyberte nástroj**  
-    *   Použite dostupný model (Luma, Pika, Runway alebo Kling).  
+    *   Použite dostupný model (Kling 3.0, Luma, Runway Gen-4.5).  
+    *   *Poznámka: Sora už nie je dostupná od marca 2026 [[10]].*  
 
 3.  **Generovanie**  
     *   Vytvorte aspoň 3 rôzne zábery (široký záber, detail, pohyb).  
@@ -243,14 +272,10 @@ nesprávne informácie (napr. historické oblečenie v wrong ére)
 5.  **Výstup**  
     *   Krátke video (max 30s) + report o skúsenostiach (1 strana).  
 
-**Diskusia:**  
-*   Aké boli najväčšie limity nástroja?  
-*   Ako by ste vylepšili workflow pre profesionálne použitie?  
-
----  
 
 ## 10. Záver  
 
 Generovanie videa pomocou umelej inteligencie je jednou z najvplyvnejších  
 technológií súčasnosti. Nie je to len o zábave – mení spôsob, akým  
 komunikujeme, učíme sa a tvoríme obsah.  
+
