@@ -1,4 +1,4 @@
-# Kapitola: Generovanie videa pomocou umelej inteligencie
+# Generovanie videa pomocou umelej inteligencie
 
 
 ## 1. Úvod: Čo je to generatívne video?
