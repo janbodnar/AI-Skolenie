@@ -1,7 +1,5 @@
 # Kapitola: Ekosystém Microsoft Copilot  
 
-## Úvod: Jeden názov, mnoho tvárí  
-
 Keď sa dnes povie „Copilot", väčšina ľudí si predstaví chatovacieho robota od Microsoftu.  
 To je síce pravda, ale len čiastočne. Microsoft stratégiou značky „Copilot" zjednotil všetky  
 svoje nástroje umelej inteligencie pod jednu strechu. Pre začiatočníka v oblasti AI je však  
