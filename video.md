@@ -111,7 +111,6 @@ S masívnym nárastom kvality prišli prísne regulácie:
     dátach (napr. Runway s partnermi z Hollywoodu, Google na YouTube dátach so súhlasom  
     tvorcov).  
 
----
 
 ## Budúcnosť: Čo nás čaká po roku 2026?  
 
@@ -121,28 +120,6 @@ S masívnym nárastom kvality prišli prísne regulácie:
 * **Personalizované filmy:** Film, ktorý sa mení podľa nálady a preferencií diváka  
   počas sledovania.  
 
----
-
-## Cvičenie pre študentov: "Digitálny režisér"  
-
-### Laboratórna úloha: Tvorba 60-sekundového naratívneho klipu.  
-
-**Postup:**  
-1.  **Character Sheet:** Vygenerujte v Midjourney (alebo inom modeli) postavu z troch  
-    rôznych uhlov.  
-2.  **I2V Base:** Použite tieto obrázky ako vstup pre **Kling 3.0** alebo **Veo 3.1**  
-    na vytvorenie úvodnej scény.  
-3.  **Extend & Prompting:** Pomocou funkcie *Extend* pridajte ďalšie dve scény, kde postava  
-    vykonáva fyzicky náročnú úlohu (napr. nalievanie vody do pohára – test fyzikálneho  
-    enginu).  
-4.  **Audio Sync:** Overte, či generované zvuky prostredia sedia s pohybom postavy.  
-
-**Diskusia:**  
-* V ktorej sekunde začal model strácať detaily tváre?  
-* Ako si poradil s "prekrytím" (occlusion) – napr. keď postava prešla za strom?  
-* Bol zvuk generovaný natívne, alebo ste ho museli pridávať externe?  
-
----
 
 ## Záver  
 
