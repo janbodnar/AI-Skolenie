@@ -1,4 +1,4 @@
-# Kapitola: OpenAI a modely GPT  
+# OpenAI a modely GPT  
 
 OpenAI je dnes najznámejšia spoločnosť v oblasti umelej inteligencie na svete.  
 Práve ona stojí za produktom, ktorý spustil globálnu vlnu záujmu o AI –  
