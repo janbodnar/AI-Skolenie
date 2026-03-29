@@ -123,7 +123,7 @@ Prečo? Investori si uvedomili priamy dôsledok:
 
 > Ak je možné trénovať špičkový AI model za 5,6 milióna dolárov  
 > na starých čipoch, kto potom potrebuje kupovať tisíce H100 GPU  
-> za tens-of-billions dolárov?  
+> za desiatky miliárd dolárov?  
 
 Obchodný model NVIDIA stojí na predpoklade, že tréning AI modelov  
 si vyžaduje stále výkonnejší – a drahší – hardvér. DeepSeek tento  
