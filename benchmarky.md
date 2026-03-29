@@ -5,6 +5,7 @@ veľkých jazykových modelov (LLM) v rôznych úlohách – od znalostí a logi
 uvažovania až po generovanie kódu a pravdivosť odpovedí.  
 
 [Chatbot Arena](https://openlm.ai/chatbot-arena/)  
+[Arena AI](https://arena.ai/leaderboard)
 
 **Prečo sú benchmarky dôležité?**  
 
