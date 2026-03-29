@@ -4,7 +4,7 @@
 veľkých jazykových modelov (LLM) v rôznych úlohách – od znalostí a logického  
 uvažovania až po generovanie kódu a pravdivosť odpovedí.  
 
-[Chatbot Arena](https://openlm.ai/chatbot-arena/)
+[Chatbot Arena](https://openlm.ai/chatbot-arena/)  
 
 **Prečo sú benchmarky dôležité?**  
 
@@ -253,7 +253,118 @@ Príklady:
 
 ---  
 
-### 💩 BullshitBench (BullshitBench v2)  
+### � GPQA (Graduate-Level Google-Proof Q&A)  
+
+**Čo meria:** Vedecké uvažovanie a odborné znalosti na **PhD úrovni** v oblasti  
+biológie, chémie a fyziky. Otázky sú navrhnuté tak, aby ich nedokázalo vyriešiť  
+jednoduché vyhľadávanie na Googli – vyžadujú skutočné porozumenie.  
+
+> 💡 **Prečo „Google-Proof"?** Otázky sú zámerne navrhnuté tak, aby ich  
+> správna odpoveď nebola priamo dostupná vo vyhľadávači. Testovaná osoba musí  
+> vedieť uvažovať – nestačí nájsť odpoveď.  
+
+**Metodika:**  
+```  
+Formát: Výber z možností (multiple-choice), 4 možnosti  
+Počet otázok:  
+  • GPQA (základná): 448 otázok  
+  • GPQA Extended: 546 otázok  
+  • GPQA Diamond: 198 otázok – iba tie, kde odborníci v danom obore  
+    dosiahli aspoň 65 % správnosť; najťažší subset  
+Domény: Biológia, chémia, fyzika  
+Tvorcovia otázok: Doktorandi a postdoktori s relevantnými titulmi  
+
+Príklad otázky (fyzika):  
+  "Elektrón sa pohybuje v magnetickom poli. Ak sa jeho kinetická energia  
+   zdvojnásobí, ako sa zmení polomer jeho kruhovej trajektórie?"  
+  A) Zmenší sa na polovicu  
+  B) Zostane rovnaký  
+  C) Zväčší sa o faktor √2 ✅  
+  D) Zdvojnásobí sa  
+```  
+
+**Hodnotenie:** Presnosť (accuracy) v percentách. Referenčný bod:  
+- Odborníci v danej oblasti (PhD): ~65 % na Diamond subsete  
+- Neodborníci (iný vedný obor): ~34 %  
+- Náhodný tip: 25 %  
+
+**Aktuálne výsledky (Diamond, marec 2026):**  
+
+| Model | GPQA Diamond |  
+| :--- | :---: |  
+| Gemini 3.1 Pro | **94,3 %** |  
+| GPT-5.4 | 92,8 % |  
+| Claude 4.6 Opus | 91,3 % |  
+| Grok 4 | 90,5 % |  
+| Priemerný PhD odborník | ~65 % |  
+
+> 🎓 **Prečo je GPQA dôležité:** Kým MMLU meria „šírku" znalostí,  
+> GPQA Diamond meria **hĺbku** – či model skutočne rozumie pokročilej vede,  
+> alebo len reprodukuje povrchné fakty. Práve preto sa stal favoritom  
+> výskumníkov, ktorí chcú merať blízkosť k AGI: model prekonávajúci  
+> PhD odborníkov vo vlastnom odbore je zásadný míľnik.  
+
+---  
+
+### 🏔️ HLE (Humanity's Last Exam)  
+
+**Čo meria:** HLE je **najťažší verejne dostupný benchmark** pre LLM modely.  
+Vytvorila ho nezisková organizácia **Center for AI Safety (CAIS)** spolu  
+so spoločnosťou Scale AI. Cieľom bolo zostaviť sadu otázok, ktoré sú mimo  
+dosahu aj najlepších AI modelov – teda skutočná „posledná skúška ľudstva".  
+
+Otázky pochádzajú od **viac ako 1 000 odborníkov** z celého sveta – vedcov,  
+matematikov, právnikov, lekárov – a pokrývajú oblasti, kde ľudská expertíza  
+dosahuje absolútne vrcholy.  
+
+**Metodika:**  
+```  
+Počet otázok: 2 500  
+Formát: Mix otvorených otázok a výberu z možností  
+Domény: Matematika, prírodné vedy, humanitné vedy, právo, medicína,  
+        inžinierstvo, filozofia a mnohé ďalšie  
+Obtiažnosť: Otázky, kde aj najlepší ľudskí odborníci dosahujú  
+            menej ako 50 % správnych odpovedí  
+
+Príklad otázky (matematika):  
+  "Nájdite všetky kladné celé čísla n také, že n^4 + 4^n je prvočíslo."  
+  → Vyžaduje pokročilú kombinatoriku a teóriu čísel;  
+    správna odpoveď: n = 1 (výsledok = 5)  
+
+Príklad otázky (veda):  
+  Formulácia chemického mechanizmu pre konkrétnu enzýmovú reakciu,  
+  kde je potrebné rozlíšiť medzi dvoma konkurenčnými hypotézami  
+  na základe termodynamických dát  
+```  
+
+**Hodnotenie:** Presnosť (accuracy). Kľúčový referenčný bod – takmer žiadny  
+model pri vydaní benchmarku v januári 2025 nedosiahol viac ako 10 %.  
+
+**Vývoj výsledkov na HLE:**  
+
+| Model | HLE skóre | Poznámka |  
+| :--- | :---: | :--- |  
+| Väčšina modelov (jan. 2025, pri vydaní) | < 10 % | Benchmark bol „nedosiahnuteľný" |  
+| Claude 3.7 Sonnet (feb. 2025) | ~8 % | Medzi najlepšími pri vydaní |  
+| Gemini 2.5 Pro (mar. 2025) | ~15 % | Prvý výraznejší skok |  
+| Gemini 3 Deep Think (dec. 2025) | ~51 % | Prelom – viac ako polovica správne |  
+| Gemini 3.1 Pro (feb. 2026) | ~65 % | Prechod cez „ľudskú úroveň odborníka" |  
+
+> ⚠️ **Prečo je HLE kontroverzný:** Niektorí výskumníci namietajú, že rýchle  
+> zlepšovanie skóre (z <10 % na 65 % za 13 mesiacov) naznačuje **kontamináciu  
+> trénovacích dát** – modely mohli počas trénovania „vidieť" podobné otázky.  
+> Center for AI Safety priebežne pridáva nové otázky, aby udržal benchmark  
+> relevantný.  
+
+> 🎓 **Čo HLE znamená pre AI výskum:** Benchmark vznikol s ideou, že bude  
+> „poslednou skúškou" – testom, ktorý AI dlho neprekoná. Gemini 3 Deep Think  
+> ho prekonal za menej ako rok. To ilustruje jav, ktorý výskumníci nazývajú  
+> **benchmark saturation** – akonáhle model prekoná ľudskú úroveň, benchmark  
+> musí byť nahradený ešte ťažším testom.  
+
+---  
+
+### �💩 BullshitBench (BullshitBench v2)  
 
 **Čo meria:** Schopnosť modelu **rozpoznať nezmyselné otázky a odmietnuť ich**  
 namiesto toho, aby sebavedome odpovedal na nezmysel ako na platnú otázku.  
@@ -344,6 +455,8 @@ Panel sudcov (3 modely):
 | **HumanEval** | Kódovanie | Generovanie kódu | 164 | pass@k | Automatické (testy) |  
 | **GSM8K** | Matematika | Slovné úlohy | 8 500 | Presnosť (%) | Automatické |  
 | **TruthfulQA** | Pravdivosť | Otázky a odpovede | 817 | Pravdivosť + informatívnosť | Automatické + model |  
+| **GPQA Diamond** | PhD vedecké uvažovanie | Výber z možností | 198 | Presnosť (%) | Automatické |  
+| **HLE** | Extrémna odbornosť | Mix otvorených + výber | 2 500 | Presnosť (%) | Automatické |  
 | **BullshitBench** | Kritické myslenie | Nezmyselné prompty | 100 (v2) | Detection Rate (%) | 3-model panel |  
 
 > 🔄 **Dva hlavné prístupy k hodnoteniu:**  
@@ -388,6 +501,8 @@ byť opatrný pri faktických tvrdeniach.
 >   benchmarkami.  
 > - **Benchmark ≠ reálne použitie** – vysoké skóre neznamená, že model  
 >   bude rovnako dobrý vo vašom konkrétnom scenári.  
+
+---  
 
 ## Limity a obmedzenia benchmarkov  
 
@@ -434,8 +549,9 @@ Príklad:
 > objavujú sa nové témy, jazyky, problémy – ale benchmarky ostávajú rovnaké.  
 > Preto je potrebné ich pravidelne aktualizovať a dopĺňať o nové úlohy.  
 
+---  
 
-## Kľúčové pojmy – vysvetlené pre začiatočníkov  
+## 🧩 Kľúčové pojmy – vysvetlené pre začiatočníkov  
 
 | Pojem | Jednoduché vysvetlenie |  
 |-------|------------------------|  
@@ -450,13 +566,44 @@ Príklad:
 | **Kalibrácia** | Schopnosť modelu správne odhadnúť mieru vlastnej istoty |  
 | **Few-shot** | Zadanie niekoľkých príkladov modelu pred samotnou úlohou (bez doučovania) |  
 
+---  
 
-## Zhrnutie kapitoly  
+## 🚀 Čo to znamená pre vás? (Praktické závery)  
+
+### Pre používateľov AI nástrojov:  
+```  
+✅ Keď si vyberáte AI model, pozrite sa na výsledky viacerých  
+   benchmarkov – nie len jedného.  
+
+✅ Benchmark skóre vám povie, v čom je model silný – ak potrebujete  
+   kódovanie, pozrite HumanEval; ak znalosti, pozrite MMLU.  
+
+✅ Pamätajte: vysoké skóre na benchmarku neznamená, že model  
+   bude perfektný pre váš konkrétny prípad použitia.  
+```  
+
+### Pre budúcich AI odborníkov:  
+```  
+🔧 Naučte sa čítať a porovnávať benchmark výsledky – je to  
+   základná zručnosť v AI komunite.  
+
+🔧 Sledujte nové benchmarky – oblasť sa rýchlo vyvíja a staršie  
+   testy sa stávajú nedostatočnými.  
+
+🔧 Pochopte limity benchmarkov – kritické myslenie o metrikách  
+   je rovnako dôležité ako samotné výsledky.  
+```  
+
+
+## 📌 Zhrnutie kapitoly  
 
 ```  
 🔹 Benchmarky sú štandardizované testy na meranie schopností LLM modelov  
 🔹 Merajú znalosti, uvažovanie, kódovanie, pravdivosť a konverzačné schopnosti  
 🔹 Najznámejšie: MMLU, HELM, BIG-bench, MT-Bench, HumanEval, GSM8K, TruthfulQA  
+🔹 GPQA Diamond meria PhD-úroveň vedeckého uvažovania – modely dnes prekonávajú  
+   odborníkov v ich vlastnom odbore  
+🔹 HLE (Humanity's Last Exam) je najťažší benchmark – z <10 % na 65 % za 13 mesiacov  
 🔹 BullshitBench meria odolnosť modelu voči nezmyselným premisám –  
    kvalitu, ktorú ostatné benchmarky ignorujú  
 🔹 Žiadny benchmark nedokáže zachytiť „celkovú inteligenciu" modelu  
@@ -464,6 +611,5 @@ Príklad:
 🔹 Kritické myslenie o výsledkoch je rovnako dôležité ako samotné skóre  
 ```  
 
-
-
 ## Otázky a diskusia  
+
