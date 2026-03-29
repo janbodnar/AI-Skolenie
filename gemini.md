@@ -166,6 +166,10 @@ Práve **paralelizovateľnosť** Transformerov umožnila trénovanie na
 miliardách parametrov – a tým aj vznik GPT-3, PaLM, Gemini a všetkých  
 dnešných LLM.  
 
+Transformer je architektúra, ktorá sa používa počas tréningu aj inferencie – pri  
+tréningu umožňuje paralelizáciu a učenie dlhých kontextov, pri inferencii umožňuje  
+efektívne generovanie tokenov pomocou KV cache.
+
 ### Dosah na AI odvetvie  
 
 Článok patrí k najcitovanejším vedeckým prácam vôbec – k marcu 2026  
