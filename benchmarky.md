@@ -31,6 +31,9 @@ na iný aspekt „inteligencie" modelu:
 | **Pravdivosť a faktickosť** | Odolnosť voči generovaniu nepravdivých informácií | TruthfulQA |  
 | **Konverzačné schopnosti** | Kvalita odpovedí v dialógu, koherencia, užitočnosť | MT-Bench |  
 | **Komplexné hodnotenie** | Kombinácia viacerých schopností v jednom frameworku | HELM, BIG-bench |  
+| **PhD vedecké uvažovanie** | Hlboká odbornosť v biológii, chémii a fyzike | GPQA Diamond |  
+| **Extrémna obtiažnosť** | Otázky za hranicou ľudskej expertnézy naprieč odbormi | HLE |  
+| **Kritické myslenie** | Schopnosť odmietnuť nezmyselné alebo vadné premisy | BullshitBench |  
 
 > 🎯 Žiadny jednotlivý benchmark nedokáže zachytiť „celkovú  
 > inteligenciu" modelu. Preto sa vždy používa **kombinácia viacerých benchmarkov**,  
