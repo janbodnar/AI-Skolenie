@@ -1,19 +1,309 @@
-# DeepSeek AI asistent
+# Kapitola: DeepSeek – Čínske AI, ktoré otriaslo Silicon Valley  
 
-DeepSeek je moderný AI asistent navrhnutý tak, aby pomáhal s riešením úloh,  
-vyhľadávaním informácií, analýzou dokumentov a hlbokým uvažovaním. V tejto  
-kapitole sa zoznámite s jeho kľúčovými nástrojmi a naučíte sa, ako s nimi  
-pracovať, aby ste z interakcie vyťažili maximum.  
+DeepSeek je čínska AI spoločnosť, ktorá v januári 2025 spôsobila jeden  
+z najväčších šokov v histórii technologického priemyslu. Jej model  
+**DeepSeek-R1** dokázal to, čo mnohí považovali za nemožné: prekonať  
+americké špičkové modely pri zlomku ich nákladov – a uvoľniť ho ako  
+open-source pre celý svet.  
+
+V tejto kapitole sa pozrieme na pôvod spoločnosti, technické základy  
+jej modelov, aj na globálnu kontroverziu, ktorú vyvolala.  
+
+---  
+
+## Vznik a pozadie spoločnosti  
+
+DeepSeek bola založená v roku **2023** ako dcérska spoločnosť čínskeho  
+hedžového fondu **High-Flyer Capital Management** so sídlom v Hangzhou.  
+Zakladateľom je **Liang Wenfeng** – matematik a podnikateľ, ktorý  
+pôvodne budoval High-Flyer ako kvantitatívny fond využívajúci AI  
+na obchodovanie s akciami.  
+
+Na rozdiel od väčšiny AI spoločností, ktoré hľadajú externých investorov,  
+DeepSeek je **plne súkromná a samofinancovaná** z výnosov hedžového fondu.  
+To jej dáva nezvyčajnú slobodu – nemusí reportovať investorom ani  
+dosahovať komerčné ciele v krátkom horizonte.  
+
+Spoločnosť zamestnáva relatívne malý tím – odhadom **200–300 výskumníkov**,  
+z ktorých väčšina sú čerství absolventi čínskych elitných univerzít  
+(Peking University, Tsinghua). Napriek svojej veľkosti vyprodukovala  
+výsledky, ktoré zahanbia tímy s tisíckami zamestnancov.  
+
+---  
+
+## Modely DeepSeek – prehľad  
+
+| Model | Vydanie | Kľúčové vlastnosti |  
+| :--- | :--- | :--- |  
+| **DeepSeek-V1** | 2023 | Prvý verejný model, overenie konceptu |  
+| **DeepSeek-Coder** | 2024 | Špecializovaný na programovanie |  
+| **DeepSeek-V2** | máj 2024 | MoE architektúra, 236B parametrov (21B aktívnych) |  
+| **DeepSeek-V2.5** | sep. 2024 | Vylepšené kódovanie a konverzácia |  
+| **DeepSeek-R1** | jan. 2025 | **Prelomový reasoning model, spúšťač globálneho šoku** |  
+| **DeepSeek-V3** | mar. 2025 | Vylepšený základný model |  
+| **DeepSeek-R2** | jún 2025 | Ďalší generácia reasoning modelu |  
+| **DeepSeek-V4** | dec. 2025 | Aktuálny vlajkový model |  
+
+---  
+
+## „Sputnik moment" AI: DeepSeek-R1 (január 2025)  
+
+**20. januára 2025** DeepSeek zverejnil model **DeepSeek-R1** a technickú  
+správu, ktorá otriasla celým AI svetom. Udalosť sa okamžite začala  
+nazývať **„Sputnik moment" umelej inteligencie** – prirovnanie k roku  
+1957, keď ZSSR vypustil prvý satelit a šokoval Západ ukázaním, že  
+technologická nadradenosť USA nie je samozrejmá.  
+
+### Čo bol šok?  
+
+DeepSeek-R1 bol **reasoning model** – teda model schopný hlbokého  
+uvažovania krok za krokom, podobne ako OpenAI o1. Na kľúčových  
+benchmarkoch dosiahol porovnateľné, niekedy lepšie výsledky.  
+
+Ale skutočný šok prišiel, keď DeepSeek zverejnil **náklady na tréning**:  
+
+> *Celkové náklady na natrénovanie DeepSeek-V3 (predchodca R1):*  
+> **~5,6 milióna dolárov**  
+
+Pre porovnanie, OpenAI odhaduje náklady na tréning GPT-4 na viac ako  
+**100 miliónov dolárov**. Meta uviedla, že tréning Llama 3 stál rádovo  
+desiatky miliónov. DeepSeek to zvládol za menej ako cenu luxusného bytu  
+v San Franciscu.  
+
+### Ako to bolo technicky možné?  
+
+DeepSeek dosiahol efektivitu kombináciou niekoľkých inovatívnych prístupov:  
+
+#### 1. Mixture of Experts (MoE) architektúra  
+Model má celkovo **671 miliárd parametrov**, no pri každom tokene  
+aktivuje len **37 miliárd**. Ostatné sú „spiacimi expertmi" čakajúcimi  
+na relevantné vstupy. Výsledok: výkon veľkého modelu pri spotrebe  
+malého.  
+
+#### 2. Multi-Head Latent Attention (MLA)  
+DeepSeek vyvinul vlastný mechanizmus pozornosti, ktorý drasticky  
+znižuje pamäťové nároky počas generovania. Toto umožnilo spúšťať  
+model na lacnejšom hardvéri.  
+
+#### 3. FP8 tréning  
+Namiesto štandardnej FP16 presnosti použili 8-bitovú aritmetiku,  
+čím znížili nároky na GPU pamäť a zrýchlili tréning bez výraznej  
+straty výkonu.  
+
+#### 4. Obmedzený hardvér – a tvorivosť z núdze  
+Kvôli americkým exportným obmedzeniam (pozri nižšie) DeepSeek nemohol  
+kupovať najvýkonnejšie NVIDIA čipy (H100). Trénoval na starších  
+**H800** a A100 čipoch – čo ich prinútilo inovovať namiesto toho,  
+aby jednoducho použili brute-force výkon.  
+
+> 💡 **Paradox sankcií:** Americké exportné obmedzenia, určené na spomalenie  
+> čínskeho AI výskumu, de facto prinútili DeepSeek nájsť efektívnejší  
+> prístup k trénovaniu. Výsledok bol presný opak zamýšľaného efektu.  
+
+#### 5. Open-source prístup  
+DeepSeek-R1 bol uvoľnený pod **licenciou MIT** – teda úplne slobodnou  
+licenciou, ktorá dovoľuje komukoľvek model stiahnuť, modifikovať  
+a komerčne použiť. Toto bol ďalší šok: kým OpenAI a Anthropic  
+svoje modely skrývajú, DeepSeek ich daroval celému svetu.  
+
+---  
+
+## Kontroverzia: „Nvidia deň D"  
+
+### Pád akcií NVIDIA  
+
+**27. januára 2025** – sedem dní po vydaní DeepSeek-R1 – padli akcie  
+NVIDIA o **17 %** v priebehu jedného dňa.  
+
+V absolútnych číslach: **trhová kapitalizácia NVIDIA klesla o ~593 miliárd  
+dolárov** – čo je historicky najväčší jednodenný pokles hodnoty akejkoľvek  
+spoločnosti v dejinách burzových trhov.  
+
+Prečo? Investori si uvedomili priamy dôsledok:  
+
+> Ak je možné trénovať špičkový AI model za 5,6 milióna dolárov  
+> na starých čipoch, kto potom potrebuje kupovať tisíce H100 GPU  
+> za tens-of-billions dolárov?  
+
+Obchodný model NVIDIA stojí na predpoklade, že tréning AI modelov  
+si vyžaduje stále výkonnejší – a drahší – hardvér. DeepSeek tento  
+predpoklad spochybnil.  
+
+### Prepady ďalších technologických akcií  
+
+Pád nebol izolovaný – celý „AI hodnotový reťazec" pocítil šok:  
+
+| Spoločnosť | Pokles (27. jan. 2025) | Dôvod |  
+| :--- | :--- | :--- |  
+| **NVIDIA** | −17 % (−$593 mld) | Spochybnenie potreby drahých GPU |  
+| **Broadcom** | −17 % | AI čipový dodávateľ |  
+| **TSMC** | −13 % | Výrobca čipov |  
+| **Microsoft** | −4 % | Masívne investície do AI infraštruktúry |  
+| **Oracle** | −14 % | Cloudová AI infraštruktúra |  
+| **Constellation Energy** | −21 % | Dodávateľ energie pre AI dátové centrá |  
+
+Celkový odhadovaný pokles amerických technologických akcií v ten deň:  
+**viac ako 1 bilión dolárov**.  
+
+### Reakcia Silicon Valley  
+
+Reakcie z amerického AI priemyslu boli zmiešané – od rešpektu po alarm:  
+
+**Sam Altman (OpenAI CEO):**  
+> *„DeepSeek-R1 je impresívny model, najmä čo sa týka toho, čo  
+> dokáže za svoju cenu. Sme radi, že open-source modely napredujú."*  
+(Interpretovaný ako diplomatická, no znepokojená reakcia.)  
+
+**Marc Andreessen (venture kapitalista):**  
+> *„DeepSeek R1 je jeden z najpôsobivejších a najrušivejších  
+> prelomov, aké som kedy videl. Hlboký a úplný americký  
+> technologický export... Wow."*  
+
+**Elon Musk:**  
+> *„Je to skutočné. Americké firmy musia zintenzívniť svoju hru."*  
+
+**Jensen Huang (CEO NVIDIA)** sa snažil investorov upokojiť,  
+argumentujúc, že lacnejší tréning povedie k **väčšiemu dopytu**  
+po AI celkovo – jav známy ako **Jevonsov paradox** (keď sa niečo  
+stane lacnejším, ľudia ho chcú viac, nie menej).  
+
+---  
+
+## Bezpečnostné a politické obavy  
+
+Technická stránka DeepSeeku bola obdivovaná. Politická stránka  
+vyvolala vlnu znepokojenia na celom Západe.  
+
+### 1. Dáta na čínskych serveroch  
+
+DeepSeek otvorene uvádza v svojich **podmienkach používania**,  
+že ukladá dáta na serveroch v Číne, na ktoré sa vzťahujú  
+čínske zákony – vrátane zákona o národnej bezpečnosti (2015),  
+ktorý zaväzuje čínske spoločnosti poskytovať dáta vláde na požiadanie.  
+
+### 2. Zákazy a obmedzenia po celom svete  
+
+Reakcia vlád bola rýchla:  
+
+| Krajina / Organizácia | Opatrenie |  
+| :--- | :--- |  
+| **Taliansko** | Celoplošný zákaz DeepSeek od januára 2025 |  
+| **Austrália** | Zákaz na vládnych zariadeniach (február 2025) |  
+| **Taiwan** | Zákaz používania vo vládnom sektore |  
+| **Južná Kórea** | Vyšetrovanie a dočasné obmedzenia |  
+| **USA – Námorníctvo** | Zákaz používania pre personál |  
+| **USA – Kongres** | Návrh zákona na zákaz DeepSeek na vládnych zariadeniach |  
+| **NASA, Pentagon** | Interné zákazy |  
+| **Viaceré firmy** | Samsung, Apple, NASA – zákaz na pracovných zariadeniach |  
+
+### 3. Cenzúra a citlivé témy  
+
+Výskumníci okamžite otestovali DeepSeek na citlivé politické témy.  
+Výsledky boli predvídateľné:  
+
+- **Tiananmenské námestie (1989):** Model odmieta diskutovať alebo  
+  aktívne dezinformuje v súlade s čínskym štátnym naratívom.  
+- **Taiwan:** Model opisuje Taiwan výhradne ako súčasť Číny.  
+- **Ujguri a Tibet:** Citlivé témy sú ignorované alebo pokryté  
+  štátnym naratívom.  
+- **Kritika KSČ:** Odmietnutie alebo vyhýbanie sa.  
+
+Tieto obmedzenia sú zabudované priamo do modelu – nie len do chatovacieho  
+rozhrania. Pre bežné úlohy (kód, matematika, písanie) cenzúra nemá  
+žiadny vplyv. Pre politicky citlivé témy je model nespoľahlivý.  
+
+### 4. Podozrenia z krádeže dát od OpenAI  
+
+V januári 2025 OpenAI a Microsoft oznámili, že majú dôkazy o tom,  
+že **čínski aktéri** (nepriamo spomínaný DeepSeek) **systematicky  
+extrahovali výstupy z GPT modelov** pomocou automatizovaných dotazov  
+(tzv. model distilation / data distillation) v rozpore s podmienkami  
+používania.  
+
+Model distilation je technika, kde sa nový, lacnejší model trénuje  
+na výstupoch iného, drahšieho modelu – čím „destiluje" jeho znalosti.  
+OpenAI to priamo zakázal vo svojich podmienkach; DeepSeek poprel  
+akékoľvek porušenie.  
+
+> Toto obvinenie nebolo nikdy formálne dokázané ani vyvrátené.  
+
+### 5. Skrytý kód a komunikácia s čínskymi servermi  
+
+Bezpečnostní výskumníci z firmy **Feroot Security** objavili  
+v kóde webovej verzie DeepSeek zaobfuskovaný JavaScript, ktorý  
+komunikoval so servermi spoločnosti **China Mobile** –  
+čínskej štátnej telekomunikačnej firmy, ktorú USA zaradili  
+na čiernu listinu.  
+
+DeepSeek na tieto zistenia nereagoval. Mnohé organizácie  
+to však považujú za dostatočný dôvod na úplný zákaz.  
+
+---  
+
+## Čo DeepSeek zmenil v AI odvetví  
+
+Bez ohľadu na kontroverziu DeepSeek trvale ovplyvnil smer  
+vývoja AI:  
+
+### 1. Efektívnosť sa stala prioritou  
+Pred DeepSeekom bol dominantný prístup „škáluj za každú cenu" –  
+väčší model, viac GPU, viac peňazí. Po DeepSeeku sa celé odvetvie  
+začalo pýtať: ako dosiahnuť rovnaký výkon lacnejšie?  
+
+Google, Meta aj Anthropic urýchlili výskum efektívnych architekúr  
+a publikácie o MoE a latentnej pozornosti zaznamenali obrovský nárast  
+citácií.  
+
+### 2. Open-source zažil renesanciu  
+Vydanie R1 pod MIT licenciou ukázalo, že aj špičkové modely môžu byť  
+open-source. Meta zrýchlila vydanie Llama 4 a otvorila jeho licenciu.  
+Mistral zdvojnásobil úsilie v open-source smerovaní.  
+
+### 3. Prehodnotenie exportných kontrol  
+Americký Kongres začal debatu o tom, či exportné obmedzenia  
+čipov do Číny naozaj fungujú – alebo či len stimulujú čínsku  
+inováciu. Výsledok debaty je k marcu 2026 stále otvorený.  
+
+### 4. „Compute isn't everything"  
+Jensen Huang síce má pravdu, že inference (spúšťanie modelu)  
+spotrebúva stále viac GPU. No DeepSeek dokázal, že pri tréningu  
+nie je výpočtový výkon jedinou premennou – algorithmic cleverness  
+môže nahradiť brute force.  
+
+---  
+
+## Ako bezpečne používať DeepSeek  
+
+Napriek kontroverziám je DeepSeek legálny a voľne dostupný nástroj  
+vo väčšine krajín vrátane Slovenska. Pre bežné vzdelávacie, tvorivé  
+a kódovacie úlohy je výConný asistent.  
+
+**Odporúčané bezpečnostné pravidlá:**  
+
+1. **Nezdieľajte osobné identifikačné údaje** – meno, adresu, rodné číslo.  
+2. **Nezdieľajte firemné dôverné informácie** – zmluvy, zákaznícke dáta,  
+   interné dokumenty.  
+3. **Nepoužívajte ho na prácu s citlivými vládnymi alebo zdravotnými dátami.**  
+4. **Pre politicky citlivé témy overte informácie z iných zdrojov.**  
+5. **Na pracovných zariadeniach sa riaďte IT politikou organizácie.**  
+
+> 💡 **Kontextuálne pravidlo:** Použite rovnakú opatrnosť, akú by ste  
+> uplatnili pri zdieľaní informácií s cudzím človekom na internete.  
+> Pre väčšinu denných úloh je DeepSeek bezpečný a užitočný nástroj.  
+
+---  
+
+## Funkcie pre používateľov  
 
 Aktuálne okno kontextu (maximálna pamäť na jednu konverzáciu) v bezplatnej verzii  
 DeepSeek Chat je **1 milión tokenov**. V praxi to znamená, že model dokáže naraz  
 spracovať text zodpovedajúci približne 750 000 slovám – čo je napríklad objem všetkých  
 troch dielov knižnej trilógie *Pán prsteňov* naraz. Vďaka takémuto veľkému kontextu  
 môžete do konverzácie nahrať aj rozsiahle dokumenty (celé knihy, dlhé správy, viacero súborov)  
-a DeepSeek si udrží prehľad o celom obsahu bez toho, aby zabúdal na úvodné časti rozhovoru.
+a DeepSeek si udrží prehľad o celom obsahu bez toho, aby zabúdal na úvodné časti rozhovoru.  
 
-> Možnosti AI asistentov sa neustále zlepšujú a ich schopnosti a technické parametre
-> skokovo rastú.
+> Možnosti AI asistentov sa neustále zlepšujú a ich schopnosti a technické parametre  
+> skokovo rastú.  
 
 ## 1. Web Search – vyhľadávanie naživo  
 
@@ -108,13 +398,13 @@ na novú tému alebo po ukončení komplexnej úlohy.** Tým zabezpečíte, že:
 
 ## Príklady  
 
-```
-napíš posledných 3 prezidentov Slovenska
-kedy naposledy porazili Slováci Fínov v hokeji
-how many r letters are in strawberry
-how many years did the 100 years war last
-Autoumyvarka je 100m od mojho domu. Mam tam ist peso alebo autom?
-```
+```  
+napíš posledných 3 prezidentov Slovenska  
+kedy naposledy porazili Slováci Fínov v hokeji  
+how many r letters are in strawberry  
+how many years did the 100 years war last  
+Autoumyvarka je 100m od mojho domu. Mam tam ist peso alebo autom?  
+```  
 
 
 ###  Web Search – príklady  
@@ -180,16 +470,22 @@ DeepSeek rozpozná text, opraví prípadné nejasnosti a štruktúruje
 ho do zoznamu úloh.  
 
 
-## Zhrnutie 
+## Zhrnutie  
 
-DeepSeek AI asistent je vďaka kombinácii web search, deep think  
-a file upload univerzálnym nástrojom pre prácu s informáciami. Správne  
-využívanie histórie a pravidelný štart nových konverzácií vám pomôže udržať  
-interakciu s AI prehľadnú a efektívnu.
+DeepSeek je čínska AI spoločnosť, ktorej model **DeepSeek-R1** (január 2025)  
+spôsobil globálny šok – prekonaním amerických modelov pri zlomku nákladov  
+a vydaním ako open-source. Vyvolal pád akcií NVIDIA o 17 % (−$593 mld),  
+debaty o amerických exportných obmedzeniach a vlnu bezpečnostných zákazov.  
+
+Pre každodenné úlohy je DeepSeek výkonný asistent s nástrojmi Web Search,  
+Deep Think a File Upload. Správne využívanie histórie a pravidelný štart  
+nových konverzácií vám pomôže udržať interakciu s AI prehľadnú a efektívnu.  
+
+Pri práci s citlivými dátami dodržujte odporúčané bezpečnostné pravidlá –  
+všetky dáta sa ukladajú na čínskych serveroch podliehajúcich čínskej legislatíve.  
 
 
-## Otázky & diskusia
-
+## Otázky & diskusia  
 
 
 
