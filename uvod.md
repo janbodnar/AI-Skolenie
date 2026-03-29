@@ -330,3 +330,4 @@ Aké slová sa opakujú v negatívnych hodnoteniach?"
 | **Dáta** | Informácie (text, obrázky, čísla...), z ktorých sa AI učí alebo ktoré spracúva |
 
 
+## Otázky a diskusia
