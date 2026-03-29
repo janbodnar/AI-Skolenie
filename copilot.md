@@ -1,4 +1,4 @@
-# Kapitola: Ekosystém Microsoft Copilot  
+# Ekosystém Microsoft Copilot  
 
 Keď sa dnes povie „Copilot", väčšina ľudí si predstaví chatovacieho robota od Microsoftu.  
 To je síce pravda, ale len čiastočne. Microsoft stratégiou značky „Copilot" zjednotil všetky  
