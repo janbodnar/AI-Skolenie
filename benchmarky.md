@@ -219,7 +219,6 @@ Príklad:
 > „hádať" – musí prejsť celým procesom uvažovania. To odhaľuje, či model  
 > skutočne „rozumie" matematike, alebo len reprodukuje vzory.  
 
----  
 
 ### 📘 TruthfulQA  
 
@@ -253,7 +252,7 @@ Príklady:
 
 ---  
 
-### � GPQA (Graduate-Level Google-Proof Q&A)  
+### 📘 GPQA (Graduate-Level Google-Proof Q&A)  
 
 **Čo meria:** Vedecké uvažovanie a odborné znalosti na **PhD úrovni** v oblasti  
 biológie, chémie a fyziky. Otázky sú navrhnuté tak, aby ich nedokázalo vyriešiť  
@@ -304,7 +303,6 @@ Príklad otázky (fyzika):
 > výskumníkov, ktorí chcú merať blízkosť k AGI: model prekonávajúci  
 > PhD odborníkov vo vlastnom odbore je zásadný míľnik.  
 
----  
 
 ### 🏔️ HLE (Humanity's Last Exam)  
 
@@ -362,9 +360,8 @@ model pri vydaní benchmarku v januári 2025 nedosiahol viac ako 10 %.
 > **benchmark saturation** – akonáhle model prekoná ľudskú úroveň, benchmark  
 > musí byť nahradený ešte ťažším testom.  
 
----  
 
-### �💩 BullshitBench (BullshitBench v2)  
+### 💩 BullshitBench (BullshitBench v2)  
 
 **Čo meria:** Schopnosť modelu **rozpoznať nezmyselné otázky a odmietnuť ich**  
 namiesto toho, aby sebavedome odpovedal na nezmysel ako na platnú otázku.  
@@ -380,7 +377,8 @@ open-source projekt na GitHub. K marcu 2026 má repozitár **1 300+ hviezd**
 a aktívnu komunitu. Projekt je dostupný na:  
 `https://github.com/petergpt/bullshit-benchmark`  
 
-**Metodika (v2):**  
+**Metodika (v2):**
+
 ```  
 Rozsah: 100 nezmyselných otázok v 2. verzii  
 Domény: software (40), financie (15), právo (15), medicína (15), fyzika (15)  
@@ -428,6 +426,7 @@ Panel sudcov (3 modely):
 ```  
 
 **Vizualizácie v BullshitBench v2:**  
+
 - **Detection Rate by Model** – hlavný rebríček (zelená/žltá/červená)  
 - **Domain Landscape** – porovnanie výkonu naprieč doménami  
 - **Detection Rate Over Time** – trend výkonu podľa dátumu vydania modelov  
@@ -441,8 +440,6 @@ Panel sudcov (3 modely):
 > doménami: modely sú oveľa lepšie pri rozpoznávaní softvérových nezmyslov  
 > než medicínskych alebo právnych, kde plausibilnosť žargónu dokáže model  
 > zmiasť aj pri veľkom kontexte.  
-
----  
 
 ## Porovnanie benchmarkov  
 
@@ -468,8 +465,6 @@ Panel sudcov (3 modely):
 > 2. **Hodnotenie modelom/človekom** (MT-Bench, TruthfulQA) – kvalitu posudzuje  
 >    iný model alebo ľudský hodnotiteľ. Zachytí nuansy, ale je drahšie  
 >    a potenciálne subjektívne.  
-
----  
 
 ## Ako interpretovať výsledky benchmarkov?  
 
@@ -502,7 +497,6 @@ byť opatrný pri faktických tvrdeniach.
 > - **Benchmark ≠ reálne použitie** – vysoké skóre neznamená, že model  
 >   bude rovnako dobrý vo vašom konkrétnom scenári.  
 
----  
 
 ## Limity a obmedzenia benchmarkov  
 
@@ -545,13 +539,13 @@ Príklad:
 ```  
 
 ### 4. Statickosť vs. dynamický svet  
+
 > 💡 **Benchmarky sú „fotografie" schopností v danom okamihu.** Svet sa mení –  
 > objavujú sa nové témy, jazyky, problémy – ale benchmarky ostávajú rovnaké.  
 > Preto je potrebné ich pravidelne aktualizovať a dopĺňať o nové úlohy.  
 
----  
 
-## 🧩 Kľúčové pojmy – vysvetlené pre začiatočníkov  
+## Kľúčové pojmy – vysvetlené pre začiatočníkov  
 
 | Pojem | Jednoduché vysvetlenie |  
 |-------|------------------------|  
@@ -565,34 +559,6 @@ Príklad:
 | **Saturácia** | Stav, keď modely dosiahnu strop benchmarku a ten prestáva byť užitočný |  
 | **Kalibrácia** | Schopnosť modelu správne odhadnúť mieru vlastnej istoty |  
 | **Few-shot** | Zadanie niekoľkých príkladov modelu pred samotnou úlohou (bez doučovania) |  
-
----  
-
-## 🚀 Čo to znamená pre vás? (Praktické závery)  
-
-### Pre používateľov AI nástrojov:  
-```  
-✅ Keď si vyberáte AI model, pozrite sa na výsledky viacerých  
-   benchmarkov – nie len jedného.  
-
-✅ Benchmark skóre vám povie, v čom je model silný – ak potrebujete  
-   kódovanie, pozrite HumanEval; ak znalosti, pozrite MMLU.  
-
-✅ Pamätajte: vysoké skóre na benchmarku neznamená, že model  
-   bude perfektný pre váš konkrétny prípad použitia.  
-```  
-
-### Pre budúcich AI odborníkov:  
-```  
-🔧 Naučte sa čítať a porovnávať benchmark výsledky – je to  
-   základná zručnosť v AI komunite.  
-
-🔧 Sledujte nové benchmarky – oblasť sa rýchlo vyvíja a staršie  
-   testy sa stávajú nedostatočnými.  
-
-🔧 Pochopte limity benchmarkov – kritické myslenie o metrikách  
-   je rovnako dôležité ako samotné výsledky.  
-```  
 
 
 ## 📌 Zhrnutie kapitoly  
