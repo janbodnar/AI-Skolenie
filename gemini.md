@@ -10,7 +10,7 @@ výskumné laboratórium **Google DeepMind**.
 
 ## Vznik a história Google DeepMind  
 
-### DeepMind: od hernéhostartup-u ku Googlu  
+### DeepMind: od herného startup-u ku Googlu  
 
 DeepMind Technologies bola britská spoločnosť, ktorú v novembri **2010**  
 založili traja vedci:  
@@ -97,6 +97,113 @@ jeho prístup k AI je hlboko vedecky orientovaný. Kľúčové princípy:
 Gemini dostal meno ako odkaz na fúziu **DeepMind + Google Brain** (Gemini  
 dvojičky) a zároveň na program NASA **Project Gemini** – úlohy, kde ľudia  
 spolupracujú s technológiou na prieskume neznámeho.  
+
+## Prelomová štúdia: „Attention Is All You Need" (2017)  
+
+Bez jedného vedeckého článku by Gemini, ChatGPT, Claude ani žiadny moderný  
+jazykový model jednoducho neexistoval. Tento článok sa volá  
+**„Attention Is All You Need"** a bol publikovaný v decembri 2017 na  
+konferencii **NeurIPS** (Neural Information Processing Systems).  
+
+### Autori a kontext  
+
+Článok napísalo osem výskumníkov – väčšina z nich vtedy pracovala  
+v **Google Brain** alebo **Google Research**:  
+
+> Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit,  
+> Llion Jones, Aidan Gomez (neskôr zakladateľ Cohere),  
+> Łukasz Kaiser, Illia Polosukhin (neskôr zakladateľ NEAR Protocol)  
+
+Inými slovami: tím zodpovedný za revolúciu v oblasti AI pracoval priamo  
+pre **Google** – paradoxne na tom istom pracovisku, kde Google o päť rokov  
+neskôr stratí tempo v generatívnej AI voči OpenAI.  
+
+### Problém pred Transformerom  
+
+Pred rokom 2017 sa jazykové modely spoliehali na architektúry **RNN**  
+(Recurrent Neural Networks) a **LSTM** (Long Short-Term Memory). Tieto  
+siete spracúvali text postupne – token po tokene – čo malo tri zásadné  
+nevýhody:  
+
+1. **Sekvenčné spracovanie** – trénvanie bolo pomalé, pretože každý krok  
+   závisel od predchádzajúceho; paralelizácia na GPU nebola možná.  
+2. **Problém miznutého gradientu** – v dlhých vetách sieť „zabudla"  
+   informácie z dávneho začiatku textu.  
+3. **Obmedzená kapacita kontextu** – model nedokázal efektívne pracovať  
+   s dlhými dokumentmi.  
+
+### Čo Transformer zmenil: mechanizmus Attention  
+
+Kľúčovým prínosom článku bolo zavedenie mechanizmu **Self-Attention**  
+(vlastná pozornosť). Namiesto postupného čítania textu Transformer  
+pozerá na **všetky tokeny naraz** a pre každý z nich vypočíta, aké  
+dôležité sú ostatné tokeny v kontexte:  
+
+$$\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$  
+
+kde $Q$ (Query), $K$ (Key) a $V$ (Value) sú maticové projekcie vstupných  
+tokenov. Výsledkom je váhovaný priemer hodnôt – model si pri každom slove  
+„pozrie", na ktoré iné slová má dávať pozor.  
+
+**Multi-head attention** toto robí paralelne v niekoľkých „hlavách", pričom  
+každá hlava sa môže naučiť iný typ závislosti (syntaktickú, sémantickú,  
+pozičnú).  
+
+Zároveň Transformer zaviedol **Positional Encoding** – keďže model vidí  
+všetky tokeny súčasne, musí im nejako pridať informáciu o ich poradí  
+v texte.  
+
+### Prečo je to revolúcia  
+
+| Vlastnosť | RNN/LSTM | Transformer |  
+| :--- | :--- | :--- |  
+| **Trénvanie** | Sekvenčné (pomalé) | Paralelné (rýchle na GPU/TPU) |  
+| **Dlhý kontext** | Slabé (miznutý gradient) | Silné (globálna pozornosť) |  
+| **Škálovateľnosť** | Obmedzená | Takmer neobmedzená |  
+| **Flexibilita** | Primárne text | Text, obrázky, audio, video, kód |  
+
+Práve **paralelizovateľnosť** Transformerov umožnila trénovanie na  
+miliardách parametrov – a tým aj vznik GPT-3, PaLM, Gemini a všetkých  
+dnešných LLM.  
+
+### Dosah na AI odvetvie  
+
+Článok patrí k najcitovanejším vedeckým prácam vôbec – k marcu 2026  
+má viac ako **170 000 citácií** na Google Scholar.  
+
+Priame deti Transformera:  
+
+- **BERT** (2018, Google) – obojsmerný Transformer pre porozumenie textu;  
+  revolúcia vo vyhľadávaní Google Search  
+- **GPT** (2018, OpenAI) – jednosmerný Transformer pre generovanie textu;  
+  predchodca ChatGPT  
+- **PaLM / PaLM 2** (2022/2023, Google) – Transformer na báze 540B parametrov;  
+  priamy predchodca Gemini  
+- **Gemini** (2023–dnes) – navrhnutý od základov pre multimodálne dáta,  
+  trénovaný na Google TPU; Transformer zostáva základnou stavebnou jednotkou  
+
+> **Historická irónia:** Google Brain vynašiel Transformer, no práve Google  
+> stratil náskok v generatívnej AI. V roku 2022 Google mal interný demo  
+> ChatGPT-úrovňový chatbot (LaMDA), ale neodvážil sa ho zverejniť  
+> z obavy o reputáciu. OpenAI publikoval ChatGPT bez týchto zábran –  
+> a spustil „AI preteky" roku 2023.  
+
+### Transformery dnes: od slov k víziu  
+
+Pôvodný Transformer bol navrhnutý na preklad (angličtina → nemčina),  
+no ukázalo sa, že jeho architektúra funguje **univerzálne pre akýkoľvek  
+sekvenčný dátový typ**:  
+
+- **Vision Transformer (ViT)** (2020, Google Brain) – spracovanie obrázkov  
+  rovnakou architektúrou ako textu  
+- **Audio Spectrogram Transformer** – spracovanie zvuku  
+- **Video Transformer** – základ Veo  
+- **Multimodálne Transformery** – základ Gemini; spájajú všetky modality  
+  v jednom modeli  
+
+Gemini 1.0 bol prvý model, kde Google vybudoval multimodálnu schopnosť  
+**priamo do Transformer architektúry** – nie ako neskorší doplnok,  
+ale od prvého tréningového kroku.  
 
 ## Modely Gemini – prehľad  
 
@@ -590,4 +697,11 @@ na GPU od NVIDIA ako väčšina konkurentov.
 
 ## Otázky & diskusia  
 
-
+1. Prečo je natívna multimodalita dôležitá a v čom sa líši od „pridanej"  
+   multimodality?  
+2. Ako môže Nobelova cena za AlphaFold ovplyvniť dôveru verejnosti  
+   v AI produkty od Googlu?  
+3. Aké riziká prináša dominancia Googlu, keď Gemini je integrovaný  
+   do Search, Android aj Siri súčasne?  
+4. Prečo myslíte, že Nano Banana sa stal virálnym, kým iné AI image modely nie?  
+5. V čom je Gemma (open-weight) strategicky dôležitá pre Google?  
