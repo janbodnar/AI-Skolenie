@@ -38,7 +38,7 @@ New Hampshire, USA. Konferencia, ktorá tu prebehla, nedala svetu len nový
 výskumný smer – dala mu aj samotný termín, pod ktorým ho poznáme dodnes.  
 
 
-[Dartmouthská konferencia](data/darth-conf.png)
+![Dartmouthská konferencia](data/darth-conf.png)
 
 
 ### Ako to vzniklo  
