@@ -22,10 +22,10 @@ ktorá mení zdravotníctvo, financie, dopravu, vzdelávanie aj zábavu. AI nie 
 
 ### Kľúčové postavy a myšlienky  
 
-- **Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*,  
-- v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť  
-- konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.  
-- **Turingov stroj**: Teoretický model výpočtu, ktorý položil matematické základy pre všetky moderné počítače.  
+**Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*,  
+v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť  
+konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.  
+**Turingov stroj**: Teoretický model výpočtu, ktorý položil matematické základy pre všetky moderné počítače.  
 
 ---  
 
