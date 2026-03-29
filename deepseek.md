@@ -1,4 +1,4 @@
-# Kapitola: DeepSeek – Čínske AI, ktoré otriaslo Silicon Valley  
+# DeepSeek – Čínske AI, ktoré otriaslo Silicon Valley  
 
 DeepSeek je čínska AI spoločnosť, ktorá v januári 2025 spôsobila jeden  
 z najväčších šokov v histórii technologického priemyslu. Jej model  
