@@ -25,6 +25,9 @@ situáciám a riešiť úlohy podobne ako človek.
 > nám riešiť úlohy – od písania textov až po rozpoznávanie obrázkov.
 
 
+![Klasické algoritmy vs strojové učenie](data/algo-ai.png)
+
+
 Zásadné charakteristiky AI modelov 
 
 - sú studnicou poznania
