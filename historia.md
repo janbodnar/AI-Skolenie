@@ -267,7 +267,7 @@ pomáhajú riešiť komplexné problémy.
 - **ImageNet** (2009): Dataset miliónov označených obrázkov → katalyzátor pre počítačové videnie  
 - **AlexNet** (2012): Hlboká konvolučná sieť, ktorá výrazne vyhrala súťaž ImageNet → štart éry hlbokého učenia  
 - **AlphaGo** (2016): Porazil svetového šampióna v Go – hra považovaná za príliš komplexnú pre AI  
-- **Open-source frameworky**: TensorFlow (2015), PyTorch (2016) → democratizácia prístupu k AI  
+- **Open-source frameworky**: TensorFlow (2015), PyTorch (2016) → demokratizácia prístupu k AI  
 
 > 🎯 **Pre študentov:** Moderná AI nie je o „programovaní pravidiel", ale o **trénovaní modelov na dátach**.  
 > Kvalita a množstvo dát sú často dôležitejšie ako zložitosť algoritmu.  
