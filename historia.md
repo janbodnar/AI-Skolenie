@@ -93,6 +93,12 @@ inteligencia je algoritmicky reprodukovateľná**. Práve tento predpoklad bol
 živnou pôdou pre nasledujúce desaťročia výskumu: aj pre triumfy, aj pre  
 sklamania a AI zimy.  
 
+> In the early 1960s, McCarthy argued that ‘computation may someday be organized as a > public utility’.
+
+>  Začiatkom 60. rokov McCarthy tvrdil, že výpočtová technika môže byť jedného dňa
+>  organizovaná ako verejná služba.
+
+
 ### Čo sa na konferencii skutočne dialo  
 
 Konferencia nebola žiadna grandiózna udalosť. Bol to neformálny letný  
