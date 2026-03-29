@@ -1,4 +1,4 @@
-# Kapitola: OpenRouter – Jednotná brána do sveta AI modelov  
+#  OpenRouter – Jednotná brána do sveta AI modelov  
 
 V ekosystéme generatívnej AI existujú desiatky poskytovateľov modelov –  
 OpenAI, Anthropic, Google, Meta, Mistral, xAI a ďalší. Každý z nich má  
