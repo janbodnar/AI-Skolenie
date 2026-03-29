@@ -67,7 +67,7 @@ Pôvodné predstavenstvo bolo nahradené novými členmi na čele s Bretom Taylo
 
 ### Spory a konflikty záujmov  
 
-Altmanov investičný portfólio presahuje **400 spoločností** v hodnote okolo  
+Altmanove investičné portfólio presahuje **400 spoločností** v hodnote okolo  
 2,8 miliardy dolárov – pričom mnohé z nich majú obchodné vzťahy s OpenAI,  
 čo vyvoláva otázky o konflikte záujmov.  
 
@@ -76,9 +76,6 @@ zradila svoju zakladateľskú misiu prospiechu ľudstvu. OpenAI odpovedal,
 že Musk sľúbil investovať 1 miliardu, no v skutočnosti vložil iba 45 miliónov  
 a navrhoval zlúčiť OpenAI s Teslou alebo prevziať nad ňou kontrolu.  
 
-V januári 2025 Altmanova sestra Ann podala žalobu za sexuálne zneužívanie  
-z detstva. Altman, jeho matka a bratia obvinenia spoločne odmietli ako  
-*„absolútne nepravdivé."*  
 
 ### Politická angažovanosť a ambície  
 
