@@ -18,7 +18,7 @@ uvažovania až po generovanie kódu a pravdivosť odpovedí.
 - Slúžia ako **spoločný jazyk** pre výskumníkov, vývojárov aj používateľov  
 
 
-## Čo benchmarky merajú? Typy hodnotených schopností  
+## Čo benchmarky merajú
 
 LLM benchmarky pokrývajú široké spektrum schopností. Každý benchmark sa zameriava  
 na iný aspekt „inteligencie" modelu:  
