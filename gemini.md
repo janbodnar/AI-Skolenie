@@ -1,4 +1,4 @@
-# Kapitola: Gemini a spoločnosť Google DeepMind  
+# Gemini a spoločnosť Google DeepMind  
 
 Google je jednou z najstarších a najväčších technologických spoločností sveta,  
 ktorá sa v oblasti umelej inteligencie pohybuje od samého začiatku modernej éry  
