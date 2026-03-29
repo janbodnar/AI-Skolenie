@@ -15,7 +15,7 @@ inteligenciu. Medzi takéto úlohy patria:
 
 AI sa dnes už nepovažuje len za teoretický koncept, ale za základnú technológiu,  
 ktorá mení zdravotníctvo, financie, dopravu, vzdelávanie aj zábavu. Pre študentov  
-je dôležité pochopiť, že AI nie je „magia" – ide o matematické modely, dáta a  
+je dôležité pochopiť, že AI nie je „mágia" – ide o matematické modely, dáta a  
 výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.  
 
 
