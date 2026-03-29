@@ -389,8 +389,6 @@ byť opatrný pri faktických tvrdeniach.
 > - **Benchmark ≠ reálne použitie** – vysoké skóre neznamená, že model  
 >   bude rovnako dobrý vo vašom konkrétnom scenári.  
 
----  
-
 ## Limity a obmedzenia benchmarkov  
 
 Hoci benchmarky sú nenahraditeľným nástrojom, majú významné obmedzenia:  
@@ -436,9 +434,8 @@ Príklad:
 > objavujú sa nové témy, jazyky, problémy – ale benchmarky ostávajú rovnaké.  
 > Preto je potrebné ich pravidelne aktualizovať a dopĺňať o nové úlohy.  
 
----  
 
-## 🧩 Kľúčové pojmy – vysvetlené pre začiatočníkov  
+## Kľúčové pojmy – vysvetlené pre začiatočníkov  
 
 | Pojem | Jednoduché vysvetlenie |  
 |-------|------------------------|  
@@ -453,36 +450,8 @@ Príklad:
 | **Kalibrácia** | Schopnosť modelu správne odhadnúť mieru vlastnej istoty |  
 | **Few-shot** | Zadanie niekoľkých príkladov modelu pred samotnou úlohou (bez doučovania) |  
 
----  
 
-## 🚀 Čo to znamená pre vás? (Praktické závery)  
-
-### Pre používateľov AI nástrojov:  
-```  
-✅ Keď si vyberáte AI model, pozrite sa na výsledky viacerých  
-   benchmarkov – nie len jedného.  
-
-✅ Benchmark skóre vám povie, v čom je model silný – ak potrebujete  
-   kódovanie, pozrite HumanEval; ak znalosti, pozrite MMLU.  
-
-✅ Pamätajte: vysoké skóre na benchmarku neznamená, že model  
-   bude perfektný pre váš konkrétny prípad použitia.  
-```  
-
-### Pre budúcich AI odborníkov:  
-```  
-🔧 Naučte sa čítať a porovnávať benchmark výsledky – je to  
-   základná zručnosť v AI komunite.  
-
-🔧 Sledujte nové benchmarky – oblasť sa rýchlo vyvíja a staršie  
-   testy sa stávajú nedostatočnými.  
-
-🔧 Pochopte limity benchmarkov – kritické myslenie o metrikách  
-   je rovnako dôležité ako samotné výsledky.  
-```  
-
-
-## 📌 Zhrnutie kapitoly  
+## Zhrnutie kapitoly  
 
 ```  
 🔹 Benchmarky sú štandardizované testy na meranie schopností LLM modelov  
