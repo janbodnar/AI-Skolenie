@@ -8,6 +8,8 @@ investície od Microsoftu ako OpenAI. Namiesto toho má niečo iné –
 vzniku v roku 2023 sa stal jedným z najdiskutovanejších, najrýchlejšie  
 rastúcich a zároveň najkontroverzinejších AI systémov na svete.  
 
+[Grok AI asistent](https://grok.com/)
+
 ## Vznik spoločnosti a zakladatelia  
 
 xAI bola formálne inkorporovaná **9. marca 2023** a verejne oznámená  
