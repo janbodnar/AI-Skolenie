@@ -188,7 +188,7 @@ využívanie histórie a pravidelný štart nových konverzácií vám pomôže 
 interakciu s AI prehľadnú a efektívnu.
 
 
-Otázky & diskusia
+## Otázky & diskusia
 
 
 
