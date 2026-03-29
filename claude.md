@@ -1,4 +1,4 @@
-# Kapitola: Claude a spoločnosť Anthropic  
+# Claude a spoločnosť Anthropic  
 
 V súčasnom svete umelej inteligencie je Anthropic jednou z najviac sledovaných spoločností.  
 Na rozdiel od väčšiny technologických firiem, ktoré sa sústredia predovšetkým na rast  
