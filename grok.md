@@ -19,7 +19,7 @@ Kalifornia.
 Musk okolo seba sústredil jedenásť výskumníkov z popredných AI laboratórií –  
 väčšina prišla z Google DeepMind, OpenAI a akademického prostredia:  
 
-*   **Elon Musk (CEO):** Zakladateľ a hlavná tvárová spoločnosti. Skôr bol  
+*   **Elon Musk (CEO):** Zakladateľ a hlavná tvár spoločnosti. Skôr bol  
     spoluzakladateľom OpenAI (2015), z ktorej odišiel v roku 2018 pre  
     „konflikt záujmov" s vývojom AI v Tesle. xAI je jeho odpoveďou  
     na smer, ktorým sa AI podľa neho uberá.  
