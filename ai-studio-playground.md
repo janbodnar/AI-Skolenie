@@ -1,4 +1,4 @@
-# Kapitola: Google AI Studio – Praktický sprievodca rozhraním  
+# Google AI Studio 
 
 Google AI Studio (aistudio.google.com) je bezplatné webové prostredie,  
 kde môžete experimentovať s modelmi Gemini priamo v prehliadači – bez  
