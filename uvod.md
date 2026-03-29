@@ -182,7 +182,7 @@ Praktické dôsledky pre používateľov
 | **ChatGPT** | OpenAI | **Všestranný líder.** Najlepšia multimodálnosť (obraz, hlas v reálnom čase) a obrovská knižnica GPT agentov. | [chatgpt.com](https://chatgpt.com) |
 | **Claude** | Anthropic | **Kvalita textu a etika.** Najprirodzenejší písaný prejav, skvelý na kreatívnu tvorbu a prácu s dlhým kontextom. | [claude.ai](https://claude.ai) |
 | **Gemini** | Google | **Ekosystém a analýza.** Prepojenie s Gmailom/Docs a schopnosť "vidieť" a analyzovať dlhé videá či PDF. | [gemini.google.com](https://gemini.google.com) |
-| **Meta AI** | Meta | **Sociálna integrácia.** Asistent integrovaný v Messengeri, WhatsAppe a Instagrame, postavený na modeli Llama. | [www.meta.ai] |
+| **Meta AI** | Meta | **Sociálna integrácia.** Asistent integrovaný v Messengeri, WhatsAppe a Instagrame, postavený na modeli Llama. | [www.meta.ai](https://www.meta.ai/) |
 | **Perplexity** | Perplexity AI | **Inteligentné vyhľadávanie.** Odpovedá na otázky s priamymi odkazmi na zdroje, nahrádza klasický Google Search. | [perplexity.ai](https://www.perplexity.ai) |
 | **DeepSeek** | DeepSeek | **Kódovanie a matematika.** Extrémne efektívny model, ktorý sa stal miláčikom programátorov kvôli presnosti. | [chat.deepseek.com](https://chat.deepseek.com) |
 | **Kimi K2** | Moonshot AI | **Pokročilé uvažovanie.** Špičkový v logických úlohách a spracovaní obrovského množstva dát naraz. | [kimi.ai](https://kimi.moonshot.cn) |
