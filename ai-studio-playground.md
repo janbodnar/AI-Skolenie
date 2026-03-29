@@ -15,11 +15,13 @@ presne tak, ako vyzerá pri otvorení projektu v playground režime.
 
 Po otvorení projektu vidíte v AI Studio tri hlavné časti:  
 
-1. **Hlavná plocha** (stred) – chat / promptovací editor, kde píšete  
+1. **Hlavné menu** (ľavý paneo) - Playground, History, Build, Dashboard, Documentation
+
+2. **Hlavná plocha** (stred) – chat / promptovací editor, kde píšete  
    správy a vidíte odpovede modelu  
-2. **Run settings** (pravý panel / horná časť) – výber modelu, systémové inštrukcie,  
+3. **Run settings** (pravý panel / horná časť) – výber modelu, systémové inštrukcie,  
    parametre generovania a nástroje  
-3. **Advanced settings** (pravý panel / spodná časť) – bezpečnostné  
+4. **Advanced settings** (pravý panel / spodná časť) – bezpečnostné  
    nastavenia, stop sekvencie, dĺžka výstupu, Top P  
 
 ---  
