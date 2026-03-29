@@ -14,9 +14,8 @@ inteligenciu. Medzi takéto úlohy patria:
 > ľudské kognitívne funkcie.*  
 
 AI sa dnes už nepovažuje len za teoretický koncept, ale za základnú technológiu,  
-ktorá mení zdravotníctvo, financie, dopravu, vzdelávanie aj zábavu. Pre študentov  
-je dôležité pochopiť, že AI nie je „mágia" – ide o matematické modely, dáta a  
-výpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.  
+ktorá mení zdravotníctvo, financie, dopravu, vzdelávanie aj zábavu. AI nie je  
+„mágia" – ide o matematické modely, dáta a  ýpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.  
 
 
 ## Rané základy (40. – 50. roky 20. storočia)  
