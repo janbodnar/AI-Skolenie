@@ -53,6 +53,7 @@ Zásadné charakteristiky AI modelov
 Moji študenti využívajú AI na:
 
 - právna analýza zmlúv
+- výuka cudzích jazykov
 - tvorba reklamných materiálov
 - hľadanie receptov
 - profesionálny jazykový preklad
