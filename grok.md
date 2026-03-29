@@ -1,4 +1,4 @@
-# Kapitola: Grok a spoločnosť xAI  
+# Grok a spoločnosť xAI  
 
 Spomedzi všetkých veľkých hráčov v oblasti umelej inteligencie je xAI možno  
 tou najneobvyklejšou. Nemá za sebou desaťročia výskumu ako Google, ani miliardové  
