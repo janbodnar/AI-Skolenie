@@ -176,14 +176,32 @@ Praktické dôsledky pre používateľov
 
 ## Chatboty – AI ako váš asistent
 
-| Chatbot | Vývojár | Silné stránky |
-|---------|---------|---------------|
-| **ChatGPT** | OpenAI | Univerzálny, kreatívny, dobrý na vysvetľovanie |
-| **Copilot** | Microsoft | Integrácia s Office a vývojovými nástrojmi |
-| **Gemini** | Google | Práca s viacerými formátmi (text, obrázok, audio) |
-| **Qwen** | Alibaba | Vysoký výkon v kódovaní a logickom uvažovaní, podpora dlhého kontextu, multilingválne schopnosti, nákladovo efektívny |
-| **Grok** | xAI | Prístup k dátam z platformy X v reálnom čase, pokročilé logické uvažovanie a kódovanie, hlasová komunikácia a generovanie multimédií, „truth-seeking" prístup |
-| **DeepSeek** | Čína (High-Flyer) | Efektívny, dobrý pomer výkon/cena, pokročilé chápanie kontextu a spracovanie prirodzeného jazyka, silné schopnosti v kódovaní a matematike  |
+
+| Chatbot / Model | Vývojár | Hlavné silné stránky a zameranie | Oficiálna linka |
+| :--- | :--- | :--- | :--- |
+| **ChatGPT** | OpenAI | **Všestranný líder.** Najlepšia multimodálnosť (obraz, hlas v reálnom čase) a obrovská knižnica GPT agentov. | [chatgpt.com](https://chatgpt.com) |
+| **Claude** | Anthropic | **Kvalita textu a etika.** Najprirodzenejší písaný prejav, skvelý na kreatívnu tvorbu a prácu s dlhým kontextom. | [claude.ai](https://claude.ai) |
+| **Gemini** | Google | **Ekosystém a analýza.** Prepojenie s Gmailom/Docs a schopnosť "vidieť" a analyzovať dlhé videá či PDF. | [gemini.google.com](https://gemini.google.com) |
+| **Meta AI** | Meta | **Sociálna integrácia.** Asistent integrovaný v Messengeri, WhatsAppe a Instagrame, postavený na modeli Llama. | [podozrivý odkaz odstránený] |
+| **Perplexity** | Perplexity AI | **Inteligentné vyhľadávanie.** Odpovedá na otázky s priamymi odkazmi na zdroje, nahrádza klasický Google Search. | [perplexity.ai](https://www.perplexity.ai) |
+| **DeepSeek** | DeepSeek | **Kódovanie a matematika.** Extrémne efektívny model, ktorý sa stal miláčikom programátorov kvôli presnosti. | [chat.deepseek.com](https://chat.deepseek.com) |
+| **Kimi K2** | Moonshot AI | **Pokročilé uvažovanie.** Špičkový v logických úlohách a spracovaní obrovského množstva dát naraz. | [kimi.ai](https://kimi.moonshot.cn) |
+| **Copilot** | Microsoft | **Kancelárska produktivita.** Najlepší na generovanie tabuliek, prezentácií a prácu v prostredí Windows. | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| **Mistral Large** | Mistral AI | **Európska efektivita.** Silný výkon pri zachovaní súkromia, skvelý pre firemné nasadenie v EÚ. | [mistral.ai](https://mistral.ai) |
+| **Grok** | xAI | **Real-time prehľad.** Unikátny prístup k aktuálnym príspevkom na sieti X (Twitter) a neformálny štýl komunikácie. | [x.ai](https://x.ai) |
+| **Qwen** | Alibaba | **Multilingválne kódovanie.** Exceluje v technických zadaniach a komunikácii v rôznych svetových jazykoch. | [chat.qwenlm.ai](https://chat.qwenlm.ai) |
+| **Pi** | Inflection AI | **Emocionálna podpora.** Navrhnutý ako osobný spoločník na dlhé rozhovory a reflexiu, s veľmi milým tónom. | [pi.ai](https://pi.ai) |
+
+
+
+### Ktorý z nich vyskúšať ako prvý?
+
+  * **Ak chceš najlepší bezplatný zážitok v mobile:** Skús **Meta AI** alebo **ChatGPT**.
+  * **Ak píšeš seminárku alebo článok:** Skús **Claude**, jeho štýl je najmenej "umelý".
+  * **Ak robíš prieskum trhu:** Skús **Perplexity**, ušetrí ti hodiny klikania na weby.
+  * **Ak si zaseknutý v kóde:** **DeepSeek** alebo **Qwen** ti v roku 2026 pravdepodobne pomôžu najrýchlejšie.
+
+Mám ti k niektorej z týchto služieb pomôcť s registráciou alebo vysvetliť, ktoré funkcie majú v platenej vs. bezplatnej verzii?
 
 **Čo chatboty vedia:**
 - Odpovedať na otázky v prirodzenom jazyku
