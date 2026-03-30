@@ -280,7 +280,7 @@ Komunita vedcov, vývojárov a startupov po celom svete ich integruje
 do vlastných produktov, dolaďuje (fine-tuninguje) pre špeciálne úlohy  
 a buduje na nich stovky komerčných aplikácií.  
 
-Alibaba tým sleduje stratégiu podobnú Meta's Llama: poskytnúť základ  
+Alibaba tým sleduje stratégiu podobnú Llame od Mety: poskytnúť základ  
 celej komunite, vybudovať ekosystém a zároveň udržať prémiovú  
 API verziu pre podnikových zákazníkov.  
 
