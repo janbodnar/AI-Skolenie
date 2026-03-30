@@ -1,4 +1,4 @@
-# Kapitola: Prompt Engineering – Umenie klásť správne otázky  
+# Prompt Engineering – Umenie klásť správne otázky  
 
 > *Prompt engineering je umenie klásť správne otázky. Predstavte si AI ako veľmi inteligentného,  
 > ale doslovného asistenta – ak mu poviete „Napíš niečo o histórii", dostanete všeobecný text.  
