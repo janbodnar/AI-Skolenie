@@ -276,7 +276,7 @@ Claudovi (uzavretý).
 Na platforme **Hugging Face** sú Qwen modely konzistentne medzi  
 **najsťahovanejšími** na svete – pravidelne obsadzujú top 5 medzi  
 open-source modelmi.  
-Comunita vedcov, vývojárov a startupov po celom svete ich integruje  
+Komunita vedcov, vývojárov a startupov po celom svete ich integruje  
 do vlastných produktov, dolaďuje (fine-tuninguje) pre špeciálne úlohy  
 a buduje na nich stovky komerčných aplikácií.  
 
