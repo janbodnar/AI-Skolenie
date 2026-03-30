@@ -19,7 +19,7 @@ V angličtine sa skracuje na **Qwen** (vyslovuj: „čchen").
 
 ### Alibaba Group: od bytu v Hangzhou k biliónovej ríši  
 
-Alibaba Group bola founded v roku **1999** Jackom Ma (Ma Yun)  
+Alibaba Group bola založená v roku **1999** Jackom Ma (Ma Yun)  
 a sedemnástimi spoluzakladateľmi v skromnom byte v Hangzhou.  
 Čo začalo ako platforma pre B2B elektronický obchod, sa za dve desaťročia  
 rozrástlo na jednu z najväčších technologických spoločností sveta:  
