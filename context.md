@@ -1,4 +1,4 @@
-# Kapitola: Context Engineering – Umenie plniť pamäť AI  
+# Context Engineering – Umenie plniť pamäť AI  
 
 Keď hovoríme o tom, prečo jeden AI asistent odpovie bravúrne a druhý zlyhá  
 na rovnakej otázke, odpoveď väčšinou nespočíva v modeli samotnom.  
