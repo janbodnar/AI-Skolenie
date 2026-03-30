@@ -58,8 +58,7 @@ ktoré nazval „záložnárňami" brániacimi inováciám. Krátko potom:
 
 Ma sa objavil spätne, no odvtedy výrazne obmedzil verejné vystúpenia  
 a v roku **2023 prenechal výkonné riadenie** spoločnosti novej generácii  
-vedenia.  
-Znovu-found sa ticho stiahol v pozadí, oceňovaný za budovanie,  
+vedenia. Ticho sa stiahol v pozadí, oceňovaný za budovanie,  
 no vzdialený od aktuálneho chodu firmy.  
 
 ### DAMO Academy: Alibabov výskumný mozog  
