@@ -1,8 +1,8 @@
 # Deep Search – Hĺbkové vyhľadávanie s podporou umelej inteligencie
 
 **Deep Search** (hĺbkové vyhľadávanie) je pokročilá technológia, ktorá kombinuje veľké jazykové 
-modely (LLM) s inteligentným vyhľadávaním informácií. Na rozdiel od tradičného vyhľadávania, ktoré hľadá 
-presné zhody kľúčových slov, deep search:
+modely (LLM) s inteligentným vyhľadávaním informácií. Na rozdiel od tradičného vyhľadávania,  
+ktoré hľadá presné zhody kľúčových slov, deep search:
 
 *  **Chápe zámer používateľa** – analyzuje kontext otázky, nie len jednotlivé slová.
 *  **Prehľadáva viac zdrojov naraz** – dokáže simultánne skenovať webové stránky, databázy, dokumenty aj odborné články.
@@ -10,7 +10,7 @@ presné zhody kľúčových slov, deep search:
 *  **Plánuje vyhľadávanie** – rozkladá komplexnú otázku na podotázky a postupne ich rieši.
 
 > **Príklad z praxe:**  
-> *Tradičné vyhľadávanie:* Zadáte "klíma Slovensko 2024" → dostanete zoznam článkov s týmto výrazom.  
+> *Tradičné vyhľadávanie:* Zadáte "klíma Slovensko 2026" → dostanete zoznam článkov s týmto výrazom.  
 > *Deep Search:* Zadáte rovnakú otázku → systém pochopí, že chcete vedieť o teplotných trendoch, extrémnych
 javoch a projekciách → vyhľadá relevantné štúdie, porovná dáta z rôznych zdrojov → vygeneruje súhrnnú odpoveď s odkazmi na zdroje.
 
@@ -80,7 +80,7 @@ Architektúra deep search systémov sa zvyčajne skladá z niekoľkých kľúčo
 | **Kontext** | Obmedzený na snippet | Celý dokument + cross-referencing |
 | **Adaptivita** | Statické algoritmy | Dynamické plánovanie podľa dotazu |
 | **Overiteľnosť** | Používateľ overuje sám | Systém poskytuje zdroje a citácie |
-| **Rýchlosť** | Milisekundy | Sekundy až desiatky sekúnd |
+| **Rýchlosť** | Milisekundy | Desiatky sekúnd až minúty |
 
 > **Dôležité:** Deep Search nie je náhrada tradičného vyhľadávania, ale doplnok pre komplexnejšie úlohy, kde je potrebná
 > analýza a syntéza informácií.
