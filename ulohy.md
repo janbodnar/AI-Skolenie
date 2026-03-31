@@ -158,3 +158,43 @@ Odbor: Informačné systémy (Inžiniersky stupeň)
   ]
 }
 ```
+
+## Použitie stopky
+
+Vygeneruj mi JSON output s id, first_name, last_name a email, a použi stopku pre 
+id 13. 
+
+```csv
+id,first_name,last_name,occupation,country,email
+1,Alice,Johnson,Software Engineer,USA,alice.johnson@example.com
+2,Bob,Smith,Data Scientist,Canada,bob.smith@example.com
+3,Carlos,Mendez,Mechanical Engineer,Mexico,carlos.mendez@example.com
+4,Diana,Novak,Product Manager,Slovakia,diana.novak@example.com
+5,Ethan,Williams,DevOps Engineer,UK,ethan.williams@example.com
+6,Fatima,Al-Hassan,UX Designer,UAE,fatima.alhassan@example.com
+7,George,Papadopoulos,Architect,Greece,george.papadopoulos@example.com
+8,Hannah,Müller,Accountant,Germany,hannah.muller@example.com
+9,Ivan,Petrov,Cybersecurity Analyst,Russia,ivan.petrov@example.com
+10,Julia,Costa,Marketing Manager,Brazil,julia.costa@example.com
+11,Kevin,Tanaka,AI Researcher,Japan,kevin.tanaka@example.com
+12,Laura,Bianchi,Graphic Designer,Italy,laura.bianchi@example.com
+13,Mohammed,Rahman,Backend Developer,Bangladesh,mohammed.rahman@example.com
+14,Nina,Svensson,Nurse,Sweden,nina.svensson@example.com
+15,Oscar,Dubois,Financial Analyst,France,oscar.dubois@example.com
+16,Priya,Sharma,Data Engineer,India,priya.sharma@example.com
+17,Quentin,Leblanc,Game Developer,Belgium,quentin.leblanc@example.com
+18,Rachel,Kim,Biologist,South Korea,rachel.kim@example.com
+19,Stefan,Kowalski,Project Manager,Poland,stefan.kowalski@example.com
+20,Tina,Nguyen,Frontend Developer,Vietnam,tina.nguyen@example.com
+21,Umar,Abdi,Teacher,Kenya,umar.abdi@example.com
+22,Vera,Popescu,Lawyer,Romania,vera.popescu@example.com
+23,William,O'Brien,Cloud Architect,Ireland,william.obrien@example.com
+24,Xiao,Liu,Robotics Engineer,China,xiao.liu@example.com
+25,Yasmine,Benali,Journalist,Algeria,yasmine.benali@example.com
+26,Zara,Ahmed,Pharmacist,Pakistan,zara.ahmed@example.com
+27,Andrei,Volkov,Database Administrator,Ukraine,andrei.volkov@example.com
+28,Beatriz,Santos,Civil Engineer,Portugal,beatriz.santos@example.com
+29,Chen,Wei,Machine Learning Engineer,Taiwan,chen.wei@example.com
+30,Daria,Horvat,HR Specialist,Croatia,daria.horvat@example.com
+```
+
