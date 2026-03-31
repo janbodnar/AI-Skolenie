@@ -9,14 +9,12 @@ prompty a objavujú možnosti AI pred tým, než ich zakomponujú do aplikácií
 V tejto kapitole sa pozrieme na každý prvok rozhrania podrobne –  
 presne tak, ako vyzerá pri otvorení projektu v playground režime.  
 
----  
 
 ## Prehľad rozhrania  
 
 Po otvorení projektu vidíte v AI Studio tri hlavné časti:  
 
-1. **Hlavné menu** (ľavý paneo) - Playground, History, Build, Dashboard, Documentation
-
+1. **Hlavné menu** (ľavý panel) - Playground, History, Build, Dashboard, Documentation
 2. **Hlavná plocha** (stred) – chat / promptovací editor, kde píšete  
    správy a vidíte odpovede modelu  
 3. **Run settings** (pravý panel / horná časť) – výber modelu, systémové inštrukcie,  
