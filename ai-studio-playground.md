@@ -1,6 +1,6 @@
 # Google AI Studio Playground
 
-Google AI Studio [Google AI Studio](aistudio.google.com) je bezplatné webové prostredie,  
+Google AI Studio [Google AI Studio](https://aistudio.google.com) je bezplatné webové prostredie,  
 kde môžete experimentovať s modelmi Gemini priamo v prehliadači – bez  
 inštalácie, bez konfigurácie servera, bez nutnosti písať kód. Je to  
 miesto, kde vývojári, výskumníci aj študenti testujú nápady, ladia  
