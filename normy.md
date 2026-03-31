@@ -190,6 +190,9 @@ oficiálne materiály k novému rámcu
 - [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) – praktický
 rámec pre manažment rizík
 
-> 🌟 **Tip na záver:** Pri práci s reálnymi dátami vždy predpokladajte, že
-> podliehajú ochrane – radšej implementujte ochranné opatrenia preventívne,
-> než riešiť porušenie dodatočne. Zodpovednosť je súčasťou profesionality.
+> 🌟 **Tip na záver:** Pri práci s reálnymi dátami vždy predpokladajte, že  
+> podliehajú ochrane – radšej implementujte ochranné opatrenia preventívne,  
+> než riešiť porušenie dodatočne. Zodpovednosť je súčasťou profesionality.  
+
+
+## Otázky a diskusia
