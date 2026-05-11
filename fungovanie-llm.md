@@ -10,7 +10,7 @@
 
 - Generovať koherentný text na zadanú tému
 - Odpovedať na otázky a viesť konverzáciu
-- Sumarizovať, prekladať, klasifikovať text
+- Sumarizovať, prekladať, klasifikovať texthttps://github.com/janbodnar/AI-Skolenie
 - Písať a vysvetľovať kód
 
 ###  Kľúčový princíp: Štatistická predikcia, nie „myslenie"
@@ -197,7 +197,7 @@ Možná halucinácia:
 
 >  Ak otázka + kontext presiahne limit, model „zabudne" najstaršie časti konverzácie.
 
-### Dátový cutoff (Knowledge Cutoff)
+### Dátový zlom (Knowledge Cutoff)
 **Čo to je**: Model „nevie" o udalostiach po dátume, kedy skončil jeho tréning.
 
 ```
@@ -207,7 +207,7 @@ Príklad:
 - Model: Nemôže vedieť odpoveď (ak nepoužije Web Search)
 ```
 
-### Jazykové a kultúrne biasy
+### Jazykové a kultúrne predsudky
 
 **Čo to je**: Model môže preferovať jazyky/kultúry, ktoré boli lepšie zastúpené v trénovacích dátach.
 
@@ -218,14 +218,14 @@ Príklad pre slovenčinu:
 - Riešenie: Použiť modely trénované aj na slovenských dátach (SlovakBERT, mistral-sk)
 ```
 
-### Tabuľka: Prehľad limitácií a stratégií mitigácie
+### Tabuľka: Prehľad limitácií a stratégií zmierňujúcich opatrení
 
 | Limitácia | Ako ju rozpoznať | Ako ju mitigovať |
 |-----------|-----------------|-----------------|
 | **Halucinácie** | Odpoveď znie presvedčivo, ale obsahuje pochybné fakty | Overiť zdroje, zapnúť Web Search, použiť RAG |
 | **Kontextové okno** | Model „zabúda" staršie časti konverzácie | Stručne formulovať, rozdeliť úlohu na časti, použiť summarizáciu |
-| **Dátový cutoff** | Model nevie o najnovších udalostiach | Explicitne spomenúť aktuálny kontext v prompte, použiť Web Search |
-| **Jazykový bias** | Horšia kvalita odpovedí v slovenčine | Použiť modely s podporou SK, písať jasné prompty, fine-tunovať |
+| **Dátový zlom** | Model nevie o najnovších udalostiach | Explicitne spomenúť aktuálny kontext v prompte, použiť Web Search |
+| **Jazykové presudky** | Horšia kvalita odpovedí v slovenčine | Použiť modely s podporou SK, písať jasné prompty, fine-tunovať |
 | **Etické riziká** | Odpovede môžu obsahovať stereotypy | Kriticky hodnotiť výstupy, použiť bezpečnostné filtre, edukovať študentov |
 
 ## Slovenský kontext: Špecifiká práce so slovenčinou
