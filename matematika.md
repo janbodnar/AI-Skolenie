@@ -1,13 +1,10 @@
 # Matematika a LLM – možnosti, limity a hybridný prístup  
 
-Ešte predtým, než sa pustíme do analýzy dát, povedzme si pár slov  
-o využití LLM pre matematické výpočty.  
 
 Veľké jazykové modely predstavujú vynikajúci nástroj na prácu s matematikou,  
-no ich využitie má svoje limity.  
-Fungujú skôr ako **jazykoví experti na matematiku** než ako samotné kalkulačky.  
-Excelujú vo vysvetľovaní zložitých konceptov, riešení slovných úloh  
-a generovaní cvičných príkladov.  
+no ich využitie má svoje limity. Fungujú skôr ako **jazykoví experti na matematiku**  
+než ako samotné kalkulačky. Excelujú vo vysvetľovaní zložitých konceptov, riešení  
+slovných úloh a generovaní cvičných príkladov.  
 
 Hlavným úskalím však zostáva fakt, že LLM sú **pravdepodobnostné generátory  
 textu**, nie deterministické stroje.  
