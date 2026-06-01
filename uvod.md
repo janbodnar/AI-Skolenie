@@ -61,7 +61,8 @@ Moji študenti využívajú AI na:
 - hľadanie receptov
 - profesionálny jazykový preklad
 - tvorba Python skriptov (neprogramátor)
-- hľadanie a porovnanie výhodných cien Apple produktov 
+- hľadanie a porovnanie výhodných cien Apple produktov
+- sumarizácia textov
 
 ## Učenie AI
 
