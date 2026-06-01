@@ -341,7 +341,7 @@ Google vydal Gemma aj vo špeciálnych variantoch:
 Google DeepMind vydal **Gemini CLI** – open-source AI agent priamo  
 v termináli. Vývojárom ponúka pokročilé kódovanie, automatizáciu  
 a riešenie problémov s veľkorysými bezplatnými limitmi. Považuje sa  
-za Googleho odpoveď na Claude Code od Anthropic.  
+za Google odpoveď na Claude Code od Anthropic.  
 
 ### Google AI Studio – prototypovanie s Gemini  
 
@@ -623,7 +623,7 @@ bezpečnosť, škálovateľnosť a regulatórny súlad.
 Pri vydaní Gemini 1.0 Google zverejnil demonštračné video, ktoré oslnilo  
 publikum. Neskôr vyšlo najavo, že video **nebolo nakrútené v reálnom čase**  
 – bolo zostríhané a upravené tak, aby vyzeralo plynulejšie, ako model skutočne  
-fungoval. Tento incident poškodil Googleho reputáciu na začiatku éry Gemini.  
+fungoval. Tento incident poškodil Google reputáciu na začiatku éry Gemini.  
 
 ### Gemini obrazové generovanie (február 2024)  
 
