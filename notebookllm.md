@@ -1,5 +1,7 @@
 # NotebookLM: Váš AI asistent pre výskum a poznámky
 
+https://notebooklm.google.com/notebook/20f4a8fa-d7d3-4b10-ac03-69be4322e163/artifact/1c1cbfca-f64b-410f-b921-2987e6e21c1b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_2&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_2_
+
 https://gemini.google.com/share/fb3567aa525e
 
 **NotebookLM** je inteligentný výskumný asistent od Google, ktorý kombinuje vaše vlastné  
