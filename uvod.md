@@ -3,7 +3,7 @@
 ## Autor 
 
 - Ján Bodnár
-- vyštodované financie
+- vyštudované financie
 - Unix Admin, Java/Python vývojár
 - Školím základy Javy, Pythonu, dátovú analýzu a AI
 
