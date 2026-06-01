@@ -1,5 +1,7 @@
 # NotebookLM: Váš AI asistent pre výskum a poznámky
 
+https://gemini.google.com/share/fb3567aa525e
+
 **NotebookLM** je inteligentný výskumný asistent od Google, ktorý kombinuje vaše vlastné  
 dokumenty s výkonným AI modelom Gemini. 
 
