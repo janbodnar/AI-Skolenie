@@ -2,6 +2,7 @@
 
 AI Školenie pre začiatočníkov s praktickými príkladmi.  
 Kontakt na lektora: jan.bodnar@gmail.com  
+AI novinky: https://www.facebook.com/profile.php?id=61590475374227
 
 ## Zameranie
 
