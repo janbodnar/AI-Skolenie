@@ -42,6 +42,8 @@ Google AI Studio
 - AI assistant
 - Tvorba jednoduchých aplikácií pomocou promptov
 
+Kimi K2 swarm agents
+
 Bezpečnosť a ochrana dát
 - GDPR a AI
 - Riziká a best practices
