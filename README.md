@@ -4,6 +4,8 @@ AI Školenie pre začiatočníkov s praktickými príkladmi.
 Kontakt na lektora: jan.bodnar@gmail.com  
 AI novinky: https://www.facebook.com/profile.php?id=61590475374227
 
+https://ia800805.us.archive.org/20/items/aesop_fables_volume_one_librivox/fables_01_01_aesop.mp3
+
 ## Zameranie
 
 Kurz Úvod do umelej inteligencie – Praktické aplikácie je určený pre každého, kto chce efektívne  
