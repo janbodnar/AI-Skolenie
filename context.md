@@ -18,7 +18,6 @@ oddelenia AI v Tesle, ex-OpenAI), to sformuloval takto:
 Inými slovami: **prompt engineering** sa pýta *ako sa spýtať*.  
 **Context engineering** sa pýta *čo všetko modelu ukázať*.  
 
----  
 
 ## Čo je kontextové okno (context window)?  
 
@@ -29,6 +28,25 @@ Táto „viditeľná oblasť" sa nazýva **kontextové okno**.
 Technicky je kontextové okno udávané v **tokenoch** – kúskoch textu.  
 Jeden token zodpovedá zhruba 0,75 slova v angličtine alebo 0,5–0,6 slova  
 v slovenčine (slovanské jazyky sú tokenovo „drahšie").  
+
+Kontextové okno je celá pracovná pamäť modelu pre jednu konverzáciu, meraná v  
+tokenoch — kúskach textu, nie celých slovách. Všetko, čo model používa na vytvorenie 
+odpovede, sa doň musí naraz zmestiť: systémový prompt s inštrukciami a definíciami 
+nástrojov, celá história konverzácie a tvoja aktuálna správa.
+
+Model nečíta konverzáciu spätne ako človek, ktorý si posúva chat hore — celá história  
+sa pri každom jednom kroku znovu posiela. Preto sú dlhé konverzácie pomalšie  
+a drahšie: 50. správa stojí viac výpočtu než prvá, pretože so sebou ťahá všetko predtým.  
+
+Keď sa okno zaplní, niečo musí ísť preč. Niektoré systémy orezávajú najstaršie správy,  
+iné ich sumarizujú a niektoré jednoducho prestanú prijímať nový vstup. Aj preto môže model  
+„zabudnúť“ niečo, čo si povedal na začiatku — v skutočnosti to nezabudol,  
+len sa to už nezmestilo do okna.
+
+Väčšie nie je automaticky lepšie. Obrovské okno znamená viac priestoru, ale modely môžu 
+byť menej presné pri vyťahovaní konkrétneho detailu zakopaného uprostred veľmi dlhého  
+kontextu — niekedy sa to nazýva efekt „lost in the middle“.
+
 
 ### Veľkosti kontextových okien popredných modelov (2025–2026)  
 
