@@ -69,7 +69,8 @@ Kontextové okno je vzácny zdroj. Každý token niečo stojí (výpočtový ča
 peniaze) a každý token vytláča iný. **Context engineering je v podstate  
 správa tohto zdroja.**  
 
----  
+![Kontextové okno](data/context_window.jpg)
+
 
 ## Tri piliere modernej AI architektúry  
 
@@ -114,7 +115,6 @@ Ak dáte modelu v kontexte inštrukciu „buď vtipný", prekonáte jeho natrén
 priors (ktoré hovoria „buď formálny"). **Kontext (zvyčajne) víťazí nad priors.**  
 Parametre potom určujú, ako „odvážne" sa model pokúsi tieto inštrukcie dodržať.  
 
----  
 
 ## Čo tvorí kontext? Štyri vrstvy  
 
@@ -241,8 +241,6 @@ Tieto metadáta sa zvyčajne vkladajú automaticky aplikáciou. Napríklad Claud
 automaticky dostáva aktuálny dátum v systémovom prompte, aby vedel sám seba  
 upozorniť, keď hovorí o veciach blízkych svojmu cutoff dátumu.  
 
----  
-
 ## Parametre – Ladiace gombíky (nie sú súčasťou kontextu!)  
 
 Parametre sú možno najčastejšie nepochopený aspekt práce s AI modelmi.  
@@ -326,7 +324,6 @@ Kontext hovorí: „Buď vtipný a neformálny."
 Model nemôže vedieť o udalostiach po svojom cutoff dátume – to je základ  
 pre pochopenie, prečo je RAG a webové vyhľadávanie také dôležité.  
 
----  
 
 ## Context Engineering ako disciplína  
 
@@ -371,7 +368,6 @@ Riešenia:
 *   **Zhrnutie histórie** – namiesto celej histórie vložíme condensed summary  
 *   **Externá pamäť** – dôležité fakty uložíme do vektorovej DB a fetchujeme  
 
----  
 
 ## Context Rot – Úpadok kontextu  
 
@@ -403,7 +399,6 @@ a na konci sa zapamätávajú lepšie.
 | **Menšie kontextové okno** | Zámerné obmedzenie na relevantné časti |  
 | **Externá pamäť (vektorová DB)** | Kľúčové fakty mimo kontextu, fetchujú sa podľa potreby |  
 
----  
 
 ## Pamäť v AI systémoch – tri typy  
 
@@ -440,8 +435,6 @@ Trvanlivosť:        Parametric > External > In-Context
 Cena aktualizácie:  In-Context < External << Parametric  
 ```  
 
----  
-
 ## Prompt vs. Context – Terminologický súhrn  
 
 Tieto pojmy sa často zamieňajú. Tu je jasné rozlíšenie:  
@@ -454,7 +447,6 @@ Tieto pojmy sa často zamieňajú. Tu je jasné rozlíšenie:
 | **System Prompt** | Prvá správa v kontexte, definuje rolu a pravidlá | Hlavička listu |  
 | **Token** | Najmenšia jednotka textu (cca 0.75 slova) | Znak alebo slabika |  
 
----  
 
 ## Praktický príklad: AI kódovací asistent  
 
@@ -540,8 +532,6 @@ Ak vytvárate vlastný AI nástroj alebo agenta, tu sú kľúčové rozhodnutia:
 *   **Kompletnosť** – Má model dosť informácií na odpoveď bez halucinovania?  
 *   **Efektivita** – Používate token budget efektívne? Nie je tam redundancia?  
 *   **Odolnosť** – Funguje kontext aj po 50 turne konverzácie? (context rot test)  
-
----  
 
 ## Agent Skills – Znovupoužiteľné balíčky kontextu  
 
