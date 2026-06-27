@@ -1,4 +1,4 @@
-# Kapitola: Qwen – Alibabina priemyselná škála AI  
+Qwen – Alibabina priemyselná škála AI  
 
 Kým DeepSeek ukázal svetu, čo dokáže malý tím s obmedzeným hardvérom,  
 Qwen ukazuje niečo iné: **čo dokáže technologický gigant, keď nasadí  
@@ -12,8 +12,6 @@ Celé čínske meno – **通义千问** (Tongyi Qianwen) – sa prekladá ako
 Meno hovorí o zámeroch: Alibaba nechce len chatbota, ale univerzálneho  
 AI asistenta pokrývajúceho celú šírku ľudského poznania.  
 V angličtine sa skracuje na **Qwen** (vyslovuj: „čchen").  
-
----
 
 ## Vznik a pozadie spoločnosti  
 
