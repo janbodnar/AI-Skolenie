@@ -18,6 +18,58 @@ Skill žije vo vlastnom adresári `.agents/skills/<názov>/` a pozostáva z:
 Súbor `SKILL.md` používa YAML frontmatter na objavenie (discovery) a telo v  
 markdown pre samotné inštrukcie.
 
+### Príklad: Weather skill (počasie)
+
+Weather skill umožňuje agentovi získať aktuálne počasie, teplotu,  
+vlhkosť, rýchlosť vetra a predpoveď pre ľubovoľné mesto.  
+Používa verejné API wttr.in, ktoré nevyžaduje API kľúč.  
+
+#### Frontmatter
+
+```yaml
+---
+name: weather
+description: Get current weather, temperature, humidity, wind speed,
+    and forecast for any city using the wttr.in API. Use when asked about the
+    weather, temperature, forecast, or climate in a specific location.
+compatibility: Requires internet access. Uses the free wttr.in API (no API key needed).
+---
+```
+
+#### Telo — Inštrukcie
+
+Inštrukcie hovoria agentovi, ako zavolať curl príkaz na získanie  
+aktuálneho počasia alebo 3-dňovej predpovede:  
+
+```markdown
+## Get weather
+
+Use curl to fetch weather data from wttr.in:
+
+
+# Detailed weather
+curl -s "wttr.in/<city>?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
+
+# Full 3-day forecast
+curl -s "wttr.in/<city>?u&0"
+```
+
+#### V akcii
+
+Keď používateľ povie *"aké je počasie v Bratislave?"*, agent spustí:  
+
+```
+$ curl -s "wttr.in/Bratislava?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
+→ Bratislava: Partly Cloudy, +22°C(feels like +25°C), humidity 57%, wind →17km/h
+```
+
+Pre 3-dňovú predpoveď:  
+
+```
+$ curl -s "wttr.in/Bratislava?3"
+→ zobrazí tabuľku s predpoveďou na 3 dni
+```
+
 ### Príklad: Skill na hádzanie kockami
 
 Praktický príklad — skill, ktorý hádže polyedrickými kockami (d6, d20, 3d6, atď.)  
@@ -45,7 +97,7 @@ mohol povedať (napr. "hoď kockou", "d20", "náhodné číslo").
 
 Telo hovorí agentovi **ako** používať pribalené skripty:
 
-```markdown
+````markdown
 ## Roll dice
 
 Use the bundled Python scripts in `scripts/`. Format: `<count>d<sides>`.
@@ -60,7 +112,7 @@ python3 scripts/roll_multi.py <count> <sides>
 # Roll with advantage (2 dice, keep highest)
 python3 scripts/roll_advantage.py <sides>
 ```
-```
+````
 
 #### Pribalené skripty
 
@@ -118,57 +170,7 @@ $ python3 scripts/roll_advantage.py 20
 | **Znovupoužiteľné** | Rovnaký skill funguje v akomkoľvek projekte v workspaci |
 | **Objaviteľné** | Pole `description` je indexované pre automatické spúšťanie |
 
-### Príklad: Weather skill (počasie)
 
-Weather skill umožňuje agentovi získať aktuálne počasie, teplotu,  
-vlhkosť, rýchlosť vetra a predpoveď pre ľubovoľné mesto.  
-Používa verejné API wttr.in, ktoré nevyžaduje API kľúč.  
-
-#### Frontmatter
-
-```yaml
----
-name: weather
-description: Get current weather, temperature, humidity, wind speed,
-    and forecast for any city using the wttr.in API. Use when asked about the
-    weather, temperature, forecast, or climate in a specific location.
-compatibility: Requires internet access. Uses the free wttr.in API (no API key needed).
----
-```
-
-#### Telo — Inštrukcie
-
-Inštrukcie hovoria agentovi, ako zavolať curl príkaz na získanie  
-aktuálneho počasia alebo 3-dňovej predpovede:  
-
-```markdown
-## Get weather
-
-Use curl to fetch weather data from wttr.in:
-
-
-# Detailed weather
-curl -s "wttr.in/<city>?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
-
-# Full 3-day forecast
-curl -s "wttr.in/<city>?u&0"
-```
-
-#### V akcii
-
-Keď používateľ povie *"aké je počasie v Bratislave?"*, agent spustí:  
-
-```
-$ curl -s "wttr.in/Bratislava?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
-→ Bratislava: Partly Cloudy, +22°C(feels like +25°C), humidity 57%, wind →17km/h
-```
-
-Pre 3-dňovú predpoveď:  
-
-```
-$ curl -s "wttr.in/Bratislava?3"
-→ zobrazí tabuľku s predpoveďou na 3 dni
-```
 
 ### Príklad: World-Time skill (svetový čas)
 
