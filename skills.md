@@ -1113,13 +1113,13 @@ compatibility: Requires internet access. Uses the free Time API (worldtimeapi.or
 
 Use curl to fetch the current time from a public time API:
 
-```bash
 # By timezone
 curl -s "https://worldtimeapi.org/api/timezone/<timezone>"
 
 # Search by city
 curl -s "https://worldtimeapi.org/api/timezone/<continent>/<city>"
 ```
+
 
 ## Common timezones
 
@@ -1162,6 +1162,7 @@ curl -s "https://worldtimeapi.org/api/timezone/Asia/Tokyo" | python3 -c "import 
 ## Fallback
 
 If worldtimeapi.org is unreachable, try the alternative API:
+
 ```bash
 curl -s "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bratislava"
 ```
