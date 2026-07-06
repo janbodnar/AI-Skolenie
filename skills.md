@@ -1124,7 +1124,7 @@ curl -s "https://worldtimeapi.org/api/timezone/<continent>/<city>"
 ## Common timezones
 
 | City | Timezone |
-||-|
+|--|-|
 | Bratislava, Prague, Vienna, Berlin, Paris, Madrid, Rome, Stockholm | `Europe/<city>` |
 | London, Lisbon, Dublin | `Europe/<city>` |
 | New York, Washington, Boston, Miami, Toronto | `America/New_York` |
