@@ -40,9 +40,12 @@ my-skill/
 
 ## Prečo používať Agent Skills?
 
-Agenti sú čoraz schopnejší, ale často im chýba **kontext** na spoľahlivé vykonávanie reálnych úloh. Skills riešia tento problém tým, že balia procedurálne znalosti do formátu, ktorý agenti načítavajú na požiadanie:
+Agenti sú čoraz schopnejší, ale často im chýba **kontext** na spoľahlivé vykonávanie  
+reálnych úloh. Skills riešia tento problém tým, že balia procedurálne znalosti do formátu,  
+ktorý agenti načítavajú na požiadanie:
 
-- **Doménová expertíza** — zachyťte špecializované znalosti (právne procesy, data pipelines, formátovanie prezentácií) ako opakovane použiteľné inštrukcie.
+- **Doménová expertíza** — zachyťte špecializované znalosti (právne procesy, data pipelines,
+  formátovanie prezentácií) ako opakovane použiteľné inštrukcie.
 - **Opakovateľné workflowy** — premeňte viackrokové úlohy na konzistentné, auditovateľné procedúry.
 - **Cross-produktové zdieľanie** — vytvorte skill raz a používajte ho v akomkoľvek kompatibilnom agentovi.
 
@@ -68,23 +71,22 @@ Agenti načítavajú skills pomocou **progresívneho zverejňovania** (progressi
 └─────────────────────────────────────────────────────┘
 ```
 
-
-
 ## Štruktúra skillu
 
 ### Povinné súbory
 
-| Súbor | Popis |
-|-|-|
-| `SKILL.md` | YAML frontmatter + Markdown inštrukcie |
+| Súbor     | Popis                                   |
+|-----------|------------------------------------------|
+| `SKILL.md` | YAML frontmatter + Markdown inštrukcie  |
 
 ### Voliteľné priečinky
 
-| Priečinok | Popis |
-|--|-|
-| `scripts/` | Spustiteľný kód (Python, Bash, JavaScript, ...) |
-| `references/` | Doplňujúca dokumentácia načítavaná na požiadanie |
-| `assets/` | Šablóny, obrázky, dátové súbory |
+| Priečinok      | Popis                                           |
+|----------------|--------------------------------------------------|
+| `scripts/`     | Spustiteľný kód (Python, Bash, JavaScript, ...) |
+| `references/`  | Doplňujúca dokumentácia načítavaná na požiadanie |
+| `assets/`      | Šablóny, obrázky, dátové súbory                 |
+
 
 
 
@@ -116,7 +118,7 @@ description: Roll dice using a random number generator. Use when asked to roll a
 **Rozšírený príklad:**
 
 ```yaml
-
+---
 name: pdf-processing
 description: Extracts text and tables from PDF files, fills PDF forms, and merges multiple PDFs. Use when working with PDF documents.
 license: Apache-2.0
@@ -124,7 +126,7 @@ compatibility: Requires Python 3.14+ and uv
 metadata:
   author: example-org
   version: "1.0"
-
+---
 ```
 
 ### Body (inštrukcie)
