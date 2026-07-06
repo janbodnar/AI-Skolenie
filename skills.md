@@ -4,7 +4,7 @@
 >
 > Oficiálna stránka: [https://agentskills.io](https://agentskills.io)
 
----
+
 
 ## 📑 Obsah
 
@@ -20,7 +20,7 @@
 10. [Klientská podpora](#klientská-podpora)
 11. [VS Code Skills — workspace skills](#vs-code-skills--workspace-skills)
 
----
+
 
 ## Čo sú Agent Skills?
 
@@ -37,7 +37,7 @@ my-skill/
 └── ...               # Ďalšie súbory alebo priečinky
 ```
 
----
+
 
 ## Prečo používať Agent Skills?
 
@@ -47,7 +47,7 @@ Agenti sú čoraz schopnejší, ale často im chýba **kontext** na spoľahlivé
 - **Opakovateľné workflowy** — premeňte viackrokové úlohy na konzistentné, auditovateľné procedúry.
 - **Cross-produktové zdieľanie** — vytvorte skill raz a používajte ho v akomkoľvek kompatibilnom agentovi.
 
----
+
 
 ## Ako Agent Skills fungujú?
 
@@ -69,32 +69,32 @@ Agenti načítavajú skills pomocou **progresívneho zverejňovania** (progressi
 └─────────────────────────────────────────────────────┘
 ```
 
----
+
 
 ## Štruktúra skillu
 
 ### Povinné súbory
 
 | Súbor | Popis |
-|-------|-------|
+|-|-|
 | `SKILL.md` | YAML frontmatter + Markdown inštrukcie |
 
 ### Voliteľné priečinky
 
 | Priečinok | Popis |
-|-----------|-------|
+|--|-|
 | `scripts/` | Spustiteľný kód (Python, Bash, JavaScript, ...) |
 | `references/` | Doplňujúca dokumentácia načítavaná na požiadanie |
 | `assets/` | Šablóny, obrázky, dátové súbory |
 
----
+
 
 ## Specifikácia `SKILL.md`
 
 ### YAML Frontmatter
 
 | Pole | Povinné | Obmedzenia |
-|------|---------|------------|
+||||
 | `name` | Áno | Max 64 znakov. Len malé písmená, číslice a pomlčky. Musí zodpovedať názvu priečinka. |
 | `description` | Áno | Max 1024 znakov. Popisuje čo skill robí a kedy ho použiť. |
 | `license` | Nie | Názov licencie alebo odkaz na licenčný súbor. |
@@ -107,16 +107,16 @@ Agenti načítavajú skills pomocou **progresívneho zverejňovania** (progressi
 **Minimálny príklad:**
 
 ```yaml
----
+
 name: roll-dice
 description: Roll dice using a random number generator. Use when asked to roll a die (d6, d20, etc.), roll dice, or generate a random dice roll.
----
+
 ```
 
 **Rozšírený príklad:**
 
 ```yaml
----
+
 name: pdf-processing
 description: Extracts text and tables from PDF files, fills PDF forms, and merges multiple PDFs. Use when working with PDF documents.
 license: Apache-2.0
@@ -124,7 +124,7 @@ compatibility: Requires Python 3.14+ and uv
 metadata:
   author: example-org
   version: "1.0"
----
+
 ```
 
 ### Body (inštrukcie)
@@ -136,7 +136,7 @@ Telo `SKILL.md` za frontmatterom obsahuje samotné inštrukcie. Neexistujú žia
 - **Bežné edge case-y**
 - **Gotchas** — konkrétne korekcie chýb, ktoré agent robí
 
----
+
 
 ## Praktické príklady
 
@@ -147,10 +147,10 @@ Jeden z najjednoduchších skillov — agent hodí kockou pomocou terminálovéh
 **Umiestnenie:** `.agents/skills/roll-dice/SKILL.md`
 
 ```markdown
----
+
 name: roll-dice
 description: Roll dice using a random number generator. Use when asked to roll a die (d6, d20, etc.), roll dice, or generate a random dice roll.
----
+
 
 To roll a die, use the following command that generates a random number from 1
 to the given number of sides:
@@ -169,7 +169,7 @@ die, 20 for a d20).
 
 > **Použitie:** `"Roll a d20"` → agent spustí `echo $((RANDOM % 20 + 1))` → vráti číslo medzi 1 a 20.
 
----
+
 
 ### Príklad 2: Python Code Formatter 🐍
 
@@ -178,10 +178,10 @@ Skill, ktorý automaticky formátuje Python kód podľa štandardov projektu.
 **Umiestnenie:** `.agents/skills/python-formatter/SKILL.md`
 
 ```markdown
----
+
 name: python-formatter
 description: Format Python code using ruff and black. Use when asked to format Python files, fix code style, or apply linting. Also triggered when the user mentions "format", "lint", or "PEP 8".
----
+
 
 ## Format Python code
 
@@ -208,7 +208,7 @@ description: Format Python code using ruff and black. Use when asked to format P
 - Use `--check` flag without `--fix` if the user only wants to see issues without auto-fixing
 ```
 
----
+
 
 ### Príklad 3: CSV Data Analysis 📊
 
@@ -217,11 +217,11 @@ Skill na analýzu CSV súborov s vizualizáciou.
 **Umiestnenie:** `.agents/skills/csv-analysis/SKILL.md`
 
 ```markdown
----
+
 name: csv-analysis
 description: Analyze CSV and tabular data files — compute summary statistics, add derived columns, generate charts, and clean messy data. Use when the user has a CSV, TSV, or Excel file and wants to explore, transform, or visualize data.
 compatibility: Requires Python 3.10+ and uv
----
+
 
 ## Available scripts
 
@@ -331,7 +331,7 @@ if __name__ == "__main__":
 
 > **Použitie:** `"Analyze my sales.csv and show me a histogram of revenue"` → agent spustí skript, vygeneruje štatistiky a graf.
 
----
+
 
 ### Príklad 4: Database Query Helper 🗄️
 
@@ -340,11 +340,11 @@ Skill na bezpečné a konzistentné dotazovanie sa do databázy.
 **Umiestnenie:** `.agents/skills/db-queries/SKILL.md`
 
 ```markdown
----
+
 name: db-queries
 description: Query the project database safely. Use when the user asks about data, needs to run SQL queries, or wants to explore the database schema.
 compatibility: Requires psql (PostgreSQL client) and database credentials in .env
----
+
 
 ## Database schema
 
@@ -376,7 +376,7 @@ psql "$DATABASE_URL" -c "SELECT id, email, created_at FROM users WHERE deleted_a
 
 ## `users`
 | Column | Type | Notes |
-|--------|------|-------|
+|--||-|
 | id | UUID | Primary key |
 | email | VARCHAR(255) | Unique, not null |
 | deleted_at | TIMESTAMP | NULL = active, set = soft-deleted |
@@ -384,14 +384,14 @@ psql "$DATABASE_URL" -c "SELECT id, email, created_at FROM users WHERE deleted_a
 
 ## `orders`
 | Column | Type | Notes |
-|--------|------|-------|
+|--||-|
 | id | UUID | Primary key |
 | user_id | UUID | FK → users.id |
 | total | DECIMAL(10,2) | |
 | status | VARCHAR(50) | pending, confirmed, shipped, delivered, cancelled |
 ```
 
----
+
 
 ### Príklad 5: Git Commit Message Generator 📝
 
@@ -400,11 +400,11 @@ Skill, ktorý analyzuje zmeny a generuje konzistentné commit správy podľa Con
 **Umiestnenie:** `.agents/skills/git-commit/SKILL.md`
 
 ```markdown
----
+
 name: git-commit
 description: Generate conventional Git commit messages from staged changes. Use when asked to commit, create a commit message, or stage and commit changes.
 compatibility: Requires git
----
+
 
 ## Workflow
 
@@ -455,7 +455,7 @@ Return 404 instead of crashing when user ID doesn't exist.
 - Breaking changes get a `!` after the type: `feat!(api): remove deprecated v1 endpoints`
 ```
 
----
+
 
 ### Príklad 6: Code Review Assistant 🔍
 
@@ -464,10 +464,10 @@ Skill na štruktúrovanú kontrolu kódu s dôrazom na bezpečnosť a kvalitu.
 **Umiestnenie:** `.agents/skills/code-review/SKILL.md`
 
 ```markdown
----
+
 name: code-review
 description: Perform structured code review of pull requests and code changes. Use when asked to review code, check a PR, audit changes, or look for bugs and security issues.
----
+
 
 ## Code Review Checklist
 
@@ -509,7 +509,7 @@ description: Perform structured code review of pull requests and code changes. U
 ```
 ```
 
----
+
 
 ### Príklad 7: Docker Compose Development Environment 🐳
 
@@ -518,11 +518,11 @@ Skill na rýchle spustenie vývojového prostredia s Dockerom.
 **Umiestnenie:** `.agents/skills/docker-dev/SKILL.md`
 
 ```markdown
----
+
 name: docker-dev
 description: Set up and manage Docker Compose development environments. Use when asked to start a dev environment, run services locally, or troubleshoot Docker containers.
 compatibility: Requires docker and docker-compose
----
+
 
 ## Available scripts
 
@@ -558,7 +558,7 @@ compatibility: Requires docker and docker-compose
 - If containers fail to start, check `docker compose logs` before retrying
 ```
 
----
+
 
 ## Best Practices
 
@@ -580,7 +580,7 @@ Každý token v `SKILL.md` súťaží o pozornosť agenta s celým kontextovým 
 ### 3. Kalibrujte mieru kontroly
 
 | Situácia | Prístup |
-|----------|---------|
+|-||
 | Viacero platných prístupov | Dajte agentovi voľnosť, vysvetlite **prečo** |
 | Krehké operácie | Buďte preskriptívni — presný príkaz, žiadne voľby |
 | Výber nástroja | Uveďte predvolený, alternatívy len okrajovo |
@@ -588,7 +588,7 @@ Každý token v `SKILL.md` súťaží o pozornosť agenta s celým kontextovým 
 ### 4. Vzory pre efektívne inštrukcie
 
 | Vzor | Použitie |
-|------|----------|
+||-|
 | **Gotchas** | Konkrétne korekcie chýb, ktoré agent opakovane robí |
 | **Šablóny výstupu** | Konkrétna štruktúra výstupu je spoľahlivejšia než prozaický popis |
 | **Checklisty** | Pomáhajú agentovi sledovať postup a nepreskakovať kroky |
@@ -606,7 +606,7 @@ Prvý návrh skilly zvyčajne potrebuje doladiť:
 
 > 💡 Keď agent urobí chybu, ktorú musíte opraviť, pridajte opravu do sekcie **Gotchas**.
 
----
+
 
 ## Používanie skriptov
 
@@ -653,7 +653,7 @@ Spustenie: `uv run scripts/scrape.py`
 ### Design skriptov pre agentov
 
 | Pravidlo | Prečo? |
-|----------|--------|
+|-|--|
 | ❌ Žiadne interaktívne výzvy | Agenti pracujú v neinteraktívnom shelli |
 | ✅ `--help` dokumentácia | Primárny spôsob, ako sa agent naučí rozhranie |
 | ✅ Užitočné chybové hlášky | "Error: --format must be one of: json, csv, table" |
@@ -662,7 +662,7 @@ Spustenie: `uv run scripts/scrape.py`
 | ✅ Dry-run podpora | Pre deštruktívne operácie |
 | ✅ Predvídateľná veľkosť výstupu | Agenti automaticky orezávajú veľký výstup |
 
----
+
 
 ## Optimalizácia popisov
 
@@ -697,14 +697,14 @@ description: >
 3. Optimalizačný loop: vyhodnoť → identifikuj zlyhania → reviduj popis → opakuj (max 5 iterácií)
 4. Použite **train/validation split** (60/40) aby ste predišli overfittingu
 
----
+
 
 ## Klientská podpora
 
 Agent Skills sú podporované širokým spektrom nástrojov:
 
 | Nástroj | Odkaz |
-|---------|-------|
+||-|
 | **GitHub Copilot** (VS Code) | [docs.github.com](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) |
 | **Claude Code** | [code.claude.com](https://code.claude.com/docs/en/skills) |
 | **OpenAI Codex** | [developers.openai.com](https://developers.openai.com/codex/skills/) |
@@ -719,7 +719,7 @@ Agent Skills sú podporované širokým spektrom nástrojov:
 | **Qodo** | [qodo.ai](https://www.qodo.ai/) |
 | **Tabnine** | [docs.tabnine.com](https://docs.tabnine.com/main/getting-started/tabnine-cli/features/agent-skills) |
 
----
+
 
 ## VS Code Skills — workspace skills
 
@@ -730,7 +730,7 @@ Táto sekcia obsahuje praktické skills pripravené na **okamžité použitie vo
 VS Code hľadá skills v nasledujúcich priečinkoch (relatívne voči koreňu workspace):
 
 | Priečinok | Typ |
-|-----------|-----|
+|--|--|
 | `.github/skills/` | Projektový (odporúčané pre zdieľanie v repozitári) |
 | `.claude/skills/` | Projektový (kompatibilné s Claude Code) |
 | `.agents/skills/` | Projektový (univerzálne) |
@@ -740,7 +740,7 @@ Vlastné umiestnenie môžeš nastaviť cez `chat.agentSkillsLocations` v nastav
 
 > **Tip:** Po vytvorení skillu ho otestuj príkazom `/skills` v Copilot chat paneli — mal by sa zobraziť v zozname.
 
----
+
 
 ### 🎲 Skill: Náhodné dáta (`random-data`)
 
@@ -749,10 +749,10 @@ Generovanie náhodných dát — používateľské mená, emaily, ID, heslá, č
 **Umiestnenie:** `.github/skills/random-data/SKILL.md`
 
 ```markdown
----
+
 name: random-data
 description: Generate random test data — usernames, emails, passwords, IDs, dates, phone numbers, addresses, and dummy content. Use when asked to generate fake data, mock data, test data, random records, or dummy content for development and testing.
----
+
 
 ## Generate random data
 
@@ -855,7 +855,7 @@ if __name__ == "__main__":
 
 > **Použitie:** `"Generate 10 fake users for testing"` → agent spustí skript a vráti JSON s 10 používateľmi.
 
----
+
 
 ### 🔤 Skill: Lingvistická analýza (`text-analysis`)
 
@@ -864,10 +864,10 @@ Analýza textu — počet slov, viet, znakov, frekvenčná analýza, sentiment, 
 **Umiestnenie:** `.github/skills/text-analysis/SKILL.md`
 
 ```markdown
----
+
 name: text-analysis
 description: Analyze text — count words, sentences, characters, detect language, extract keywords, analyze sentiment and readability. Use when asked to analyze text, check readability, count words, detect language, or perform linguistic analysis.
----
+
 
 ## Text analysis
 
@@ -885,7 +885,7 @@ uv run scripts/analyze_text.py --file "<path>"
 ## What the script analyzes
 
 | Metric | Description |
-|--------|-------------|
+|--|-|
 | Word count | Total words + unique words |
 | Character count | With and without spaces |
 | Sentence count | Number of sentences |
@@ -895,7 +895,6 @@ uv run scripts/analyze_text.py --file "<path>"
 | Sentiment | Positive/negative/neutral score |
 | Top keywords | Most frequent meaningful words |
 | Readability | Flesch reading ease score |
-```
 
 **Skript:** `.github/skills/text-analysis/scripts/analyze_text.py`
 
@@ -1025,7 +1024,6 @@ if __name__ == "__main__":
 
 > **Použitie:** `"Analyze this text: 'The quick brown fox jumps over the lazy dog.'"` → agent vráti komplexnú lingvistickú analýzu.
 
----
 
 ### 🌤️ Skill: Počasie (`weather`)
 
@@ -1034,11 +1032,11 @@ Zistenie aktuálneho počasia pre zadané mesto pomocou verejného API.
 **Umiestnenie:** `.github/skills/weather/SKILL.md`
 
 ```markdown
----
+
 name: weather
 description: Get current weather, temperature, humidity, wind speed, and forecast for any city using the wttr.in API. Use when asked about the weather, temperature, forecast, or climate in a specific location.
 compatibility: Requires internet access. Uses the free wttr.in API (no API key needed).
----
+
 
 ## Get weather
 
@@ -1060,7 +1058,7 @@ Replace `<city>` with the city name (e.g., `London`, `Bratislava`, `New+York`, `
 ## Parameters
 
 | Flag | Meaning |
-|------|---------|
+|||
 | `?u` | Metric units (default) |
 | `?m` | Metric (m/s) |
 | `?format=` | Custom output format |
@@ -1098,7 +1096,7 @@ curl -s "wttr.in/Bratislava?u&0"
 
 > **Použitie:** `"What's the weather in Tokyo?"` → agent zavolá `curl -s "wttr.in/Tokyo?format=..."` a vráti aktuálne počasie.
 
----
+
 
 ### 🕐 Skill: Čas vo svete (`world-time`)
 
@@ -1107,11 +1105,11 @@ Zistenie aktuálneho času pre vybrané mesto alebo časovú zónu.
 **Umiestnenie:** `.github/skills/world-time/SKILL.md`
 
 ```markdown
----
+
 name: world-time
 description: Get the current date and time for any city or timezone worldwide. Use when asked about the time in a specific location, timezone differences, or what time it is somewhere.
 compatibility: Requires internet access. Uses the free Time API (worldtimeapi.org) and fallback to timeapi.io.
----
+
 
 ## Get current time
 
@@ -1128,7 +1126,7 @@ curl -s "https://worldtimeapi.org/api/timezone/<continent>/<city>"
 ## Common timezones
 
 | City | Timezone |
-|------|----------|
+||-|
 | Bratislava, Prague, Vienna, Berlin, Paris, Madrid, Rome, Stockholm | `Europe/<city>` |
 | London, Lisbon, Dublin | `Europe/<city>` |
 | New York, Washington, Boston, Miami, Toronto | `America/New_York` |
@@ -1168,7 +1166,7 @@ curl -s "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bratislava"
 
 > **Použitie:** `"What time is it in Sydney?"` → agent zavolá API a vráti aktuálny čas aj s časovou zónou.
 
----
+
 
 ## Komunitné zdroje
 
@@ -1177,7 +1175,7 @@ curl -s "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bratislava"
 - **Príklady skillov**: [github.com/anthropics/skills](https://github.com/anthropics/skills)
 - **Validačný nástroj**: `skills-ref validate ./my-skill`
 
----
+
 
 ## Quickstart — vytvorte si prvý skill
 
@@ -1187,10 +1185,10 @@ mkdir -p .agents/skills/roll-dice
 
 # 2. Vytvorte SKILL.md s obsahom z Príkladu 1 vyššie
 cat > .agents/skills/roll-dice/SKILL.md << 'EOF'
----
+
 name: roll-dice
 description: Roll dice using a random number generator.
----
+
 
 To roll a die, use:
 ```bash
@@ -1206,6 +1204,6 @@ EOF
 
 > **Validácia:** `skills-ref validate .agents/skills/roll-dice` skontroluje, či je frontmatter v poriadku.
 
----
+
 
 *Dokument vytvorený na základe [https://agentskills.io](https://agentskills.io) — otvoreného štandardu pre rozširovanie schopností AI agentov.*
