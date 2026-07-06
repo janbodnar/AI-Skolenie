@@ -63,6 +63,9 @@ Moji študenti využívajú AI na:
 - tvorba Python skriptov (neprogramátor)
 - hľadanie a porovnanie výhodných cien Apple produktov
 - sumarizácia textov
+- tvorba prezentácií
+- tvorba poviedok a esejí
+- tvorba komixu
 
 ## Učenie AI
 
