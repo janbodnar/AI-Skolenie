@@ -1123,19 +1123,31 @@ curl -s "https://worldtimeapi.org/api/timezone/<continent>/<city>"
 
 ## Common timezones
 
-| City | Timezone |
-|--|-|
-| Bratislava, Prague, Vienna, Berlin, Paris, Madrid, Rome, Stockholm | `Europe/<city>` |
-| London, Lisbon, Dublin | `Europe/<city>` |
-| New York, Washington, Boston, Miami, Toronto | `America/New_York` |
-| Los Angeles, San Francisco, Vancouver, Seattle | `America/Los_Angeles` |
-| Tokyo, Seoul | `Asia/Tokyo` |
-| Sydney, Melbourne | `Australia/Sydney` |
-| Auckland | `Pacific/Auckland` |
-| Dubai | `Asia/Dubai` |
-| Moscow | `Europe/Moscow` |
-| São Paulo | `America/Sao_Paulo` |
-| Mexico City | `America/Mexico_City` |
+| City                                                     | Timezone                     |
+|----------------------------------------------------------|------------------------------|
+| Bratislava                                               | Europe/Bratislava            |
+| Prague                                                   | Europe/Prague                |
+| Vienna                                                   | Europe/Vienna                |
+| Berlin                                                   | Europe/Berlin                |
+| Paris                                                    | Europe/Paris                 |
+| Madrid                                                   | Europe/Madrid                |
+| Rome                                                     | Europe/Rome                  |
+| Stockholm                                                | Europe/Stockholm             |
+| London                                                   | Europe/London                |
+| Lisbon                                                   | Europe/Lisbon                |
+| Dublin                                                   | Europe/Dublin                |
+| New York, Washington, Boston, Miami, Toronto             | America/New_York             |
+| Los Angeles, San Francisco, Vancouver, Seattle           | America/Los_Angeles          |
+| Tokyo                                                    | Asia/Tokyo                   |
+| Seoul                                                    | Asia/Seoul                   |
+| Sydney                                                   | Australia/Sydney             |
+| Melbourne                                                | Australia/Melbourne          |
+| Auckland                                                 | Pacific/Auckland             |
+| Dubai                                                    | Asia/Dubai                   |
+| Moscow                                                   | Europe/Moscow                |
+| São Paulo                                                | America/Sao_Paulo            |
+| Mexico City                                              | America/Mexico_City          |
+
 
 ## Examples
 
@@ -1160,10 +1172,9 @@ curl -s "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bratislava"
 - Use common timezone names (find them with `timedatectl list-timezones` or check the table above)
 - If the timezone is ambiguous, offer the user options
 - The API returns ISO 8601 datetime — format it nicely for the user
-```
+
 
 > **Použitie:** `"What time is it in Sydney?"` → agent zavolá API a vráti aktuálny čas aj s časovou zónou.
-
 
 
 ## Komunitné zdroje
@@ -1172,7 +1183,6 @@ curl -s "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Bratislava"
 - **Discord komunita**: [discord.gg/MKPE9g8aUy](https://discord.gg/MKPE9g8aUy)
 - **Príklady skillov**: [github.com/anthropics/skills](https://github.com/anthropics/skills)
 - **Validačný nástroj**: `skills-ref validate ./my-skill`
-
 
 
 ## Quickstart — vytvorte si prvý skill
@@ -1194,14 +1204,13 @@ echo $((RANDOM % <sides> + 1))
 ```
 EOF
 
-# 3. Overte, že skill je načítaný
-#    V Copilot chate napíšte /skills — mal by sa zobraziť roll-dice
+## 3. Overte, že skill je načítaný
 
-# 4. Otestujte: "Roll a d20"
-```
+V Copilot chate napíšte /skills — mal by sa zobraziť roll-dice
+
+4. Otestujte: "Roll a d20"
 
 > **Validácia:** `skills-ref validate .agents/skills/roll-dice` skontroluje, či je frontmatter v poriadku.
 
 
 
-*Dokument vytvorený na základe [https://agentskills.io](https://agentskills.io) — otvoreného štandardu pre rozširovanie schopností AI agentov.*
