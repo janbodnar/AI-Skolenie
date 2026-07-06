@@ -1057,6 +1057,7 @@ Replace `<city>` with the city name (e.g., `London`, `Bratislava`, `New+York`, `
 ## Parameters
 
 | Flag | Meaning |
+|--|-|
 | `?u` | Metric units (default) |
 | `?m` | Metric (m/s) |
 | `?format=` | Custom output format |
