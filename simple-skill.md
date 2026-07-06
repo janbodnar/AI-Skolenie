@@ -117,3 +117,108 @@ $ python3 scripts/roll_advantage.py 20
 | **Samonosné** | Obsahuje všetky potrebné skripty |
 | **Znovupoužiteľné** | Rovnaký skill funguje v akomkoľvek projekte v workspaci |
 | **Objaviteľné** | Pole `description` je indexované pre automatické spúšťanie |
+
+### Príklad: Weather skill (počasie)
+
+Weather skill umožňuje agentovi získať aktuálne počasie, teplotu,  
+vlhkosť, rýchlosť vetra a predpoveď pre ľubovoľné mesto.  
+Používa verejné API wttr.in, ktoré nevyžaduje API kľúč.  
+
+#### Frontmatter
+
+```yaml
+---
+name: weather
+description: Get current weather, temperature, humidity, wind speed,
+    and forecast for any city using the wttr.in API. Use when asked about the
+    weather, temperature, forecast, or climate in a specific location.
+compatibility: Requires internet access. Uses the free wttr.in API (no API key needed).
+---
+```
+
+#### Telo — Inštrukcie
+
+Inštrukcie hovoria agentovi, ako zavolať curl príkaz na získanie  
+aktuálneho počasia alebo 3-dňovej predpovede:  
+
+```markdown
+## Get weather
+
+Use curl to fetch weather data from wttr.in:
+
+
+# Detailed weather
+curl -s "wttr.in/<city>?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
+
+# Full 3-day forecast
+curl -s "wttr.in/<city>?u&0"
+```
+
+#### V akcii
+
+Keď používateľ povie *"aké je počasie v Bratislave?"*, agent spustí:  
+
+```
+$ curl -s "wttr.in/Bratislava?format=%l:+%C,+%t(feels+like+%f),+humidity+%h,+wind+%w"
+→ Bratislava: Partly Cloudy, +22°C(feels like +25°C), humidity 57%, wind →17km/h
+```
+
+Pre 3-dňovú predpoveď:  
+
+```
+$ curl -s "wttr.in/Bratislava?3"
+→ zobrazí tabuľku s predpoveďou na 3 dni
+```
+
+### Príklad: World-Time skill (svetový čas)
+
+World-Time skill poskytuje aktuálny dátum a čas pre ľubovoľné mesto  
+alebo časovú zónu na svete. Používa worldtimeapi.org s fallbackom na  
+timeapi.io.  
+
+#### Frontmatter
+
+```yaml
+---
+name: world-time
+description: Get the current date and time for any city or timezone worldwide.
+    Use when asked about the time in a specific location, timezone differences,
+    or what time it is somewhere.
+compatibility: Requires internet access. Uses the free Time API (worldtimeapi.org)
+    and fallback to timeapi.io.
+---
+```
+
+#### Telo — Inštrukcie
+
+Inštrukcie hovoria agentovi, ako zavolať API na získanie času  
+podľa časovej zóny alebo kontinentu a mesta:
+
+```markdown
+## Get current time
+
+Use curl to fetch the current time from a public time API:
+
+
+# By timezone
+curl -s "https://worldtimeapi.org/api/timezone/<timezone>"
+
+# Search by city
+curl -s "https://worldtimeapi.org/api/timezone/<continent>/<city>"
+```
+
+#### V akcii
+
+Keď používateľ povie *"koľko je hodín v Tokiu?"*, agent zavolá:
+
+```
+$ curl -s "https://www.timeapi.io/api/Time/current/zone?timeZone=Asia/Tokyo"
+→ {"year":2026,"month":7,"day":7,"hour":6,"minute":20,...,"time":"06:20",...}
+```
+
+Pre Moskvu:
+
+```
+$ curl -s "https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Moscow"
+→ {"year":2026,"month":7,"day":7,"hour":0,"minute":20,...,"time":"00:20",...}
+```
