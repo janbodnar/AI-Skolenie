@@ -9,7 +9,6 @@ open-source pre celý svet.
 V tejto kapitole sa pozrieme na pôvod spoločnosti, technické základy  
 jej modelov, aj na globálnu kontroverziu, ktorú vyvolala.  
 
----  
 
 ## Vznik a pozadie spoločnosti  
 
@@ -20,16 +19,16 @@ pôvodne budoval High-Flyer ako kvantitatívny fond využívajúci AI
 na obchodovanie s akciami.  
 
 Na rozdiel od väčšiny AI spoločností, ktoré hľadajú externých investorov,  
-DeepSeek je **plne súkromná a samofinancovaná** z výnosov hedžového fondu.  
-To jej dáva nezvyčajnú slobodu – nemusí reportovať investorom ani  
-dosahovať komerčné ciele v krátkom horizonte.  
+DeepSeek bol dlhodobo **plne súkromný a samofinancovaný** z výnosov hedžového  
+fondu. To mu dávalo nezvyčajnú slobodu – nemusel reportovať investorom ani  
+dosahovať komerčné ciele v krátkom horizonte. V apríli 2026 však DeepSeek  
+začal prvé rokovania o externom financovaní (pozri nižšie).  
 
 Spoločnosť zamestnáva relatívne malý tím – odhadom **200–300 výskumníkov**,  
 z ktorých väčšina sú čerství absolventi čínskych elitných univerzít  
 (Peking University, Tsinghua). Napriek svojej veľkosti vyprodukovala  
 výsledky, ktoré zahanbia tímy s tisíckami zamestnancov.  
 
----  
 
 ## Modely DeepSeek – prehľad  
 
@@ -40,11 +39,14 @@ výsledky, ktoré zahanbia tímy s tisíckami zamestnancov.
 | **DeepSeek-V2** | máj 2024 | MoE architektúra, 236B parametrov (21B aktívnych) |  
 | **DeepSeek-V2.5** | sep. 2024 | Vylepšené kódovanie a konverzácia |  
 | **DeepSeek-R1** | jan. 2025 | **Prelomový reasoning model, spúšťač globálneho šoku** |  
-| **DeepSeek-V3** | mar. 2025 | Vylepšený základný model |  
-| **DeepSeek-R2** | jún 2025 | Ďalší generácia reasoning modelu |  
-| **DeepSeek-V4** | dec. 2025 | Aktuálny vlajkový model |  
+| **DeepSeek-V3** | dec. 2024 | Základný model, 671B parametrov (37B aktívnych) |  
+| **DeepSeek-V3-0324** | mar. 2025 | Vylepšená verzia V3 pod MIT licenciou |  
+| **DeepSeek-R1-0528** | máj 2025 | Vylepšený R1 s prísnejšou cenzúrou |  
+| **DeepSeek-V3.1** | aug. 2025 | Hybridná architektúra – thinking aj non-thinking módy |  
+| **DeepSeek-V3.2** | dec. 2025 | DeepSeek Sparse Attention, efektívnejší attention mechanizmus |  
+| **DeepSeek-V4-Flash** | apr. 2026 | 284B parametrov, 1M token kontext, aktuálny model |  
+| **DeepSeek-V4-Pro** | apr. 2026 | 1,6 trilióna parametrov, špičkový výkon |  
 
----  
 
 ## „Sputnik moment" AI: DeepSeek-R1 (január 2025)  
 
@@ -106,7 +108,6 @@ licenciou, ktorá dovoľuje komukoľvek model stiahnuť, modifikovať
 a komerčne použiť. Toto bol ďalší šok: kým OpenAI a Anthropic  
 svoje modely skrývajú, DeepSeek ich daroval celému svetu.  
 
----  
 
 ## Kontroverzia: „Nvidia deň D"  
 
@@ -167,7 +168,6 @@ argumentujúc, že lacnejší tréning povedie k **väčšiemu dopytu**
 po AI celkovo – jav známy ako **Jevonsov paradox** (keď sa niečo  
 stane lacnejším, ľudia ho chcú viac, nie menej).  
 
----  
 
 ## Bezpečnostné a politické obavy  
 
@@ -227,7 +227,32 @@ akékoľvek porušenie.
 
 > Toto obvinenie nebolo nikdy formálne dokázané ani vyvrátené.  
 
-### 5. Skrytý kód a komunikácia s čínskymi servermi  
+### 5. DeepSeek-R1 publikovaný v Nature (september 2025)  
+
+V septembri 2025 bol výskumný paper o DeepSeek-R1 publikovaný v prestížnom  
+vedeckom časopise **Nature**. Toto bolo významné uznanie – dostať sa do Nature  
+potvrdzuje, že išlo o vedecký prielom, nielen komerčný úspech.  
+
+### 6. Anthropic obviňuje DeepSeek z krádeže dát (február 2026)  
+
+Vo februári 2026 spoločnosť **Anthropic** (tvorkyňa modelu Claude) verejne  
+obvinila DeepSeek z používania **tisícok falošných účtov** na generovanie  
+miliónov konverzácií s Claude modelom. Cieľom malo byť získanie trénovacích  
+dát – podobná metóda, akú OpenAI predtým vytýkala DeepSeeku v súvislosti s GPT.  
+
+Anthropic uviedol, že zablokoval desaťtisíce podozrivých účtov a že náklady  
+na túto „krádež" znášali oni aj ich poskytovatelia cloudových služieb.  
+DeepSeek sa k obvineniu nevyjadril.  
+
+### 7. Prvé externé financovanie (apríl 2026)  
+
+Hoci bol DeepSeek dlhodobo prezentovaný ako plne samofinancovaný, v apríli  
+2026 začali investori rokovať o **kolekcii 300 miliónov dolárov** pri  
+celkovom ocenení spoločnosti na **10 miliárd dolárov**. Išlo by o prvé  
+externé investície od založenia – znak, že spoločnosť začína uvažovať  
+o komercionalizácii.  
+
+### 8. Skrytý kód a komunikácia s čínskymi servermi  
 
 Bezpečnostní výskumníci z firmy **Feroot Security** objavili  
 v kóde webovej verzie DeepSeek zaobfuskovaný JavaScript, ktorý  
@@ -238,7 +263,72 @@ na čiernu listinu.
 DeepSeek na tieto zistenia nereagoval. Mnohé organizácie  
 to však považujú za dostatočný dôvod na úplný zákaz.  
 
----  
+
+## DeepSeek V4 – nová generácia (apríl 2026)  
+
+**24. apríla 2026** DeepSeek vydal preview svojej ďalšej generácie –  
+modelovú rodinu **DeepSeek V4**. Toto vydanie bolo prelomové hneď  
+z niekoľkých dôvodov.  
+
+### Dva modely – V4-Pro a V4-Flash  
+
+DeepSeek vydal dve verzie:  
+
+| Model | Parametre | Určenie |  
+| :--- | :--- | :--- |  
+| **DeepSeek-V4-Pro** | 1,6 trilióna (1 600B) | Maximálny výkon, vlajkový model |  
+| **DeepSeek-V4-Flash** | 284 miliárd | Rýchly a efektívny pre bežné úlohy |  
+
+Oba modely majú **kontextové okno 1 milión tokenov** a sú vydané  
+pod licenciou MIT (open-source).  
+
+### Nová architektúra  
+
+V4 priniesol niekoľko architektonických inovácií oproti V3 a R1:  
+
+#### 1. Manifold-constrained Hyper Connections (mHC)  
+Nová technika prepojenia vrstiev namiesto tradičných residual connections.  
+mHC umožňuje efektívnejší tok gradientov počas tréningu, čo vedie  
+k stabilnejšiemu a rýchlejšiemu učeniu.  
+
+#### 2. Constrained Sparse Attention (CSA)  
+Vylepšená verzia DeepSeek Sparse Attention z V3.2 – model sa zameriava  
+len na relevantné časti vstupu, čím šetrí výpočtový výkon bez straty  
+kvality.  
+
+#### 3. Heavily Compressed Attention (HCA)  
+Kompresná technika, ktorá redukuje pamäťové nároky attention mechanizmu  
+– kľúčová pre dosiahnutie 1M token kontextu.  
+
+#### 4. Muon optimizér  
+Namiesto štandardného AdamW použil DeepSeek Muon optimalizátor, ktorý  
+poskytuje rýchlejšiu konvergenciu a stabilnejší tréning.  
+
+### Tri režimy uvažovania  
+
+V4 modely podporujú tri prevádzkové režimy:  
+
+- **Non-reasoning mode** – rýchle odpovede na bežné otázky  
+- **Reasoning mode** – hlboké uvažovanie krok za krokom (ako R1)  
+- **Max mode** – extended reasoning, maximálna hĺbka pre najťažšie problémy  
+
+### Prijatie čínskymi výrobcami čipov  
+
+V4 bol významný aj tým, že ho okamžite prijali kľúčoví čínski výrobcovia  
+čipov – **Huawei** a **Cambricon**. DeepSeek V4 totiž beží natívne  
+na ich hardvéri, čo je dôležitý krok k čínskej technologickej sebestačnosti  
+a obmedzeniu závislosti od NVIDIA.  
+
+### Čo V4 znamená  
+
+Vydanie V4 ukázalo, že DeepSeek nie je jednorazový fenomén – dokázal,  
+že dokáže prinášať špičkové inovácie opakovane. Zatiaľ čo R1 v januári  
+2025 šokoval svet efektivitou, V4 v apríli 2026 šokoval svet čistým  
+výkonom a architektonickými novinkami.  
+
+> Zatiaľ čo R1 dokázal, že veľké veci sa dajú robiť lacno,  
+> V4 dokázal, že DeepSeek vie hrať aj hru „absolútneho výkonu".  
+
 
 ## Čo DeepSeek zmenil v AI odvetví  
 
@@ -262,15 +352,24 @@ Mistral zdvojnásobil úsilie v open-source smerovaní.
 ### 3. Prehodnotenie exportných kontrol  
 Americký Kongres začal debatu o tom, či exportné obmedzenia  
 čipov do Číny naozaj fungujú – alebo či len stimulujú čínsku  
-inováciu. Výsledok debaty je k marcu 2026 stále otvorený.  
+inováciu. **National Defense Authorization Act (NDAA) pre fiškálny rok 2026**  
+(neskoro 2025) nariadil Pentagonu a americkým spravodajským službám  
+odstrániť DeepSeek z celého svojho vybavenia.  
 
-### 4. „Compute isn't everything"  
+### 4. Expanzia do Afriky  
+DeepSeek našiel neočakávaný trh v Afrike. Vďaka nižšej cene, menšej  
+energetickej náročnosti a podpore miestnych jazykov sa DeepSeek modely  
+rýchlo ujali v krajinách ako Keňa, Nigéria či Južná Afrika. Spolu  
+s Huawei cloud riešeniami ponúka africkej technologickej scéne  
+dostupnejšiu alternatívu k drahým západným AI platformám a zároveň  
+lokálnu dátovú suverenitu.  
+
+### 5. „Compute isn't everything"
 Jensen Huang síce má pravdu, že inference (spúšťanie modelu)  
 spotrebúva stále viac GPU. No DeepSeek dokázal, že pri tréningu  
 nie je výpočtový výkon jedinou premennou – algorithmic cleverness  
 môže nahradiť brute force.  
 
----  
 
 ## Ako bezpečne používať DeepSeek  
 
@@ -291,7 +390,6 @@ a kódovacie úlohy je výConný asistent.
 > uplatnili pri zdieľaní informácií s cudzím človekom na internete.  
 > Pre väčšinu denných úloh je DeepSeek bezpečný a užitočný nástroj.  
 
----  
 
 ## Funkcie pre používateľov  
 
@@ -477,6 +575,16 @@ spôsobil globálny šok – prekonaním amerických modelov pri zlomku náklado
 a vydaním ako open-source. Vyvolal pád akcií NVIDIA o 17 % (−$593 mld),  
 debaty o amerických exportných obmedzeniach a vlnu bezpečnostných zákazov.  
 
+Odvtedy DeepSeek pokračoval vo vývoji – cez vylepšený **R1-0528**, hybridný  
+**V3.1**, efektívny **V3.2** až po prelomový **DeepSeek V4** (apríl 2026)  
+s 1,6 trilióna parametrov, novou mHC architektúrou a 1-miliónovým kontextom.  
+
+Spoločnosť čelila novým kontroverziám – obvineniu z krádeže dát od Anthropicu  
+(február 2026) a prvému externému financovaniu (300 mil. USD pri 10 mld.  
+valuácii). USA legislatívne zakázali DeepSeek v Pentagon a spravodajských  
+službách. Súčasne DeepSeek expanduje v Afrike a jeho V4 model prijali čínski  
+výrobcovia čipov (Huawei, Cambricon).  
+
 Pre každodenné úlohy je DeepSeek výkonný asistent s nástrojmi Web Search,  
 Deep Think a File Upload. Správne využívanie histórie a pravidelný štart  
 nových konverzácií vám pomôže udržať interakciu s AI prehľadnú a efektívnu.  
@@ -486,7 +594,6 @@ všetky dáta sa ukladajú na čínskych serveroch podliehajúcich čínskej leg
 
 
 ## Otázky & diskusia  
-
 
 
 
