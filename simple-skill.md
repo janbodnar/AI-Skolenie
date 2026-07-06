@@ -249,7 +249,7 @@ compatibility: Requires internet access. Uses the free subjekt.sk API
 Inštrukcie hovoria agentovi, ako použiť pribalené Python skripty  
 na vyhľadávanie a detail firmiem:  
 
-```markdown
+````markdown
 ## Search companies by name or ICO
 
 ```bash
@@ -264,7 +264,7 @@ python3 scripts/search_firm.py "<query>" [country] [limit]
 ```bash
 python3 scripts/firm_detail.py <ico> [country]
 ```
-```
+````
 
 #### Pribalené skripty
 
@@ -272,6 +272,7 @@ Adresár `scripts/` obsahuje dva Python súbory, ktoré používajú knižnicu
 `requests` na komunikáciu s REST API subjekt.sk:  
 
 **`scripts/search_firm.py`** — Vyhľadanie firmy podľa názvu alebo IČa:  
+
 ```python
 #!/usr/bin/env python3
 import requests, sys
@@ -303,6 +304,7 @@ print(f"Results: {data.get('total', len(data.get('items', [])))}")
 ```
 
 **`scripts/firm_detail.py`** — Detail firmy podľa IČa:  
+
 ```python
 #!/usr/bin/env python3
 import requests, sys
