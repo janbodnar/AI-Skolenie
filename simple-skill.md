@@ -1,3 +1,65 @@
+## Čo je Agent Skills?
+
+[Agent Skills](https://agentskills.io) je otvorený, ľahký formát na  
+rozširovanie schopností AI agentov pomocou špecializovaných znalostí  
+a pracovných postupov. Pôvodne ho vytvorila spoločnosť  
+[Anthropic](https://www.anthropic.com/) a bol uvoľnený ako otvorený  
+štandard. Dnes ho podporuje viac ako 30 nástrojov a klientov — vrátane  
+GitHub Copilot, VS Code, Claude Code, Cursor, OpenAI Codex, Gemini CLI  
+a mnohých ďalších.
+
+### Adresárová štruktúra
+
+Skill je adresár obsahujúci, minimálne, súbor `SKILL.md`:
+
+```
+skill-name/
+├── SKILL.md          # Povinné: metadáta + inštrukcie
+├── scripts/          # Voliteľné: spustiteľný kód
+├── references/       # Voliteľné: dokumentácia
+├── assets/           # Voliteľné: šablóny, zdroje
+└── ...               # Ďalšie súbory alebo adresáre
+```
+
+### Formát `SKILL.md`
+
+Súbor `SKILL.md` používa YAML frontmatter na objavenie (discovery) a telo  
+v markdown pre samotné inštrukcie.
+
+#### Frontmatter
+
+| Pole | Povinné | Obmedzenia |
+|---|---|---|
+| `name` | Áno | Max 64 znakov. Len malé písmená, číslice a pomlčky. Musí sa zhodovať s názvom adresára. |
+| `description` | Áno | Max 1024 znakov. Popisuje čo skill robí a kedy ho použiť. |
+| `license` | Nie | Licencia alebo odkaz na licenčný súbor. |
+| `compatibility` | Nie | Požiadavky na prostredie (produkt, balíčky, sieť). |
+| `metadata` | Nie | Ľubovoľné kľúč–hodnota (napr. `author`, `version`). |
+
+#### Progressive disclosure (postupné odhalenie)
+
+Agenti načítavajú skills postupne, aby šetrili kontextové okno:
+
+1. **Metadáta** (~100 tokenov): `name` a `description` sú načítané pri štarte
+2. **Inštrukcie** (odporúčaných < 5000 tokenov): Celé `SKILL.md` sa načíta pri aktivácii
+3. **Zdroje** (podľa potreby): Súbory v `scripts/`, `references/` alebo `assets/` sa načítavajú až keď sú potrebné
+
+### Ukážkový minimálny skill
+
+```markdown
+---
+name: hello
+description: Greets the user. Use when asked to say hello or greet.
+---
+
+## Usage
+
+Run the script to print a greeting:
+scripts/hello.sh
+```
+
+---
+
 ## Skills (zručnosti) v rámci prispôsobenia VS Code agenta
 
 Skills (zručnosti) sú dopyty (on-demand) riadené pracovné postupy, ktoré  
@@ -249,7 +311,7 @@ compatibility: Requires internet access. Uses the free subjekt.sk API
 Inštrukcie hovoria agentovi, ako použiť pribalené Python skripty  
 na vyhľadávanie a detail firmiem:  
 
-````markdown
+```markdown
 ## Search companies by name or ICO
 
 ```bash
@@ -264,7 +326,7 @@ python3 scripts/search_firm.py "<query>" [country] [limit]
 ```bash
 python3 scripts/firm_detail.py <ico> [country]
 ```
-````
+```
 
 #### Pribalené skripty
 
@@ -272,7 +334,6 @@ Adresár `scripts/` obsahuje dva Python súbory, ktoré používajú knižnicu
 `requests` na komunikáciu s REST API subjekt.sk:  
 
 **`scripts/search_firm.py`** — Vyhľadanie firmy podľa názvu alebo IČa:  
-
 ```python
 #!/usr/bin/env python3
 import requests, sys
@@ -304,7 +365,6 @@ print(f"Results: {data.get('total', len(data.get('items', [])))}")
 ```
 
 **`scripts/firm_detail.py`** — Detail firmy podľa IČa:  
-
 ```python
 #!/usr/bin/env python3
 import requests, sys
