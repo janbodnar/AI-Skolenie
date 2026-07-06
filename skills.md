@@ -748,10 +748,10 @@ Generovanie náhodných dát — používateľské mená, emaily, ID, heslá, č
 **Umiestnenie:** `.github/skills/random-data/SKILL.md`
 
 ```markdown
-
+---
 name: random-data
 description: Generate random test data — usernames, emails, passwords, IDs, dates, phone numbers, addresses, and dummy content. Use when asked to generate fake data, mock data, test data, random records, or dummy content for development and testing.
-
+---
 
 ## Generate random data
 
@@ -863,10 +863,10 @@ Analýza textu — počet slov, viet, znakov, frekvenčná analýza, sentiment, 
 **Umiestnenie:** `.github/skills/text-analysis/SKILL.md`
 
 ```markdown
-
+---
 name: text-analysis
 description: Analyze text — count words, sentences, characters, detect language, extract keywords, analyze sentiment and readability. Use when asked to analyze text, check readability, count words, detect language, or perform linguistic analysis.
-
+---
 
 ## Text analysis
 
@@ -1031,11 +1031,11 @@ Zistenie aktuálneho počasia pre zadané mesto pomocou verejného API.
 **Umiestnenie:** `.github/skills/weather/SKILL.md`
 
 ```markdown
-
+---
 name: weather
 description: Get current weather, temperature, humidity, wind speed, and forecast for any city using the wttr.in API. Use when asked about the weather, temperature, forecast, or climate in a specific location.
 compatibility: Requires internet access. Uses the free wttr.in API (no API key needed).
-
+---
 
 ## Get weather
 
@@ -1091,24 +1091,23 @@ curl -s "wttr.in/Bratislava?u&0"
 - If the city is not found, wttr.in returns "Unknown location"
 - wttr.in rate-limits excessive requests — cache results when possible
 - If the user doesn't specify a city, ask for one
-```
+
 
 > **Použitie:** `"What's the weather in Tokyo?"` → agent zavolá `curl -s "wttr.in/Tokyo?format=..."` a vráti aktuálne počasie.
 
 
-
-### 🕐 Skill: Čas vo svete (`world-time`)
+###  Skill: Čas vo svete (`world-time`)
 
 Zistenie aktuálneho času pre vybrané mesto alebo časovú zónu.
 
 **Umiestnenie:** `.github/skills/world-time/SKILL.md`
 
 ```markdown
-
+---
 name: world-time
 description: Get the current date and time for any city or timezone worldwide. Use when asked about the time in a specific location, timezone differences, or what time it is somewhere.
 compatibility: Requires internet access. Uses the free Time API (worldtimeapi.org) and fallback to timeapi.io.
-
+---
 
 ## Get current time
 
