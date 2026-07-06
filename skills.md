@@ -92,24 +92,25 @@ Agenti načítavajú skills pomocou **progresívneho zverejňovania** (progressi
 
 ### YAML Frontmatter
 
-| Pole | Povinné | Obmedzenia |
-||||
-| `name` | Áno | Max 64 znakov. Len malé písmená, číslice a pomlčky. Musí zodpovedať názvu priečinka. |
-| `description` | Áno | Max 1024 znakov. Popisuje čo skill robí a kedy ho použiť. |
-| `license` | Nie | Názov licencie alebo odkaz na licenčný súbor. |
-| `compatibility` | Nie | Max 500 znakov. Požiadavky na prostredie. |
-| `metadata` | Nie | Ľubovoľné kľúč-hodnota páry. |
-| `allowed-tools` | Nie | Zoznam povolených nástrojov (experimentálne). |
+| Pole            | Povinné | Obmedzenia                                                                 |
+|-----------------|---------|----------------------------------------------------------------------------|
+| `name`          | Áno     | Max 64 znakov. Len malé písmená, číslice a pomlčky. Musí zodpovedať názvu priečinka. |
+| `description`   | Áno     | Max 1024 znakov. Popisuje čo skill robí a kedy ho použiť.                   |
+| `license`       | Nie     | Názov licencie alebo odkaz na licenčný súbor.                               |
+| `compatibility` | Nie     | Max 500 znakov. Požiadavky na prostredie.                                   |
+| `metadata`      | Nie     | Ľubovoľné kľúč-hodnota páry.                                                |
+| `allowed-tools` | Nie     | Zoznam povolených nástrojov (experimentálne).                               |
+
 
 ### Príklady frontmatter
 
 **Minimálny príklad:**
 
 ```yaml
-
+---
 name: roll-dice
 description: Roll dice using a random number generator. Use when asked to roll a die (d6, d20, etc.), roll dice, or generate a random dice roll.
-
+---
 ```
 
 **Rozšírený príklad:**
