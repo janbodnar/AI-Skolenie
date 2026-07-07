@@ -1,4 +1,24 @@
 
+
+```python
+import requests
+import json
+
+response = requests.post(
+    "http://localhost:11434/api/generate",
+    json={
+        "model": "granite4.1:3b",
+        "prompt": "What is the capital of France?",
+        "stream": False
+    }
+)
+
+data = response.json()
+print(data["response"])
+```
+
+
+
 ```python
 import requests
 
