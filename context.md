@@ -52,14 +52,42 @@ kontextu — niekedy sa to nazýva efekt „lost in the middle“.
 
 | Model | Kontextové okno |  
 | :--- | ---: |  
+| **OpenAI** | |  
 | GPT-4o | 128 000 tokenov |  
-| GPT-5 | 128 000 tokenov |  
+| GPT-5 Pro | 256 000 tokenov |  
+| GPT-5 Ultra | 1 000 000 tokenov |  
+| **Anthropic** | |  
 | Claude 3.5 Sonnet | 200 000 tokenov |  
+| Claude Sonnet 4.6 | 200 000 tokenov |  
+| Claude Haiku 3.6 | 200 000 tokenov |  
 | Claude Opus 4.6 (Infinite Chats) | 1 000 000+ tokenov |  
+| Claude Opus 5 | 2 000 000 tokenov |  
+| **Google DeepMind** | |  
 | Gemini 2.5 Pro | 1 000 000 tokenov |  
 | Gemini 2.5 Flash | 1 000 000 tokenov |  
+| Gemini 3 Pro | 2 000 000 tokenov |  
+| **DeepSeek** | |  
 | DeepSeek V3 | 128 000 tokenov |  
-| Llama 3.3 (70B) | 128 000 tokenov |  
+| DeepSeek R1 | 128 000 tokenov |  
+| DeepSeek V4 Flash | 256 000 tokenov |  
+| DeepSeek V4 Ultra | 1 000 000 tokenov |  
+| DeepSeek R2 | 128 000 tokenov |  
+| **Meta** | |  
+| Llama 4 Scout (109B) | 256 000 tokenov |  
+| Llama 4 Maverick (402B) | 256 000 tokenov |  
+| Llama 4 Behemoth (2T) | 512 000 tokenov |  
+| **Mistral** | |  
+| Mistral Large 2 | 128 000 tokenov |  
+| Mistral Large 3 | 256 000 tokenov |  
+| **xAI** | |  
+| Grok 3 | 256 000 tokenov |  
+| Grok 4 | 512 000 tokenov |  
+| **Alibaba (Qwen)** | |  
+| Qwen 3 (72B) | 256 000 tokenov |  
+| Qwen 3 (MoE) | 256 000 tokenov |  
+| **Cohere** | |  
+| Command R+ | 128 000 tokenov |  
+| Command A | 256 000 tokenov |  
 
 > **Praktický prepočet:** 1 milión tokenov zodpovedá zhruba 750 000 slovám –  
 > alebo celej trilogii Pán prsteňov. Claude Opus 4.6 dokáže spracovať celú  
@@ -494,11 +522,20 @@ function calculatePrice(product: Product): number {
 Bez správneho kontextu (typ `Product`, história s pôvodnou otázkou o nule)  
 by model nevedel, čo je špeciálne na „disabled" zľave a aký je zámer.  
 
+**Ako by to isté riešil context engineering v roku 2026:**  
+
+*   **Context caching** – systémový prompt a AGENTS.md by boli v cache,  
+    šetrí sa ~70 % tokenov pri každej ďalšej otázke  
+*   **Structured output** – model by vracal opravu v JSON formáte, ktorý  
+    IDE (VS Code) vie automaticky aplikovať ako code action  
+*   **MCP tool** – namiesto manuálneho otvárania súborov by mal model  
+    k dispozícii MCP server s toolmi `read_file`, `edit_file`, `lint_code`
+
 ---  
 
 ## Context Engineering pre budovateľov AI aplikácií  
 
-Ak vytvárate vlastný AI nástroj alebo agenta, tu sú kľúčové rozhodnutia:  
+Ak vytvárate vlastný AI nástroj alebo agenta, tu sú kľúčové rozhodnutia a osvedčené postupy (2026):  
 
 ### 1. Čo dať do systémového promptu?  
 
@@ -526,12 +563,25 @@ Ak vytvárate vlastný AI nástroj alebo agenta, tu sú kľúčové rozhodnutia:
 > **Pravidlo:** Ak chcete naučiť model *čo vie*, použite RAG.  
 > Ak chcete naučiť model *ako hovorí*, použite fine-tuning.  
 
-### 3. Ako merať kvalitu kontextu?  
+### 3. Structured Output – vždy, nie niekedy  
+
+Od začiatku definujte, v akom formáte má model odpovedať. Pre produkčné systémy používajte **JSON mode** alebo **function calling** – nie textové odpovede, ktoré musíte parsovať. Pri dynamických úlohách (agent volajúci nástroje) je function calling presnejší; pri statických API volaniach stačí JSON mode s Pydantic/Zod schémou.  
+
+### 4. Využite context caching  
+
+Ak váš systémový prompt alebo tool definície presahujú 10 000 tokenov, nasaďte **context caching**. Rozdeľte kontext na:  
+
+*   **Statickú časť** – systémový prompt, AGENTS.md, tool schémy (ide do cache)  
+*   **Dynamickú časť** – aktuálna otázka, RAG chunk, história (posiela sa vždy)  
+
+### 5. Ako merať kvalitu kontextu?  
 
 *   **Relevancia** – Sú všetky časti kontextu relevantné pre aktuálnu otázku?  
 *   **Kompletnosť** – Má model dosť informácií na odpoveď bez halucinovania?  
 *   **Efektivita** – Používate token budget efektívne? Nie je tam redundancia?  
 *   **Odolnosť** – Funguje kontext aj po 50 turne konverzácie? (context rot test)  
+*   **Structured output compliance** – Dodržiava model definovaný formát výstupu?  
+*   **Cache hit rate** – Akú časť kontextu pokrýva caching?  
 
 ## Agent Skills – Znovupoužiteľné balíčky kontextu  
 
@@ -768,9 +818,216 @@ dokumenty.
 | Opakovateľná logika, ktorú agent reinventuje | Skript v `scripts/` |  
 | Príklady výstupného formátu | Šablóna v `assets/` |  
 
----  
+---
 
-## Bezpečnostné aspekty kontextu  
+## MCP – Model Context Protocol  
+
+**Model Context Protocol (MCP)** je otvorený štandard (vyvinutý Anthropicom, publikovaný koncom 2024), ktorý definuje, ako AI modely komunikujú s externými nástrojmi a zdrojmi dát. MCP je v podstate **USB-C pre AI** – univerzálny protokol, ktorý nahrádza desiatky proprietárnych integrácií.  
+
+### Prečo MCP patrí do Context Engineeringu?  
+
+MCP priamo rozširuje **Knowledge Layer (1.3)** a **Interactive Layer (1.2)** tým, že štandardizuje spôsob, akým model získava dáta a volá nástroje. Namiesto vlastných API klientov pre každú službu definuje MCP jednotné rozhranie:  
+
+```  
+Bez MCP:  
+  [Tool definícia] → custom API → parsovanie → tool_result → kontext  
+
+S MCP:  
+  [MCP klient] → stdandardizovaný request → MCP server → výsledok → kontext  
+```  
+
+### Architektúra MCP  
+
+MCP pozostáva z troch komponentov:  
+
+```  
+┌─────────────────────────────────────────────────┐  
+│                  AI APLIKÁCIA                    │  
+│  (VS Code, Claude Desktop, IDE...)              │  
+│                                                  │  
+│  ┌──────────────┐     ┌──────────────────────┐  │  
+│  │ MCP Client    │────▶│   MCP Protocol       │  │  
+│  │ (vstavaný)    │◀────│  (JSON-RPC 2.0)      │  │  
+│  └──────────────┘     └──────────────────────┘  │  
+└─────────────────────────────────────────────────┘  
+         │                               ▲  
+         ▼                               │  
+┌─────────────────────────────────────────────────┐  
+│                MCP SERVER                        │  
+│  (beží lokálne alebo vzdialene)                  │  
+│                                                  │  
+│  ┌─────────────┐  ┌──────────┐  ┌──────────┐   │  
+│  │ Resources    │  │ Tools    │  │ Prompts  │   │  
+│  │ (dáta/súbory)│  │ (funkcie)│  │(šablóny) │   │  
+│  └─────────────┘  └──────────┘  └──────────┘   │  
+└─────────────────────────────────────────────────┘  
+```  
+
+### Tri piliere MCP  
+
+| Komponent | Účel | Príklad |  
+| :--- | :--- | :--- |  
+| **Resources** | Dáta, ktoré model **číta** (súbory, DB, API) | `file:///docs/manual.pdf`, databázový záznam |  
+| **Tools** | Akcie, ktoré model **vykonáva** | `create_file()`, `send_email()`, `query_db()` |  
+| **Prompts** | Šablóny promptov pre opakujúce sa úlohy | „Analyzuj bug report", „Vygeneruj weekly status" |  
+
+### Prečo je MCP dôležitý pre context engineering?  
+
+1. **Štandardizácia tool definícií** – Tool definície sú súčasťou Foundational Layer (1.1). MCP automatizuje ich generovanie zo server-side schém, čo šetrí tokeny a eliminuje chyby v JSON schémach.  
+
+2. **Efektívnejšie tool výsledky** – MCP špecifikuje, ako sa majú výsledky nástrojov formátovať, čo znižuje objem tokenov v Interactive Layer (1.2).  
+
+3. **Hierarchia resourceov** – MCP umožňuje modelovi „vidieť" dostupné zdroje bez toho, aby ich všetky načítal do kontextu – fetchuje sa len to, čo model explicitne požiada (progressive disclosure na protokolovej úrovni).  
+
+4. **Context caching na úrovni transportu** – MCP podporuje streaming a inkrementálne aktualizácie, čo znamená že sa do kontextu neposielajú celé datasety, len zmeny.  
+
+### MCP vs. RAG vs. Skills  
+
+| Mechanizmus | Čo rieši | Kedy použiť |  
+| :--- | :--- | :--- |  
+| **RAG** | Vyhľadávanie relevantných textov | Dokumenty, knowledge base |  
+| **Skills** | Doménové know-how a inštrukcie | Projektové postupy, konvencie |  
+| **MCP** | Štandardizované napojenie na nástroje a dáta | Integrácia s externými systémami |  
+
+MCP, RAG a Skills nie sú konkurenčné – navzájom sa dopĺňajú. Skill môže povedať agentovi, že na query databázy má použiť MCP tool, ktorý vráti výsledky do kontextu.
+
+---
+
+## Multi-modálny kontext  
+
+Moderné LLM (2025–2026) už nie sú obmedzené len na text. Kontextové okno dnes pojme **obrázky, audio, video a dokumenty** – a model s nimi dokáže pracovať. Toto má zásadné implikácie pre context engineering.  
+
+### Čo patrí do multi-modálneho kontextu?  
+
+| Mód | Príklad | Vplyv na token budget |  
+| :--- | :--- | ---: |  
+| **Text** | Inštrukcie, kód, dokumenty | 1 token ≈ 0.75 slova |  
+| **Obrázok** | Screenshot UI, graf, diagram, OCR dokument | ≈ 250 – 1 000 tokenov |  
+| **Audio** | Nahrávka stretnutia, hlasová poznámka | ≈ 10 000 tokenov / minútu |  
+| **Video** | Nahrávka obrazovky, záznam procesu | ≈ 100 000+ tokenov / minútu |  
+| **PDF/DOCX** | Firemná dokumentácia, zmluvy | Podľa dĺžky – extrahovaný text + layout |  
+
+### Obrázky v kontexte – najčastejšie použitie  
+
+Modely ako **GPT-5**, **Claude Opus 4.6**, **Gemini 2.5 Pro** vedia „čítať" obrázky priamo v kontexte. To znamená:  
+
+*   **UI screenshoty** – model vidí rozloženie tlačidiel a textu, nemusíte mu ho opisovať  
+*   **Diagramy a grafy** – model interpretuje vizuálnu informáciu (vývojový diagram, Ganttov graf)  
+*   **Ručne písané poznámky** – OCR v rámci kontextového okna  
+*   **Fotografie** – model popíše obsah, identifikuje objekty  
+
+**Dôležité:** Obrázky nie sú zadarmo. Každý obrázok v kontexte spotrebuje stovky až tisíce tokenov – musíte zvážiť, či je prínos väčší než cena.  
+
+### Stratégie pre multi-modálny kontext  
+
+1. **Striedmosť** – do kontextu dávajte len obrázky, ktoré sú relevantné pre aktuálnu úlohu. História plná screenshotov rýchlo vyčerpá token budget.  
+
+2. **Textová alternatíva** – ak je obrázok jednoduchý (tabuľka s pár riadkami), popíšte ho textom namiesto vkladania obrázka. Text je tokenovo lacnejší.  
+
+3. **Referencovanie v systémovom prompte** – povedzte modelu, že ak dostane obrázok, má ho analyzovať určitým spôsobom:  
+   ```markdown
+   Keď dostaneš screenshot UI:
+   1. Popíš rozloženie prvkov
+   2. Identifikuj interaktívne elementy
+   3. Navrhni zlepšenia podľa UX princípov
+   ```  
+
+4. **Hybridný prístup s RAG** – obrázok neukladajte do kontextu priamo. Namiesto toho ho indexujte cez multimodálny embedding model a do kontextu vložte len textový popis. Ak model potrebuje viac, môže si vyžiadať originál.
+
+---
+
+## Context Caching – Keď je kontext príliš veľký na posielanie  
+
+Čím dlhší kontext, tým vyššia cena a latencia – aj keď sa 90 % obsahu medzi požiadavkami nemení. **Context caching** je technika, ktorá rieši presne toto: umožňuje označiť časti kontextu ako „statické" a posielať pri každej požiadavke len zmeny, nie celý obsah.  
+
+### Ako context caching funguje  
+
+Pri prvom volaní sa celý kontext odošle a „zahreje" cache. Pri druhom volaní sa pošle len:  
+
+```  
+[Pôvodný kontext] = 100 000 tokenov  
+[Druhé volanie]    = reference na cache (pár stoviek tokenov)  
+                      + nová otázka (50 tokenov)  
+                      → Platí sa len za nových ~50 tokenov  
+```  
+
+### Implementácie v praxi (2025–2026)  
+
+| Poskytovateľ | Názov | Úspora |  
+| :--- | :--- | ---: |  
+| **Anthropic** | Prompt Caching | Až 90 % ceny, 85 % latencie |  
+| **OpenAI** | Prompt Caching | 50 % ceny pri dlhých kontextoch |  
+| **Google** | Context Caching | Až 75 % ceny, batch processing |  
+
+### Kedy použiť context caching  
+
+**Ideálne prípady:**  
+*   Dlhý systémový prompt + AGENTS.md – ten istý základ pre celý projekt  
+*   Veľký RAG dokument, ktorý sa používa opakovane  
+*   Fixed tool definitions (MCP tool schémy) – nemenia sa počas relácie  
+*   Dlhá história konverzácie, ktorá sa opakovane posiela  
+
+**Nevhodné prípady:**  
+*   Krátke konverzácie (režia cache je vyššia než úspora)  
+*   Obsah, ktorý sa mení každým volaním (unikátne dotazy)  
+
+### Vplyv na context engineering  
+
+Context caching mení jednu z kľúčových rovníc: **token budget prestáva byť lineárna cena**. Môžete si dovoliť:  
+
+*   Dlhší a podrobnejší systémový prompt (pokiaľ je prevažne statický)  
+*   Pripnuté celé projektové súbory namiesto RAG chunkov  
+*   Rozsiahlejšie tool definície a schémy  
+
+> **Praktické pravidlo:** Všetko, čo sa **nemeni medzi jednotlivými volaniami**,  
+> patrí do cache. Všetko, čo je **unikátne pre konkrétny dopyt**, ide do  
+> variabilnej časti kontextu.
+
+---
+
+## Structured Output – Štruktúrovaný výstup z kontextu  
+
+Jedna z najdôležitejších zručností context engineeringu je prinútiť model vrátiť odpoveď v presne definovanom formáte – **structured output** (tiež constrained decoding alebo JSON mode).  
+
+### Prečo štruktúrovaný výstup patrí do kontextu?  
+
+Model negeneruje JSON priamo – generuje tokeny. Ak chcete JSON, musíte v kontexte špecifikovať:  
+
+1. **Aký formát** má výstup mať (JSON schéma, Pydantic model, TypeScript interface)  
+2. **Aké pole** obsahuje akú hodnotu (deskripcie polí)  
+3. **Aké obmedzenia** platia (enum hodnoty, regex patterny, povinné polia)  
+
+```json  
+{
+  "system": "Si API backend. Vždy vracaj JSON podľa tejto schémy:  
+{
+  \"success\": boolean,
+  \"data\": { ... } | null,
+  \"error\": { \"code\": string, \"message\": string } | null
+}"
+}
+```  
+
+### Metódy structured output  
+
+| Metóda | Ako funguje | Presnosť | Použitie |  
+| :--- | :--- | :---: | :--- |  
+| **JSON mode (API parameter)** | Model je natrénovaný generovať validný JSON | Vysoká | API, štruktúrované dáta |  
+| **Function calling** | Model volá definovanú funkciu – argumenty sú JSON | Veľmi vysoká | Tool use, agenti |  
+| **Constrained decoding** | Tokeny sú filtrované na gramaticky validné (outline) | 100 % | Finančné systémy, medicína |  
+| **Šablóna v prompte** | Few-shot príklad formátu v kontexte | Stredná | Jednoduché úlohy |  
+
+### Structured output a token budget  
+
+JSON schémy v kontexte zaberajú tokeny – najmä pri komplexných objektoch. Stratégie:  
+
+*   **SDK generovanie** – namiesto ručného písania JSON schémy do promptu použite Pydantic/Zod na generovanie  
+*   **Cache schém** – ak používate context caching, schémy sa posielajú len raz  
+*   **Typové aliasy** – definujte zdieľané typy raz a referencujte ich (pri funkcii calling)  
+
+> **Pravidlo:** Structured output nie je „príjemný bonus" – je to **nevyhnutná**  
+> súčasť produkčných AI systémov. Textová odpoveď je na čítanie človekom;  
+> JSON je na spracovanie strojom.  
 
 ### Prompt Injection  
 
@@ -810,17 +1067,20 @@ opýtate. Nezabudajte:
   Ako do kontextu dostať správne dokumenty?  
   └── Vektorové databázy, chunking, embeddingy  
 
-2024 – Agent Context  
+2024 – Agent Context + MCP  
   Ako manažovať kontext pre multi-krokové úlohy?  
-  └── Tool outputs, planning, scratchpads  
+  └── Tool outputs, planning, scratchpads, MCP protokol  
 
 2025 – Context Engineering  
   Ako systematicky a efektívne riadiť celú kontextuálnu architektúru?  
-  └── AGENTS.md, memory hierarchia, token budget, anti-rot stratégie  
+  └── AGENTS.md, memory hierarchia, token budget, anti-rot stratégie,  
+       context caching, structured output, Agent Skills  
 
-2026 – Infinite Context?  
-  Čo keď kontextové okno prestane byť limitom?  
+2026 – Multi-modálny + Infinite Context  
+  Kontext už nie je len text – obrázky, audio, video  
   └── Claude Opus 4.6 (1M+), Gemini 2.5 Pro (1M)  
+  └── Context caching (90% úspora), Structured Output (JSON mode)  
+  └── MCP ako štandard pre tool komunikáciu  
        → Nový problém: selekcia relevantných informácií z obrovských vstupov  
 ```  
 
@@ -852,6 +1112,17 @@ na manévrovanie.
     konkrétne domény – načítavajú sa do Foundational Layer na vyžiadanie  
     (progressive disclosure). Efektívna skill obsahuje gotchas, šablóny  
     výstupov a checklisty; zostáva pod 500 riadkov a 5 000 tokenov.  
+*   **MCP (Model Context Protocol)** je otvorený štandard pre komunikáciu  
+    AI modelov s externými nástrojmi a zdrojmi – štandardizuje Resources,  
+    Tools a Prompts na protokolovej úrovni (JSON-RPC 2.0).  
+*   **Multi-modálny kontext** rozširuje kontextové okno o obrázky, audio  
+    a video. Každý obrázok stojí ≈250–1 000 tokenov – treba zvažovať  
+    pomer prínosu a ceny.  
+*   **Context caching** umožňuje označiť statické časti kontextu (systémový  
+    prompt, tool definície) a posielať len zmeny – úspora až 90 % nákladov.  
+*   **Structured Output** (JSON mode, function calling, constrained decoding)  
+    je nevyhnutný pre produkčné AI systémy – definuje presný formát výstupu  
+    už v kontexte.  
 
 ## Otázky & diskusia  
 
@@ -868,3 +1139,8 @@ na manévrovanie.
     najcennejší obsah mnohých skills?  
 9.  Vysvetlite princíp progressive disclosure pri skills. Ako súvisí  
     s tým, ako RAG fetchuje dokumenty z vektorovej databázy?  
+10. Čo je MCP a aký je rozdiel medzi Resources, Tools a Prompts v MCP architektúre?  
+11. Ako context caching mení ekonomiku tokenov? Kedy by ste ho použili a kedy nie?  
+12. Koľko tokenov spotrebuje jeden obrázok v kontexte? Prečo nie je vždy výhodné nahradiť text obrázkom?  
+13. Aký je rozdiel medzi JSON mode, function calling a constrained decoding? Ktorý je najpresnejší?  
+14. Prečo structured output nie je „príjemný bonus", ale nevyhnutnosť pre produkčné systémy?  
