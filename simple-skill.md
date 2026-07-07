@@ -8,6 +8,8 @@ a pracovných postupov. Pôvodne ho vytvorila spoločnosť
 GitHub Copilot, VS Code, Claude Code, Cursor, OpenAI Codex, Gemini CLI  
 a mnohých ďalších.
 
+https://finstat.sk/36791598
+
 ### Adresárová štruktúra
 
 Skill je adresár obsahujúci, minimálne, súbor `SKILL.md`:
