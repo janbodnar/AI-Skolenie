@@ -111,6 +111,8 @@ pre Zem, ale priamo pre budovanie kolónie na Marse.
 | **Grok 4.1** | nov. 2025 | Nižšia miera halucinácií, emočná inteligencia |  
 | **Grok 4.1 Fast** | nov. 2025 | Agent Tools API, 2M kontext, nástroje pre financie |  
 | **Grok 4.20 Beta** | feb. 2026 | Nový vlajkový model, rýchlosť, agentic tool calling |  
+| **Grok Build** | máj 2026 | Terminal-based AI coding agent, 8 paralelných agentov, 70,8 % SWE-bench |  
+| **Grok 4.5 Beta** | jún 2026 | Privátny beta test v SpaceX a Tesla, 1,5T parametrov V9 foundation |  
 
 ### Grok 3: Skutočný prelom  
 
@@ -125,6 +127,22 @@ Model priniesol:
     Extended Thinking u Claudea).  
 *   **DeepSearch** – prehľadávanie internetu aj siete X pred odpoveďou.  
 *   **DeeperSearch** – pokročilá verzia s rozšíreným vyhľadávaním.  
+
+### Grok 4.5 Beta (jún 2026)  
+
+Koncom júna 2026 Elon Musk oznámil, že **Grok 4.5** je v súkromnom betatestovaní  
+vo firmách SpaceX a Tesla. Model je postavený na **1,5 bilióna parametrov** (V9 foundation)  
+a obsahuje tréningové dáta z platformy Cursor. Oficiálne verejné vydanie sa očakáva  
+až po dôkladnom otestovaní v reálnej prevádzke.  
+
+### Grok Build (máj 2026)  
+
+**Grok Build** je terminalový AI coding agent vyvinutý spoločnosťou SpaceXAI.   
+Dostupný je pre predplatiteľov SuperGrok ($30/mesiac).  
+
+*   **8 paralelných agentov** – dokáže spúšťať až 8 AI agentov súčasne  
+*   **3-fázový proces:** plánovanie (plan) → vyhľadávanie (search) → build (build)  
+*   **Výkon:** 70,8 % na SWE-bench verified (k máji 2026)  
 
 ### Grok 4 a Grok 4 Heavy  
 
@@ -249,14 +267,34 @@ Ježiša vo vstávaní z mŕtvych". Musk reagoval sebaironicky:
 ### Pentagon a použitie pre armádu  
 
 V januári 2026 minister obrany Pete Hegseth oznámil, že Grok bude  
-integrovaný do sietí Pentagonu. xAI získal Departement of Defense kontrakt  
-za **200 miliónov dolárov** v júli 2025 – paradoxne krátko po incidente  
-s antisemitskými výstupmi. Na rozdiel od Anthropicu, ktorý podobnú požiadavku  
-odmietol, xAI bez zmluvných bezpečnostných obmedzení spolupracoval.  
+integrovaný do sietí Pentagonu, a to vrátane utajovaných aj neutajovaných systémov.  
+xAI získal Departement of Defense kontrakt za **200 miliónov dolárov** v júli 2025  
+– paradoxne krátko po incidente s antisemitskými výstupmi. Na rozdiel od  
+Anthropicu, ktorý podobnú požiadavku odmietol, xAI bez zmluvných bezpečnostných  
+obmedzení spolupracoval.  
 
 > **Kontrast s Anthropicom:** Kým Anthropic odmietol odstrániť bezpečnostné  
 > hranice a prišiel o federálne zákazky, xAI podobné obmedzenia nemá –  
 > čo mu prinieslo vládne zmluvy, ale aj trvalú reputačnú záťaž.  
+
+#### 🔥 Grok a vojna v Iráne (jún 2026)  
+
+V júni 2026 súdne dokumenty odhalili, že vládna verzia Groku bola použitá  
+v rámci **Maven Smart System** Pentagonu počas **vojenských operácií proti Iránu**  
+(2026 Iran War). Podľa vyjadrenia Chief Digital and Artificial Intelligence  
+Officer Camerona Stanleyho systém podporil nasadenie viac ako **2 000 munícií**  
+proti **2 000 rôznym cieľom** v priebehu 96 hodín.  
+
+Išlo o prvý zdokumentovaný prípad, kedy bol Grok priamo použitý v bojových  
+operáciách – čo vyvolalo intenzívnu diskusiu o etických implikáciách  
+nasadenia AI modelov bez pevných bezpečnostných hraníc v ozbrojených  
+konfliktoch. Organizácie na ochranu ľudských práv kritizovali nasadenie Groku  
+s odkazom na jeho predchádzajúce kontroverzie (antisemitizmus, nelegálne  
+generovanie obrázkov, nadmerné chválenie vlastného zakladateľa).  
+
+Informáciu ako prvý priniesol portál **The Information** a neskôr potvrdila  
+aj agentúra Associated Press. Pentagon obhajoval použitie Groku tvrdením,  
+že systém pomohol urýchliť identifikáciu cieľov a minimalizovať vedľajšie škody.  
 
 ## Financie a rast  
 
@@ -291,6 +329,9 @@ priamo **2 miliardy dolárov** do xAI – čo neskôr predznamenávalo akvizíci
     z platformy X a jeden z najväčších kontextových okien (2M tokenov).  
 *   **Grok 3** (február 2025) bol prvý skutočne konkurencieschopný model;  
     trénoval sa na superpočítači Colossus so 200 000 GPU.  
+*   **Grok Build** (máj 2026) je terminalový AI coding agent s 8 paralelnými agentmi.  
+*   **Grok 4.5 Beta** (jún 2026) je najnovší model s 1,5 bilióna parametrov,  
+    testovaný v SpaceX a Tesla.  
 *   V marci 2025 xAI prevzal X Corp (Twitter), čím získal živé tréningové  
     dáta a sociálnu platformu pre distribúciu.  
 *   Vo februári 2026 **SpaceX prevzal xAI** pri ocenení 250 miliárd dolárov –  
@@ -298,7 +339,10 @@ priamo **2 miliardy dolárov** do xAI – čo neskôr predznamenávalo akvizíci
 *   Grok je **najkontroverziachopnejším** AI modelom na trhu: série incidentov  
     s politickou zaujatosťou, antisemitskými výstupmi a nadmerným chválením  
     zakladateľa odhaľujú riziká AI bez pevných bezpečnostných ohraničení.  
-*   Napriek kontroverziam získal xAI **vládne zmluvy** (Pentagon, $200M)  
+*   Napriek kontroverziám získal xAI **vládne zmluvy** (Pentagon, $200M)  
     a stal sa jedným z kľúčových dodávateľov americkej armády pre AI.  
+*   V júni 2026 bolo odhalené, že **Grok bol použitý v bojových operáciách**  
+    počas vojny v Iráne – systém Maven Smart System s Grokom podporil  
+    nasadenie viac ako 2 000 munícií za 96 hodín.
 
 ## Otázky & diskusia  
