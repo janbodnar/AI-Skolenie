@@ -1,3 +1,35 @@
+
+```python
+import requests
+
+url = "http://localhost:11434/api/generate"
+
+response = requests.post(
+    url,
+    json={"model": "granite4.1:3b", 
+          "prompt": "Explain what is Mariana Trench?"}
+)
+
+for line in response.iter_lines():
+    if line:
+        print(line.decode("utf-8"))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 It's not a real filesystem — no disk, no actual files. It's a piece of in-memory state, conceptually a dictionary or map, that lives alongside the agent's conversation state, and the agent interacts with it by calling tools named like real filesystem operations (`ls`, `read_file`, `write_file`, `edit_file`). In LangGraph's implementation it operates as a dictionary within the graph's State object, where keys are filenames and values are file contents (strings).
 
 The reason it exists: a long-running agent accumulates a lot of intermediate junk — full web page contents, large API responses, the output of some sub-agent's research — and if all of that stays in the conversation history, the context window fills up fast and the model starts losing track of what actually matters. So instead of putting that data directly into the message history, the agent writes it into a "file" in this virtual store and just keeps a reference or short summary in its actual context. Later, if it needs the detail back, it calls `read_file` on that name.
