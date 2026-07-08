@@ -1,10 +1,11 @@
 # Základní příkazy Windows CMD
 
-CMD (Command Prompt) je interpret příkazového řádku ve Windows. Níže je přehled nejužitečnějších příkazů rozdělených do kategorií.
+CMD (Command Prompt) je interpret příkazového řádku ve Windows. Níže je přehled nejužitečnějších  
+příkazů rozdělených do kategorií.
 
-> **Poznámka:** Příkazy jsou case-insensitive (nezáleží na velikosti písmen). Parametry označené `[ ]` jsou nepovinné.
+> **Poznámka:** Příkazy jsou case-insensitive (nezáleží na velikosti písmen). Parametry
+>  označené `[ ]` jsou nepovinné.
 
----
 
 ## 1. Práce se soubory a složkami
 
