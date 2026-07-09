@@ -4,7 +4,7 @@
 spracováva informácie a vykonáva akcie s cieľom dosiahnuť stanovené ciele. Na rozdiel od bežného  
 chatbota, ktorý len reaguje na vstupy, agent dokáže *samostatne plánovať, rozhodovať sa a iteratívne pracovať* na riešení úlohy.
 
-> *Ak je LLM (jazykový model) „mozog", potom agent je „mozog + ruky + nástroje + pamäť".*
+> *Ak je LLM (jazykový model) „mozog“, potom agent je „mozog + ruky + nástroje + pamäť“.*
 
 ## Kľúčové charakteristiky agenta
 
@@ -15,7 +15,6 @@ chatbota, ktorý len reaguje na vstupy, agent dokáže *samostatne plánovať, r
 | **Proaktivita** | Koná účelovo, sleduje ciele | Agent sám navrhuje termíny stretnutí |
 | **Sociálna schopnosť** | Komunikuje s inými agentmi alebo ľuďmi | Viac agentov spolupracuje na projekte |
 | **Pamäť a učenie** | Ukladá kontext a zlepšuje sa so skúsenosťami | Agent si pamätá preferencie používateľa |
-
 
 ## Kde sa agenti používajú? (Praktické aplikácie)
 
@@ -43,8 +42,7 @@ chatbota, ktorý len reaguje na vstupy, agent dokáže *samostatne plánovať, r
 - **Zdravie a wellness**: Sledovanie návykov, personalizované odporúčania, motivácia.
 - **Kreatívna tvorba**: Spolupráca pri písaní textov, generovaní nápadov, úprave médií.
 
-
-##  Druhy agentov a architektúry
+## 🤖 Druhy agentov a architektúry
 
 ### Podľa úrovne autonómie
 
@@ -67,7 +65,7 @@ chatbota, ktorý len reaguje na vstupy, agent dokáže *samostatne plánovať, r
 
 ### Subagenti a multi-agentné systémy
 
-Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí spolupracujú pod vedením hlavného („manažérskeho") agenta.
+Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí spolupracujú pod vedením hlavného („manažérskeho“) agenta.
 
 ```
 🎯 Hlavný agent (Planner)
@@ -87,12 +85,16 @@ Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí
 
 **Príklady frameworkov pre multi-agentné systémy:**
 
-- **LangGraph** (LangChain) – vizuálne plánovanie workflow
-- **AutoGen** (Microsoft) – konverzácia medzi agentmi
-- **CrewAI** – jednoduchá definícia rolí a cieľov
-- **LlamaIndex Agents** – práca s externými dátami
+| Framework | Popis | Odkaz |
+|-----------|-------|-------|
+| **LangGraph** (LangChain) | Vizuálne plánovanie workflow, stavové grafy | [langgraph.dev](https://langgraph.dev) |
+| **AutoGen** (Microsoft) | Konverzácia medzi agentmi, rozširovanie funkcií | [github.com/microsoft/autogen](https://github.com/microsoft/autogen) |
+| **CrewAI** | Jednoduchá definícia rolí a cieľov, rýchly štart | [crewai.com](https://crewai.com) |
+| **CAMEL** | Výskumný multi-agent framework, škálovanie agentov | [github.com/camel-ai/camel](https://github.com/camel-ai/camel) |
+| **OpenAI Agents SDK** | Oficiálny SDK od OpenAI na tvorbu agentov | [openai.github.io/openai-agents-python](https://openai.github.io/openai-agents-python) |
+| **LlamaIndex Agents** | Práca s externými dátami, RAG pipeline | [llamaindex.ai](https://llamaindex.ai) |
 
-## Architektúra typického inteligentného agenta
+## 🧠 Architektúra typického inteligentného agenta
 
 ```
 ┌─────────────────────────────────┐
@@ -100,7 +102,7 @@ Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí
 └─────────┬───────────────────────┘
           ▼
 ┌─────────────────────────────────┐
-│  🧠 LLM „mozog" (plánovanie)    │
+│  🧠 LLM „mozog“ (plánovanie)    │
 │  • Rozklad úlohy na kroky        │
 │  • Rozhodovanie o nástrojoch     │
 └─────────┬───────────────────────┘
@@ -126,11 +128,63 @@ Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí
 └─────────────────────────────────┘
 ```
 
-> 💡 **Kľúčový koncept**: Agent nie je len „väčší model". Je to **systém**, kde LLM slúži ako „riadiaca jednotka",
+> 💡 **Kľúčový koncept**: Agent nie je len „väčší model“. Je to **systém**, kde LLM slúži ako „riadiaca jednotka“,
 > ktorá koordinuje nástroje, pamäť a iteratívne uvažovanie.
 
+## � Najnovšie trendy a pojmy (2025–2026)
 
-## Tabuľka: Odporúčaní agenti na vyskúšanie (pre študentov a pedagógov)
+### Agentic AI – nový štandard
+
+V roku 2025–2026 sa ustálil pojem **Agentic AI** (agentická umelá inteligencia) – označuje systémy, ktoré nielen generujú obsah, ale **samostatne rozhodujú, plánujú a konajú** v komplexnom prostredí bez neustáleho dohľadu človeka.
+
+> *„AI agent nie je väčší model – je to systém, kde LLM slúži ako riadiaca jednotka, ktorá koordinuje nástroje, pamäť a iteratívne uvažovanie.“*
+
+Hlavné črty agentickej AI:
+- **Cieľové správanie** – agent si rozkladá úlohu na podciele
+- **Používanie nástrojov** – volá API, vyhľadáva na webe, pracuje so súbormi
+- **Pamäť a kontext** – uchováva históriu interakcií a učí sa z nej
+- **Autonómne rozhodovanie** – bez nutnosti manuálneho zásahu
+
+### Prečo neexistuje jednotná definícia?
+
+Napriek obrovskému rozmachu agentov nepanuje v odbore zhoda na tom, čo presne agent je. Ako v marci 2025 poznamenal TechCrunch: *„No one knows what the hell an AI agent is.“*
+
+Rôzne spoločnosti definujú agentov odlišne:
+- **OpenAI**: „automatizované systémy, ktoré samostatne plnia úlohy v mene používateľa“
+- **Microsoft**: odlišuje agentov (špecializované) od asistentov (všeobecné)
+- **Anthropic**: pripúšťa oba významy – plne autonómne aj preddefinované workflow
+- **Salesforce**: ponúka najširšiu definíciu so 6 kategóriami agentov
+
+### 🔄 Paradigmy uvažovania agentov
+
+Moderní agenti používajú pokročilé metódy uvažovania:
+
+| Paradigma | Popis | Príklad |
+|-----------|-------|---------|
+| **ReAct** (Reasoning + Acting) | Agent striedavo uvažuje (Think) a koná (Act), po každom kroku vyhodnotí výsledok (Observe) | Think → API call → Observe → ďalší krok |
+| **ReWOO** (Reasoning Without Observation) | Agent si vopred naplánuje celý postup, až potom vykonáva – šetrí tokeny a čas | Plán → Tool call → Výstup |
+| **Chain-of-Thought** | Rozkladá zložitú otázku na postupnosť medzikrokov | „Najprv zistím X, potom vypočítam Y“ |
+
+### 🚀 Nové významné agenty (2025–2026)
+
+- **OpenAI Operator** (január 2025) – prvý agent od OpenAI, ktorý sám ovláda prehliadač a vykonáva úlohy na webe
+- **ChatGPT Deep Research** (február 2025) – hĺbkový rešeršný agent, ktorý syntetizuje informácie z desiatok zdrojov
+- **Manus** (marec 2025) – všeobecný agent, ktorý vzbudil pozornosť svojou samostatnosťou (MIT Technology Review)
+- **Google Project Mariner** (december 2024) – agent ovládajúci prehliadač Chrome
+- **Salesforce Agentforce 2dx** (marec 2025) – autonómny firemný agent pre podnikové systémy
+- **AWS Amazon Connect Health** (marec 2026) – prvý HIPAA-certifikovaný agent pre zdravotníctvo
+- **Quark** (Alibaba/Qwen) a **AutoGLM Rumination** (Zhipu AI) – čínski agenti, ktoré doháňajú západnú konkurenciu
+
+### 🏢 Podnikové nasadenie agentov
+
+Agentická AI preniká do firiem v nebývalej miere:
+
+- **Salesforce Agentforce** – agenti autonómne spracúvajú požiadavky zákazníkov bez eskalácie
+- **IBM watsonx Orchestrate** – platforma na tvorbu multi-agentných workflow
+- **AWS Connect Health** (marec 2026) – AI agent pre automatizáciu administratívy v zdravotníctve (objednávanie, dokumentácia, overovanie pacientov)
+- **Deloitte a IDC** – analytici varujú pred „misaligned expectations“ bez jednotnej definície agentov
+
+## �🗂️ Tabuľka: Odporúčaní agenti na vyskúšanie (pre študentov a pedagógov)
 
 | Agent / Platforma | Typ | Cena | Dostupnosť | Prečo vyskúšať | Odkaz |
 |-------------------|-----|------|------------|----------------|-------|
@@ -144,6 +198,9 @@ Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí
 | **Elicit** | Akademický výskumný agent | 🟢 Free tier / 🟡 ~10 €/mes. | ✅ Globálne | Špecializácia na peer-reviewed štúdie, extrakcia metód a záverov | [elicit.com](https://elicit.com) |
 | **Zapier Interfaces + AI** | Automatizačný agent | 🟢 Free tier / 🟡 Od ~20 €/mes. | ✅ Globálne | Spájanie 5000+ appiek s AI logikou, bez kódovania | [zapier.com](https://zapier.com) |
 | **LangGraph Playground** | Vývojársky nástroj | 🟢 Zadarmo (demo) | ✅ Globálne | Vizuálne plánovanie agentných workflow, ideálne na výuku | [langgraph.dev](https://langgraph.dev) |
+| **OpenAI Operator** | Browser-use agent | 🟡 $200/mes. (Pro) | ✅ Obmedzené regióny | Prvý agent OpenAI – sám ovláda prehliadač a plní úlohy na webe | [operator.chatgpt.com](https://operator.chatgpt.com) |
+| **Manus** | Všeobecný agent | 🟢 Free / 🟡 Od ~$10/mes. | ✅ Pozvánkový prístup | Revolučný samostatný agent, virálny v roku 2025 | [manus.im](https://manus.im) |
+| **Salesforce Agentforce** | Podnikový agent | 🔵 Enterprise cena | ✅ Globálne | Autonómna AI pre firemné procesy a zákaznícku podporu | [salesforce.com/agentforce](https://www.salesforce.com/agentforce) |
 
 ### 🎨 Legenda cien
 
@@ -153,5 +210,21 @@ Komplexné úlohy často riešia **tímy špecializovaných subagentov**, ktorí
 | 🟡 | **Platená verzia** pre jednotlivcov (do ~25 €/mes.) |
 | 🔵 | **Profesionálna/Enterprise** verzia (nad 25 €/mes.) |
 
+### ⚠️ Riziká a výzvy agentickej AI
 
-## Otázky a diskusia
+| Riziko | Popis |
+|--------|-------|
+| 🌀 **Nejednotná definícia** | Každá firma definuje agentov inak, čo sťažuje porovnávanie a očakávania |
+| 🔁 **Nekonečné slučky** | Agent môže opakovane volať tie isté nástroje bez pokroku – vyžaduje sa ľudský dohľad |
+| 💰 **Výpočtová náročnosť** | Trénovanie a beh agentov je drahý – komplexné úlohy môžu trvať hodiny až dni |
+| 🔒 **Súkromie údajov** | Agenti pracujú s citlivými firemnými a osobnými údajmi – riziko únikov |
+| 🤝 **Závislosť na multi-agente** | Zlyhanie jedného agenta v tíme môže spôsobiť systémový kolaps |
+| 👁️ **Transparentnosť** | Rozhodovanie agentov je často „čierna skrinka“ – ťažko auditovateľné |
+
+**Osvedčené postupy pre bezpečnú prácu s agentmi:**
+- Vyžadovať **logovanie všetkých akcií** agenta
+- Implementovať **možnosť prerušenia** (human-in-the-loop)
+- Používať **unikátne identifikátory** agentov pre dohľadateľnosť
+- Pred kritickými krokmi vyžadovať **potvrdenie človeka**
+
+## 💬 Otázky a diskusia
