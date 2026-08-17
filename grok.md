@@ -96,7 +96,7 @@ Po prevzatí zo strany SpaceX vo februári 2026 Musk načrtol ešte ambicióznej
 plán – využiť xAI na pomoc s jeho **interplanetárnou víziou**: použiť AI nielen  
 pre Zem, ale priamo pre budovanie kolónie na Marse.  
 
-## Modely Grok – prehľad  
+## Modely Grok – prehľad (stav k 17. augustu 2026)  
 
 | Verzia | Vydanie | Kľúčové vlastnosti |  
 | :--- | :--- | :--- |  
@@ -106,13 +106,26 @@ pre Zem, ale priamo pre budovanie kolónie na Marse.
 | **Grok-2.5** | aug. 2025 | Čiastočne open-source (s obmedzeniami) |  
 | **Grok 3** | feb. 2025 | 10× viac výpočtov, Think/Big Brain reasoning, DeepSearch |  
 | **Grok 4** | júl 2025 | Vlajkový model, Grok 4 Heavy ($300/mes.) |  
-| **Grok 4 Fast** | sep. 2025 | Enterprise, 2M kontext, 40% menej tokenov myslenia |  
+| **Grok 4 Fast** | sep. 2025 | Efektívnejší variant, až 2M kontext, približne o 40 % menej tokenov myslenia |  
 | **Grok Code Fast 1** | aug. 2025 | Agentic coding, integrácia v GitHub Copilot, Cursor atď. |  
 | **Grok 4.1** | nov. 2025 | Nižšia miera halucinácií, emočná inteligencia |  
 | **Grok 4.1 Fast** | nov. 2025 | Agent Tools API, 2M kontext, nástroje pre financie |  
-| **Grok 4.20 Beta** | feb. 2026 | Nový vlajkový model, rýchlosť, agentic tool calling |  
-| **Grok Build** | máj 2026 | Terminal-based AI coding agent, 8 paralelných agentov, 70,8 % SWE-bench |  
-| **Grok 4.5 Beta** | jún 2026 | Privátny beta test v SpaceX a Tesla, 1,5T parametrov V9 foundation |  
+| **Grok 4.20** | mar. 2026 | Reasoning aj non-reasoning variant; agentic tool calling, 1M kontext |  
+| **Grok 4.3** | apr. 2026 | Efektívnejší všeobecný model s 1M kontextom |  
+| **Grok Build 0.1** | máj 2026 | Coding model a terminálový agent; 256K kontext, verejná beta API |  
+| **Grok 4.5** | júl 2026 | Model pre kódovanie, agentov a knowledge work; 500K kontext |  
+| **Grok 4.6** | 12. aug. 2026 | Najnovší vlajkový model; kód, dlhodobí agenti, tool calling, 500K kontext |  
+
+Číslovanie modelov nie je úplne lineárne: **Grok 4.20** a **Grok 4.3** sú
+samostatné vydania v API, zatiaľ čo **Grok 4.5** a **Grok 4.6** predstavujú
+novšiu vlajkovú vetvu. K 17. augustu 2026 je najnovším oficiálne vydaným
+textovým modelom **Grok 4.6**. Grok 4.7 bol verejne spomínaný ako plánované
+budúce vydanie, nejde však ešte o dostupnú verziu.
+
+Okrem textových modelov xAI ponúka samostatné multimodálne modely **Grok
+Imagine Image 2.0** (obrázky), **Grok Imagine Video 1.5** (video) a
+**Grok Voice Think Fast 2.0** (speech-to-speech). Nejde o ďalšie číslované
+verzie textového Groku, ale o špecializované modely v rovnakej platforme.
 
 ### Grok 3: Skutočný prelom  
 
@@ -128,12 +141,31 @@ Model priniesol:
 *   **DeepSearch** – prehľadávanie internetu aj siete X pred odpoveďou.  
 *   **DeeperSearch** – pokročilá verzia s rozšíreným vyhľadávaním.  
 
-### Grok 4.5 Beta (jún 2026)  
+### Grok 4.6 (august 2026)  
 
-Koncom júna 2026 Elon Musk oznámil, že **Grok 4.5** je v súkromnom betatestovaní  
-vo firmách SpaceX a Tesla. Model je postavený na **1,5 bilióna parametrov** (V9 foundation)  
-a obsahuje tréningové dáta z platformy Cursor. Oficiálne verejné vydanie sa očakáva  
-až po dôkladnom otestovaní v reálnej prevádzke.  
+**Grok 4.6** bol predstavený 12. augusta 2026 ako najnovší vlajkový model
+xAI. Podľa xAI sa zameriava na programovanie, znižovanie halucinácií,
+agentic tool calling, dlhodobé autonómne úlohy a náročnú interaktívnu či
+vizuálnu prácu. V API má kontextové okno **500 000 tokenov** a je odporúčaným
+modelom xAI pre chat aj kódovanie. Dňa 14. augusta 2026 bol sprístupnený aj
+v GitHub Copilot.
+
+### Grok 4.5 (júl 2026)  
+
+**Grok 4.5** bol verejne uvedený 8. júla 2026, najprv cez Grok Build, Cursor
+a xAI API Console; 22. júla sa dostal aj na grok.com, X, iOS a Android.
+Je určený najmä na kódovanie, agentické úlohy a znalostnú prácu. API verzia
+ponúka **500 000-tokenové kontextové okno** a podporuje režimy s uvažovaním aj
+bez uvažovania. Tvrdenia o 1,5 bilióna parametrov alebo o súkromnom betateste
+vo firmách SpaceX a Tesla nie sú v oficiálnom oznámení xAI potvrdené, preto ich
+netreba uvádzať ako overenú vlastnosť modelu.
+
+### Grok 4.20 a Grok 4.3 (2026)  
+
+V API sa v roku 2026 objavili modely **grok-4.20-0309** v reasoning a
+non-reasoning variantoch a **grok-4.3**. Obe vetvy podporujú približne
+**1 milión tokenov** kontextu a sú vhodné pre nástrojové a agentické workflow.
+V porovnaní s Grok 4.6 však nejde o aktuálny hlavný spotrebiteľský model.
 
 ### Grok Build (máj 2026)  
 
@@ -142,7 +174,12 @@ Dostupný je pre predplatiteľov SuperGrok ($30/mesiac).
 
 *   **8 paralelných agentov** – dokáže spúšťať až 8 AI agentov súčasne  
 *   **3-fázový proces:** plánovanie (plan) → vyhľadávanie (search) → build (build)  
-*   **Výkon:** 70,8 % na SWE-bench verified (k máji 2026)  
+*   **Výkon:** 70,8 % na SWE-bench verified (údaj uvádzaný pre máj 2026)  
+
+V júli 2026 xAI zverejnil open-source časť Grok Build a 28. júla predstavil
+**Build Mode** – skorú betu na tvorbu webov, aplikácií, hier a interaktívnych
+dashboardov priamo v Groku. Ide o produktovú vrstvu nad modelmi, nie o nový
+číslovaný základný model.
 
 ### Grok 4 a Grok 4 Heavy  
 
@@ -330,8 +367,10 @@ priamo **2 miliardy dolárov** do xAI – čo neskôr predznamenávalo akvizíci
 *   **Grok 3** (február 2025) bol prvý skutočne konkurencieschopný model;  
     trénoval sa na superpočítači Colossus so 200 000 GPU.  
 *   **Grok Build** (máj 2026) je terminalový AI coding agent s 8 paralelnými agentmi.  
-*   **Grok 4.5 Beta** (jún 2026) je najnovší model s 1,5 bilióna parametrov,  
-    testovaný v SpaceX a Tesla.  
+*   **Grok 4.5** (júl 2026) je model zameraný na kódovanie, agentické úlohy  
+    a knowledge work.  
+*   **Grok 4.6** (12. august 2026) je najnovší oficiálne vydaný vlajkový model  
+    s 500 000-tokenovým kontextom a dôrazom na kódovanie a dlhodobých agentov.  
 *   V marci 2025 xAI prevzal X Corp (Twitter), čím získal živé tréningové  
     dáta a sociálnu platformu pre distribúciu.  
 *   Vo februári 2026 **SpaceX prevzal xAI** pri ocenení 250 miliárd dolárov –  
