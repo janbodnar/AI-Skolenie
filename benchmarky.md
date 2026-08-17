@@ -6,19 +6,15 @@
 veľkých jazykových modelov (LLM) v rôznych úlohách – od znalostí a logického  
 uvažovania až po generovanie kódu a pravdivosť odpovedí.  
 
-[Chatbot Arena](https://arena.ai/leaderboard) – porovnanie odpovedí  
-preferovaných používateľmi  
+[Chatbot Arena](https://arena.ai/leaderboard) – porovnanie odpovedí preferovaných používateľmi  
 [LiveBench](https://livebench.ai/) – pravidelne obnovovaný objektívny test  
-[Artificial Analysis](https://artificialanalysis.ai/leaderboards/models) –  
-porovnanie kvality, ceny a rýchlosti  
-[SWE-bench](https://www.swebench.com/) – agentické riešenie úloh v  
-repozitároch  
+[Artificial Analysis](https://artificialanalysis.ai/leaderboards/models) – porovnanie kvality, ceny a rýchlosti  
+[SWE-bench](https://www.swebench.com/) – agentické riešenie úloh v repozitároch  
 
 **Prečo sú benchmarky dôležité?**  
 
 > 🎓 **Definícia:** *Benchmark je štandardizovaná sada úloh s pevne  
-> definovanými
-> pravidlami hodnotenia, ktorá umožňuje objektívne a opakovateľné porovnanie  
+> definovanými pravidlami hodnotenia, ktorá umožňuje objektívne a opakovateľné porovnanie  
 > výkonu rôznych AI modelov.*  
 
 - Umožňujú **štandardizované porovnanie** modelov od rôznych vývojárov  
