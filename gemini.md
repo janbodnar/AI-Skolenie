@@ -1,9 +1,8 @@
-# Gemini a spoločnosť Google DeepMind (stav k 17. augustu 2026)  
+# Gemini a spoločnosť Google DeepMind 
 
 Google je jednou z najstarších a najväčších technologických spoločností  
 sveta, ktorá sa v oblasti umelej inteligencie pohybuje od samého začiatku  
-modernej éry  
-strojového učenia. Na rozdiel od start-upov ako Anthropic alebo xAI, Google  
+modernej éry strojového učenia. Na rozdiel od start-upov ako Anthropic alebo xAI, Google  
 vstúpil do pretekov o generatívnu AI s obrovskými zdrojmi, vlastnou  
 výpočtovou infraštruktúrou (TPU čipy) a desaťročiami vedeckého výskumu.  
 Výsledkom tohto úsilia je rodina modelov **Gemini** – a za nimi stojí  
