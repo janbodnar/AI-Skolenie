@@ -1,7 +1,8 @@
-# Gemini a spoločnosť Google DeepMind  
+# Gemini a spoločnosť Google DeepMind (stav k 17. augustu 2026)  
 
-Google je jednou z najstarších a najväčších technologických spoločností sveta,  
-ktorá sa v oblasti umelej inteligencie pohybuje od samého začiatku modernej éry  
+Google je jednou z najstarších a najväčších technologických spoločností  
+sveta, ktorá sa v oblasti umelej inteligencie pohybuje od samého začiatku  
+modernej éry  
 strojového učenia. Na rozdiel od start-upov ako Anthropic alebo xAI, Google  
 vstúpil do pretekov o generatívnu AI s obrovskými zdrojmi, vlastnou  
 výpočtovou infraštruktúrou (TPU čipy) a desaťročiami vedeckého výskumu.  
@@ -166,8 +167,9 @@ Práve **paralelizovateľnosť** Transformerov umožnila trénovanie na
 miliardách parametrov – a tým aj vznik GPT-3, PaLM, Gemini a všetkých  
 dnešných LLM.  
 
-Transformer je architektúra, ktorá sa používa počas tréningu aj inferencie – pri  
-tréningu umožňuje paralelizáciu a učenie dlhých kontextov, pri inferencii umožňuje  
+Transformer je architektúra, ktorá sa používa počas tréningu aj inferencie –  
+pri tréningu umožňuje paralelizáciu a učenie dlhých kontextov, pri inferencii  
+umožňuje  
 efektívne generovanie tokenov pomocou KV cache.
 
 ### Dosah na AI odvetvie  
@@ -211,7 +213,7 @@ ale od prvého tréningového kroku.
 
 ## Modely Gemini – prehľad  
 
-### Od Bard-u po Gemini 3.1  
+### Od Bard-u po Gemini 3.7  
 
 | Verzia | Vydanie | Stav | Hlavné novinky |  
 | :--- | :--- | :--- | :--- |  
@@ -228,15 +230,20 @@ ale od prvého tréningového kroku.
 | **Gemini 3 Pro** | 18.11.2025 | preview | Sparse MoE, výstup až 64 000 tokenov |  
 | **Gemini 3 Deep Think** | 3.12.2025 | preview | Zlatá medaila na Medzinárodnej matematickej olympiáde |  
 | **Gemini 3 Flash** | 17.12.2025 | preview | Rýchla verzia Gemini 3 |  
-| **Gemini 3.1 Pro** | 19.2.2026 | preview | Najnovší vlajkový model |  
-| **Gemini 3.1 Flash Lite** | 3.3.2026 | preview | Optimalizovaný pre podnikové nasadenie |  
+| **Gemini 3.1 Pro** | 19.2.2026 | preview | Model pre komplexné úlohy a agentické kódovanie |  
+| **Gemini 3.1 Flash Lite** | 3.3.2026 | stabilný | Lacný model pre vysoký objem požiadaviek |  
+| **Gemini 3.5 Flash-Lite** | júl 2026 | stabilný | Rýchlosť, efektivita a multimodálne úlohy |  
+| **Gemini 3.5 Flash Cyber** | júl 2026 | preview | Špecializovaný model pre kybernetickú bezpečnosť |  
+| **Gemini 3.6 Flash** | júl 2026 | stabilný | Vyvážený model pre agentov a každodenné úlohy |  
+| **Gemini 3.7 Flash** | aug. 2026 | stabilný | Najnovší Flash model pre komplexných agentov |  
 
 ### Gemini 2.5 a rodina Gemini 3  
 
 **Gemini 2.5 Pro** (marec 2025) bol prelomovým momentom – Google prvýkrát  
 vydal model, ktorý sa „zastaví a premyslí" pred odpoveďou (chain-of-thought  
 uvažovanie). Pri vydaní obsadil 1. miesto na rebríčku **LMArena**, ktorý meria  
-ľudskú preferenciu odpovedí, a dosiahol vysoké výsledky na Humanity's Last Exam.  
+ľudskú preferenciu odpovedí a dosiahol vysoké výsledky na Humanity's Last  
+Exam.  
 
 **Gemini 3 Deep Think** (december 2025) šiel ešte ďalej. Táto verzia  
 dosiahla výkon na úrovni **zlatej medaily** na Medzinárodnej matematickej  
@@ -244,9 +251,16 @@ olympiáde (IMO) – prvý AI model, ktorý to dokázal. Vydanie Gemini 3 donút
 OpenAI vyhlásiť interný „code red" a urýchlene vydať konkurenčný GPT-5.2  
 (december 2025).  
 
-**Gemini 3.1 Pro** (február 2026) je ku dnešnému dátumu najvýkonnejší  
-Gemini model. Nahradil Gemini 3 Pro, ktorý bol po iba troch mesiacoch  
-označený ako „discontinued preview".  
+**Gemini 3.1 Pro** (február 2026) zostáva modelom pre komplexné úlohy,  
+riešenie problémov a agentické kódovanie. **Gemini 3.7 Flash**, uvedený  
+v auguste 2026, je najnovší stabilný Flash model a Google ho odporúča na  
+komplexné agentické úlohy vo veľkom meradle. Popri ňom Google v júli 2026  
+uviedol Gemini 3.6 Flash, Gemini 3.5 Flash-Lite a Gemini 3.5 Flash Cyber.  
+
+Označenie *stable* znamená, že model je určený na produkčné použitie;  
+*preview* označuje model vo fáze verejného testovania. Gemini API používa  
+samostatné názvy modelov, napríklad `gemini-3.7-flash` alebo  
+`gemini-3.1-pro-preview`.  
 
 ## Nano Banana – virálny obrázkový fenomén  
 
@@ -262,15 +276,16 @@ Pri verejnom vydaní **26. augusta 2025** sa model stal virálnym fenoménom:
 
 - Zákazníci ho používali na premenu fotiek na **3D figúrky** (štýl hračka/toy)  
 - Trend explodoval na Instagrame a sieti X  
-- Google spustil integráciu priamo do X – používatelia mohli tagovat Nano Banana  
-  priamo v tweetoch  
+- Google spustil integráciu priamo do X – používatelia mohli tagovať
+  Nano Banana priamo v tweetoch
 - Za niekoľko týždňov model **pritiahol viac ako 10 miliónov nových  
   používateľov** do Gemini aplikácie a sprostredkoval viac ako **200 miliónov  
   úprav obrázkov**  
 
-Modely Nano Banana Pro (november 2025) a Nano Banana 2 (február 2026)  
-prinesli vylepšené vykresľovanie textu, lepšie sledovanie inštrukcií  
-a integráciu do Google Search AI Mode a Google Lens.  
+Modely **Nano Banana Pro** a **Nano Banana 2** priniesli vylepšené
+vykresľovanie textu, lepšie sledovanie inštrukcií a integráciu do Google
+Search AI Mode a Google Lens. V roku 2026 pribudla aj úspornejšia verzia
+**Nano Banana 2 Lite** pre interaktívne a vysokobjemové použitie.
 
 ## Ekosystém Google  
 
@@ -291,8 +306,9 @@ len chatbot – je integrovaný do celej sady produktov:
 
 ### Google AI Mode – vyhľadávanie poháňané Gemini  
 
-**AI Mode** je zásadná premena Google Search, ktorú Google spustil v roku 2025.  
-Namiesto zoznamu odkazov dostane používateľ **konverzačnú odpoveď** s citáciami  
+**AI Mode** je zásadná premena Google Search, ktorú Google spustil v roku  
+2025. Namiesto zoznamu odkazov dostane používateľ **konverzačnú odpoveď**  
+s citáciami  
 zdrojov – podobne ako v ChatGPT Search, no priamo integrovanú do vyhľadávača,  
 ktorý dennodenne používajú miliardy ľudí.  
 
@@ -334,7 +350,8 @@ dostupné na stiahnutie a lokálne spustenie:
 
 Google vydal Gemma aj vo špeciálnych variantoch:  
 - **TxGemma** (mar 2025) – pre farmaceutický výskum a vývoj liekov  
-- **DolphinGemma** (apr 2025) – výskumný model na dekódovanie komunikácie delfínov  
+- **DolphinGemma** (apr. 2025) – výskumný model na dekódovanie komunikácie  
+  delfínov  
 
 ### Gemini CLI (jún 2025)  
 
@@ -384,24 +401,27 @@ from google import genai
 client = genai.Client(api_key="AIza...")  # Kľúč z Google AI Studio  
 
 response = client.models.generate_content(  
-    model="gemini-2.5-pro",  
+    model="gemini-3.7-flash",
     contents="Vysvetli mi, čo je multimodálny AI model.",  
 )  
 
 print(response.text)  
 ```  
 
-Knižnica podporuje aj multimodálne vstupy, streaming odpovedí, funkčné  
-volania (function calling) a prácu s kontextovým oknom až 1 milión tokenov.  
-Pre vývojárov, ktorí poznajú openai Python knižnicu, je rozhranie veľmi podobné –  
-líši sa len v názvoch metód a konfiguračných parametroch.  
+Knižnica podporuje aj multimodálne vstupy, streaming odpovedí, funkčné
+volania (function calling), grounding cez Google Search a prácu s dlhým
+kontextom. Presné limity závisia od konkrétneho modelu a API.
+Pre vývojárov, ktorí poznajú knižnicu OpenAI Python, je rozhranie veľmi
+podobné – líši sa len v názvoch metód a konfiguračných parametroch.
 
-Pre podnikové nasadenie Google odporúča **Vertex AI SDK** (`google-cloud-aiplatform`),  
-ktorý pridáva SLA záruky, správu prístupu (IAM) a auditovanie volání.  
+Pre podnikové nasadenie Google odporúča **Vertex AI** a príslušné SDK,
+ktoré pridávajú SLA, správu prístupu (IAM), auditovanie volaní a možnosti
+nasadenia v rámci Google Cloud.
 
 ### NotebookLM – AI asistent pre výskum a učenie  
 
-**NotebookLM** (notebooklm.google.com) je jedna z najoriginálnejších AI aplikácií  
+**NotebookLM** (notebooklm.google.com) je jedna z najoriginálnejších AI  
+aplikácií  
 od Googlu. Na rozdiel od bežných chatbotov NotebookLM **nepracuje s celým  
 internetom** – odpovedá výhradne na základe materiálov, ktoré mu sami  
 poskytnete. Tým eliminuje halucinácie a zabezpečuje, že každá odpoveď  
@@ -449,7 +469,8 @@ nástrojov:
 ### Veo – generovanie videa  
 
 - **Veo** (máj 2024) – generovanie 1080p videí dlhších ako minútu  
-- **Veo 2** (december 2024) – podpora **4K rozlíšenia**, lepšie pochopenie fyziky  
+- **Veo 2** (december 2024) – podpora **4K rozlíšenia**, lepšie pochopenie  
+  fyziky  
 - **Veo 3** (máj 2025) – prvý model, ktorý **súčasne generuje video aj zvuk**  
   vrátane dialógov, zvukových efektov a okolitého ruchu  
 
@@ -467,7 +488,7 @@ Veo a Imagen (generovanie obrázkov).
 - **Genie 2** (december 2024) – generovanie interaktívnych 3D prostredí  
 - **Genie 3** (august 2025) – vyššie rozlíšenie, viac minút konzistencie  
 - **Project Genie** (január 2026) – dostupný pre AI Ultra predplatiteľov;  
-  umožňuje vytvoriť interaktívne herné svety z fotografie alebo popisného textu  
+  umožňuje vytvoriť interaktívne herné svety z fotografie alebo opisného textu  
 
 ## Vedecké výskumy: DeepMind AI pre discovery  
 
@@ -644,7 +665,8 @@ k obrovskému množstvu vedeckého obsahu.
 
 Americké ministerstvo spravodlivosti vedie niekoľko antitrustových  
 vyšetrovaní voči Googlu, vrátane dominancie vo vyhľadávaní a online reklame.  
-Partnerstvá ako integrácia Gemini do Apple Siri (január 2026) sú pod drobnohľadom  
+Partnerstvá, ako je integrácia Gemini do Apple Siri (január 2026), sú pod  
+drobnohľadom  
 regulátorov, ktorí skúmajú, či takéto dohody nenarúšajú hospodársku súťaž.  
 
 ## Financie a zázemie  
@@ -664,7 +686,8 @@ korporácie.
 | **Sídlo** | Londýn, Anglicko |  
 
 Google celkovo investuje desiatky miliárd dolárov ročne do AI infraštruktúry.  
-TPU (Tensor Processing Units) čipy, ktoré Google vyvíja od roku 2016, sú kľúčovou  
+TPU (Tensor Processing Units) čipy, ktoré Google vyvíja od roku 2016, sú  
+kľúčovou  
 konkurenčnou výhodou – Gemini modely sú trénované a nasadzované na TPU a nie  
 na GPU od NVIDIA ako väčšina konkurentov.  
 
@@ -686,9 +709,11 @@ na GPU od NVIDIA ako väčšina konkurentov.
   Meno je odkazom na fúziu tímov aj na program NASA Project Gemini.  
 - Model je **natívne multimodálny** – spracováva text, obrázky, audio, video  
   a kód súčasne od základov, nie ako doplnky.  
-- **Gemini 3 Deep Think** (2025) dosiahol zlatú medailu na Medzinárodnej  
-  matematickej olympiáde – výsledok, ktorý vynútil „code red" v OpenAI.  
-- **Nano Banana** (august 2025) sa stal virálnym fenoménom generovania obrázkov  
+- **Gemini 3 Deep Think** (december 2025) priniesol rozšírené uvažovanie pre  
+  vedu, výskum a inžinierstvo. Tvrdenie o zlatej medaile na IMO treba chápať  
+  ako výsledok deklarovaný v benchmarku, nie ako oficiálnu medailu tímu.  
+- **Nano Banana** (august 2025) sa stal virálnym fenoménom generovania  
+  obrázkov  
   – 10 miliónov nových používateľov za niekoľko týždňov.  
 - Google má oproti konkurencii výhodu v **ekosystéme**: Search, Android,  
   Workspace, YouTube, Pixel, a od januára 2026 aj **Apple Siri**.  
@@ -696,16 +721,12 @@ na GPU od NVIDIA ako väčšina konkurentov.
   na jednom GPU.  
 - Google DeepMind vedie v oblasti **vedeckého AI** – AlphaFold, AlphaEvolve,  
   Gemini Robotics, predpovedanie počasia.  
-- Gemini **3.1 Pro** je ku dátumu vydania tejto kapitoly **aktuálny vlajkový  
-  model** Googlu s najvyšším výsledkom na GPQA Diamond benchmark.  
+- Gemini **3.1 Pro** zostáva vlajkovým modelom pre komplexné úlohy, zatiaľ čo  
+  **Gemini 3.7 Flash** je najnovší stabilný model pre rýchle agentické  
+  workflow.  
 
 ## Otázky & diskusia  
 
-1. Prečo je natívna multimodalita dôležitá a v čom sa líši od „pridanej"  
-   multimodality?  
-2. Ako môže Nobelova cena za AlphaFold ovplyvniť dôveru verejnosti  
-   v AI produkty od Googlu?  
-3. Aké riziká prináša dominancia Googlu, keď Gemini je integrovaný  
-   do Search, Android aj Siri súčasne?  
-4. Prečo myslíte, že Nano Banana sa stal virálnym, kým iné AI image modely nie?  
+4. Prečo myslíte, že Nano Banana sa stal virálnym, kým iné AI obrazové  
+  modely nie?  
 5. V čom je Gemma (open-weight) strategicky dôležitá pre Google?  
