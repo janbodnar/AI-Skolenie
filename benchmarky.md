@@ -29,6 +29,7 @@ na iný aspekt „inteligencie" modelu:
 | **Znalosti a porozumenie** | Vedomosti z rôznych odborov (história, právo, medicína...) | MMLU |  
 | **Logické uvažovanie** | Schopnosť riešiť logické a matematické problémy | GSM8K, BIG-bench |  
 | **Generovanie kódu** | Schopnosť písať funkčný programovací kód | HumanEval |  
+| SWE-bench Verified/Pro | Agentické kódovanie | Reálne GitHub issues + patch | 500 (Verified) / 1 865 (Pro) | % vyriešených issues | Automatické (testy) |
 | **Pravdivosť a faktickosť** | Odolnosť voči generovaniu nepravdivých informácií | TruthfulQA |  
 | **Konverzačné schopnosti** | Kvalita odpovedí v dialógu, koherencia, užitočnosť | MT-Bench |  
 | **Komplexné hodnotenie** | Kombinácia viacerých schopností v jednom frameworku | HELM, BIG-bench |  
