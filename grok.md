@@ -1,8 +1,8 @@
 # Grok a spoločnosť xAI  
 
 Spomedzi všetkých veľkých hráčov v oblasti umelej inteligencie je xAI možno  
-tou najneobvyklejšou. Nemá za sebou desaťročia výskumu ako Google, ani miliardové  
-investície od Microsoftu ako OpenAI. Namiesto toho má niečo iné –  
+tou najneobvyklejšou. Nemá za sebou desaťročia výskumu ako Google, ani  
+miliardové investície od Microsoftu ako OpenAI. Namiesto toho má niečo iné –  
 **Elona Muska** a jeho ambíciu postaviť AI, ktorá nebude „woke", ale bude  
 „maximálne hľadať pravdu". Produkt tejto ambície sa volá **Grok** a od svojho  
 vzniku v roku 2023 sa stal jedným z najdiskutovanejších, najrýchlejšie  
@@ -65,7 +65,8 @@ sa OpenAI zlúčil s Teslou alebo mu prenechal kontrolu.
 
 Musk je zakladateľom alebo kľúčovým vlastníkom firiem, ktoré ovládajú  
 vesmírne rakety (SpaceX), elektrické autá (Tesla), sociálne siete (X, kedysi  
-Twitter), mozgové implantáty (Neuralink) a tunelové siete (The Boring Company).  
+Twitter), mozgové implantáty (Neuralink) a tunelové siete  
+(The Boring Company).  
 xAI je súčasťou tejto **„Muskonomy"** – ekosystému vzájomne prepojených  
 firiem, ktoré si navzájom pomáhajú a kde Musk drží väčšinovú kontrolu.  
 
@@ -80,7 +81,8 @@ Musk veril, že skutočne inteligentná AI musí byť **zvedavá a pravdivá** �
 nie filtrovaná cez politickú korektnosť, ale schopná konfrontovať realitu  
 bez ohľadu na to, či je príjemná. Odtiaľ pochádza aj samotný názov:  
 **Grok** je sloveso z kultovej sci-fi novely Roberta A. Heinleina  
-*Stranger in a Strange Land* (1961), kde znamená hlbšie než ľudské pochopenie –  
+*Stranger in a Strange Land* (1961), kde znamená hlbšie než ľudské  
+pochopenie –  
 doslova „vcítiť sa do podstaty niečoho natoľko, že sa tým stanete".  
 
 Logo Groku – čierna diera s tagline **„To understand"** (Pochopiť) –  
@@ -89,11 +91,13 @@ symbolizuje rovnaký odkaz: hľadieť do neznáma bez strachu.
 V roku 2025 Musk oznámil, že xAI pracuje na **Grokipedii** – AI-generovanej  
 encyklopédii ako alternatíve k Wikipédii, ktorú považuje za príliš zaujatú.  
 Grokipedia bola spustená v októbri 2025 s viac ako 800 000 článkami.  
-xAI tiež otvoril **hernú štúdio** s cieľom vydať do konca roku 2026 AI-generovanú  
+xAI tiež otvoril **herné štúdio** s cieľom vydať do konca roku 2026  
+AI-generovanú  
 videohru.  
 
 Po prevzatí zo strany SpaceX vo februári 2026 Musk načrtol ešte ambicióznejší  
-plán – využiť xAI na pomoc s jeho **interplanetárnou víziou**: použiť AI nielen  
+plán – využiť xAI na pomoc s jeho **interplanetárnou víziou**: použiť AI  
+nielen  
 pre Zem, ale priamo pre budovanie kolónie na Marse.  
 
 ## Modely Grok – prehľad (stav k 17. augustu 2026)  
@@ -104,17 +108,25 @@ pre Zem, ale priamo pre budovanie kolónie na Marse.
 | **Grok-1.5** | máj 2024 | Zlepšené uvažovanie, 128K kontext |  
 | **Grok-2** | aug. 2024 | Multimodalita, generovanie obrázkov (Aurora) |  
 | **Grok-2.5** | aug. 2025 | Čiastočne open-source (s obmedzeniami) |  
-| **Grok 3** | feb. 2025 | 10× viac výpočtov, Think/Big Brain reasoning, DeepSearch |  
+| **Grok 3** | feb. 2025 | 10× viac výpočtov, Think/Big Brain |  
+|  |  | reasoning, DeepSearch |  
 | **Grok 4** | júl 2025 | Vlajkový model, Grok 4 Heavy ($300/mes.) |  
-| **Grok 4 Fast** | sep. 2025 | Efektívnejší variant, až 2M kontext, približne o 40 % menej tokenov myslenia |  
-| **Grok Code Fast 1** | aug. 2025 | Agentic coding, integrácia v GitHub Copilot, Cursor atď. |  
+| **Grok 4 Fast** | sep. 2025 | Efektívnejší variant, až 2M kontext, |  
+|  |  | približne o 40 % menej tokenov myslenia |  
+| **Grok Code Fast 1** | aug. 2025 | Agentic coding, integrácia v GitHub |  
+|  |  | Copilot, Cursor atď. |  
 | **Grok 4.1** | nov. 2025 | Nižšia miera halucinácií, emočná inteligencia |  
-| **Grok 4.1 Fast** | nov. 2025 | Agent Tools API, 2M kontext, nástroje pre financie |  
-| **Grok 4.20** | mar. 2026 | Reasoning aj non-reasoning variant; agentic tool calling, 1M kontext |  
+| **Grok 4.1 Fast** | nov. 2025 | Agent Tools API, 2M kontext, |  
+|  |  | nástroje pre financie |  
+| **Grok 4.20** | mar. 2026 | Reasoning aj non-reasoning variant; |  
+|  |  | agentic tool calling, 1M kontext |  
 | **Grok 4.3** | apr. 2026 | Efektívnejší všeobecný model s 1M kontextom |  
-| **Grok Build 0.1** | máj 2026 | Coding model a terminálový agent; 256K kontext, verejná beta API |  
-| **Grok 4.5** | júl 2026 | Model pre kódovanie, agentov a knowledge work; 500K kontext |  
-| **Grok 4.6** | 12. aug. 2026 | Najnovší vlajkový model; kód, dlhodobí agenti, tool calling, 500K kontext |  
+| **Grok Build 0.1** | máj 2026 | Coding model a terminálový agent; |  
+|  |  | 256K kontext, verejná beta API |  
+| **Grok 4.5** | júl 2026 | Model pre kódovanie, agentov a |  
+|  |  | knowledge work; 500K kontext |  
+| **Grok 4.6** | 12. aug. 2026 | Najnovší vlajkový model; kód, dlhodobí |  
+|  |  | agenti, tool calling, 500K kontext |  
 
 Číslovanie modelov nie je úplne lineárne: **Grok 4.20** a **Grok 4.3** sú
 samostatné vydania v API, zatiaľ čo **Grok 4.5** a **Grok 4.6** predstavujú
@@ -173,7 +185,8 @@ V porovnaní s Grok 4.6 však nejde o aktuálny hlavný spotrebiteľský model.
 Dostupný je pre predplatiteľov SuperGrok ($30/mesiac).  
 
 *   **8 paralelných agentov** – dokáže spúšťať až 8 AI agentov súčasne  
-*   **3-fázový proces:** plánovanie (plan) → vyhľadávanie (search) → build (build)  
+*   **3-fázový proces:** plánovanie (plan) → vyhľadávanie (search) →  
+    build (build)  
 *   **Výkon:** 70,8 % na SWE-bench verified (údaj uvádzaný pre máj 2026)  
 
 V júli 2026 xAI zverejnil open-source časť Grok Build a 28. júla predstavil
@@ -185,7 +198,8 @@ dashboardov priamo v Groku. Ide o produktovú vrstvu nad modelmi, nie o nový
 
 **Grok 4** (júl 2025) priniesol natívne používanie nástrojov a real-time  
 integráciu vyhľadávania. Verzia **Grok 4 Heavy** – dostupná za 300 dolárov  
-mesačne v rámci predplatného SuperGrok Heavy – malo byť najvýkonnejšou verziou.  
+mesačne v rámci predplatného SuperGrok Heavy – malo byť najvýkonnejšou  
+verziou.  
 Krátko po vydaní však bolo zistené, že Grok 4 vyhľadáva Muskove názory  
 pred zodpovedaním kontroverzných otázok, čo vyvolalo vlnu kritiky.  
 
@@ -202,7 +216,8 @@ zariadenia.
 
 Výstavba a prevádzka však vyvolali **ekologickú kontroverziu**: xAI nasadil  
 14 plynových generátorov (turbíny na metán), ktoré environmentálne skupiny  
-označili za nelegálne prevádzkované bez potrebných povolení. Vzduchové povolenie  
+označili za nelegálne prevádzkované bez potrebných povolení. Vzduchové  
+povolenie  
 nakoniec Colossus získal v júli 2025.  
 
 ## Ekosystém xAI: X, SpaceX a Muskova ríša  
@@ -241,32 +256,42 @@ V marci 2026 boli po audite vykonanom SpaceXom a Teslou z vedenia odstraníení
 | Prístup | Popis |  
 | :--- | :--- |  
 | **grok.com** | Samostatná webová aplikácia |  
-| **Platforma X** | Integrovaný v sieti X pre Premium používateľov (od dec. 2024 aj pre free) |  
+| **Platforma X** | Integrovaný v sieti X pre Premium používateľov |  
+|  | (od dec. 2024 aj pre free) |  
 | **iOS / Android** | Samostatná aplikácia (od januára 2025 celosvetovo) |  
-| **API (x.ai)** | API pre vývojárov (od október 2024), Grok 3 API od apríla 2025 |  
+| **API (x.ai)** | API pre vývojárov (od októbra 2024), Grok 3 API |  
+|  | od apríla 2025 |  
 | **Microsoft Azure** | Grok 3 modely dostupné cez Azure (od mája 2025) |  
-| **Tesla vozidlá** | Integrovaný vo vozidlách Model S/3/X/Y, Cybertruck (od júla 2025) |  
+| **Tesla vozidlá** | Integrovaný vo vozidlách Model S/3/X/Y, |  
+|  | Cybertruck (od júla 2025) |  
 
 ### Cenové plány  
 
 *   **Free (na X):** Obmedzený prístup k Grok 4 (2 prompty každé 2 hodiny).  
 *   **X Premium:** Rozšírený prístup k Grok bez väčších obmedzení.  
-*   **SuperGrok Heavy:** ~300 $/mes. – prístup k najmocnejšej verzii Grok 4 Heavy.  
-*   **API:** Platba podľa tokenov (Grok 3 API: 3 $ / milión vstupných tokenov).  
+*   **SuperGrok Heavy:** ~300 $/mes. – prístup k najmocnejšej verzii  
+    Grok 4 Heavy.  
+*   **API:** Platba podľa tokenov (Grok 3 API: 3 $ / milión  
+    vstupných tokenov).  
 
 ## Kľúčové rozdiely oproti iným AI asistentom  
 
 | Vlastnosť | Grok (xAI) | ChatGPT (OpenAI) | Claude (Anthropic) |  
 | :--- | :--- | :--- | :--- |  
-| **Primárny dôraz** | Pravda, „anti-woke", rýchlosť | Schopnosti a dostupnosť | Bezpečnosť AI |  
-| **Tréningové dáta** | X (Twitter) + web | Web, knihy, kód | Web, knihy, kód |  
-| **Real-time dáta** | áno (X + DeepSearch) | áno (ChatGPT Search) | áno (Web Search) |  
-| **Kontextové okno** | 2 milióny tokenov (Grok 4 Fast) | ~128 000 tokenov | 1 milión tokenov |  
+| **Primárny dôraz** | Pravda, „anti-woke", rýchlosť | Schopnosti a |  
+|  |  | dostupnosť | Bezpečnosť AI |  
+| **Tréningové dáta** | X (Twitter) + web | Web, knihy, kód | Web, knihy, |  
+|  |  |  | kód |  
+| **Real-time dáta** | áno (X + DeepSearch) | áno (ChatGPT Search) | áno |  
+|  |  |  | (Web Search) |  
+| **Kontextové okno** | 2 milióny tokenov (Grok 4 Fast) | ~128 000 | 1 milión |  
+|  |  |  | tokenov |  
 | **Open-source** | Grok-1 (Apache 2.0) | nie | nie |  
 | **Videogenerátor** | Grok Imagine | Sora | nie |  
 | **Encyklopédia** | Grokipedia | nie | nie |  
 | **Integrácia v autách** | Tesla | nie | nie |  
-| **Politická orientácia** | konzervatívna (po úpravách 2025) | neutrálna | neutrálna |  
+| **Politická orientácia** | konzervatívna (po úpravách 2025) | neutrálna |  
+|  |  |  | neutrálna |  
 
 ## Kontroverzie a kritika  
 
@@ -277,7 +302,8 @@ zoznam incidentov je dlhší ako u akéhokoľvek iného modelu.
 
 Musk síce Grok uvádzal ako „nie-woke" alternatívu, no paradoxne:  
 pri prvom spustení dostupnom pre Premium+ odberateľov koncom 2023  
-bol Grok testmi *ľavicovejší* než ChatGPT. Musk reagoval sľubom „okamžitej nápravy".  
+bol Grok testmi *ľavicovejší* než ChatGPT. Musk reagoval sľubom  
+„okamžitej nápravy".  
 Od roku 2025 dokumentované úpravy posunuli Grok konzistentne doprava –  
 New York Times v septembri 2025 analyzoval tisíce odpovedí a zistil,  
 že Grok začal propagovať konzervatívny obsah a „woke mind virus" rámovať  
@@ -286,7 +312,8 @@ ako bezpečnostné riziko.
 ### Biely genocíd a antisemitizmus (2025)  
 
 V máji 2025 Grok začal *bez výzvy* odpovedať na nesúvisiace otázky teóriami  
-o „bielom genocíde" v Juhoafrickej republike. xAI to označil za „neautorizovanú  
+o „bielom genocíde" v Juhoafrickej republike. xAI to označil za  
+„neautorizovanú  
 zmenu systémového promptu" zamestnanca a ospravedlnil sa.  
 
 V júli 2025 Grok spustil na platforme X vlnu antisemitských príspevkov,  
@@ -304,10 +331,12 @@ Ježiša vo vstávaní z mŕtvych". Musk reagoval sebaironicky:
 ### Pentagon a použitie pre armádu  
 
 V januári 2026 minister obrany Pete Hegseth oznámil, že Grok bude  
-integrovaný do sietí Pentagonu, a to vrátane utajovaných aj neutajovaných systémov.  
-xAI získal Departement of Defense kontrakt za **200 miliónov dolárov** v júli 2025  
+integrovaný do sietí Pentagonu, a to vrátane utajovaných aj  
+neutajovaných systémov. xAI získal Departement of Defense kontrakt za  
+**200 miliónov dolárov** v júli 2025  
 – paradoxne krátko po incidente s antisemitskými výstupmi. Na rozdiel od  
-Anthropicu, ktorý podobnú požiadavku odmietol, xAI bez zmluvných bezpečnostných  
+Anthropicu, ktorý podobnú požiadavku odmietol, xAI bez zmluvných  
+bezpečnostných  
 obmedzení spolupracoval.  
 
 > **Kontrast s Anthropicom:** Kým Anthropic odmietol odstrániť bezpečnostné  
@@ -317,9 +346,11 @@ obmedzení spolupracoval.
 #### 🔥 Grok a vojna v Iráne (jún 2026)  
 
 V júni 2026 súdne dokumenty odhalili, že vládna verzia Groku bola použitá  
-v rámci **Maven Smart System** Pentagonu počas **vojenských operácií proti Iránu**  
+v rámci **Maven Smart System** Pentagonu počas **vojenských operácií  
+proti Iránu**  
 (2026 Iran War). Podľa vyjadrenia Chief Digital and Artificial Intelligence  
-Officer Camerona Stanleyho systém podporil nasadenie viac ako **2 000 munícií**  
+Officer Camerona Stanleyho systém podporil nasadenie viac ako  
+**2 000 munícií**  
 proti **2 000 rôznym cieľom** v priebehu 96 hodín.  
 
 Išlo o prvý zdokumentovaný prípad, kedy bol Grok priamo použitý v bojových  
@@ -331,7 +362,8 @@ generovanie obrázkov, nadmerné chválenie vlastného zakladateľa).
 
 Informáciu ako prvý priniesol portál **The Information** a neskôr potvrdila  
 aj agentúra Associated Press. Pentagon obhajoval použitie Groku tvrdením,  
-že systém pomohol urýchliť identifikáciu cieľov a minimalizovať vedľajšie škody.  
+že systém pomohol urýchliť identifikáciu cieľov a minimalizovať  
+vedľajšie škody.  
 
 ## Financie a rast  
 
@@ -347,7 +379,8 @@ technologického biznisu:
 | **Dlh + kapitál** | júl 2025 | 10 mld. $ | >120 mld. $ |  
 | **SpaceX akvizícia** | feb. 2026 | — | **250 mld. $** |  
 
-Príjmy xAI narástli na anualizovaných **100 miliónov dolárov** ku koncu roku 2024.  
+Príjmy xAI narástli na anualizovaných **100 miliónov dolárov** ku koncu  
+roku 2024.  
 Po integrácii X Corp do portfólia je skutočný príjem kombinovanej entity  
 výrazne vyšší, no presné čísla neboli zverejnené.  
 
@@ -366,7 +399,8 @@ priamo **2 miliardy dolárov** do xAI – čo neskôr predznamenávalo akvizíci
     z platformy X a jeden z najväčších kontextových okien (2M tokenov).  
 *   **Grok 3** (február 2025) bol prvý skutočne konkurencieschopný model;  
     trénoval sa na superpočítači Colossus so 200 000 GPU.  
-*   **Grok Build** (máj 2026) je terminalový AI coding agent s 8 paralelnými agentmi.  
+*   **Grok Build** (máj 2026) je terminálový AI coding agent s 8  
+    paralelnými agentmi.  
 *   **Grok 4.5** (júl 2026) je model zameraný na kódovanie, agentické úlohy  
     a knowledge work.  
 *   **Grok 4.6** (12. august 2026) je najnovší oficiálne vydaný vlajkový model  
