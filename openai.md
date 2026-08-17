@@ -1,18 +1,16 @@
-# OpenAI a modely GPT (stav k 17. augustu 2026)  
+# OpenAI a modely GPT 
 
 OpenAI je dnes najznámejšia spoločnosť v oblasti umelej inteligencie na svete.  
 Práve ona stojí za produktom, ktorý spustil globálnu vlnu záujmu o AI –  
 chatbotom **ChatGPT**. Ten sa v roku 2022 stal najrýchlejšie rastúcou  
 spotrebiteľskou aplikáciou v histórii a otvoril éru moderných jazykových  
-modelov
-pre stovky miliónov bežných používateľov.  
+modelov pre stovky miliónov bežných používateľov.  
 
 ## Vznik spoločnosti a zakladatelia  
 
 OpenAI bola založená v decembri **2015** ako nezisková organizácia so sídlom  
 v San Franciscu. Jej zakladateľská misia znie: *„zabezpečiť, aby umelá  
-všeobecná
-inteligencia (AGI) prospievala celému ľudstvu."*  
+všeobecná inteligencia (AGI) prospievala celému ľudstvu."*  
 
 Medzi jedenástimi zakladateľmi boli mená, ktoré dnes rezonujú celým odvetvím:  
 
