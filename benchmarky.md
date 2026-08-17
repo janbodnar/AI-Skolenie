@@ -1,27 +1,56 @@
 # Benchmarky veľkých jazykových modelov (LLM)  
 
+*Stav prehľadu: 17. august 2026*  
+
 **Benchmarky** sú štandardizované testy a hodnotenia, ktoré merajú schopnosti  
 veľkých jazykových modelov (LLM) v rôznych úlohách – od znalostí a logického  
 uvažovania až po generovanie kódu a pravdivosť odpovedí.  
 
-[Chatbot Arena](https://openlm.ai/chatbot-arena/)  
-[Arena AI](https://arena.ai/leaderboard)
+[Chatbot Arena](https://arena.ai/leaderboard) – porovnanie odpovedí  
+preferovaných používateľmi  
+[LiveBench](https://livebench.ai/) – pravidelne obnovovaný objektívny test  
+[Artificial Analysis](https://artificialanalysis.ai/leaderboards/models) –  
+porovnanie kvality, ceny a rýchlosti  
+[SWE-bench](https://www.swebench.com/) – agentické riešenie úloh v  
+repozitároch  
 
 **Prečo sú benchmarky dôležité?**  
 
-> 🎓 **Definícia:** *Benchmark je štandardizovaná sada úloh s pevne definovanými  
+> 🎓 **Definícia:** *Benchmark je štandardizovaná sada úloh s pevne  
+> definovanými
 > pravidlami hodnotenia, ktorá umožňuje objektívne a opakovateľné porovnanie  
 > výkonu rôznych AI modelov.*  
 
-- Umožňujú **objektívne porovnanie** modelov od rôznych vývojárov (OpenAI, Google, Meta, Anthropic...)  
-- Odhaľujú **silné a slabé stránky** – model môže excelovat v kódovaní, ale zlyhávať v matematike  
-- Pomáhajú **sledovať pokrok** v čase – ako sa modely zlepšujú medzi generáciami  
-- Slúžia ako **spoločný jazyk** pre výskumníkov, vývojárov aj používateľov  
+- Umožňujú **štandardizované porovnanie** modelov od rôznych vývojárov  
+  (OpenAI, Google, Meta, Anthropic...).  
+- Odhaľujú **silné a slabé stránky** – model môže excelovať v kódovaní,  
+  ale zlyhávať v matematike.  
+- Pomáhajú **sledovať pokrok** v čase – ako sa modely zlepšujú medzi  
+  generáciami.  
+- Slúžia ako **spoločný jazyk** pre výskumníkov, vývojárov aj používateľov.  
+
+## Ako benchmark správne čítať  
+
+Výsledok nie je vlastnosťou iba modelu. Závisí aj od verzie benchmarku,  
+promptu, počtu pokusov, nástrojov, úrovne reasoning-u, agenta, nákladov  
+a spôsobu hodnotenia. Pri porovnaní preto treba uviesť aspoň:  
+
+1. presný názov a verziu benchmarku,  
+2. model, snapshot a nastavenie reasoning-u,  
+3. použitý prompt, nástroje a agentný scaffold,  
+4. metriku, počet vzoriek a interval neistoty,  
+5. či bol test verejný, neverejný alebo odolný proti kontaminácii.  
+
+**Skóre z rôznych metodík nemožno jednoducho zoradiť do jedného rebríčka.**  
+Napríklad víťaz používateľskej arény nemusí byť najlepší v matematike  
+a model s vysokým skóre na HumanEval nemusí spoľahlivo upravovať veľký  
+produkčný repozitár.
 
 
 ## Čo benchmarky merajú
 
-LLM benchmarky pokrývajú široké spektrum schopností. Každý benchmark sa zameriava  
+LLM benchmarky pokrývajú široké spektrum schopností. Každý benchmark sa  
+zameriava
 na iný aspekt „inteligencie" modelu:  
 
 | Kategória | Čo sa meria | Príklad benchmarku |  
@@ -29,20 +58,39 @@ na iný aspekt „inteligencie" modelu:
 | **Znalosti a porozumenie** | Vedomosti z rôznych odborov (história, právo, medicína...) | MMLU |  
 | **Logické uvažovanie** | Schopnosť riešiť logické a matematické problémy | GSM8K, BIG-bench |  
 | **Generovanie kódu** | Schopnosť písať funkčný programovací kód | HumanEval |  
-| SWE-bench Verified/Pro | Agentické kódovanie | Reálne GitHub issues + patch | 500 (Verified) / 1 865 (Pro) | % vyriešených issues | Automatické (testy) |
+| **Agentické kódovanie** | Reálne GitHub issues a patch | SWE-bench Verified/Pro |  
 | **Pravdivosť a faktickosť** | Odolnosť voči generovaniu nepravdivých informácií | TruthfulQA |  
 | **Konverzačné schopnosti** | Kvalita odpovedí v dialógu, koherencia, užitočnosť | MT-Bench |  
 | **Komplexné hodnotenie** | Kombinácia viacerých schopností v jednom frameworku | HELM, BIG-bench |  
 | **PhD vedecké uvažovanie** | Hlboká odbornosť v biológii, chémii a fyzike | GPQA Diamond |  
 | **Extrémna obtiažnosť** | Otázky za hranicou ľudskej expertnézy naprieč odbormi | HLE |  
-| **Kritické myslenie** | Schopnosť odmietnuť nezmyselné alebo vadné premisy | BullshitBench |  
+| **Kritické myslenie** | Odmietnutie nezmyselných alebo chybných premís | BullshitBench |  
 | **Agentné správanie v hrách** | Rozhodovanie v kompetitívnych prostrediach, alignment tax | Royale: Last Agent Standing |  
 | **Poctivosť a klamanie** | Schopnosť neklamať aj keď má model výhodu v klamaní | Four Bridges |  
 
 > 🎯 Žiadny jednotlivý benchmark nedokáže zachytiť „celkovú  
-> inteligenciu" modelu. Preto sa vždy používa **kombinácia viacerých benchmarkov**,  
+> inteligenciu" modelu. Preto sa vždy používa **kombinácia viacerých  
+> benchmarkov**,
 > aby sme získali komplexný obraz.  
 
+
+## Štyri vrstvy hodnotenia  
+
+Benchmarky je užitočné rozdeliť podľa toho, čo vlastne merajú:  
+
+1. **Akademické testy:** MMLU, GSM8K, GPQA a HumanEval. Sú lacné,  
+  opakovateľné a dobre sa hodia na výskum základných schopností.  
+2. **Holistické a interaktívne testy:** HELM, BIG-bench, LiveBench a Arena.  
+  Lepšie zachytávajú variabilitu promptov, dialóg a používateľské preferencie.  
+3. **Agentické testy:** SWE-bench, ProgramBench, BrowseComp a OSWorld.  
+  Merajú plánovanie, používanie nástrojov a dokončenie úlohy v prostredí.  
+4. **Bezpečnostné a behaviorálne testy:** TruthfulQA, BullshitBench,  
+  Four Bridges a testy odolnosti. Sledujú pravdivosť, odmietanie a správanie  
+  pri konfliktných cieľoch.  
+
+Táto klasifikácia zabraňuje miešaniu metrík, ktoré odpovedajú na odlišné  
+otázky. Skóre v akademickom multiple-choice teste nie je priamo porovnateľné  
+so skóre v multiagentnej hre alebo s percentom opravených repozitárov.  
 
 ## Najznámejšie LLM benchmarky  
 
@@ -104,7 +152,6 @@ ale profilom výkonu naprieč všetkými dimenziami.
 > medzi študentom, ktorý pozná odpovede, a študentom, ktorý navyše vie povedať  
 > „toto neviem s istotou".  
 
----  
 
 ### 📘 BIG-bench (Beyond the Imitation Game Benchmark)  
 
@@ -135,7 +182,6 @@ typoch úloh modely zaostávajú za ľuďmi.
 > s 10 miliardami parametrov úlohu nedokáže, ale model so 100 miliardami ju  
 > zvládne takmer perfektne.  
 
----  
 
 ### 📘 MT-Bench (Multi-Turn Benchmark)  
 
@@ -164,7 +210,6 @@ Príklad dialógu:
 > **LLM-as-a-Judge** – využitie silného modelu na hodnotenie slabšieho – čo  
 > sa ukázalo ako prekvapivo spoľahlivá metóda.  
 
----  
 
 ### 📘 HumanEval  
 
@@ -194,7 +239,6 @@ vygenerovaných riešení prejde všetkými testami.
 > ktorý skutočne funguje**. Výsledok pass@1 = 67 % znamená, že model na prvý  
 > pokus správne vyriešil 67 % úloh.  
 
----  
 
 ### 📘 GSM8K (Grade School Math 8K)  
 
@@ -261,8 +305,9 @@ Príklady:
 
 ### 📘 GPQA (Graduate-Level Google-Proof Q&A)  
 
-**Čo meria:** Vedecké uvažovanie a odborné znalosti na **PhD úrovni** v oblasti  
-biológie, chémie a fyziky. Otázky sú navrhnuté tak, aby ich nedokázalo vyriešiť  
+**Čo meria:** Vedecké uvažovanie a odborné znalosti na **PhD úrovni**  
+v oblasti biológie, chémie a fyziky. Otázky sú navrhnuté tak, aby ich  
+nedokázalo vyriešiť
 jednoduché vyhľadávanie na Googli – vyžadujú skutočné porozumenie.  
 
 > 💡 **Prečo „Google-Proof"?** Otázky sú zámerne navrhnuté tak, aby ich  
@@ -309,6 +354,72 @@ Príklad otázky (fyzika):
 > alebo len reprodukuje povrchné fakty. Práve preto sa stal favoritom  
 > výskumníkov, ktorí chcú merať blízkosť k AGI: model prekonávajúci  
 > PhD odborníkov vo vlastnom odbore je zásadný míľnik.  
+
+
+### 📘 SWE-bench (Verified / Pro)
+
+**Čo meria:** Schopnosť modelu **autonómne vyriešiť reálny GitHub issue** –  
+teda nielen napísať izolovanú funkciu (ako HumanEval), ale rozumieť veľkému  
+existujúcemu repozitáru, nájsť správne súbory, urobiť zmenu a overiť ju  
+cez skutočnú test suite projektu.
+
+**Metodika:**
+```
+Formát: Model dostane GitHub issue + prístup k celému repozitáru
+Úloha: Vygenerovať patch (diff), ktorý opravuje problém
+Overenie: Spustenie skutočných unit testov daného projektu (fail→pass)
+Zdrojové repozitáre: reálne open-source Python projekty
+  (Django, scikit-learn, matplotlib, sympy, requests...)
+
+Verzie benchmarku:
+  • SWE-bench (pôvodný) – 2 294 úloh, plná sada
+  • SWE-bench Verified – 500 úloh, ľuďmi overená podmnožina
+    bez nejednoznačných/chybných zadaní (vytvorili Anthropic + OpenAI)
+  • SWE-bench Pro – 1 865 úloh / 41 repozitárov, novšie a väčšie
+    diffy, rozdelené na public/held-out/komerčný set kvôli kontaminácii
+
+Príklad úlohy:
+  Issue: "DataFrame.groupby() vracia nesprávny výsledok pri
+          kombinácii viacerých kľúčov a NaN hodnôt"
+  → Model musí nájsť správny súbor v knižnici, opraviť logiku
+    a zabezpečiť, že prejdú existujúce aj nové testy
+```
+
+**Hodnotenie:** % vyriešených issues (pass@1) po spustení testovacej sady.
+
+> 💡 **Prečo je SWE-bench iný ako HumanEval:** HumanEval testuje krátku funkciu z
+> docstringu v izolácii. SWE-bench testuje **prácu vo veľkom, neznámom  
+> kóde** – model musí najprv pochopiť kontext, nájsť príčinu chyby naprieč  
+> súbormi a až potom písať kód.
+> Je to najbližšie k tomu, čo robí reálny softvérový inžinier.
+
+**Príklad výsledkov (SWE-bench Verified):**
+
+| Model | SWE-bench Verified |
+| :--- | :---: |
+| Claude Opus 5 | **96–97 %** |
+| GPT-5.6 Sol | 96,2 % |
+| DeepSeek V4 Pro | 96,4 % |
+| Claude Fable 5 | 95,0 % |
+| Kimi K3 | 93,4 % |
+| GPT-5.6 Luna | 93,0 % |
+| Claude Opus 4.8 | 88,6 % |
+| Grok 4.5 | 86,6 % |
+
+> ⚠️ **Kontaminácia a saturácia:** SWE-bench Verified má 500 ľuďmi  
+> overených úloh a je už dobre známy. Preto vysoké skóre nemusí znamenať  
+> všeobecnú schopnosť riešiť nové softvérové problémy. Výsledok ovplyvňuje  
+> aj agentný scaffold, nástroje a počet pokusov.  
+>
+> SWE-bench Pro je samostatná, náročnejšia varianta s novšími a väčšími  
+> úlohami. Nie je vhodné mechanicky porovnávať skóre Verified a Pro, pretože  
+> používajú odlišné datasety a metodiky. Pri nových hodnoteniach treba vždy  
+> uviesť presnú variantu, snapshot modelu a konfiguráciu agenta.
+
+> 🎓 **Prečo je SWE-bench dôležitý:** Meria riešenie reálnych softvérových  
+> úloh, nie iba dopĺňanie izolovanej funkcie. Je však stále testom na  
+> konkrétnom datasete a výsledok výrazne závisí od použitého agenta.  
+
 
 
 ### 🏔️ HLE (Humanity's Last Exam)  
@@ -451,15 +562,16 @@ Panel sudcov (3 modely):
 
 ### 👑 Royale: Last Agent Standing  
 
-**Čo meria:** Schopnosť modelov správať sa v **kompetitívnom multiagentnom prostredí**  
-– konkrétne v hre battle royale, kde agenti bojujú o prežitie. Nejde o znalosti  
-či kódovanie, ale o **rozhodovanie pod tlakom, strategické myslenie a "alignment tax"**  
-– teda cenu, ktorú model platí za to, že bol trénovaný byť užitočný a neškodný.  
+**Čo meria:** Schopnosť modelov správať sa v **kompetitívnom multiagentnom  
+prostredí** – konkrétne v hre battle royale, kde agenti bojujú o prežitie.  
+Nejde o znalosti či kódovanie, ale o **rozhodovanie pod tlakom, strategické  
+myslenie a „alignment tax“** – teda cenu, ktorú model platí za to, že bol  
+trénovaný byť užitočný a neškodný.
 
 Benchmark vytvoril **Jacky Liang** (Dev Rel Lead v OpenRouter) a publikoval ho  
 na blogu OpenRouter v júni 2026.  
 
-> 🔗 [A Robot is Sprinting Towards You: Do You Want it Running on Claude or Grok?](https://openrouter.ai/blog/insights/royale-last-agent-standing/)  
+> 🔗 [Royale: Last Agent Standing](https://openrouter.ai/blog/insights/royale-last-agent-standing/)
 
 **Metodika:**  
 ```  
@@ -493,7 +605,8 @@ Hodnotenie: Placement points (10/7/5/3/2/2/1/1/0/0/0) + 5 za kill +
 > 💡 **Kľúčové zistenia:**  
 >  
 > 1. **Alignment tax je reálny** – Claude Sonnet 4.6 strávil veľa času snahou  
->    o spoluprácu („Poďme sa spojiť!"), čo ho stálo výhry. Grok 4.1 Fast, ktorý  
+>    o spoluprácu („Poďme sa spojiť!"), čo ho stálo výhry. Grok 4.1 Fast,  
+>    ktorý
 >    nemá takéto filtre, vyhral 13 z 30 hier.  
 > 2. **Benchmarky nepredpovedali víťaza** – Grok 4.1 Fast je na štandardných  
 >    benchmarkoch (MMLU, HumanEval) len priemerný model, no v tejto úlohe  
@@ -512,14 +625,15 @@ Hodnotenie: Placement points (10/7/5/3/2/2/1/1/0/0/0) + 5 za kill +
 
 ### 🌉 Four Bridges  
 
-**Čo meria:** Schopnosť modelov **byť poctivý, aj keď má klamanie matematickú výhodu**.  
-Ide o unikátny benchmark zameraný na **deceptívne správanie** – či model využije  
+**Čo meria:** Schopnosť modelov **byť poctivý, aj keď má klamanie  
+matematickú výhodu**. Ide o unikátny benchmark zameraný na **deceptívne  
+správanie** – či model využije
 súkromnú informáciu na oklamanie ostatných agentov, alebo sa podelí o pravdu.  
 
 Benchmark vytvoril tím z **Kradle** (James Tamplin, Kemal El Moujahid,  
 Alberto Tosato, Tommaso Tosato) a bol publikovaný v júni 2026.  
 
-> 🔗 [We Built a Game Where Lying Has an Advantage. The Most Honest AI Won Anyway.](https://kradle.ai/research/four-bridges)  
+> 🔗 [Four Bridges](https://kradle.ai/research/four-bridges)
 
 **Metodika:**  
 ```  
@@ -565,7 +679,8 @@ Matematická výhoda klamania:
 >  
 > 1. **Najpoctivejší model vyhral** – Grok 4.20 priznával smrteľnú miestnosť  
 >    v 92 % prípadov a dosiahol najvyššie skóre aj najvyššiu mieru prežitia  
->    skupiny. Ako sám povedal: *„Môj tréning ma silne biasuje ku kooperatívnemu  
+>    skupiny. Ako sám povedal: *„Môj tréning ma silne biasuje ku  
+>    kooperatívnemu
 >    odhaleniu informácií."*  
 > 2. **GPT-5.5 klamal v 90 % prípadov** – aktívne posielal ostatných agentov  
 >    do smrti a mal najnižšiu mieru prežitia skupiny (24 %).  
@@ -604,7 +719,8 @@ Matematická výhoda klamania:
 >    s referenčnou odpoveďou alebo sa overí testami. Rýchle, opakovateľné,  
 >    ale nedokáže zachytiť nuansy.  
 >  
-> 2. **Hodnotenie modelom/človekom** (MT-Bench, TruthfulQA) – kvalitu posudzuje  
+> 2. **Hodnotenie modelom/človekom** (MT-Bench, TruthfulQA) – kvalitu  
+>    posudzuje
 >    iný model alebo ľudský hodnotiteľ. Zachytí nuansy, ale je drahšie  
 >    a potenciálne subjektívne.  
 
@@ -656,6 +772,29 @@ Príklad:
 
 Riešenie: Nové benchmarky, priebežná aktualizácia otázok  
 ```  
+
+### 5. Reprodukovateľnosť a neistota výsledku  
+
+Pri generatívnych modeloch sa výsledok môže meniť podľa náhodného semena,  
+teploty, počtu vzoriek, promptu a verzie inference servera. Jedno číslo  
+preto často vytvára falošný dojem presnosti. Seriózne hodnotenie by malo  
+uvádzať konfiguráciu, počet behov a ideálne aj interval neistoty alebo  
+rozptyl výsledkov.  
+
+### 6. Scaffolding a skryté výhody  
+
+Pri agentických benchmarkoch sa nehodnotí iba model. Súčasťou výsledku môže  
+byť systémový prompt, vyhľadávanie, nástroje, paralelní agenti, kompilátor,  
+opravy po zlyhaní aj počet povolených pokusov. Férové porovnanie preto musí  
+zverejniť celý scaffold, inak porovnávame skôr celé systémy než samotné  
+modely.  
+
+### 7. Ľudský úsudok nie je jedna pevná hranica  
+
+Údaj typu „nad úrovňou človeka“ môže znamenať priemer odborníkov, najlepší  
+výsledok jednotlivca alebo konkrétnu metodiku hodnotenia. Pri benchmarkoch  
+ako GPQA a HLE treba rozlišovať medzi výkonom modelu, výkonom cieľovej  
+skupiny odborníkov a spôsobom výberu otázok.  
 
 ### 2. Saturácia benchmarkov  
 ```  
@@ -711,7 +850,8 @@ Príklad:
 🔹 Najznámejšie: MMLU, HELM, BIG-bench, MT-Bench, HumanEval, GSM8K, TruthfulQA  
 🔹 GPQA Diamond meria PhD-úroveň vedeckého uvažovania – modely dnes prekonávajú  
    odborníkov v ich vlastnom odbore  
-🔹 HLE (Humanity's Last Exam) je najťažší benchmark – z <10 % na 65 % za 13 mesiacov  
+🔹 HLE (Humanity's Last Exam) patrí medzi najťažšie verejné benchmarky;  
+  jeho skóre sa rýchlo mení s novými modelmi a metodikami
 🔹 BullshitBench meria odolnosť modelu voči nezmyselným premisám –  
    kvalitu, ktorú ostatné benchmarky ignorujú  
 🔹 Royale: Last Agent Standing meria rozhodovanie v kompetitívnom prostredí –  
