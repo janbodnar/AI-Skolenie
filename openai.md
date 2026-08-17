@@ -106,43 +106,31 @@ zmysle slova vynašli veľké jazykové modely. Pred GPT existovalo množstvo
 výskumných prác, no práve OpenAI ich premenil na praktické nástroje dostupné  
 vývojárom aj verejnosti.  
 
-| Verzia | Rok | Kľúčové vlastnosti |  
-| :--- | :--- | :--- |  
-| **GPT-1** | 2018 | Prvý model série, 117M parametrov, overenie konceptu |  
-| **GPT-2** | 2019 | 1,5 mld parametrov; úplné vydanie bolo |  
-|  |  | spočiatku odložené |  
-| **GPT-3** | 2020 | 175 mld parametrov, masívny skok, prvé komerčné API |  
-| **InstructGPT** | 2022 | RLHF tréning – reaguje na inštrukcie, |  
-|  |  | nie iba dokončuje text |  
-| **GPT-3.5 / ChatGPT** | nov. 2022 | Prelomový chatbot, 1 milión |  
-|  |  | používateľov za 5 dní |  
-| **GPT-4** | mar. 2023 | Silnejšie uvažovanie; obrazové vstupy |  
-|  |  | pribudli neskôr |  
-| **GPT-4o** | máj 2024 | Natívna multimodalita, rýchlosť, hlas |  
-| **GPT-4.5** | feb. 2025 | Výskumný preview; prirodzenejší chat bez |  
-|  |  | explicitného reasoning režimu |  
-| **OpenAI o1** | dec. 2024 | Prvý „uvažovací" model, interné |  
-|  |  | chain-of-thought |  
-| **GPT-5** | aug. 2025 | Zjednotený systém rýchleho a hlbšieho |  
-|  |  | myslenia |  
-| **GPT-5.1** | nov. 2025 | Vylepšený chat a reasoning; neskôr |  
-|  |  | vyradený z ChatGPT |  
-| **GPT-5.2** | dec. 2025 | Vylepšenia reasoning a profesionálnej práce |  
-| **GPT-5.3 Instant** | mar. 2026 | Rýchlejší model s lepším vyhľadávaním a |  
-|  |  | konverzáciou |  
-| **GPT-5.3-Codex** | feb. 2026 | Agentické kódovanie; približne o 25 % |  
-|  |  | vyššia rýchlosť |  
-| **GPT-5.4** | mar. 2026 | Reasoning, kódovanie, computer use, |  
-|  |  | tool search; API aj Codex |  
-| **GPT-5.4 mini** | mar. 2026 | Menší a úspornejší reasoning model |  
-| **GPT-5.5** | 2026 | Rodina Instant/Thinking pre všeobecné |  
-|  |  | použitie |  
-| **GPT-5.6 Sol** | júl 2026 | Vlajkový model pre najnáročnejší reasoning, |  
-|  |  | kódovanie, vedu a agentické úlohy |  
-| **GPT-5.6 Terra** | júl 2026 | Vyvážený model pre každodennú prácu; |  
-|  |  | výkon približne na úrovni GPT-5.5 |  
-| **GPT-5.6 Luna** | júl 2026 | Najrýchlejší a najúspornejší model |  
-|  |  | pre bežné a vysokobjemové úlohy |  
+Tu je oprava tabuľky (len som zlúčil zalomené riadky do jednej bunky):
+
+| Verzia | Rok | Kľúčové vlastnosti |
+| :--- | :--- | :--- |
+| **GPT-1** | 2018 | Prvý model série, 117M parametrov, overenie konceptu |
+| **GPT-2** | 2019 | 1,5 mld parametrov; úplné vydanie bolo spočiatku odložené |
+| **GPT-3** | 2020 | 175 mld parametrov, masívny skok, prvé komerčné API |
+| **InstructGPT** | 2022 | RLHF tréning – reaguje na inštrukcie, nie iba dokončuje text |
+| **GPT-3.5 / ChatGPT** | nov. 2022 | Prelomový chatbot, 1 milión používateľov za 5 dní |
+| **GPT-4** | mar. 2023 | Silnejšie uvažovanie; obrazové vstupy pribudli neskôr |
+| **GPT-4o** | máj 2024 | Natívna multimodalita, rýchlosť, hlas |
+| **OpenAI o1** | dec. 2024 | Prvý „uvažovací" model, interné chain-of-thought |
+| **GPT-4.5** | feb. 2025 | Výskumný preview; prirodzenejší chat bez explicitného reasoning režimu |
+| **GPT-5** | aug. 2025 | Zjednotený systém rýchleho a hlbšieho myslenia |
+| **GPT-5.1** | nov. 2025 | Vylepšený chat a reasoning; neskôr vyradený z ChatGPT |
+| **GPT-5.2** | dec. 2025 | Vylepšenia reasoning a profesionálnej práce |
+| **GPT-5.3-Codex** | feb. 2026 | Agentické kódovanie; približne o 25 % vyššia rýchlosť |
+| **GPT-5.3 Instant** | mar. 2026 | Rýchlejší model s lepším vyhľadávaním a konverzáciou |
+| **GPT-5.4** | mar. 2026 | Reasoning, kódovanie, computer use, tool search; API aj Codex |
+| **GPT-5.4 mini** | mar. 2026 | Menší a úspornejší reasoning model |
+| **GPT-5.5** | 2026 | Rodina Instant/Thinking pre všeobecné použitie |
+| **GPT-5.6 Sol** | júl 2026 | Vlajkový model pre najnáročnejší reasoning, kódovanie, vedu a agentické úlohy |
+| **GPT-5.6 Terra** | júl 2026 | Vyvážený model pre každodennú prácu; výkon približne na úrovni GPT-5.5 |
+| **GPT-5.6 Luna** | júl 2026 | Najrýchlejší a najúspornejší model pre bežné a vysokobjemové úlohy |
+
 
 Číslovanie modelov OpenAI sa delí na všeobecnú rodinu GPT, reasoning varianty,
 modely Codex a menšie verzie *mini* alebo *nano*. Označenie modelu v ChatGPT
