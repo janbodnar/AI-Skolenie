@@ -46,7 +46,7 @@ Google AI Studio
 - AI assistant
 - Tvorba jednoduchých aplikácií pomocou promptov
 
-Kimi K2 swarm agents
+Microsoft Azure AI tools
 
 Bezpečnosť a ochrana dát
 - GDPR a AI
