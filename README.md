@@ -46,8 +46,6 @@ Google AI Studio
 - AI assistant
 - Tvorba jednoduchých aplikácií pomocou promptov
 
-Microsoft Azure AI tools
-
 Bezpečnosť a ochrana dát
 - GDPR a AI
 - Riziká a best practices
