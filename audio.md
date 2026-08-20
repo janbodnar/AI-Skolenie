@@ -1,292 +1,224 @@
-# Audio Modely v umelej inteligencii
+# Audio modely v umelej inteligencii
 
+Audio AI patrí medzi najrýchlejšie sa meniace oblasti umelej inteligencie. Modely  
+dnes dokážu zvuk generovať, prepisovať, syntetizovať aj upravovať. Táto kapitola  
+sa sústreďuje na hudobnú generáciu, najmä na **ACE-Step** a **Lyria**, a zároveň  
+ukazuje, ako audio modely rozumne porovnávať a používať v praxi.  
 
-Audio modely predstavujú jednu z najdynamickejšie sa rozvíjajúcich oblastí umelej inteligencie v roku 2026.  
-Tieto systémy dokážu generovať, analyzovať a transformovať zvukový obsah s presnosťou, ktorá bola ešte pred  
-niekoľkými rokmi nemysliteľná. V tejto kapitole sa zameriame na dva kľúčové modely – **ACE-Step 1.5** a  
-**Lyria 3** – a poskytneme prehľad najlepších audio modelov dostupných v marci 2026.
-
+> **Aktualizácia:** 20. august 2026
+>
+> Funkcie, ceny, licencie a dostupnosť online služieb sa menia. Číselné údaje  
+> preto treba pred nasadením overiť v oficiálnej dokumentácii poskytovateľa.  
+> Označenie „open source“ navyše neznamená automaticky, že sú voľné aj všetky  
+> tréningové dáta alebo výstupy.  
 
 ## Čo sú audio AI modely?
 
-Audio modely sú špecializované systémy umelej inteligencie navrhnuté na prácu so zvukovým obsahom. 
-Delia sa do niekoľkých hlavných kategórií:
+Audio model je model strojového učenia, ktorý prijíma alebo vytvára zvuk,  
+reč, hudbu, prípadne ich textové a obrazové opisy. Najčastejšie sa stretávame  
+s týmito úlohami:
 
-| Kategória | Popis | Príklady využitia |
-|-----------|-------|-------------------|
-| **Text-to-Speech (TTS)** | Prevod textu na prirodzenú reč | Audioknihy, hlasoví asistenti, dabing |
-| **Speech-to-Text (STT)** | Prepis hovorenej reči na text | Transkripcie, titulky, hlasové príkazy |
-| **Text-to-Music** | Generovanie hudby z textového popisu | Soundtracky, kreatívna tvorba, reklama |
-| **Voice Cloning** | Klonovanie hlasu z krátkej vzorky | Personalizácia, brand hlasy, lokalizácia |
-| **Audio Editing** | Úprava a transformácia existujúceho audia | Remixovanie, čistenie, separácia stôp |
+| Oblasť | Čo model robí | Typické použitie |
+|---|---|---|
+| **Text-to-Speech (TTS)** | Prevedie text na hovorenú reč | Audioknihy, dabing, asistenti |
+| **Speech-to-Text (STT)** | Prepíše hovorenú reč na text | Titulky, zápis porád, vyhľadávanie |
+| **Text-to-Music** | Vytvorí hudbu podľa textového opisu | Demo nahrávky, soundtrack, reklama |
+| **Voice cloning** | Vytvorí hlas podobný referenčnej vzorke | Lokalizácia a personalizovaný obsah |
+| **Audio editing** | Zmení, vyčistí alebo rozdelí existujúce audio | Odšumenie, remix, izolácia stôp |
 
+Tieto kategórie sa môžu prekrývať. Napríklad hlasový agent používa STT na  
+porozumenie používateľovi, jazykový model na vytvorenie odpovede a TTS na jej  
+prečítanie.
 
-## ACE-Step 1.5 – Open-Source Model pre Generovanie Hudby
+## Ako vyberať audio model
 
-### Prehľad modelu
+Pri porovnávaní nestačí pozerať iba na kvalitu ukážok. Posudzujte najmä:
 
-**ACE-Step v1.5** je vysoko efektívny open-source fundamentálny model pre generovanie hudby, ktorý prináša  
-komerčnú kvalitu priamo na spotrebiteľský hardvér. Model bol vydaný v januári 2026 a predstavuje významný  
-míľnik v oblasti open-source hudobnej generácie.
+- **Úlohu:** potrebujete reč, hudbu, prepis alebo úpravu nahrávky?  
+- **Kontrolu:** podporuje model tempo, text piesne, štruktúru, referenčné audio  
+    alebo jednotlivé stopy?  
+- **Kvalitu a stabilitu:** počúvajte viac výstupov s rovnakým promptom, nie iba  
+    najlepšiu ukážku z webu.  
+- **Rýchlosť a cenu:** rozlišujte čas do prvého zvuku od času potrebného na  
+    vytvorenie celého súboru.  
+- **Licenciu a súkromie:** overte použitie výstupov, spracovanie vstupných dát,  
+    uchovávanie nahrávok a podmienky klonovania hlasu.  
+- **Prevádzku:** cloudová služba je pohodlná, lokálny model poskytuje väčšiu  
+    kontrolu, ale vyžaduje vhodný hardvér a údržbu.  
 
-### Kľúčové vlastnosti
+## ACE-Step
 
-| Vlastnosť | Detail |
-|-----------|--------|
-| **Licencia** | MIT – komerčné použitie povolené |
-| **Rýchlosť generovania** | < 2 sekundy na A100, < 10 sekúnd na RTX 3090 |
-| **VRAM požiadavky** | Menej ako 4 GB |
-| **Podporované jazyky** | 50+ jazykov |
-| **Dĺžka kompozície** | Od krátkych loopov až po 10-minútové skladby |
+### Charakteristika
 
-### Architektúra
+**ACE-Step** je model a ekosystém zameraný na generovanie hudby. Je zaujímavý  
+predovšetkým tým, že ponúka lokálne použitie a otvorenejší spôsob práce než  
+bežné webové hudobné služby. Konkrétne funkcie, modelové varianty a hardvérové  
+požiadavky sa môžu líšiť podľa vydania, preto ich treba kontrolovať v repozitári  
+a v licenčných súboroch konkrétnej verzie.  
 
-ACE-Step 1.5 využíva hybridnú architektúru, kde **jazykový model (LM)** funguje ako univerzálny plánovač.  
-Transformuje jednoduché používateľské požiadavky na komplexné hudobné plány pomocou techniky **Chain-of-Thought**.  
-Následne **Diffusion Transformer (DiT)** syntetizuje finálny audio výstup.
+### Typický pracovný tok
 
+```text
+Textový opis alebo referenčné audio
+                                 |
+                                 v
+                Plánovanie hudobného obsahu
+                                 |
+                                 v
+             Syntéza a vytvorenie audio stopy
+                                 |
+                                 v
+                Výber, úprava a export výstupu
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Textový prompt │ →  │  LM Planner     │ →  │  DiT Synthesizer│ →  Audio
-│  (50+ jazykov)  │    │  (CoT metas)    │    │  (Audio output) │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
 
-### Verzie modelu
+Zjednodušená schéma neopisuje presnú internú architektúru konkrétneho vydania.  
+Jej účelom je ukázať rozdiel medzi zadaním, generovaním a následnou produkčnou  
+úpravou.
 
-| Model | Kroky | Kvalita | Rýchlosť | 
-|-------|-------|---------|----------|
-| `acestep-v15-base` | 50 | Stredná | Štandardná |
-| `acestep-v15-sft` | 50 | Vysoká | Štandardná | 
-| `acestep-v15-turbo` | 8 | Veľmi vysoká | Rýchla | 
-| `acestep-v15-turbo-rl` | 8 | Veľmi vysoká | Najrýchlejšia |
+### Praktické použitie
 
-### Tréningové dáta
+- rýchle hudobné skice a prototypovanie,
+- podkladová hudba pre video alebo prezentáciu,
+- variácie motívu a experimentovanie so žánrom,
+- lokálne spracovanie tam, kde nie je vhodné nahrávať audio do cloudu.
 
-Model je trénovaný na legálne kompatibilnom datasete obsahujúcom:
+### Pseudokód
 
-- **Licencovanú hudbu** – profesionálne licencované tracky
-- **Royalty-Free hudbu** – verejná doména a bez autorských práv
-- **Syntetické dáta** – vysokokvalitné audio z MIDI-to-Audio konverzie
-
-### Praktické využitie
+Rozhranie sa medzi verziami líši. Nasledujúci príklad preto nie je príkaz,
+ktorý možno bez úprav spustiť, ale ilustrácia procesu:
 
 ```python
-# Príklad použitia ACE-Step 1.5 (pseudokód)
 from acestep import ACEStepModel
 
-model = ACEStepModel.load("acestep-v15-turbo")
+model = ACEStepModel.load("model-variant")
 audio = model.generate(
-    prompt="Upbeat electronic dance music with female vocals",
-    duration=30,  # sekundy
-    style="EDM"
+        prompt="Energetická elektronická hudba, 120 BPM, výrazná basová linka, bez vokálov",
+        duration=30,
 )
 audio.save("output.wav")
 ```
 
-### Demo
+### Odkazy
 
-https://huggingface.co/spaces/ACE-Step/ACE-Step  
-https://acemusic.ai/  
+- [ACE-Step na Hugging Face](https://huggingface.co/spaces/ACE-Step/ACE-Step)
+- [ACE Music](https://acemusic.ai/)
+- [ACE-Step 1.5 na GitHub](https://github.com/ace-step/ACE-Step-1.5)
 
-**Dostupné funkcie:**
+Pred komerčným použitím skontrolujte licenciu **kódu, modelových váh, vstupnej
+referencie aj výsledného diela**. Tieto podmienky nemusia byť totožné.
 
-- ✅ Generovanie celých piesní s vokálmi
-- ✅ Cover verzie existujúcich skladieb
-- ✅ Repaint (úprava existujúceho audia)
-- ✅ Vocal-to-BGM konverzia
-- ✅ Precízna kontrola štýlu
+## Lyria
 
+### Charakteristika
 
-## Lyria 3 – Google DeepMind pre Gemini AI
+**Lyria** je rodina modelov od Google DeepMind pre hudobnú generáciu. Aktuálna  
+oficiálna stránka uvádza okrem iného model **Lyria 3.5** a tvorbu skladieb až do  
+troch minút. Dostupné funkcie však závisia od konkrétnej verzie a produktu, v  
+ktorom je model sprístupnený. Pri hodnotení preto uvádzajte vždy aj rozhranie,  
+región a dátum overenia.  
 
-### Prehľad modelu
+Lyria podporuje rýchle kreatívne skice, experimentovanie s náladou, vokály,  
+obrazové zadanie a tvorbu skladieb s nastaviteľnou dĺžkou. Výstup treba pred  
+publikovaním vypočuť a prípadne ďalej upraviť v digitálnej audio pracovnej  
+stanici (DAW).
 
-**Lyria 3** je najpokročilejší model pre generovanie hudby od Google DeepMind, ktorý bol v februári  
-2026 integrovaný priamo do aplikácie Gemini. Model umožňuje používateľom vytvárať 30-sekundové audio  
-tracky vrátane vokálov a textov pomocou textových alebo obrazových promptov.
+### Príklad zadania
 
-### Kľúčové vlastnosti
-
-| Vlastnosť | Detail |
-|-----------|--------|
-| **Vývojár** | Google DeepMind |
-| **Dostupnosť** | Gemini AI asistent (free tier) |
-| **Dĺžka výstupu** | 30-sekundové tracky |
-| **Vokály** | Áno, s textami vo viacerých jazykoch |
-| **Vodotlač** | SynthID technológia na identifikáciu AI obsahu |
-
-### Hlavné funkcie
-
-#### Tvorba kohezívnych trackov
-Lyria 3 dokáže premeniť rýchle nápady na vysokokvalitnú hudbu, ktorá prirodzene plynie od začiatku do konca 
-
-#### Globálne jazyky a žánre
-Model podporuje vokály v rôznych jazykoch a vytvára hudbu naprieč žánrami – od popu cez funk až po Motown a klasickú hudbu .
-
-#### Kompozícia z obrázkov
-Nahrajte obrázok a Lyria 3 ho transformuje na custom vysokokvalitný track.
-
-#### Detailná kontrola
-Definujte realistické vokálne štýly, akustické preferencie, tempo a dynamiku.
-
-#### Export profesionálnej kvality
-Vytvorte crisp, clear tracky pripravené pre vaše projekty – od background ambience po mainstage anthem.
-
-### Podporované žánre (príklady)
-
-| Žáner | Príklad použitia |
-|-------|------------------|
-| Funk City Pop | Reklamy, lifestyle videá |
-| Motown | Retro projekty, filmy |
-| Classical | Dokumenty, vzdelávanie |
-| Instrumental | Background hudba |
-| Phonk | Gaming, športové videá |
-| Folk Pop | Storytelling, podcasty |
-| Pop Ballad | Emocionálne scenáre |
-| Retro Synthwave | Sci-fi, futuristické projekty |
-| Rock | Trailery, akčné videá |
-| Drum and Bass | Energetické obsahy |
-| Jazz | Lounge, kaviareň atmosféra |
-| Psychedelic Funk | Kreatívne experimenty |
-
-### Bezpečnosť a etika
-
-Google implementoval niekoľko ochranných opatrení [[16]]:
-- **Extensive filtering** – minimalizácia škodlivého obsahu v datasetoch
-- **SynthID vodotlač** – neviditeľné označenie AI-generated hudby
-- **Artist partnerships** – spolupráca s umelcami na tvorbe guardrails
-- **Privacy features** – ochrana súkromia pri generovaní
-
-### Príklad promptu pre Lyria 3
-
-```
-"Vytvor 30-sekundový upbeat birthday tune s ženskými vokálmi, 
-tempo 120 BPM, žáner pop, s klavírom a bicími"
+```text
+Vytvor krátku popovú hudobnú skicu k narodeninovému videu.
+Tempo: približne 120 BPM.
+Nálada: veselá a optimistická.
+Nástroje: klavír, basgitara a akustické bicie.
+Vokály: ženský hlas, jednoduchý slovenský refrén.
 ```
 
-Alebo pomocou obrázka:
+Pri generovaní hudby pomáha uviesť účel, žáner, náladu, tempo, nástroje,  
+hlasový charakter, dĺžku a obmedzenia. Zadanie je lepšie formulovať vlastnosťami  
+požadovaného výsledku než odkazom na konkrétneho žijúceho interpreta.  
 
-```
-[Nahraj obrázok pláže] + "Vytvor relaxačnú hudbu inšpirovanú týmto obrázkom"
-```
+### Bezpečnostné prvky
 
-## Tabuľka Top Audio Modelov 2026
+Poskytovateľ môže používať filtrovanie, pravidlá proti napodobňovaniu hlasov a  
+technológie na označovanie syntetického obsahu, napríklad SynthID. Presný rozsah  
+ochrany a podmienky použitia si overte v aktuálnej dokumentácii služby. Ochranný  
+mechanizmus nenahrádza ľudskú kontrolu práv k vstupom ani výstupom.  
 
-Nasledujúca tabuľka poskytuje komplexný prehľad najlepších audio modelov dostupných v marci 2026:
+## Orientačné porovnanie kategórií
 
-### Top Text-to-Speech (TTS) Modely
+Nasledujúci prehľad je rozhodovací rámec, nie rebríček kvality. Názvy služieb a  
+ich ceny sa menia rýchlejšie než vzdelávací materiál.  
+  
+| Potreba | Vhodná kategória | Na čo si dať pozor |
+|---|---|---|
+| Hovorený komentár | TTS | Výslovnosť, emócia, licencia hlasu |
+| Prepis rozhovoru | STT | Slovenčina, časové značky, súkromie |
+| Hudobná skica | Text-to-Music | Kontrola štruktúry a komerčné práva |
+| Hlasový agent | STT + LLM + TTS | Latencia, prerušenie reči, logovanie |
+| Úprava nahrávky | Audio editing | Artefakty, formát a zachovanie originálu |
 
-| # | Model | Vývojár | Typ | Latencia | Jazyky | Cena | Licencia |
-|---|-------|---------|-----|----------|--------|------|----------|
-| 1 | **ElevenLabs** | ElevenLabs | TTS + Voice Clone | ~100ms | 70+ | $0.10/min | Proprietárna |
-| 2 | **Qwen3-TTS** | Alibaba | TTS + Voice Clone | 97ms | 10+ | Free (self-host) | Apache 2.0 |
-| 3 | **Cartesia Sonic-3** | Cartesia | Real-time TTS | 40ms (Turbo) | 40+ | Web pricing | Proprietárna  |
-| 4 | **OpenAI GPT-4o mini TTS** | OpenAI | TTS | ~150ms | 50+ | API pricing | Proprietárna  |
-| 5 | **Deepgram Aura-2** | Deepgram | TTS + STT | 90-200ms | 7 | $0.030/1k chars | Proprietárna  |
-| 6 | **Fish Speech V1.5** | fishaudio | TTS | ~200ms | EN, CN, JP | $15/M bytes | Open-source |
-| 7 | **CosyVoice2-0.5B** | FunAudioLLM | Streaming TTS | 150ms | CN, EN, JP, KR | $7.15/M bytes | Open-source |
-| 8 | **IndexTTS-2** | IndexTeam | Zero-shot TTS | ~250ms | Viacjazyčné | $7.15/M bytes | Open-source |
-| 9 | **Amazon Polly** | AWS | TTS | ~200ms | 50+ | $4-100/1M chars | Proprietárna  |
-| 10 | **PlayHT** | PlayHT | TTS + Voice Clone | ~180ms | 142 | $39-99/mo | Proprietárna  |
+### Kritériá namiesto pevných rebríčkov
 
-### Top Text-to-Music Modely
+Ak potrebujete vybrať konkrétny model, vytvorte malý testovací súbor:  
 
-| # | Model | Vývojár | Dĺžka | Vokály | Komerčné použitie | Cena | Licencia |
-|---|-------|---------|-------|--------|-------------------|------|----------|
-| 1 | **Lyria 3** | Google DeepMind | 30s | Áno | Obmedzené | Free (Gemini) | Proprietárna |
-| 2 | **ACE-Step 1.5** | ACE-Step/StepFun | 10 min | Áno | Áno | Free (local) | MIT |
-| 3 | **Suno v4** | Suno AI | 4 min | Áno | Áno (Pro) | $10-30/mo | Proprietárna |
-| 4 | **Udio** | Udio | 2 min | Áno | Áno (Pro) | $10-30/mo | Proprietárna |
-| 5 | **Stable Audio 2.5** | Stability AI | 3 min | Nie | Áno | Free/Paid | Proprietárna |
-| 6 | **MusicLM 2** | Google | 1 min | Nie | Nie | Research | Proprietárna |
-| 7 | **Riffusion Pro** | Riffusion | 30s | Nie | Áno | Free/Paid | Open-source |
+1. Pripravte tri až päť rovnakých zadaní.  
+2. Použite rovnaký formát, jazyk a požadovanú dĺžku.  
+3. Zaznamenajte kvalitu, čas, cenu a počet nepoužiteľných výstupov.  
+4. Overte licenciu a podmienky spracovania dát.  
+5. Výsledky porovnajte s potrebami projektu, nie s marketingovým poradím.  
 
-###  Top Voice Agent Platformy
+Číselné údaje, ako latencia, MOS skóre, cena za minútu či minimálna dĺžka  
+vzorky pri klonovaní, uvádzajte iba vtedy, keď poznáte metodiku merania,  
+verziu modelu a dátum merania. Bez toho môžu vytvárať falošný dojem presnosti.  
 
-| # | Platforma | Vývojár | Latencia | Jazyky | Cena | Best For |
-|---|-----------|---------|----------|--------|------|----------|
-| 1 | **Grok Voice API** | xAI | < 1s | 100+ | $0.05/min | Conversational AI  |
-| 2 | **Vapi.ai** | Vapi | ~500ms | 50+ | $0.23-0.33/min | Custom voice agents  |
-| 3 | **Deepgram Flux** | Deepgram | ~300ms | 30+ | $0.030/1k chars | Enterprise STT/TTS  |
-| 4 | **ElevenLabs Agents** | ElevenLabs | ~400ms | 70+ | $0.10/min | Voice quality  |
+## Praktické odporúčania
 
+### Pre vzdelávanie
 
-## Porovnanie Kľúčových Metrík
+- Na komentár k videu vyberte TTS podľa výslovnosti, jazyka a možnosti opravy
+    výslovnosti.
+- Na hudobný podklad použite text-to-music, ale hlasitosť a dĺžku upravte v DAW.
+- Pri práci so študentskými alebo osobnými nahrávkami najprv odstráňte citlivé
+    údaje a overte, či ich služba môže ukladať alebo používať na zlepšovanie modelu.
 
-### Kvalita Hlasu (Voice Quality)
+### Pre komerčný projekt
 
-| Model | MOS Score* | Emócie | Naturalnosť |
-|-------|------------|--------|-------------|
-| ElevenLabs | 4.8/5 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Qwen3-TTS | 4.7/5 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Cartesia Sonic-3 | 4.6/5 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| OpenAI TTS | 4.5/5 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+Pred publikovaním si odškrtnite:
 
-*MOS = Mean Opinion Score
+- licenciu modelu a výstupu,
+- súhlas s použitými hlasmi a referenčnými nahrávkami,
+- pravidlá pre syntetické označenie obsahu,
+- povolenie na použitie hudby, textu a samplov,
+- spôsob archivácie promptov a zdrojových súborov.
 
-### Rýchlosť (Latency)
+## Etika a bezpečnosť
 
-| Model | Time-to-First-Audio | Best Use Case |
-|-------|---------------------|---------------|
-| Cartesia Sonic Turbo | 40ms | Real-time apps, gaming  |
-| Qwen3-TTS | 97ms | Self-hosted solutions  |
-| Deepgram Aura-2 | 90-200ms | Voice agents  |
-| ElevenLabs | ~100ms | Content creation  |
-| Grok Voice API | < 1s | Complete voice stack  |
+1. **Klonovanie hlasu:** používajte iba hlas s preukázateľným súhlasom. Súhlas  
+     má pokrývať účel, rozsah, obdobie a odvolanie povolenia.
+2. **Autorské práva:** licencia modelu sama osebe nerieši práva k tréningovým  
+     dátam, referenčnému audiu ani k textu vloženému do promptu.
+3. **Označovanie:** pri publikovaní syntetického hlasu alebo hudby rešpektujte  
+     pravidlá platformy a príslušné právne požiadavky.
+4. **Súkromie:** do cloudovej služby neposielajte citlivé nahrávky bez právneho  
+     a technického posúdenia.
+5. **Kontrola výstupu:** overte výslovnosť, skryté artefakty, podobnosť s cudzou  
+     tvorbou a vhodnosť pre cieľové publikum.
 
-### Voice Cloning – Požiadavky na Vzorku
+## Zhrnutie
 
-| Model | Minimálna dĺžka | Kvalita klonu |
-|-------|-----------------|---------------|
-| Qwen3-TTS | 3 sekundy | Vysoká  |
-| Resemble AI | 10 sekúnd | Vysoká  |
-| Cartesia | 15 sekúnd | Exact-fidelity  |
-| ElevenLabs | 3 minúty | Professional  |
-| PlayHT | Instant | Good  |
+- Audio AI zahŕňa viac než generovanie hudby: patrí sem TTS, STT, klonovanie  
+    hlasu aj úprava nahrávok.
+- ACE-Step je zaujímavý pre lokálne a experimentálne hudobné workflowy; presné  
+    vlastnosti treba overovať podľa konkrétnej verzie.
+- Lyria je vhodná na rýchle kreatívne návrhy; dostupnosť a licenčné podmienky  
+    závisia od produktu a regiónu.
+- Pri výbere rozhodujú úloha, kvalita, kontrola, cena, súkromie a licencia.
+- Pred komerčným použitím overte aktuálne podmienky a všetky použité zdroje.
 
+## Zdroje a dátum overenia
 
-## Praktické Odporúčania pre Využitie
+- [ACE-Step na Hugging Face](https://huggingface.co/spaces/ACE-Step/ACE-Step)
+- [ACE Music](https://acemusic.ai/)
+- [Google DeepMind: Lyria](https://deepmind.google/technologies/lyria/)
+- [Google DeepMind: prompt guide pre Lyria](https://deepmind.google/models/lyria/prompt-guide/)
 
-### Pre Vzdelávacie Účely
-
-| Účel | Odporúčaný Model | Dôvod |
-|------|------------------|-------|
-| Tvorba výukových videí | **ElevenLabs** | Najlepšia kvalita hlasu, 70+ jazykov |
-| Interaktívne tutoriály | **Grok Voice API** | Najrýchlejšia odozva, $0.05/min |
-| Lokalizácia obsahu | **Qwen3-TTS** | Open-source, self-hosting, 3s cloning |
-| Background hudba | **ACE-Step 1.5** | Komerčné použitie povolené, lokálne spustenie |
-| Kreatívne projekty | **Lyria 3** | Integrácia s Gemini, image-to-music |
-
-### Pre Komerčné Projekty
-
-| Kategória | Odporúčanie | Poznámka |
-|-----------|-------------|----------|
-| **Rozpočet < $50/mes** | Qwen3-TTS (self-host) + ACE-Step 1.5 | Zero per-minute costs |
-| **Rozpočet $50-200/mes** | ElevenLabs Creator + Lyria 3 | Kvalita + kreativita |
-| **Enterprise** | Deepgram + Grok Voice API | Scale, SLA, podpora |
-| **Gaming/Real-time** | Cartesia Sonic Turbo | 40ms latency critical |
-
-
-## Etické aspekty a bezpečnosť
-
-### Kľúčové Body na Zapamätanie
-
-1. **Súhlas s klonovaním hlasu** – Vždy získajte explicitný súhlas pred klonovaním hlasu inej osoby 
-2. **Watermarking** – Lyria 3 používa SynthID na označenie AI-generated obsahu [[11]]
-3. **Komerčné licencie** – Overte licenčné podmienky (ACE-Step 1.5 = MIT ✅, Lyria 3 = obmedzené ⚠️) [[2]]
-4. **Harmful content filtering** – Väčšina providerov implementuje filtre na škodlivý obsah [[16]]
-5. **Data sovereignty** – Pre citlivé dáta zvážte self-hosted riešenia (Qwen3-TTS, ACE-Step) 
-
-
-## Zhrnutie Kapitoly
-
-| Téma | Kľúčové Body |
-|------|--------------|
-| **ACE-Step 1.5** | Open-source, MIT licencia, <4GB VRAM, 50+ jazykov, komerčné použitie ✅ |
-| **Lyria 3** | Google DeepMind, Gemini integrácia, 30s tracky, SynthID watermark |
-| **Top TTS** | ElevenLabs (kvalita), Cartesia (rýchlosť), Qwen3-TTS (open-source) |
-| **Voice Cloning** | 3 sekundy (Qwen3) až 3 minúty (ElevenLabs) potrebných |
-| **Ceny** | Od free (self-host) po $0.10/min (ElevenLabs) |
-| **Etika** | Súhlas, watermarking, licencie, filtering |
-
+Posledná redakčná aktualizácia: **20. august 2026**. 
