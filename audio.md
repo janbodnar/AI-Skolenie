@@ -104,8 +104,8 @@ audio.save("output.wav")
 - [ACE Music](https://acemusic.ai/)
 - [ACE-Step 1.5 na GitHub](https://github.com/ace-step/ACE-Step-1.5)
 
-Pred komerčným použitím skontrolujte licenciu **kódu, modelových váh, vstupnej
-referencie aj výsledného diela**. Tieto podmienky nemusia byť totožné.
+Pred komerčným použitím skontrolujte licenciu **kódu, modelových váh, vstupnej  
+referencie aj výsledného diela**. Tieto podmienky nemusia byť totožné.  
 
 ## Lyria
 
