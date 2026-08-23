@@ -23,7 +23,7 @@ situations, and solve tasks similarly to a human.
 > **Simply put:** AI is a computer program that can learn from data and help  
 > us solve tasks – from writing texts to recognizing images.
 
-![Classic algorithms vs. machine learning](../en/data/algo-ai.png)
+![Classic algorithms vs. machine learning](../data/algo-ai.png)
 
 Key characteristics of AI models
 
@@ -106,7 +106,7 @@ Input (data) → Hidden layers (processing) → Output (result)
 
 ## Sources of Information and Knowledge
 
-![Internet iceberg](../en/data/internet-ladovec.png)
+![Internet iceberg](../data/internet-ladovec.png)
 
 *The internet iceberg – the visible part (above the surface) represents the everyday web content that people visit daily.
 Hidden below the surface is a much larger part of the internet: specialized databases, scientific archives, forums,
@@ -169,7 +169,7 @@ Practical implications for users
 | **Statistics and data** | Figures (e.g., population numbers, cryptocurrency prices) may be historical, not current. | Always verify numerical data in real time. |
 | **Scientific discoveries** | The latest studies or publications after the cut-off date are not included in the model. | Use search or academic databases for the newest findings. |
 
-![Knowledge ceiling](../en/data/knowledge-cutoff.png)
+![Knowledge ceiling](../data/knowledge-cutoff.png)
 
 **Summary for students:**
 
