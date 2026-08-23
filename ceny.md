@@ -288,15 +288,4 @@ zmeniť cenu, názov modelu, limity aj podmienky off-peak režimu.
 
 ## Otázky & diskusia  
 
-1.  Vysvetlite rozdiel medzi vstupnými a výstupnými tokenmi.  
-2.  Prečo býva cena výstupných tokenov vyššia než cena vstupných tokenov?  
-3.  Vypočítajte cenu požiadavky s 8 000 vstupnými a 2 000 výstupnými tokenmi,  
-    ak vstup stojí 1 $/1M tokenov a výstup 5 $/1M tokenov.  
-4.  Prečo sa pri dlhom chate účtuje aj história predchádzajúcich správ?  
-5.  Vysvetlite rozdiel medzi API a mesačným predplatným.  
-6.  Kedy je vhodné použiť batch alebo off-peak spracovanie?  
-7.  Aké riziko vzniká pri programe, ktorý opakovane odosiela tú istú požiadavku?  
-8.  Navrhnite tri spôsoby, ako znížiť náklady aplikácie používajúcej AI API.  
-9.  Prečo môže mať menší model nižšiu cenu, ale zároveň byť pre určitú úlohu  
-    nevhodný?  
-10. Diskutujte: je pre používateľa lepšie predplatné, alebo platba podľa spotreby?  
+
