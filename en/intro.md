@@ -77,7 +77,7 @@ My students use AI for:
 
 ### Neural networks – inspired by the brain:
 
-![Neural networks](../en/data/neural-network.png)
+![Neural networks](../data/neural-network.png)
 
 ```
 Input (data) → Hidden layers (processing) → Output (result)
