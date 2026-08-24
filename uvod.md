@@ -94,6 +94,10 @@ Vstup (dátum) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 > 🎯 **Zjednodušená metafora:** Predstavte si neurónovú sieť ako tím špecialistov, kde každý rieši malú
 > časť úlohy a spoločne dospeli k výsledku.
 
+### Knihy
+
+https://www.youtube.com/watch?v=FT5O2JyrvOk
+
 ## Veľké jazykové modely (LLM) 
 
 **LLM** (napr. GPT, Gemini, LLaMA) sú AI trénované na miliardách textov z internetu. Vedia:
