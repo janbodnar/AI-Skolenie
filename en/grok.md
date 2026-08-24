@@ -1,4 +1,4 @@
-Grok and xAI  
+# Grok and xAI  
   
 Among all the major players in artificial intelligence, xAI is  
 perhaps the most unusual. It doesn't have decades of research  
