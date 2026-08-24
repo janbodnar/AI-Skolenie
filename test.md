@@ -1,5 +1,5 @@
 
-https://audio-transcriber-translator-528965810214.europe-west1.run.app
+[https://audio-transcriber-translator-528965810214.europe-west1.run.app](https://ai.studio/apps/78062ef0-1213-4f79-b2cf-b3cc3284580d)
 
 ```python
 import requests
