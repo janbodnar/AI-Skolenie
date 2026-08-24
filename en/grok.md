@@ -1,6 +1,10 @@
 # Grok and xAI
 
-Among all the major players in artificial intelligence, xAI is perhaps the most unusual. It doesn't have decades of research behind it like Google, nor billions in investment from Microsoft like OpenAI. Instead, it has something else – **Elon Musk** and his ambition to build an AI that isn't "woke" but rather "maximally seeks truth." The product of this ambition is called **Grok**, and since its inception in 2023, it has become one of the most discussed, fastest-growing, and simultaneously most controversial AI systems in the world.
+Among all the major players in artificial intelligence, xAI is perhaps the most unusual. It doesn't have  
+decades of research behind it like Google, nor billions in investment from Microsoft like OpenAI. Instead,  
+it has something else – **Elon Musk** and his ambition to build an AI that isn't "woke" but rather  
+"maximally seeks truth." The product of this ambition is called **Grok**, and since its inception in 2023,  
+it has become one of the most discussed, fastest-growing, and simultaneously most controversial AI systems in the world.
 
 [Grok AI Assistant](https://grok.com/)
 
