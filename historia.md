@@ -1,553 +1,249 @@
 # História umelej inteligencie  
 
-**Umela inteligencia (AI)** je odvetvie informatiky, ktoré sa zaoberá tvorbou  
-počítačových systémov schopných vykonávať úlohy, ktoré bežne vyžadujú ľudskú  
-inteligenciu. Medzi takéto úlohy patria:  
+Umelá inteligencia (AI) je odbor informatiky, ktorý skúma metódy, ktoré  
+umožňujú počítačom vykonávať úlohy spájané s ľudskou inteligenciou. Patria  
+medzi ne vnímanie, učenie, plánovanie, porozumenie jazyku a rozhodovanie.  
+AI nie je  
+jeden algoritmus, ale široká skupina prístupov – od pravidiel a logiky až po  
+neurónové siete trénované na dátach.  
 
-- Rozpoznávanie obrazu a reči  
-- Rozhodovanie v neistých situáciách  
-- Preklad jazykov  
-- Riešenie problémov a plánovanie  
+Vývoj AI neprebiehal priamočiaro. Obdobia veľkého optimizmu striedali  
+fázy,  
+keď technológia nedokázala splniť sľuby a financovanie výskumu kleslo.  
+Dnešný  
+pokrok stojí najmä na kombinácii kvalitných dát, výkonného hardvéru,  
+pokročilých algoritmov a rozsiahleho inžinierskeho zázemia.  
 
-> 💡 **Kľúčový pojem:** *AI nie je jeden konkrétny algoritmus, ale súbor metód  
-> a techník, ktoré umožňujú strojom „myslieť" alebo aspoň napodobňovať  
-> ľudské kognitívne funkcie.*  
+## Obsah  
 
-AI sa dnes už nepovažuje len za teoretický koncept, ale za základnú technológiu,  
-ktorá mení zdravotníctvo, financie, dopravu, vzdelávanie aj zábavu. AI nie je  
-„mágia" – ide o matematické modely, dáta a  ýpočtový výkon, ktoré spolu vytvárajú užitočné nástroje.  
-
-
-## Rané základy (40. – 50. roky 20. storočia)  
-
-### Kľúčové postavy a myšlienky  
-
-**Alan Turing** (britský matematik): V roku 1950 publikoval prácu *„Computing Machinery and Intelligence"*,  
-v ktorej položil otázku *„Môžu stroje myslieť?"*. Navrhol **Turingov test** – ak stroj dokáže viesť  
-konverzáciu, ktorú človek nerozozná od ľudskej, možno ho považovať za inteligentný.  
-**Turingov stroj**: Teoretický model výpočtu, ktorý položil matematické základy pre všetky moderné počítače.  
-
----  
-
-## Dartmouthská konferencia (1956) – Zrodenie AI  
-
-Ak by sme mali vybrať jediný moment, keď sa umelá inteligencia „narodila" ako  
-vedecká disciplína, bol by to **leto 1956 na Dartmouth College** v Hannoveri,  
-New Hampshire, USA. Konferencia, ktorá tu prebehla, nedala svetu len nový  
-výskumný smer – dala mu aj samotný termín, pod ktorým ho poznáme dodnes.  
-
-
-![Dartmouthská konferencia](data/darth-conf.png)
-
-
-### Ako to vzniklo  
-
-V lete **1955** John McCarthy (vtedy 27-ročný matematik na Dartmouth College)  
-spolu s Marvin Minskym, Nathanielom Rochesterom a Claudeom Shannonom napísali  
-žiadosť o grant na Rockefellerovu nadáciu. V tomto dokumente po prvýkrát  
-písomne použili slovné spojenie:  
-
-> *„artificial intelligence"*  
-
-Návrh opisoval plán na dvojmesačný workshop pre cca 10 vedcov, ktorí by  
-spoločne skúmali, či sa dajú aspekty ľudskej inteligencie tak presne popísať,  
-aby ich stroj dokázal simulovať. Rockefeller foundation grant schválila –  
-vo výške **13 500 dolárov**.  
-
-### Účastníci: „zakladatelia" AI  
-
-Na konferencii sa zúčastnilo celkovo **10 vedcov** – v rôznych časových  
-intervaloch počas leta 1956. Mnohí z nich sa neskôr stali legendami odboru:  
-
-| Meno | Inštitúcia | Neskorší prínos |  
-| :--- | :--- | :--- |  
-| **John McCarthy** | Dartmouth College | Zakladateľ LISP, pojem „AI", Turing Award 1971 |  
-| **Marvin Minsky** | Harvard University | Zakladateľ MIT AI Lab, Turing Award 1969 |  
-| **Claude Shannon** | Bell Labs | Zakladateľ teórie informácie |  
-| **Nathaniel Rochester** | IBM | Prvý programátor na IBM 701 |  
-| **Allen Newell** | RAND Corporation | Co-autor Logic Theorist a GPS |  
-| **Herbert Simon** | Carnegie Tech | Nobelova cena za ekonómiu 1978, Turing Award 1975 |  
-| **Arthur Samuel** | IBM | Priekopník strojového učenia (program na dámy) |  
-| **Oliver Selfridge** | MIT Lincoln Lab | Priekopník rozpoznávania vzorov |  
-| **Ray Solomonoff** | | Zakladateľ algoritmickej teórie pravdepodobnosti |  
-| **Trenchard More** | Princeton | Výskumník symbolickej logiky |  
-
-> 🎓 **Pre študentov:** Zo zoznamu účastníkov vyplýva, že AI od začiatku nebola  
-> len „kódovanie" – bola to interdisciplinárna veda na pomedzí matematiky,  
-> psychológie, lingvistiky a inžinierstva.  
-
-### Hlavná hypotéza konferencie  
-
-Ústredná myšlienka, ktorú McCarthy sformuloval v petícii a ktorá sa stala  
-základným predpokladom celého odboru:  
-
-> *„Every aspect of learning or any other feature of intelligence can in  
-> principle be so precisely described that a machine can be made to simulate it."*  
->  
-> *„Každý aspekt učenia alebo inej vlastnosti inteligencie možno principiálne  
-> presne popísať tak, aby ho stroj dokázal simulovať."*  
-
-Ide o odvážnu – a dodnes diskutovanú – hypotézu. Predpokladá, že **ľudská  
-inteligencia je algoritmicky reprodukovateľná**. Práve tento predpoklad bol  
-živnou pôdou pre nasledujúce desaťročia výskumu: aj pre triumfy, aj pre  
-sklamania a AI zimy.  
-
-> In the early 1960s, McCarthy argued that ‘computation may someday be organized as a > public utility’.
-
->  Začiatkom 60. rokov McCarthy tvrdil, že výpočtová technika môže byť jedného dňa
->  organizovaná ako verejná služba.
-
-
-### Čo sa na konferencii skutočne dialo  
-
-Konferencia nebola žiadna grandiózna udalosť. Bol to neformálny letný  
-workshop, kde sa vedci stretávali po skupinách, diskutovali a prezentovali  
-svoje práce. Atmosféra bola skôr akademickým brainstormingom než formálnou  
-konferenciou.  
-
-Najvýznamnejšia vec, ktorá sa na nej ukázala, bol program **Logic Theorist**  
-od Newella a Simona – prvý program, ktorý dokazoval matematické vety z  
-Principia Mathematica Bertranda Russella. Keď ho Newell prezentoval,  
-išlo o prvý reálny dôkaz, že počítač dokáže vykonávať „inteligentnú" činnosť.  
-
-Paradoxne, účastníci vtedy **nevedeli o spoločnom projekte navzájom** – každý  
-pracoval na vlastnom prístupe (symbolická logika, neurónové siete, jazykové  
-modely). Táto divergencia od začiatku predznamenala, že AI nebude jednou  
-metódou, ale množinou rôznych smerov.  
-
-### Dedičstvo: Prečo je Dartmouth dôležitý dodnes  
-
-1. **Terminológia:** Termín *„artificial intelligence"* sa stal medzinárodným  
-   štandardom. McCarthy ho zvolil zámerne – odlišoval sa od vtedajšieho  
-   výskumu kybernetiky (Wiener) a teórie automatov, ktoré mali odlišné konotácie.  
-
-2. **Legitimita:** Konferencia dala AI štatút akademickej disciplíny. Po  
-   Dartmouth je AI čosi, čo sa vyučuje, financuje a skúma systematicky.  
-
-3. **Komunita:** Dartmouth spojil vedcov z rôznych inštitúcií, ktorí si  
-   vytvorili siete, spolupracovali a zakladali laboratóriá. AI Lab na MIT  
-   (Minsky + McCarthy, 1959) a AI Lab v Stanforde (McCarthy, 1963) priamo  
-   vyrastajú z tejto komunity.  
-
-4. **Optimizmus – a jeho cena:** Vedci odišli z konferencie plní optimizmu.  
-   Simon predpovedal, že „do 10 rokov bude počítač šachovým majstrom sveta"  
-   a „do 20 rokov zvládne akúkoľvek prácu, ktorú robí človek." Tento  
-   optimizmus prilákal financie, ale aj sklamanie, keď sa vízie nenaplnili  
-   v predpokladanom čase – čo priamo viedlo k prvej AI zime.  
-
-> 💡 **Záver:** Dartmouth 1956 nebol len akademický míľnik – bol to okamih, keď  
-> ľudstvo po prvýkrát kolektívne rozhodlo, že vytvoriť umelú inteligenciu je  
-> legitímny vedecký cieľ, nie len sci-fi fantázia.  
+- [Rané základy](#rané-základy)  
+- [Dartmouthská konferencia](#dartmouthská-konferencia-1956)  
+- [Symbolická AI a prvé systémy](#symbolická-ai-a-prvé-systémy)  
+- [AI zimy](#ai-zimy)  
+- [Návrat strojového učenia](#návrat-strojového-učenia)  
+- [Hlboké učenie a moderná AI](#hlboké-učenie-a-moderná-ai)  
+- [Veľké jazykové modely](#veľké-jazykové-modely)  
+- [AI a vízie sci-fi](#ai-a-vízie-sci-fi)  
+- [Výzvy a príležitosti](#výzvy-a-príležitosti)  
 
 ---  
 
-### Rané prístupy: Symbolická AI (GOFAI)  
-
-> 🎓 **Pre študentov:** Symbolická AI predpokladala, že ľudské myslenie možno redukovať na manipuláciu  
-> so symbolmi podľa pevných pravidiel – podobne ako v logike alebo matematike.  
-
-- **Logic Theorist** (1956, Newell & Simon): Prvý program, ktorý dokazoval matematické vety  
-- **Samuelov program na dámu** (1952): Učil sa hrať prostredníctvom seba-hry – raný príklad **strojového učenia**  
-- **LISP** (1958, McCarthy): Programovací jazyk navrhnutý špeciálne pre AI výskum  
-
-> ⚠️ **Obmedzenia raných systémov:** Fungovali len vo veľmi úzkych doménach a vyžadovali ručné  
-> kódovanie znalostí.  
-
-
-## Kľúčové milníky (60. – 90. roky)  
-
-### Prvé interaktívne systémy  
-
-- **ELIZA** (1966, Weizenbaum): Jednoduchý chatbot, ktorý simuloval terapeuta pomocou vzorov a nahradzovania slov.  
-
-> 🤔 **Diskusná otázka:** Prečo ľudia niekedy pripisujú „pochopenie" jednoduchým systémom ako ELIZA?  
-
-
-https://www.youtube.com/watch?v=B6rKUf9DWRI  
-
-```  
-### The Mother of All Demos“ (1968)  
-
-V roku 1968 Douglas Engelbart predstavil revolučnú ukážku počítačových technológií, ktoré boli desaťročia  
-pred svojou dobou. Demonštroval prvú počítačovú myš, prácu s textom podobnú dnešným textovým editorom,  
-hypertextové prepojenia pripomínajúce budúci internet, ako aj vzdialenú spoluprácu a videokomunikáciu.  
-Video ukazuje, ako si Engelbart predstavoval budúcnosť práce s počítačmi – interaktívnu, prepojenú a zameranú  
-na zdieľanie informácií. Dnes je táto prezentácia považovaná za jeden z najdôležitejších momentov  
-v dejinách informatiky.  
-```  
-
-
-```  
-Šesťdesiate roky boli obdobím, keď sa svet akoby naraz prebudil do éry technológie, kreativity a  
-odvážnych vízií. V informatike sa rodili prvé interaktívne počítače, vznikali základy internetu  
-a vedci začínali experimentovať s myšlienkami, ktoré dnes považujeme za samozrejmé. Paralelne s tým  
-prebiehal vesmírny program, ktorý posúval hranice ľudských možností, a kultúra prechádzala radikálnymi  
-zmenami – od hudby cez dizajn až po spôsob, akým ľudia premýšľali o budúcnosti. Bola to dekáda,  
-v ktorej sa technológie, veda a spoločenské hnutia spojili do jedného veľkého zrýchlenia. Práve v tomto  
-prostredí vznikla aj Engelbartova demonštrácia – ako dôkaz, že predstavivosť a odvaha dokážu predbehnúť  
-svoju dobu o celé desaťročia.  
-
-Z dnešného pohľadu sa zdá, že práve v tejto dekáde boli položené neviditeľné, no kľúčové základy dnešnej  
-digitálnej doby a umelej inteligencie. V laboratóriách vznikali prvé neurónové siete a perceptrony, ktoré  
-hoci vtedy ešte nedosahovali dnešné výkony, definovali smerovanie celého odvetvia na nasledujúcich 60 rokov.  
-J. C. R. Licklider vtedy snívao o „medzigalaktickej počítačovej sieti", čo bol priamy predobraz dnešného  
-internetu, a koncept time-sharingu umožnil ľuďom interagovať s počítačmi v reálnom čase namiesto čakania na  
-výsledky z predchádzajúceho dňa. Táto unikátna kombinácia odvážnych teórií, štátneho financovania výskumu a  
-praktických experimentov vytvorila úrodnú pôdu, z ktorej dnes čerpáme. Bez optimizmu a investícií do výskumu  
-v 60. rokoch by sme dnes nemali ani počítače, ktoré nás obklopujú, natož inteligentné systémy, ktoré nám  
-pomáhajú riešiť komplexné problémy.  
-```  
-
-  
-
-### Expertné systémy (70. – 80. roky)  
-
-> 🎓 **Definícia:** Expertné systémy sú AI programy, ktoré napodobňujú rozhodovanie ľudských expertov  
-> pomocou pravidiel typu *„ak – potom"*.  
-
-| Systém | Oblasť | Význam |  
-|--------|--------|---------|  
-| **DENDRAL** (1965–69) | Chémia | Pomáhal identifikovať molekulárne štruktúry |  
-| **MYCIN** (1972) | Medicína | Diagnostikoval krvné infekcie a odporúčal antibiotiká |  
-| **XCON** (1980) | IT konfigurácia | Ušetril firme DEC milióny dolárov |  
-
-> 💡 **Poučenie:** Expertné systémy boli úspešné, ale ťažko sa udržiavali a nedokázali  
-> sa učiť z nových skúseností.  
-
-### Návrat neurónových sietí a strojového učenia  
-
-- **Backpropagation** (80. roky): Algoritmus na trénovanie viacvrstvových neurónových  
-  sietí (Rumelhart, Hinton, Williams)  
-- **Konvolučné neurónové siete (CNN)** (Yann LeCun): Umožnili rozpoznávanie rukopisu priamo z dát  
-- **Deep Blue vs. Kasparov** (1997): IBM porazil svetového šachového šampióna – ukážka sily  
-  kombinácie hrubej výpočtovej sily a heuristík  
-
-> 🎯 **Pre študentov:** Tento vývoj ukázal, že prístupy založené na dátach a učení môžu  
-> prekonať systémy založené výlučne na ručne kódovaných pravidlách.  
-
-
-## „AI zimy" – Obdobia poklesu záujmu (70. a 90. roky)  
-
-### Čo sú „AI zimy"?  
-> 🎓 **Definícia:** Obdobia, kedy došlo k výraznému zníženiu financovania a záujmu o AI výskum  
-> kvôli nesplneným očakávaniam.  
-
-### Prvá AI zima (70. roky)  
-- Príčiny:  
-  - Príliš optimistické predpovede („ľudská úroveň inteligencie do 20 rokov")  
-  - Obmedzenia symbolickej AI: chýbajúce „zdravý rozum", neschopnosť zvládnuť reálnu komplexitu  
-  - Nedostatočný výpočtový výkon  
-- **Lighthillova správa** (1973): Kritika AI výskumu vo Veľkej Británii → škrty vo financovaní  
-
-### Druhá AI zima (koniec 80. – začiatok 90. rokov)  
-- Kolaps trhu s expertnými systémami:  
-  - Vysoké nároky na údržbu  
-  - Nemožnosť učenia sa z nových skúseností  
-  - Krach špecializovaných hardvérových firiem (LISP stroje)  
-  
-- Termín „AI" sa stal stigmatizovaným → výskumníci premenovali svoju prácu na  
-  *„strojové učenie"*, *„neurónové siete"*  
-
-> 💡 **Poučenie pre budúcnosť:**  
-> - Dôležité je realisticky manažovať očakávania  
-> - Praktické aplikácie a merateľné výsledky sú kľúčové pre udržanie podpory  
-> - Technologické obmedzenia treba brať vážne  
-
----  
-
-## Moderná éra (2000 – 2010): Návrat AI  
-
-### Tri pilierové faktory renesancie AI:  
-1. **Výpočtový výkon**: GPU (grafické procesory) umožnili paralelné trénovanie veľkých neurónových sietí  
-2. **Veľké dáta (Big Data)**: Internet, sociálne siete a senzory generujú obrovské množstvo trénovacích dát  
-3. **Algoritmické prelomy**: Hlboké učenie (deep learning) a architektúry ako Transformery  
-
-### Kľúčové momenty:  
-- **ImageNet** (2009): Dataset miliónov označených obrázkov → katalyzátor pre počítačové videnie  
-- **AlexNet** (2012): Hlboká konvolučná sieť, ktorá výrazne vyhrala súťaž ImageNet → štart éry hlbokého učenia  
-- **AlphaGo** (2016): Porazil svetového šampióna v Go – hra považovaná za príliš komplexnú pre AI  
-- **Open-source frameworky**: TensorFlow (2015), PyTorch (2016) → demokratizácia prístupu k AI  
-
-> 🎯 **Pre študentov:** Moderná AI nie je o „programovaní pravidiel", ale o **trénovaní modelov na dátach**.  
-> Kvalita a množstvo dát sú často dôležitejšie ako zložitosť algoritmu.  
-
-
-## Veľké jazykové modely (LLMs) – Aktuálna revolúcia  
-
-### Čo sú LLMs?  
-
-> 🎓 **Definícia:** Veľké jazykové modely (Large Language Models) sú neurónové siete trénované na obrovských množstvách  
-> textu, ktoré dokážu generovať a chápať ľudský jazyk.  
-
-### Kľúčové technológie:  
-- **Transformery** (2017, Google): Architektúra založená na *self-attention* mechanizmoch → efektívnejšie spracovanie dlhých textov  
-- **BERT** (2018): Model, ktorý sa učí kontext obojsmerne → zlepšil výsledky v mnohých NLP úlohách  
-- **GPT séria** (OpenAI): Ukázala silu škálovania – väčšie modely + viac dát = lepšie schopnosti  
-
-### Čo LLMs dokážu?  
-✅ Písať eseje, odpovedať na otázky, zhrňovať texty  
-✅ Prekladať jazyky, generovať kód, viesť konverzácie  
-✅ Pomáhať pri výučbe, výskume, kreatívnej tvorbe  
-
-> ⚠️ **Obmedzenia a riziká:**  
-> - Môžu generovať nesprávne alebo zavádzajúce informácie („halucinácie")  
-> - Môžu zosilňovať predsudky prítomné v trénovacích dátach  
-> - Vyžadujú obrovské výpočtové zdroje → environmentálne a ekonomické otázky  
-
-> 🤔 **Diskusná otázka:** Ako by sme mali používať LLMs vo vzdelávaní, aby sme podporili učenie, nie len kopírovanie odpovedí?  
-
-
-Tu je naformátovaný text s riadkami po približne 80 znakov a každý paragraf ukončený dvoma medzerami. Všetky odkazy sú funkčné a zachoval som štruktúru pôvodného textu.  
-
----  
-
-## Keď sci-fi predbehlo čas: Nápady z filmov, ktoré sú dnes realitou  
-
-Už po desaťročia nám sci-fi filmy ukazovali svet budúcnosti – niektoré  
-vynálezy vyzerali ako čistá fantázia, iné sa postupne stali bežnou súčasťou  
-nášho života. Šesťdesiate roky boli obdobím, keď sa svet akoby prebudil do éry  
-technológie a odvážnych vízií, ale až dnes vidíme, ako sa mnohé z týchto snov  
-naplnili. Science fiction často slúžil ako „testovacie pole" pre budúce  
-inovácie. Tu je niekoľko príkladov technológií, ktoré kedysi existovali len na  
-plátne, a dnes ich používame takmer každý deň.  
-
----  
-
-**Komunikácia s počítačom prirodzeným jazykom**  
-Vo filme *Votrelec* (1979) posádka lode Nostromo komunikuje s palubným  
-počítačom MOTHER hlasovými príkazmi.  
-🔗 **Ukážka scény:** [Alien (1979) – Dallas Accesses Mother](https://www.youtube.com/watch?v=oxdCEBppRM8)  
-
-Dnes sú virtuálni asistenti ako Siri, Google Assistant či veľké jazykové  
-modely (ChatGPT, DeepSeek) samozrejmosťou – rozprávame sa s nimi, pýtame sa na  
-počasie, diktujeme správy alebo ich využívame ako kreatívnych partnerov na  
-riešenie komplexných problémov.  
-
----  
-
-**Videohovory a telekonferencie**  
-V *Vetrelcoch* (1986) si poručík Ripleyová volá so svojimi nadriadenými cez  
-obrazovku, kým je v hyperpriestore. V tom čase išlo o futuristickú vymoženosť.  
-🔗 **Ukážka scény:** [Aliens (1986) – Ripley Video Call Scene](https://www.youtube.com/watch?v=qSSRXuHfAwY)  
-
-Dnes videohovory cez Zoom, Teams alebo FaceTime využívajú milióny ľudí na  
-prácu, vzdelávanie aj súkromné stretnutia, čo sa stalo štandardom najmä po  
-roku 2020.  
-
----  
-
-**Holografické displeje a teleprezenzia**  
-Hologramy, ktoré sa vznášajú vo vzduchu, sme obdivovali v pôvodnom *Star Wars*  
-(1977) či v *Blade Runnerovi* (1982).  
-🔗 **Ukážka scény (Star Wars):** [Star Wars (1977) – Princess Leia Hologram](https://www.youtube.com/watch?v=8N_Cj3ZS9-A)  
-
-Hoci ešte nemáme doma plnohodnotné 3D projekcie vo vzduchu, v reálnom svete už  
-existujú holografické vitríny, pódiové efekty a pokročilé head-up displeje v  
-autách či lietadlách. Technológie ako Microsoft HoloLens zase umožňujú pocit  
-„byť tam" na diaľku.  
-
----  
-
-**Tablety a dotykové obrazovky**  
-Posádka *Star Treku* používala „PADD" už v 60. rokoch. *2001: Vesmírna odysea*  
-(1968) ukazovala novinárov s plochými obrazovkami.  
-🔗 **Ukážka scény (2001):** [2001: A Space Odyssey (1968) – Tablet Scene](https://www.youtube.com/watch?v=5T1UGfm_OMM)  
-
-Skutočný boom nastal až s iPadom (2010) a následnými tabletmi, ktoré dnes  
-nájdeme v školách, nemocniciach aj v rukách malých detí.  
-
----  
-
-**Umelá inteligencia ako spoločník**  
-Film *Her* (2013) predstavil operačný systém (AI), do ktorého sa hlavný hrdina  
-zamiluje.  
-🔗 **Ukážka scény:** [Her (2013) – Installing Samantha OS](https://www.youtube.com/watch?v=f9Hg1x-Ctlw)  
-
-Dnes síce nemáme AI s plnou emocionálnou inteligenciou, ale jazykové modely sú  
-na takej úrovni, že s nimi vedieme prirodzené rozhovory a využívame ich ako  
-kreatívnych partnerov.  
-
----  
-
-**Autonómne autá**  
-Vo filme *Total Recall* (1990) riadil auto „Johnnycab" – robotický taxík bez  
-vodiča. *I, Robot* (2004) ukázal samoriadiace autá v bežnej premávke.  
-🔗 **Ukážka scény (Total Recall):** [Total Recall (1990) – Johnnycab Scene](https://www.youtube.com/watch?v=679i0AGxXFk)  
-🔗 **Ukážka scény (I, Robot):** [I, Robot (2004) – Autonomous Car Scene](https://www.youtube.com/watch?v=EZKNush8qsI)  
-
-Dnes už v niektorých mestách sveta jazdia plne autonómne taxíky (Waymo) a  
-pokročilé asistenčné systémy sú štandardom v nových autách.  
-
----  
-
-**Univerzálne prekladače**  
-*Stopárov sprievodca galaxiou* a *Star Trek* nám dali univerzálny prekladač,  
-ktorý okamžite interpretuje cudzí jazyk.  
-🔗 **Ukážka scény (Star Trek):** [Star Trek – Universal Translator Scene](https://www.youtube.com/watch?v=5oQ0FbtbQQU)  
-
-Dnes aplikácie ako Google Translate umožňujú okamžitý preklad hovoreného slova  
-cez slúchadlá a kameru v reálnom čase, čím búrajú jazykové bariéry.  
-
----  
-
-**Bezpilotné lietajúce stroje (drony)**  
-Vo filme *Minority Report* (2002) lietali malé drony, ktoré skenovali tváre  
-ľudí.  
-🔗 **Ukážka scény:** [Minority Report (2002) – Spider Drone Scene](https://www.youtube.com/watch?v=EQ55c87m4_4)  
-
-Dnes sú drony komerčne dostupné na natáčanie, doručovanie zásielok či  
-monitorovanie poľnohospodárstva.  
-
----  
-
-**Bezkontaktné ovládanie gestami**  
-Vo filme *Minority Report* (2002) hlavný hrdina ovládal rozhranie pomocou  
-pohybov rúk v priestore.  
-🔗 **Ukážka scény:** [Minority Report (2002) – Gesture Interface](https://www.youtube.com/watch?v=33Raqx9sFbo)  
-
-Dnes túto technológiu využívajú systémy virtuálnej reality (VR) a niektoré  
-moderné automobily, ktoré reagujú na gestá vodiča.  
-
----  
-
-**3D tlač (replikácia predmetov)**  
-V seriáli *Star Trek* sa používal „replikátor", ktorý dokázal vytvoriť jedlo  
-či predmety na počkanie.  
-🔗 **Ukážka scény:** [Star Trek TNG – Replicator Scene](https://www.youtube.com/watch?v=8kw9_O10Fh8)  
-
-Hoci ešte nie sme na úrovni molekulárnej syntézy, 3D tlač už dnes umožňuje  
-vyrábať funkčné súčiastky, protézy, a dokonca aj časti budov.  
-
----  
-
-**Platobné karty a bezhotovostný styk**  
-V *Star Treku* už klasické peniaze neexistovali – svet prešiel na digitálnu  
-ekonomiku a kreditové čipy.  
-🔗 **Ukážka scény (Star Trek IV):** [Star Trek IV – "They don't use money"](https://www.youtube.com/watch?v=XQQYbKT_rMg)  
-
-V súčasnosti je bezhotovostný styk štandardom, pričom platobné karty,  
-smartfóny či kryptomeny posunuli myšlienku digitálnych peňazí do každodennej  
-reality.  
-
-
----  
-
-### Keď sci-fi predbehlo čas: Európske a ruské predpovede  
-
-To je skvelá otázka! Kým Hollywood ovláda blockbustery, európska a ruská  
-kinematografia často prinášali hlboké filozofické vízie, ktoré predpovedali  
-nielen technológie, ale aj ich spoločenský dopad.  
-
-Tu je niekoľko fascinujúcich príkladov „predpovedí“ z týchto končín:  
-
----  
-
-### Nemecko: Metropolis (1927) a Frau im Mond (1929)  
-
-Nemecký expresionizmus položil základy sci-fi vizuálu, ktorému vďačíme za  
-viac, než si myslíme.  
-
-* **Humanoidné roboty (Metropolis):** Postava „Maschinenmensch“ (strojový  
-  človek) bola prvým ikonickým robotom na plátne. Inšpirovala nielen C-3PO zo  
-  Star Wars, ale predpovedala dnešných humanoidov ako **Optimus od Tesly**  
-  alebo roboty od **Boston Dynamics**.  
-
-* **Odpočítavanie pred štartom rakety (Frau im Mond):** Režisér Fritz Lang  
-  potreboval vytvoriť napätie pred štartom rakety, a tak vymyslel odpočítavanie  
-  „3, 2, 1... ŠTART!“. Pred týmto filmom nič také neexistovalo. **NASA** tento  
-  dramatický prvok neskôr prevzala ako štandardný technický postup.  
-
-* **Videotelefón (Metropolis):** Vo filme vidíme zariadenie na videohovory už v  
-  roku 1927 – o takmer 100 rokov skôr, než sa **Zoom** stal našou dennou rutinou.  
-  
----  
-
-### Česko: Ikarie XB-1 (1963) a R.U.R. (1920/1938)  
-
-Československá kinematografia a literatúra dali svetu samotný základ robotiky.  
-
-* **Slovo „Robot“ (R.U.R.):** Hoci ide o divadelnú hru Karla Čapka (neskôr  
-  sfilmovanú), práve tu vznikol termín robot. Čapkovi roboti neboli zo  
-  skrutiek, ale **biologické entity** – čo dnes nazývame **syntetická biológia**  
-  alebo bioinžinierstvo.  
-
-* **Dizajn vesmírnych staníc (Ikarie XB-1):** Tento film (predloha pre Lemov  
-  *Solaris*) ukázal život vo vesmíre ako sterilný, moderný a minimalistický.  
-  Predpovedal **automatické dvere**, interkomy a vnútroloďové komunikačné  
-  systémy, ktoré neskôr „skopíroval“ aj americký Star Trek.  
-
----  
-
-### Francúzsko: Alphaville (1965) a Cesta na Mesiac (1902)  
-
-Francúzi sa vždy zameriavali na spojenie technológie a štátu.  
-
-* **Všemocná AI riadiaca mesto (Alphaville):** Počítač Alpha 60 ovláda celé  
-  mesto, zakazuje emócie a optimalizuje život občanov na základe logiky. Je to  
-  mrazivá predpoveď dnešných **Smart Cities** a algoritmov sociálneho kreditu,  
-  ktoré využívajú **Big Data** na predpovedanie a ovplyvňovanie správania ľudí.  
-
-* **Vesmírny turizmus (Cesta na Mesiac):** Georges Méliès ukázal cestu na Mesiac  
-  v čase, keď boli autá raritou. Dnes, vďaka spoločnostiam ako **SpaceX** alebo  
-  **Blue Origin**, sa vízia vesmírnej turistiky stáva komerčnou realitou.  
-
----  
-
-### Rusko / ZSSR: Obojživelník (1962) a Aelita (1924)  
-
-Sovietske sci-fi sa často pozeralo na hranice ľudských možností a transformáciu tela.  
-
-* **Umelé orgány a bio‑hacking (Obojživelník – Čelovek-amfibija):** Film o mužovi  
-  s transplantovanými žraločími žiabrami predpovedal éru **pokročilej  
-  transplantačnej chirurgie** a experimenty s tekutým dýchaním  
-  (perfluorokarbóny), ktoré sa dnes skúmajú pre extrémne hĺbkové potápanie  
-  alebo medicínu predčasne narodených detí.  
-
-* **Konštruktivistická estetika techniky (Aelita):** Tento nemý film ukázal  
-  futuristické marťanské kostýmy a stroje, ktoré predbehli svoju dobu v chápaní  
-  **geometrického dizajnu úžitkových predmetov**, čo dnes vidíme v modernom  
-  industriálnom dizajne.  
-  
-
----  
-
-Zoznam by mohol pokračovať ďalej. Je fascinujúce, že mnohí tvorcovia sci-fi  
-neboli len vizionári, ale často priamo inšpirovali inžinierov k tomu, aby  
-tieto technológie skutočne postavili. Dnes žijeme v ére, ktorú si kedysi  
-predstavovali iba oni.  
-
-
-## Budúcnosť AI – Výzvy a príležitosti  
-
-### Technologické trendy  
-
-- **Multimodálne modely**: Spracovanie textu, obrázkov, zvuku a videa súčasne (napr. GPT-4, Gemini)  
-- **Efektívnejšie modely**: Snaha znížiť výpočtovú náročnosť a energetickú stopu  
-- **AI pre vedu**: Pomoc pri objavovaní liekov, modelovaní klímy, analýze vesmíru  
-
-### Etické a spoločenské výzvy  
-
-> Ako zabezpečiť, aby AI systémy boli spravodlivé a nepredpojaté?  
-> Kto je zodpovedný, keď AI urobí chybu?  
-> Ako chrániť súkromie v ére masívnej analýzy dát?  
-> Ako pripraviť pracovnú silu na zmeny spôsobené automatizáciou?  
-
-### Umelá všeobecná inteligencia (AGI)  
-
-> 🎓 **Definícia:** AGI je hypotetická AI s ľudskou úrovňou inteligencie vo všetkých  
-> oblastiach – nie len v úzkych úlohách.  
-
-- Aktuálny stav: Väčšina expertov považuje AGI za vzdialenú (desaťročia), no nie nemožnú  
-- Dôležité: Výskum **bezpečnosti a zarovnania AI** (AI alignment) – ako zabezpečiť, aby silné  
-  AI systémy sledovali ľudské hodnoty  
-
-
-## Zhrnutie kapitoly  
-
-✅ AI má dlhú históriu plnú optimizmu, sklamaní aj prelomov  
-✅ Moderný úspech AI stojí na troch pilieroch: **dáta, výpočtový výkon, algoritmy**  
-✅ LLMs predstavujú aktuálnu revolúciu, ale prinášajú aj nové výzvy  
-✅ AI už mení takmer každé odvetvie – od medicíny po umenie  
-✅ Budúcnosť AI závisí nielen od technológií, ale aj od **etických rozhodnutí a regulácie**  
-
-## Otázky a diskusia  
+## Rané základy  
+
+### Myšlienky pred vznikom odboru  
+
+Korene AI siahajú k formálnej logike, teórii pravdepodobnosti a  
+teórii  
+výpočtu. Alan Turing v práci *On Computable Numbers* (1936) opísal  
+abstraktný model výpočtu, dnes známy ako Turingov stroj. Nešlo o hotový  
+počítač, ale o teoretický základ pre uvažovanie o tom, čo možno algoritmicky  
+vypočítať.  
+
+V článku *Computing Machinery and Intelligence* (1950) Turing položil otázku  
+„Môžu stroje myslieť?“ a navrhol imitáciu rozhovoru, neskôr známu ako  
+Turingov test. Test meria podobnosť správania v konverzácii; sám osebe však  
+nie je dôkazom vedomia, porozumenia ani všeobecnej inteligencie.  
+
+Už v 40. rokoch vznikali aj prvé umelé neurónové modely. Práca Warrena  
+McCullocha a Waltera Pittsa (1943) ukázala, ako možno jednoduché logické  
+operácie modelovať pomocou idealizovaných neurónov. Tieto myšlienky neskôr  
+ovplyvnili vývoj perceptrónov a neurónových sietí.  
+
+## Dartmouthská konferencia (1956)  
+
+Za symbolický začiatok AI ako samostatnej vedeckej disciplíny sa často  
+považuje letný workshop na Dartmouth College v Hannoveri v roku 1956.  
+Organizátormi boli John McCarthy, Marvin Minsky, Nathaniel Rochester a  
+Claude Shannon. V návrhu projektu použili pomenovanie *artificial  
+intelligence*, ktoré sa následne rozšírilo.  
+
+![Dartmouthská konferencia](data/darth-conf.png)  
+
+Návrh vychádzal z odvážnej hypotézy, že aspekty učenia a inteligencie  
+možno  
+opísať dostatočne presne na to, aby ich stroj dokázal simulovať. Táto  
+hypotéza otvorila priestor pre výskum logického uvažovania, riešenia úloh,  
+jazyka, vnímania aj učenia. Neznamenala však, že všeobecná inteligencia  
+bude vytvorená v krátkom čase.  
+
+Medzi dôležité osobnosti raného obdobia patrili aj Allen Newell a Herbert  
+Simon, autori programu Logic Theorist. Program dokázal dokazovať vybrané  
+matematické vety pomocou symbolického vyhľadávania. John McCarthy neskôr  
+navrhol jazyk LISP (1958), ktorý sa stal významným nástrojom výskumu AI.  
+
+> **Pre študentov:** AI od začiatku nebola iba programovaním pravidiel.  
+> Spájala matematiku, logiku, psychológiu, lingvistiku, filozofiu a  
+> inžinierstvo.  
+
+## Symbolická AI a prvé systémy  
+
+Rané systémy vychádzali z predstavy, že inteligentné správanie možno  
+vytvoriť  
+manipuláciou so symbolmi podľa explicitných pravidiel. Tento smer sa neskôr  
+označoval aj ako symbolická AI alebo GOFAI (*Good Old-Fashioned AI*).  
+
+- **Logic Theorist** (1956): dokazoval vybrané tvrdenia z matematickej logiky.  
+- **Program Arthura Samuela** (od 50. rokov): učil sa hrať dámu a patril k  
+  raným príkladom strojového učenia.  
+- **ELIZA** (1966, Joseph Weizenbaum): napodobňovala rozhovor s terapeutom  
+  pomocou jednoduchých vzorov a pravidiel.  
+- **Shakey** (1966 – 1972): jeden z prvých mobilných robotov schopných  
+  kombinovať vnímanie, plánovanie a pohyb v obmedzenom prostredí.  
+
+Symbolické programy boli účinné v presne vymedzených doménach. Ťažko však  
+zvládali neúplné informácie, nejednoznačný jazyk, zmyslové dáta a takzvaný  
+zdravý rozum. Ručné vytváranie a údržba znalostných pravidiel boli navyše  
+časovo náročné.  
+
+## AI zimy  
+
+**AI zima** je obdobie poklesu financovania, záujmu a dôvery v AI.  
+Prvá  
+výrazná zima prišla v 70. rokoch po tom, čo sa ukázalo, že rané metódy  
+nezvládajú rozsah a zložitosť reálneho sveta. K poklesu prispeli aj kritické  
+hodnotenia, napríklad Lighthillova správa z roku 1973 vo Veľkej Británii.  
+
+Druhá AI zima sa spája najmä s koncom 80. a začiatkom 90. rokov.  
+Expertné  
+systémy boli drahé na údržbu, ťažko sa prenášali do nových oblastí a často  
+nedokázali využívať nové skúsenosti. Krach trhu so špecializovaným AI  
+hardvérom znížil dôveru investorov. Výskumníci preto často používali užšie  
+označenia ako strojové učenie, rozpoznávanie vzorov či štatistické metódy.  
+
+> **Poučenie:** Technologické sľuby musia zodpovedať reálnym schopnostiam,  
+> nákladom a dostupným dátam. Merateľné výsledky a realistické očakávania  
+> sú dôležité pre dlhodobý rozvoj každého odboru.  
+
+## Návrat strojového učenia  
+
+Od 80. rokov sa postupne presadzoval prístup, pri ktorom sa systém neučí  
+iba ručne napísané pravidlá, ale parametre modelu získava z príkladov.  
+Výrazný vplyv mal algoritmus spätného šírenia chyby, ktorý umožnil účinnejšie  
+trénovať viacvrstvové neurónové siete. Dôležitú úlohu zohrali Geoffrey  
+Hinton, David Rumelhart a Ronald Williams.  
+
+Yann LeCun a spolupracovníci ukázali praktickú silu konvolučných neurónových  
+sietí pri rozpoznávaní rukopisu. V roku 1997 systém Deep Blue od IBM  
+porazil  
+v zápase Garriho Kasparova. Deep Blue však nebol všeobecne inteligentný  
+človek podobný systém; používal špecializovaný hardvér, vyhľadávanie a  
+šachové heuristiky.  
+
+## Hlboké učenie a moderná AI  
+
+Rozmach AI po roku 2010 podporili tri navzájom sa posilňujúce faktory:  
+
+1. **Výpočtový výkon:** GPU umožnili efektívne paralelné operácie pri tréningu  
+   veľkých neurónových sietí.  
+2. **Veľké datasety:** internet, senzory a digitalizované archívy poskytli  
+   veľké množstvo textov, obrázkov, zvuku a ďalších dát.  
+3. **Algoritmy a nástroje:** zlepšili sa architektúry, optimalizácia,  
+   dostupnosť dátových súborov aj softvérových knižníc.  
+
+### Dôležité míľniky  
+
+- **ImageNet** (2009): rozsiahly dataset, ktorý urýchlil vývoj počítačového  
+  videnia.  
+- **AlexNet** (2012): neurónová sieť, ktorá výrazne uspela v súťaži ImageNet  
+  a spopularizovala hlboké učenie.  
+- **AlphaGo** (2016): systém spoločnosti DeepMind porazil profesionálneho  
+  hráča Go Lee Sedola; využil neurónové siete a posilňované učenie.  
+- **TensorFlow** (2015) a **PyTorch** (2016): frameworky, ktoré zjednodušili  
+  vývoj a výskum strojového učenia.  
+
+> **Dôležité rozlíšenie:** Strojové učenie je spôsob, ako model získava  
+> správanie z dát. Hlboké učenie je jeho podskupina využívajúca viacvrstvové  
+> neurónové siete. AI je širší pojem, ktorý zahŕňa aj pravidlá, plánovanie a  
+> ďalšie metódy.  
+
+## Veľké jazykové modely  
+
+Veľké jazykové modely (LLM) sú modely trénované na veľkom množstve textu,  
+ktoré sa učia štatistické vzťahy medzi časťami jazyka. Počas generovania  
+predpovedajú ďalšie tokeny podľa kontextu. Vďaka veľkosti a dodatočnému  
+tréningu dokážu sumarizovať, prekladať, odpovedať na otázky a generovať kód.  
+
+### Kľúčové míľniky  
+
+- **Transformer** (2017): architektúra založená na mechanizme pozornosti,  
+  ktorá zlepšila spracovanie dlhších sekvencií a škálovanie tréningu.  
+- **BERT** (2018): model, ktorý výrazne ovplyvnil porozumenie kontextu v NLP.  
+- **GPT-3** (2020): ukázal, že škálovanie jazykových modelov prináša nové  
+  schopnosti pri práci s textom.  
+- **ChatGPT** (2022): sprístupnil konverzačné používanie generatívnej AI  
+  širokej verejnosti.  
+- **Multimodálne a uvažujúce modely** (2023 – 2026): kombinujú text s  
+  obrazom, zvukom či kódom a pri niektorých úlohách používajú dlhšie  
+  vnútorné postupy riešenia alebo externé nástroje.  
+
+LLM však nie sú databáza ani záruka pravdy. Môžu vytvoriť presvedčivo znejúcu  
+nepravdivú informáciu, prehliadnuť kontext, reprodukovať predsudky z dát alebo  
+nesprávne interpretovať zadanie. Pri citlivých, odborných a aktuálnych  
+témach je preto potrebné overenie v dôveryhodných zdrojoch.  
+
+## AI a vízie sci-fi  
+
+Sci-fi často nepredpovedá budúcnosť doslovne. Skôr vytvára myšlienkové  
+experimenty, ktoré inžinierom a verejnosti pomáhajú predstaviť si nové  
+možnosti i riziká. Niektoré filmové predstavy sa neskôr stali technickými  
+analógiami, iné zostali metaforami.  
+
+- *Metropolis* (1927) preslávil obraz humanoidného robota a otázky vzťahu  
+  človeka, práce a techniky.  
+- *Frau im Mond* (1929) pomohla spopularizovať predstavu raketového letu a  
+  odpočítavania pred štartom; nie je však dôkazom, že film túto prax vytvoril.  
+- *R.U.R.* (1920) Karla Čapka a Josefa Čapka rozšírilo slovo „robot“.  
+  Čapkovi roboti boli umelo vytvorené biologické bytosti, nie kovové stroje.  
+- *2001: Vesmírna odysea* (1968) a *Star Trek* zobrazili tablety,  
+  videohovory, hlasové rozhrania a prenosné počítače skôr ako bežnú realitu.  
+- *Her* (2013) otvoril otázky emocionálnej väzby, identity a hraníc medzi  
+  nástrojom a spoločníkom.  
+- *Minority Report* (2002) predstavil gestá a všadeprítomné sledovanie; ich  
+  dnešné podoby však majú iné technické a spoločenské obmedzenia.  
+
+Rozdiel medzi fikciou a realitou je podstatný. Dnešné systémy dokážu  
+napodobniť rozhovor, rozpoznať obraz či generovať text, ale nemajú automaticky  
+ľudské vedomie, zámery ani spoľahlivý zdravý rozum.  
+
+## Výzvy a príležitosti  
+
+AI môže pomáhať vo výskume, medicíne, vzdelávaní, pri preklade, programovaní  
+a analýze dát. Súčasne prináša riziká: ochranu súkromia, bezpečnosť,  
+dezinformácie, diskrimináciu, zmenu pracovných rolí, autorské otázky a  
+spotrebu energie. Technická kvalita modelu preto nie je jediným kritériom  
+úspechu. Dôležité sú aj transparentnosť, zodpovednosť, ľudský dohľad a  
+primerané pravidlá používania.  
+
+Pri práci s AI je užitočné riadiť sa jednoduchým postupom:  
+
+1. **Určiť cieľ a riziko:** Iné nároky má návrh nápadov a iné medicínske  
+   alebo právne rozhodnutie.  
+2. **Overiť vstupy a výstupy:** Skontrolovať zdroje, výpočty, citácie aj  
+   predpoklady modelu.  
+3. **Použiť vhodný nástroj:** Kalkulačku, databázu, program alebo odborníka  
+   tam, kde je potrebná presnosť či aktuálnosť.  
+4. **Zachovať ľudskú zodpovednosť:** Konečné rozhodnutie nesmie byť bezhlavo  
+   prenesené na systém, ktorý nemusí rozumieť jeho dôsledkom.  
+
+> **Zhrnutie:** História AI je striedaním odvážnych myšlienok, technického  
+> pokroku a realistického prehodnocovania očakávaní. Budúcnosť nebude patriť  
+> iba jednému prístupu; najspoľahlivejšie riešenia budú spájať učenie z dát,  
+> overiteľné pravidlá, kvalitné nástroje a zodpovedný ľudský dohľad.  
+
+## Otázky na diskusiu  
+
+1. Prečo samotná schopnosť viesť prirodzený rozhovor nedokazuje porozumenie?  
+2. Čo mali symbolické systémy spoločné s dnešnými jazykovými modelmi a v čom  
+   sa zásadne líšia?  
+3. Ktoré faktory podľa vás najviac prispeli k úspechu hlbokého učenia po roku  
+   2010?  
+4. Kde by mal byť pri používaní AI povinný ľudský dohľad?  
+5. Ktoré predstavy zo sci-fi sú podľa vás už realitou a ktoré zostávajú  
+   vzdialenou víziou?  
+
+## Odporúčané zdroje  
+
+- [Dartmouth workshop – návrh projektu z roku 1955](https://www.dartmouth.edu/dartmouth-history/artificial-intelligence-ai-coined-dartmouth)  
+- [Alan Turing: Computing Machinery and Intelligence](https://doi.org/10.1093/mind/LIX.236.433)  
+- [Stanford Encyclopedia of Philosophy: Artificial Intelligence](https://plato.stanford.edu/entries/artificial-intelligence/)  
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)  
