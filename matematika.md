@@ -3,7 +3,7 @@
 
 Veľké jazykové modely predstavujú vynikajúci nástroj na prácu s matematikou,  
 no ich využitie má svoje limity. Fungujú skôr ako **jazykoví experti na matematiku**  
-než ako samotné kalkulačky. Excelujú vo vysvetľovaní zložitých konceptov, riešení  
+než ako samotné kalkulačky. Vynikajú vo vysvetľovaní zložitých konceptov, riešení  
 slovných úloh a generovaní cvičných príkladov.  
 
 Hlavným úskalím však zostáva fakt, že LLM sú **pravdepodobnostné generátory  
@@ -15,6 +15,21 @@ predloží nesprávny výsledok.
 Hoci nové uvažujúce modely vďaka internému reťazcu myšlienok tieto  
 nedostatky zmierňujú, stále nie sú stopercentne spoľahlivé pri čistej  
 aritmetike.  
+
+---
+
+## Obsah
+
+- [Prečo LLM nie je kalkulačka](#prečo-llm-nie-je-kalkulačka)
+- [Matematické halucinácie](#matematické-halucinácie)
+- [Uvažujúce modely: zlepšenie, nie dokonalosť](#uvažujúce-modely-zlepšenie-nie-dokonalosť)
+- [Porovnávacia tabuľka: LLM verzus tradičné nástroje](#porovnávacia-tabuľka-llm-verzus-tradičné-nástroje)
+- [Kde LLM v matematike skutočne vyniká](#kde-llm-v-matematike-skutočne-vyniká)
+- [Hybridný prístup: zlatý štandard pre matematiku](#hybridný-prístup-zlatý-štandard-pre-matematiku)
+- [Praktické odporúčania](#praktické-odporúčania)
+- [Wolfram Alpha a Python: spoľahliví partneri LLM](#wolfram-alpha-a-python-spoľahliví-partneri-llm)
+- [Zhrnutie kapitoly](#zhrnutie-kapitoly)
+- [Otázky & diskusia](#otázky--diskusia)
 
 ---
 
@@ -62,7 +77,7 @@ V matematike sa tento jav prejavuje obzvlášť nepríjemne, pretože:
 ## Uvažujúce modely: zlepšenie, nie dokonalosť  
 
 Nová generácia **uvažujúcich modelov** (OpenAI o1/o3, Claude Extended  
-Thinking, DeepSeek Deep Think, QwQ) prináša výrazné zlepšenie.  
+Thinking, DeepSeek R1, Qwen QwQ) prináša výrazné zlepšenie.  
 Tieto modely pred finálnou odpoveďou vykonajú viditeľný **reťazec myšlienok**  
 (*chain-of-thought*) – rozbijú problém na kroky a postupne ich riešia.  
 
@@ -72,11 +87,13 @@ Výsledky na matematických benchmarkoch sú pôsobivé:
 | :--- | :---: | :---: |  
 | **GSM8K** (základná matematika) | ~90 % | ~97 % |  
 | **MATH** (súťažná matematika) | ~50–60 % | ~70–85 % |  
-| **AIME** (tažké olympijské úlohy) | ~5–15 % | ~50–70 % |  
+| **AIME** (ťažké olympijské úlohy) | ~5–15 % | ~50–70 % |  
+
+> **Poznámka:** Uvedené hodnoty sú približné a orientačné; reálne skóre sa líši podľa konkrétneho modelu, verzie a času merania.
 
 Napriek tomu platí: uvažujúce modely **nie sú stopercentne spoľahlivé**  
 pri čistej aritmetike.  
-Stále sa môžu pomýliť – najmä pri dlhých výpočtoch, kde sa chýbka  
+Stále sa môžu pomýliť – najmä pri dlhých výpočtoch, kde sa chybička  
 v jednom kroku prenáša do ďalších.  
 
 ---
@@ -192,11 +209,17 @@ je deterministicky správny.
 > Python interpret – model kód nielen napíše, ale aj spustí a výsledok  
 > overí. Toto je hybridný prístup v čistej forme.  
 
+**Tool use / funkčné volania.** Moderné modely už nepracujú iba s textom – dokážu priamo  
+volať externé nástroje (kalkulačku, Python interpret, webové vyhľadávanie). Keď model rozpozná,  
+že ide o číselný výpočet, sám ho deleguje na nástroj a do odpovede zapracuje presný výsledok.  
+Tento mechanizmus, známy ako *tool use* alebo *function calling*, je dnes štandardnou súčasťou  
+hybridného riešenia.
+
 ## Zhrnutie kapitoly  
 
 *   LLM sú **pravdepodobnostné generátory textu** – odhadujú, nevypočítavajú.  
     Matematické halucinácie (sebavedome nesprávne výsledky) sú reálnym rizikom.  
-*   **Uvažujúce modely** (o1, Claude Extended Thinking, Deep Think) výrazne  
+*   **Uvažujúce modely** (o1/o3, Claude Extended Thinking, DeepSeek R1) výrazne  
     zlepšujú výkony v matematike, no stopercentnú spoľahlivosť neposkytujú.  
 *   LLM skutočne vynikajú vo **vysvetľovaní konceptov, riešení slovných  
     úloh, generovaní cvičení a prepise matematiky do kódu**.  
@@ -206,3 +229,9 @@ je deterministicky správny.
 *   Pravidlo palca: *ak záleží na presnosti čísla, overenie je povinné*.  
 
 ## Otázky & diskusia
+
+1. Kde presne vedie hranica medzi tým, čo má LLM počítať sám, a tým, čo má prenechať špecializovanému nástroju?
+2. Ako by ste overili výsledok LLM pri výpočte, od ktorého závisí dôležité rozhodnutie?
+3. Je vhodné, aby študenti používali LLM pri domácich úlohách z matematiky? Kde pomáha a kde naopak škodí?
+4. Môže uvažujúci model v budúcnosti úplne nahradiť ľudského matematika pri dôkazoch? Prečo áno alebo nie?
+5. Ktorý z dvoch svetov – jazyková inteligencia alebo deterministický výpočet – bude podľa vás v matematike dominantnejší a prečo?
