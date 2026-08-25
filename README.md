@@ -35,7 +35,7 @@ Prompt engineering
 - Parametre promptu 
 
 Generovanie obrázkov pomocou AI
-- DALL-E, Imagine
+- Nano Banana 
 - Úprava obrázkov
 
 NotebookLLM pre výskum a štúdium
