@@ -4,7 +4,7 @@ DeepSeek LLM is a cutting-edge open-source large language model developed
 by DeepSeek-AI, designed for high performance in natural language understanding,  
 coding, mathematics, and multilingual tasks—especially in English and Chinese.
 
-The `deepseek-chat` model points to DeepSeek-V3-0324. The `deepseek-reasoner` model  
+The `deepseek-V4-flash` model points to DeepSeek-V3-0324. The `deepseek-reasoner` model  
 points to DeepSeek-R1-0528.
 
 
@@ -20,7 +20,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=[
         {"role": "system", "content": "You are a helpful assistant"},
         {"role": "user", "content": "Is Pluto a planet?"},
@@ -43,7 +43,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=[
         {"role": "system", "content": "You are a helpful assistant"},
         {"role": "user", "content": "Is Pluto a planet?"},
@@ -78,7 +78,7 @@ client = OpenAI(
 messages = [
     {"role": "user", "content": "What's the highest mountain in the world?"}]
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=messages
 )
 
@@ -88,7 +88,7 @@ messages.append(response.choices[0].message)
 # Round 2
 messages.append({"role": "user", "content": "What is the second?"})
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=messages
 )
 
@@ -161,7 +161,7 @@ function_registry = {
 
 # --- Step 6: First model call to trigger tool ---
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=messages,
     tools=tools,
     tool_choice="auto"
@@ -193,7 +193,7 @@ messages.append({
 
 # --- Step 9: Final model call to complete the task ---
 final_response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-V4-flash",
     messages=messages,
     tools=tools
 )
