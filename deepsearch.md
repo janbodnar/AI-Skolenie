@@ -23,8 +23,6 @@ od tradičného vyhľadávania, ktoré hľadá presné zhody kľúčových slov,
 Deep search predstavuje prechod od **vyhľadávania informácií** k **získavaniu  
 poznatkov**.  
 
----
-
 ## 2. Ako Deep Search technicky funguje?  
 
 Architektúra deep search systémov sa zvyčajne skladá z niekoľkých kľúčových  
@@ -79,8 +77,6 @@ komponentov:
 | **RAG (Retrieval-Augmented Generation)** | Architektúra, ktorá kombinuje získavanie informácií s generovaním odpovedí. |  
 | **Chain-of-Thought prompting** | Umožňuje modelu "myslieť krok za krokom" pri plánovaní vyhľadávania. |  
 | **Re-ranking algoritmy** | Zlepšujú poradie výsledkov podľa komplexnejšej relevancie, nielen keyword match. |  
-
----
 
 ## 3. Deep Search vs. Tradičné vyhľadávanie  
 
@@ -159,8 +155,6 @@ RAG tieto obmedzenia rieši tým, že:
    zážitok.  
 ⚠️ **Hodnotenie kvality** – ako objektívne merať, či odpoveď je "dobrá"?  
 
----
-
 ## 5. Príklady Deep Search implementácií  
 
 ### 5.1 Google Deep Search (AI Mode)  
@@ -211,12 +205,10 @@ RAG tieto obmedzenia rieši tým, že:
 
 ### Kedy stačí tradičné vyhľadávanie?  
 
-*   Jednoduché faktografické otázky ("Hlavné mesto Francúzska").  
-*   Navigačné dotazy ("webová stránka firmy X").  
-*   Rýchle overenie existencie informácie.  
-*   Úlohy, kde používateľ chce sám preskúmať zdroje.  
-
----
+*  Jednoduché faktografické otázky ("Hlavné mesto Francúzska").  
+*  Navigačné dotazy ("webová stránka firmy X").  
+*  Rýchle overenie existencie informácie.  
+*  Úlohy, kde používateľ chce sám preskúmať zdroje.  
 
 ## 7. Etické aspekty a limity Deep Search  
 
@@ -252,8 +244,6 @@ iteratívne spresňovanie.
 meniacich témach.  
 **Porovnávajte viacero systémov** – rôzne implementácie môžu poskytnúť rôzne  
 perspektívy.  
-
----
 
 ## 8. Qwen Chat a inteligentné vyhľadávanie: Web Search vs. Deep Research  
 
@@ -344,11 +334,6 @@ otázka môže spustiť vyhľadávanie, ak:
    istoty a typu otázky.  
 🔹 Používateľ môže tento proces **ovplyvniť** jasnými inštrukciami v prompte.  
 
-> 🎓 **Didaktická výzva:** Požiadajte študentov, aby položili rovnakú otázku  
-> dvakrát – raz s príkazom *„nevyhľadávaj"* a raz s povolením *„použi web search"*.  
-> Porovnajte výsledky a diskutujte o rozdieloch v presnosti, aktuálnosti  
-> a štruktúre odpovedí.  
-
 
 ## 9. Budúcnosť Deep Search technológií  
 
@@ -380,7 +365,6 @@ otázka môže spustiť vyhľadávanie, ak:
 > nie ako samostatný nástroj, ale ako integrovaná schopnosť inteligentných  
 > systémov.  
 
----
 
 ## 10. Dostupnosť Deep Research / Deep Search funkcií (2026) – s cenami  
 
@@ -429,14 +413,6 @@ informácií o cenových modeloch.
 | 🥈 **Najlepšia kvalita** | **ChatGPT Plus / Perplexity Pro** | Vyššia presnosť, lepšia syntéza, stabilnejšie výstupy |  
 | 🥉 **Najlepšie pre vedu** | **Elicit / Consensus** | Špecializácia na akademické zdroje a peer-reviewed štúdie |  
 | 🎓 **Pre študentské projekty** | **Google NotebookLM** | Zadarmo, výborná práca s nahranými PDF, citácie |  
-
-> 🎓 **Didaktický tip pre vás**: Ak chcete študentom ukázať funkciu Deep Research  
-> bez finančných bariér, začnite s **Qwen Chat**. Pre porovnávaciu aktivitu  
-> môžete nechať študentov vyskúšať rovnakú otázku v Qwen (free) a v ChatGPT  
-> Free (bez Deep Search) – rozdiel v hĺbke odpovede bude názornou ukážkou  
-> hodnoty hĺbkového výskumu.  
-
-
 
 ## 12. Záver  
 
