@@ -287,7 +287,7 @@ Výstup daj ako JSON."
 ```
 **Využitie:** Automatizácia spracovania CV, faktúr, formulárov.
 
-### Analýza sentimentu
+### Analýza sentimentu 
 ```
 Prompt: "Prečítaj tieto 10 recenzií a zhrň: Čo zákazníkom najviac chýba? 
 Aké slová sa opakujú v negatívnych hodnoteniach?"
