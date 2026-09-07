@@ -6,6 +6,8 @@ Pomocou AI nástrojov, spľn tieto úlohy:
 - nájdi všetky slová týkajúce sa oblečenia a pridaj EN,FR,GER,HU eqvivalenty  
 https://www.youtube.com/watch?v=ITs9agntW18
 
+- spočítaj výdavky v troch receptoch
+- napíš na papier voľnou rukov výdavky; spočítaj ich pomocou AI nástroja
 - prelož prvú stranu knihy Jane Eyre
 - sprav sentiment analýzu filmov
 - zosumarizuj knihu Neprebudený
