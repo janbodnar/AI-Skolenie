@@ -3,13 +3,16 @@
 
 Pomocou AI nástrojov, spľn tieto úlohy:
 
-- sprav sentiment analýzu filmov
 - nájdi všetky slová týkajúce sa oblečenia a pridaj EN,FR,GER,HU eqvivalenty  
 https://www.youtube.com/watch?v=ITs9agntW18
 
 - prelož prvú stranu knihy Jane Eyre
+- sprav sentiment analýzu filmov
 - zosumarizuj knihu Neprebudený
-- spočítaj počet iregulárnych podstatných mien v knihe Otec Goriot (English)
+- nájdi všetky nepočítateľné podstatné mená v
+   Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
+   https://www.gutenberg.org/ebooks/43
+
 - Vytvor Deep Research report, ktorý sa zameria na dosiahnuté reálie zo scifi filmov
 
 https://huggingface.co/spaces/ACE-Step/ACE-Step
