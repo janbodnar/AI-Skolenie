@@ -9,7 +9,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
 - [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
       Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
-- [ ] Vytvor logo pre svoju fiktívnu firmu.
+- [x] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
 - [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
