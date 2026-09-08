@@ -13,7 +13,8 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
 - [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
-- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*
+- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
+      vo VS Code. 
 - [ ] Nájdi všetky nepočítateľné podstatné mená v
    Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
    https://www.gutenberg.org/ebooks/43
