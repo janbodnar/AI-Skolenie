@@ -1,5 +1,7 @@
 # AI-Skolenie
 
+https://file-examples.com/storage/feba50da476a9fe2b9da9d8/2017/04/file_example_MP4_1920_18MG.mp4
+
 AI Školenie pre začiatočníkov s praktickými príkladmi.  
 Kontakt na lektora: jan.bodnar@gmail.com  
 AI novinky: https://www.facebook.com/profile.php?id=61590475374227
