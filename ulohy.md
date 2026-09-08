@@ -1,31 +1,29 @@
 # Úlohy
 
+Pomocou AI nástrojov splň tieto úlohy:
 
-Pomocou AI nástrojov, spľn tieto úlohy:
+- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.
+  https://www.youtube.com/watch?v=ITs9agntW18
 
-- nájdi všetky slová týkajúce sa oblečenia a pridaj EN,FR,GER,HU eqvivalenty  
-https://www.youtube.com/watch?v=ITs9agntW18
-
-- spočítaj výdavky v troch receptoch
-- napíš na papier voľnou rukov výdavky; spočítaj ich pomocou AI nástroja
-- prelož prvú stranu knihy Jane Eyre
-- sprav sentiment analýzu filmov
-- zosumarizuj knihu Neprebudený
-- nájdi všetky nepočítateľné podstatné mená v
+- [ ] Spočítaj výdavky v troch receptoch.
+- [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
+- [ ] Prelož prvú stranu knihy *Jane Eyre*.
+- [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
+- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*
+- [ ] Nájdi všetky nepočítateľné podstatné mená v
    Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
    https://www.gutenberg.org/ebooks/43
 
-- Vytvor Deep Research report, ktorý sa zameria na dosiahnuté reálie zo scifi filmov
+- [ ] Vytvor Deep Research report, ktorý sa zameria na dosiahnuté reálie zo sci-fi filmov.
 
-https://huggingface.co/spaces/ACE-Step/ACE-Step
+- [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
+  https://www.youtube.com/watch?v=DyOTl5iDGvU
 
-
-- Najdi a prelož dôležité slová z nemčiny z videa Warum dein sicherer Ort dich festhält (Copilot vs Gemini) 
-https://www.youtube.com/watch?v=DyOTl5iDGvU
+- [] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
 
 ## Právna analýza
 
-Identifikuj problematické klauzuly nájomných zmlúv.
+- [ ] Identifikuj problematické klauzuly nájomných zmlúv.
 
 I. zmluva
 
@@ -108,7 +106,7 @@ ubytovanie.
 
 ## Extrakcia dát
 
-Tu je vzorový životopis. Z tohto životopisu vytiahni: meno, poslednú pozíciu, 3 kľúčové zručnosti.
+- [ ] Zo vzorového životopisu vytiahni meno, poslednú pozíciu a tri kľúčové zručnosti.
 
 ```
 ŽIVOTOPIS
@@ -167,8 +165,8 @@ Odbor: Informačné systémy (Inžiniersky stupeň)
 
 ## Použitie stopky
 
-Vygeneruj mi JSON output s id, first_name, last_name a email, a použi stopku pre 
-id 13. 
+- [ ] Vygeneruj JSON output s `id`, `first_name`, `last_name` a `email` a použi stopku pre
+  ID 13.
 
 ```csv
 id,first_name,last_name,occupation,country,email
@@ -203,4 +201,3 @@ id,first_name,last_name,occupation,country,email
 29,Chen,Wei,Machine Learning Engineer,Taiwan,chen.wei@example.com
 30,Daria,Horvat,HR Specialist,Croatia,daria.horvat@example.com
 ```
-
