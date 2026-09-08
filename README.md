@@ -1,5 +1,7 @@
 # AI-Skolenie
 
+https://audio-transcriber-translator-528965810214.europe-west1.run.app
+
 https://file-examples.com/storage/feba50da476a9fe2b9da9d8/2017/04/file_example_MP4_1920_18MG.mp4
 
 AI Školenie pre začiatočníkov s praktickými príkladmi.  
