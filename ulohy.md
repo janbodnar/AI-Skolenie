@@ -6,6 +6,8 @@ Pomocou AI nástrojov splň tieto úlohy:
   https://www.youtube.com/watch?v=ITs9agntW18
 
 - [ ] Spočítaj výdavky v troch receptoch.
+- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga). Urči
+      formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.
 - [ ] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
