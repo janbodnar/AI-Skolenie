@@ -2,7 +2,7 @@
 
 Pomocou AI nástrojov splň tieto úlohy:
 
-- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
+- [x] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
 
 - [ ] Spočítaj výdavky v troch receptoch.
