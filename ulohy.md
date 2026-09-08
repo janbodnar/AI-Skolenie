@@ -6,8 +6,9 @@ Pomocou AI nástrojov splň tieto úlohy:
   https://www.youtube.com/watch?v=ITs9agntW18
 
 - [ ] Spočítaj výdavky v troch receptoch.
-- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga). Urči  
-      formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
+- [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
+- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).
+      Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
 - [ ] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
@@ -17,12 +18,11 @@ Pomocou AI nástrojov splň tieto úlohy:
    Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
    https://www.gutenberg.org/ebooks/43
 
-- [ ] Vytvor Deep Research report, ktorý sa zameria na dosiahnuté reálie zo sci-fi filmov.
-
+- [ ] Vytvor Deep Research report, ktorý sa zameria na daňovo-právne zmeny živnostníkov za posledných 5 rokov.
 - [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
   https://www.youtube.com/watch?v=DyOTl5iDGvU
 
-- [] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
+
 
 ## Právna analýza
 
