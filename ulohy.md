@@ -12,7 +12,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [x] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
-- [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
+- [x] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
 - [x] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
       vo VS Code. 
 - [ ] Nájdi všetky nepočítateľné podstatné mená v
