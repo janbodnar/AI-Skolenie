@@ -2,12 +2,12 @@
 
 Pomocou AI nástrojov splň tieto úlohy:
 
-- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.
+- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
 
 - [ ] Spočítaj výdavky v troch receptoch.
-- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga). Urči
-      formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.
+- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga). Urči  
+      formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
 - [ ] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
