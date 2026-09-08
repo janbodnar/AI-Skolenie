@@ -5,7 +5,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [x] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
 
-- [ ] Spočítaj výdavky v troch receptoch.
+- [x] Spočítaj výdavky v troch receptoch.
 - [x] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
 - [x] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
       Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
