@@ -1,4 +1,4 @@
-##  Transformácia trhu práce: úspechy a pády automatizácie  
+#  Transformácia trhu práce: úspechy a pády automatizácie  
 
 Zatiaľ čo predchádzajúce kapitoly mapovali technický a finančný vzostup  
 Mistral AI, jedna z najdôležitejších otázok, ktorá dnes rezonuje celou  
