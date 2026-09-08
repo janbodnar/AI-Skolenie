@@ -6,7 +6,7 @@ Pomocou AI nástrojov splň tieto úlohy:
   https://www.youtube.com/watch?v=ITs9agntW18
 
 - [ ] Spočítaj výdavky v troch receptoch.
-- [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
+- [x] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
 - [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
       Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
 - [x] Vytvor logo pre svoju fiktívnu firmu.
