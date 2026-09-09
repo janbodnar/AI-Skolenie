@@ -1,10 +1,10 @@
-# Veľké jazykové modely (LLM) 
+# Veľké jazykové modely (LLM)
 
-Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej inteligencie, ktoré sa učia zo  
-vzorov v texte. Ich základnou úlohou je **predpovedať ďalšie slovo** (alebo časť slova) v sekvencii tak,  
+Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej inteligencie, ktoré sa učia zo
+vzorov v texte. Ich základnou úlohou je **predpovedať ďalšie slovo** (alebo časť slova) v sekvencii tak,
 aby výsledok bol štatisticky pravdepodobný a zmysluplný.
 
-**Veľké jazykové modely** (Large Language Models – LLM) sú modernou evolúciou týchto systémov. Vďaka  
+**Veľké jazykové modely** (Large Language Models – LLM) sú modernou evolúciou týchto systémov. Vďaka
 obrovskému množstvu dát a výpočtového výkonu dokážu:
 
 *   Generovať plynulý text v prirodzenom jazyku.
@@ -16,21 +16,23 @@ obrovskému množstvu dát a výpočtového výkonu dokážu:
 > **Kľúčová myšlienka:** LLM nie sú databázy faktov, ale **generátory pravdepodobností**. Nevedia "pravdu" v
 > ľudskom zmysle, ale vedia veľmi presne odhadnúť, ktoré slovo by malo nasledovať v danom kontexte.
 
-
-
 ## Ako LLM fungujú? (Zjednodušený pohľad)
 
 Hoci sú modely technicky zložité, ich princíp možno rozdeliť do štyroch krokov:
 
 1.  **Tokenizácia:** Vstupný text sa rozdelí na menšie jednotky nazývané *tokeny*
-   (môžu to byť celé slová, korene slov alebo časti slov).
-3.  **Embedding (Vnorené reprezentácie):** Každý token sa prevedie na vektor čísel, ktorý
-   zachytáva jeho význam a vzťah k iným slovám.
-5.  **Spracovanie (Transformér a Attention):** Srdcom modelu je architektúra *Transformer*.
-   Používa mechanizmus *Attention* (pozornosť), ktorý umožňuje modelu "sústrediť sa" na
-   dôležité časti vety bez ohľadu na to, kde sa nachádzajú. To mu pomáha chápať kontext a väzby medzi slovami.
-7.  **Predikcia:** Model vypočíta pravdepodobnosť pre všetky možné nasledujúce tokeny a vyberie
-   ten najvhodnejší. Tento proces sa opakuje, kým nie je odpoveď kompletná.
+    (môžu to byť celé slová, korene slov alebo časti slov).
+
+2.  **Embedding (Vnorené reprezentácie):** Každý token sa prevedie na vektor čísel, ktorý
+    zachytáva jeho význam a vzťah k iným slovám.
+
+3.  **Spracovanie (Transformér a Attention):** Srdcom modelu je architektúra *Transformer*.
+    Používa mechanizmus *Attention* (pozornosť), ktorý umožňuje modelu "sústrediť sa" na
+    dôležité časti vety bez ohľadu na to, kde sa nachádzajú. To mu pomáha chápať kontext a
+    väzby medzi slovami.
+
+4.  **Predikcia:** Model vypočíta pravdepodobnosť pre všetky možné nasledujúce tokeny a vyberie
+    ten najvhodnejší. Tento proces sa opakuje, kým nie je odpoveď kompletná.
 
 ### Slovník základných pojmov
 
@@ -45,16 +47,24 @@ Hoci sú modely technicky zložité, ich princíp možno rozdeliť do štyroch k
 
 ## Klasifikácia jazykových modelov
 
-LLM môžeme deliť podľa viacerých kritérií. Pre pochopenie ekosystému je dôležité poznať tieto kategórie:
+LLM môžeme deliť podľa viacerých kritérií. Pre pochopenie ekosystému je dôležité poznať tieto
+kategórie:
 
 ### A. Podľa architektúry
-*   **Decoder-only (napr. GPT, LLaMA):** Najrozšírenejší typ dnes. Sú optimalizované na generovanie textu (autoregresívne modely).
-*   **Encoder-Decoder (napr. T5, BART):** Vhodné skôr na úlohy transformácie, ako je preklad alebo sumarizácia.
-*   **Mixture-of-Experts (MoE) (napr. Mixtral, Gemini 1.5):** Architektúra, kde sa na každú úlohu aktivuje len časť siete ("expertov"), čo zvyšuje efektivitu a rýchlosť.
+*   **Decoder-only (napr. GPT, LLaMA):** Najrozšírenejší typ dnes. Sú optimalizované na
+    generovanie textu (autoregresívne modely).
+*   **Encoder-Decoder (napr. T5, BART):** Vhodné skôr na úlohy transformácie, ako je preklad
+    alebo sumarizácia.
+*   **Mixture-of-Experts (MoE) (napr. Mixtral, Gemini 3.x):** Architektúra, kde sa na každú
+    úlohu aktivuje len časť siete ("expertov"), čo zvyšuje efektivitu a rýchlosť.
 
 ### B. Podľa otvorenosti prístupu
-*   **Open Weights / Open Source (napr. LLaMA, Mistral):** Váhy modelu sú verejne dostupné. Výskumníci a firmy si ich môžu stiahnuť, prevádzkovať na vlastných serveroch a upravovať.
-*   **Closed Source / Proprietary (napr. GPT-4, Claude, Gemini):** Modely sú prístupné len cez API alebo webové rozhranie poskytovateľa. Ich vnútorná štruktúra a tréningové dáta sú tajomstvom.
+*   **Open Weights / Open Source (napr. LLaMA 4, Mistral Large 3, DeepSeek):** Váhy modelu sú
+    verejne dostupné. Výskumníci a firmy si ich môžu stiahnuť, prevádzkovať na vlastných
+    serveroch a upravovať.
+*   **Closed Source / Proprietary (napr. GPT-5.6, Claude 5, Gemini 3.x):** Modely sú prístupné
+    len cez API alebo webové rozhranie poskytovateľa. Ich vnútorná štruktúra a tréningové dáta
+    sú tajomstvom.
 
 ### C. Podľa veľkosti (počtu parametrov)
 *   **Small LLM (1B – 8B):** Rýchle, vhodné na lokálne použitie a jednoduché úlohy.
@@ -72,121 +82,86 @@ Tieto modely generujú odpoveď **priamo a lineárne**, slovo po slove.
 *   **Princíp:** Okamžitá predikcia ďalšieho tokenu na základe doterajšieho kontextu.
 *   **Výhody:** Sú rýchle, lacné a výborné na kreatívne písanie, preklady či bežnú konverzáciu.
 *   **Nevýhody:** Pri zložitej logike, matematike alebo plánovaní môžu zlyhať, pretože
-    "nemyslia dopredu", len reagujú na prítomnosť.
-*   **Príklady:** LLaMA 3 (base), Mistral 7B, GPT-3.5.
+    "nemyslia dopredu", len reagujú na základe vzorov.
+*   **Príklady:** LLaMA 4 (base), Mistral Large 3.
 
 ### Uvažujúce (Reasoning) LLM
 
 Tieto modely majú nadstavbu, ktorá im umožňuje **plánovať a kontrolovať** svoj proces.
-*   **Princíp:** Pred vygenerovaním finálnej odpovede model vytvorí "myšlienkový postup" (*Chain-of-Thought*),
-    skontroluje si fakty, alebo si rozloží úlohu na podúkoly.
-*   **Výhody:** Výrazne lepšie výsledky v matematike, programovaní, vedeckom uvažovaní a logických hádankách.
+*   **Princíp:** Pred vygenerovaním finálnej odpovede model vytvorí "myšlienkový postup"
+    (*Chain-of-Thought*), skontroluje si fakty, alebo si rozloží úlohu na podúlohy.
+*   **Výhody:** Výrazne lepšie výsledky v matematike, programovaní, vedeckom uvažovaní a
+    logických hádankách.
 *   **Nevýhody:** Sú pomalšie (musia "napísať" svoje myšlienky) a výpočtovo nákladnejšie.
-*   **Príklady:** OpenAI o1, DeepSeek R1, Claude 3.5 Sonnet (so zvýšenými schopnosťami reasoningu).
+*   **Príklady:** OpenAI o3/o4-mini, DeepSeek-R2, Claude 5 (Fable/Opus/Sonnet).
 
-> **Analogia:** Klasický LLM je ako študent, ktorý odpovedá na otázku okamžite, intuitívne. Reasoning LLM
-> je ako študent, ktorý si pred odpoveďou vezme papier, napíše si náčrt, prepočíta si príklad a až potom odpovie.
+> **Analógia:** Klasický LLM je ako študent, ktorý odpovedá na otázku okamžite, intuitívne.
+> Reasoning LLM je ako študent, ktorý si pred odpoveďou vezme papier, napíše si náčrt,
+> prepočíta si príklad a až potom odpovie.
 
-### Príklad uvažujúceho modelu DeepSeek
+---
 
-Prompt:
+## Prehľad významných modelov a ich pôvodu (aktualizované 2026)
 
-```
-translate into German:
-
-Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива
-по-своему. Все смешалось в доме Облонских. Жена узнала, что муж был в связи с
-бывшею в их доме француженкою-гувернанткой, и объявила мужу, что не может жить с
-ним в одном доме. Положение это продолжалось уже третий день и мучительно
-чувствовалось и самими супругами, и всеми членами семьи, и домочадцами. Все
-члены семьи и домочадцы чувствовали, что нет смысла в их сожительстве и что на
-каждом постоялом дворе случайно сошедшиеся люди более связаны между собой, чем
-они, члены семьи и домочадцы Облонских. Жена не выходила из своих комнат, мужа
-третий день не было дома. Дети бегали по всему дому, как потерянные; англичанка
-поссорилась с экономкой и написала записку приятельнице, прося приискать ей
-новое место; повар ушел вчера со двора, во время самого обеда; черная кухарка и
-кучер просили расчета.
-```
-
-
-AI Thinking
-
-> OK, the user has sent a new query in a different language, asking for a translation into German.  The history shows our previous interaction was about extracting Facebook comments, which was a  practical, task-oriented request. Now the user is providing a classic literary text—the opening of  Tolstoy's Anna Karenina—and wants a German translation. 
-
-> Hmm, the user might be a student, a writer, or someone interested in literature and languages.  They could be working on a comparative project, studying translations, or simply want to read this  famous passage in German. The deep need here isn't for data extraction like last time, but for  accurate, literary translation. They probably value the preservation of the original's tone and  meaning.  
-
-> Since the text is a well-known piece of literature, the translation needs to be precise and  reflect the style. I should provide a clean, direct German version, keeping the paragraph structure  and the essence of Tolstoy's prose. No need for explanations or additional services unless  asked—just deliver the requested translation clearly. 
-
-
-Output: 
-
-```
-Alle glücklichen Familien sind einander ähnlich, jede unglückliche Familie ist auf ihre eigene Weise
-unglücklich. Im Hause Oblonski war alles durcheinander. Die Frau hatte erfahren, dass der Mann ein Verhältnis
-mit der französischen Gouvernante hatte, die früher im Hause war, und erklärte ihrem Mann, dass sie nicht mit
-ihm unter einem Dach leben könne. Dieser Zustand dauerte bereits den dritten Tag und wurde schmerzlich empfunden
-von den Ehegatten selbst, von allen Familienmitgliedern und vom Hauspersonal. Alle Familienmitglieder und das
-Hauspersonal fühlten, dass ihr Zusammenleben sinnlos sei und dass auf jedem beliebigen Gasthof zufällig
-zusammengetroffene Menschen mehr miteinander verbunden seien als sie, die Mitglieder der Familie Oblonski
-und ihr Gesinde. Die Frau verließ ihre Zimmer nicht, der Mann war den dritten Tag nicht zu Hause.
-Die Kinder liefen wie verloren im ganzen Haus umher; die Engländerin hatte sich mit der Wirtschaftlerin
-gestritten und schrieb einem Freund einen Brief, sie möge ihr eine neue Stelle suchen; der Koch war gestern
-während des Essens vom Hof gegangen; die Küchenmagd und der Kutscher baten um Auszahlung ihres Lohnes.
-```
-
-## Prehľad významných modelov a ich pôvodu
-
-Svet LLM je globálny. Nižšie uvádzame prehľad kľúčových hráčov. Je dôležité vedieť, kto model vyvíja,  
-pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a právne podmienky.
+Svet LLM sa dynamicky vyvíja. Nižšie uvádzame prehľad kľúčových modelov dostupných v roku 2026.
+Je dôležité vedieť, kto model vyvíja, pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a
+právne podmienky.
 
 | Model | Vývojár / Organizácia | Krajina pôvodu | Typ prístupu |
 | :--- | :--- | :--- | :--- |
-| **GPT-4 / ChatGPT** | OpenAI | USA | Closed |
-| **Claude 3.5** | Anthropic | USA | Closed |
-| **Gemini 1.5** | Google DeepMind | USA | Closed |
-| **Llama 3** | Meta (Facebook) | USA | Open Weights |
-| **Mistral / Mixtral** | Mistral AI | Francúzsko | Open / Closed |
-| **Grok** | xAI | USA | Closed |
-| **Qwen 2.5** | Alibaba Cloud | Čína | Open Weights |
-| **DeepSeek** | DeepSeek | Čína | Open Weights |
-| **Falcon** | TII (Technology Innovation Institute) | UAE | Open Weights |
-| **YandexGPT** | Yandex | Rusko | Closed |
+| **GPT-5.6 (Luna/Terra/Sol)** | OpenAI | USA | Closed |
+| **GPT-5.5** | OpenAI | USA | Closed |
+| **Claude 5 (Fable / Opus 5 / Sonnet 5)** | Anthropic | USA | Closed |
+| **Claude Opus 4.8** | Anthropic | USA | Closed |
+| **Gemini 3.x (3.7 Flash / 3.5 Flash / 3.1 Pro)** | Google DeepMind | USA | Closed |
+| **Grok 4.5 / 4.3** | xAI | USA | Closed |
+| **Llama 4 (Scout / Maverick)** | Meta (Facebook) | USA | Open Weights |
+| **Mistral Large 3** | Mistral AI | Francúzsko | Open Weights (Apache 2.0) |
+| **Mistral Medium 3.5** | Mistral AI | Francúzsko | Open / Closed |
+| **Qwen 3.7 Max / Plus** | Alibaba Cloud | Čína | Open Weights |
+| **DeepSeek-V3.2 / DeepSeek-R2** | DeepSeek | Čína | Open Weights |
+| **DeepSeek V4 Flash / Pro** | DeepSeek | Čína | Open Weights |
+| **GLM-5.2** | Z.ai / Zhipu AI | Čína | Open Weights (MIT) |
+| **Kimi K3 / K2.7 Code** | Moonshot AI | Čína | Open Weights |
+| **MiniMax M3** | MiniMax | Čína | Open / Closed |
+| **Nemotron 3 Ultra** | NVIDIA | USA | Open Weights |
 
-*Poznámka: Kategória "Open Weights" znamená, že model je dostupný na stiahnutie, ale nemusí mať nutne  
-otvorenú licenciu na komerčné využitie bez obmedzení.*
+*Poznámka: Kategória "Open Weights" znamená, že model je dostupný na stiahnutie, ale nemusí mať
+nutne otvorenú licenciu na komerčné využitie bez obmedzení. Modely sa vyvíjajú veľmi rýchlo –
+* *stav k augustu 2026**.
 
-Samozrejme. Pre firemný dokument by som zvolil menej doslovný preklad a viac **prirodzený, manažérsky jazyk**. Zároveň by som ponechal anglické označenia modelov, keďže s nimi sa v praxi stretávame priamo v názvoch AI modelov.
+---
 
 ## Najčastejšie označenia LLM modelov a čo znamenajú
 
-Pri výbere veľkého jazykového modelu (LLM) sa často stretávame s označeniami ako  
-**Flash, Pro, Mini, Thinking** či **Turbo**. Tieto názvy nie sú univerzálnym  
-štandardom – ich presný význam závisí od konkrétneho poskytovateľa. Vo všeobecnosti  
+Pri výbere veľkého jazykového modelu (LLM) sa často stretávame s označeniami ako
+**Flash, Pro, Mini, Thinking** či **Turbo**. Tieto názvy nie sú univerzálnym
+štandardom – ich presný význam závisí od konkrétneho poskytovateľa. Vo všeobecnosti
 však označujú určitý kompromis medzi **výkonom, kvalitou, rýchlosťou a cenou**.
 
-| Označenie                    | Čo zvyčajne znamená                                                              | Typické využitie                                                        |
-| ---------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| **Flash**                    | Rýchly a efektívny model určený na veľké množstvo požiadaviek                    | Chatboty, zákaznícka podpora, sumarizácia, bežná práca s textom         |
-| **Mini**                     | Menší a úspornejší model                                                         | Jednoduché úlohy, automatizácia, aplikácie s veľkým objemom požiadaviek |
-| **Nano**                     | Veľmi malý model s minimálnymi nárokmi na výkon                                  | Mobilné a lokálne aplikácie, zariadenia s obmedzenými zdrojmi           |
-| **Pro**                      | Výkonnejší model určený na náročnejšie úlohy                                     | Analýza, programovanie, komplexné pracovné úlohy                        |
-| **Ultra**                    | Najvyššia alebo prémiová úroveň v rámci danej produktovej rady                   | Najnáročnejšie úlohy, kde je prioritou kvalita                          |
-| **Lite**                     | Odľahčená verzia modelu                                                          | Rýchle a lacné spracovanie bežných úloh                                 |
-| **Fast**                     | Model optimalizovaný predovšetkým na rýchlosť odpovede                           | Interaktívne aplikácie a komunikácia v reálnom čase                     |
-| **Turbo**                    | Model optimalizovaný na vyššiu rýchlosť a efektívnejšie využitie zdrojov         | Aplikácie s vysokým počtom požiadaviek                                  |
-| **Thinking**                 | Model alebo režim, ktorý venuje viac výpočtového času riešeniu problému          | Komplexná analýza, matematika, plánovanie, programovanie                |
-| **Reasoning**                | Model špeciálne optimalizovaný na viac-krokové uvažovanie                        | Náročné analytické a logické úlohy                                      |
-| **Instruct**                 | Model vyladený na presné dodržiavanie pokynov                                    | Automatizácia, práca s textom a AI asistenti                            |
-| **Base**                     | Základný model bez výrazného prispôsobenia na konverzáciu                        | Vývoj vlastných AI riešení a ďalšie dolaďovanie modelu                  |
-| **Chat**                     | Model optimalizovaný na prirodzenú konverzáciu                                   | Chatboty, virtuálni asistenti a zákaznícka komunikácia                  |
-| **Vision**                   | Model schopný pracovať s obrázkami                                               | Analýza dokumentov, fotografií, grafov a screenshotov                   |
-| **Multimodal**               | Model schopný pracovať s viacerými typmi dát, napr. textom, obrazom alebo zvukom | Pokročilí AI asistenti a multimediálne aplikácie                        |
-| **Coder / Code**             | Model optimalizovaný na programovanie                                            | Tvorba, kontrola a úprava kódu                                          |
-| **Long Context**             | Model schopný spracovať veľmi veľké množstvo textu v jednom kontexte             | Dlhé dokumenty, zmluvy, rozsiahle analýzy a veľké kódové základne       |
-| **Embedding**                | Model, ktorý prevádza text alebo iné dáta na číselné reprezentácie               | Vyhľadávanie, RAG, odporúčacie systémy a porovnávanie podobnosti        |
-| **MoE (Mixture of Experts)** | Architektúra, pri ktorej sa pri spracovaní požiadavky aktivuje iba časť modelu   | Efektívne využitie výpočtového výkonu pri veľkých modeloch              |
-| **Quantized / Q4, Q8**       | Model s nižšou numerickou presnosťou, ktorý potrebuje menej pamäte               | Lokálne spúšťanie modelov a aplikácie s obmedzeným hardvérom            |
-| **Small / Medium / Large**   | Označenie relatívnej veľkosti a výkonu modelu                                    | Výber vhodného pomeru medzi výkonom, cenou a rýchlosťou                 |
+| Označenie | Čo zvyčajne znamená | Typické využitie |
+| :--- | :--- | :--- |
+| **Flash** | Rýchly a efektívny model určený na veľké množstvo požiadaviek | Chatboty, zákaznícka podpora, sumarizácia, bežná práca s textom |
+| **Mini** | Menší a úspornejší model | Jednoduché úlohy, automatizácia, aplikácie s veľkým objemom požiadaviek |
+| **Nano** | Veľmi malý model s minimálnymi nárokmi na výkon | Mobilné a lokálne aplikácie, zariadenia s obmedzenými zdrojmi |
+| **Pro** | Výkonnejší model určený na náročnejšie úlohy | Analýza, programovanie, komplexné pracovné úlohy |
+| **Ultra** | Najvyššia alebo prémiová úroveň v rámci danej produktovej rady | Najnáročnejšie úlohy, kde je prioritou kvalita |
+| **Lite** | Odľahčená verzia modelu | Rýchle a lacné spracovanie bežných úloh |
+| **Fast** | Model optimalizovaný predovšetkým na rýchlosť odpovede | Interaktívne aplikácie a komunikácia v reálnom čase |
+| **Turbo** | Model optimalizovaný na vyššiu rýchlosť a efektívnejšie využitie zdrojov | Aplikácie s vysokým počtom požiadaviek |
+| **Thinking** | Model alebo režim, ktorý venuje viac výpočtového času riešeniu problému | Komplexná analýza, matematika, plánovanie, programovanie |
+| **Reasoning** | Model špeciálne optimalizovaný na viac-krokové uvažovanie | Náročné analytické a logické úlohy |
+| **Instruct** | Model vyladený na presné dodržiavanie pokynov | Automatizácia, práca s textom a AI asistenti |
+| **Base** | Základný model bez výrazného prispôsobenia na konverzáciu | Vývoj vlastných AI riešení a ďalšie dolaďovanie modelu |
+| **Chat** | Model optimalizovaný na prirodzenú konverzáciu | Chatboty, virtuálni asistenti a zákaznícka komunikácia |
+| **Vision** | Model schopný pracovať s obrázkami | Analýza dokumentov, fotografií, grafov a screenshotov |
+| **Multimodal** | Model schopný pracovať s viacerými typmi dát, napr. textom, obrazom alebo zvukom | Pokročilí AI asistenti a multimediálne aplikácie |
+| **Coder / Code** | Model optimalizovaný na programovanie | Tvorba, kontrola a úprava kódu |
+| **Long Context** | Model schopný spracovať veľmi veľké množstvo textu v jednom kontexte | Dlhé dokumenty, zmluvy, rozsiahle analýzy a veľké kódové základne |
+| **Embedding** | Model, ktorý prevádza text alebo iné dáta na číselné reprezentácie | Vyhľadávanie, RAG, odporúčacie systémy a porovnávanie podobnosti |
+| **MoE (Mixture of Experts)** | Architektúra, pri ktorej sa pri spracovaní požiadavky aktivuje iba časť modelu | Efektívne využitie výpočtového výkonu pri veľkých modeloch |
+| **Quantized / Q4, Q8** | Model s nižšou numerickou presnosťou, ktorý potrebuje menej pamäte | Lokálne spúšťanie modelov a aplikácie s obmedzeným hardvérom |
+| **Small / Medium / Large** | Označenie relatívnej veľkosti a výkonu modelu | Výber vhodného pomeru medzi výkonom, cenou a rýchlosťou |
 
 ## Ako sa v označeniach orientovať?
 
@@ -196,17 +171,19 @@ V praxi môžeme tieto označenia vnímať najmä cez dve základné osi:
 
 `Nano → Mini → Flash / Lite → Standard → Pro → Ultra`
 
-Vo všeobecnosti platí, že menšie a rýchlejšie modely sú vhodné na jednoduché a opakujúce sa úlohy, zatiaľ čo výkonnejšie modely sa oplatia pri komplexnejších zadaniach.
+Vo všeobecnosti platí, že menšie a rýchlejšie modely sú vhodné na jednoduché a opakujúce sa
+úlohy, zatiaľ čo výkonnejšie modely sa oplatia pri komplexnejších zadaniach.
 
 **Úroveň uvažovania**
 
 `General → Thinking / Reasoning → Advanced Reasoning`
 
-Modely zamerané na reasoning alebo thinking sú určené na úlohy, pri ktorých je dôležitejšie dôkladné riešenie problému než okamžitá odpoveď.
+Modely zamerané na reasoning alebo thinking sú určené na úlohy, pri ktorých je dôležitejšie
+dôkladné riešenie problému než okamžitá odpoveď.
 
 ### Dôležité: názov modelu nie je štandard
 
-Označenia ako **Flash, Pro alebo Ultra nemajú rovnaký význam u všetkých poskytovateľov**.  
+Označenia ako **Flash, Pro alebo Ultra nemajú rovnaký význam u všetkých poskytovateľov**.
 Ide predovšetkým o produktové označenia.
 
 Preto pri porovnávaní modelov nestačí pozerať iba na názov. Dôležitejšie je sledovať:
@@ -222,8 +199,9 @@ Preto pri porovnávaní modelov nestačí pozerať iba na názov. Dôležitejši
 
 Pri výbere modelu nemusí byť vždy najlepšou voľbou ten „najväčší“ alebo „najvýkonnejší“ model.
 
-Na jednoduché a objemné úlohy sa často viac oplatí rýchly a lacný model. Na komplexné  
-rozhodovanie, analýzu, programovanie alebo náročné uvažovanie má zmysel použiť výkonnejší model.
+Na jednoduché a objemné úlohy sa často viac oplatí rýchly a lacný model. Na komplexné
+rozhodovanie, analýzu, programovanie alebo náročné uvažovanie má zmysel použiť výkonnejší
+model.
 
 Inými slovami:
 
@@ -232,10 +210,8 @@ Inými slovami:
 > **Thinking / Reasoning = dôkladnejšie uvažovanie**
 > **Mini / Nano = nižšie náklady a hardvérové nároky**
 
-Pri výbere AI modelu je preto vhodné rozhodovať sa podľa konkrétnej úlohy a požadovaného  
+Pri výbere AI modelu je preto vhodné rozhodovať sa podľa konkrétnej úlohy a požadovaného
 pomeru kvality, rýchlosti a ceny, nie iba podľa názvu modelu.
-
-
 
 ## Životný cyklus: Ako sa LLM trénujú?
 
@@ -251,8 +227,10 @@ Vývoj modelu prebieha vo fázach:
     *   Naučí sa nasledovať príkazy: "Vysvetli mi...", "Napíš kód pre...", "Zhrň text...".
 
 3.  **Zosúladenie s ľudskými hodnotami (Alignment / RLHF):**
-    *   Pomocou *Reinforcement Learning from Human Feedback* (RLHF) ľudia hodnotia odpovede modelu.
-    *   Model sa učí byť užitočný, neškodný a pravdivý (napr. odmieta generovať návody na nelegálne aktivity).
+    *   Pomocou *Reinforcement Learning from Human Feedback* (RLHF) ľudia hodnotia odpovede
+        modelu.
+    *   Model sa učí byť užitočný, neškodný a pravdivý (napr. odmieta generovať návody na
+        nelegálne aktivity).
 
 ## Praktické využitie a limity
 
@@ -266,22 +244,33 @@ Vývoj modelu prebieha vo fázach:
 ### Na čo si dať pozor (Limity)?
 
 1.  **Halucinácie:** Model môže s istotou tvrdiť nepravdu. Vždy si overujte kritické fakty.
-2.  **Kontextové okno:** Model "vidí" len určitú časť konverzácie. Staršie informácie môžu "vypadnúť" z pamäte.
-3.  **Bias (Predpojatosť):** Modely odrážajú predsudky prítomné v tréningových dátach (napr. kultúrne alebo genderové stereotypy).
-4.  **Dátum "odstrihnutia" (Knowledge Cutoff):** Model nemusí vedieť o udalostiach, ktoré sa stali po skončení jeho tréningu (pokiaľ nemá prístup na internet).
-
+2.  **Kontextové okno:** Model "vidí" len určitú časť konverzácie. Staršie informácie môžu
+    "vypadnúť" z pamäte.
+3.  **Bias (Predpojatosť):** Modely odrážajú predsudky prítomné v tréningových dátach (napr.
+    kultúrne alebo genderové stereotypy).
+4.  **Dátum "odstrihnutia" (Knowledge Cutoff):** Model nemusí vedieť o udalostiach, ktoré sa
+    stali po skončení jeho tréningu (pokiaľ nemá prístup na internet).
 
 ## Budúcnosť
 
 Vývoj sa uberá tromi hlavnými smermi:
 
-1.  **Agentic AI:** Modely nebudú len odpovedať, ale budú *konať* – samostatne plánovať úlohy, používať softvér a internet na dosiahnutie cieľa.
-2.  **Multimodalita:** Plná integrácia textu, obrazu, zvuku a videa do jedného modelu, ktorý chápe svet komplexnejšie.
-3.  **Efektivita a Edge AI:** Zmenšovanie modelov tak, aby bežali lokálne na mobiloch a notebookoch bez pripojenia na internet, čo zvyšuje súkromie a znižuje náklady.
+1.  **Agentic AI:** Modely nebudú len odpovedať, ale budú *konať* – samostatne plánovať úlohy,
+    používať softvér a internet na dosiahnutie cieľa.
+2.  **Multimodalita:** Plná integrácia textu, obrazu, zvuku a videa do jedného modelu, ktorý
+    chápe svet komplexnejšie.
+3.  **Efektivita a Edge AI:** Zmenšovanie modelov tak, aby bežali lokálne na mobiloch a
+    notebookoch bez pripojenia na internet, čo zvyšuje súkromie a znižuje náklady.
 
 ## Otázky a diskusia
 
+**Záver:** Diskutujte o tom, prečo je pri zložitých úlohách dôležité dať modelu priestor na
+"reasoning" (napr. promptom *"Think step by step"*).
 
-      
-4.  **Záver:** Diskutujte o tom, prečo je pri zložitých úlohách dôležité dať modelu priestor na "reasoning"
-   (napr. promptom *"Think step by step"*).
+Pri zložitých úlohách je kľúčové nechať model "premýšľať" – teda generovať medzikroky.
+Dôvodom je, že priame generovanie odpovede (bez explicitného uvažovania) vedie k povrchným
+a často chybným záverom. Rozložením problému na menšie kroky model znižuje riziko
+logických chýb a halucinácií. Tento prístup je obzvlášť dôležitý v matematike,
+programovaní, právnej analýze a akýchkoľvek oblastiach vyžadujúcich viacstupňové
+uvažovanie. Navyše, viditeľný myšlienkový proces umožňuje užívateľovi kontrolovať
+správnosť úvah a odhaliť prípadné chyby skôr, než sa dostanú do finálnej odpovede.
