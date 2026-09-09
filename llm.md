@@ -155,6 +155,87 @@ pretože to ovplyvňuje jeho jazykové špecifiká, cenzúru a právne podmienky
 *Poznámka: Kategória "Open Weights" znamená, že model je dostupný na stiahnutie, ale nemusí mať nutne  
 otvorenú licenciu na komerčné využitie bez obmedzení.*
 
+Samozrejme. Pre firemný dokument by som zvolil menej doslovný preklad a viac **prirodzený, manažérsky jazyk**. Zároveň by som ponechal anglické označenia modelov, keďže s nimi sa v praxi stretávame priamo v názvoch AI modelov.
+
+## Najčastejšie označenia LLM modelov a čo znamenajú
+
+Pri výbere veľkého jazykového modelu (LLM) sa často stretávame s označeniami ako  
+**Flash, Pro, Mini, Thinking** či **Turbo**. Tieto názvy nie sú univerzálnym  
+štandardom – ich presný význam závisí od konkrétneho poskytovateľa. Vo všeobecnosti  
+však označujú určitý kompromis medzi **výkonom, kvalitou, rýchlosťou a cenou**.
+
+| Označenie                    | Čo zvyčajne znamená                                                              | Typické využitie                                                        |
+| ---------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Flash**                    | Rýchly a efektívny model určený na veľké množstvo požiadaviek                    | Chatboty, zákaznícka podpora, sumarizácia, bežná práca s textom         |
+| **Mini**                     | Menší a úspornejší model                                                         | Jednoduché úlohy, automatizácia, aplikácie s veľkým objemom požiadaviek |
+| **Nano**                     | Veľmi malý model s minimálnymi nárokmi na výkon                                  | Mobilné a lokálne aplikácie, zariadenia s obmedzenými zdrojmi           |
+| **Pro**                      | Výkonnejší model určený na náročnejšie úlohy                                     | Analýza, programovanie, komplexné pracovné úlohy                        |
+| **Ultra**                    | Najvyššia alebo prémiová úroveň v rámci danej produktovej rady                   | Najnáročnejšie úlohy, kde je prioritou kvalita                          |
+| **Lite**                     | Odľahčená verzia modelu                                                          | Rýchle a lacné spracovanie bežných úloh                                 |
+| **Fast**                     | Model optimalizovaný predovšetkým na rýchlosť odpovede                           | Interaktívne aplikácie a komunikácia v reálnom čase                     |
+| **Turbo**                    | Model optimalizovaný na vyššiu rýchlosť a efektívnejšie využitie zdrojov         | Aplikácie s vysokým počtom požiadaviek                                  |
+| **Thinking**                 | Model alebo režim, ktorý venuje viac výpočtového času riešeniu problému          | Komplexná analýza, matematika, plánovanie, programovanie                |
+| **Reasoning**                | Model špeciálne optimalizovaný na viac-krokové uvažovanie                        | Náročné analytické a logické úlohy                                      |
+| **Instruct**                 | Model vyladený na presné dodržiavanie pokynov                                    | Automatizácia, práca s textom a AI asistenti                            |
+| **Base**                     | Základný model bez výrazného prispôsobenia na konverzáciu                        | Vývoj vlastných AI riešení a ďalšie dolaďovanie modelu                  |
+| **Chat**                     | Model optimalizovaný na prirodzenú konverzáciu                                   | Chatboty, virtuálni asistenti a zákaznícka komunikácia                  |
+| **Vision**                   | Model schopný pracovať s obrázkami                                               | Analýza dokumentov, fotografií, grafov a screenshotov                   |
+| **Multimodal**               | Model schopný pracovať s viacerými typmi dát, napr. textom, obrazom alebo zvukom | Pokročilí AI asistenti a multimediálne aplikácie                        |
+| **Coder / Code**             | Model optimalizovaný na programovanie                                            | Tvorba, kontrola a úprava kódu                                          |
+| **Long Context**             | Model schopný spracovať veľmi veľké množstvo textu v jednom kontexte             | Dlhé dokumenty, zmluvy, rozsiahle analýzy a veľké kódové základne       |
+| **Embedding**                | Model, ktorý prevádza text alebo iné dáta na číselné reprezentácie               | Vyhľadávanie, RAG, odporúčacie systémy a porovnávanie podobnosti        |
+| **MoE (Mixture of Experts)** | Architektúra, pri ktorej sa pri spracovaní požiadavky aktivuje iba časť modelu   | Efektívne využitie výpočtového výkonu pri veľkých modeloch              |
+| **Quantized / Q4, Q8**       | Model s nižšou numerickou presnosťou, ktorý potrebuje menej pamäte               | Lokálne spúšťanie modelov a aplikácie s obmedzeným hardvérom            |
+| **Small / Medium / Large**   | Označenie relatívnej veľkosti a výkonu modelu                                    | Výber vhodného pomeru medzi výkonom, cenou a rýchlosťou                 |
+
+## Ako sa v označeniach orientovať?
+
+V praxi môžeme tieto označenia vnímať najmä cez dve základné osi:
+
+**Rýchlosť a náklady**
+
+`Nano → Mini → Flash / Lite → Standard → Pro → Ultra`
+
+Vo všeobecnosti platí, že menšie a rýchlejšie modely sú vhodné na jednoduché a opakujúce sa úlohy, zatiaľ čo výkonnejšie modely sa oplatia pri komplexnejších zadaniach.
+
+**Úroveň uvažovania**
+
+`General → Thinking / Reasoning → Advanced Reasoning`
+
+Modely zamerané na reasoning alebo thinking sú určené na úlohy, pri ktorých je dôležitejšie dôkladné riešenie problému než okamžitá odpoveď.
+
+### Dôležité: názov modelu nie je štandard
+
+Označenia ako **Flash, Pro alebo Ultra nemajú rovnaký význam u všetkých poskytovateľov**.  
+Ide predovšetkým o produktové označenia.
+
+Preto pri porovnávaní modelov nestačí pozerať iba na názov. Dôležitejšie je sledovať:
+
+* **Kvalitu výstupu** – ako dobre model zvláda konkrétnu úlohu
+* **Schopnosť uvažovania** – ako dobre rieši komplexné problémy
+* **Rýchlosť** – ako rýchlo dokáže reagovať
+* **Cena** – koľko stojí spracovanie požiadaviek
+* **Kontextové okno** – koľko informácií dokáže model spracovať naraz
+* **Multimodálne schopnosti** – či dokáže pracovať aj s obrázkami, zvukom alebo videom
+
+### Praktické pravidlo
+
+Pri výbere modelu nemusí byť vždy najlepšou voľbou ten „najväčší“ alebo „najvýkonnejší“ model.
+
+Na jednoduché a objemné úlohy sa často viac oplatí rýchly a lacný model. Na komplexné  
+rozhodovanie, analýzu, programovanie alebo náročné uvažovanie má zmysel použiť výkonnejší model.
+
+Inými slovami:
+
+> **Flash = rýchlosť a efektivita**
+> **Pro = vyšší výkon a kvalita**
+> **Thinking / Reasoning = dôkladnejšie uvažovanie**
+> **Mini / Nano = nižšie náklady a hardvérové nároky**
+
+Pri výbere AI modelu je preto vhodné rozhodovať sa podľa konkrétnej úlohy a požadovaného  
+pomeru kvality, rýchlosti a ceny, nie iba podľa názvu modelu.
+
+
 
 ## Životný cyklus: Ako sa LLM trénujú?
 
