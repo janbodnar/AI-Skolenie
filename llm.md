@@ -279,23 +279,9 @@ Vývoj sa uberá tromi hlavnými smermi:
 2.  **Multimodalita:** Plná integrácia textu, obrazu, zvuku a videa do jedného modelu, ktorý chápe svet komplexnejšie.
 3.  **Efektivita a Edge AI:** Zmenšovanie modelov tak, aby bežali lokálne na mobiloch a notebookoch bez pripojenia na internet, čo zvyšuje súkromie a znižuje náklady.
 
----
+## Otázky a diskusia
 
-## 9. Záver a cvičenie pre študentov
 
-Jazykové modely sú mocný nástroj, ktorý mení spôsob, akým pracujeme s informáciami. Ako budúcich tvorcov  
-AI je dôležité, aby ste im rozumeli nielen ako používateľovi, ale aby ste chápali ich princípy,  
-limity a etické súvislosti.
-
-### Mini-laboratórium: Rozdiel v uvažovaní
-
-*Skúste tento jednoduchý experiment na porovnanie klasického a reasoning modelu:*
-
-1.  **Úloha:** Položte obom modelom logickú hádanku alebo matematickú slovnú úlohu, ktorá
-   vyžaduje viac krokov (napr. *"Mám 3 jablká, zjem jedno, kúpim ďalšie dve, potom polovicu darujem. Koľko mi ostane?"*).
-3.  **Pozorovanie:**
-    *   Sledujte, či model odpovedá okamžite (často chybuje), alebo či si najprv "rozmyslí" postup (vypíše si kroky).
-    *   Porovnajte presnosť výsledku.
       
 4.  **Záver:** Diskutujte o tom, prečo je pri zložitých úlohách dôležité dať modelu priestor na "reasoning"
    (napr. promptom *"Think step by step"*).
