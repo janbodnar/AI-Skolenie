@@ -2,24 +2,26 @@
 
 Pomocou AI nástrojov splň tieto úlohy:
 
-- [x] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
+- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
-
-- [x] Spočítaj výdavky v troch receptoch.
-- [x] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
-- [x] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
+- [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
+- [ ] Vytvor CV. Použi šablónu z Google worspace.
+- [ ] Spočítaj výdavky v troch receptoch.
+- [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
+- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
       Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
-- [x] Vytvor logo pre svoju fiktívnu firmu.
+- [ ] Vytvor logo pre svoju fiktívnu firmu.
 - [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
 - [ ] Prelož prvú stranu knihy *Jane Eyre*.
-- [x] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
-- [x] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
+- [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
+- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
       vo VS Code. 
 - [ ] Nájdi všetky nepočítateľné podstatné mená v
    Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
    https://www.gutenberg.org/ebooks/43
 
 - [ ] Vytvor Deep Research report, ktorý sa zameria na daňovo-právne zmeny živnostníkov za posledných 5 rokov.
+- [ ] Vytvor nový stĺpec pre CSV dáta male/female.
 - [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
   https://www.youtube.com/watch?v=DyOTl5iDGvU
 
