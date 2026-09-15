@@ -1,11 +1,11 @@
 # Google AI Studio: Tvorba AI aplikácií bez programovania
 
-**Google AI Studio** je bezplatný webový nástroj od Google, ktorý umožňuje pracovať s najnovšími
-AI modelmi Gemini priamo v prehliadači – bez nutnosti inštalácie alebo programovania.
+**Google AI Studio** je bezplatný webový nástroj od Google, ktorý umožňuje pracovať s najnovšími  
+AI modelmi Gemini priamo v prehliadači – bez nutnosti inštalácie alebo programovania.  
 
-> **Jednoducho povedané:** Google AI Studio je „ihrisko" pre umelú inteligenciu, kde si môžete
-> vyskúšať tvorbu promptov, testovať rôzne modely, generovať texty a obrázky, a dokonca
-> vytvárať jednoduché AI aplikácie – to všetko cez prehľadné webové rozhranie.
+> **Jednoducho povedané:** Google AI Studio je „ihrisko" pre umelú inteligenciu, kde si môžete  
+> vyskúšať tvorbu promptov, testovať rôzne modely, generovať texty a obrázky, a dokonca  
+> vytvárať jednoduché AI aplikácie – to všetko cez prehľadné webové rozhranie.  
 
 ### Prečo je AI Studio zaujímavé pre začiatočníkov?
 
