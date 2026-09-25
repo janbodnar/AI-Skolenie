@@ -4,6 +4,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 
 - [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
+- [ ] Nájdi všetky slovenské firmy, ktoré používajú Python Pandas knižnicu
 - [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
 - [ ] Vytvor CV. Použi šablónu z Google worspace.
 - [ ] Spočítaj výdavky v troch receptoch.
