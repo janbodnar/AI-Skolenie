@@ -4,8 +4,8 @@ Jazykové modely (angl. *Language Models*, skrátene LM) sú systémy umelej
 inteligencie, ktoré sa učia zo vzorov v texte. Ich základnou úlohou je  
 predpovedať ďalší token, teda slovo alebo časť slova, v sekvencii.  
   
-**Veľké jazykové modely** (Large Language Models, LLM) používajú veľké  
-množstvo tréningových dát a výpočtového výkonu. Dokážu:  
+**Veľké jazykové modely** (Large Language Models, LLM) využívajú veľké  
+množstvo tréningových dát a výpočtový výkon. Dokážu:  
   
 * generovať text v prirodzenom jazyku;  
 * odpovedať na otázky a vysvetľovať zložité pojmy;  
@@ -14,8 +14,8 @@ množstvo tréningových dát a výpočtového výkonu. Dokážu:
 * riešiť logické úlohy a analyzovať neštruktúrované dáta.  
   
 > **Kľúčová myšlienka:** LLM nie sú databázy faktov, ale generátory  
-> pravdepodobných pokračovaní. Nevedia „pravdu“ v ľudskom zmysle a môžu  
-> vytvoriť presvedčivú, ale nesprávnu odpoveď.  
+> pravdepodobných pokračovaní. Nemajú „pravdu“ v ľudskom zmysle a môžu  
+> vytvoriť presvedčivú, no nesprávnu odpoveď.  
   
 ## Ako LLM fungujú? (zjednodušený pohľad)  
   
@@ -24,25 +24,26 @@ Ich princíp možno rozdeliť do štyroch krokov:
 1. **Tokenizácia:** Vstupný text sa rozdelí na menšie jednotky nazývané  
    *tokeny*. Môžu to byť celé slová, korene slov alebo ich časti.  
 2. **Embedding:** Každý token sa prevedie na vektor čísel, ktorý zachytáva  
-   jeho význam a vzťah k iným tokenom.  
+   jeho význam a vzťah k ostatným tokenom.  
 3. **Spracovanie:** Architektúra *Transformer* používa mechanizmus  
-   *attention*. Ten umožňuje modelu venovať pozornosť dôležitým častiam  
+   *attention*, ktorý umožňuje modelu sústrediť sa na dôležité časti  
    kontextu bez ohľadu na ich vzdialenosť.  
-4. **Predikcia:** Model vypočíta pravdepodobnosť možných nasledujúcich  
-   tokenov a vyberie jeden z nich. Proces sa opakuje, kým nevznikne odpoveď.  
+4. **Predikcia:** Model vypočíta pravdepodobnosti možných nasledujúcich  
+   tokenov a vyberie jeden z nich. Proces sa opakuje, kým nevznikne  
+   celá odpoveď.  
   
 ### Slovník základných pojmov  
   
 | Pojem | Vysvetlenie |  
 |-------|-------------|  
 | **Token** | Základná jednotka textu pre model, napríklad slovo alebo jeho časť. |  
-| **Parameter** | Interná premenná učená počas tréningu. Modely ich majú miliardy až bilióny. |  
+| **Parameter** | Interná premenná učená počas tréningu. Modely ich majú milióny až bilióny. |  
 | **Kontextové okno** | Maximálne množstvo vstupu a výstupu, ktoré model spracuje naraz. |  
-| **Halucinácia** | Presvedčivo znejúci, ale fakticky nesprávny alebo vymyslený obsah. |  
+| **Halucinácia** | Presvedčivo znejúci, no fakticky nesprávny alebo vymyslený obsah. |  
   
 ## Klasifikácia jazykových modelov  
   
-LLM môžeme deliť podľa architektúry, dostupnosti váh a veľkosti.  
+LLM možno deliť podľa architektúry, dostupnosti váh a veľkosti.  
   
 ### A. Podľa architektúry  
   
@@ -51,14 +52,14 @@ LLM môžeme deliť podľa architektúry, dostupnosti váh a veľkosti.
 * **Encoder-decoder (napr. T5, BART):** Vhodné na transformácie, napríklad  
   preklad alebo sumarizáciu.  
 * **Mixture-of-Experts (MoE):** Pri každom tokene sa aktivuje iba časť  
-  expertov. To môže znížiť výpočtové náklady pri zachovaní veľkej kapacity.  
+  expertov, čo môže znížiť výpočtové náklady pri zachovaní veľkej kapacity.  
   
 ### B. Podľa otvorenosti prístupu  
   
-* **Open weights:** Váhy sú dostupné na stiahnutie, ale licencia môže mať  
-  obmedzenia. Príklady: Llama, Mistral Large 3 a niektoré modely Qwen.  
+* **Open weights:** Váhy sú dostupné na stiahnutie, licencia však môže  
+  obsahovať obmedzenia. Príklady: Llama, Mistral Large 3, Qwen.  
 * **Proprietary:** Model je dostupný najmä cez API alebo webové rozhranie.  
-  Príklady: GPT, Claude a Gemini.  
+  Príklady: GPT, Claude, Gemini.  
   
 Pojmy *open weights* a *open source* nie sú zameniteľné. Dostupné váhy  
 neznamenajú, že sú otvorené aj tréningové dáta, kód a licencia.  
@@ -90,7 +91,7 @@ vedeckom uvažovaní a viacstupňových úlohách, ale bývajú pomalšie a drah
 Príklady sú GPT-6 Astra, GPT-5.6 Sol, Claude Fable 5.1 a Gemini 3.1 Pro.  
   
 Používateľ nemusí od modelu vyžadovať zverejnenie interného chain-of-thought.  
-Pre kontrolu kvality je vhodnejšie žiadať stručné zdôvodnenie, overiteľné  
+Na kontrolu kvality je vhodnejšie žiadať stručné zdôvodnenie, overiteľné  
 medzikroky alebo výsledky testov.  
   
 ## Prehľad významných modelov (stav k 9. septembru 2026)  
@@ -119,7 +120,34 @@ cyklus.
   
 Názvy a dostupnosť modelov sa menia rýchlejšie než učebnicové texty. Pri  
 integrácii preto treba overiť aktuálny model ID, dokumentáciu, licenciu,  
-cenu, kontextové okno a plánované vyradenie.  
+cenu, kontextové okno a plánované vyradenie z prevádzky.  
+  
+## Models.dev: otvorená databáza modelov  
+  
+[Models.dev](https://models.dev) je otvorená databáza umelej inteligencie  
+s prehľadom modelov, laboratórií a poskytovateľov. Zdrojový kód je dostupný  
+na GitHube (projekt sst/models.dev).  
+  
+Každý model má na stránke vlastný záznam s týmito údajmi:  
+  
+* **Lab** a **Providers:** kto model vyvinul a koľko poskytovateľov ho  
+  ponúka;  
+* **Context / Output / Input:** veľkosť kontextového okna a maximálna dĺžka  
+  výstupu v tokenoch;  
+* **Reasoning, Tool Call, Structured, Temperature:** podpora uvažovania,  
+  volania nástrojov, štruktúrovaného výstupu a nastavenia teploty;  
+* **Weights:** či sú váhy modelu verejne dostupné (*Open*), alebo nie  
+  (*Closed*);  
+* **Price:** cena za milión vstupných a výstupných tokenov;  
+* **Release / Updated:** dátum vydania a poslednej aktualizácie záznamu.  
+  
+Stránku možno filtrovať a vyhľadávať podľa názvu modelu, laboratória alebo  
+poskytovateľa. Je užitočná na porovnanie kontextových okien, cien a  
+funkcií pred výberom modelu pre konkrétne použitie.  
+  
+Údaje na stránke sa menia často a nemusia byť úplné, najmä pri novších  
+modeloch a preview verziách. Pri rozhodovaní o nasadení treba overiť  
+aktuálne hodnoty u konkrétneho poskytovateľa.  
   
 ## Najčastejšie označenia modelov  
   
@@ -133,22 +161,22 @@ konkrétneho poskytovateľa.
 | **Thinking / Reasoning** | Viac výpočtového času na riešenie | Matematika, plánovanie, programovanie |  
 | **Instruct / Chat** | Doladenie na pokyny alebo konverzáciu | Asistenti a automatizované spracovanie |  
 | **Base** | Základný model bez konverzačného doladenia | Ďalšie dolaďovanie a výskum |  
-| **Vision / Multimodal** | Práca s obrazom, zvukom alebo videom | Dokumenty, grafy a multimédiá |  
+| **Vision / Multimodal** | Práca s obrazom, zvukom alebo videom | Dokumenty, grafy, multimédiá |  
 | **Coder / Code** | Optimalizácia na programovanie | Tvorba, kontrola a úprava kódu |  
 | **Long context** | Veľké kontextové okno | Dlhé dokumenty a kódové základne |  
-| **Embedding** | Prevod dát na vektorové reprezentácie | Vyhľadávanie, RAG a podobnosť |  
+| **Embedding** | Prevod dát na vektorové reprezentácie | Vyhľadávanie, RAG, podobnosť |  
 | **MoE** | Aktivácia iba časti expertov pri požiadavke | Efektívne veľké modely |  
 | **Quantized / Q4 / Q8** | Nižšia numerická presnosť a menšia pamäť | Lokálne spúšťanie modelov |  
   
 ## Ako sa v označeniach orientovať?  
   
-Pri výbere modelu nestačí pozerať iba na marketingový názov. Dôležitejšie  
-je sledovať:  
+Pri výbere modelu nestačí sledovať marketingový názov. Dôležitejšie je  
+posudzovať:  
   
 * kvalitu výstupu na vlastnej úlohe;  
 * schopnosť uvažovania a používania nástrojov;  
 * rýchlosť, cenu a limity služby;  
-* veľkosť kontextového okna a maximálny výstup;  
+* veľkosť kontextového okna a maximálnu dĺžku výstupu;  
 * multimodálne schopnosti;  
 * licenciu, ochranu dát a životný cyklus modelu.  
   
@@ -160,11 +188,12 @@ model s režimom reasoning.
   
 Vývoj modelu zvyčajne prebieha v týchto fázach:  
   
-1. **Predtrénovanie:** Model sa učí štatistické vzťahy v textoch, kóde a  
+1. **Predtrénovanie:** Model sa učí štatistické vzťahy v texte, kóde a  
    ďalších dátach. Výsledkom je *base model*.  
-2. **Doladenie:** Model sa trénuje na príkladoch otázok, odpovedí a pokynov.  
-3. **Zosúladenie:** Pomocou metód ako RLHF, DPO alebo syntetická spätná  
-   väzba sa zlepšuje užitočnosť, bezpečnosť a dodržiavanie pokynov.  
+2. **Doladenie (fine-tuning):** Model sa trénuje na príkladoch otázok,  
+   odpovedí a pokynov.  
+3. **Zosúladenie (alignment):** Pomocou metód ako RLHF, DPO alebo syntetickej  
+   spätnej väzby sa zlepšuje užitočnosť, bezpečnosť a dodržiavanie pokynov.  
 4. **Vyhodnotenie a nasadenie:** Model sa testuje na benchmarkoch, vlastných  
    úlohách, bezpečnosti a odolnosti voči zneužitiu.  
   
@@ -191,7 +220,8 @@ Vývoj modelu zvyčajne prebieha v týchto fázach:
 6. **Nestabilné API:** Alias ako `latest` sa môže zmeniť bez zmeny kódu.  
   
 Kritické tvrdenia treba overovať. Pri produkčnej integrácii je vhodné  
-používať konkrétne verzie, logovať vstupy a výstupy a mať regresné testy.  
+používať konkrétne verzie modelov, logovať vstupy a výstupy a mať  
+regresné testy.  
   
 ## Budúcnosť  
   
@@ -202,7 +232,7 @@ Vývoj sa uberá tromi hlavnými smermi:
 2. **Multimodalita:** Text, obraz, zvuk a video sa spracúvajú v jednom  
    systéme.  
 3. **Efektivita a edge AI:** Menšie, kvantizované modely bežia lokálne, čo  
-   znižuje latenciu, cenu a potrebu posielať dáta do cloudu.  
+   znižuje latenciu, náklady a potrebu posielať dáta do cloudu.  
   
 ## Otázky a diskusia  
   
