@@ -182,6 +182,71 @@ $ python3 scripts/roll_advantage.py 20
 | **Znovupoužiteľné** | Rovnaký skill funguje v akomkoľvek projekte v workspaci |
 | **Objaviteľné** | Pole `description` je indexované pre automatické spúšťanie |
 
+
+### Príklad: Odchody MHD
+
+```md
+---
+name: imhd-odchody
+description: Zisti najbližšie odchody MHD v Bratislave (linka + zastávka) z imhd.sk cez Playwright. Použi, keď sa používateľ pýta na odchody, spoje alebo cestovný poriadok bratislavskej MHD.
+---
+
+# Odchody MHD Bratislava (imhd.sk)
+
+Používaj Playwright MCP nástroje (`browser_navigate`, `browser_evaluate`).
+Firecrawl CLI nebýva nainštalované a WebFetch/curl na imhd.sk často zlyhajú.
+
+## Dva zdroje, nemiešať
+
+| Zdroj | Čo to je | Ako to nazvať |
+| --- | --- | --- |
+| Zastávková tabuľa | odpočet "o 4 min", odlišuje sa od poriadku | pravdepodobne živé |
+| Cestovný poriadok | plánované časy na celý deň | plánované |
+
+- Tabuľa nepíše meškanie výslovne. Ak sa jej čas líši od poriadku,
+  uveď to ako pravdepodobné meškanie, nie ako fakt.
+- Na stránke poriadku sa zvýrazní najbližší odchod (`td.next-departure`).
+  Počíta sa v prehliadači z hodín, nie je to živý údaj.
+
+## 1. Živá tabuľa (preferované)
+
+URL: `https://imhd.sk/ba/online-zastavkova-tabula?st=<názov zastávky>`
+Príklad: `?st=V. hrdlo, internát`
+
+- Parameter `q` nefunguje, použi `st`.
+- Bez súhlasu s cookies stránka hlási "Chyba" (je to Google CMP dialóg).
+  Súhlas: odkaz "Nastavte súhlas" -> tlačidlo "Consent", potom stránku
+  načítaj znova. Súhlas na imhd.sk dávaj automaticky bez pýtania,
+  používateľ to výslovne dovolil (2026-10-13). Platí len pre imhd.sk.
+- Čítaj riadky tabuľky:
+  `[...document.querySelectorAll('table tr')].map(r => r.innerText.replace(/\s+/g,' ').trim())`
+- Čas na tabuľke je v prvom riadku (napr. `07:46:28`). Minúty sú voči nemu.
+- Tabuľka ukáže len pár najbližších spojov. Chýbajúce doplň z poriadku
+  a výslovne označ ako plánované.
+
+## 2. Cestovný poriadok (záloha)
+
+1. `https://imhd.sk/ba/cestovne-poriadky`, zober odkaz na linku
+   (`a` s textom `70`), URL obsahuje hash, nehádaj ju.
+2. Na stránke linky vyber odkaz s názvom zastávky a smerom.
+3. Tabuľka má záložky: pracovné dni v školskom roku / počas prázdnin /
+   voľné dni. Vyber podľa dnešného dňa a over, či sú prázdniny.
+4. Stránka "Všetky odchody zo zastávky" (`/ba/vsetky-odchody-zo-zastavky/...`)
+   v `innerText` posúva čas o riadok. Čítaj ju po riadkoch tabuľky
+   (`table tr`), nie z celého textu.
+
+## Formát odpovede
+
+- Slovensky, 5 odchodov na smer, s aktuálnym časom a dňom.
+- Uveď, či ide o živú tabuľu alebo plán, aj nástupište a či je zastávka
+  na znamenie.
+- Zdroj ako odkaz.
+- Dodrž formátovanie z AGENTS.md projektu (zalamovanie ~80 znakov,
+  riadky zakončené dvoma medzerami).
+```
+
+
+
 ### Príklad: Weather skill (počasie)
 
 Weather skill umožňuje agentovi získať aktuálne počasie, teplotu,  
