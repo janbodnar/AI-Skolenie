@@ -5,6 +5,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
 - [ ] Nájdi všetky slovenské firmy, ktoré používajú Python Pandas knižnicu
+- [ ] Nájdi všetkyk pondelky/utorky, štvrtky/piatky, ktoré nekolidujú s slovenskými alebo českými sviatkami v marci a apríly
 - [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
 - [ ] Nájdi spoje z Telgártu do Bratislave najbližšiu sobotu, odchody, príchody, prestupy
 - [ ] Vytvor CV. Použi šablónu z Google worspace.
