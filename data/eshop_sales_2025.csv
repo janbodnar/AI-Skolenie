@@ -1,0 +1,601 @@
+order_id,order_date,category,product,unit_price_eur,quantity,discount_pct,revenue_eur,region,customer_type,channel,rating
+ORD-10001,2025-01-01,Books,Data Science Handbook,39.9,1,0,39.9,Bratislava,Returning,Mobile App,4
+ORD-10002,2025-01-01,Electronics,Wireless Headphones,79.9,2,0,159.8,Bratislava,Returning,Mobile App,3
+ORD-10003,2025-01-03,Electronics,Smartwatch,149.0,3,0,447.0,Nitra,New,Mobile App,3
+ORD-10004,2025-01-03,Electronics,USB-C Charger,19.9,3,0,59.7,Trenčín,Returning,Mobile App,5
+ORD-10005,2025-01-03,Books,Cookbook,22.9,2,0,45.8,Bratislava,Returning,Mobile App,4
+ORD-10006,2025-01-06,Home & Kitchen,Coffee Maker,89.0,4,0,356.0,Nitra,New,Website,4
+ORD-10007,2025-01-07,Electronics,Smartwatch,149.0,1,0,149.0,Bratislava,New,Mobile App,3
+ORD-10008,2025-01-08,Home & Kitchen,Ceramic Mug Set,24.9,1,10,22.41,Žilina,New,Mobile App,4
+ORD-10009,2025-01-08,Books,Mystery Novel,14.9,5,0,74.5,Bratislava,Returning,Mobile App,5
+ORD-10010,2025-01-09,Books,Cookbook,22.9,2,0,45.8,Banská Bystrica,New,Website,4
+ORD-10011,2025-01-09,Electronics,USB-C Charger,19.9,1,0,19.9,Prešov,Returning,Mobile App,3
+ORD-10012,2025-01-10,Electronics,Bluetooth Speaker,49.9,1,10,44.91,Bratislava,New,Mobile App,3
+ORD-10013,2025-01-10,Electronics,Wireless Headphones,79.9,2,0,159.8,Košice,New,Website,4
+ORD-10014,2025-01-10,Electronics,Smartwatch,149.0,1,10,134.1,Banská Bystrica,New,Mobile App,4
+ORD-10015,2025-01-10,Electronics,Bluetooth Speaker,49.9,4,0,199.6,Bratislava,Returning,Website,5
+ORD-10016,2025-01-11,Books,Data Science Handbook,39.9,3,10,107.73,Trnava,Returning,Mobile App,4
+ORD-10017,2025-01-12,Electronics,USB-C Charger,19.9,2,10,35.82,Trnava,New,Website,5
+ORD-10018,2025-01-12,Home & Kitchen,Chef Knife Set,59.9,4,0,239.6,Prešov,Returning,Mobile App,5
+ORD-10019,2025-01-14,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Nitra,Returning,Website,4
+ORD-10020,2025-01-15,Beauty,Shampoo,9.9,1,0,9.9,Prešov,New,Website,5
+ORD-10021,2025-01-16,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Košice,New,Website,3
+ORD-10022,2025-01-17,Books,Data Science Handbook,39.9,2,0,79.8,Nitra,New,Mobile App,4
+ORD-10023,2025-01-19,Sports,Water Bottle,15.9,1,0,15.9,Trnava,Returning,Website,5
+ORD-10024,2025-01-19,Sports,Running Shoes,99.0,5,0,495.0,Nitra,Returning,Website,3
+ORD-10025,2025-01-19,Sports,Running Shoes,99.0,1,0,99.0,Prešov,New,Website,4
+ORD-10026,2025-01-20,Electronics,USB-C Charger,19.9,3,0,59.7,Košice,Returning,Website,5
+ORD-10027,2025-01-22,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Prešov,New,Mobile App,4
+ORD-10028,2025-01-23,Electronics,Wireless Headphones,79.9,3,0,239.7,Bratislava,New,Website,3
+ORD-10029,2025-01-23,Home & Kitchen,Ceramic Mug Set,24.9,2,0,49.8,Bratislava,New,Mobile App,5
+ORD-10030,2025-01-24,Electronics,Bluetooth Speaker,49.9,3,0,149.7,Košice,New,Mobile App,3
+ORD-10031,2025-01-25,Electronics,Wireless Headphones,79.9,1,0,79.9,Prešov,Returning,Website,4
+ORD-10032,2025-01-26,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Mobile App,4
+ORD-10033,2025-01-27,Home & Kitchen,Ceramic Mug Set,24.9,2,10,44.82,Bratislava,Returning,Website,5
+ORD-10034,2025-01-28,Sports,Resistance Bands,19.9,4,0,79.6,Trenčín,Returning,Website,5
+ORD-10035,2025-01-29,Electronics,Smartwatch,149.0,6,0,894.0,Trnava,Returning,Mobile App,3
+ORD-10036,2025-01-29,Electronics,USB-C Charger,19.9,3,0,59.7,Prešov,New,Website,4
+ORD-10037,2025-01-30,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Bratislava,Returning,Mobile App,4
+ORD-10038,2025-01-31,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Prešov,Returning,Mobile App,3
+ORD-10039,2025-02-02,Electronics,Smartwatch,149.0,4,0,596.0,Nitra,Returning,Website,3
+ORD-10040,2025-02-03,Books,Mystery Novel,14.9,4,0,59.6,Bratislava,Returning,Website,5
+ORD-10041,2025-02-03,Beauty,Perfume,69.0,3,0,207.0,Trnava,Returning,Website,4
+ORD-10042,2025-02-04,Books,Python for Beginners,29.9,1,0,29.9,Prešov,New,Website,4
+ORD-10043,2025-02-05,Sports,Water Bottle,15.9,6,0,95.4,Bratislava,Returning,Website,4
+ORD-10044,2025-02-06,Sports,Water Bottle,15.9,2,0,31.8,Bratislava,Returning,Mobile App,5
+ORD-10045,2025-02-06,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Žilina,Returning,Mobile App,5
+ORD-10046,2025-02-08,Beauty,Shampoo,9.9,4,0,39.6,Bratislava,Returning,Website,4
+ORD-10047,2025-02-10,Electronics,Wireless Headphones,79.9,3,0,239.7,Žilina,Returning,Website,4
+ORD-10048,2025-02-11,Books,Mystery Novel,14.9,1,0,14.9,Banská Bystrica,New,Website,5
+ORD-10049,2025-02-11,Books,Mystery Novel,14.9,3,0,44.7,Košice,Returning,Website,4
+ORD-10050,2025-02-11,Electronics,Bluetooth Speaker,49.9,2,10,89.82,Prešov,Returning,Mobile App,5
+ORD-10051,2025-02-14,Electronics,USB-C Charger,19.9,2,0,39.8,Bratislava,New,Website,4
+ORD-10052,2025-02-14,Books,Python for Beginners,29.9,1,0,29.9,Bratislava,Returning,Mobile App,3
+ORD-10053,2025-02-15,Books,Mystery Novel,14.9,2,10,26.82,Trnava,New,Website,3
+ORD-10054,2025-02-15,Books,Mystery Novel,14.9,2,0,29.8,Bratislava,New,Website,5
+ORD-10055,2025-02-15,Home & Kitchen,Chef Knife Set,59.9,2,10,107.82,Bratislava,Returning,Website,3
+ORD-10056,2025-02-16,Sports,Water Bottle,15.9,1,0,15.9,Bratislava,Returning,Mobile App,4
+ORD-10057,2025-02-18,Sports,Water Bottle,15.9,4,0,63.6,Bratislava,Returning,Mobile App,4
+ORD-10058,2025-02-18,Sports,Water Bottle,15.9,1,10,14.31,Banská Bystrica,New,Mobile App,5
+ORD-10059,2025-02-18,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Trnava,New,Website,5
+ORD-10060,2025-02-18,Sports,Resistance Bands,19.9,3,10,53.73,Nitra,New,Mobile App,5
+ORD-10061,2025-02-18,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Website,3
+ORD-10062,2025-02-19,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Bratislava,New,Website,4
+ORD-10063,2025-02-21,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Bratislava,New,Website,3
+ORD-10064,2025-02-21,Books,Python for Beginners,29.9,1,0,29.9,Žilina,Returning,Website,5
+ORD-10065,2025-02-22,Books,Data Science Handbook,39.9,3,0,119.7,Žilina,Returning,Mobile App,5
+ORD-10066,2025-02-22,Books,Mystery Novel,14.9,4,0,59.6,Bratislava,Returning,Mobile App,4
+ORD-10067,2025-02-22,Electronics,Wireless Headphones,79.9,4,0,319.6,Bratislava,Returning,Mobile App,5
+ORD-10068,2025-02-23,Sports,Running Shoes,99.0,3,0,297.0,Prešov,New,Website,4
+ORD-10069,2025-02-24,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Košice,Returning,Website,4
+ORD-10070,2025-02-25,Beauty,Shampoo,9.9,2,10,17.82,Prešov,Returning,Website,5
+ORD-10071,2025-03-01,Beauty,Lip Balm Set,12.9,3,0,38.7,Košice,Returning,Mobile App,5
+ORD-10072,2025-03-02,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Košice,New,Mobile App,4
+ORD-10073,2025-03-02,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Bratislava,Returning,Website,4
+ORD-10074,2025-03-04,Books,Mystery Novel,14.9,4,0,59.6,Bratislava,Returning,Mobile App,5
+ORD-10075,2025-03-05,Electronics,Smartwatch,149.0,1,10,134.1,Nitra,New,Mobile App,5
+ORD-10076,2025-03-06,Sports,Water Bottle,15.9,4,0,63.6,Žilina,Returning,Website,3
+ORD-10077,2025-03-07,Beauty,Lip Balm Set,12.9,1,0,12.9,Nitra,New,Mobile App,4
+ORD-10078,2025-03-08,Home & Kitchen,Air Fryer,119.0,1,10,107.1,Košice,New,Website,5
+ORD-10079,2025-03-08,Books,Python for Beginners,29.9,3,0,89.7,Bratislava,Returning,Mobile App,5
+ORD-10080,2025-03-08,Home & Kitchen,Coffee Maker,89.0,2,0,178.0,Bratislava,New,Website,4
+ORD-10081,2025-03-08,Home & Kitchen,Ceramic Mug Set,24.9,2,0,49.8,Bratislava,Returning,Website,4
+ORD-10082,2025-03-09,Books,Data Science Handbook,39.9,2,0,79.8,Prešov,Returning,Website,5
+ORD-10083,2025-03-09,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Trenčín,New,Website,4
+ORD-10084,2025-03-10,Electronics,Bluetooth Speaker,49.9,3,0,149.7,Prešov,New,Mobile App,4
+ORD-10085,2025-03-10,Beauty,Shampoo,9.9,4,10,35.64,Trenčín,Returning,Website,4
+ORD-10086,2025-03-11,Beauty,Shampoo,9.9,2,0,19.8,Košice,Returning,Website,4
+ORD-10087,2025-03-12,Beauty,Shampoo,9.9,2,10,17.82,Prešov,Returning,Website,4
+ORD-10088,2025-03-13,Electronics,Smartwatch,149.0,2,0,298.0,Nitra,Returning,Mobile App,5
+ORD-10089,2025-03-13,Home & Kitchen,Ceramic Mug Set,24.9,4,0,99.6,Košice,Returning,Website,5
+ORD-10090,2025-03-14,Electronics,Wireless Headphones,79.9,2,0,159.8,Bratislava,Returning,Mobile App,5
+ORD-10091,2025-03-15,Books,Mystery Novel,14.9,4,0,59.6,Nitra,New,Website,5
+ORD-10092,2025-03-15,Books,Data Science Handbook,39.9,2,0,79.8,Prešov,Returning,Website,4
+ORD-10093,2025-03-15,Sports,Yoga Mat,29.9,1,0,29.9,Žilina,New,Website,4
+ORD-10094,2025-03-16,Beauty,Face Cream,34.9,4,0,139.6,Nitra,Returning,Mobile App,5
+ORD-10095,2025-03-17,Books,Python for Beginners,29.9,1,0,29.9,Bratislava,Returning,Website,4
+ORD-10096,2025-03-18,Books,Cookbook,22.9,2,0,45.8,Nitra,Returning,Website,4
+ORD-10097,2025-03-18,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Website,4
+ORD-10098,2025-03-19,Books,Python for Beginners,29.9,1,0,29.9,Banská Bystrica,Returning,Website,5
+ORD-10099,2025-03-19,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Prešov,Returning,Website,4
+ORD-10100,2025-03-19,Home & Kitchen,Air Fryer,119.0,2,10,214.2,Prešov,New,Website,4
+ORD-10101,2025-03-19,Home & Kitchen,Ceramic Mug Set,24.9,1,0,24.9,Banská Bystrica,Returning,Website,4
+ORD-10102,2025-03-19,Sports,Yoga Mat,29.9,2,0,59.8,Trnava,Returning,Website,4
+ORD-10103,2025-03-21,Books,Python for Beginners,29.9,3,0,89.7,Žilina,Returning,Mobile App,5
+ORD-10104,2025-03-22,Beauty,Face Cream,34.9,4,0,139.6,Bratislava,Returning,Mobile App,5
+ORD-10105,2025-03-22,Home & Kitchen,Air Fryer,119.0,4,0,476.0,Bratislava,New,Mobile App,5
+ORD-10106,2025-03-23,Home & Kitchen,Ceramic Mug Set,24.9,5,10,112.05,Košice,Returning,Mobile App,5
+ORD-10107,2025-03-24,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Bratislava,Returning,Mobile App,4
+ORD-10108,2025-03-25,Books,Data Science Handbook,39.9,1,0,39.9,Prešov,Returning,Website,5
+ORD-10109,2025-03-25,Books,Data Science Handbook,39.9,2,0,79.8,Bratislava,Returning,Website,3
+ORD-10110,2025-03-25,Sports,Water Bottle,15.9,2,10,28.62,Trenčín,New,Website,5
+ORD-10111,2025-03-28,Books,Cookbook,22.9,2,0,45.8,Trenčín,New,Website,5
+ORD-10112,2025-03-30,Home & Kitchen,Coffee Maker,89.0,6,10,480.6,Prešov,New,Website,4
+ORD-10113,2025-04-02,Books,Data Science Handbook,39.9,4,0,159.6,Trenčín,Returning,Website,5
+ORD-10114,2025-04-03,Sports,Resistance Bands,19.9,4,0,79.6,Nitra,Returning,Mobile App,5
+ORD-10115,2025-04-03,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Prešov,New,Website,4
+ORD-10116,2025-04-04,Home & Kitchen,Coffee Maker,89.0,2,10,160.2,Bratislava,Returning,Mobile App,5
+ORD-10117,2025-04-04,Sports,Running Shoes,99.0,2,0,198.0,Nitra,Returning,Website,5
+ORD-10118,2025-04-05,Electronics,Smartwatch,149.0,2,0,298.0,Banská Bystrica,Returning,Website,3
+ORD-10119,2025-04-05,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Trenčín,Returning,Mobile App,3
+ORD-10120,2025-04-07,Books,Mystery Novel,14.9,2,0,29.8,Bratislava,New,Website,4
+ORD-10121,2025-04-07,Books,Mystery Novel,14.9,1,10,13.41,Košice,New,Website,3
+ORD-10122,2025-04-08,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Žilina,New,Mobile App,5
+ORD-10123,2025-04-09,Beauty,Perfume,69.0,2,10,124.2,Košice,Returning,Mobile App,5
+ORD-10124,2025-04-11,Beauty,Lip Balm Set,12.9,1,0,12.9,Banská Bystrica,New,Mobile App,4
+ORD-10125,2025-04-11,Home & Kitchen,Ceramic Mug Set,24.9,2,0,49.8,Trnava,Returning,Mobile App,2
+ORD-10126,2025-04-12,Books,Mystery Novel,14.9,2,10,26.82,Bratislava,Returning,Website,4
+ORD-10127,2025-04-13,Home & Kitchen,Coffee Maker,89.0,1,0,89.0,Trenčín,Returning,Mobile App,5
+ORD-10128,2025-04-13,Electronics,Wireless Headphones,79.9,3,0,239.7,Banská Bystrica,Returning,Mobile App,4
+ORD-10129,2025-04-13,Sports,Running Shoes,99.0,1,0,99.0,Banská Bystrica,New,Website,5
+ORD-10130,2025-04-16,Home & Kitchen,Chef Knife Set,59.9,1,10,53.91,Bratislava,New,Website,5
+ORD-10131,2025-04-16,Books,Mystery Novel,14.9,3,0,44.7,Prešov,Returning,Mobile App,4
+ORD-10132,2025-04-16,Home & Kitchen,Coffee Maker,89.0,2,10,160.2,Bratislava,New,Website,4
+ORD-10133,2025-04-17,Electronics,Bluetooth Speaker,49.9,4,10,179.64,Nitra,Returning,Website,4
+ORD-10134,2025-04-17,Sports,Resistance Bands,19.9,2,0,39.8,Bratislava,Returning,Mobile App,4
+ORD-10135,2025-04-18,Books,Python for Beginners,29.9,3,0,89.7,Žilina,New,Website,4
+ORD-10136,2025-04-18,Sports,Running Shoes,99.0,2,0,198.0,Banská Bystrica,New,Website,4
+ORD-10137,2025-04-18,Books,Cookbook,22.9,3,0,68.7,Nitra,Returning,Mobile App,5
+ORD-10138,2025-04-18,Beauty,Lip Balm Set,12.9,3,0,38.7,Banská Bystrica,Returning,Mobile App,5
+ORD-10139,2025-04-19,Books,Cookbook,22.9,4,0,91.6,Bratislava,Returning,Website,5
+ORD-10140,2025-04-20,Sports,Running Shoes,99.0,3,10,267.3,Košice,Returning,Mobile App,5
+ORD-10141,2025-04-20,Sports,Yoga Mat,29.9,6,10,161.46,Bratislava,Returning,Website,5
+ORD-10142,2025-04-20,Books,Cookbook,22.9,2,0,45.8,Žilina,Returning,Mobile App,4
+ORD-10143,2025-04-21,Sports,Yoga Mat,29.9,6,0,179.4,Bratislava,Returning,Website,5
+ORD-10144,2025-04-21,Sports,Running Shoes,99.0,6,0,594.0,Žilina,Returning,Website,4
+ORD-10145,2025-04-22,Electronics,Wireless Headphones,79.9,1,10,71.91,Trnava,New,Website,5
+ORD-10146,2025-04-22,Sports,Yoga Mat,29.9,1,0,29.9,Košice,New,Website,5
+ORD-10147,2025-04-25,Sports,Yoga Mat,29.9,4,0,119.6,Bratislava,Returning,Mobile App,5
+ORD-10148,2025-04-25,Electronics,USB-C Charger,19.9,5,0,99.5,Banská Bystrica,Returning,Mobile App,4
+ORD-10149,2025-04-25,Beauty,Shampoo,9.9,4,0,39.6,Bratislava,Returning,Website,4
+ORD-10150,2025-04-26,Home & Kitchen,Chef Knife Set,59.9,1,0,59.9,Trnava,New,Website,5
+ORD-10151,2025-04-26,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,Returning,Website,4
+ORD-10152,2025-04-26,Beauty,Shampoo,9.9,1,0,9.9,Žilina,New,Website,4
+ORD-10153,2025-04-28,Beauty,Face Cream,34.9,1,0,34.9,Banská Bystrica,New,Website,4
+ORD-10154,2025-04-28,Beauty,Face Cream,34.9,3,0,104.7,Trnava,New,Mobile App,5
+ORD-10155,2025-04-29,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,New,Mobile App,5
+ORD-10156,2025-04-30,Books,Data Science Handbook,39.9,3,0,119.7,Košice,Returning,Mobile App,5
+ORD-10157,2025-05-01,Beauty,Shampoo,9.9,2,0,19.8,Košice,New,Mobile App,5
+ORD-10158,2025-05-02,Books,Data Science Handbook,39.9,2,0,79.8,Bratislava,Returning,Mobile App,3
+ORD-10159,2025-05-04,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trenčín,Returning,Website,4
+ORD-10160,2025-05-05,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Prešov,Returning,Mobile App,4
+ORD-10161,2025-05-05,Books,Mystery Novel,14.9,2,0,29.8,Nitra,New,Website,5
+ORD-10162,2025-05-06,Electronics,Wireless Headphones,79.9,3,0,239.7,Košice,Returning,Mobile App,5
+ORD-10163,2025-05-06,Sports,Yoga Mat,29.9,2,0,59.8,Banská Bystrica,Returning,Website,4
+ORD-10164,2025-05-06,Electronics,Wireless Headphones,79.9,1,0,79.9,Bratislava,Returning,Mobile App,5
+ORD-10165,2025-05-06,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,Returning,Website,4
+ORD-10166,2025-05-07,Electronics,Smartwatch,149.0,3,10,402.3,Bratislava,Returning,Website,4
+ORD-10167,2025-05-07,Books,Python for Beginners,29.9,5,10,134.55,Trenčín,Returning,Mobile App,5
+ORD-10168,2025-05-08,Books,Cookbook,22.9,1,0,22.9,Bratislava,Returning,Mobile App,5
+ORD-10169,2025-05-08,Electronics,Smartwatch,149.0,2,0,298.0,Bratislava,New,Website,4
+ORD-10170,2025-05-08,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Banská Bystrica,Returning,Website,3
+ORD-10171,2025-05-09,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Trnava,New,Website,3
+ORD-10172,2025-05-10,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,New,Mobile App,5
+ORD-10173,2025-05-10,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Banská Bystrica,Returning,Website,3
+ORD-10174,2025-05-10,Home & Kitchen,Coffee Maker,89.0,5,10,400.5,Žilina,Returning,Website,4
+ORD-10175,2025-05-11,Sports,Yoga Mat,29.9,2,0,59.8,Bratislava,Returning,Mobile App,4
+ORD-10176,2025-05-11,Beauty,Shampoo,9.9,2,10,17.82,Trenčín,Returning,Website,4
+ORD-10177,2025-05-11,Electronics,Wireless Headphones,79.9,2,0,159.8,Žilina,Returning,Website,3
+ORD-10178,2025-05-11,Beauty,Shampoo,9.9,2,0,19.8,Žilina,Returning,Mobile App,4
+ORD-10179,2025-05-11,Electronics,USB-C Charger,19.9,3,0,59.7,Trnava,Returning,Website,4
+ORD-10180,2025-05-12,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Bratislava,Returning,Website,5
+ORD-10181,2025-05-12,Sports,Resistance Bands,19.9,2,0,39.8,Bratislava,New,Mobile App,5
+ORD-10182,2025-05-12,Home & Kitchen,Ceramic Mug Set,24.9,4,0,99.6,Bratislava,Returning,Mobile App,4
+ORD-10183,2025-05-12,Sports,Water Bottle,15.9,1,0,15.9,Nitra,New,Mobile App,5
+ORD-10184,2025-05-13,Books,Python for Beginners,29.9,1,0,29.9,Žilina,Returning,Mobile App,2
+ORD-10185,2025-05-13,Books,Python for Beginners,29.9,2,10,53.82,Žilina,Returning,Website,5
+ORD-10186,2025-05-16,Books,Data Science Handbook,39.9,2,0,79.8,Košice,New,Mobile App,5
+ORD-10187,2025-05-16,Electronics,Smartwatch,149.0,2,0,298.0,Prešov,Returning,Mobile App,4
+ORD-10188,2025-05-17,Home & Kitchen,Coffee Maker,89.0,1,0,89.0,Bratislava,New,Website,4
+ORD-10189,2025-05-17,Books,Cookbook,22.9,2,0,45.8,Prešov,Returning,Mobile App,5
+ORD-10190,2025-05-17,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Košice,Returning,Website,4
+ORD-10191,2025-05-17,Beauty,Shampoo,9.9,2,10,17.82,Košice,New,Mobile App,3
+ORD-10192,2025-05-18,Sports,Water Bottle,15.9,1,0,15.9,Banská Bystrica,New,Website,4
+ORD-10193,2025-05-19,Books,Mystery Novel,14.9,6,0,89.4,Bratislava,Returning,Mobile App,4
+ORD-10194,2025-05-19,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Trnava,New,Website,5
+ORD-10195,2025-05-20,Books,Cookbook,22.9,2,0,45.8,Bratislava,Returning,Mobile App,5
+ORD-10196,2025-05-20,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Košice,Returning,Website,3
+ORD-10197,2025-05-21,Sports,Running Shoes,99.0,1,10,89.1,Bratislava,Returning,Website,5
+ORD-10198,2025-05-21,Electronics,USB-C Charger,19.9,4,0,79.6,Žilina,Returning,Website,5
+ORD-10199,2025-05-22,Electronics,USB-C Charger,19.9,2,0,39.8,Banská Bystrica,Returning,Mobile App,5
+ORD-10200,2025-05-23,Beauty,Perfume,69.0,4,0,276.0,Košice,Returning,Mobile App,4
+ORD-10201,2025-05-23,Sports,Running Shoes,99.0,3,0,297.0,Trnava,Returning,Mobile App,5
+ORD-10202,2025-05-23,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Trnava,Returning,Website,4
+ORD-10203,2025-05-24,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,New,Mobile App,3
+ORD-10204,2025-05-24,Books,Mystery Novel,14.9,4,0,59.6,Košice,Returning,Website,4
+ORD-10205,2025-05-25,Home & Kitchen,Coffee Maker,89.0,3,0,267.0,Banská Bystrica,Returning,Website,5
+ORD-10206,2025-05-25,Electronics,Smartwatch,149.0,1,0,149.0,Košice,New,Mobile App,4
+ORD-10207,2025-05-25,Books,Python for Beginners,29.9,2,0,59.8,Trenčín,Returning,Website,5
+ORD-10208,2025-05-25,Electronics,USB-C Charger,19.9,3,0,59.7,Nitra,Returning,Mobile App,5
+ORD-10209,2025-05-26,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Website,4
+ORD-10210,2025-05-26,Sports,Running Shoes,99.0,3,0,297.0,Košice,Returning,Mobile App,5
+ORD-10211,2025-05-28,Books,Cookbook,22.9,4,10,82.44,Bratislava,Returning,Mobile App,5
+ORD-10212,2025-05-28,Electronics,USB-C Charger,19.9,1,0,19.9,Bratislava,Returning,Mobile App,4
+ORD-10213,2025-05-28,Beauty,Perfume,69.0,3,0,207.0,Žilina,Returning,Mobile App,5
+ORD-10214,2025-05-29,Electronics,Smartwatch,149.0,1,0,149.0,Banská Bystrica,Returning,Website,3
+ORD-10215,2025-05-30,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trenčín,New,Website,4
+ORD-10216,2025-05-31,Sports,Yoga Mat,29.9,2,10,53.82,Trenčín,New,Website,4
+ORD-10217,2025-05-31,Sports,Water Bottle,15.9,3,0,47.7,Bratislava,New,Mobile App,4
+ORD-10218,2025-05-31,Sports,Running Shoes,99.0,2,0,198.0,Košice,Returning,Website,4
+ORD-10219,2025-06-01,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Banská Bystrica,Returning,Mobile App,5
+ORD-10220,2025-06-01,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,Returning,Website,3
+ORD-10221,2025-06-02,Books,Cookbook,22.9,1,0,22.9,Nitra,New,Website,5
+ORD-10222,2025-06-02,Beauty,Perfume,69.0,1,0,69.0,Košice,New,Mobile App,5
+ORD-10223,2025-06-04,Books,Python for Beginners,29.9,2,0,59.8,Banská Bystrica,New,Website,4
+ORD-10224,2025-06-04,Books,Mystery Novel,14.9,1,0,14.9,Trenčín,New,Website,4
+ORD-10225,2025-06-04,Beauty,Face Cream,34.9,3,0,104.7,Banská Bystrica,Returning,Mobile App,4
+ORD-10226,2025-06-05,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Trnava,Returning,Website,4
+ORD-10227,2025-06-06,Sports,Yoga Mat,29.9,1,0,29.9,Banská Bystrica,New,Mobile App,4
+ORD-10228,2025-06-07,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Bratislava,Returning,Mobile App,5
+ORD-10229,2025-06-08,Books,Data Science Handbook,39.9,2,0,79.8,Žilina,Returning,Mobile App,4
+ORD-10230,2025-06-11,Sports,Yoga Mat,29.9,2,0,59.8,Prešov,New,Mobile App,5
+ORD-10231,2025-06-11,Beauty,Face Cream,34.9,2,0,69.8,Žilina,New,Website,5
+ORD-10232,2025-06-12,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,Returning,Mobile App,4
+ORD-10233,2025-06-14,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Trnava,New,Website,5
+ORD-10234,2025-06-14,Books,Cookbook,22.9,4,0,91.6,Banská Bystrica,Returning,Mobile App,4
+ORD-10235,2025-06-15,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Bratislava,New,Website,4
+ORD-10236,2025-06-16,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Website,4
+ORD-10237,2025-06-16,Electronics,Bluetooth Speaker,49.9,5,0,249.5,Bratislava,Returning,Website,4
+ORD-10238,2025-06-18,Sports,Running Shoes,99.0,1,0,99.0,Nitra,New,Mobile App,5
+ORD-10239,2025-06-19,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Prešov,Returning,Website,4
+ORD-10240,2025-06-19,Electronics,Smartwatch,149.0,1,0,149.0,Trnava,New,Mobile App,5
+ORD-10241,2025-06-19,Books,Data Science Handbook,39.9,4,10,143.64,Žilina,New,Website,5
+ORD-10242,2025-06-19,Books,Cookbook,22.9,2,0,45.8,Trnava,Returning,Website,4
+ORD-10243,2025-06-21,Sports,Resistance Bands,19.9,3,10,53.73,Trenčín,New,Mobile App,5
+ORD-10244,2025-06-22,Sports,Running Shoes,99.0,1,0,99.0,Prešov,Returning,Website,4
+ORD-10245,2025-06-23,Books,Mystery Novel,14.9,5,0,74.5,Žilina,New,Website,5
+ORD-10246,2025-06-24,Books,Python for Beginners,29.9,5,0,149.5,Banská Bystrica,Returning,Website,5
+ORD-10247,2025-06-25,Sports,Yoga Mat,29.9,2,0,59.8,Košice,Returning,Website,4
+ORD-10248,2025-06-27,Electronics,Wireless Headphones,79.9,1,0,79.9,Bratislava,New,Website,3
+ORD-10249,2025-06-28,Sports,Water Bottle,15.9,5,0,79.5,Banská Bystrica,Returning,Website,4
+ORD-10250,2025-06-29,Books,Python for Beginners,29.9,4,0,119.6,Žilina,Returning,Website,4
+ORD-10251,2025-06-29,Books,Python for Beginners,29.9,5,0,149.5,Bratislava,Returning,Mobile App,4
+ORD-10252,2025-06-29,Home & Kitchen,Chef Knife Set,59.9,1,10,53.91,Nitra,New,Mobile App,5
+ORD-10253,2025-07-03,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,New,Website,4
+ORD-10254,2025-07-03,Books,Mystery Novel,14.9,1,0,14.9,Banská Bystrica,Returning,Website,4
+ORD-10255,2025-07-04,Home & Kitchen,Ceramic Mug Set,24.9,1,0,24.9,Bratislava,New,Mobile App,4
+ORD-10256,2025-07-05,Books,Data Science Handbook,39.9,2,0,79.8,Košice,Returning,Website,4
+ORD-10257,2025-07-06,Books,Mystery Novel,14.9,1,0,14.9,Trnava,Returning,Website,5
+ORD-10258,2025-07-07,Home & Kitchen,Chef Knife Set,59.9,2,10,107.82,Trenčín,New,Website,4
+ORD-10259,2025-07-07,Books,Data Science Handbook,39.9,1,0,39.9,Bratislava,Returning,Mobile App,5
+ORD-10260,2025-07-08,Sports,Water Bottle,15.9,5,0,79.5,Žilina,Returning,Mobile App,5
+ORD-10261,2025-07-09,Beauty,Perfume,69.0,2,0,138.0,Žilina,Returning,Website,3
+ORD-10262,2025-07-09,Sports,Running Shoes,99.0,2,0,198.0,Bratislava,Returning,Website,3
+ORD-10263,2025-07-10,Sports,Running Shoes,99.0,2,0,198.0,Žilina,New,Mobile App,4
+ORD-10264,2025-07-11,Electronics,Wireless Headphones,79.9,2,0,159.8,Banská Bystrica,Returning,Website,4
+ORD-10265,2025-07-12,Books,Cookbook,22.9,2,0,45.8,Trenčín,New,Website,5
+ORD-10266,2025-07-12,Books,Mystery Novel,14.9,1,10,13.41,Bratislava,Returning,Website,4
+ORD-10267,2025-07-13,Books,Cookbook,22.9,2,0,45.8,Prešov,New,Website,5
+ORD-10268,2025-07-13,Electronics,USB-C Charger,19.9,1,10,17.91,Bratislava,New,Website,2
+ORD-10269,2025-07-14,Books,Python for Beginners,29.9,4,0,119.6,Žilina,Returning,Website,5
+ORD-10270,2025-07-15,Sports,Running Shoes,99.0,1,0,99.0,Košice,Returning,Mobile App,5
+ORD-10271,2025-07-16,Books,Cookbook,22.9,4,0,91.6,Bratislava,Returning,Website,4
+ORD-10272,2025-07-16,Beauty,Shampoo,9.9,3,10,26.73,Banská Bystrica,Returning,Website,5
+ORD-10273,2025-07-18,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Žilina,Returning,Website,4
+ORD-10274,2025-07-18,Electronics,Smartwatch,149.0,3,0,447.0,Bratislava,Returning,Website,4
+ORD-10275,2025-07-18,Home & Kitchen,Coffee Maker,89.0,3,0,267.0,Košice,Returning,Mobile App,5
+ORD-10276,2025-07-19,Books,Data Science Handbook,39.9,2,0,79.8,Trnava,Returning,Website,4
+ORD-10277,2025-07-19,Home & Kitchen,Coffee Maker,89.0,1,0,89.0,Bratislava,Returning,Mobile App,5
+ORD-10278,2025-07-20,Home & Kitchen,Coffee Maker,89.0,2,0,178.0,Banská Bystrica,Returning,Website,5
+ORD-10279,2025-07-20,Home & Kitchen,Ceramic Mug Set,24.9,4,0,99.6,Žilina,Returning,Website,5
+ORD-10280,2025-07-20,Electronics,Smartwatch,149.0,4,10,536.4,Banská Bystrica,Returning,Website,3
+ORD-10281,2025-07-21,Books,Python for Beginners,29.9,3,10,80.73,Bratislava,Returning,Mobile App,5
+ORD-10282,2025-07-21,Beauty,Perfume,69.0,3,0,207.0,Košice,Returning,Mobile App,5
+ORD-10283,2025-07-21,Books,Mystery Novel,14.9,1,10,13.41,Košice,New,Mobile App,5
+ORD-10284,2025-07-21,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Bratislava,Returning,Website,5
+ORD-10285,2025-07-22,Books,Mystery Novel,14.9,2,10,26.82,Nitra,New,Website,3
+ORD-10286,2025-07-22,Sports,Water Bottle,15.9,3,0,47.7,Žilina,Returning,Website,4
+ORD-10287,2025-07-23,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Banská Bystrica,Returning,Website,3
+ORD-10288,2025-07-25,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Trnava,New,Mobile App,4
+ORD-10289,2025-07-25,Sports,Running Shoes,99.0,1,0,99.0,Košice,Returning,Mobile App,5
+ORD-10290,2025-07-25,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Žilina,New,Website,4
+ORD-10291,2025-07-25,Electronics,Bluetooth Speaker,49.9,3,0,149.7,Žilina,Returning,Mobile App,3
+ORD-10292,2025-07-26,Electronics,Wireless Headphones,79.9,2,0,159.8,Bratislava,Returning,Mobile App,4
+ORD-10293,2025-07-26,Books,Python for Beginners,29.9,4,0,119.6,Košice,Returning,Mobile App,5
+ORD-10294,2025-07-27,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Žilina,New,Website,3
+ORD-10295,2025-07-28,Electronics,Smartwatch,149.0,2,0,298.0,Košice,New,Website,5
+ORD-10296,2025-07-29,Books,Mystery Novel,14.9,2,0,29.8,Žilina,New,Mobile App,4
+ORD-10297,2025-07-29,Electronics,USB-C Charger,19.9,1,10,17.91,Prešov,New,Mobile App,5
+ORD-10298,2025-07-29,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trnava,New,Website,5
+ORD-10299,2025-07-30,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Košice,Returning,Website,3
+ORD-10300,2025-07-31,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Bratislava,New,Mobile App,3
+ORD-10301,2025-08-01,Books,Data Science Handbook,39.9,4,0,159.6,Žilina,Returning,Mobile App,4
+ORD-10302,2025-08-01,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Prešov,Returning,Website,4
+ORD-10303,2025-08-02,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Prešov,Returning,Website,4
+ORD-10304,2025-08-04,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Website,5
+ORD-10305,2025-08-05,Sports,Yoga Mat,29.9,1,0,29.9,Žilina,Returning,Website,3
+ORD-10306,2025-08-06,Home & Kitchen,Coffee Maker,89.0,1,0,89.0,Bratislava,New,Mobile App,5
+ORD-10307,2025-08-08,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Žilina,Returning,Mobile App,3
+ORD-10308,2025-08-08,Beauty,Perfume,69.0,4,10,248.4,Bratislava,Returning,Mobile App,5
+ORD-10309,2025-08-10,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Banská Bystrica,Returning,Mobile App,4
+ORD-10310,2025-08-10,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trenčín,Returning,Website,4
+ORD-10311,2025-08-10,Books,Data Science Handbook,39.9,2,0,79.8,Prešov,Returning,Mobile App,4
+ORD-10312,2025-08-10,Beauty,Face Cream,34.9,2,0,69.8,Bratislava,New,Website,3
+ORD-10313,2025-08-10,Electronics,Wireless Headphones,79.9,6,0,479.4,Košice,New,Mobile App,4
+ORD-10314,2025-08-14,Books,Data Science Handbook,39.9,3,0,119.7,Trnava,New,Website,5
+ORD-10315,2025-08-15,Beauty,Shampoo,9.9,3,0,29.7,Trnava,New,Website,4
+ORD-10316,2025-08-15,Books,Data Science Handbook,39.9,6,0,239.4,Košice,Returning,Mobile App,5
+ORD-10317,2025-08-15,Beauty,Lip Balm Set,12.9,1,0,12.9,Bratislava,Returning,Mobile App,4
+ORD-10318,2025-08-16,Home & Kitchen,Ceramic Mug Set,24.9,2,10,44.82,Žilina,Returning,Mobile App,3
+ORD-10319,2025-08-17,Home & Kitchen,Coffee Maker,89.0,6,0,534.0,Bratislava,Returning,Mobile App,5
+ORD-10320,2025-08-17,Home & Kitchen,Coffee Maker,89.0,3,0,267.0,Banská Bystrica,New,Mobile App,5
+ORD-10321,2025-08-17,Home & Kitchen,Air Fryer,119.0,2,10,214.2,Bratislava,Returning,Website,4
+ORD-10322,2025-08-17,Electronics,USB-C Charger,19.9,2,0,39.8,Bratislava,New,Website,4
+ORD-10323,2025-08-18,Sports,Water Bottle,15.9,3,0,47.7,Košice,Returning,Mobile App,3
+ORD-10324,2025-08-19,Home & Kitchen,Coffee Maker,89.0,1,0,89.0,Nitra,New,Website,5
+ORD-10325,2025-08-20,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,New,Website,4
+ORD-10326,2025-08-20,Home & Kitchen,Coffee Maker,89.0,2,0,178.0,Košice,Returning,Mobile App,5
+ORD-10327,2025-08-20,Home & Kitchen,Chef Knife Set,59.9,2,10,107.82,Bratislava,Returning,Mobile App,3
+ORD-10328,2025-08-20,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Prešov,New,Mobile App,4
+ORD-10329,2025-08-22,Beauty,Lip Balm Set,12.9,1,0,12.9,Bratislava,New,Website,4
+ORD-10330,2025-08-22,Books,Mystery Novel,14.9,2,0,29.8,Trenčín,Returning,Mobile App,4
+ORD-10331,2025-08-24,Home & Kitchen,Coffee Maker,89.0,1,10,80.1,Banská Bystrica,New,Website,4
+ORD-10332,2025-08-24,Electronics,USB-C Charger,19.9,5,10,89.55,Banská Bystrica,Returning,Website,5
+ORD-10333,2025-08-25,Home & Kitchen,Coffee Maker,89.0,4,0,356.0,Žilina,Returning,Website,5
+ORD-10334,2025-08-26,Books,Python for Beginners,29.9,2,0,59.8,Nitra,New,Website,3
+ORD-10335,2025-08-28,Books,Mystery Novel,14.9,2,0,29.8,Bratislava,New,Mobile App,4
+ORD-10336,2025-08-31,Beauty,Face Cream,34.9,3,10,94.23,Košice,Returning,Website,3
+ORD-10337,2025-09-01,Electronics,Wireless Headphones,79.9,2,0,159.8,Žilina,New,Mobile App,5
+ORD-10338,2025-09-02,Books,Data Science Handbook,39.9,3,0,119.7,Žilina,Returning,Website,5
+ORD-10339,2025-09-03,Sports,Running Shoes,99.0,3,0,297.0,Žilina,Returning,Mobile App,4
+ORD-10340,2025-09-03,Books,Data Science Handbook,39.9,5,0,199.5,Trnava,Returning,Mobile App,5
+ORD-10341,2025-09-05,Sports,Resistance Bands,19.9,2,10,35.82,Prešov,New,Website,5
+ORD-10342,2025-09-07,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,Returning,Website,4
+ORD-10343,2025-09-07,Home & Kitchen,Ceramic Mug Set,24.9,2,10,44.82,Košice,Returning,Mobile App,5
+ORD-10344,2025-09-08,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,Returning,Website,3
+ORD-10345,2025-09-08,Books,Data Science Handbook,39.9,4,0,159.6,Bratislava,Returning,Website,4
+ORD-10346,2025-09-08,Books,Data Science Handbook,39.9,1,10,35.91,Banská Bystrica,Returning,Website,4
+ORD-10347,2025-09-09,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Nitra,Returning,Mobile App,3
+ORD-10348,2025-09-09,Beauty,Shampoo,9.9,1,0,9.9,Banská Bystrica,Returning,Mobile App,4
+ORD-10349,2025-09-10,Home & Kitchen,Ceramic Mug Set,24.9,1,0,24.9,Žilina,Returning,Website,4
+ORD-10350,2025-09-11,Beauty,Perfume,69.0,2,0,138.0,Košice,Returning,Mobile App,5
+ORD-10351,2025-09-11,Books,Cookbook,22.9,2,0,45.8,Prešov,New,Mobile App,4
+ORD-10352,2025-09-11,Electronics,Bluetooth Speaker,49.9,4,0,199.6,Nitra,Returning,Website,4
+ORD-10353,2025-09-13,Sports,Resistance Bands,19.9,4,0,79.6,Banská Bystrica,Returning,Website,5
+ORD-10354,2025-09-13,Books,Python for Beginners,29.9,3,0,89.7,Trenčín,Returning,Website,4
+ORD-10355,2025-09-13,Electronics,Smartwatch,149.0,2,0,298.0,Trnava,Returning,Website,5
+ORD-10356,2025-09-14,Books,Data Science Handbook,39.9,3,0,119.7,Košice,Returning,Website,4
+ORD-10357,2025-09-15,Sports,Water Bottle,15.9,1,0,15.9,Prešov,New,Website,4
+ORD-10358,2025-09-16,Books,Python for Beginners,29.9,3,0,89.7,Prešov,New,Website,4
+ORD-10359,2025-09-16,Beauty,Shampoo,9.9,2,0,19.8,Nitra,Returning,Mobile App,4
+ORD-10360,2025-09-16,Sports,Yoga Mat,29.9,2,0,59.8,Košice,New,Website,5
+ORD-10361,2025-09-17,Sports,Water Bottle,15.9,3,0,47.7,Košice,Returning,Mobile App,4
+ORD-10362,2025-09-17,Sports,Running Shoes,99.0,2,0,198.0,Trnava,Returning,Website,4
+ORD-10363,2025-09-17,Sports,Running Shoes,99.0,3,0,297.0,Trnava,New,Mobile App,5
+ORD-10364,2025-09-18,Electronics,Wireless Headphones,79.9,2,10,143.82,Žilina,Returning,Mobile App,5
+ORD-10365,2025-09-19,Home & Kitchen,Chef Knife Set,59.9,1,10,53.91,Bratislava,Returning,Website,5
+ORD-10366,2025-09-19,Home & Kitchen,Chef Knife Set,59.9,3,0,179.7,Prešov,New,Website,5
+ORD-10367,2025-09-20,Books,Mystery Novel,14.9,2,0,29.8,Bratislava,New,Mobile App,5
+ORD-10368,2025-09-20,Beauty,Perfume,69.0,2,10,124.2,Prešov,Returning,Mobile App,5
+ORD-10369,2025-09-20,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Bratislava,New,Mobile App,4
+ORD-10370,2025-09-20,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,Returning,Mobile App,4
+ORD-10371,2025-09-21,Books,Mystery Novel,14.9,1,10,13.41,Trnava,New,Website,5
+ORD-10372,2025-09-23,Electronics,Wireless Headphones,79.9,3,0,239.7,Bratislava,Returning,Mobile App,5
+ORD-10373,2025-09-25,Electronics,Smartwatch,149.0,4,10,536.4,Bratislava,Returning,Mobile App,5
+ORD-10374,2025-09-26,Sports,Water Bottle,15.9,3,0,47.7,Košice,New,Website,4
+ORD-10375,2025-09-26,Sports,Yoga Mat,29.9,1,0,29.9,Trnava,New,Website,4
+ORD-10376,2025-09-26,Sports,Water Bottle,15.9,1,10,14.31,Bratislava,Returning,Mobile App,4
+ORD-10377,2025-09-26,Sports,Running Shoes,99.0,4,10,356.4,Nitra,New,Website,4
+ORD-10378,2025-09-27,Beauty,Lip Balm Set,12.9,2,0,25.8,Trenčín,Returning,Mobile App,5
+ORD-10379,2025-09-27,Sports,Yoga Mat,29.9,3,0,89.7,Nitra,Returning,Mobile App,5
+ORD-10380,2025-09-29,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Bratislava,Returning,Mobile App,3
+ORD-10381,2025-09-29,Books,Mystery Novel,14.9,4,0,59.6,Košice,Returning,Mobile App,4
+ORD-10382,2025-10-01,Beauty,Perfume,69.0,1,0,69.0,Banská Bystrica,New,Website,5
+ORD-10383,2025-10-01,Electronics,Wireless Headphones,79.9,3,0,239.7,Prešov,Returning,Mobile App,3
+ORD-10384,2025-10-01,Beauty,Shampoo,9.9,5,0,49.5,Bratislava,Returning,Mobile App,5
+ORD-10385,2025-10-01,Sports,Yoga Mat,29.9,1,10,26.91,Bratislava,New,Website,3
+ORD-10386,2025-10-02,Electronics,USB-C Charger,19.9,2,0,39.8,Bratislava,Returning,Mobile App,3
+ORD-10387,2025-10-02,Electronics,Smartwatch,149.0,3,0,447.0,Bratislava,Returning,Website,5
+ORD-10388,2025-10-03,Sports,Water Bottle,15.9,3,0,47.7,Bratislava,Returning,Website,5
+ORD-10389,2025-10-03,Home & Kitchen,Ceramic Mug Set,24.9,6,0,149.4,Bratislava,Returning,Mobile App,3
+ORD-10390,2025-10-04,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,New,Mobile App,4
+ORD-10391,2025-10-05,Electronics,Smartwatch,149.0,1,0,149.0,Trnava,Returning,Mobile App,4
+ORD-10392,2025-10-06,Beauty,Face Cream,34.9,1,0,34.9,Bratislava,New,Website,5
+ORD-10393,2025-10-06,Beauty,Shampoo,9.9,1,0,9.9,Žilina,Returning,Website,4
+ORD-10394,2025-10-08,Books,Python for Beginners,29.9,2,0,59.8,Bratislava,New,Mobile App,4
+ORD-10395,2025-10-08,Sports,Water Bottle,15.9,1,0,15.9,Košice,New,Website,4
+ORD-10396,2025-10-08,Books,Python for Beginners,29.9,2,0,59.8,Trnava,New,Mobile App,4
+ORD-10397,2025-10-08,Books,Cookbook,22.9,2,0,45.8,Bratislava,New,Website,3
+ORD-10398,2025-10-09,Sports,Resistance Bands,19.9,2,0,39.8,Bratislava,New,Website,4
+ORD-10399,2025-10-09,Beauty,Shampoo,9.9,2,10,17.82,Nitra,Returning,Website,4
+ORD-10400,2025-10-09,Electronics,Bluetooth Speaker,49.9,6,10,269.46,Bratislava,Returning,Mobile App,4
+ORD-10401,2025-10-09,Books,Data Science Handbook,39.9,2,0,79.8,Trnava,Returning,Mobile App,5
+ORD-10402,2025-10-09,Beauty,Lip Balm Set,12.9,2,0,25.8,Trenčín,Returning,Mobile App,4
+ORD-10403,2025-10-11,Home & Kitchen,Air Fryer,119.0,4,10,428.4,Nitra,Returning,Website,3
+ORD-10404,2025-10-11,Electronics,Smartwatch,149.0,3,0,447.0,Žilina,Returning,Website,4
+ORD-10405,2025-10-13,Books,Mystery Novel,14.9,1,0,14.9,Banská Bystrica,Returning,Website,3
+ORD-10406,2025-10-13,Books,Data Science Handbook,39.9,1,10,35.91,Prešov,New,Website,4
+ORD-10407,2025-10-14,Home & Kitchen,Chef Knife Set,59.9,3,10,161.73,Bratislava,Returning,Mobile App,3
+ORD-10408,2025-10-15,Books,Data Science Handbook,39.9,4,0,159.6,Trenčín,Returning,Mobile App,4
+ORD-10409,2025-10-15,Books,Python for Beginners,29.9,4,0,119.6,Košice,Returning,Website,4
+ORD-10410,2025-10-18,Electronics,USB-C Charger,19.9,3,10,53.73,Prešov,Returning,Website,4
+ORD-10411,2025-10-18,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Nitra,Returning,Mobile App,4
+ORD-10412,2025-10-18,Electronics,Bluetooth Speaker,49.9,3,0,149.7,Žilina,New,Website,4
+ORD-10413,2025-10-19,Beauty,Shampoo,9.9,2,0,19.8,Banská Bystrica,Returning,Website,5
+ORD-10414,2025-10-19,Electronics,Bluetooth Speaker,49.9,1,10,44.91,Žilina,New,Mobile App,3
+ORD-10415,2025-10-19,Sports,Running Shoes,99.0,1,10,89.1,Bratislava,New,Website,5
+ORD-10416,2025-10-20,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trnava,New,Mobile App,4
+ORD-10417,2025-10-20,Electronics,Bluetooth Speaker,49.9,4,0,199.6,Trenčín,New,Website,4
+ORD-10418,2025-10-20,Electronics,Wireless Headphones,79.9,1,0,79.9,Prešov,Returning,Website,5
+ORD-10419,2025-10-21,Beauty,Lip Balm Set,12.9,2,0,25.8,Trnava,Returning,Website,4
+ORD-10420,2025-10-21,Books,Python for Beginners,29.9,2,10,53.82,Trenčín,Returning,Website,5
+ORD-10421,2025-10-21,Beauty,Shampoo,9.9,2,0,19.8,Bratislava,Returning,Mobile App,5
+ORD-10422,2025-10-22,Books,Python for Beginners,29.9,2,0,59.8,Banská Bystrica,New,Website,5
+ORD-10423,2025-10-22,Beauty,Face Cream,34.9,1,0,34.9,Prešov,Returning,Mobile App,4
+ORD-10424,2025-10-23,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Trenčín,Returning,Website,3
+ORD-10425,2025-10-23,Beauty,Perfume,69.0,2,0,138.0,Žilina,New,Mobile App,4
+ORD-10426,2025-10-23,Books,Python for Beginners,29.9,4,0,119.6,Trnava,Returning,Mobile App,5
+ORD-10427,2025-10-23,Books,Data Science Handbook,39.9,3,0,119.7,Trenčín,Returning,Mobile App,5
+ORD-10428,2025-10-24,Books,Data Science Handbook,39.9,1,10,35.91,Trnava,New,Mobile App,4
+ORD-10429,2025-10-25,Books,Data Science Handbook,39.9,2,10,71.82,Bratislava,New,Website,5
+ORD-10430,2025-10-25,Home & Kitchen,Coffee Maker,89.0,2,0,178.0,Bratislava,New,Mobile App,4
+ORD-10431,2025-10-25,Sports,Yoga Mat,29.9,2,0,59.8,Bratislava,Returning,Mobile App,3
+ORD-10432,2025-10-25,Sports,Running Shoes,99.0,1,0,99.0,Prešov,New,Mobile App,4
+ORD-10433,2025-10-26,Books,Mystery Novel,14.9,6,10,80.46,Bratislava,Returning,Mobile App,4
+ORD-10434,2025-10-27,Electronics,Smartwatch,149.0,3,0,447.0,Prešov,Returning,Mobile App,3
+ORD-10435,2025-10-28,Sports,Resistance Bands,19.9,2,0,39.8,Nitra,Returning,Website,4
+ORD-10436,2025-10-29,Sports,Water Bottle,15.9,2,10,28.62,Nitra,Returning,Website,5
+ORD-10437,2025-10-29,Electronics,USB-C Charger,19.9,2,0,39.8,Žilina,Returning,Website,4
+ORD-10438,2025-10-30,Books,Data Science Handbook,39.9,4,10,143.64,Nitra,New,Website,4
+ORD-10439,2025-11-01,Books,Mystery Novel,14.9,2,0,29.8,Nitra,Returning,Mobile App,5
+ORD-10440,2025-11-01,Beauty,Lip Balm Set,12.9,2,15,21.93,Prešov,New,Website,5
+ORD-10441,2025-11-03,Home & Kitchen,Chef Knife Set,59.9,2,0,119.8,Košice,Returning,Mobile App,4
+ORD-10442,2025-11-03,Sports,Resistance Bands,19.9,1,0,19.9,Žilina,Returning,Website,4
+ORD-10443,2025-11-03,Beauty,Shampoo,9.9,3,10,26.73,Košice,New,Mobile App,4
+ORD-10444,2025-11-04,Home & Kitchen,Ceramic Mug Set,24.9,2,20,39.84,Trenčín,New,Website,4
+ORD-10445,2025-11-04,Books,Python for Beginners,29.9,2,15,50.83,Košice,Returning,Mobile App,4
+ORD-10446,2025-11-04,Electronics,Smartwatch,149.0,2,15,253.3,Prešov,New,Mobile App,4
+ORD-10447,2025-11-05,Sports,Running Shoes,99.0,6,10,534.6,Žilina,New,Mobile App,4
+ORD-10448,2025-11-06,Sports,Yoga Mat,29.9,2,20,47.84,Trnava,New,Website,5
+ORD-10449,2025-11-06,Beauty,Shampoo,9.9,2,0,19.8,Bratislava,Returning,Mobile App,4
+ORD-10450,2025-11-06,Books,Python for Beginners,29.9,1,10,26.91,Trnava,New,Mobile App,4
+ORD-10451,2025-11-07,Home & Kitchen,Air Fryer,119.0,1,15,101.15,Košice,Returning,Mobile App,4
+ORD-10452,2025-11-08,Electronics,USB-C Charger,19.9,1,20,15.92,Bratislava,Returning,Website,4
+ORD-10453,2025-11-08,Sports,Resistance Bands,19.9,3,0,59.7,Košice,Returning,Website,3
+ORD-10454,2025-11-08,Home & Kitchen,Air Fryer,119.0,2,20,190.4,Prešov,Returning,Website,5
+ORD-10455,2025-11-09,Books,Mystery Novel,14.9,2,15,25.33,Prešov,Returning,Website,4
+ORD-10456,2025-11-09,Sports,Water Bottle,15.9,4,0,63.6,Žilina,New,Mobile App,5
+ORD-10457,2025-11-09,Sports,Yoga Mat,29.9,1,10,26.91,Žilina,New,Website,3
+ORD-10458,2025-11-09,Home & Kitchen,Air Fryer,119.0,2,10,214.2,Bratislava,Returning,Mobile App,5
+ORD-10459,2025-11-09,Books,Data Science Handbook,39.9,1,0,39.9,Banská Bystrica,New,Mobile App,3
+ORD-10460,2025-11-10,Books,Python for Beginners,29.9,2,0,59.8,Žilina,New,Mobile App,3
+ORD-10461,2025-11-10,Home & Kitchen,Air Fryer,119.0,3,0,357.0,Banská Bystrica,Returning,Mobile App,5
+ORD-10462,2025-11-10,Home & Kitchen,Chef Knife Set,59.9,5,0,299.5,Košice,Returning,Website,4
+ORD-10463,2025-11-11,Electronics,Wireless Headphones,79.9,4,15,271.66,Prešov,Returning,Mobile App,3
+ORD-10464,2025-11-11,Beauty,Face Cream,34.9,2,20,55.84,Banská Bystrica,Returning,Mobile App,2
+ORD-10465,2025-11-11,Books,Python for Beginners,29.9,2,10,53.82,Bratislava,New,Mobile App,4
+ORD-10466,2025-11-12,Books,Mystery Novel,14.9,2,10,26.82,Bratislava,Returning,Website,4
+ORD-10467,2025-11-12,Beauty,Perfume,69.0,1,10,62.1,Nitra,Returning,Website,5
+ORD-10468,2025-11-13,Home & Kitchen,Coffee Maker,89.0,2,10,160.2,Nitra,Returning,Mobile App,3
+ORD-10469,2025-11-14,Books,Data Science Handbook,39.9,1,20,31.92,Prešov,Returning,Mobile App,3
+ORD-10470,2025-11-14,Home & Kitchen,Air Fryer,119.0,1,20,95.2,Trenčín,New,Website,5
+ORD-10471,2025-11-15,Home & Kitchen,Chef Knife Set,59.9,1,15,50.92,Trenčín,Returning,Website,4
+ORD-10472,2025-11-15,Books,Python for Beginners,29.9,3,10,80.73,Trnava,Returning,Website,4
+ORD-10473,2025-11-15,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Bratislava,New,Website,3
+ORD-10474,2025-11-15,Books,Cookbook,22.9,4,20,73.28,Prešov,Returning,Mobile App,4
+ORD-10475,2025-11-16,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Žilina,Returning,Mobile App,5
+ORD-10476,2025-11-16,Books,Python for Beginners,29.9,3,0,89.7,Nitra,Returning,Website,5
+ORD-10477,2025-11-16,Books,Mystery Novel,14.9,1,10,13.41,Žilina,New,Mobile App,4
+ORD-10478,2025-11-16,Electronics,Bluetooth Speaker,49.9,3,20,119.76,Bratislava,Returning,Mobile App,4
+ORD-10479,2025-11-16,Books,Data Science Handbook,39.9,3,10,107.73,Trenčín,Returning,Website,5
+ORD-10480,2025-11-16,Beauty,Face Cream,34.9,2,20,55.84,Bratislava,New,Website,4
+ORD-10481,2025-11-17,Beauty,Lip Balm Set,12.9,3,0,38.7,Banská Bystrica,Returning,Website,4
+ORD-10482,2025-11-17,Beauty,Perfume,69.0,2,20,110.4,Banská Bystrica,New,Website,5
+ORD-10483,2025-11-19,Home & Kitchen,Coffee Maker,89.0,1,10,80.1,Bratislava,New,Website,5
+ORD-10484,2025-11-19,Books,Cookbook,22.9,1,15,19.46,Bratislava,New,Website,3
+ORD-10485,2025-11-19,Sports,Running Shoes,99.0,2,20,158.4,Košice,Returning,Mobile App,5
+ORD-10486,2025-11-20,Books,Mystery Novel,14.9,3,0,44.7,Bratislava,New,Mobile App,4
+ORD-10487,2025-11-20,Beauty,Perfume,69.0,1,15,58.65,Bratislava,New,Mobile App,4
+ORD-10488,2025-11-20,Sports,Water Bottle,15.9,2,0,31.8,Košice,New,Mobile App,4
+ORD-10489,2025-11-21,Beauty,Face Cream,34.9,3,0,104.7,Žilina,Returning,Mobile App,5
+ORD-10490,2025-11-21,Beauty,Perfume,69.0,3,0,207.0,Prešov,Returning,Mobile App,5
+ORD-10491,2025-11-21,Beauty,Shampoo,9.9,2,0,19.8,Bratislava,Returning,Mobile App,5
+ORD-10492,2025-11-21,Books,Python for Beginners,29.9,2,20,47.84,Banská Bystrica,New,Website,4
+ORD-10493,2025-11-21,Books,Data Science Handbook,39.9,3,15,101.74,Banská Bystrica,Returning,Website,4
+ORD-10494,2025-11-22,Electronics,USB-C Charger,19.9,2,0,39.8,Banská Bystrica,New,Mobile App,3
+ORD-10495,2025-11-22,Electronics,Bluetooth Speaker,49.9,5,0,249.5,Žilina,Returning,Website,4
+ORD-10496,2025-11-22,Beauty,Perfume,69.0,1,0,69.0,Trenčín,Returning,Mobile App,5
+ORD-10497,2025-11-23,Sports,Yoga Mat,29.9,4,10,107.64,Žilina,New,Website,5
+ORD-10498,2025-11-24,Home & Kitchen,Ceramic Mug Set,24.9,2,0,49.8,Bratislava,Returning,Mobile App,3
+ORD-10499,2025-11-24,Books,Data Science Handbook,39.9,1,15,33.92,Žilina,New,Website,5
+ORD-10500,2025-11-24,Electronics,Bluetooth Speaker,49.9,2,0,99.8,Trnava,Returning,Website,5
+ORD-10501,2025-11-26,Beauty,Shampoo,9.9,3,20,23.76,Banská Bystrica,Returning,Website,4
+ORD-10502,2025-11-26,Electronics,Wireless Headphones,79.9,1,0,79.9,Nitra,New,Mobile App,4
+ORD-10503,2025-11-26,Books,Mystery Novel,14.9,4,0,59.6,Žilina,New,Website,4
+ORD-10504,2025-11-27,Books,Python for Beginners,29.9,2,15,50.83,Banská Bystrica,Returning,Website,4
+ORD-10505,2025-11-27,Books,Cookbook,22.9,2,10,41.22,Žilina,New,Website,3
+ORD-10506,2025-11-27,Home & Kitchen,Ceramic Mug Set,24.9,1,0,24.9,Bratislava,Returning,Website,4
+ORD-10507,2025-11-27,Beauty,Face Cream,34.9,1,10,31.41,Košice,Returning,Mobile App,5
+ORD-10508,2025-11-28,Books,Python for Beginners,29.9,4,15,101.66,Banská Bystrica,Returning,Mobile App,4
+ORD-10509,2025-11-29,Sports,Water Bottle,15.9,2,0,31.8,Bratislava,New,Mobile App,4
+ORD-10510,2025-11-30,Home & Kitchen,Ceramic Mug Set,24.9,2,0,49.8,Bratislava,New,Mobile App,4
+ORD-10511,2025-11-30,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Žilina,Returning,Mobile App,5
+ORD-10512,2025-12-01,Electronics,Wireless Headphones,79.9,1,15,67.92,Trenčín,New,Website,4
+ORD-10513,2025-12-02,Beauty,Lip Balm Set,12.9,1,0,12.9,Banská Bystrica,New,Mobile App,4
+ORD-10514,2025-12-03,Electronics,USB-C Charger,19.9,1,15,16.92,Trenčín,New,Mobile App,5
+ORD-10515,2025-12-03,Home & Kitchen,Chef Knife Set,59.9,1,10,53.91,Bratislava,Returning,Website,5
+ORD-10516,2025-12-03,Home & Kitchen,Ceramic Mug Set,24.9,1,0,24.9,Banská Bystrica,New,Mobile App,5
+ORD-10517,2025-12-03,Electronics,Bluetooth Speaker,49.9,1,15,42.42,Nitra,Returning,Website,4
+ORD-10518,2025-12-03,Electronics,Bluetooth Speaker,49.9,1,10,44.91,Žilina,Returning,Mobile App,4
+ORD-10519,2025-12-04,Sports,Running Shoes,99.0,4,15,336.6,Bratislava,Returning,Website,4
+ORD-10520,2025-12-04,Sports,Resistance Bands,19.9,3,0,59.7,Žilina,Returning,Website,4
+ORD-10521,2025-12-05,Home & Kitchen,Air Fryer,119.0,5,0,595.0,Žilina,Returning,Mobile App,5
+ORD-10522,2025-12-05,Electronics,USB-C Charger,19.9,2,10,35.82,Bratislava,New,Mobile App,3
+ORD-10523,2025-12-05,Home & Kitchen,Ceramic Mug Set,24.9,1,15,21.16,Košice,New,Mobile App,4
+ORD-10524,2025-12-05,Electronics,Smartwatch,149.0,1,0,149.0,Nitra,New,Mobile App,3
+ORD-10525,2025-12-06,Sports,Water Bottle,15.9,3,10,42.93,Bratislava,New,Website,4
+ORD-10526,2025-12-06,Sports,Running Shoes,99.0,1,15,84.15,Trnava,New,Website,5
+ORD-10527,2025-12-06,Electronics,Smartwatch,149.0,2,0,298.0,Trnava,Returning,Website,4
+ORD-10528,2025-12-06,Home & Kitchen,Air Fryer,119.0,2,0,238.0,Žilina,New,Website,4
+ORD-10529,2025-12-06,Home & Kitchen,Chef Knife Set,59.9,2,20,95.84,Bratislava,New,Mobile App,5
+ORD-10530,2025-12-07,Beauty,Face Cream,34.9,2,20,55.84,Košice,Returning,Website,4
+ORD-10531,2025-12-07,Beauty,Lip Balm Set,12.9,1,20,10.32,Košice,New,Mobile App,4
+ORD-10532,2025-12-07,Beauty,Perfume,69.0,1,0,69.0,Banská Bystrica,New,Website,5
+ORD-10533,2025-12-07,Home & Kitchen,Coffee Maker,89.0,3,0,267.0,Trenčín,Returning,Mobile App,3
+ORD-10534,2025-12-07,Electronics,Smartwatch,149.0,1,0,149.0,Bratislava,Returning,Website,3
+ORD-10535,2025-12-08,Books,Mystery Novel,14.9,2,0,29.8,Nitra,Returning,Website,5
+ORD-10536,2025-12-08,Beauty,Perfume,69.0,2,0,138.0,Bratislava,Returning,Mobile App,4
+ORD-10537,2025-12-08,Home & Kitchen,Chef Knife Set,59.9,4,10,215.64,Trnava,Returning,Mobile App,4
+ORD-10538,2025-12-09,Books,Data Science Handbook,39.9,1,0,39.9,Banská Bystrica,Returning,Website,4
+ORD-10539,2025-12-09,Sports,Yoga Mat,29.9,1,0,29.9,Bratislava,New,Mobile App,4
+ORD-10540,2025-12-09,Books,Cookbook,22.9,2,15,38.93,Žilina,New,Website,4
+ORD-10541,2025-12-10,Sports,Running Shoes,99.0,3,15,252.45,Bratislava,New,Website,5
+ORD-10542,2025-12-10,Sports,Yoga Mat,29.9,1,0,29.9,Trnava,Returning,Mobile App,4
+ORD-10543,2025-12-10,Books,Mystery Novel,14.9,1,20,11.92,Žilina,New,Mobile App,3
+ORD-10544,2025-12-11,Sports,Resistance Bands,19.9,2,20,31.84,Banská Bystrica,New,Mobile App,5
+ORD-10545,2025-12-11,Books,Cookbook,22.9,2,0,45.8,Trenčín,New,Mobile App,5
+ORD-10546,2025-12-11,Books,Python for Beginners,29.9,3,15,76.24,Prešov,Returning,Website,5
+ORD-10547,2025-12-12,Home & Kitchen,Air Fryer,119.0,4,0,476.0,Bratislava,Returning,Website,4
+ORD-10548,2025-12-13,Sports,Running Shoes,99.0,1,0,99.0,Trenčín,Returning,Website,4
+ORD-10549,2025-12-13,Beauty,Shampoo,9.9,3,15,25.24,Žilina,Returning,Mobile App,4
+ORD-10550,2025-12-14,Books,Mystery Novel,14.9,1,0,14.9,Bratislava,New,Website,4
+ORD-10551,2025-12-14,Books,Python for Beginners,29.9,4,0,119.6,Bratislava,Returning,Website,4
+ORD-10552,2025-12-14,Sports,Resistance Bands,19.9,3,10,53.73,Trnava,Returning,Mobile App,4
+ORD-10553,2025-12-14,Sports,Resistance Bands,19.9,1,15,16.92,Bratislava,New,Website,4
+ORD-10554,2025-12-14,Beauty,Lip Balm Set,12.9,3,0,38.7,Košice,Returning,Mobile App,5
+ORD-10555,2025-12-14,Home & Kitchen,Ceramic Mug Set,24.9,3,10,67.23,Košice,Returning,Mobile App,4
+ORD-10556,2025-12-14,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Nitra,New,Website,4
+ORD-10557,2025-12-14,Electronics,Smartwatch,149.0,2,0,298.0,Košice,New,Mobile App,3
+ORD-10558,2025-12-15,Home & Kitchen,Coffee Maker,89.0,4,0,356.0,Košice,Returning,Website,5
+ORD-10559,2025-12-15,Home & Kitchen,Ceramic Mug Set,24.9,3,10,67.23,Prešov,Returning,Mobile App,2
+ORD-10560,2025-12-16,Beauty,Shampoo,9.9,3,10,26.73,Trenčín,Returning,Mobile App,5
+ORD-10561,2025-12-16,Electronics,USB-C Charger,19.9,1,0,19.9,Bratislava,New,Mobile App,2
+ORD-10562,2025-12-16,Books,Python for Beginners,29.9,2,0,59.8,Košice,Returning,Mobile App,4
+ORD-10563,2025-12-16,Books,Mystery Novel,14.9,2,15,25.33,Bratislava,New,Website,5
+ORD-10564,2025-12-16,Books,Python for Beginners,29.9,2,0,59.8,Nitra,New,Mobile App,5
+ORD-10565,2025-12-16,Books,Cookbook,22.9,3,10,61.83,Banská Bystrica,Returning,Website,5
+ORD-10566,2025-12-16,Electronics,Bluetooth Speaker,49.9,3,0,149.7,Bratislava,Returning,Website,3
+ORD-10567,2025-12-17,Books,Data Science Handbook,39.9,3,10,107.73,Prešov,Returning,Mobile App,5
+ORD-10568,2025-12-17,Electronics,Wireless Headphones,79.9,1,20,63.92,Bratislava,New,Mobile App,3
+ORD-10569,2025-12-18,Electronics,Wireless Headphones,79.9,1,0,79.9,Prešov,Returning,Website,4
+ORD-10570,2025-12-18,Electronics,Bluetooth Speaker,49.9,1,10,44.91,Prešov,Returning,Website,3
+ORD-10571,2025-12-18,Books,Cookbook,22.9,3,20,54.96,Nitra,Returning,Website,5
+ORD-10572,2025-12-18,Beauty,Shampoo,9.9,2,0,19.8,Trnava,New,Website,3
+ORD-10573,2025-12-19,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Bratislava,Returning,Website,3
+ORD-10574,2025-12-19,Electronics,Smartwatch,149.0,1,0,149.0,Nitra,New,Website,5
+ORD-10575,2025-12-19,Home & Kitchen,Ceramic Mug Set,24.9,3,0,74.7,Košice,Returning,Website,4
+ORD-10576,2025-12-19,Beauty,Perfume,69.0,2,10,124.2,Bratislava,Returning,Website,3
+ORD-10577,2025-12-20,Beauty,Face Cream,34.9,3,15,88.99,Bratislava,Returning,Website,4
+ORD-10578,2025-12-20,Electronics,Wireless Headphones,79.9,1,20,63.92,Bratislava,New,Website,3
+ORD-10579,2025-12-21,Home & Kitchen,Air Fryer,119.0,1,0,119.0,Banská Bystrica,New,Mobile App,4
+ORD-10580,2025-12-21,Home & Kitchen,Coffee Maker,89.0,3,0,267.0,Banská Bystrica,New,Website,4
+ORD-10581,2025-12-22,Books,Cookbook,22.9,2,20,36.64,Bratislava,New,Website,4
+ORD-10582,2025-12-23,Home & Kitchen,Ceramic Mug Set,24.9,1,20,19.92,Prešov,New,Mobile App,5
+ORD-10583,2025-12-24,Electronics,Bluetooth Speaker,49.9,2,20,79.84,Trenčín,Returning,Website,3
+ORD-10584,2025-12-25,Electronics,Wireless Headphones,79.9,2,15,135.83,Bratislava,Returning,Mobile App,3
+ORD-10585,2025-12-26,Beauty,Lip Balm Set,12.9,1,15,10.96,Prešov,Returning,Website,4
+ORD-10586,2025-12-27,Sports,Water Bottle,15.9,2,0,31.8,Košice,Returning,Website,4
+ORD-10587,2025-12-27,Books,Cookbook,22.9,2,10,41.22,Bratislava,Returning,Mobile App,3
+ORD-10588,2025-12-28,Electronics,Bluetooth Speaker,49.9,1,0,49.9,Trenčín,Returning,Website,3
+ORD-10589,2025-12-28,Books,Mystery Novel,14.9,4,15,50.66,Bratislava,Returning,Mobile App,3
+ORD-10590,2025-12-28,Books,Cookbook,22.9,3,10,61.83,Trnava,New,Website,4
+ORD-10591,2025-12-29,Books,Data Science Handbook,39.9,2,10,71.82,Trnava,Returning,Website,5
+ORD-10592,2025-12-29,Books,Python for Beginners,29.9,2,0,59.8,Košice,New,Website,4
+ORD-10593,2025-12-29,Sports,Yoga Mat,29.9,2,15,50.83,Košice,Returning,Website,5
+ORD-10594,2025-12-29,Books,Mystery Novel,14.9,1,20,11.92,Žilina,Returning,Mobile App,4
+ORD-10595,2025-12-29,Sports,Yoga Mat,29.9,3,10,80.73,Žilina,Returning,Website,5
+ORD-10596,2025-12-30,Electronics,Bluetooth Speaker,49.9,3,10,134.73,Prešov,Returning,Mobile App,4
+ORD-10597,2025-12-30,Home & Kitchen,Coffee Maker,89.0,2,20,142.4,Nitra,New,Website,3
+ORD-10598,2025-12-30,Books,Python for Beginners,29.9,3,15,76.24,Bratislava,Returning,Website,3
+ORD-10599,2025-12-30,Beauty,Face Cream,34.9,1,20,27.92,Banská Bystrica,New,Mobile App,4
+ORD-10600,2025-12-31,Books,Python for Beginners,29.9,1,0,29.9,Nitra,Returning,Mobile App,4
