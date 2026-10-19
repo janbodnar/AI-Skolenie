@@ -1,35 +1,5 @@
 # Úlohy
 
-Pomocou AI nástrojov splň tieto úlohy:
-
-- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
-  https://www.youtube.com/watch?v=ITs9agntW18
-- [ ] Nájdi všetky slovenské firmy, ktoré používajú Python Pandas knižnicu
-- [ ] Nájdi všetky pondelky/utorky, štvrtky/piatky, ktoré nekolidujú s slovenskými
-      alebo českými sviatkami v marci a apríli a sprav z toho graf
-- [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
-- [ ] Nájdi spoje z Telgártu do Bratislave najbližšiu sobotu, odchody, príchody, prestupy
-- [ ] Vytvor CV. Použi šablónu z Google worspace.
-- [ ] Spočítaj výdavky v troch receptoch.
-- [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
-- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
-      Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
-- [ ] Vytvor logo pre svoju fiktívnu firmu.
-- [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
-- [ ] Prelož prvú stranu knihy *Jane Eyre*.
-- [ ] Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
-- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
-      vo VS Code. 
-- [ ] Nájdi všetky nepočítateľné podstatné mená v
-   Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
-   https://www.gutenberg.org/ebooks/43
-
-- [ ] Vytvor Deep Research report, ktorý sa zameria na daňovo-právne zmeny živnostníkov za posledných 5 rokov.
-- [ ] Vytvor nový stĺpec pre CSV dáta male/female.
-- [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
-  https://www.youtube.com/watch?v=DyOTl5iDGvU
-
-
 ## Facility data
 
 `facility.xlsx`
@@ -88,13 +58,50 @@ Prompts for `eshop_sales_2025.csv`
 - "What questions *can't* this data answer?"
 - "Predict sales for January 2026. How confident are you?"
 
-
 ## Obrazky
 
 `obrazky.zip`
 
 1. Vytvor čiernobiele kópie. 
 2. Vytvor zmenšené kópie.
+
+
+## Sentiment analýza
+
+Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
+
+
+
+Pomocou AI nástrojov splň tieto úlohy:
+
+- [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
+  https://www.youtube.com/watch?v=ITs9agntW18
+- [ ] Nájdi všetky slovenské firmy, ktoré používajú Python Pandas knižnicu
+- [ ] Nájdi všetky pondelky/utorky, štvrtky/piatky, ktoré nekolidujú s slovenskými
+      alebo českými sviatkami v marci a apríli a sprav z toho graf
+- [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
+- [ ] Nájdi spoje z Telgártu do Bratislave najbližšiu sobotu, odchody, príchody, prestupy
+- [ ] Vytvor CV. Použi šablónu z Google worspace.
+- [ ] Spočítaj výdavky v troch receptoch.
+- [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
+- [ ] Vygeneruj dokument, ktorý bude hodnotiť výhody/nevýhody niečoho (vegetariánstvo,joga).  
+      Urči formát výstupu: list, tabuľka. Skopíruj a zobraz vo VS Code.  
+- [ ] Vytvor logo pre svoju fiktívnu firmu.
+- [ ] Napíš na papier voľnou rukou výdavky a spočítaj ich pomocou AI nástroja.
+- [ ] Prelož prvú stranu knihy *Jane Eyre*.
+- [ ] Zosumarizuj knihu *Neprebudený* a *Rysavá Jalovica*. Sumár skopíruj a ulož do priečinka
+      vo VS Code. 
+- [ ] Nájdi všetky nepočítateľné podstatné mená v
+   Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson
+   https://www.gutenberg.org/ebooks/43
+
+- [ ] Vytvor Deep Research report, ktorý sa zameria na daňovo-právne zmeny živnostníkov za posledných 5 rokov.
+- [ ] Vytvor nový stĺpec pre CSV dáta male/female.
+- [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
+  https://www.youtube.com/watch?v=DyOTl5iDGvU
+
+
+
 
 ## Právna analýza
 
