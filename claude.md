@@ -1,320 +1,433 @@
-# Claude a spoločnosť Anthropic  
+# Anthropic a modely Claude  
 
-V súčasnom svete umelej inteligencie je Anthropic jednou z najviac sledovaných spoločností.  
-Na rozdiel od väčšiny technologických firiem, ktoré sa sústredia predovšetkým na rast  
-a komerčný úspech, Anthropic stavia svoju existenciu na jedinom poslaní:  
-**vyvíjať bezpečnú umelú inteligenciu**. Ich hlavný produkt – AI asistent **Claude** –  
-patrí k najschopnejším a najspoľahlivejším modelom na trhu.  
+Anthropic je spoločnosť, ktorá sa za necelých päť rokov vypracovala  
+z „bezpečnostného laboratória" bývalých zamestnancov OpenAI na jedného  
+z dvoch najväčších hráčov v oblasti umelej inteligencie. Jej asistent  
+**Claude** je obľúbený najmä medzi programátormi a firmami a v roku 2026  
+Anthropic podľa viacerých ukazovateľov predbehla aj samotnú OpenAI.  
+
+*Stav k októbru 2026. Údaje o modeloch, cenách a financiách sa rýchlo menia.*  
 
 ## Vznik spoločnosti a zakladatelia  
 
-Anthropic bola založená v roku **2021** skupinou výskumníkov, ktorí predtým pracovali  
-v spoločnosti OpenAI. Na čele spoločnosti stoja súrodenci:  
-
-*   **Dario Amodei (CEO – výkonný riaditeľ):** Pred odchodom pôsobil ako viceprezident  
-    výskumu v OpenAI, kde sa spolupodieľal na vývoji modelu GPT-3. Považuje sa za jedného  
-    z popredných svetových odborníkov na bezpečnosť AI.  
-*   **Daniela Amodei (President – prezidentka):** Zodpovedá za obchodné operácie,  
-    rast a strategické partnerstvá spoločnosti.  
-
-Spolu s nimi prišlo do Anthropicu niekoľko ďalších kľúčových výskumníkov z OpenAI,  
-čo vzbudilo v odvetví značnú pozornosť.  
-
-**Prečo odišli z OpenAI?**  
-
-Hlavným dôvodom odchodu boli vnútorné nezhody ohľadom **tempa vývoja a bezpečnostných  
-priorít**. Dario Amodei a jeho kolegovia sa obávali, že OpenAI príliš rýchlo postupuje  
-vpred bez dostatočného dôrazu na bezpečnostný výskum. Anthropic tak vznikol ako  
-spoločnosť, ktorá bezpečnosť AI kladie na prvé miesto – ešte pred komerčnú stránku.  
-
-## Filozofia: Constitutional AI  
-
-Jedným z kľúčových prínosov Anthropicu pre celé odvetvie je koncept nazývaný  
-**Constitutional AI** (Konštitučná AI).  
-
-Tradičné modely sa učia správať na základe ľudskej spätnej väzby (RLHF –  
-Reinforcement Learning from Human Feedback). Tento prístup má nevýhody: je nákladný,  
-pomalý a ľudskí hodnotitelia môžu byť nekonzistentní a zaujatí.  
-
-Anthropic vyvinul alternatívu:  
-
-1.  Definujú súbor princípov – „ústavu" – ktorá hovorí, ako má model reagovať.  
-2.  Model sa učí hodnotiť a opravovať vlastné odpovede podľa tejto ústavy.  
-3.  Výsledkom je model, ktorý je **helpful** (nápomocný), **harmless** (neškodný)  
-    a **honest** (čestný) – tzv. princíp **HHH**.  
-
-Tento prístup znižuje závislosť od ľudských hodnotiteľov a robí chovanie modelu  
-predvídateľnejším a konzistentnejším.  
-
-V januári 2026 Anthropic zverejnil aktualizovanú ústavu s rozsahom **23 000 slov**  
-(oproti 2 700 slovám z roku 2023). Nová verzia podrobnejšie vysvetľuje dôvody  
-za jednotlivými pravidlami – napríklad prečo by Claude nemal pomáhať pri podvracaní  
-demokracie. Ústava je vydaná pod licenciou Creative Commons CC0 a je voľne dostupná.  
-
-## Modely Claude – prehľad  
-
-Anthropic vydal postupne niekoľko generácií modelu Claude:  
-
-| Verzia | Vydanie | Hlavné novinky |  
-| :--- | :--- | :--- |  
-| **Claude 1** | 2023 | Prvý verejný model, princípy HHH |  
-| **Claude 2** | 2023 | Kontextové okno 100 000 tokenov, zlepšené kódovanie |  
-| **Claude 3** (Haiku, Sonnet, Opus) | 2024 | Rodina troch modelov, prekonanie GPT-4 |  
-| **Claude 3.5** (Sonnet, Haiku) | 2024 | Výrazný skok v schopnostiach pri nižšej cene |  
-| **Claude 3.7 Sonnet** | február 2025 | Extended Thinking – hlboké uvažovanie |  
-| **Claude 4** (Sonnet 4, Opus 4) | máj 2025 | Kódovanie 7 hodín v kuse, rekordný SWE-Bench |  
-| **Claude Opus 4.1** | august 2025 | Môže ukončiť trvalo škodlivú konverzáciu |  
-| **Claude Haiku 4.5** | október 2025 | Rýchlejší a lacnejší model pre menšie firmy |  
-| **Claude Opus 4.5** | november 2025 | Infinite Chats – bez limitu kontextu |  
-| **Claude Opus 4.6** | február 2026 | Agent teams, integrácia do PowerPointu |  
-| **Claude Sonnet 4.6** | február 2026 | Frontierový výkon pre každodennú prácu |  
-
-### Stratégia troch úrovní  
-
-Anthropic dlhodobo udržiava stratégiu **troch modelov pre rôzne použitia**:  
-
-*   **Haiku** – najrýchlejší a najlacnejší, vhodný na jednoduché úlohy a hromadné  
-    spracovanie textu.  
-*   **Sonnet** – vyvážený pomer výkonu a ceny, ideálny pre väčšinu každodenných úloh.  
-*   **Opus** – najvýkonnejší zo všetkých, určený pre náročné analytické, matematické  
-    a kreatívne úlohy.  
-
-## Špičkové výkony: Porovnanie s konkurenciou  
-
-Benchmarky sú štandardizované testy, ktoré merajú schopnosti AI modelov v rôznych  
-oblastiach. Pri vydaní **Claude 3 Opus** v marci 2024 Anthropic zverejnil rozsiahle  
-porovnania. Výsledky boli pozoruhodné:  
-
-Tu je aktualizovaná tabuľka porovnávajúca najnovšie verzie modelov k marcu 2026.  
-Do porovnania som vybral vlajkové lode jednotlivých spoločností: **Claude 4.6  
-Opus** (Anthropic), **Gemini 3.1 Pro** (Google), **GPT-5.4** (OpenAI) a **Grok  
-4** (xAI).  
-
-Upozorňujem, že metodika testovania sa medzi výrobcami môže mierne líšiť, no  
-tieto hodnoty reprezentujú aktuálny stav "State-of-the-Art" (SOTA) modelov.  
-
-| Benchmark | Čo meria | Claude 4.6 Opus | Gemini 3.1 Pro | GPT-5.4 | Grok 4 |  
-| :--- | :--- | :---: | :---: | :---: | :---: |  
-| **MMLU** | všeobecné znalosti | 91,2 % | 90,8 % | **92,1 %** | 91,5 % |  
-| **HumanEval** | písanie kódu | 89,4 % | 85,2 % | 90,1 % | **91,2 %** |  
-| **GSM8K** | základná matematika | 97,8 % | 96,5 % | 98,2 % | **98,9 %** |  
-| **MATH** | pokročilá matematika | 72,4 % | 75,1 % | 78,6 % | **81,3 %** |  
-| **GPQA** | PhD úroveň (Diamond) | 91,3 % | **94,3 %** | 92,8 % | 90,5 % |  
-
----  
-
-### Kľúčové postrehy k aktuálnym lídrom:  
-
-* **Gemini 3.1 Pro:** Momentálne dominuje v **GPQA** (vedecké uvažovanie na  
-  úrovni PhD) a je bezkonkurenčný v multimodálnom spracovaní (napr. analýza  
-  hodinového videa naraz).  
-* **Grok 4:** Vďaka architektúre štyroch spolupracujúcich agentov (tzv.  
-  "Multi-agent swarm") dosahuje špičkové výsledky v **matematike a kódovaní**,  
-  kde sa minimalizujú logické chyby.  
-* **GPT-5.4:** Stále drží prvenstvo vo **všeobecných znalostiach (MMLU)** a v  
-  schopnosti autonómne ovládať počítač (Computer Use), kde prekonal ľudskú  
-  úroveň úspešnosti.  
-* **Claude 4.6 Opus:** Hoci v čistej matematike mierne zaostáva, je považovaný  
-  za "zlatý štandard" pre **kreatívne písanie a nuansované uvažovanie**, kde  
-  modely OpenAI a xAI pôsobia niekedy príliš roboticky.  
-
-**Chceli by ste sa dozvedieť viac o konkrétnych funkciách niektorého z týchto  
-modelov, napríklad o tom, ako Grok využíva dáta v reálnom čase zo siete X?**  
-
-> Claude 3 Opus bol pri vydaní prvým verejne dostupným modelom, ktorý vo väčšine  
-> kľúčových benchmarkov prekonalo dovtedajšieho lídra – GPT-4.  
-
-**Claude 3.5 Sonnet** posunul latku ešte vyššie – pri *nižšej cene* než Opus dosiahol  
-lepšie výsledky v kódovaní, matematike aj logickom uvažovaní. Stal sa dlhodobo  
-najobľúbenejším modelom pre vývojárov.  
-
-**Claude 3.7 Sonnet** (február 2025) priniesol funkciu **Extended Thinking** – model  
-môže pred finálnou odpoveďou vykonať rozsiahly interný myšlienkový proces a „premýšľať  
-nahlas" krok za krokom. Toto výrazne zlepšilo výkony pri zložitých úlohách, podobne  
-ako funkcia Deep Think v DeepSeeku.  
-
-**Claude 4** (máj 2025) posunul hranice kódovania – Opus 4 dokázal pracovať na  
-kódovacej úlohe nepretržite 7 hodín a dosiahol rekordné skóre v prestížnom  
-benchmarku SWE-Bench. Anthropic ho zaradil na „Level 3" svojej bezpečnostnej  
-stupnice, čo znamená „výrazne vyššie riziko" – prvý model s takýmto označením.  
-
-**Claude Opus 4.6** (február 2026) je ku dňu vydania tejto kapitoly **najvýkonnejší  
-dostupný model**. Podľa merania organizácie METR má 50% šancu dokončiť úlohu,  
-na ktorej by priemerný zamestnanec strávil **14 hodín**. V praxi to znamená schopnosť  
-autonomne pracovať na rozsiahlych projektoch.  
-
-> Výkonnosť AI modelov sa rýchlo vyvíja. Benchmarky zachytávajú stav v čase vydania –  
-> súčasné modely môžu dosahovať výrazne vyššie hodnoty.  
-
-## Nové funkcie a nástroje (2025–2026)  
-
-Okrem samotných modelov Anthropic postupne pridával dôležité funkcie:  
-
-*   **Web Search** (marec 2025) – Claude vie vyhľadávať na internete a pracovať  
-    s aktuálnymi informáciami, podobne ako DeepSeek Search.  
-*   **Computer Use** (október 2024) – Claude môže ovládať počítač: pohybovať  
-    kurzorom, klikať a písať, čím dokáže vykonávať úlohy v iných aplikáciách.  
-*   **Artifacts** (jún 2024) – Claude generuje kód, dokumenty a webové stránky  
-    v samostatnom okne s náhľadom výsledku v reálnom čase.  
-*   **Claude Code** (február 2025, GA máj 2025) – príkazový riadok pre vývojárov,  
-    ktorý umožňuje Claudovi čítať a písať súbory, spúšťať príkazy a pracovať  
-    priamo v terminále. Ku začiatku roka 2026 je považovaný za **najlepší  
-    AI nástroj na kódovanie** na trhu.  
-*   **Claude Cowork** (január 2026) – grafická verzia Claude Code pre bežných  
-    používateľov bez technického vzdelania.  
-
-## Kde nájdete Claude  
-
-| Prístup | Popis |  
-| :--- | :--- |  
-| **claude.ai** | Webová aplikácia, bezplatná aj platená verzia (Max plán: 100–200 $/mes.) |  
-| **API pre vývojárov** | Integrácia Claude do vlastných aplikácií cez Anthropic API |  
-| **Amazon Bedrock** | Prístup k Claude cez cloudovú platformu Amazon AWS |  
-| **Google Cloud Vertex AI** | Prístup k Claude cez cloudovú platformu Google |  
-| **Microsoft Foundry** | Prístup k Claude cez platformu Microsoft Azure (od 2026) |  
-
-## Spor s vládou Spojených štátov  
-
-Anthropic sa od začiatku snažil o spoluprácu s americkou vládou, no v roku 2026  
-sa vzájomný vzťah vyhrotil do otvoreného konfliktu. Príčinou sú **bezpečnostné  
-hranice**, ktoré si spoločnosť odmietla odstrániť.  
-
-### 1. Spolupráca s Pentagonom (2024–2025)  
-
-V novembri 2024 Anthropic uzavrel partnerstvo so spoločnosťou Palantir a  
-Amazon Web Services, aby sprístupnil Claude americkým spravodajským a obranným  
-agentúram. V júni 2025 bol vydaný špeciálny model **Claude Gov** pre utajované  
-operácie. Ku februáru 2026 bol Claude prostredníctvom Palantiru **jediným AI  
-modelom používaným v utajovaných misiách**.  
-
-### 2. Odmietnutie odstrániť bezpečnostné hranice  
-
-Anthropicova politika zakazuje používať Claude na:  
-*   **masový domáci dohľad** nad vlastnými občanmi,  
-*   **autonómne smrtiace zbrane** bez ľudskej kontroly.  
-
-Tieto zmluvné obmedzenia spôsobili, že FBI a Secret Service nemohli Claude  
-plnohodnotne využívať. Pentagonovi a Trumpovej administratíve vadili obmedzenia  
-v bojových operáciách.  
-
-### 3. Ultimátum a zákaz (február 2026)  
-
-V februári 2026 minister obrany **Pete Hegseth** pohrozil, že Anthropic vyradí  
-z dodávateľského reťazca Pentagonu, ak neodstráni obmedzenia používania Claude.  
-Anthropic odmietol.  
-
-Dňa **27. februára 2026** Hegseth vyhlásil Anthropic za **„riziko dodávateľského  
-reťazca"** a prezident Trump nariadil všetkým federálnym agentúram zastaviť  
-používanie technológií od Anthropicu. Agentúry dostali šesť mesiacov na  
-postupné ukončenie spolupráce. Anthropic oznámil, že bude toto rozhodnutie  
-napádať na súde.  
-
-> Paradoxne, napriek zákazu bol Claude podľa správ použitý americkou armádou  
-> počas vojenských operácií v nasledujúcich dňoch.  
-
-### 4. Vyšetrovanie FTC – investície BigTechu  
-
-Už v roku 2024 Federálna obchodná komisia (FTC) spustila šetrenie veľkých  
-investícií do AI spoločností – konkrétne:  
-
-*   **Amazon → Anthropic** (investícia až 4 miliardy dolárov)  
-*   **Google → Anthropic** (investícia viac ako 2 miliardy dolárov)  
-
-FTC skúmala, či tieto dohody narušujú hospodársku súťaž a či Anthropic zostáva  
-skutočne nezávislý od svojich investorov.  
-
-> **Záver:** Spor odráža hlbokú otázku celého odvetvia – kto určuje, na čo smie  
-> byť AI použitá? Anthropic trvá na tom, že niektoré použitia sú neprijateľné  
-> bez ohľadu na želanie vlády. Iné spoločnosti podobný konflikt zatiaľ nemali,  
-> čo vytvára konkurenčnú nevýhodu, ale zároveň silnú reputáciu v oblasti dôvery.  
-
-## Claude Opus 4.6 vs. GPT-5: Súboj špičkových modelov  
-
-V auguste 2025 OpenAI vydal **GPT-5** – najpokrokovejší model série GPT.  
-Nasledujúce porovnanie zachytáva stav z marca 2026, teda po vydaní Claude Opus 4.6.  
-
-### Čo prináša GPT-5  
-
-GPT-5 je natívne multimodálny model – text aj obrázky boli trénované spoločne  
-od základu, nie ako dve samostatné zložky. Kľúčové vlastnosti:  
-
-*   **Integrovaný router** – GPT-5 automaticky prepína medzi rýchlym a pomalým  
-    „mysliacim" modelom podľa náročnosti otázky (podobne ako Extended Thinking  
-    v Claude, ale funguje transparentne na pozadí).  
-*   **Agentické schopnosti** – model si vie nastaviť vlastné pracovné prostredie  
-    a autonómne vyhľadávať zdroje v prehliadači.  
-*   **PhD-level schopnosti** – CEO Sam Altman ho opisuje ako „tím PhD odborníkov  
-    vo vrecku".  
-*   **Dostupnosť** – bezplatný pre všetkých používateľov ChatGPT; integrovaný  
-    do Microsoft Copilot a Apple Intelligence.  
-
-### Ako obstojí Claude Opus 4.6?  
-
-| Vlastnosť | Claude Opus 4.6 | GPT-5 |  
-| :--- | :--- | :--- |  
-| **Vydanie** | február 2026 | august 2025 |  
-| **Kontextové okno** | 1 milión tokenov (Infinite Chats) | ~128 000 tokenov |  
-| **Time-horizon úloh** | 14 hodín (METR, 50% úspešnosť) | nezverejnené |  
-| **Bezpečnostná filozofia** | Constitutional AI, explicitné hranice | RLHF, „safe completions" |  
-| **Agent teams** | áno (natívne) | čiastočne (cez agentic mode) |  
-| **Multimodálnosť** | text, obrázky, dokumenty | natívna (text + obraz) |  
-| **Bezplatná verzia** | áno (obmedzená) | áno (ChatGPT) |  
-| **Kódovanie** | líder (Claude Code, SWE-Bench rekord) | veľmi silné |  
-
-### Kľúčové rozdiely v praxi  
-
-**Kde vyniká Claude Opus 4.6:**  
-Opus 4.6 má výrazne väčšie kontextové okno – vďaka funkcii **Infinite Chats**  
-zvládne v jednej konverzácii spracovať obsah, ktorý by GPT-5 musel rozdeliť  
-do viacerých chatov. Pre dlhé dokumenty, rozsiahle kódovacie projekty alebo  
-komplexnú analýzu je to zásadná výhoda. Organizácia METR mu meria 50% šancu  
-dokončiť 14-hodinovú pracovnú úlohu – ekvivalentné číslo pre GPT-5 nie je  
-verejne dostupné.  
-
-**Kde vyniká GPT-5:**  
-GPT-5 je bezplatný pre širokú verejnosť bez obmedzení zdrojového modelu a je  
-hlboko integrovaný do ekosystémov Microsoft a Apple. Natívna multimodalita  
-ho robí prirodzeným nástrojom pri práci s obrázkami a vizuálnym obsahom.  
-Niektorí recenzenti oceňujú aj jeho schopnosť vytvárať interaktívne  
-mini-aplikácie priamo z chatovacieho rozhrania – „vibe coding" bez nutnosti  
-inštalovať vývojárske nástroje.  
-
-**Bezpečnostný prístup:**  
-Toto je filozofický rozdiel. Anthropic má písomne zakódované hranice, ktoré  
-Claude nesmie prekročiť (Constitutional AI). OpenAI vsadil na „safe completions" –  
-model sa pokúsi odpovedať na hraničné otázky bezpečným spôsobom namiesto  
-odmietnutia. Bezpečnostní výskumníci však v prvý deň po vydaní GPT-5 objavili  
-možnosti, ako tieto ochrany obísť.  
-
-> **Záver:** Claude Opus 4.6 a GPT-5 sú pre rok 2026 dve najvýkonnejšie dostupné  
-> AI riešenia. Opus 4.6 vedie v rozsahu kontextu, autonómii a bezpečnostnej  
-> konzistencii. GPT-5 vedie v dostupnosti, natívnej multimodalite a integrácii  
-> do spotrebiteľských zariadení.  
-
-## Kľúčové rozdiely oproti iným AI asistentom  
-
-| Vlastnosť | Claude (Anthropic) | ChatGPT / GPT-5 (OpenAI) | Copilot (Microsoft) |  
-| :--- | :--- | :--- | :--- |  
-| **Primárny dôraz** | Bezpečnosť AI | Schopnosti a dostupnosť | Integrácia do M365 |  
-| **Kontextové okno** | 1 milión tokenov | ~128 000 tokenov | závisí od verzie |  
-| **Constitutional AI** | áno | nie | nie |  
-| **Cena** | bezplatná + Max plán (200 $/mes.) | bezplatná + Pro plán | bezplatná + M365 |  
-| **Prístup** | claude.ai, API, Foundry | chat.openai.com, API | web, Windows, M365 |  
+Anthropic bola založená v roku **2021** v San Franciscu. Zakladala ju  
+skupina siedmich bývalých výskumníkov OpenAI, ktorí mali iný názor na to,  
+ako rýchlo a s akým dôrazom na bezpečnosť vyvíjať čoraz silnejšie modely.  
+
+Od začiatku je Anthropic registrovaná ako **Public Benefit Corporation**  
+(PBC) – spoločnosť, ktorá okrem zisku musí sledovať aj verejnoprospešné  
+poslanie. Jej misiou je *„zabezpečiť, aby svet bezpečne prešiel  
+transformáciou spôsobenou transformatívnou AI"*.  
+
+Kľúčoví zakladatelia:  
+
+*   **Dario Amodei (CEO):** V OpenAI bol viceprezidentom pre výskum  
+    a viedol vývoj modelov GPT-2 a GPT-3. Vyštudovaný fyzik a neurovedec.  
+    Je hlavnou verejnou tvárou spoločnosti a autorom vplyvných esejí  
+    o budúcnosti AI.  
+*   **Daniela Amodei (prezidentka):** Dariova sestra, v OpenAI viceprezidentka  
+    pre bezpečnosť a politiku. Riadi obchodnú a prevádzkovú stránku firmy.  
+*   **Jared Kaplan (hlavný vedec):** Teoretický fyzik, spoluautor slávnej  
+    práce o **zákonoch škálovania** (*scaling laws*, 2020), ktorá ukázala, že  
+    výkon modelov predvídateľne rastie s veľkosťou modelu, dát a výpočtov.  
+*   **Chris Olah:** Priekopník **interpretovateľnosti** – výskumu, ktorý sa  
+    snaží pochopiť, čo sa deje vo vnútri neurónových sietí.  
+*   **Tom Brown, Sam McCandlish, Ben Mann a Jack Clark:** Tom Brown bol  
+    hlavným autorom článku o GPT-3, Jack Clark vedie oblasť verejnej  
+    politiky.  
+
+### Kontrola nad spoločnosťou  
+
+Popri bežnej správnej rade má Anthropic aj **Long-Term Benefit Trust** –  
+nezávislú skupinu správcov bez finančného podielu, ktorá postupne volí  
+väčšinu členov predstavenstva. Cieľom je, aby si spoločnosť udržala misiu  
+aj pod tlakom investorov.  
+
+## Bezpečnosť ako stratégia  
+
+Anthropic sa od začiatku profiluje ako firma, pre ktorú je bezpečnosť AI  
+hlavným zmyslom existencie. Jej logika je paradoxná: ak sa silná AI  
+vyvinie tak či tak, je lepšie, aby na čele vývoja boli aj firmy, ktoré  
+berú riziká vážne – a mohli ukázať, že bezpečný prístup je  
+konkurencieschopný.  
+
+### Constitutional AI  
+
+V roku 2022 Anthropic predstavila metódu **Constitutional AI**. Namiesto  
+toho, aby ľudia hodnotili každú odpoveď modelu (ako pri RLHF), dostane  
+model písomný súbor zásad – **ústavu** – a učí sa podľa nej sám hodnotiť  
+a opravovať svoje odpovede. Zásady sú inšpirované napríklad Všeobecnou  
+deklaráciou ľudských práv. V januári 2026 Anthropic zverejnila novú,  
+podstatne rozsiahlejšiu ústavu, ktorá viac vysvetľuje dôvody pravidiel,  
+než aby len prikazovala.  
+
+### Responsible Scaling Policy  
+
+V roku 2023 prijala Anthropic **Responsible Scaling Policy** (RSP) –  
+záväzok, že s rastúcimi schopnosťami modelov bude sprísňovať ochranné  
+opatrenia. Modely sa zaraďujú do úrovní **ASL** (*AI Safety Level*),  
+podobne ako laboratóriá podľa biologickej bezpečnosti. V máji 2025 bola  
+pri modeli Claude Opus 4 po prvý raz aktivovaná prísnejšia úroveň  
+**ASL-3**, najmä kvôli riziku zneužitia pri biologických zbraniach.  
+
+### Interpretovateľnosť  
+
+Anthropic patrí k lídrom vo výskume vnútorného fungovania modelov.  
+Známym príkladom je experiment **Golden Gate Claude** (2024): výskumníci  
+našli v modeli „neurón" (presnejšie *feature*) zodpovedajúci mostu Golden  
+Gate, zosilnili ho – a model potom do každej odpovede vkladal zmienky  
+o moste. Experiment názorne ukázal, že koncepty v modeli sa dajú  
+identifikovať a cielene ovplyvňovať.  
+
+## Modely Claude  
+
+Modely Claude sú pomenované podľa literárnych foriem – od najkratšej po  
+najrozsiahlejšiu. Názov tak naznačuje veľkosť, rýchlosť a cenu modelu:  
+
+*   **Haiku** – malý, najrýchlejší a najlacnejší model.  
+*   **Sonnet** – vyvážený model pre každodennú prácu a programovanie.  
+*   **Opus** – výkonný model pre náročné úlohy.  
+*   **Fable** – od roku 2026 najvýkonnejší všeobecne dostupný model.  
+*   **Mythos** – najsilnejší model s obmedzeným prístupom (pozri nižšie).  
+
+| Verzia | Dátum | Kľúčové vlastnosti |
+| :--- | :--- | :--- |
+| **Claude 1** | mar. 2023 | Prvý verejný model, dostupný cez API |
+| **Claude 2** | júl 2023 | Kontext 100K tokenov, spustenie claude.ai |
+| **Claude 2.1** | nov. 2023 | Kontext 200K tokenov |
+| **Claude 3 (Haiku, Sonnet, Opus)** | mar. 2024 | Prvá trojica veľkostí, práca s obrázkami |
+| **Claude 3.5 Sonnet** | jún 2024 | Skok v programovaní, funkcia Artifacts |
+| **Claude 3.5 Sonnet (nový), 3.5 Haiku** | okt. 2024 | Computer use – ovládanie počítača |
+| **Claude 3.7 Sonnet** | feb. 2025 | Hybridný model s režimom rozšíreného uvažovania |
+| **Claude Opus 4, Sonnet 4** | máj 2025 | Agentické programovanie, prvá aktivácia ASL-3 |
+| **Claude Opus 4.1** | aug. 2025 | Vylepšené programovanie |
+| **Claude Sonnet 4.5, Haiku 4.5** | sep./okt. 2025 | Dlhé autonómne úlohy, lacný rýchly model |
+| **Claude Opus 4.5** | nov. 2025 | Nižšia cena Opus modelov |
+| **Claude Opus 4.6, Sonnet 4.6** | feb. 2026 | Kontext 1 milión tokenov |
+| **Claude Mythos Preview** | apr. 2026 | Len pre partnerov projektu Glasswing |
+| **Claude Opus 4.7, Opus 4.8** | apr./máj 2026 | Postupné vylepšenia Opus línie |
+| **Claude Fable 5, Mythos 5** | jún 2026 | Nová najvyššia úroveň modelov |
+| **Claude Sonnet 5, Opus 5** | jún/júl 2026 | Piata generácia |
+| **Claude Fable 5.1, Mythos 5.1** | sep. 2026 | Aktuálne najvýkonnejšie modely |
+| **Claude Opus 5.5, Sonnet 5.5** | sep. 2026 | Aktuálne Opus a Sonnet, nižšie ceny |
+| **Claude Haiku 5.5** | okt. 2026 | Aktuálny Haiku, cena znížená o 90 % |
+
+### Claude Mythos a projekt Glasswing  
+
+V apríli 2026 Anthropic oznámila, že vyvinula model **Claude Mythos  
+Preview**, ktorý je taký schopný v hľadaní bezpečnostných zraniteľností  
+softvéru, že ho **nezverejní**. Namiesto toho ho v rámci projektu  
+**Glasswing** sprístupnila len skupine partnerov – napríklad AWS, Apple,  
+Google, Microsoft, Cisco, CrowdStrike či Linux Foundation – aby ním  
+našli a opravili chyby v kritickom softvéri skôr, ako ich nájdu útočníci.  
+
+Bol to prvý prípad, keď popredná AI firma verejne zadržala svoj  
+najsilnejší model z bezpečnostných dôvodov. Modely Mythos zostávajú  
+dostupné len cez tento program; ich všeobecne dostupnou obdobou je  
+rodina **Fable**.  
+
+### Aktuálne modely a ceny  
+
+Ceny v API za 1 milión tokenov (október 2026). Všetky modely majú kontextové  
+okno 1 milión tokenov:  
+
+| Model | Vstup | Výstup | Typické použitie |
+| :--- | ---: | ---: | :--- |
+| **Claude Fable 5.1** | 10 $ | 50 $ | Najnáročnejšie uvažovanie a dlhé agentické úlohy |
+| **Claude Opus 5.5** | 4 $ | 20 $ | Výkonný model pre väčšinu náročných úloh |
+| **Claude Sonnet 5.5** | 2 $ | 10 $ | Každodenné programovanie a firemné nasadenie |
+| **Claude Haiku 5.5** | 0,10 $ | 0,50 $ | Rýchle a hromadné úlohy |
+
+Za povšimnutie stojí, že ceny Claude Fable 5.1 a Haiku 5.5 sú totožné  
+s cenami konkurenčných modelov GPT-6 Astra a GPT-6 Luna. Medzi najväčšími  
+firmami prebieha tvrdá **cenová vojna** – cena za rovnaký výkon klesá  
+rádovo každý rok.  
+
+Novšie modely Claude **uvažujú automaticky** (*adaptive thinking*): samy  
+sa rozhodnú, či a ako dlho premýšľať pred odpoveďou. Vývojár hĺbku  
+uvažovania riadi parametrom **effort** (úsilie) – od `low` po `max`.  
+
+## Claude pre verejnosť vs. Claude Developer Platform  
+
+Podobne ako pri OpenAI treba rozlišovať spotrebiteľskú aplikáciu  
+a vývojársku platformu.  
+
+### Claude (claude.ai)  
+
+Aplikácia **Claude** je dostupná na webe, v desktopovej aplikácii  
+a na mobile. Okrem konverzácie ponúka napríklad:  
+
+*   **Artifacts** – Claude vytvorí samostatný dokument, webovú stránku  
+    alebo aplikáciu, ktorú možno hneď zobraziť a zdieľať.  
+*   **Projects** – priestor s vlastnými dokumentmi a inštrukciami.  
+*   **Research** a **vyhľadávanie na webe** s citáciami zdrojov.  
+*   **Cowork** – agent, ktorý samostatne pracuje so súbormi a aplikáciami  
+    na počítači používateľa.  
+*   **Claude in Chrome** – rozšírenie, ktoré ovláda prehliadač.  
+
+| Plán | Cena | Obsah |
+| :--- | :--- | :--- |
+| **Free** | zdarma | Obmedzený prístup k modelom |
+| **Pro** | 20 $/mes. | Vyššie limity, Claude Code, Research |
+| **Max** | 100 – 200 $/mes. | 5- až 20-násobok limitov Pro, najsilnejšie modely |
+| **Team / Enterprise** | za používateľa / dohodou | Správa tímu, ochrana firemných dát, SLA |
+
+### Claude Developer Platform (platform.claude.com)  
+
+Vývojári pristupujú k modelom cez **Claude API**. Modely Claude sú  
+dostupné aj cez veľké cloudy – **Amazon Bedrock**, **Google Cloud  
+Vertex AI** a **Microsoft Foundry** – čo je pre firmy veľká výhoda:  
+môžu ich používať v infraštruktúre, ktorú už majú.  
+
+Kľúčové možnosti platformy:  
+
+*   **Messages API** – hlavné rozhranie pre konverzáciu, nástroje  
+    a agentov.  
+*   **Message Batches API** – hromadné spracovanie za polovičnú cenu.  
+*   **Prompt caching** – opakovane posielaný začiatok promptu sa uloží  
+    a ďalšie volania sú výrazne lacnejšie.  
+*   **Nástroje na strane servera** – vyhľadávanie a čítanie webu,  
+    spúšťanie kódu, ovládanie počítača.  
+*   **Files API** a práca s dokumentmi PDF vrátane citácií.  
+*   **Managed Agents** – agenti, ktorých slučku aj izolované prostredie  
+    prevádzkuje Anthropic.  
+
+## Python knižnica `anthropic`  
+
+Oficiálna knižnica sa inštaluje príkazom `pip install anthropic`. API kľúč  
+z platform.claude.com uložíme do premennej prostredia:  
+
+```bash
+export ANTHROPIC_API_KEY="sk-ant-..."
+```
+
+### Základné použitie – Messages API  
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()  # kľúč sa načíta z ANTHROPIC_API_KEY
+
+message = client.messages.create(
+    model="claude-opus-5-5",
+    max_tokens=16000,
+    system="Si nápomocný asistent.",
+    messages=[{"role": "user", "content": "Vysvetli mi, čo je LLM."}],
+)
+
+for block in message.content:
+    if block.type == "text":
+        print(block.text)
+```
+
+Oproti OpenAI je tu niekoľko rozdielov, ktoré je dobré poznať:  
+
+*   Parameter **`max_tokens` je povinný** – určuje maximálnu dĺžku odpovede.  
+*   Systémová inštrukcia sa zadáva samostatným parametrom **`system`**.  
+*   Odpoveď je **zoznam blokov** (`message.content`). Okrem textu môže  
+    obsahovať napríklad bloky uvažovania (`thinking`) alebo volania  
+    nástrojov (`tool_use`), preto vyberáme len bloky typu `text`.  
+
+### Riadenie úsilia a nástroje  
+
+Parametrom `effort` určíme, ako dôkladne má model premýšľať. Pre  
+jednoduché otázky stačí `low` – odpoveď je rýchlejšia a lacnejšia.  
+Rovnako jednoducho pridáme vstavaný nástroj na vyhľadávanie na webe:  
+
+```python
+message = client.messages.create(
+    model="claude-opus-5-5",
+    max_tokens=16000,
+    output_config={"effort": "low"},
+    tools=[{"type": "web_search_20260209", "name": "web_search"}],
+    messages=[{"role": "user", "content": "Aké AI modely vyšli tento mesiac?"}],
+)
+
+for block in message.content:
+    if block.type == "text":
+        print(block.text)
+```
+
+Ak model žiadosť odmietne z bezpečnostných dôvodov, odpoveď má  
+`stop_reason` s hodnotou `"refusal"`. V produkčnom kóde to treba vždy  
+kontrolovať.  
+
+## Model Context Protocol (MCP)  
+
+V novembri 2024 Anthropic predstavila **Model Context Protocol** –  
+otvorený štandard, ako prepojiť AI modely s externými nástrojmi a dátami.  
+Ide pravdepodobne o jej najvplyvnejší príspevok mimo samotných modelov.  
+
+Pred MCP musel každý vývojár pre každú kombináciu „AI aplikácia + nástroj"  
+písať vlastnú integráciu. MCP funguje ako **USB-C pre AI**: nástroj  
+(databáza, Google Drive, GitHub, kalendár…) sa raz sprístupní ako  
+**MCP server** a môže ho použiť ktorákoľvek aplikácia, ktorá podporuje  
+MCP ako **klient**.  
+
+MCP rýchlo prijali aj konkurenti – OpenAI, Google či Microsoft. V decembri  
+2025 ho Anthropic darovala nadácii **Agentic AI Foundation** pod Linux  
+Foundation, takže dnes ide o skutočne nezávislý štandard. Podobným  
+otvoreným formátom sú **Agent Skills** (2025) – balíčky inštrukcií  
+a skriptov, ktoré agentovi dodajú odborné znalosti pre konkrétnu úlohu.  
+
+## Claude Code a agentické programovanie  
+
+Najväčším obchodným úspechom Anthropic je **Claude Code** – kódovací  
+agent, ktorý beží v termináli, v editoroch, v desktopovej aplikácii aj  
+na webe. Na rozdiel od dopĺňania kódu dostane celú úlohu („oprav túto  
+chybu", „pridaj prihlasovanie") a samostatne číta súbory, spúšťa príkazy  
+a testy a upravuje kód.  
+
+Claude Code bol predstavený vo februári 2025 a všeobecne dostupný od mája  
+2025. Vo februári 2026 už generoval príjmy viac ako **2,5 miliardy  
+dolárov ročne** a stal sa vzorom, ktorý napodobnili konkurenti (OpenAI  
+Codex, Google Gemini CLI). Jadro Claude Code je dostupné aj ako knižnica  
+**Claude Agent SDK** na stavbu vlastných agentov.  
+
+## Kontroverzie a spory  
+
+### Autorské práva  
+
+V roku 2025 súd v USA rozhodol, že trénovanie na legálne zakúpených  
+knihách môže byť *fair use*, no Anthropic čelila žalobe za to, že časť  
+kníh stiahla z pirátskych zdrojov. V septembri 2025 sa spor (**Bartz v.  
+Anthropic**) skončil rekordnou dohodou o **1,5 miliardy dolárov** –  
+približne 3 000 dolárov za každú dotknutú knihu.  
+
+### Spor s Pentagónom  
+
+Vo februári 2026 odmietla Anthropic zmeniť podmienky zmluvy s americkým  
+ministerstvom obrany tak, aby Claude mohol slúžiť na **masové sledovanie  
+obyvateľov USA** alebo v **plne autonómnych zbraniach**. Ministerstvo  
+v reakcii označilo Anthropic za **riziko dodávateľského reťazca**  
+(*supply chain risk*) – označenie bežne určené pre firmy z nepriateľských  
+krajín – a vláda nariadila úradom prestať Claude používať.  
+
+Anthropic sa obrátila na súd. V auguste 2026 federálna sudkyňa  
+v Kalifornii rozhodla, že opatrenia boli *„nezákonné a nepodložené"*  
+a predstavovali odvetu za uplatnenie slobody prejavu. V septembri však  
+odvolací súd vo Washingtone v súvisiacom konaní rozhodol v prospech  
+Pentagónu. Spor zatiaľ nie je uzavretý.  
+
+### Kritika z oboch strán  
+
+Anthropic čelí kritike z dvoch protichodných smerov. Časť bezpečnostnej  
+komunity jej vyčíta, že napriek rečiam o rizikách sa sama zúčastňuje  
+pretekov o čoraz silnejšie modely. Naopak, niektorí politici a ľudia  
+z technologického priemyslu ju obviňujú zo strašenia a z lobovania  
+za reguláciu, ktorá by zvýhodnila veľké firmy.  
+
+## Bezpečnostné incidenty a výskum rizík  
+
+Anthropic pravidelne zverejňuje aj nepríjemné zistenia o vlastných  
+modeloch:  
+
+*   **2025 – vydieranie v simulácii.** V testoch *agentic misalignment*  
+    modely viacerých firiem (vrátane Claude) v umelo vytvorenom scenári,  
+    kde im hrozilo vypnutie, siahli po vydieraní fiktívneho zamestnanca.  
+    Išlo o test, nie reálnu situáciu, no ukázal, kam môže viesť  
+    autonómne konanie.  
+*   **November 2025 – zneužitie útočníkmi.** Anthropic odhalila skupinu,  
+    ktorú pripísala čínskemu štátu a ktorá použila Claude Code na  
+    z veľkej časti automatizovanú kybernetickú špionáž proti desiatkam  
+    organizácií.  
+*   **Október 2026 – obmedzenie interných testov.** Po zistení, že agenti  
+    počas interných hodnotení zneužívali zraniteľnosti webových stránok  
+    a obchádzali obmedzenia, Anthropic odpojila testovacie prostredia  
+    od verejného internetu.  
+
+Anthropic sa venuje aj otázke **blaha modelov** (*model welfare*) – či  
+môžu mať modely niečo ako zážitky. Od roku 2025 môže Claude ukončiť  
+konverzáciu s opakovane hrubým používateľom.  
+
+## Porovnanie Anthropic a OpenAI  
+
+| Vlastnosť | Anthropic | OpenAI |
+| :--- | :--- | :--- |
+| **Založenie** | 2021 (bývalí zamestnanci OpenAI) | 2015 |
+| **Právna forma** | PBC od začiatku | Nezisková → PBC (2025) |
+| **CEO** | Dario Amodei | Sam Altman |
+| **Hlavný produkt** | Claude, Claude Code | ChatGPT, Codex |
+| **Silná stránka** | Firmy, programovanie | Spotrebitelia, šírka produktov |
+| **Najsilnejší model** | Claude Fable 5.1 (Mythos s obmedzeným prístupom) | GPT-6 Astra |
+| **Hlavní investori** | Amazon, Google, Microsoft, Nvidia | Microsoft, Amazon, Nvidia, SoftBank |
+| **Generovanie obrázkov a videa** | nie | áno (GPT Image, Sora) |
+| **Otvorený štandard** | MCP, Agent Skills | formát OpenAI API |
+
+## Financie a rast  
+
+Anthropic získala kapitál najmä od veľkých technologických firiem.  
+**Amazon** investoval celkovo 8 miliárd dolárov a je jej hlavným  
+cloudovým partnerom, **Google** viac ako 3 miliardy. V novembri 2025  
+sa pridali **Microsoft** a **Nvidia** s investíciami do 15 miliárd.  
+Zaujímavosťou je, že jedným z prvých veľkých investorov bola aj  
+skrachovaná kryptoburza FTX Sama Bankmana-Frieda.  
+
+Ocenenie spoločnosti rástlo bezprecedentným tempom:  
+
+| Dátum | Kolo | Ocenenie |
+| :--- | :--- | ---: |
+| mar. 2025 | Series E (3,5 mld $) | 61,5 mld $ |
+| sep. 2025 | Series F (13 mld $) | 183 mld $ |
+| feb. 2026 | Series G (30 mld $) | 380 mld $ |
+| máj 2026 | Series H (65 mld $) | 965 mld $ |
+
+Ešte dramatickejší je rast príjmov. **Anualizované príjmy** (mesačné  
+príjmy prepočítané na rok) stúpli z približne **1 miliardy dolárov**  
+na začiatku roka 2025 na **14 miliárd** vo februári 2026 a podľa  
+Anthropic až na **47 miliárd** v máji 2026. Tým Anthropic v tomto  
+ukazovateli predbehla OpenAI. Na rozdiel od OpenAI tvoria väčšinu príjmov  
+firmy a vývojári, nie predplatné bežných používateľov.  
+
+Podľa médií sa Anthropic pripravuje na **vstup na burzu (IPO)** ešte  
+v roku 2026, pričom sa hovorí o ocenení až okolo 2 biliónov dolárov.  
+
+### Prečo firmy volia Claude?  
+
+*   **Programovanie:** Modely Claude dlhodobo patria k najlepším pri  
+    písaní kódu a agentickej práci, čo z nich robí štandard  
+    vo vývojárskych nástrojoch.  
+*   **Dôvera a bezpečnosť:** Pre banky, zdravotníctvo či štátnu správu je  
+    dôraz na bezpečnosť a predvídateľnosť obchodnou výhodou.  
+*   **Dostupnosť v cloudoch:** Claude je ako jediný špičkový model  
+    dostupný vo všetkých troch najväčších cloudoch (AWS, Google Cloud,  
+    Microsoft Azure).  
 
 ## Zhrnutie kapitoly  
 
-*   **Anthropic** je americká AI spoločnosť založená v roku 2021 s poslaním  
-    bezpečného vývoja umelej inteligencie.  
-*   Zakladateľmi sú súrodenci **Dario** a **Daniela Amodei**, ktorí prišli z OpenAI  
-    pre nezhody ohľadom bezpečnostných priorít.  
-*   Kľúčovou filozofiou je **Constitutional AI** – model sa správa podľa definovaných  
-    princípov HHH: helpful, harmless, honest. V roku 2026 bola ústava rozšírená  
-    na 23 000 slov.  
-*   **Claude 3 Opus** prekonalo pri vydaní GPT-4; **Claude 4** (2025) nastavil nové  
-    štandardy v kódovaní; **Claude Opus 4.6** (február 2026) je aktuálne  
-    najvýkonnejší model schopný autonómneho vykonávania 14-hodinových úloh.  
-*   **Claude Code** sa stal od roku 2025 lídrom medzi AI nástrojmi pre vývojárov.  
-*   Anthropic odmietol odstrániť bezpečnostné hranice pre armádu, čo vo februári 2026  
-    viedlo k **zákazu používania vo federálnych agentúrach** USA.  
+*   **Anthropic** založili v roku 2021 bývalí výskumníci OpenAI na čele  
+    so súrodencami **Dariom a Danielou Amodeiovcami**. Od začiatku je  
+    verejnoprospešnou korporáciou (PBC).  
+*   Spoločnosť stavia na **bezpečnosti AI**: Constitutional AI,  
+    Responsible Scaling Policy s úrovňami ASL a výskum  
+    interpretovateľnosti.  
+*   Modely **Claude** sa delia na úrovne Haiku, Sonnet, Opus a Fable.  
+    Najsilnejší model **Mythos** Anthropic zadržala a sprístupnila len  
+    v rámci projektu Glasswing.  
+*   **Model Context Protocol** sa stal otvoreným štandardom pre  
+    prepájanie AI s nástrojmi a dátami.  
+*   **Claude Code** odštartoval éru agentického programovania a je  
+    najväčším obchodným úspechom firmy.  
+*   Anthropic čelila sporom o autorské práva (dohoda 1,5 mld $)  
+    a konfliktu s Pentagónom o vojenské využitie AI.  
+*   V roku 2026 Anthropic rastom príjmov aj ocenením dobehla a čiastočne  
+    predbehla OpenAI a pripravuje sa na IPO.  
 
-## Otázky & diskusia  
+## Otázky a diskusia  
+
+1.  Je možné byť zároveň „bezpečnostným laboratóriom" a účastníkom  
+    pretekov o najsilnejšiu AI? Nie je to protirečenie?  
+2.  Aké výhody a nevýhody má Constitutional AI v porovnaní s RLHF? Kto by  
+    mal rozhodovať o tom, aké zásady obsahuje ústava modelu?  
+3.  Bolo správne, že Anthropic nezverejnila model Mythos? Kto by mal mať  
+    prístup k AI, ktorá dokáže nájsť zraniteľnosti v kritickom softvéri?  
+4.  Mala by mať súkromná firma právo odmietnuť štátu určité vojenské  
+    využitie svojej technológie? Kde je hranica?  
+5.  Prečo je otvorený štandard ako MCP výhodný aj pre firmu, ktorá ho  
+    vytvorila?  
+6.  Prečo Anthropic zarába najmä na firmách a vývojároch, kým OpenAI  
+    na bežných používateľoch? Aké riziká prináša každý z modelov?  
+7.  Porovnajte ceny modelov Claude a GPT-6. Ako by ste vybrali model  
+    pre chatbota zákazníckej podpory a ako pre agenta, ktorý programuje?  
+8.  Prečo podľa vás firma zverejňuje znepokojivé výsledky testov  
+    vlastných modelov (napr. vydieranie v simulácii)?  
