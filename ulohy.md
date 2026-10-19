@@ -34,16 +34,14 @@ Pomocou AI nástrojov splň tieto úlohy:
 
 `facility.xlsx`
 
-This dataset allows you to easily create three high-impact visual reports:
-
-Total Spend by Category (Bar / Column Chart)  
+- Total Spend by Category (Bar / Column Chart)  
 Purpose: Shows where most of the facility budget is going (HVAC usually tops this).  
 
-Chart Type: Clustered Column Chart.  
+- Chart Type: Clustered Column Chart.  
 Ticket Count by Location / Floor (Pie / Donut Chart):  
 Purpose: Identifies "hotspot" floors requiring the most maintenance.  
 
-Chart Type: Doughnut Chart.  
+- Chart Type: Doughnut Chart.  
 Average Days to Resolve by Priority (Bar Chart):  
 Purpose: Evaluates response times across Critical vs. Low priority issues.  
 
