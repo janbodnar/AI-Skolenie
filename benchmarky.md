@@ -10,7 +10,7 @@ uvažovania až po generovanie kódu a pravdivosť odpovedí.
 [LiveBench](https://livebench.ai/) – pravidelne obnovovaný objektívny test  
 [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models) – porovnanie kvality, ceny a rýchlosti  
 [SWE-bench](https://www.swebench.com/) – agentické riešenie úloh v repozitároch  
-[AI Coding daily]([https://www.swebench.com/](https://aicodingdaily.com/leaderboard) – nezávislé hodnotenie
+[AI Coding daily](https://aicodingdaily.com/leaderboard) – nezávislé hodnotenie
 
 **Prečo sú benchmarky dôležité?**  
 
