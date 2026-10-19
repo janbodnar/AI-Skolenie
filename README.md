@@ -1,5 +1,7 @@
 # AI-Skolenie
 
+https://notebook.google.com/notebook/21989c0f-a0b0-49e4-ae03-dd7f8389bdc5
+
 https://notebook.google.com/notebook/6710c74f-19c6-418d-a22f-597050326cbc
 
 https://audio-transcriber-translator-528965810214.europe-west1.run.app
