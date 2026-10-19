@@ -1,252 +1,334 @@
 # Ekosystém Microsoft Copilot  
 
-Keď sa dnes povie „Copilot", väčšina ľudí si predstaví chatovacieho robota od Microsoftu.  
-To je síce pravda, ale len čiastočne. Microsoft stratégiou značky „Copilot" zjednotil všetky  
-svoje nástroje umelej inteligencie pod jednu strechu. Pre začiatočníka v oblasti AI je však  
-dôležité vedieť, že **nie každý Copilot je rovnaký**.  
+Keď sa dnes povie „Copilot", väčšina ľudí si predstaví chatovacieho robota  
+od Microsoftu. To je pravda, ale len čiastočne. Microsoft pod značku „Copilot"  
+zjednotil takmer všetky svoje nástroje umelej inteligencie. Pre začiatočníka  
+v AI je preto dôležité vedieť, že **nie každý Copilot je rovnaký**.  
 
-Rôzne verzie Copilota majú rôzne schopnosti, pracujú s rôznymi dátami a sú určené  
-pre rôzne skupiny používateľov. V tejto kapitole si rozoberieme hlavné produkty z rodiny  
-Copilot, aby ste vedeli, ktorý nástroj použiť na konkrétnu úlohu.  
+Rôzne verzie Copilota majú rôzne schopnosti, pracujú s rôznymi dátami  
+a sú určené pre rôzne skupiny používateľov. V tejto kapitole si rozoberieme  
+hlavné produkty z rodiny Copilot, aby ste vedeli, ktorý nástroj použiť  
+na konkrétnu úlohu.  
 
-> 📖 **Stručná história:** Pôvodne Microsoft spustil „Bing Chat" (február 2023) ako  
-> AI chatovacieho asistenta vo vyhľadávači. V novembri 2023 ho premenoval na  
-> **Microsoft Copilot** a začal značku rozširovať do celého svojho portfólia.  
-> Dnes je Copilot jednotnou AI platformou naprieč celým Microsoft 365 ekosystémom.  
+**Po tejto kapitole budete vedieť:**  
+
+* vymenovať hlavné produkty rodiny Copilot a ich určenie  
+* vysvetliť, s akými dátami ktorý Copilot pracuje  
+* vybrať vhodný nástroj pre typickú úlohu (písanie, kód, firemné dáta)  
+* rozlíšiť asistenta (odpovedá) od agenta (koná)  
+
+> 📖 **Stručná história:** Microsoft spustil „Bing Chat" vo februári 2023  
+> ako AI asistenta vo vyhľadávači. V novembri 2023 ho premenoval na  
+> **Microsoft Copilot** a značku rozšíril do celého portfólia.  
+> Pôvodný GitHub Copilot je pritom starší – vznikol už v roku 2021.  
+
+> ⚠️ **Pozor na názvy:** Microsoft svoje produkty premenúva veľmi často.  
+> Aplikácia Microsoft 365 Copilot a osobný Copilot sa v roku 2026 spájajú  
+> do jednej aplikácie a názvy edícií sa menia (napr. „Copilot Chat" ako  
+> základná, bezplatná firemná verzia). Princípy z tejto kapitoly platia  
+> dlhodobo, ale **presné názvy a ceny si vždy overte** v dokumentácii  
+> Microsoftu pred školením či nákupom.  
 
 ## Prehľad produktov Copilot  
 
-Nasledujúca tabuľka vám poskytne rýchly orientačný prehľad o tom, kde jednotlivé nástroje  
-nájdete a na čo slúžia:  
+Nasledujúca tabuľka dáva rýchly orientačný prehľad:  
 
 | Produkt | Kde sa používa | Účel |  
 | :--- | :--- | :--- |  
-| **Copilot** | web, mobil, Windows | všeobecný AI asistent |  
-| **Copilot for Microsoft 365** | Word, Excel, Outlook, Teams, Loop | práca s dokumentmi a firemnými dátami |  
-| **GitHub Copilot** | VS Code, JetBrains, GitHub.com, CLI | generovanie kódu, chat, agentný režim, code review |  
-| **Copilot in Windows** | Windows 11 | ovládanie PC a sumarizácia okien |  
-| **Copilot Studio** | web | tvorba vlastných AI agentov a Copilot rozšírení |  
-| **Copilot for Security** | SOC nástroje | bezpečnostná analýza a reakcia na incidenty |  
-| **Copilot for Sales / Service** | Dynamics 365, Salesforce | predajná a zákaznícka podpora |  
-| **Copilot for Azure** | Azure Portal | správa cloudovej infraštruktúry |  
-| **Copilot for Fabric** | Microsoft Fabric | analýza dát a BI |  
-| **Microsoft 365 Copilot Chat** | web, Teams | firemný AI chat s ochranou dát (náhrada starého Bing Chat Enterprise) |  
+| **Microsoft Copilot** (osobný) | web, mobil, Windows | všeobecný AI asistent |  
+| **Microsoft 365 Copilot** | Word, Excel, PowerPoint, Outlook, Teams | práca s dokumentmi a firemnými dátami |  
+| **Microsoft 365 Copilot Chat** | web, Teams, aplikácie M365 | firemný AI chat s ochranou dát |  
+| **GitHub Copilot** | VS Code, Visual Studio, JetBrains, GitHub.com, CLI | kód, chat, agenti, code review |  
+| **Copilot v Windows** | Windows 11 | pomoc s ovládaním PC |  
+| **Copilot Studio** | web | tvorba vlastných AI agentov |  
+| **Security Copilot** | Defender, Sentinel, Purview, Intune | bezpečnostná analýza a incidenty |  
+| **Dynamics 365 Copilot** | Dynamics 365 | predaj, zákaznícka podpora |  
+| **Copilot v Azure** | Azure Portal | správa cloudovej infraštruktúry |  
+| **Copilot vo Fabric** | Microsoft Fabric | analýza dát a BI |  
+
+## Asistent vs. agent: kľúčový pojem  
+
+Pri AI nástrojoch rozlišujeme dva štýly práce:  
+
+* **Asistent** – odpovie na vašu otázku alebo navrhne text. Rozhodnutie  
+  a akciu robíte vy.  
+* **Agent** – dostane cieľ a sám naplánuje kroky, použije nástroje  
+  (súbory, terminál, API) a vykoná ich. Vy výsledok kontrolujete.  
+
+Takmer každý Copilot dnes ponúka oba štýly. Čím viac samostatnosti agent  
+dostane, tým dôležitejšia je **kontrola výsledku človekom**.  
 
 ## Podrobnejší pohľad na jednotlivé nástroje  
 
-Aby ste lepšie pochopili rozdiely, pozrime sa na každý produkt bližšie:  
+### 1. Microsoft Copilot (osobný asistent)  
 
-### 1. Copilot (Všeobecný asistent)  
-Toto je verzia, ktorú pozná väčšina verejnosti.  
-Je dostupná zadarmo (s možnosťou platenej verzie Pro) cez webový prehliadač,  
-mobilnú aplikáciu alebo ako samostatná aplikácia vo Windows.  
+Verzia, ktorú pozná väčšina verejnosti. Je dostupná zadarmo cez prehliadač,  
+mobilnú aplikáciu alebo aplikáciu vo Windows. Platené plány pridávajú  
+vyššie limity a pokročilejšie funkcie.  
 
-*   **Na čo slúži:** Odpovedá na otázky, pomáha s písaním textov, generuje obrázky  
-    (cez DALL-E 3) a vyhľadáva informácie na webe.  
-*   **Pokročilé funkcie (Copilot Pro):**  
-    *   **Copilot Voice** – hlasová interakcia s asistentom  
-    *   **Copilot Vision** – model vidí a analyzuje webové stránky, na ktorých práve ste  
-    *   **Think Deeper** – hlbšie uvažovanie na zložité problémy (chain-of-thought)  
-    *   **Copilot Pages** – zdieľaný pracovný priestor na kolaboráciu medzi ľuďmi a AI  
-    *   **GPT-5 a výber modelu** – možnosť prepínať medzi rôznymi AI modelmi  
-*   **Kontext dát:** Pracuje predovšetkým s verejnými informáciami z internetu.  
-    Nevidí do vašich firemných e-mailov ani súkromných dokumentov (pokiaľ mu ich  
-    explicitne neposkytnete v chate).  
+* **Na čo slúži:** odpovedá na otázky, pomáha s písaním, generuje obrázky  
+  a vyhľadáva informácie na webe.  
+* **Typické funkcie:**  
+    * **Voice** – hlasová konverzácia s asistentom  
+    * **Vision** – asistent vidí obrazovku alebo kameru (so súhlasom  
+      používateľa) a komentuje, čo vidí  
+    * **Hlbšie uvažovanie** – režim na zložitejšie problémy  
+    * **Pages** – pracovný priestor na tvorbu a úpravu obsahu s AI  
+    * **Výber modelu** – dostupné modely sa menia podľa plánu a času  
+* **Kontext dát:** pracuje s verejnými informáciami z webu a s tým, čo  
+  mu sami poskytnete v chate. Nevidí vaše firemné e-maily ani dokumenty.  
 
-### 2. Copilot for Microsoft 365 (Firemný asistent)  
-Toto je prémiová verzia určená pre firmy a organizácie, ktoré využívajú balík  
-Microsoft 365. Vyžaduje si samostatnú licenciu (Copilot for M365).  
+### 2. Microsoft 365 Copilot (firemný asistent)  
 
-*   **Na čo slúži:** Je integrovaný priamo do aplikácií, ktoré poznáte.  
-    Vo **Word**e napíše koncept dokumentu, v **Exeli** analyzuje tabuľky,  
-    v **Outlook**u zhrnie dlhý reťazec e-mailov a v **Teams**ách spraví zápis  
-    zo schôdzky.  
+Platený doplnok pre organizácie využívajúce Microsoft 365. Vyžaduje  
+samostatnú licenciu (cena býva okolo 30 USD za používateľa mesačne).  
 
-*   **Copilot Pages** – nový koncept (2025) zdieľaného „nekonečného plátna",  
-    kde môžete s Copilotom a kolegami v reálnom čase vytvárať obsah.  
+* **Na čo slúži:** je zabudovaný priamo do aplikácií, ktoré poznáte.  
+  Vo **Worde** napíše koncept dokumentu, v **Exceli** analyzuje tabuľky,  
+  vo **PowerPointe** pripraví prezentáciu, v **Outlooku** zhrnie dlhé  
+  e-mailové vlákno a v **Teams** spraví zápis zo schôdzky.  
+* **Agenti:** v M365 si môžete vytvoriť vlastných agentov, ktorí  
+  automatizujú opakujúce sa úlohy (napr. „Spracuj príchodzie faktúry  
+  a ulož ich do SharePointu"). Zložitejších agentov tvoríte v Copilot Studiu.  
+* **Kontext dát:** toto je kľúčový rozdiel. Copilot „vidí" firemné dáta,  
+  ku ktorým má **daný používateľ prístup** (e-maily, súbory na OneDrive,  
+  kalendár, schôdze, SharePoint). Dodržiava existujúce oprávnenia  
+  a firemné politiky a prevádzkuje sa v rámci služieb Microsoft 365  
+  s tzv. **Enterprise Data Protection**. Firemné dáta sa nepoužívajú  
+  na trénovanie základných modelov.  
 
-*   **Copilot Agents** – vo vybraných M365 aplikáciách si môžete vytvoriť  
-    vlastných AI agentov, ktorí automatizujú opakujúce sa úlohy (napr.  
-    „Spracuj všetky príchodzie faktúry a ulož ich do SharePointu").  
+> ⚠️ **Praktické riziko:** Copilot rešpektuje oprávnenia – ak je v organizácii  
+> príliš široko zdieľaný citlivý dokument, Copilot ho môže zahrnúť do  
+> odpovede každému, kto k nemu technicky má prístup. Poriadok  
+> v oprávneniach je preto predpokladom nasadenia.  
 
-*   **Kontext dát:** Toto je kľúčový rozdiel.  
-    Tento Copilot „vidí" vaše firemné dáta (e-maily, súbory na OneDrive, kalendár,  
-    Teams schôdzky, SharePoint weby). Preto je prísne zabezpečený a dodržiava  
-    firemné politiky ochrany údajov a dodržiava **Microsoft 365 boundary** –  
-    vaše firemné dáta nikdy neopustia vašu organizáciu.  
+### 3. Microsoft 365 Copilot Chat (bezpečný firemný chat)  
 
-### 3. GitHub Copilot (Asistent pre programátorov)  
-Nástroj určený špecificky pre vývojárov softvéru.  
-Vlastní ho Microsoft (cez GitHub), ale funguje nezávisle od kancelárskych balíkov.  
-Od svojho uvedenia v roku 2021 prešiel obrovským vývojom – z jednoduchého  
-autocomplete nástroja na plnohodnotného AI programovacieho asistenta.  
+Nástupca pôvodného **Bing Chat Enterprise**. Je to chatovací asistent  
+s ochranou firemných dát, ktorý nevyžaduje platenú licenciu Microsoft 365  
+Copilot (býva súčasťou bežných M365 plánov).  
+
+* **Na čo slúži:** bezpečný AI chat pre zamestnancov, webové vyhľadávanie  
+  a práca s nahranými súbormi.  
+* **Rozdiel oproti plnému M365 Copilotu:** základná verzia nemá plný  
+  prístup k firemným dátam ani hlbokú integráciu do Wordu či Excelu.  
+  Podľa nastavenia organizácie môže používať aj agentov.  
+
+### 4. GitHub Copilot (asistent pre programátorov)  
+
+Nástroj pre vývojárov softvéru. Vlastní ho Microsoft cez GitHub, ale  
+funguje nezávisle od kancelárskych balíkov. Od uvedenia v roku 2021 prešiel  
+cestou od jednoduchého dopĺňania kódu až po agenta, ktorý vie samostatne  
+riešiť úlohy.  
 
 #### 🔧 Režimy práce  
 
-GitHub Copilot dnes ponúka niekoľko režimov, ktoré sa navzájom dopĺňajú:  
-
 | Režim | Popis |  
 | :--- | :--- |  
-| **Dokončovanie kódu** (Completion) | Inline návrhy kódu počas písania – pôvodná a najrýchlejšia funkcia |  
-| **Copilot Chat** | Konverzácia s AI priamo v editore – pýtajte sa na kód, vysvetlenia, refactoring |  
-| **Agent Mode** | Copilot samostatne vykonáva príkazy, edituje viacero súborov, spúšťa terminál |  
-| **Edit Mode** | Označte blok kódu a povedzte, čo chcete zmeniť – Copilot úpravy aplikuje priamo |  
-| **Code Review** | Automatické code review pre Pull Requesty na GitHub.com |  
-| **Copilot in the CLI** | Asistent priamo v príkazovom riadku – vysvetlí a opraví príkazy |  
-| **Batch Processing** | Hromadné spracovanie viacerých súborov naraz |  
+| **Dokončovanie kódu** | Inline návrhy počas písania – pôvodná a najrýchlejšia funkcia |  
+| **Next Edit Suggestions** | Predpovedá, kam a ako budete kód upravovať ďalej |  
+| **Chat** | Konverzácia v editore – otázky, vysvetlenia, refactoring |  
+| **Agent Mode** | Úpravy viacerých súborov, spúšťanie príkazov, oprava chýb |  
+| **Cloud / coding agent** | Pridelíte mu issue, pracuje na pozadí a pošle Pull Request |  
+| **Code Review** | Automatická revízia Pull Requestov na GitHub.com |  
+| **Copilot CLI** | Agent priamo v termináli |  
 
-#### 🤖 Agent Mode (najvýznamnejšia novinka)  
+#### 🤖 Agent Mode  
 
-Agent Mode je režim, v ktorom Copilot **autonómne plní úlohy** – neodporúča len kód,  
-ale aj:  
-* Vytvára a edituje súbory  
-* Spúšťa príkazy v termináli  
-* Inštaluje balíčky  
-* Hľadá a opravuje chyby  
-* Sám sa rozhoduje, ktoré nástroje použiť  
+V Agent Mode Copilot **autonómne plní úlohy** – nielen navrhuje kód, ale aj:  
 
-> 💡 **Príklad:** Povedzte „Vytvor REST API server s Expressom a pripoj k PostgreSQL"  
-> a Copilot sám vytvorí súbory, nainštaluje závislosti a vysvetlí štruktúru.  
+* vytvára a edituje súbory  
+* spúšťa príkazy v termináli  
+* inštaluje balíčky  
+* hľadá a opravuje chyby (napr. po neúspešných testoch)  
+* sám sa rozhoduje, ktoré nástroje použije  
 
-#### 🧩 Copilot Extensions  
+> 💡 **Príklad:** Povedzte „Vytvor REST API server s Expressom a pripoj ho  
+> k PostgreSQL" a Copilot vytvorí súbory, nainštaluje závislosti  
+> a vysvetlí štruktúru.  
 
-GitHub Copilot je rozšíriteľný cez **Copilot Extensions** – tretie strany (alebo vy sami)  
-môžu pridať vlastné nástroje a API:  
+> ⚠️ **Vždy kontrolujte výsledok.** Kód od AI môže obsahovať chyby  
+> či bezpečnostné diery. Čítajte zmeny (diff), spúšťajte testy  
+> a nedávajte agentovi viac oprávnení, než potrebuje.  
 
-* **Prepojenie na databázy** – dopytujte sa na schému priamo z chatu  
-* **Integrácia s cloud službami** – spravujte Azure, AWS, GCP  
-* **Firemné API** – napojenie na interné microservisy a dokumentáciu  
-* **Vlastné skills** – definujte si špecifické príkazy pre váš projekt  
+#### 🧩 Rozšíriteľnosť (MCP)  
+
+Dnes sa na pripájanie externých nástrojov a dát používa najmä otvorený  
+štandard **Model Context Protocol (MCP)**. Cez MCP servery môže Copilot:  
+
+* dopytovať databázy a interné API  
+* pracovať s issue trackermi, dokumentáciou a cloud službami  
+* používať nástroje, ktoré si definujete pre svoj projekt  
+
+> ℹ️ Staršie „GitHub Copilot Extensions" (aplikácie tretích strán) GitHub  
+> postupne nahrádza práve MCP.  
 
 #### 📝 Custom Instructions  
 
-Tímy si môžu definovať vlastné inštrukcie pre Copilota v súbore  
+Tímy si môžu definovať vlastné pravidlá pre Copilota v súbore  
 `.github/copilot-instructions.md` v repozitári:  
 
 ```markdown
-## Projektové pravidlá  
+## Projektové pravidlá
 
-- Používame TypeScript, nie JavaScript  
-- Testy píšeme vo Viteste  
-- Architektúra: Feature-Sliced Design  
-- Commit správy podľa Conventional Commits  
-- Každá nová funkcia musí mať unit testy  
+- Používame TypeScript, nie JavaScript
+- Testy píšeme vo Viteste
+- Architektúra: Feature-Sliced Design
+- Commit správy podľa Conventional Commits
+- Každá nová funkcia musí mať unit testy
 ```  
 
-Copilot tieto pravidlá automaticky rešpektuje pri všetkých návrhoch aj v chate.  
+Copilot tieto pravidlá berie do úvahy v chate aj pri agentných úlohách.  
+Podobný princíp používajú aj iné nástroje (napr. súbor `AGENTS.md`).  
 
 #### 🎯 Výber modelov  
 
-GitHub Copilot nie je viazaný na jeden model. V nastaveniach (alebo cez editor)  
-si môžete vybrať, ktorý model má Copilot používať:  
+GitHub Copilot nie je viazaný na jeden model. Ponúka modely od viacerých  
+poskytovateľov (OpenAI, Anthropic, Google a ďalší) a ponuka sa rýchlo mení,  
+preto si aktuálny zoznam pozrite priamo v editore. Orientačne:  
 
-| Model | Vhodný na |  
+| Typ modelu | Vhodný na |  
 | :--- | :--- |  
-| **GPT-5 / GPT-5.4** | všeobecné úlohy, vysvetľovanie, dokumentácia |  
-| **Claude 4.6 Sonnet** | kódovanie, ladenie, refactoring |  
-| **Gemini 3.1 Pro** | analýza, porovnávanie, multi-file úpravy |  
-| **DeepSeek V4 Flash** | rýchle odpovede, jednoduchšie úlohy |  
+| **Rýchle, menšie modely** | jednoduché otázky, krátke úpravy, nízka cena |  
+| **Vyvážené univerzálne modely** | väčšina bežného kódovania a chatu |  
+| **Modely s hlbokým uvažovaním** | zložité ladenie, návrh architektúry, väčšie refactoringy |  
 
-> 💡 Copilot automaticky vyberá optimálny model podľa úlohy – vy sa o to  
-> nemusíte starať, ale vždy môžete model manuálne prepnúť.  
+> 💡 Režim **Auto** vyberie model za vás. Model môžete kedykoľvek  
+> prepnúť ručne. Rôzne modely majú rôznu „cenu" v rámci limitov plánu.  
+
+#### 💳 Plány a limity  
+
+Individuálne plány siahajú od bezplatného (obmedzený počet dokončení  
+a správ) po platené Pro a Pro+; pre tímy existujú plány Business  
+a Enterprise. Dokončovanie kódu je pri platených plánoch zvyčajne bez  
+limitu, kým chat, agenti a code review čerpajú obmedzený kredit alebo  
+kvótu. Ceny a pravidlá sa v roku 2026 menili, preto ich overte na  
+stránke plánov GitHubu.  
 
 #### 🛠️ Podporované editory  
 
-* **VS Code** – plná funkcionalita vrátane Agent Mode  
+* **VS Code** – najplnšia funkcionalita vrátane Agent Mode  
 * **Visual Studio** – kompletná integrácia  
-* **JetBrains IDE** (IntelliJ, PyCharm, WebStorm...) – Chat a Completion  
-* **GitHub.com** – Code Review, Copilot Chat vo web rozhraní  
-* **Terminál** – Copilot in the CLI (gh copilot)  
+* **JetBrains IDE** (IntelliJ, PyCharm, WebStorm…) – chat, dokončovanie  
+  a agentné funkcie  
+* **GitHub.com** – chat, coding agent, code review  
+* **Terminál** – Copilot CLI  
 
 #### 🔒 Kontext dát  
 
-* Učí sa z verejných repozitárov na GitHube  
-* Pracuje s kontextom vášho aktuálneho projektu  
-* Otvorené súbory slúžia ako kontext pre návrhy  
-* Copilot Chat berie do úvahy celý workspace, nie len aktuálny súbor  
-* Firemní zákazníci majú garantované, že ich kód **nie je použitý na trénovanie** modelov  
+* Pracuje s kontextom vášho projektu: otvorené súbory, vybraný kód  
+  a podľa potreby celý workspace  
+* Kontext môžete spresniť (napr. odkazom na súbory v chate)  
+* Pri plánoch Business a Enterprise sa váš kód **nepoužíva na trénovanie**  
+  modelov  
+* Filter zhody s verejným kódom vie blokovať návrhy, ktoré sa zhodujú  
+  s verejnými repozitármi (dôležité pre licencie)  
 
-### 4. Copilot in Windows (Súčasť operačného systému)  
-Tento nástroj je hlboko integrovaný priamo do operačného systému Windows 11.  
+### 5. Copilot v Windows (súčasť operačného systému)  
 
-*   **Na čo slúži:** Pomáha meniť nastavenia systému (napr. „zapni tmavý režim"),  
-    robí snímky obrazovky alebo sumarizuje obsah otvorených okien.  
-*   **Kontext dát:** Má prístup k kontextu vášho desktopu a otvorených aplikácií,  
-    aby mohol reagovať na to, čo práve robíte na PC.  
+Copilot je integrovaný do Windows 11 ako aplikácia a v novších verziách  
+aj ako súčasť ovládania systému.  
 
-### 5. Copilot Studio (Tvorca vlastných agentov)  
-Nízko-kódová platforma (low-code) pre pokročilejších používateľov a firmy,  
-ktorým nestačí štandardný Copilot. Umožňuje vytvárať **autonómnych AI agentov**  
-bez nutnosti programovania.  
+* **Na čo slúži:** všeobecný asistent po ruke, pomoc s nastaveniami,  
+  hlasové ovládanie a (so súhlasom používateľa) analýza obsahu obrazovky.  
+* **Kontext dát:** funkcie, ktoré vidia vašu obrazovku alebo súbory,  
+  vyžadujú váš súhlas. Podrobnosti závisia od verzie Windows a edície.  
 
-*   **Na čo slúži:**  
-    * Vytvorenie agenta, ktorý odpovedá na otázky zákazníkov na webe  
-    * Automatizácia schvaľovacích procesov (žiadanky, faktúry, HR)  
-    * Prepojenie s externými systémami (SAP, Salesforce, ServiceNow)  
-    * Vlastné Copilot rozšírenia pre M365  
-*   **Kontext dát:** Definujete si ho vy sami – môžete napojiť:  
-    * Interné databázy a API  
+### 6. Copilot Studio (tvorca vlastných agentov)  
+
+Low-code platforma pre firmy, ktorým nestačí štandardný Copilot.  
+Umožňuje vytvárať **AI agentov** s minimom programovania.  
+
+* **Na čo slúži:**  
+    * agent odpovedajúci na otázky zákazníkov alebo zamestnancov  
+    * automatizácia schvaľovacích procesov (žiadanky, faktúry, HR)  
+    * prepojenie s externými systémami (SAP, Salesforce, ServiceNow)  
+    * rozšírenie Microsoft 365 Copilota o vlastné schopnosti  
+* **Kontext dát:** definujete si ho sami:  
+    * interné databázy a API  
     * SharePoint, OneDrive, Dataverse  
-    * Externé zdroje (web, REST API, SQL)  
-    * Vlastné znalostné bázy (PDF, Word, web scraping)  
+    * externé zdroje (web, REST API, SQL)  
+    * vlastné znalostné bázy (PDF, Word, weby)  
 
-### 6. Copilot for Security (Bezpečnostný analytik)  
-Špecializovaný nástroj pre kyberbezpečnostné tímy (SOC – Security Operations Center).  
+### 7. Security Copilot (bezpečnostný analytik)  
 
-*   **Na čo slúži:**  
-    * Analyzuje bezpečnostné incidenty v prirodzenom jazyku  
-    * Vytvára reporty a sumarizácie hrozieb  
-    * Pomáha s reverzným inžinierstvom malvéru  
-    * Generuje dotazy KQL (Kusto Query Language) pre Microsoft Sentinel  
-    * Automatizuje reakcie na incidenty  
-*   **Kontext dát:** Pracuje s bezpečnostnými logmi a dátami z ochranných systémov  
-    firmy (Microsoft Sentinel, Defender XDR, Intune, Purview).  
+Nástroj pre kyberbezpečnostné tímy (SOC – Security Operations Center).  
 
-### 7. Microsoft 365 Copilot Chat (Firemný chat)  
+* **Na čo slúži:**  
+    * analýza incidentov v prirodzenom jazyku  
+    * reporty a sumarizácie hrozieb  
+    * pomoc s analýzou škodlivého kódu  
+    * generovanie dopytov KQL (Kusto Query Language) pre Sentinel  
+    * automatizácia reakcií na incidenty  
+* **Kontext dát:** bezpečnostné logy a dáta z ochranných systémov firmy  
+  (Microsoft Sentinel, Defender XDR, Intune, Purview).  
 
-Ide o nástupcu pôvodného **Bing Chat Enterprise**. Je to chatovací asistent  
-s ochranou firemných dát, ktorý nevyžaduje plnú licenciu Copilot for M365.  
+### 8. Ďalšie špecializované Copiloty  
 
-*   **Na čo slúži:** Bezpečný AI chat pre firmy, kde sa dáta neopúšťajú organizáciu  
-*   **Dostupnosť:** Súčasť vybraných M365 plánov (E3, E5, Business Premium)  
-*   **Limitácie:** Nemá priamu integráciu do Office aplikácií (Word, Excel)  
-    – je to samostatný chatovací nástroj  
+Microsoft pridáva Copilota aj do ďalších produktov: **Dynamics 365**  
+(predaj a zákaznícky servis), **Azure** (správa infraštruktúry) a **Fabric**  
+(analýza dát). Princíp je rovnaký – asistent zasadený do konkrétneho  
+produktu, ktorý pozná jeho dáta a jazyk.  
 
-## Kľúčové rozdiely: Prečo na tom záleží?  
+## Ktorý Copilot na akú úlohu?  
 
-Prečo musíme rozlišovať medzi týmito verziami?  
-Hlavným dôvodom sú **dáta a kontext**.  
+| Potrebujem… | Vhodný nástroj |  
+| :--- | :--- |  
+| odpovedať na všeobecnú otázku, nájsť informácie | Microsoft Copilot |  
+| bezpečne pracovať s firemným textom v chate | Microsoft 365 Copilot Chat |  
+| zhrnúť e-maily a schôdze, tvoriť dokumenty z firemných dát | Microsoft 365 Copilot |  
+| napísať alebo opraviť kód | GitHub Copilot |  
+| automatizovať firemný proces vlastným agentom | Copilot Studio |  
+| vyšetriť bezpečnostný incident | Security Copilot |  
 
-1.  **Súkromie:** Bežný Copilot (web) by nemal používať na trénovanie vaše firemné  
-    tajomstvá.  
-    Copilot for M365 garantuje, že vaše firemné dáta zostanú vo vnútri firmy  
-    a dodržiava tzv. **data boundary**.  
-2.  **Schopnosti:** Copilot vo Worde nevie napísať kód tak dobre ako GitHub Copilot.  
-    GitHub Copilot zase nevie zhrnúť váš e-mail v Outlooku. Každý nástroj je  
-    optimalizovaný na inú doménu.  
-3.  **Cena:** Zatiaľ čo základný Copilot je často zdarma, verzie pre firmy  
-    (M365, Security, Studio) vyžadujú špecifické licencie od $30/mesačne.  
-4.  **Modely:** Rôzni Copilotovia môžu používať rôzne AI modely –  
-    GitHub Copilot ponúka výber (GPT, Claude, Gemini), Copilot for M365 používa  
-    primárne GPT-5, Copilot v Windows kombinuje viacero modelov podľa úlohy.  
-5.  **Agentné schopnosti:** GitHub Copilot (Agent Mode) a Copilot Studio podporujú  
-    autonómne vykonávanie úloh. Bežný Copilot je skôr reaktívny – odpovedá,  
-    nekoná samostatne.  
+## Kľúčové rozdiely: prečo na tom záleží?  
+
+Prečo musíme rozlišovať medzi týmito verziami? Hlavným dôvodom sú  
+**dáta a kontext**.  
+
+1.  **Súkromie a ochrana dát:** do bezplatnej spotrebiteľskej verzie nikdy  
+    nevkladajte firemné tajomstvá. Firemné verzie (M365 Copilot,  
+    Copilot Chat po prihlásení pracovným účtom) majú zmluvne a technicky  
+    ošetrenú ochranu dát.  
+2.  **Schopnosti:** Copilot vo Worde nenapíše kód tak dobre ako GitHub  
+    Copilot a GitHub Copilot nezhrnie váš e-mail v Outlooku. Každý nástroj  
+    je optimalizovaný na inú doménu.  
+3.  **Cena a licencie:** osobný Copilot a základný firemný chat sú  
+    dostupné bez doplnkovej licencie, kým M365 Copilot, Security Copilot  
+    či Copilot Studio sú platené. Konkrétne ceny sa menia.  
+4.  **Modely:** rôzni Copilotovia môžu používať rôzne modely. GitHub Copilot  
+    ponúka výber od viacerých poskytovateľov, produkty v M365 modely  
+    volí Microsoft a ich zloženie sa mení.  
+5.  **Agentné schopnosti:** GitHub Copilot (Agent Mode, coding agent)  
+    a Copilot Studio podporujú autonómne vykonávanie úloh. Pri bežných  
+    chatoch ide väčšinou o reaktívneho asistenta.  
 
 ## Zhrnutie kapitoly  
 
-*   **Copilot** nie je jeden produkt, ale celá rodina nástrojov umelej inteligencie  
-    od Microsoftu s viac ako 10 rôznymi variantmi.  
-*   **Všeobecný Copilot** slúži na bežné otázky a tvorbu obsahu z verejných zdrojov.  
-*   **Copilot for Microsoft 365** pracuje s vašimi súkromnými dokumentmi a e-mailmi.  
+*   **Copilot** nie je jeden produkt, ale rodina nástrojov AI od Microsoftu  
+    s viac ako 10 variantmi a názvy sa často menia.  
+*   **Microsoft Copilot** slúži na bežné otázky a tvorbu obsahu.  
+*   **Microsoft 365 Copilot** pracuje s firemnými dátami v rámci  
+    oprávnení používateľa.  
 *   **Microsoft 365 Copilot Chat** je bezpečný firemný chat s ochranou dát.  
-*   **GitHub Copilot** prešiel od autocomplete k plnohodnotnému agentnému režimu –  
-    dnes vie autonómne vytvárať súbory, spúšťať príkazy a opravovať chyby.  
-*   **Copilot Studio** umožňuje stavať vlastných AI agentov bez programovania.  
-*   **Copilot Pages** je nový koncept zdieľaného plátna medzi ľuďmi a AI.  
-*   Vždy si uvedomte, **s akými dátami** daný Copilot pracuje, aby ste predišli  
-    úniku informácií.  
-*   **Výber modelu** – rôzni Copilotovia používajú rôzne AI modely (GPT-5, Claude,  
-    Gemini, DeepSeek) podľa typu úlohy.  
+*   **GitHub Copilot** prešiel od dopĺňania kódu k agentom, ktorí vedia  
+    autonómne meniť kód, spúšťať príkazy a vytvárať Pull Requesty.  
+*   **Copilot Studio** umožňuje stavať vlastných agentov s minimom kódu.  
+*   **MCP** je otvorený štandard na pripájanie nástrojov a dát k AI.  
+*   Vždy zvážte, **s akými dátami** daný Copilot pracuje, a výstupy AI  
+    **kontrolujte** – zodpovednosť zostáva na vás.  
 
-## Otázky a diskusia
+## Otázky a diskusia  
+
+1.  Ktorý Copilot by ste použili na zhrnutie dlhého e-mailového vlákna  
+    a prečo nie osobný Copilot?  
+2.  Aké riziká prináša, ak agent dostane právo samostatne spúšťať príkazy?  
+3.  Ako by ste zistili, či je vaša organizácia pripravená na nasadenie  
+    M365 Copilota (oprávnenia, klasifikácia dát)?  
+4.  Kedy je lepšie použiť asistenta a kedy agenta?  
+
+## Zdroje na overenie aktuálnych údajov  
+
+* [Microsoft Learn – čo je Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview)  
+* [Microsoft Learn – správa Copilot Chat](https://learn.microsoft.com/en-us/copilot/manage)  
+* [Zmeny v aplikácii Microsoft Copilot (2026)](https://futurework.blog/2026/08/14/microsoft-copilot-app-one-app-new-name-new-icon-new-url/)  
