@@ -45,6 +45,49 @@ Purpose: Identifies "hotspot" floors requiring the most maintenance.
 Average Days to Resolve by Priority (Bar Chart):  
 Purpose: Evaluates response times across Critical vs. Low priority issues.  
 
+## Eshop 
+
+Prompts for `eshop_sales_2025.csv`
+
+**Warm-up: understanding the data**
+- "Look at this file and tell me what it contains. What could I learn from it?"
+- "Summarize the dataset: how many orders, what time period, total revenue, and average order value."
+- "Are there any data quality issues I should know about?" *(It's clean, so this shows Claude checking rather than inventing problems.)*
+
+**Simple questions**
+- "Which product category earns the most money? And which sells the most orders?" *(The two answers differ: Books lead in orders, Electronics in revenue.)*
+- "What are the top 5 best-selling products by revenue?"
+- "Which region has the most customers?"
+- "What's the average rating per category?"
+
+**Visualizations**
+- "Show me monthly revenue for 2025 as a chart."
+- "Create a bar chart of revenue by region."
+- "Compare Website vs. Mobile App sales visually."
+- "Make a chart showing which days of the week are busiest."
+
+**Comparisons and patterns**
+- "Do returning customers behave differently from new customers?"
+- "Is there a seasonal pattern in sales? When should we expect peaks?"
+- "Do discounts actually increase the number of items people buy?"
+- "Are customers less satisfied with some categories than others? Why might that be?"
+
+**Business insight (the "wow" part for non-technical audiences)**
+- "I'm the owner of this shop. What are the three most important things this data tells me?"
+- "Where should I spend my marketing budget next year, and why?"
+- "Write a one-page summary of 2025 performance for my business partner, in plain language."
+- "If I could only stock 10 products, which ones should I keep?"
+
+**Building things**
+- "Create an interactive dashboard where I can filter by region and category."
+- "Make a PowerPoint with 5 slides presenting the key findings."
+- "Turn this into an Excel file with a summary sheet and pivot-style tables."
+
+**Critical thinking (good for teaching AI limits)**
+- "Can this data tell me *why* sales went up in December?" *(Shows the difference between correlation and causation.)*
+- "What questions *can't* this data answer?"
+- "Predict sales for January 2026. How confident are you?"
+
 
 ## Obrazky
 
