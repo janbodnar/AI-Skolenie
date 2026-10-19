@@ -46,6 +46,12 @@ Average Days to Resolve by Priority (Bar Chart):
 Purpose: Evaluates response times across Critical vs. Low priority issues.  
 
 
+## Obrazky
+
+`obrazky.zip`
+
+1. Vytvor čiernobiele kópie. 
+2. Vytvor zmenšené kópie.
 
 ## Právna analýza
 
