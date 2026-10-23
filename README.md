@@ -1,11 +1,5 @@
 # AI-Skolenie
 
-https://notebook.google.com/notebook/21989c0f-a0b0-49e4-ae03-dd7f8389bdc5
-
-https://notebook.google.com/notebook/6710c74f-19c6-418d-a22f-597050326cbc
-
-https://audio-transcriber-translator-528965810214.europe-west1.run.app
-
 https://file-examples.com/storage/feba50da476a9fe2b9da9d8/2017/04/file_example_MP4_1920_18MG.mp4
 
 AI Školenie pre začiatočníkov s praktickými príkladmi.  
@@ -13,8 +7,6 @@ Kontakt na lektora: jan.bodnar@gmail.com
 AI novinky: https://www.facebook.com/profile.php?id=61590475374227
 
 https://ia800805.us.archive.org/20/items/aesop_fables_volume_one_librivox/fables_01_01_aesop.mp3
-
-https://bratislava-digital-clock-528965810214.europe-west1.run.app
 
 ## Zameranie
 
