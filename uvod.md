@@ -86,6 +86,72 @@ Moji študenti využívajú AI na:
 - tvorbu poviedok a esejí
 - tvorbu komiksu
 
+## Lievik schopností: prečo sa pri AI ľudia míňajú  
+
+Keď sa dvaja ľudia bavia o umelej inteligencii, často majú na mysli úplne iné  
+veci. Jeden hovorí o chatbote, ktorý mu občas pomôže s e-mailom. Druhý  
+o systéme, ktorý mu za noc napíše a otestuje tisíce riadkov kódu. Obaja hovoria  
+pravdu, len sa pozerajú na rôzne „poschodia" tej istej budovy.  
+
+Túto situáciu pomenoval Andrej Karpathy, jeden z najznámejších výskumníkov  
+v oblasti AI. V apríli 2026 o nej napísal príspevok na X a v októbri k nemu  
+pridal aktualizáciu: priepasť v chápaní schopností veľkých jazykových modelov  
+(LLM) sa podľa neho zväčšuje. Už to nie sú len „dve skupiny, ktoré sa  
+míňajú", ale skôr ostrý lievik.  
+
+### Štyri úrovne lievika  
+
+Karpathy to sám označuje za hrubý odhad „na papierik". Nejde o presné  
+štatistiky, ale o rádovú predstavu:  
+
+- **Približne 6 miliárd ľudí (~75 % populácie)** sa s LLM takmer nestretlo.  
+  Pre nich AI zatiaľ nie je súčasťou života.  
+- **Približne 1 – 2 miliardy (~20 %)** sú príležitostní používatelia  
+  bezplatných chatbotov z tabuľky vyššie. AI vnímajú ako o niečo lepšie  
+  vyhľadávanie alebo jednoduchého pomocníka na písanie textov.  
+- **Približne 20 miliónov profesionálov** intenzívne používa najvýkonnejšie  
+  (*frontier*) modely v oblastiach, kde sa dá výsledok overiť, najmä  
+  v programovaní a matematike.  
+- **Približne 5 000 ľudí** má prístup k najnovším systémom priamo  
+  v laboratóriách, kde týždne bežia celé „roje" [AI agentov](ai-agenti.md).  
+
+![Lievik schopností LLM](data/lievik-schopnosti.svg)
+
+Všimnite si, ako rýchlo sa lievik zužuje. Medzi druhou a treťou úrovňou je  
+rozdiel zhruba 50- až 100-násobný a medzi treťou a štvrtou približne  
+4 000-násobný. Väčšina ľudí sa tak nikdy nedostane ani za prvé dvere.  
+
+### Prečo je lievik taký ostrý  
+
+Karpathy poukazuje na tri filtre, ktoré rozhodujú o tom, kam sa človek  
+v lieviku dostane:  
+
+- **Nerovnomerné („zubaté") schopnosti.** Modely nie sú rovnako dobré vo  
+  všetkom. Vrchol dosahujú v oblastiach, ktoré sú digitálne, overiteľné  
+  a ekonomicky cenné, teda v programovaní a matematike. Tam sa dá výsledok  
+  automaticky skontrolovať, a preto sa modely dokážu učiť najrýchlejšie.  
+- **Ambícia úlohy.** Prínos AI rastie s veľkosťou a časovým horizontom  
+  problému, ktorý jej zadáte. Kto žiada len krátku odpoveď, dostane krátku  
+  odpoveď. Kto zadá projekt na hodiny či dni, uvidí úplne iný druh práce.  
+- **Prístup.** Najlepšie modely a nástroje sú často platené alebo dostupné  
+  len obmedzenému okruhu ľudí. Bezplatná verzia chatbota a najnovší model sú  
+  dva rôzne zážitky.  
+
+### Čo z toho plynie  
+
+Tento obraz vysvetľuje, prečo sú bežné rozhovory o AI také frustrujúce.  
+Skeptik, ktorý vyskúšal bezplatný chatbot a dostal chybnú odpoveď, a vývojár,  
+ktorý s agentom za víkend postavil funkčnú aplikáciu, nehovoria o tom istom  
+nástroji. Nikto z nich nelže, každý opisuje svoju úroveň lievika.  
+
+> 💡 **Pre toto školenie:** Ak ste doteraz AI skúšali len občas v bezplatnej  
+> verzii, patríte do druhej úrovne. Cieľom školenia je dostať vás hlbšie  
+> do lievika – zadávať AI väčšie a ambicióznejšie úlohy a vedieť si výsledok  
+> overiť.  
+
+*Zdroj: príspevok Andreja Karpathyho na X (apríl 2026, aktualizovaný  
+v októbri 2026). Čísla sú autorov hrubý odhad.*
+
 
 ## Učenie AI
 
@@ -283,72 +349,6 @@ prebieha v konkrétnych cykloch:
 
 > ⚠️ Kritické informácie si vždy overte z iného zdroja!
 
-
-## Lievik schopností: prečo sa pri AI ľudia míňajú  
-
-Keď sa dvaja ľudia bavia o umelej inteligencii, často majú na mysli úplne iné  
-veci. Jeden hovorí o chatbote, ktorý mu občas pomôže s e-mailom. Druhý  
-o systéme, ktorý mu za noc napíše a otestuje tisíce riadkov kódu. Obaja hovoria  
-pravdu, len sa pozerajú na rôzne „poschodia" tej istej budovy.  
-
-Túto situáciu pomenoval Andrej Karpathy, jeden z najznámejších výskumníkov  
-v oblasti AI. V apríli 2026 o nej napísal príspevok na X a v októbri k nemu  
-pridal aktualizáciu: priepasť v chápaní schopností veľkých jazykových modelov  
-(LLM) sa podľa neho zväčšuje. Už to nie sú len „dve skupiny, ktoré sa  
-míňajú", ale skôr ostrý lievik.  
-
-### Štyri úrovne lievika  
-
-Karpathy to sám označuje za hrubý odhad „na papierik". Nejde o presné  
-štatistiky, ale o rádovú predstavu:  
-
-- **Približne 6 miliárd ľudí (~75 % populácie)** sa s LLM takmer nestretlo.  
-  Pre nich AI zatiaľ nie je súčasťou života.  
-- **Približne 1 – 2 miliardy (~20 %)** sú príležitostní používatelia  
-  bezplatných chatbotov z tabuľky vyššie. AI vnímajú ako o niečo lepšie  
-  vyhľadávanie alebo jednoduchého pomocníka na písanie textov.  
-- **Približne 20 miliónov profesionálov** intenzívne používa najvýkonnejšie  
-  (*frontier*) modely v oblastiach, kde sa dá výsledok overiť, najmä  
-  v programovaní a matematike.  
-- **Približne 5 000 ľudí** má prístup k najnovším systémom priamo  
-  v laboratóriách, kde týždne bežia celé „roje" [AI agentov](ai-agenti.md).  
-
-Všimnite si, ako rýchlo sa lievik zužuje. Medzi druhou a treťou úrovňou je  
-rozdiel zhruba 50- až 100-násobný a medzi treťou a štvrtou približne  
-4 000-násobný. Väčšina ľudí sa tak nikdy nedostane ani za prvé dvere.  
-
-### Prečo je lievik taký ostrý  
-
-Karpathy poukazuje na tri filtre, ktoré rozhodujú o tom, kam sa človek  
-v lieviku dostane:  
-
-- **Nerovnomerné („zubaté") schopnosti.** Modely nie sú rovnako dobré vo  
-  všetkom. Vrchol dosahujú v oblastiach, ktoré sú digitálne, overiteľné  
-  a ekonomicky cenné, teda v programovaní a matematike. Tam sa dá výsledok  
-  automaticky skontrolovať, a preto sa modely dokážu učiť najrýchlejšie.  
-- **Ambícia úlohy.** Prínos AI rastie s veľkosťou a časovým horizontom  
-  problému, ktorý jej zadáte. Kto žiada len krátku odpoveď, dostane krátku  
-  odpoveď. Kto zadá projekt na hodiny či dni, uvidí úplne iný druh práce.  
-- **Prístup.** Najlepšie modely a nástroje sú často platené alebo dostupné  
-  len obmedzenému okruhu ľudí. Bezplatná verzia chatbota a najnovší model sú  
-  dva rôzne zážitky.  
-
-### Čo z toho plynie  
-
-Tento obraz vysvetľuje, prečo sú bežné rozhovory o AI také frustrujúce.  
-Skeptik, ktorý vyskúšal bezplatný chatbot a dostal chybnú odpoveď, a vývojár,  
-ktorý s agentom za víkend postavil funkčnú aplikáciu, nehovoria o tom istom  
-nástroji. Nikto z nich nelže, každý opisuje svoju úroveň lievika.  
-
-> 💡 **Pre toto školenie:** Ak ste doteraz AI skúšali len občas v bezplatnej  
-> verzii, patríte do druhej úrovne. Cieľom školenia je dostať vás hlbšie  
-> do lievika – zadávať AI väčšie a ambicióznejšie úlohy a vedieť si výsledok  
-> overiť.  
-
-*Zdroj: príspevok Andreja Karpathyho na X (apríl 2026, aktualizovaný  
-v októbri 2026). Čísla sú autorov hrubý odhad.*
-
----
 
 ## Ako písať dobré prompty? (Návod pre začiatočníkov)
 
