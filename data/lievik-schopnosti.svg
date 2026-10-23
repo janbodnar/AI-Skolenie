@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif">
+  <rect width="900" height="470" rx="12" fill="#ffffff"/>
+
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#1f2937">Lievik schopností LLM</text>
+  <text x="40" y="74" font-size="14" fill="#6b7280">Koľko ľudí sa dostane na ktorú úroveň · odhad A. Karpathyho (október 2026)</text>
+
+  <!-- Úroveň 1: mimo AI -->
+  <polygon points="80,100 500,100 460,176 120,176" fill="#86b6ef"/>
+  <text x="290" y="145" font-size="20" font-weight="700" fill="#0d2a4f" text-anchor="middle">~6 mld.</text>
+
+  <!-- Úroveň 2: príležitostní používatelia -->
+  <polygon points="120,180 460,180 400,256 180,256" fill="#5598e7"/>
+  <text x="290" y="225" font-size="20" font-weight="700" fill="#0d2a4f" text-anchor="middle">~1 – 2 mld.</text>
+
+  <!-- Úroveň 3: profesionáli -->
+  <polygon points="180,260 400,260 350,336 230,336" fill="#2a78d6"/>
+  <text x="290" y="305" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">~20 mil.</text>
+
+  <!-- Úroveň 4: laboratóriá -->
+  <polygon points="230,340 350,340 320,416 260,416" fill="#184f95"/>
+  <text x="290" y="384" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">~5 000</text>
+
+  <!-- Zúženie medzi úrovňami -->
+  <g font-size="13" fill="#6b7280" text-anchor="end">
+    <text x="108" y="183">≈ 4× menej</text>
+    <text x="168" y="263">≈ 50 – 100× menej</text>
+    <text x="218" y="343">≈ 4 000× menej</text>
+  </g>
+
+  <!-- Spojnice k popisom -->
+  <g stroke="#d1d5db" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="486" y1="138" x2="528" y2="138"/>
+    <line x1="436" y1="218" x2="528" y2="218"/>
+    <line x1="381" y1="298" x2="528" y2="298"/>
+    <line x1="341" y1="378" x2="528" y2="378"/>
+  </g>
+
+  <!-- Popisy úrovní -->
+  <text x="540" y="134" font-size="15" font-weight="600" fill="#1f2937">Mimo AI</text>
+  <text x="540" y="154" font-size="13" fill="#4b5563">~75 % ľudí, s LLM sa takmer nestretli</text>
+
+  <text x="540" y="214" font-size="15" font-weight="600" fill="#1f2937">Príležitostní používatelia</text>
+  <text x="540" y="234" font-size="13" fill="#4b5563">~20 %, bezplatné chatboty na občasné otázky</text>
+
+  <text x="540" y="294" font-size="15" font-weight="600" fill="#1f2937">Profesionáli</text>
+  <text x="540" y="314" font-size="13" fill="#4b5563">frontier modely v programovaní a matematike</text>
+
+  <text x="540" y="374" font-size="15" font-weight="600" fill="#1f2937">Laboratóriá</text>
+  <text x="540" y="394" font-size="13" fill="#4b5563">najnovšie systémy, roje agentov bežia týždne</text>
+
+  <text x="40" y="450" font-size="12" fill="#6b7280">Hrubý odhad „na papierik" – šírky nie sú v mierke, rozdiely medzi úrovňami sú rádové.</text>
+</svg>
