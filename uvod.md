@@ -188,8 +188,8 @@ Vstup (dáta) → Skryté vrstvy (spracovanie) → Výstup (výsledok)
 
 ### Odporúčané video
 
-- https://www.youtube.com/watch?v=FT5O2JyrvOk
-
+- https://www.youtube.com/watch?v=FT5O2JyrvOk (ničenie kníh)
+- https://www.youtube.com/watch?v=6f7ojkd4_Wc (dots - bug hunting)
 
 ## Veľké jazykové modely (LLM)
 
