@@ -1,13 +1,5 @@
 # Normy a regulácie pre umelú inteligenciu  
 
-## Praktický prehľad pre vývojárov a používateľov  
-
-**Stav informácií: 12. október 2026.** Tento text je vzdelávací prehľad,  
-nie právne poradenstvo. Povinnosti závisia od krajiny, odvetvia, úlohy  
-organizácie (poskytovateľ, nasadzovateľ alebo dodávateľ) a od konkrétneho  
-účelu systému. Pri projekte s osobnými, zdravotnými alebo inými citlivými  
-údajmi treba zapojiť právnika a odborníka na compliance.  
-
 ## Prečo regulácie a normy existujú?  
 
 AI môže spracúvať osobné údaje, ovplyvňovať prístup k práci alebo službám  
