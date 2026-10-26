@@ -9,9 +9,9 @@
 
 ## Školenie
 
-- trvanie: 2 dni, od 9.00 do 15.00
-- o 10.30 krátka 10-minútová prestávka
-- 12.00 – 13.00 obedňajšia prestávka
+- trvanie: 2 dni, od 8.00 do 14.00
+- o 9.30 krátka 10-minútová prestávka
+- 11.00 – 12.00 obedňajšia prestávka
 
 
 ## Definícia
