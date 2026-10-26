@@ -54,10 +54,46 @@ Najčastejšie riziká:
 
 ## GDPR – ochrana osobných údajov v EÚ  
 
-GDPR sa uplatňuje najmä na organizácie v EHP, ktoré spracúvajú osobné  
-údaje, a na organizácie mimo EHP, ak ponúkajú tovar alebo služby ľuďom  
-v EÚ alebo sledujú ich správanie. Neznamená to, že každý AI systém  
-automaticky potrebuje DPIA alebo že každé použitie vyžaduje súhlas.  
+### Na koho sa GDPR vzťahuje  
+
+GDPR sa vzťahuje na **každého**, kto spracúva osobné údaje, bez ohľadu  
+na veľkosť a rozsah. Platí pre veľkú firmu aj pre živnostníka, spolok,  
+obec či školu. Platí aj vtedy, ak spracúvajú údaje len niekoľkých  
+zákazníkov, zamestnancov alebo odberateľov newslettera. Územne sa  
+uplatňuje na organizácie v EHP a na organizácie mimo EHP, ak ponúkajú  
+tovar alebo služby ľuďom v EÚ alebo sledujú ich správanie (čl. 3).  
+
+Rozhodujú dve otázky:  
+
+- Ide o **osobné údaje**, teda informácie o identifikovanej alebo  
+  identifikovateľnej fyzickej osobe? Patrí sem aj e-mail, fotografia,  
+  číslo zákazníka a spravidla aj IP adresa.  
+- Spracúvate ich inak než **čisto osobne alebo v domácnosti**?  
+
+GDPR sa nevzťahuje na (čl. 2):  
+
+- spracúvanie fyzickou osobou na čisto osobné alebo domáce účely,  
+  napríklad kontakty v telefóne alebo zoznam hostí na oslavu;  
+- činnosti mimo práva EÚ, najmä národnú bezpečnosť a spravodajské služby;  
+- políciu a ďalšie orgány pri trestnom konaní, kde platí smernica  
+  (EÚ) 2016/680 (pozri časť GDPR a štátne orgány);  
+- inštitúcie EÚ, na ktoré sa vzťahuje nariadenie (EÚ) 2018/1725;  
+- údaje zosnulých osôb (odôvodnenie 27, v SR § 3 ods. 5 zákona  
+  č. 18/2018 Z. z.);  
+- anonymné údaje, z ktorých už nemožno človeka identifikovať.  
+  Pseudonymizované údaje sú stále osobné údaje.  
+
+S veľkosťou a rozsahom sa nemení to, či GDPR platí, ale rozsah povinností:  
+
+| Povinnosť | Kto ju má |
+|---|---|
+| **Právny základ, informovanie, bezpečnosť, práva dotknutých osôb, hlásenie únikov** | Všetci, aj živnostník s malým e-shopom. |
+| **Záznam o spracovateľských činnostiach** (čl. 30) | Organizácie od 250 zamestnancov. Menšie vtedy, ak spracúvanie nie je príležitostné, môže viesť k riziku alebo zahŕňa citlivé údaje či údaje o trestných činoch. Keďže napríklad mzdy zamestnancov sa spracúvajú pravidelne, v praxi ho má väčšina organizácií. |
+| **Zodpovedná osoba** (čl. 37) | Orgány verejnej moci a organizácie, ktoré vo veľkom rozsahu monitorujú ľudí alebo spracúvajú citlivé údaje. |
+| **Posúdenie vplyvu (DPIA)** (čl. 35) | Pri spracúvaní, ktoré pravdepodobne povedie k vysokému riziku. |
+
+Neznamená to, že každý AI systém automaticky potrebuje DPIA alebo že  
+každé použitie vyžaduje súhlas.  
 
 ### Čo je pri AI dôležité  
 
@@ -78,6 +114,80 @@ automaticky potrebuje DPIA alebo že každé použitie vyžaduje súhlas.
   napríklad pri rozsiahlom spracovaní citlivých údajov alebo pri  
   systematickom monitorovaní.  
 
+### Právne základy (článok 6)  
+
+Každé spracúvanie potrebuje právny základ, teda dôvod, prečo ho  
+prevádzkovateľ vôbec smie robiť. GDPR uvádza šesť právnych základov:  
+
+| Právny základ | Príklad |
+|---|---|
+| **Súhlas** | Newsletter, marketingové e-maily, personalizované ponuky. |
+| **Zmluva** | Doručenie objednaného tovaru, vedenie zákazníckeho účtu. |
+| **Zákonná povinnosť** | Účtovné doklady, mzdy a odvody, daňové priznania, zápisy v matrike, evidencia obyvateľov. |
+| **Životne dôležité záujmy** | Poskytnutie údajov záchranárom, keď je pacient v bezvedomí. |
+| **Úloha vo verejnom záujme alebo výkon verejnej moci** | Stavebné konanie, evidencia žiakov v škole. |
+| **Oprávnený záujem** | Ochrana pred podvodmi, kamera na ochranu majetku. Vyžaduje zdokumentovaný balančný test. |
+
+Súhlas teda nie je jediný ani hlavný právny základ. Musí byť slobodný,  
+konkrétny, informovaný a jednoznačný. Odvolať ho musí byť rovnako ľahké  
+ako ho udeliť a nesmie byť podmienkou služby, ktorá ho nepotrebuje  
+(čl. 7). Pri online službách v SR stačí súhlas dieťaťa od 16 rokov,  
+za mladšie dieťa ho dáva zákonný zástupca (čl. 8, § 15 zákona  
+č. 18/2018 Z. z.).  
+
+**Príklad: e-shop.** Údaje na registráciu a doručenie spracúva e-shop  
+na základe **zmluvy**, faktúry uchováva pre **zákonnú povinnosť**.  
+**Súhlas** potrebuje až na veci navyše, napríklad marketing. Preto má byť  
+súhlas s marketingom samostatné, vopred nezaškrtnuté políčko a nie  
+podmienka nákupu. Doterajším zákazníkom môže e-shop posielať ponuky  
+podobného tovaru aj bez súhlasu, ak ich môžu jednoducho odmietnuť  
+(čl. 13 ods. 2 smernice ePrivacy).  
+
+**Príklad: štát.** Ministerstvo, úrad či polícia sa opierajú o zákonnú  
+povinnosť alebo výkon verejnej moci. Súhlas občana by tu spravidla nebol  
+platný, lebo občan nie je v rovnocennom postavení a nemôže ho slobodne  
+odmietnuť (odôvodnenie 43). Štát navyše údaje väčšinou spracúva bez  
+ohľadu na to, či s tým človek súhlasí. Orgány verejnej moci nemôžu pri  
+plnení svojich úloh použiť ani oprávnený záujem (čl. 6 ods. 1).  
+
+Od právneho základu závisí, aké práva môže človek uplatniť. Právo  
+na prístup a na opravu platí vždy:  
+
+| Právny základ | Odvolanie súhlasu | Námietka (čl. 21) | Výmaz (čl. 17) | Prenosnosť (čl. 20) |
+|---|---|---|---|---|
+| **Súhlas** | áno | – | áno | áno |
+| **Zmluva** | nie | nie | keď údaje už nie sú potrebné | áno |
+| **Zákonná povinnosť** | nie | nie | nie, kým povinnosť trvá | nie |
+| **Verejný záujem, verejná moc** | nie | áno | obmedzene | nie |
+| **Oprávnený záujem** | nie | áno | áno, ak neprevažujú dôvody prevádzkovateľa | nie |
+
+### Ako dlho sa údaje uchovávajú  
+
+GDPR nestanovuje pevné lehoty. Údaje sa smú uchovávať **iba tak dlho,  
+ako je nevyhnutné** na účel, na ktorý sa spracúvajú (čl. 5 ods. 1  
+písm. e). Lehoty preto vychádzajú z účelu a z osobitných zákonov  
+a prevádzkovateľ ich musí uviesť v informácii o spracúvaní (čl. 13  
+ods. 2 písm. a), zvyčajne v zásadách ochrany osobných údajov.  
+
+Príklad e-shopu:  
+
+| Údaje | Typická lehota | Dôvod |
+|---|---|---|
+| **Zákaznícky účet** (meno, e-mail, heslo, adresy) | Kým účet existuje. | zmluva |
+| **Faktúry a pokladničné doklady** | 10 rokov nasledujúcich po roku, ktorého sa týkajú. | § 35 zákona č. 431/2002 Z. z. o účtovníctve, § 76 zákona č. 222/2004 Z. z. o DPH |
+| **Podklady k reklamáciám a sporom** | Spravidla do uplynutia premlčacej lehoty (všeobecne 3 roky, § 101 Občianskeho zákonníka) alebo do skončenia sporu. | oprávnený záujem |
+| **Marketingový súhlas** | Do odvolania. Firmy si často určujú limit pri neaktivite, napríklad 2 až 5 rokov. | súhlas |
+
+- **10 rokov je minimum, nie strop.** Predajca nesmie účtovný doklad  
+  zmazať skôr, ani keď o to zákazník požiada. Právo na výmaz tu  
+  obmedzuje zákonná povinnosť (čl. 17 ods. 3 písm. b).  
+- **Zrušením účtu** sa majú zmazať údaje účtu, nie faktúry.  
+- **Po uplynutí lehoty** má firma údaje zlikvidovať, ak nemá iný dôvod  
+  ich držať, napríklad prebiehajúci spor. Uchovávať „pre istotu“ dlhšie  
+  je v rozpore s GDPR.  
+- **Zákazník** bloček uchovávať nemusí. Hodí sa mu na uplatnenie  
+  reklamácie, pri spotrebiteľskom tovare spravidla do 24 mesiacov.  
+
 ### Práva jednotlivcov  
 
 Jednotlivci môžu mať právo na informácie, prístup, opravu, výmaz,  
@@ -90,6 +200,174 @@ kód či úplné vysvetlenie modelu.
 > **Prakticky:** DPIA, záznamy o spracovateľských činnostiach, zmluvy  
 > so spracovateľmi, proces vybavovania žiadostí a pravidlá mazania  
 > pripravte pred pilotným nasadením, nie až po incidente.  
+
+### Bezpečnosť spracúvania (článok 32)  
+
+GDPR nepredpisuje konkrétny nástroj, napríklad trezor, šifrovací program  
+alebo heslo. Vyžaduje **primerané technické a organizačné opatrenia**.  
+Pri ich výbere sa zohľadňuje stav techniky, náklady, povaha, rozsah  
+a účel spracúvania a najmä riziko, ktoré hrozí ľuďom, ktorých sa údaje  
+týkajú. Povinnosť má prevádzkovateľ aj sprostredkovateľ.  
+
+Článok 32 výslovne uvádza:  
+
+- pseudonymizáciu a šifrovanie osobných údajov;  
+- schopnosť zabezpečiť trvalú dôvernosť, integritu, dostupnosť a odolnosť  
+  systémov;  
+- schopnosť včas obnoviť dostupnosť údajov po incidente;  
+- pravidelné testovanie a hodnotenie účinnosti opatrení.  
+
+**Technické opatrenia (príklady):**  
+
+- heslom chránené alebo šifrované súbory a disky vrátane notebookov  
+  a mobilov;  
+- silné heslá, správca hesiel a dvojfaktorové overenie;  
+- aktualizovaný systém, antivírus a firewall;  
+- pravidelné zálohy uložené oddelene od hlavných dát a overené skúšobnou  
+  obnovou;  
+- šifrovaný prenos (HTTPS, šifrované e-maily pri citlivých údajoch);  
+- záznamy o prístupoch pri citlivých údajoch.  
+
+**Organizačné opatrenia (príklady):**  
+
+- prístup len pre toho, kto údaje potrebuje na svoju prácu;  
+- poučenie osôb, ktoré s údajmi pracujú, a ich povinnosť mlčanlivosti  
+  (čl. 32 ods. 4 GDPR, § 79 zákona č. 18/2018 Z. z.);  
+- zamykanie dokumentov v papierovej podobe (skriňa, trezor);  
+- zmluva so sprostredkovateľom (čl. 28) a overenie, ako údaje chráni;  
+- pravidlá pri odchode zamestnanca (zrušenie prístupov, vrátenie  
+  zariadení) a pri likvidácii dát (bezpečné vymazanie, skartácia).  
+
+**Primeranosť:** zoznam e-mailov odberateľov newslettera vyžaduje menšiu  
+ochranu než zdravotná dokumentácia, údaje o deťoch alebo kópie dokladov  
+totožnosti. Čím citlivejšie údaje, väčší rozsah a vyššie riziko, tým  
+prísnejšie opatrenia. Súlad môže pomôcť preukázať dodržiavanie schváleného  
+kódexu správania alebo certifikácia (čl. 32 ods. 3).  
+
+**Pri AI** patria medzi chránené úložiská aj prompty, nahraté dokumenty,  
+história konverzácií, logy a vektorové databázy. API kľúče k modelom  
+patria do správcu tajomstiev, nie do zdrojového kódu.  
+
+### Porušenie ochrany osobných údajov (články 33 a 34)  
+
+Porušením je bezpečnostný incident, ktorý vedie k náhodnému alebo  
+nezákonnému zničeniu, strate, zmene, neoprávnenému poskytnutiu alebo  
+sprístupneniu osobných údajov (čl. 4 bod 12). Nejde len o hackerský útok.  
+Typické prípady:  
+
+- stratený alebo ukradnutý nešifrovaný notebook či USB kľúč;  
+- hromadný e-mail s viditeľnými adresami všetkých adresátov v poli Komu  
+  alebo Kópia;  
+- dokument odoslaný nesprávnemu príjemcovi;  
+- ransomvér, ktorý zašifruje údaje, keď neexistuje použiteľná záloha.  
+
+Povinnosti:  
+
+- **Oznámenie úradu:** prevádzkovateľ oznámi porušenie Úradu na ochranu  
+  osobných údajov SR bez zbytočného odkladu a podľa možnosti do 72 hodín  
+  od chvíle, keď sa o ňom dozvedel. Neskoršie oznámenie musí zdôvodniť.  
+  Oznámenie netreba, ak je nepravdepodobné, že porušenie povedie k riziku  
+  pre práva a slobody ľudí.  
+- **Informovanie ľudí:** ak hrozí vysoké riziko, prevádzkovateľ informuje  
+  bez zbytočného odkladu aj dotknuté osoby. Netreba to napríklad vtedy,  
+  ak boli údaje spoľahlivo zašifrované a kľúč neunikol (čl. 34 ods. 3).  
+- **Sprostredkovateľ**, napríklad cloudová služba alebo účtovná firma,  
+  oznámi porušenie prevádzkovateľovi bez zbytočného odkladu.  
+- **Evidencia:** každé porušenie, aj neoznámené, treba zdokumentovať:  
+  čo sa stalo, aké to malo následky a aké opatrenia sa prijali  
+  (čl. 33 ods. 5).  
+- **Kybernetická bezpečnosť:** organizácie, na ktoré sa vzťahuje NIS2  
+  (na Slovensku zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti),  
+  môžu mať pri tom istom incidente aj samostatnú hlásnu povinnosť  
+  s kratšími lehotami.  
+
+Za porušenie článkov 32 až 34 hrozí pokuta až 10 mil. € alebo 2 %  
+celosvetového ročného obratu (čl. 83 ods. 4). Britský úrad ICO napríklad  
+v roku 2020 udelil spoločnosti British Airways pokutu 20 mil. libier.  
+Pri útoku v roku 2018 unikli pre nedostatočné zabezpečenie údaje viac  
+ako 400 000 zákazníkov vrátane platobných kariet.  
+
+> **Prakticky:** postup pri incidente si pripravte vopred: kto rozhoduje,  
+> kto kontaktuje úrad, kde je šablóna oznámenia a evidencia incidentov.  
+> Lehota 72 hodín beží aj cez víkend a sviatky.  
+
+### Zodpovedná osoba (DPO, články 37 až 39)  
+
+Zodpovedná osoba (anglicky *Data Protection Officer*) dohliada  
+v organizácii na dodržiavanie pravidiel ochrany osobných údajov. Je  
+interným poradcom a kontrolórom v jednom.  
+
+**Čo robí:**  
+
+- radí vedeniu a zamestnancom, ako majú s osobnými údajmi nakladať;  
+- kontroluje, či organizácia dodržiava GDPR a zákon č. 18/2018 Z. z.;  
+- pomáha pri posudzovaní vplyvu na ochranu údajov (DPIA);  
+- je kontaktným bodom pre úrad a pre ľudí, ktorých údaje sa spracúvajú.  
+  Môžete sa na ňu obrátiť napríklad so žiadosťou o prístup alebo výmaz.  
+
+**Kto ju musí mať:**  
+
+- každý orgán verejnej moci alebo verejnoprávna inštitúcia, napríklad  
+  ministerstvo, obec, škola či polícia. Výnimkou sú súdy pri rozhodovaní.  
+  Viaceré orgány môžu mať spoločnú zodpovednú osobu;  
+- organizácie, ktorých hlavnou činnosťou je pravidelné a systematické  
+  monitorovanie ľudí vo veľkom rozsahu, napríklad sledovanie polohy  
+  alebo rozsiahle profilovanie;  
+- organizácie, ktorých hlavnou činnosťou je rozsiahle spracúvanie  
+  citlivých údajov alebo údajov o trestných činoch, napríklad nemocnice.  
+
+Malá firma alebo živnostník ju zvyčajne mať nemusí, ak spracúvanie  
+údajov nie je jeho hlavnou činnosťou a nejde o veľký rozsah rizikových  
+údajov.  
+
+**Postavenie:**  
+
+- Pri výkone úloh je **nezávislá**. Nesmie dostávať pokyny, ako má svoju  
+  prácu robiť, a nemožno ju odvolať ani postihnúť za to, že si plní  
+  povinnosti. Podlieha priamo najvyššiemu vedeniu.  
+- Nesmie mať konflikt záujmov. Nemôže ňou byť napríklad riaditeľ alebo  
+  vedúci IT, ktorý sám rozhoduje o účeloch a prostriedkoch spracúvania.  
+- Môže to byť zamestnanec alebo externý dodávateľ.  
+- Za súlad s GDPR **nezodpovedá osobne**. Zodpovednosť nesie  
+  prevádzkovateľ alebo sprostredkovateľ.  
+- Organizácia musí jej kontakt zverejniť a oznámiť úradu (čl. 37 ods. 7).  
+  Zvyčajne ho nájdete v zásadách ochrany osobných údajov na webe.  
+
+### GDPR a štátne orgány  
+
+Na štátne orgány sa GDPR vzťahuje, ale s viacerými výnimkami  
+a špecifikami.  
+
+- **Ministerstvá, obce, školy a úrady:** GDPR platí v plnom rozsahu.  
+  Právnym základom je zvyčajne zákonná povinnosť alebo výkon verejnej  
+  moci, nie súhlas, a musia mať zodpovednú osobu. GDPR necháva na  
+  členských štátoch, či môžu verejným orgánom ukladať pokuty (čl. 83  
+  ods. 7). Slovensko to umožňuje: úrad môže pokutovať aj orgán verejnej  
+  moci (§ 104 ods. 1 zákona č. 18/2018 Z. z.). Napríklad Česko pokuty  
+  verejným orgánom neukladá.  
+- **Polícia a ďalšie príslušné orgány:** na spracúvanie údajov pri  
+  predchádzaní trestným činom, ich vyšetrovaní, stíhaní a výkone trestov  
+  sa GDPR nevzťahuje. Platí smernica (EÚ) 2016/680, tzv. policajná  
+  smernica, ktorú v SR preberá tretia časť zákona č. 18/2018 Z. z.  
+  Príslušnými orgánmi sú Policajný zbor, Vojenská polícia, Zbor väzenskej  
+  a justičnej stráže, Finančná správa, prokuratúra a súdy (§ 3 ods. 3).  
+  Zásady sú podobné, ale práva dotknutých osôb možno obmedziť, ak by  
+  hrozilo ohrozenie vyšetrovania. Pri iných účeloch, napríklad pri  
+  personálnej agende vlastných zamestnancov, platí bežný režim GDPR.  
+- **Spravodajské služby:** na Slovenskú informačnú službu, Vojenské  
+  spravodajstvo a Národný bezpečnostný úrad pri bezpečnostných previerkach  
+  sa nevzťahuje GDPR ani zákon č. 18/2018 Z. z. (§ 3 ods. 5). Majú vlastnú  
+  právnu úpravu.  
+- **Slovenská pošta:** je akciová spoločnosť vo vlastníctve štátu. Pri  
+  doručovaní a finančných službách postupuje ako každý iný prevádzkovateľ  
+  podľa GDPR. Poštové tajomstvo navyše chráni zákon č. 324/2011 Z. z.  
+  o poštových službách.  
+
+Ak sa štátny orgán opiera o zákon, nemusíte s ním súhlasiť a nemôžete  
+súhlas odvolať, aby prestal údaje spracúvať. Stále však máte právo  
+na prístup a opravu, pri výkone verejnej moci aj právo namietať a môžete  
+sa sťažovať na Úrad na ochranu osobných údajov SR. Výmaz je obmedzený,  
+ak má orgán zákonnú povinnosť údaje uchovávať.  
 
 ### Príklad: 1 222 strán o jednom používateľovi  
 
@@ -406,6 +684,10 @@ priebežne upravovať a mazať.
 
 | Čo platí | Čo to znamená v praxi | Predpis |
 |---|---|---|
+| **GDPR platí aj pre malých** | Vzťahuje sa na každého, kto spracúva osobné údaje, aj na živnostníka či spolok. Výnimkou je čisto osobné alebo domáce použitie. S veľkosťou sa mení len rozsah povinností. | čl. 2, 30 a 37 GDPR |
+| **Súhlas nie je jediný právny základ** | E-shop sa pri doručení opiera o zmluvu, pri faktúrach o zákon. Súhlas potrebuje na marketing. Štát sa opiera o zákon a súhlas nepotrebuje. | čl. 6 a 7 GDPR |
+| **Údaje sa neuchovávajú navždy** | Lehota sa odvíja od účelu. Účtovné doklady sa uchovávajú najmenej 10 rokov a ich výmaz si nemožno vynútiť skôr. | čl. 5 a 17 GDPR, § 35 zákona o účtovníctve |
+| **Zodpovedná osoba je kontakt pre vás** | Úrady a firmy s rizikovým spracúvaním ju musia mať, zverejniť a nechať pracovať nezávisle. | čl. 37 – 39 GDPR |
 | **Máte právo vedieť, aké údaje o vás firma má** | Môžete žiadať kópiu údajov, účely spracovania, príjemcov, lehotu uchovávania, zdroj údajov a informáciu o automatizovanom rozhodovaní. Prvá kópia je zadarmo, odpoveď do 1 mesiaca (najviac +2 mesiace). | čl. 12 a 15 GDPR |
 | **Môžete zistiť, kedy a prečo niekto nahliadol do vašich údajov** | Ak firma vedie záznamy o prístupoch, máte právo na dátumy a účely nahliadnutí. Mená konkrétnych zamestnancov spravidla nie. | čl. 15 GDPR, SDEÚ C-579/21 |
 | **Logovanie prístupov závisí od rizika** | GDPR neukladá všeobecnú povinnosť logovať každý náhľad, ale pri citlivých údajoch ho v praxi vyžaduje bezpečnosť a zodpovednosť. Vysokorizikové AI systémy musia udalosti logovať automaticky, HIPAA vyžaduje auditné záznamy. | čl. 5 ods. 2 a 32 GDPR; čl. 12, 19 a 26 AI Actu; HIPAA Security Rule |
@@ -418,7 +700,8 @@ priebežne upravovať a mazať.
 | **Deepfake musí byť viditeľne označený** | Realistický AI obrázok, video alebo zvuk treba označiť hneď na začiatku. Metadáta ani poznámka v obchodných podmienkach nestačia. | čl. 50 ods. 4 AI Actu |
 | **Rozpoznávanie emócií v práci a v škole je zakázané** | Zamestnávateľ ani škola nesmú z videa či hlasu odvodzovať vaše emócie, okrem zdravotných a bezpečnostných dôvodov. Platí od 2. 2. 2025. | čl. 5 ods. 1 písm. f) AI Actu |
 | **Uloženie v EÚ neznamená ochranu pred cudzím právom** | Poskytovateľ so sídlom v USA môže byť povinný vydať údaje americkým úradom, aj keď sú uložené v Európe. Rozhoduje, kto má nad údajmi kontrolu. | CLOUD Act (USA), kapitola V GDPR |
-| **Únik údajov sa musí hlásiť** | Firma hlási porušenie ochrany údajov dozornému úradu do 72 hodín. Vás musí informovať bez zbytočného odkladu, ak hrozí vysoké riziko. | čl. 33 a 34 GDPR |
+| **Údaje musia byť primerane chránené** | Zákon nepredpisuje konkrétny nástroj, ale opatrenia podľa rizika: šifrovanie, silné heslá a 2FA, zálohy, obmedzený prístup, poučené osoby. Čím citlivejšie údaje, tým prísnejšia ochrana. | čl. 32 GDPR |
+| **Únik údajov sa musí hlásiť** | Firma hlási porušenie ochrany údajov dozornému úradu do 72 hodín, ak z neho hrozí riziko pre ľudí. Vás musí informovať bez zbytočného odkladu, ak hrozí vysoké riziko. Každé porušenie musí zaevidovať. | čl. 33 a 34 GDPR |
 | **Môžete sa sťažovať a žiadať náhradu škody** | Sťažnosť podáte na Úrad na ochranu osobných údajov SR. Náhradu majetkovej aj nemajetkovej ujmy môžete žiadať na súde. | čl. 77, 79 a 82 GDPR |
 | **Pokuty sú vysoké** | GDPR: až 20 mil. € alebo 4 % obratu. AI Act: až 35 mil. € alebo 7 % pri zakázaných praktikách, až 15 mil. € alebo 3 % pri ďalších povinnostiach vrátane označovania. | čl. 83 GDPR, čl. 99 AI Actu |
 
@@ -428,6 +711,13 @@ priebežne upravovať a mazať.
   že firma o človeku môže vedieť oveľa viac, než by čakal.  
 - GDPR chráni osobné údaje a práva ľudí; DPIA sa robí podľa rizika, nie  
   automaticky pri každom AI projekte.  
+- GDPR platí pre každého, kto spracúva osobné údaje, od živnostníka  
+  po ministerstvo. Polícia pri trestnom konaní a spravodajské služby  
+  majú osobitnú úpravu.  
+- Každé spracúvanie potrebuje jeden zo šiestich právnych základov.  
+  Súhlas je len jeden z nich a lehotu uchovávania určuje účel.  
+- Bezpečnosť údajov má byť primeraná riziku. Porušenie ochrany údajov  
+  sa hlási úradu do 72 hodín, ak hrozí riziko pre ľudí, a eviduje sa vždy.  
 - AI Act zavádza povinnosti podľa rizika, úlohy subjektu a použitia systému.  
   K 12. októbru 2026 je podstatné sledovať pravidlá transparentnosti,  
   GPAI a harmonogram vysokorizikových systémov.  
@@ -451,6 +741,10 @@ priebežne upravovať a mazať.
 - [NIST: AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)  
 - [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html)  
 - [ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html)  
+- [Zákon č. 18/2018 Z. z. o ochrane osobných údajov](https://static.slov-lex.sk/static/SK/ZZ/2018/18/20240701.html)  
+- [Smernica (EÚ) 2016/680 – policajná smernica](https://eur-lex.europa.eu/eli/dir/2016/680/oj)  
+- [EDPB: usmernenia 9/2022 k oznamovaniu porušenia ochrany údajov](https://www.edpb.europa.eu/documents/guideline/guidelines-92022-on-personal-data-breach-notification-under-gdpr_nb)  
+- [ÚOOÚ SR: usmernenia k oznamovaniu porušenia ochrany údajov (PDF)](https://dataprotection.gov.sk/files/directives/2/19_usmernenia_o_oznameni_porusenia_ochrany_osobnych_udajov.pdf)  
 - [SDEÚ C-579/21 – prístup k záznamom o nahliadnutí](https://curia.europa.eu/juris/liste.jsf?num=C-579/21)  
 - [Data Act – úplné znenie](https://eur-lex.europa.eu/eli/reg/2023/2854/oj)  
 - [Európska komisia: prenos údajov EÚ – USA](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en)  
