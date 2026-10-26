@@ -13,25 +13,19 @@ bezplatnú aplikáciu **Gemini** s modelom **Nano Banana**, modely
 
 ## Ako AI vytvára obrázky  
 
-Generátory obrázkov prešli za pár rokov veľkú cestu:  
+Prvé známe generátory obrázkov (DALL-E, Midjourney, Stable Diffusion)  
+fungovali ako šikovné kresliace stroje. Z promptu si vybrali hlavne  
+kľúčové slová – „mačka, klobúk, pláž" – a podľa nich nakreslili obrázok.  
+Dlhšie vety, presné pokyny či nápisy im robili problémy.  
 
-| Obdobie | Prístup | Príklady |
-| :--- | :--- | :--- |
-| 2014 – 2020 | Generatívne adversariálne siete (GAN) | StyleGAN, „tváre, ktoré neexistujú" |
-| 2021 – 2024 | Difúzne modely – obrázok vzniká postupným odstraňovaním šumu | DALL-E 2 a 3, Midjourney, Stable Diffusion |
-| od 2024 | Flow modely – rýchlejšia a presnejšia obdoba difúzie | FLUX 1, 2 a 3 |
-| od 2025 | Natívne multimodálne modely – jazykový model sám „kreslí" | Nano Banana, GPT Image |
+Dnešné modely ako **Nano Banana** alebo **GPT Image** sú súčasťou  
+veľkého jazykového modelu – rovnakého typu, s akým sa rozprávame v chate.  
+Zadanie teda najprv pochopia ako text a až potom kreslia. Vďaka tomu:  
 
-Pre používateľa je najdôležitejšia posledná zmena. Staršie generátory  
-chápali prompt len povrchne – ako zoznam kľúčových slov. Natívne  
-multimodálne modely sú súčasťou veľkého jazykového modelu, a preto:  
-
-*   rozumejú **dlhým a zložitým zadaniam** v bežnom jazyku,  
-*   vedia **upravovať existujúce fotografie** podľa slovného pokynu,  
-*   **čitateľne píšu text** do obrázkov (plagáty, infografiky, menu),  
-*   udržia **rovnakú postavu či produkt** naprieč viacerými obrázkami,  
-*   využívajú **znalosti o svete** – vedia, ako vyzerá Bratislavský  
-    hrad alebo ako sa skladá schéma elektrického obvodu.  
+*   rozumejú bežným vetám, nielen kľúčovým slovám,  
+*   pamätajú si priebeh rozhovoru, takže obrázok môžeme upravovať  
+    po krokoch („teraz pridaj dážď"),  
+*   vedia, ako vyzerajú známe miesta a veci – napríklad Bratislavský hrad.  
 
 ## Čo dnes s obrázkami zvládneme  
 
@@ -104,63 +98,6 @@ Obrázky z bezplatnej verzie majú navyše aj **viditeľný vodoznak**.
 Či obrázok vytvorila AI od Googlu, zistíme tak, že ho nahráme do Gemini  
 a opýtame sa.  
 
-### Nano Banana v Pythone  
-
-Cez **Gemini API** (kľúč získame v Google AI Studio) môžeme obrázky  
-generovať aj programovo. Upozornenie: API **nemá bezplatnú úroveň** pre  
-obrázkové modely – Nano Banana 2.1 stojí približne **0,034 $** za obrázok  
-v rozlíšení 1K.  
-
-```bash
-pip install google-genai
-export GEMINI_API_KEY="..."
-```
-
-```python
-import base64
-from google import genai
-
-client = genai.Client()
-
-interaction = client.interactions.create(
-    model="gemini-nano-banana-2.1",
-    input="Akvarelová ilustrácia Bratislavského hradu pri západe slnka, "
-          "v popredí Dunaj s loďkou",
-    response_format={
-        "type": "image",
-        "aspect_ratio": "16:9",
-        "image_size": "2K",
-    },
-)
-
-with open("hrad.png", "wb") as f:
-    f.write(base64.b64decode(interaction.output_image.data))
-```
-
-Pri úprave fotografie pošleme okrem textu aj obrázok zakódovaný  
-v base64:  
-
-```python
-with open("stol.png", "rb") as f:
-    image_bytes = f.read()
-
-interaction = client.interactions.create(
-    model="gemini-nano-banana-2.1",
-    input=[
-        {"type": "text", "text": "Odstráň zo stola nožnice. Všetko ostatné "
-                                 "nechaj presne tak, ako je."},
-        {
-            "type": "image",
-            "data": base64.b64encode(image_bytes).decode("utf-8"),
-            "mime_type": "image/png",
-        },
-    ],
-)
-
-with open("stol-bez-noznic.png", "wb") as f:
-    f.write(base64.b64decode(interaction.output_image.data))
-```
-
 ## OpenAI – GPT Image 2.5  
 
 OpenAI začala s obrázkami modelom **DALL-E** (2021). V roku 2025 ho  
@@ -214,7 +151,186 @@ maximálnej. Pred plánovaním rozpočtu je dobré overiť ceny v kalkulačke
 na stránke OpenAI. Používanie obrázkových modelov v API navyše vyžaduje  
 **overenie organizácie** (*Organization Verification*).  
 
-### GPT Image v Pythone  
+## OpenRouter – FLUX 3 a ďalšie modely  
+
+Z kapitoly o OpenRouteri vieme, že ide o bránu k stovkám jazykových  
+modelov. OpenRouter však sprístupňuje aj **obrázkové modely** – od  
+OpenAI, Googlu, ByteDance aj Black Forest Labs. Výhodou je opäť jeden  
+účet a jednoduché porovnanie modelov.  
+
+### Black Forest Labs a FLUX 3  
+
+**Black Forest Labs** (BFL) je nemecká firma z Freiburgu, ktorú v roku  
+2024 založili výskumníci stojaci za populárnym open-source modelom  
+**Stable Diffusion**. Patrí k najvýznamnejším európskym firmám v oblasti  
+generatívnej AI.  
+
+Rodina **FLUX 3** bola predstavená v júli 2026 ako multimodálny model  
+trénovaný naraz na obrázkoch, videu a zvuku. Postupne z nej vyšli:  
+
+*   **FLUX 3 Video** – prvý verejný videomodel BFL (klipy so zvukom).  
+*   **FLUX 3 Image** (1. októbra 2026) – vlajkový obrázkový model:  
+    *   rozlíšenie až **4K** bez dodatočného zväčšovania,  
+    *   až **10 referenčných obrázkov** naraz,  
+    *   **rozloženie scény v JSON** – každý prvok má svoj popis  
+        a súradnice (*bounding box*),  
+    *   úpravy, ktoré pixely mimo upravovanej oblasti nechajú  
+        **úplne nezmenené**.  
+*   **FLUX 3 Image Klein** (15. októbra 2026) – menší model  
+    s **otvorenými váhami** (5,6 miliardy parametrov), ktorý sa dá spustiť  
+    aj na hernej grafickej karte s 8 GB pamäte.  
+
+| Model na OpenRouteri | Identifikátor | Cena od |
+| :--- | :--- | ---: |
+| FLUX 3 Image | `black-forest-labs/flux-3-image` | 0,041 $ / obrázok |
+| FLUX 3 Image Klein | `black-forest-labs/flux-3-image-klein` | 0,008 $ / obrázok |
+
+Ukážky kódu pre všetky tri služby nájdeme na konci kapitoly  
+v časti **Príklady v Pythone**.  
+
+## Ako písať prompty pre obrázky  
+
+Dobrý prompt pre obrázok pripomína zadanie pre fotografa alebo  
+ilustrátora. Osvedčená štruktúra:  
+
+1.  **Subjekt** – čo je na obrázku: „starší muž opravuje bicykel".  
+2.  **Prostredie** – kde: „v malej dielni plnej náradia".  
+3.  **Štýl** – „fotografia", „akvarel", „plochá vektorová grafika".  
+4.  **Kompozícia** – „detailný záber", „pohľad zhora", „pomer 16:9".  
+5.  **Svetlo a nálada** – „teplé popoludňajšie svetlo", „pokojná atmosféra".  
+6.  **Text** – presné znenie dáme do úvodzoviek: nápis „OTVORENÉ".  
+
+Pri **úprave** fotografie je rovnako dôležité povedať, čo sa **meniť  
+nemá**: „Odstráň nožnice. Svetlo, tiene a ostatné predmety nechaj bez  
+zmeny." Bez toho model niekedy „vylepší" aj časti, na ktoré sme  
+nechceli siahať.  
+
+Ďalšie tipy:  
+
+*   Upravujme **po krokoch** – jedna zmena v jednej správe.  
+*   Ak výsledok nesedí, je lepšie prompt spresniť než donekonečna  
+    generovať nové pokusy.  
+*   Pri sérii obrázkov (napr. postava v komikse) posielajme vždy tie  
+    isté **referenčné obrázky**.  
+*   Modely stále robia chyby v **rukách, počtoch predmetov a dlhších  
+    textoch** – výsledok vždy skontrolujme.  
+
+## Etika, právo a bezpečnosť  
+
+*   **Označovanie AI obsahu:** Google vkladá do obrázkov vodoznak  
+    **SynthID**, OpenAI pridáva metadáta **C2PA** o pôvode obrázka.  
+    Metadáta sa však dajú ľahko odstrániť, preto nie sú zárukou.  
+*   **Deepfakes:** Realistické úpravy fotografií skutočných ľudí môžu  
+    poškodiť ich povesť alebo slúžiť na podvody. Európsky **AI Act**  
+    vyžaduje, aby bol umelo vytvorený alebo zmanipulovaný obsah  
+    (tzv. deepfake) zreteľne označený.  
+*   **Súkromie:** Fotografie iných ľudí (najmä detí) nenahrávajme  
+    do AI nástrojov bez ich súhlasu.  
+*   **Autorské práva:** Napodobňovanie štýlu konkrétneho žijúceho  
+    umelca alebo chránených postáv je právne aj eticky sporné.  
+    Pri komerčnom použití si overme licenčné podmienky služby.  
+*   **Pravdivosť:** AI obrázok nie je dôkaz. Pri fotografiách  
+    zo správ a sociálnych sietí je dnes potrebná zvýšená opatrnosť.  
+
+## Zhrnutie kapitoly  
+
+*   Dnešné obrázkové modely sú súčasťou **jazykových modelov** – rozumejú  
+    bežným vetám, upravujú fotky a píšu čitateľný text.  
+*   **Nano Banana 2** je k dispozícii **zadarmo v aplikácii Gemini**;  
+    v API je aktuálny **Nano Banana 2.1**.  
+*   OpenAI ponúka **GPT Image 2.5** v dvoch modeloch: **Flare** na  
+    rýchle bežné generovanie a **Sunburst** na presné úpravy. Pre  
+    opakovateľné výsledky používame **datované verzie**.  
+*   Cez **OpenRouter** máme jedným kľúčom prístup k modelom viacerých  
+    tvorcov, napríklad k **FLUX 3** od európskej firmy Black Forest Labs.  
+*   Dobrý prompt opisuje subjekt, prostredie, štýl, kompozíciu a svetlo;  
+    pri úpravách aj to, čo sa **meniť nemá**.  
+*   Pri práci s obrázkami myslíme na **označovanie AI obsahu**,  
+    súkromie a autorské práva.  
+
+## Otázky a diskusia  
+
+1.  Čím sa líšia prvé generátory obrázkov od dnešných modelov ako  
+    Nano Banana či GPT Image?  
+2.  Prečo OpenAI vydala dva modely (Flare a Sunburst) namiesto jedného  
+    s nastavením kvality? Kedy by ste použili ktorý?  
+3.  Prečo je pre kurz alebo aplikáciu lepšie použiť datovanú verziu  
+    modelu než alias ako `chatgpt-image-latest`?  
+4.  Aký význam má, že FLUX 3 Image Klein má otvorené váhy?  
+5.  Stačia vodoznaky ako SynthID na rozpoznanie AI obrázkov? Aké majú  
+    obmedzenia?  
+6.  **Praktická úloha:** V bezplatnej aplikácii Gemini odfoťte svoj stôl  
+    a nechajte z fotky odstrániť jeden predmet. Potom vymeňte pozadie.  
+    Čo model zachoval a čo nechtiac zmenil?  
+7.  **Praktická úloha:** Vytvorte plagát na vymyslené podujatie  
+    so slovenským textom v ChatGPT aj v Gemini. Porovnajte, ako si  
+    modely poradili s diakritikou.  
+8.  **Praktická úloha:** Pomocou kódu z časti Príklady v Pythone pošlite  
+    rovnaký prompt trom modelom na OpenRouteri. Porovnajte kvalitu,  
+    rýchlosť a cenu (pole `usage` v odpovedi).  
+
+## Príklady v Pythone  
+
+Všetky tri služby môžeme používať aj programovo. Každá odpoveď  
+obsahuje obrázok zakódovaný v **base64** – textovom formáte, ktorý  
+pred uložením do súboru prevedieme späť na bajty.  
+
+### Gemini API – Nano Banana  
+
+Kľúč ku **Gemini API** získame v Google AI Studio. Upozornenie: API  
+**nemá bezplatnú úroveň** pre obrázkové modely – Nano Banana 2.1 stojí  
+približne **0,034 $** za obrázok v rozlíšení 1K.  
+
+```bash
+pip install google-genai
+export GEMINI_API_KEY="..."
+```
+
+```python
+import base64
+from google import genai
+
+client = genai.Client()
+
+interaction = client.interactions.create(
+    model="gemini-nano-banana-2.1",
+    input="Akvarelová ilustrácia Bratislavského hradu pri západe slnka, "
+          "v popredí Dunaj s loďkou",
+    response_format={
+        "type": "image",
+        "aspect_ratio": "16:9",
+        "image_size": "2K",
+    },
+)
+
+with open("hrad.png", "wb") as f:
+    f.write(base64.b64decode(interaction.output_image.data))
+```
+
+Pri úprave fotografie pošleme okrem textu aj obrázok zakódovaný  
+v base64:  
+
+```python
+with open("stol.png", "rb") as f:
+    image_bytes = f.read()
+
+interaction = client.interactions.create(
+    model="gemini-nano-banana-2.1",
+    input=[
+        {"type": "text", "text": "Odstráň zo stola nožnice. Všetko ostatné "
+                                 "nechaj presne tak, ako je."},
+        {
+            "type": "image",
+            "data": base64.b64encode(image_bytes).decode("utf-8"),
+            "mime_type": "image/png",
+        },
+    ],
+)
+
+with open("stol-bez-noznic.png", "wb") as f:
+    f.write(base64.b64decode(interaction.output_image.data))
+```
+### OpenAI API – GPT Image  
 
 Používame knižnicu `openai`, ktorú poznáme z predchádzajúcich kapitol.  
 
@@ -252,42 +368,7 @@ with open("stol-bez-noznic.png", "wb") as f:
 
 Parameter `size` prijíma aj vlastné rozmery (strany musia byť násobkom  
 16, najviac 3840 pixelov). Zložité zadania môžu trvať aj dve minúty.  
-
-## OpenRouter – FLUX 3 a ďalšie modely  
-
-Z kapitoly o OpenRouteri vieme, že ide o bránu k stovkám jazykových  
-modelov. OpenRouter však sprístupňuje aj **obrázkové modely** – od  
-OpenAI, Googlu, ByteDance aj Black Forest Labs. Výhodou je opäť jeden  
-účet a jednoduché porovnanie modelov.  
-
-### Black Forest Labs a FLUX 3  
-
-**Black Forest Labs** (BFL) je nemecká firma z Freiburgu, ktorú v roku  
-2024 založili výskumníci stojaci za populárnym open-source modelom  
-**Stable Diffusion**. Patrí k najvýznamnejším európskym firmám v oblasti  
-generatívnej AI.  
-
-Rodina **FLUX 3** bola predstavená v júli 2026 ako multimodálny model  
-trénovaný naraz na obrázkoch, videu a zvuku. Postupne z nej vyšli:  
-
-*   **FLUX 3 Video** – prvý verejný videomodel BFL (klipy so zvukom).  
-*   **FLUX 3 Image** (1. októbra 2026) – vlajkový obrázkový model:  
-    *   rozlíšenie až **4K** bez dodatočného zväčšovania,  
-    *   až **10 referenčných obrázkov** naraz,  
-    *   **rozloženie scény v JSON** – každý prvok má svoj popis  
-        a súradnice (*bounding box*),  
-    *   úpravy, ktoré pixely mimo upravovanej oblasti nechajú  
-        **úplne nezmenené**.  
-*   **FLUX 3 Image Klein** (15. októbra 2026) – menší model  
-    s **otvorenými váhami** (5,6 miliardy parametrov), ktorý sa dá spustiť  
-    aj na hernej grafickej karte s 8 GB pamäte.  
-
-| Model na OpenRouteri | Identifikátor | Cena od |
-| :--- | :--- | ---: |
-| FLUX 3 Image | `black-forest-labs/flux-3-image` | 0,041 $ / obrázok |
-| FLUX 3 Image Klein | `black-forest-labs/flux-3-image-klein` | 0,008 $ / obrázok |
-
-### Obrázky cez OpenRouter v Pythone  
+### OpenRouter – FLUX 3  
 
 Pre obrázky má OpenRouter samostatný endpoint `/api/v1/images`.  
 Odpoveď obsahuje obrázky zakódované v base64.  
@@ -366,84 +447,3 @@ for model in models:
 
 Pred spustením je dobré skontrolovať na openrouter.ai, či je daný model  
 práve dostupný a pod akým identifikátorom.  
-
-## Ako písať prompty pre obrázky  
-
-Dobrý prompt pre obrázok pripomína zadanie pre fotografa alebo  
-ilustrátora. Osvedčená štruktúra:  
-
-1.  **Subjekt** – čo je na obrázku: „starší muž opravuje bicykel".  
-2.  **Prostredie** – kde: „v malej dielni plnej náradia".  
-3.  **Štýl** – „fotografia", „akvarel", „plochá vektorová grafika".  
-4.  **Kompozícia** – „detailný záber", „pohľad zhora", „pomer 16:9".  
-5.  **Svetlo a nálada** – „teplé popoludňajšie svetlo", „pokojná atmosféra".  
-6.  **Text** – presné znenie dáme do úvodzoviek: nápis „OTVORENÉ".  
-
-Pri **úprave** fotografie je rovnako dôležité povedať, čo sa **meniť  
-nemá**: „Odstráň nožnice. Svetlo, tiene a ostatné predmety nechaj bez  
-zmeny." Bez toho model niekedy „vylepší" aj časti, na ktoré sme  
-nechceli siahať.  
-
-Ďalšie tipy:  
-
-*   Upravujme **po krokoch** – jedna zmena v jednej správe.  
-*   Ak výsledok nesedí, je lepšie prompt spresniť než donekonečna  
-    generovať nové pokusy.  
-*   Pri sérii obrázkov (napr. postava v komikse) posielajme vždy tie  
-    isté **referenčné obrázky**.  
-*   Modely stále robia chyby v **rukách, počtoch predmetov a dlhších  
-    textoch** – výsledok vždy skontrolujme.  
-
-## Etika, právo a bezpečnosť  
-
-*   **Označovanie AI obsahu:** Google vkladá do obrázkov vodoznak  
-    **SynthID**, OpenAI pridáva metadáta **C2PA** o pôvode obrázka.  
-    Metadáta sa však dajú ľahko odstrániť, preto nie sú zárukou.  
-*   **Deepfakes:** Realistické úpravy fotografií skutočných ľudí môžu  
-    poškodiť ich povesť alebo slúžiť na podvody. Európsky **AI Act**  
-    vyžaduje, aby bol umelo vytvorený alebo zmanipulovaný obsah  
-    (tzv. deepfake) zreteľne označený.  
-*   **Súkromie:** Fotografie iných ľudí (najmä detí) nenahrávajme  
-    do AI nástrojov bez ich súhlasu.  
-*   **Autorské práva:** Napodobňovanie štýlu konkrétneho žijúceho  
-    umelca alebo chránených postáv je právne aj eticky sporné.  
-    Pri komerčnom použití si overme licenčné podmienky služby.  
-*   **Pravdivosť:** AI obrázok nie je dôkaz. Pri fotografiách  
-    zo správ a sociálnych sietí je dnes potrebná zvýšená opatrnosť.  
-
-## Zhrnutie kapitoly  
-
-*   Moderné obrázkové modely sú **natívne multimodálne** – rozumejú  
-    zložitým zadaniam, upravujú fotky a píšu čitateľný text.  
-*   **Nano Banana 2** je k dispozícii **zadarmo v aplikácii Gemini**;  
-    v API je aktuálny **Nano Banana 2.1**.  
-*   OpenAI ponúka **GPT Image 2.5** v dvoch modeloch: **Flare** na  
-    rýchle bežné generovanie a **Sunburst** na presné úpravy. Pre  
-    opakovateľné výsledky používame **datované verzie**.  
-*   Cez **OpenRouter** máme jedným kľúčom prístup k modelom viacerých  
-    tvorcov, napríklad k **FLUX 3** od európskej firmy Black Forest Labs.  
-*   Dobrý prompt opisuje subjekt, prostredie, štýl, kompozíciu a svetlo;  
-    pri úpravách aj to, čo sa **meniť nemá**.  
-*   Pri práci s obrázkami myslíme na **označovanie AI obsahu**,  
-    súkromie a autorské práva.  
-
-## Otázky a diskusia  
-
-1.  Čím sa líšia staršie difúzne generátory od natívne multimodálnych  
-    modelov ako Nano Banana či GPT Image?  
-2.  Prečo OpenAI vydala dva modely (Flare a Sunburst) namiesto jedného  
-    s nastavením kvality? Kedy by ste použili ktorý?  
-3.  Prečo je pre kurz alebo aplikáciu lepšie použiť datovanú verziu  
-    modelu než alias ako `chatgpt-image-latest`?  
-4.  Aký význam má, že FLUX 3 Image Klein má otvorené váhy?  
-5.  Stačia vodoznaky ako SynthID na rozpoznanie AI obrázkov? Aké majú  
-    obmedzenia?  
-6.  **Praktická úloha:** V bezplatnej aplikácii Gemini odfoťte svoj stôl  
-    a nechajte z fotky odstrániť jeden predmet. Potom vymeňte pozadie.  
-    Čo model zachoval a čo nechtiac zmenil?  
-7.  **Praktická úloha:** Vytvorte plagát na vymyslené podujatie  
-    so slovenským textom v ChatGPT aj v Gemini. Porovnajte, ako si  
-    modely poradili s diakritikou.  
-8.  **Praktická úloha:** Pomocou kódu z kapitoly pošlite rovnaký prompt  
-    trom modelom na OpenRouteri. Porovnajte kvalitu, rýchlosť a cenu  
-    (pole `usage` v odpovedi).  
