@@ -215,6 +215,37 @@ nechceli siahať.
 *   Modely stále robia chyby v **rukách, počtoch predmetov a dlhších  
     textoch** – výsledok vždy skontrolujme.  
 
+## Typy úloh pre študentov  
+
+Nasledujúce úlohy zvládne bezplatná aplikácia Gemini aj ChatGPT.  
+Stačí fotografia z mobilu – najlepšie predmetov na stole, izby alebo  
+ulice, nie cudzích ľudí. Pri každej úlohe je dobré porovnať výsledok  
+s originálom a hľadať, čo model **zmenil, hoci nemal**.  
+
+| Typ úlohy | Príklad zadania | Na čo sa pozerať | Náročnosť |
+| :--- | :--- | :--- | :--- |
+| Zmena farby predmetu | „Zmeň farbu hrnčeka na tmavomodrú, nič iné nemeň." | Zostali tiene, odlesky a vzor? | ľahká |
+| Odstránenie predmetu | „Odstráň zo stola nožnice." | Je miesto po predmete prirodzene doplnené? | ľahká |
+| Pridanie predmetu | „Pridaj na stôl šálku kávy vedľa notebooku." | Sedí veľkosť, perspektíva a tieň? | ľahká |
+| Zmena štýlu | „Premeň fotku na akvarel / komiks / stavebnicu Lego." | Je obsah stále rozpoznateľný? | ľahká |
+| Výmena pozadia | „Presuň psa z obývačky na lúku pri západe slnka." | Okraje srsti či vlasov, súlad svetla | stredná |
+| Zmena počasia alebo ročného obdobia | „Nech je na fotke zima a sneží." | Zmenila sa celá scéna súdržne? | stredná |
+| Zmena dennej doby | „Zmeň scénu na noc a rozsvieť pouličné lampy." | Zodpovedajú tiene novým zdrojom svetla? | stredná |
+| Text v obrázku | Plagát s nápisom „Deň otvorených dverí 2026" | Diakritika, preklepy, čitateľnosť | stredná |
+| Preklad textu na obrázku | „Prelož nápisy na menu do angličtiny, dizajn zachovaj." | Ostalo písmo a rozloženie? | stredná |
+| Rozšírenie záberu | „Rozšír fotku na formát 16:9 a domysli okolie." | Plynulé napojenie na originál | stredná |
+| Oprava starej fotografie | „Odstráň škrabance a vyfarbi čiernobielu fotku." | Nezmenili sa tváre a detaily? | stredná |
+| Produktová fotografia | „Urob z fotky tenisky reklamnú fotku na bielom pozadí." | Zostal produkt verný originálu? | stredná |
+| Zmena uhla pohľadu | „Ukáž tú istú izbu z pohľadu zhora." | Dáva rozmiestnenie predmetov zmysel? | náročná |
+| Spojenie viacerých fotiek | Fotka izby + fotka kresla → „daj kreslo do izby" | Mierka, perspektíva, svetlo | náročná |
+| Konzistentná postava | Tá istá postava v štyroch obrázkoch komiksu | Rovnaká tvár, oblečenie a farby | náročná |
+| Infografika alebo schéma | „Nakresli kolobeh vody so slovenskými popismi." | Vecná správnosť a pravopis popisov | náročná |
+
+Úlohy môžeme rozšíriť o **porovnanie modelov**: ten istý pokyn študenti  
+zadajú v Gemini aj v ChatGPT a zhodnotia, ktorý model lepšie zachoval  
+originál. Pri pokročilejších študentoch môžu úlohu zopakovať v Pythone  
+(pozri koniec kapitoly).  
+
 ## Etika, právo a bezpečnosť  
 
 *   **Označovanie AI obsahu:** Google vkladá do obrázkov vodoznak  
@@ -330,6 +361,7 @@ interaction = client.interactions.create(
 with open("stol-bez-noznic.png", "wb") as f:
     f.write(base64.b64decode(interaction.output_image.data))
 ```
+
 ### OpenAI API – GPT Image  
 
 Používame knižnicu `openai`, ktorú poznáme z predchádzajúcich kapitol.  
@@ -368,6 +400,7 @@ with open("stol-bez-noznic.png", "wb") as f:
 
 Parameter `size` prijíma aj vlastné rozmery (strany musia byť násobkom  
 16, najviac 3840 pixelov). Zložité zadania môžu trvať aj dve minúty.  
+
 ### OpenRouter – FLUX 3  
 
 Pre obrázky má OpenRouter samostatný endpoint `/api/v1/images`.  
