@@ -1,5 +1,8 @@
 # AI-Skolenie
 
+
+https://notebook.google.com/notebook/22b54f03-ab9e-4571-a7df-53ee60441908
+
 https://file-examples.com/storage/feba50da476a9fe2b9da9d8/2017/04/file_example_MP4_1920_18MG.mp4
 
 AI Školenie pre začiatočníkov s praktickými príkladmi.  
