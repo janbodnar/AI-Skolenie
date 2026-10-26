@@ -70,9 +70,7 @@ Prompts for `eshop_sales_2025.csv`
 
 Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
 
-
-
-Pomocou AI nástrojov splň tieto úlohy:
+## Pomocou AI nástrojov splň tieto úlohy:
 
 - [ ] Nájdi všetky slová týkajúce sa oblečenia a pridaj EN, FR a GER ekvivalenty.  
   https://www.youtube.com/watch?v=ITs9agntW18
@@ -80,7 +78,7 @@ Pomocou AI nástrojov splň tieto úlohy:
 - [ ] Nájdi všetky pondelky/utorky, štvrtky/piatky, ktoré nekolidujú s slovenskými
       alebo českými sviatkami v marci a apríli a sprav z toho graf
 - [ ] Vygeneruj audio v cudzom jakyku pre shadow speaking.
-- [ ] Nájdi spoje z Telgártu do Bratislave najbližšiu sobotu, odchody, príchody, prestupy
+- [ ] Nájdi spoje z Telgártu do Bratislavy najbližšiu sobotu, odchody, príchody, prestupy
 - [ ] Vytvor CV. Použi šablónu z Google worspace.
 - [ ] Spočítaj výdavky v troch receptoch.
 - [ ] Vygeneruj pieseň https://huggingface.co/spaces/ACE-Step/ACE-Step
