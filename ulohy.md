@@ -19,11 +19,6 @@ Purpose: Evaluates response times across Critical vs. Low priority issues.
 
 Prompts for `eshop_sales_2025.csv`
 
-**Warm-up: understanding the data**
-- "Look at this file and tell me what it contains. What could I learn from it?"
-- "Summarize the dataset: how many orders, what time period, total revenue, and average order value."
-- "Are there any data quality issues I should know about?" *(It's clean, so this shows Claude checking rather than inventing problems.)*
-
 **Simple questions**
 - "Which product category earns the most money? And which sells the most orders?" *(The two answers differ: Books lead in orders, Electronics in revenue.)*
 - "What are the top 5 best-selling products by revenue?"
