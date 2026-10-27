@@ -89,7 +89,7 @@ Sprav sentiment analýzu filmov, súbor `film-reviews.csv`
    https://www.gutenberg.org/ebooks/43
 
 - [ ] Vytvor Deep Research report, ktorý sa zameria na daňovo-právne zmeny živnostníkov za posledných 5 rokov.
-- [ ] Vytvor nový stĺpec pre CSV dáta male/female.
+- [ ] Vytvor nový stĺpec pre CSV dáta (users.csv) male/female.
 - [ ] Nájdi a prelož dôležité nemecké slová z videa *Warum dein sicherer Ort dich festhält* (Copilot vs Gemini).
   https://www.youtube.com/watch?v=DyOTl5iDGvU
 
@@ -173,9 +173,6 @@ vysťahovania je do 5 dní od výzvy majiteľa.
 17. Prenajímateľ nie je povinný po skončení nájmu zabezpečiť nájomcovi náhradný byt alebo
 ubytovanie.
 ```
-
-
-
 
 
 
