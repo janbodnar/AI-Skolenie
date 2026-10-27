@@ -15,6 +15,10 @@ Purpose: Identifies "hotspot" floors requiring the most maintenance.
 Average Days to Resolve by Priority (Bar Chart):  
 Purpose: Evaluates response times across Critical vs. Low priority issues.  
 
+## Extrakcia dát
+
+- [ ] Zo životopisov (zivotopisy.zip) vytiahni meno, poslednú pozíciu a tri kľúčové zručnosti.
+
 ## Eshop 
 
 Prompts for `eshop_sales_2025.csv`
@@ -174,11 +178,6 @@ vysťahovania je do 5 dní od výzvy majiteľa.
 ubytovanie.
 ```
 
-
-
-## Extrakcia dát
-
-- [ ] Zo životopisov (zivotopisy.zip) vytiahni meno, poslednú pozíciu a tri kľúčové zručnosti.
 
 
 ## Použitie stopky
