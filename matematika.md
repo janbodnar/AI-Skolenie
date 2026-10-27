@@ -1,6 +1,9 @@
 # Matematika a LLM – možnosti, limity a hybridný prístup  
 
 
+
+123452384569872345 * 43673457456784835
+
 Veľké jazykové modely predstavujú vynikajúci nástroj na prácu s matematikou,  
 no ich využitie má svoje limity. Fungujú skôr ako **jazykoví experti na matematiku**  
 než ako samotné kalkulačky. Vynikajú vo vysvetľovaní zložitých konceptov, riešení  
