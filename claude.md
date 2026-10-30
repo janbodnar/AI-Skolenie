@@ -284,6 +284,41 @@ dolárov ročne** a stal sa vzorom, ktorý napodobnili konkurenti (OpenAI
 Codex, Google Gemini CLI). Jadro Claude Code je dostupné aj ako knižnica  
 **Claude Agent SDK** na stavbu vlastných agentov.  
 
+### Najdôležitejšie lomkové príkazy  
+
+V Claude Code sa okrem bežných pokynov zadávajú aj **lomkové príkazy**  
+(*slash commands*) – začínajú znakom `/` a ovládajú samotný nástroj.  
+Po napísaní `/` sa zobrazí ponuka všetkých dostupných príkazov:  
+
+| Príkaz | Čo robí |
+| :--- | :--- |
+| `/help` | Zobrazí pomoc a zoznam dostupných príkazov |
+| `/init` | Preskúma projekt a vytvorí súbor `CLAUDE.md` s popisom kódu |
+| `/memory` | Otvorí na úpravu pamäťové súbory `CLAUDE.md` |
+| `/clear` | Vymaže konverzáciu a začne nanovo s prázdnym kontextom |
+| `/compact` | Zhrnie doterajšiu konverzáciu a uvoľní miesto v kontexte |
+| `/context` | Ukáže, koľko kontextového okna je obsadeného a čím |
+| `/model` | Prepne model (napr. Opus, Sonnet, Haiku) |
+| `/resume` | Pokračuje v niektorej z predchádzajúcich konverzácií |
+| `/rewind` | Vráti konverzáciu aj zmeny v kóde do skoršieho bodu |
+| `/review` | Požiada o kontrolu kódu (*code review*) zmien alebo pull requestu |
+| `/permissions` | Nastaví, ktoré nástroje a príkazy smie agent použiť bez pýtania |
+| `/config` | Otvorí nastavenia (téma, model, správanie) |
+| `/mcp` | Spravuje pripojené MCP servery |
+| `/agents` | Spravuje vlastných subagentov |
+| `/hooks` | Nastaví háky – príkazy spúšťané automaticky pri udalostiach |
+| `/plugin` | Inštaluje a spravuje pluginy |
+| `/add-dir` | Pridá ďalší priečinok, s ktorým môže agent pracovať |
+| `/cost` | Zobrazí spotrebu tokenov a cenu aktuálnej relácie |
+| `/status` | Ukáže verziu, prihlásený účet, model a stav pripojení |
+| `/doctor` | Skontroluje inštaláciu a nastavenia |
+| `/login`, `/logout` | Prihlási alebo odhlási účet Anthropic |
+| `/exit` | Ukončí Claude Code |
+
+Vlastné príkazy si možno vytvoriť ako **skills** – súbory `SKILL.md`  
+v priečinku `.claude/skills/<názov>/`. Skill sa potom vyvolá ako  
+`/<názov>`, napríklad `/deploy`.  
+
 ## Kontroverzie a spory  
 
 ### Autorské práva  
