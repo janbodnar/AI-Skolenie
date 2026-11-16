@@ -3,7 +3,7 @@
 *Verzia 1.1 · stav k októbru 2026. Názvy modelov, ceny, limity a cesty v menu  
 sa menia, vždy ich overte v oficiálnej dokumentácii poskytovateľa.*  
 
-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
+sk-proj-S7FJUfEsqNXOqIEJamsERYciNUieop6--fDy4br...
 
 ## 1. Čo je API a API kľúč  
 
