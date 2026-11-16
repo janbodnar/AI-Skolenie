@@ -85,6 +85,8 @@ Moji študenti využívajú AI na:
 - tvorbu prezentácií
 - tvorbu poviedok a esejí
 - tvorbu komiksu
+- tvorba webových aplikácií
+- OCR, dodacie listy
 
 ## Lievik schopností: prečo sa pri AI ľudia míňajú  
 
