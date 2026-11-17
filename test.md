@@ -1,4 +1,24 @@
 
+
+
+```python
+a = [9, 2, 18, 14, 22, 11, 7, 19, 23]
+
+b = [e for e in a if e > 10 if e < 20]
+print(b)
+
+c = [e for e in a if e > 10 and e < 20]
+print(c)
+
+d = [e for e in a if 10 < e < 20]
+print(d)
+```
+
+
+
+
+
+
 [https://audio-transcriber-translator-528965810214.europe-west1.run.app](https://ai.studio/apps/78062ef0-1213-4f79-b2cf-b3cc3284580d)
 
 ```python
