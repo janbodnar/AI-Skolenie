@@ -46,15 +46,20 @@ lines of code. The library supports both the Gemini Developer API (via an
 API key) and enterprise-grade Vertex AI, allowing you to seamlessly scale  
 from prototyping to production.  
 
+All examples in this document create the client with `genai.Client()`.  
+When no key is passed explicitly, the client reads the API key from the  
+`GEMINI_API_KEY` environment variable, so set it before running the scripts:  
+
+*   **Bash**: `export GEMINI_API_KEY="your-key"`  
+*   **PowerShell**: `$env:GEMINI_API_KEY = "your-key"`  
+
 ```python  
 from google import genai  
-import os
   
-# Initialize client with your API key  
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
+# Initialize client (reads GEMINI_API_KEY from the environment)  
+client = genai.Client()
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 prompt = 'Is Pluto a planet?'
   
 # Generate content from a text prompt  
@@ -76,12 +81,10 @@ guide, and start building the next generation of AI-powered applications.
 
 ```python
 from google import genai  
-import os
   
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
+client = genai.Client()
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
   
 # list models
 resp = client.models.list()   
@@ -97,12 +100,10 @@ This snippet is a compact example of image understanding with Gemini.
 ```python
 from google import genai
 from google.genai import types
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-3.1-flash-lite"
+model = "gemini-3.5-flash-lite"
 prompt = """
 Describe the image provided. 
 """
@@ -136,13 +137,10 @@ From URL.
 from google import genai
 from google.genai import types
 import requests
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-3.1-flash-lite"
-# model = "gemini-3.5-flash"
+model = "gemini-3.5-flash-lite"
 prompt = """
 Describe the image provided. 
 """
@@ -167,10 +165,8 @@ from google import genai
 from google.genai import types
 from PIL import Image
 
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 model = "gemini-3.1-flash-image"
 
@@ -255,12 +251,10 @@ Run this script multiple times to observe the variability!
 
 from google import genai
 from google.genai import types
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-2.5-flash"
+model = "gemini-3.5-flash-lite"
 prompt = "Write a one-sentence tagline for a futuristic coffee shop."
 
 # ── 1. Deterministic (temperature=0.0, top_p=1.0) ──────────────
@@ -348,12 +342,10 @@ thoughtful output depending on the needs of their application or prompt.
 ```python
 from google import genai
 from google.genai import types
-import os
   
-# Initialize client with your API key  
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
-model = 'gemini-3.1-flash-lite'
+# Initialize client (reads GEMINI_API_KEY from the environment)  
+client = genai.Client()
+model = 'gemini-3.5-flash-lite'
   
 # Generate content from a text prompt  
 response = client.models.generate_content(  
@@ -419,13 +411,11 @@ flowchart TD
 ```python
 from google import genai  
 from google.genai import types
-import os
   
-# Initialize client with your API key  
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
+# Initialize client (reads GEMINI_API_KEY from the environment)  
+client = genai.Client()
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 prompt = '''
 Is Pluto a planent. Answer in a paragraph. 
 '''
@@ -452,12 +442,10 @@ The example shows the token usage for a single prompt.
 
 ```python
 from google import genai
-import os
   
-# Initialize client with your API key  
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
-model = 'gemini-3.1-flash-lite'
+# Initialize client (reads GEMINI_API_KEY from the environment)  
+client = genai.Client()
+model = 'gemini-3.5-flash-lite'
 prompt = "Is Pluto a planet?"
 
 response = client.models.generate_content_stream(
@@ -479,11 +467,9 @@ the *full conversation history* is sent to the model with each follow-up turn.
 
 ```python
 from google import genai
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
-model = "gemini-3.1-flash-lite"
+client = genai.Client()
+model = "gemini-3.5-flash-lite"
 
 chat = client.chats.create(model=model)
 
@@ -503,13 +489,11 @@ for message in chat.get_history():
 ```python
 from google import genai  
 from google.genai import types
-import os
   
-# Initialize client with your API key  
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
+# Initialize client (reads GEMINI_API_KEY from the environment)  
+client = genai.Client()
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 prompt = '''
 What is the sum of the first 50 prime numbers? 
 Generate and run code for the calculation, and make sure you get all 50.
@@ -537,13 +521,10 @@ for part in response.candidates[0].content.parts:
 
 ```python
 from google import genai  
-import os
 import requests
   
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
-# model = 'gemini-3.1-flash-lite'
-model = 'gemini-3.5-flash'
+client = genai.Client()
+model = 'gemini-3.5-flash-lite'
 
 
 def get_page(url):
@@ -581,12 +562,10 @@ hallucinations by tying its responses directly to authoritative sources.
 from google import genai
 from google.genai import types
 from google.genai.errors import ClientError
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-3.1-flash-lite"
+model = "gemini-3.5-flash-lite"
 
 
 grounding_tool = types.Tool(google_search=types.GoogleSearch())
@@ -611,7 +590,7 @@ This example shows how to call the Gemini `generate_content` API with
 **Google Search grounding enabled**, allowing the model to answer questions  
 using up‑to‑date web information; the script initializes a Gemini client,  
 defines a `GoogleSearch` tool inside a `GenerateContentConfig`, and sends  
-a query (“Who won the FO 2026?”) to the lightweight `gemini-3.1-flash-lite`  
+a query (“Who won the FO 2026?”) to the lightweight `gemini-3.5-flash-lite`  
 model, while wrapping the call in a `try/except` block to catch and display  
 any `ClientError` returned by the API.
 
@@ -623,11 +602,9 @@ The next example summarizes a PDF file.
 from google import genai
 from google.genai import types
 import httpx
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
-model = "gemini-3.1-flash-lite"
+client = genai.Client()
+model = "gemini-3.5-flash-lite"
 
 doc_url = "https://web2.mlp.cz/koweb/00/03/73/22/08/neprebudeny.pdf"
 
@@ -651,9 +628,9 @@ print(response.text)
 
 This example shows how to use the Google Gemini `generate_content` API to  
 download a PDF from a remote URL, encode it as binary data, and send it  
-to the lightweight `gemini-3.1-flash-lite` model together with a text prompt  
+to the lightweight `gemini-3.5-flash-lite` model together with a text prompt  
 so the model can read and summarize the document; the script retrieves  
-the API key from an environment variable, fetches the PDF using `httpx`,  
+the API key from the `GEMINI_API_KEY` environment variable, fetches the PDF using `httpx`,  
 wraps the file bytes in a `types.Part` object with the correct MIME type,  
 submits both the document and the prompt in a single multimodal request,  
 and finally prints the summary returned by the model.
@@ -668,12 +645,10 @@ format that can be analyzed, edited, or used in downstream tasks.
 ```python
 from google import genai  
 from google.genai import types
-import os
   
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)  
+client = genai.Client()
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 prompt = '''
 Generate a transcript of the speech. Skip the introduction and conclusion. 
 '''
@@ -710,16 +685,14 @@ categories based on their characteristics. In machine learning and AI, it means 
 inputs to one label from a fixed set of labels.
 
 ```python
-import os
 from google import genai
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 # The items to classify
 items = ["elephant", "mouse", "dog", "snail", "giraffe", "ant"]
 prompt = f"Classify the following items as [large, medium, small, tiny]:\n" + "\n".join(items)
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 
 system_instruction = """
 You are a helpful assistant that classifies items strictly into the categories provided.
@@ -751,7 +724,6 @@ Classification of customer tickets.
 
 ```python
 import argparse
-import os
 from textwrap import dedent
 
 from google import genai
@@ -760,7 +732,7 @@ from rich.console import Console
 from rich.table import Table
 
 
-DEFAULT_MODEL = "gemini-3.1-flash-lite"
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 
 CATEGORIES = ["billing", "technical", "account", "shipping", "other"]
 
@@ -818,8 +790,7 @@ def classify_tickets(client, model, tickets):
 
 def main():
     args = parse_args()
-    api_key = os.getenv("AI_STUDIO_API_KEY")
-    client = genai.Client(api_key=api_key)
+    client = genai.Client()
 
     print("Task: Classify support tickets into one of", CATEGORIES)
     print("\nTickets:")
@@ -868,7 +839,6 @@ and ReviewSentimentList wraps all results. The API returns a validated typed
 response instead of needing 10 separate requests.
 """
 
-import os
 from google import genai
 from pydantic import BaseModel
 
@@ -897,8 +867,7 @@ class ReviewSentimentList(BaseModel):
     reviews: list[ReviewSentiment]
 
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 # Build a single prompt with all reviews
 review_lines = "\n".join(
@@ -914,7 +883,7 @@ Recenzie:
 """
 
 response = client.models.generate_content(
-    model="gemini-3.1-flash-lite",
+    model="gemini-3.5-flash-lite",
     contents=prompt,
     config={
         "response_mime_type": "application/json",
@@ -971,10 +940,8 @@ We have these 20 rows. To do the analysis, we utilize `types.ToolCodeExecution`.
 from google import genai
 from google.genai import types
 from pydantic import BaseModel
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 file_name = "users.csv"
 
@@ -994,7 +961,7 @@ with open(file_name, "r", encoding="utf-8") as file:
     Please provide the results in JSON format.\n\nData:\n{data}"""
 
     response = client.models.generate_content(
-        model="gemini-3.1-flash-lite",
+        model="gemini-3.5-flash-lite",
         contents=prompt,
         config=types.GenerateContentConfig(
             tools=[types.Tool(code_execution=types.ToolCodeExecution)],
@@ -1036,19 +1003,17 @@ The next example filters out all female users from the CSV file.
 filter_female.py
 
 This program reads a CSV file (users.csv) containing user data, uses the
-Gemini API (gemini-3.1-flash-lite) to classify each user's first name as
+Gemini API (gemini-3.5-flash-lite) to classify each user's first name as
 'female' or 'male' (supporting Czech/Slovak names), filters the dataset to
 keep only female users, prints the results in a formatted table, and saves
 the filtered data to a new CSV file (female_users.csv).
 """
 
-import os
 import csv
 from google import genai
 from pydantic import BaseModel
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 
 class GenderClassification(BaseModel):
@@ -1076,7 +1041,7 @@ name and the value is either 'female' or 'male'. Only return the JSON object, no
 other text.
 """
 
-model = 'gemini-3.1-flash-lite'
+model = 'gemini-3.5-flash-lite'
 
 response = client.models.generate_content(
     model=model,
@@ -1144,13 +1109,11 @@ a larger source—such as a file, database, webpage, or dataset—so that the ex
 data can be analyzed, transformed, or used for further processing.  
 
 ```python
-import os
 from google import genai
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-3.1-flash-lite"
+model = "gemini-3.5-flash-lite"
 prompt = """
 Extract information about people mentioned in the following text. For each
 person, provide their name, age, and city of residence in a structured JSON
@@ -1175,13 +1138,11 @@ In the next example, we specify the JSON output with Pydantic.
 
 
 ```python
-import os
 from google import genai
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
-model = "gemini-3.1-flash-lite"
+model = "gemini-3.5-flash-lite"
 prompt = """
 Extract information about people mentioned in the following text. For each
 person, provide their name, age, and city of residence in a structured JSON
@@ -1230,7 +1191,6 @@ from google.genai import types
 from dataclasses import dataclass
 from pydantic import BaseModel
 import subprocess
-import os
 
 
 @dataclass
@@ -1290,11 +1250,10 @@ shell_tool = types.Tool(
 )
 
 # ── Client ───────────────────────────────────────────────────────
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 executor = ShellExecutor()
 
-model = "gemini-3.1-flash-lite"
+model = "gemini-3.5-flash-lite"
 
 config = types.GenerateContentConfig(
     tools=[shell_tool],
@@ -1370,7 +1329,7 @@ This example builds a **tool-using agent loop** with Google's genai SDK. A `Shel
 class wraps `subprocess.Popen` to run shell commands locally with timeout handling.  
 A `run_shell` function declaration is registered as a tool in the `GenerateContentConfig`,  
 telling Gemini it can execute shell commands. The script enters a `while True` loop: it sends  
-the conversation history (`contents` list) to `gemini-3.1-flash-lite`, and whenever the model  
+the conversation history (`contents` list) to `gemini-3.5-flash-lite`, and whenever the model  
 responds with a `function_call`, the requested command is executed, then both the model's call  
 and the result (`stdout`, `stderr`, `outcome`) are appended back to `contents` so the model can  
 reason further. When the model responds with natural language instead of a function call, the  
@@ -1393,10 +1352,8 @@ bar chart of average salary by occupation, then returns the image inline.
 
 from google import genai
 from google.genai import types
-import os
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 with open("users.csv", "r", encoding="utf-8") as f:
     data = f.read()
@@ -1422,7 +1379,7 @@ CSV Data:
 """
 
 response = client.models.generate_content(
-    model="gemini-3.1-flash-lite",
+    model="gemini-3.5-flash-lite",
     contents=prompt,
     config=types.GenerateContentConfig(
         tools=[types.Tool(code_execution=types.ToolCodeExecution)],
@@ -1469,7 +1426,6 @@ the image inline and prints structured stats.
 from google import genai
 from google.genai import types
 from pydantic import BaseModel
-import os
 
 
 class SalaryStats(BaseModel):
@@ -1484,8 +1440,7 @@ class AnalysisResult(BaseModel):
     stats: list[SalaryStats]
 
 
-api_key = os.getenv("AI_STUDIO_API_KEY")
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 with open("users.csv", "r", encoding="utf-8") as f:
     data = f.read()
@@ -1530,7 +1485,7 @@ CSV Data:
 """
 
 response = client.models.generate_content(
-    model="gemini-3.1-flash-lite",
+    model="gemini-3.5-flash-lite",
     contents=prompt,
     config=types.GenerateContentConfig(
         tools=[types.Tool(code_execution=types.ToolCodeExecution)],
@@ -1586,13 +1541,12 @@ requests a DuckDuckGo search via the search_web tool, and the agent
 loop runs it and feeds the results back until a final answer appears.
 """
 
-import os
 
 from ddgs import DDGS
 from google import genai
 from google.genai import types
 
-MODEL = "gemini-3.1-flash-lite"
+MODEL = "gemini-3.5-flash-lite"
 SYSTEM_INSTRUCTION = (
     "You are a research assistant. Use the search_web function to answer "
     "questions factually with real-time data from the web."
@@ -1676,7 +1630,7 @@ def run_agent(client: genai.Client, prompt: str) -> str:
 
 
 def main() -> None:
-    client = genai.Client(api_key=os.getenv("AI_STUDIO_API_KEY"))
+    client = genai.Client()
     prompt = "What are the latest updates on the James Webb Space Telescope as of 2026?"
 
     print("── Request ────────────────────────────────────────────")
@@ -1728,14 +1682,13 @@ requests a DuckDuckGo search via the search_web tool, and the agent
 loop runs it and feeds the results back until a final answer appears.
 """
 
-import os
 
 from ddgs import DDGS
 from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 
-MODEL = "gemini-3.1-flash-lite"
+MODEL = "gemini-3.5-flash-lite"
 SYSTEM_INSTRUCTION = (
     "You are a research assistant. Use the search_web function to answer "
     "questions factually with real-time data from the web."
@@ -1819,7 +1772,7 @@ def run_agent(client: genai.Client, prompt: str) -> str:
 
 
 def main() -> None:
-    client = genai.Client(api_key=os.getenv("AI_STUDIO_API_KEY"))
+    client = genai.Client()
     prompt = "What are the latest updates on the James Webb Space Telescope as of 2026?"
 
     print("── Request ────────────────────────────────────────────")
